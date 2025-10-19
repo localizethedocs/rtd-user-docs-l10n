@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../security-log.rst:2
+msgid "Security logs"
+msgstr ""
+
+#: ../../../security-log.rst:4
+msgid ""
+"Security logs allow you to audit what has happened recently in your "
+"organization or account. This feature is quite important for many security "
+"compliance programs, as well as the general peace of mind of knowing what is "
+"happening on your account. We store the IP address and the browser used on "
+"each event, so that you can confirm this access was from the intended person."
+msgstr ""
+
+#: ../../../security-log.rst:10
+msgid ""
+"Security logs are only visible to organization owners. You can invite other "
+"team members as owners."
+msgstr ""
+
+#: ../../../security-log.rst:15
+msgid ":doc:`/legal/security-policy`"
+msgstr ""
+
+#: ../../../security-log.rst:16
+msgid ""
+"General information and reference about how security is handled on Read the "
+"Docs."
+msgstr ""
+
+#: ../../../security-log.rst:19
+msgid "User security log"
+msgstr ""
+
+#: ../../../security-log.rst:21
+msgid ""
+"We store a user security log for the latest 90 days of activity. This log is "
+"useful to validate that no unauthorized events have occurred."
+msgstr ""
+
+#: ../../../security-log.rst:24
+msgid "The security log tracks the following events:"
+msgstr ""
+
+#: ../../../security-log.rst:26
+msgid "Authentication on the dashboard."
+msgstr ""
+
+#: ../../../security-log.rst:27
+msgid "Authentication on documentation pages (:doc:`/commercial/index` only)."
+msgstr ""
+
+#: ../../../security-log.rst:28
+msgid ""
+"When invitations to manage a project are sent, accepted, revoked or declined."
+msgstr ""
+
+#: ../../../security-log.rst:30 ../../../security-log.rst:50
+msgid "Authentication failures and successes are both tracked."
+msgstr ""
+
+#: ../../../security-log.rst:32
+msgid ""
+"Logs are available in :menuselection:`<Username dropdown> --> Settings --> "
+"Security Log`."
+msgstr ""
+
+#: ../../../security-log.rst:35
+msgid "Organization security log"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../security-log.rst:39
+msgid ""
+"The length of log storage varies with your plan, check our `pricing page "
+"<https://about.readthedocs.com/pricing/>`__ for more details. Your "
+"organization security log is a great place to check periodically to ensure "
+"there hasn't been unauthorized access to your organization."
+msgstr ""
+
+#: ../../../security-log.rst:43
+msgid "Organization logs track the following events:"
+msgstr ""
+
+#: ../../../security-log.rst:45
+msgid "Authentication on documentation pages from your organization."
+msgstr ""
+
+#: ../../../security-log.rst:46
+msgid ""
+"User accesses a documentation page from your organization (**Enterprise "
+"plans only**)."
+msgstr ""
+
+#: ../../../security-log.rst:47
+msgid ""
+"User accesses a documentation's downloadable formats (**Enterprise plans "
+"only**)."
+msgstr ""
+
+#: ../../../security-log.rst:48
+msgid "Invitations to organization teams are sent, revoked or accepted."
+msgstr ""
+
+#: ../../../security-log.rst:52
+msgid ""
+"Logs are available in :menuselection:`<Username dropdown> --> Organizations "
+"--> <Organization name> --> Settings --> Security Log`."
+msgstr ""
+
+#: ../../../security-log.rst:54
+msgid ""
+"If you have any additional information that you wished the security log was "
+"capturing, you can always reach out to :doc:`/support`."
+msgstr ""
+
+#: ../../../security-log.rst:59
+msgid ":doc:`/security`"
+msgstr ""
+
+#: ../../../security-log.rst:60
+msgid ""
+"Security information related to our own platform, personal data treatment, "
+"and how to report a security issue."
+msgstr ""

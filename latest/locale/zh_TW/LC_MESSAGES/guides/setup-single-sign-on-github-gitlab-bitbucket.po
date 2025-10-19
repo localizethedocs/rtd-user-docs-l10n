@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:2
+msgid "How to setup single sign-on (SSO) with GitHub, GitLab, or Bitbucket"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:6
+msgid ""
+"This how-to guide will provide instructions on how to enable :abbr:`SSO "
+"(single sign-on)` with GitHub, GitLab, or Bitbucket. If you want more "
+"information on this feature, please read :doc:`/commercial/single-sign-on`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:11
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:2
+msgid "Organization permissions"
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:4
+msgid ""
+"To change your :doc:`Organization's </commercial/organizations>` settings, "
+"you need to be an *owner* of that organization."
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:7
+msgid "You can validate your ownership of the Organization with these steps:"
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:9
+msgid ""
+"Navigate to the `organization management page <https://app.readthedocs.com/"
+"organizations/choose/organization_detail/>`__."
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:10
+msgid "Look at the :guilabel:`Owners` section on the right menu."
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:12
+msgid ""
+"If you'd like to modify this setting and are not an owner, you can ask an "
+"existing organization owner to take the actions listed."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:16
+msgid "User setup"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:18
+msgid ""
+"Users in your organization must have their GitHub, Bitbucket, or GitLab :doc:"
+"`account connected </guides/connecting-git-account>`, otherwise they won't "
+"have access to any project on Read the Docs after performing this change. "
+"You can read more about `granting permissions on GitHub`_ in their "
+"documentation."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:26
+msgid "Enabling SSO"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:28
+msgid "You can enable this feature in your organization by:"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:30
+msgid ""
+"Navigate to the `authorization setting page <https://app.readthedocs.com/"
+"organizations/choose/organization_sso/>`__."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:31
+msgid ""
+"Select :guilabel:`GitHub, GitLab or Bitbucket` on the :guilabel:`Provider` "
+"dropdown."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:32
+msgid "Select :guilabel:`Save`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:35
+msgid ""
+"Once you enable this option, your existing Read the Docs :doc:`teams </"
+"guides/manage-read-the-docs-teams>` will not be used. While testing you can "
+"enable SSO and then disable it without any data loss."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:40
+msgid "Grant access to read private documentation"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:42
+msgid ""
+"By granting **read** permissions to a user in your git repository, you are "
+"giving the user access to read the documentation of the associated project "
+"on Read the Docs. By default, private git repositories are built as private "
+"documentation websites. Having **read** permissions to the git repository "
+"translates to having **view** permissions to a private documentation website."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:48
+msgid "Grant access to administer a project"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:50
+msgid ""
+"By granting **admin** permission to a user in the git repository, you are "
+"giving the user access to read the documentation *and* to be an "
+"administrator of the associated project on Read the Docs."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:54
+msgid "Grant access to import a project"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:56
+msgid ""
+"When SSO with a Git provider is enabled, only owners of the Read the Docs "
+"organization can import projects."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:58
+msgid "To be able to import a project, a user must have:"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:61
+msgid "**admin** permissions in the associated Git repository."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:62
+msgid "Ownership rights to the Read the Docs organization"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:65
+msgid "Revoke access to a project"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:67
+msgid ""
+"If a user should not have access to a project, you can revoke access to the "
+"git repository, and this will be automatically reflected in Read the Docs."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:71
+msgid ""
+"The same process is followed in case you need to remove admin access, but "
+"still want that user to have access to read the documentation. Instead of "
+"revoking access completely, downgrade their permissions to *read only*."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:77
+msgid ""
+"To learn more about choosing a single sign-on approach, please read :doc:`/"
+"commercial/single-sign-on`."
+msgstr ""

@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/policies.rst:3
+msgid "Policies and legal documents"
+msgstr ""
+
+#: ../../../reference/policies.rst:5
+msgid "Here is some of the fine print used by |org_brand| and |com_brand|:"
+msgstr ""
+
+#: ../../../reference/policies.rst:23
+msgid ":doc:`/abandoned-projects`"
+msgstr ""
+
+#: ../../../reference/policies.rst:24
+msgid "Our policy of taking action on abandoned projects."
+msgstr ""
+
+#: ../../../reference/policies.rst:26
+msgid ":doc:`/unofficial-projects`"
+msgstr ""
+
+#: ../../../reference/policies.rst:27
+msgid "Our policy of taking action on unofficial and unmaintained projects."
+msgstr ""
+
+#: ../../../reference/policies.rst:29
+msgid "`Terms of Service <https://about.readthedocs.com/terms-of-service/>`_"
+msgstr ""
+
+#: ../../../reference/policies.rst:30
+msgid ""
+"The terms of service for using |org_brand| and |com_brand|. You may instead "
+"have a master services agreement for your subscription if you have a custom "
+"or enterprise contract."
+msgstr ""
+
+#: ../../../reference/policies.rst:34
+msgid ":doc:`/privacy-policy`"
+msgstr ""
+
+#: ../../../reference/policies.rst:35
+msgid ""
+"Our policy on collecting, storing, and protecting user and visitor data."
+msgstr ""
+
+#: ../../../reference/policies.rst:37
+msgid ":doc:`/legal/security-policy`"
+msgstr ""
+
+#: ../../../reference/policies.rst:38
+msgid "Our policies around application and infrastructure security."
+msgstr ""
+
+#: ../../../reference/policies.rst:40
+msgid ":doc:`/security`"
+msgstr ""
+
+#: ../../../reference/policies.rst:41
+msgid ""
+"How we respond to security incidents and how you report a security issue."
+msgstr ""
+
+#: ../../../reference/policies.rst:43
+msgid ":doc:`/legal/dpa/index`"
+msgstr ""
+
+#: ../../../reference/policies.rst:44
+msgid ""
+"For GDPR and CCPA compliance, we provide a data processing addendum for |"
+"com_brand| customers."
+msgstr ""
+
+#: ../../../reference/policies.rst:47
+msgid ":doc:`/dmca/index`"
+msgstr ""
+
+#: ../../../reference/policies.rst:48
+msgid ""
+"Our process for taking down content based on DMCA requests and how to submit "
+"requests."
+msgstr ""

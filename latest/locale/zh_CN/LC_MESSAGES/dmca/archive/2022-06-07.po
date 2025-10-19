@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dmca/archive/2022-06-07.rst:4
+msgid "2022-06-07"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:7
+msgid ""
+"The project maintainer was notified about this report and instructed to "
+"submit a counter if they believed this request was invalid. The user removed "
+"the project manually, and no further action was required."
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:11
+msgid ""
+"Are you the copyright owner or authorized to act on the copyright owner's "
+"behalf?"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:12
+#: ../../../dmca/archive/2022-06-07.rst:36
+msgid "Yes"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:14
+msgid "What work was allegedly infringed? If possible, please provide a URL:"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:15
+msgid "https://www.dicomstandard.org/current"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:17
+msgid ""
+"What files or project should be taken down? You should list URLs to each "
+"piece of infringing content. If you allege that the entire project is "
+"infringing on copyrights you hold, please specify the entire project as "
+"infringing:"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:18
+msgid "https://dicom-standard.readthedocs.io/en/latest/index.html"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:20
+msgid "Is the work licensed under an open source license?"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:21
+msgid "No"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:23
+msgid "What would be the best solution for the alleged infringement?"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:24
+msgid "Complete Removal."
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:26
+msgid ""
+"Do you have the alleged infringer's contact information? Yes. If so, please "
+"provide it:"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:27
+#: ../../../dmca/archive/2022-06-07.rst:39
+#: ../../../dmca/archive/2022-06-07.rst:42
+msgid "[private]"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:29
+msgid ""
+"Type (or copy and paste) the following statement: \"I have a good faith "
+"belief that use of the copyrighted materials described above on the "
+"infringing web pages is not authorized by the copyright owner, or its agent, "
+"or the law. I have taken fair use into consideration.\""
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:30
+msgid ""
+"I have a good faith belief that use of the copyrighted materials described "
+"above on the infringing web pages is not authorized by the copyright owner, "
+"or its agent, or the law. I have taken fair use into consideration."
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:32
+msgid ""
+"Type (or copy and paste) the following statement: \"I swear, under penalty "
+"of perjury, that the information in this notification is accurate and that I "
+"am the copyright owner, or am authorized to act on behalf of the owner, of "
+"an exclusive right that is allegedly infringed.\""
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:33
+msgid ""
+"I swear, under penalty of perjury, that the information in this notification "
+"is accurate and that I am the copyright owner, or am authorized to act on "
+"behalf of the owner, of an exclusive right that is allegedly infringed."
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:35
+msgid ""
+"Please confirm that you have read our Takedown Policy: https://docs."
+"readthedocs.io/en/latest/dmca/index.html"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:38
+msgid ""
+"So that we can get back to you, please provide either your telephone number "
+"or physical address:"
+msgstr ""
+
+#: ../../../dmca/archive/2022-06-07.rst:41
+msgid "Please type your full legal name below to sign this request:"
+msgstr ""

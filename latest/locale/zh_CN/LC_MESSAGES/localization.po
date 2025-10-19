@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../localization.rst:2
+msgid "Localization and Internationalization"
+msgstr ""
+
+#: ../../../localization.rst:4
+msgid ""
+"In this article, we explain high-level approaches to internationalizing and "
+"localizing your documentation."
+msgstr ""
+
+#: ../../../localization.rst:6
+msgid ""
+"By default, Read the Docs assumes that your documentation is or *might "
+"become* multilingual one day. The initial default language is English and "
+"therefore you often see the initial build of your documentation published at "
+"``/en/latest/``, where the ``/en`` denotes that it's in English. By having "
+"the ``en`` URL component present from the beginning, you are ready for the "
+"eventuality that you would want a second language."
+msgstr ""
+
+#: ../../../localization.rst:13
+msgid ""
+"Read the Docs supports hosting your documentation in multiple languages. "
+"Read below for the various approaches that we support."
+msgstr ""
+
+#: ../../../localization.rst:20
+msgid "Projects with one language"
+msgstr ""
+
+#: ../../../localization.rst:22
+msgid ""
+"If your documentation isn't in English (the default), you should indicate "
+"which language you have written it in."
+msgstr ""
+
+#: ../../../localization.rst:25
+msgid ""
+"It is easy to set the *Language* of your project. On the project *Admin* "
+"page (or *Import* page), simply select your desired *Language* from the "
+"dropdown. This will tell Read the Docs that your project is in the language. "
+"The language will be represented in the URL for your project."
+msgstr ""
+
+#: ../../../localization.rst:31
+msgid ""
+"For example, a project that is in Spanish will have a default URL of ``/es/"
+"latest/`` instead of ``/en/latest/``."
+msgstr ""
+
+#: ../../../localization.rst:35
+msgid "Projects with multiple translations"
+msgstr ""
+
+#: ../../../localization.rst:39
+msgid ":doc:`guides/manage-translations-sphinx`"
+msgstr ""
+
+#: ../../../localization.rst:40
+msgid ""
+"Describes the whole process for a Sphinx documentation projects with "
+"multiples languages in the same repository and how to keep the translations "
+"updated on time."
+msgstr ""
+
+#: ../../../localization.rst:43
+msgid ""
+"Each language must have its own project on Read the Docs. You will choose "
+"one to be the parent project, and add each of the other projects as "
+"\"Translations\" of the parent project."
+msgstr ""
+
+#: ../../../localization.rst:47
+msgid "Let's use ``godot`` as an example."
+msgstr ""
+
+#: ../../../localization.rst:49
+msgid ""
+"The ``godot`` project is the parent. Each translation then has its own "
+"project, for example ``godot-es``. The *Language* for ``godot-es`` is set to "
+"``Spanish``. Then, on the  *Translations* page of the ``godot`` project, "
+"``godot-es`` is set as translation."
+msgstr ""
+
+#: ../../../localization.rst:54
+msgid "This has the results of serving:"
+msgstr ""
+
+#: ../../../localization.rst:56
+msgid "``godot`` at ``https://docs.godotengine.org/en/stable/``"
+msgstr ""
+
+#: ../../../localization.rst:57
+msgid "``godot-es`` at ``https://docs.godotengine.org/es/stable/``"
+msgstr ""
+
+#: ../../../localization.rst:59
+msgid "It also gets included in the Read the Docs :term:`flyout menu`:"
+msgstr ""
+
+#: ../../../localization.rst:64
+msgid ""
+"The default language of a custom domain is determined by the language of the "
+"parent project that the domain was configured on. See :doc:`/custom-domains` "
+"for more information."
+msgstr ""
+
+#: ../../../localization.rst:70
+msgid "Translation workflows"
+msgstr ""
+
+#: ../../../localization.rst:72
+msgid ""
+"When you work with translations, the workflow of your translators becomes a "
+"critical component."
+msgstr ""
+
+#: ../../../localization.rst:75
+msgid "Considerations include:"
+msgstr ""
+
+#: ../../../localization.rst:77
+msgid ""
+"Are your translators able to use a Git workflow? For instance, are they able "
+"to translate directly via GitHub?"
+msgstr ""
+
+#: ../../../localization.rst:78
+msgid "Do you benefit from machine translation?"
+msgstr ""
+
+#: ../../../localization.rst:79
+msgid ""
+"Do you need different roles, for instance do you need translators and "
+"editors?"
+msgstr ""
+
+#: ../../../localization.rst:80
+msgid "What is your source language?"
+msgstr ""
+
+#: ../../../localization.rst:81
+msgid "When are your translated versions published?"
+msgstr ""
+
+#: ../../../localization.rst:83
+msgid ""
+"There are many translation platforms that support this workflow. These "
+"include:"
+msgstr ""
+
+#: ../../../localization.rst:86
+msgid "`Weblate <https://weblate.org/>`_"
+msgstr ""
+
+#: ../../../localization.rst:87
+msgid "`Transifex <https://www.transifex.com/>`_"
+msgstr ""
+
+#: ../../../localization.rst:88
+msgid "`Crowdin <https://crowdin.com/>`_"
+msgstr ""
+
+#: ../../../localization.rst:90
+msgid ""
+"Because Read the Docs builds your Git repository, you can use any of the "
+"above solutions. Any solution that synchronizes your translations with your "
+"Git repository will ensure that your translations are automatically "
+"published with Read the Docs."
+msgstr ""

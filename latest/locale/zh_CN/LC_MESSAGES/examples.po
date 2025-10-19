@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../examples.rst:2
+msgid "Example projects"
+msgstr ""
+
+#: ../../../examples.rst:4
+msgid ""
+"The following example projects show a rich variety of uses of Read the Docs. "
+"You can use them for inspiration, for learning and for recipes to start your "
+"own documentation projects. View the *rendered* version of each project and "
+"then head over to the Git repository to see how it's done and reuse the code."
+msgstr ""
+
+#: ../../../examples.rst:9
+msgid "Real-life examples"
+msgstr ""
+
+#: ../../../examples.rst:11
+msgid ""
+"We maintain an Awesome List where you can contribute new shiny examples of "
+"using Read the Docs. Please refer to the instructions on how to submit new "
+"entries on `Awesome Read the Docs Projects <https://github.com/readthedocs-"
+"examples/awesome-read-the-docs>`__."
+msgstr ""
+
+#: ../../../examples.rst:15
+msgid "Minimal basic examples"
+msgstr ""
+
+#: ../../../examples.rst:18
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../examples.rst:20
+msgid "Sphinx example with versioning and Python doc autogeneration."
+msgstr ""
+
+#: ../../../examples.rst:22 ../../../examples.rst:34 ../../../examples.rst:46
+#: ../../../examples.rst:58
+msgid "Markup language"
+msgstr ""
+
+#: ../../../examples.rst:23
+msgid "reStructuredText, Markdown or MyST"
+msgstr ""
+
+#: ../../../examples.rst:24 ../../../examples.rst:36 ../../../examples.rst:48
+#: ../../../examples.rst:60
+msgid "Rendered version"
+msgstr ""
+
+#: ../../../examples.rst:25
+msgid "https://example-sphinx-basic.readthedocs.io/en/latest/"
+msgstr ""
+
+#: ../../../examples.rst:26 ../../../examples.rst:38 ../../../examples.rst:50
+#: ../../../examples.rst:62
+msgid "Repository"
+msgstr ""
+
+#: ../../../examples.rst:27
+msgid "https://github.com/readthedocs-examples/example-sphinx-basic/"
+msgstr ""
+
+#: ../../../examples.rst:30
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../examples.rst:32
+msgid "Basic example of using MkDocs."
+msgstr ""
+
+#: ../../../examples.rst:35
+msgid "Markdown"
+msgstr ""
+
+#: ../../../examples.rst:37
+msgid "https://example-mkdocs-basic.readthedocs.io/en/latest/"
+msgstr ""
+
+#: ../../../examples.rst:39
+msgid "https://github.com/readthedocs-examples/example-mkdocs-basic/"
+msgstr ""
+
+#: ../../../examples.rst:42
+msgid "Jupyter Book"
+msgstr ""
+
+#: ../../../examples.rst:44
+msgid "Jupyter Book with popular integrations configured."
+msgstr ""
+
+#: ../../../examples.rst:47
+msgid "MyST"
+msgstr ""
+
+#: ../../../examples.rst:49
+msgid "https://example-jupyter-book.readthedocs.io/"
+msgstr ""
+
+#: ../../../examples.rst:51
+msgid "https://github.com/readthedocs-examples/example-jupyter-book/"
+msgstr ""
+
+#: ../../../examples.rst:54
+msgid "Antora"
+msgstr ""
+
+#: ../../../examples.rst:56
+msgid ""
+"Antora with asciidoctor-kroki extension configured for AsciiDoc and Diagram "
+"as Code."
+msgstr ""
+
+#: ../../../examples.rst:59
+msgid "AsciiDoc"
+msgstr ""
+
+#: ../../../examples.rst:61
+msgid "https://example-antora-basic.readthedocs.io/"
+msgstr ""
+
+#: ../../../examples.rst:63
+msgid "https://github.com/man-chi/example-antora-basic/"
+msgstr ""
+
+#: ../../../examples.rst:66
+msgid "Contributing an example project"
+msgstr ""
+
+#: ../../../examples.rst:68
+msgid ""
+"We would love to add more examples that showcase features of Read the Docs "
+"or great tools or methods to build documentation projects."
+msgstr ""
+
+#: ../../../examples.rst:70
+msgid "We **require** that an example project:"
+msgstr ""
+
+#: ../../../examples.rst:72
+msgid ""
+"is **hosted and maintained by you** in its own Git repository, ``example-"
+"<topic>``."
+msgstr ""
+
+#: ../../../examples.rst:73
+msgid "contains a README."
+msgstr ""
+
+#: ../../../examples.rst:74
+msgid "uses a ``.readthedocs.yaml`` configuration."
+msgstr ""
+
+#: ../../../examples.rst:75
+msgid ""
+"is added to the above list by **opening a PR** targeting `examples.rst "
+"<https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/examples."
+"rst>`_ file from our documentation."
+msgstr ""
+
+#: ../../../examples.rst:78
+msgid "We **recommend** that your project:"
+msgstr ""
+
+#: ../../../examples.rst:80
+msgid "has **continuous integration and PR builds**."
+msgstr ""
+
+#: ../../../examples.rst:81
+msgid "is **versioned** as a real software project, i.e. using git tags."
+msgstr ""
+
+#: ../../../examples.rst:82
+msgid ""
+"covers your most important scenarios, but references external real-life "
+"projects whenever possible."
+msgstr ""
+
+#: ../../../examples.rst:83
+msgid ""
+"has a minimal tech stack -- or whatever you feel comfortable about "
+"maintaining."
+msgstr ""
+
+#: ../../../examples.rst:84
+msgid "copies from an existing example project as a template to get started."
+msgstr ""
+
+#: ../../../examples.rst:86
+msgid "We're excited to see what you come up with!"
+msgstr ""

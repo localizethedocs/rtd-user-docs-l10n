@@ -1,0 +1,686 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../addons.rst:2
+msgid "Read the Docs Addons"
+msgstr ""
+
+#: ../../../addons.rst:4
+msgid ""
+"**Read the Docs Addons** is a group of features for documentation readers "
+"and maintainers that you can add to any documentation set hosted on Read the "
+"Docs. They are used in the rendered documentation, and can be accessed via "
+"hotkeys or on screen UI elements."
+msgstr ""
+
+#: ../../../addons.rst:8
+msgid ":doc:`Visual diff </visual-diff>`"
+msgstr ""
+
+#: ../../../addons.rst:9
+msgid "Highlight changed output from pull requests"
+msgstr ""
+
+#: ../../../addons.rst:11
+msgid ":doc:`Link previews </link-previews>`"
+msgstr ""
+
+#: ../../../addons.rst:12
+msgid "See the content the link points to before clicking on it"
+msgstr ""
+
+#: ../../../addons.rst:14
+msgid ":doc:`Documentation notification </doc-notifications>`"
+msgstr ""
+
+#: ../../../addons.rst:15
+msgid "Alert users to various documentation states"
+msgstr ""
+
+#: ../../../addons.rst:17
+msgid ":doc:`Flyout </flyout-menu>`"
+msgstr ""
+
+#: ../../../addons.rst:18
+msgid "Easily switch between versions and translations"
+msgstr ""
+
+#: ../../../addons.rst:20
+msgid ":doc:`Non-stable notification </versions>`"
+msgstr ""
+
+#: ../../../addons.rst:21
+msgid "Notify readers that they are reading docs from a non stable release"
+msgstr ""
+
+#: ../../../addons.rst:23
+msgid ":doc:`Latest version notification </versions>`"
+msgstr ""
+
+#: ../../../addons.rst:24
+msgid "Notify readers that they are reading docs from a development version"
+msgstr ""
+
+#: ../../../addons.rst:26
+msgid ":doc:`Search as you type </server-side-search/index>`"
+msgstr ""
+
+#: ../../../addons.rst:27
+msgid "Get search results faster"
+msgstr ""
+
+#: ../../../addons.rst:29
+msgid ":doc:`Traffic analytics </traffic-analytics>`"
+msgstr ""
+
+#: ../../../addons.rst:30
+msgid "See what pages your users are reading"
+msgstr ""
+
+#: ../../../addons.rst:32
+msgid ":doc:`Search analytics </search-analytics>`"
+msgstr ""
+
+#: ../../../addons.rst:33
+msgid "Understand what your users are searching for"
+msgstr ""
+
+#: ../../../addons.rst:36
+msgid "Configuring Read the Docs Addons"
+msgstr ""
+
+#: ../../../addons.rst:38
+msgid ""
+"Individual configuration options for each addon are available in :guilabel:"
+"`Settings`."
+msgstr ""
+
+#: ../../../addons.rst:40
+msgid "Go to the new :term:`dashboard`."
+msgstr ""
+
+#: ../../../addons.rst:41
+msgid "Click on a project name."
+msgstr ""
+
+#: ../../../addons.rst:42
+msgid "Go to :guilabel:`Settings`."
+msgstr ""
+
+#: ../../../addons.rst:43
+msgid "In the left bar, go to :guilabel:`Addons`."
+msgstr ""
+
+#: ../../../addons.rst:44
+msgid "Configure each Addon individually."
+msgstr ""
+
+#: ../../../addons.rst:47
+msgid "Integrating with Addons"
+msgstr ""
+
+#: ../../../addons.rst:50
+msgid "Integrate with Search as you type"
+msgstr ""
+
+#: ../../../addons.rst:52
+msgid ""
+"To configure your site to use :doc:`Read the Docs search </server-side-"
+"search/index>` instead of the default search, adapt the following block of "
+"JavaScript to your own site:"
+msgstr ""
+
+#: ../../../addons.rst:54
+msgid "javascript/readthedocs.js"
+msgstr ""
+
+#: ../../../addons.rst:54
+msgid ""
+"// TODO: Change me if needed\n"
+"const selector = \"input[type='search']\";\n"
+"\n"
+"document.addEventListener(\"DOMContentLoaded\", function(event) {\n"
+"    // Trigger Read the Docs' search addon instead of the default search\n"
+"    document.querySelector(selector).addEventListener(\"click\", (e) => {\n"
+"        const event = new CustomEvent(\"readthedocs-search-show\");\n"
+"        document.dispatchEvent(event);\n"
+"    });\n"
+"});"
+msgstr ""
+
+#: ../../../addons.rst:68
+msgid ""
+"Depending on the tool you are using, you may need to change the selector to "
+"match the search input field. You will also need to ensure that the "
+"JavaScript file is included in your documentation build."
+msgstr ""
+
+#: ../../../addons.rst:73
+msgid "Addons data and customization"
+msgstr ""
+
+#: ../../../addons.rst:75
+msgid ""
+"Addons can be customized using CSS variables and the data used by Addons can "
+"be accessed using a custom event."
+msgstr ""
+
+#: ../../../addons.rst:78
+msgid "CSS variable customization"
+msgstr ""
+
+#: ../../../addons.rst:80
+msgid ""
+"Addons use CSS custom properties (`CSS variables <https://developer.mozilla."
+"org/en-US/docs/Web/CSS/--*>`_) to allow for easy customization. To customize "
+"addons, add CSS variable definitions to your theme's CSS:"
+msgstr ""
+
+#: ../../../addons.rst:83
+msgid ""
+":root {\n"
+"    /* Reduce Read the Docs' flyout font a little bit */\n"
+"    --readthedocs-flyout-font-size: 0.7rem;\n"
+"\n"
+"    /* Reduce Read the Docs' notification font a little bit */\n"
+"    --readthedocs-notification-font-size: 0.8rem;\n"
+"\n"
+"    /* This customization is not yet perfect because we can't change the "
+"`line-height` yet. */\n"
+"    /* See https://github.com/readthedocs/addons/issues/197 */\n"
+"    --readthedocs-search-font-size: 0.7rem;\n"
+"}"
+msgstr ""
+
+#: ../../../addons.rst:98
+msgid "CSS variables reference"
+msgstr ""
+
+#: ../../../addons.rst:0
+msgid "Click to see all available CSS variables"
+msgstr ""
+
+#: ../../../addons.rst:104
+msgid "**Global variables**"
+msgstr ""
+
+#: ../../../addons.rst:106
+msgid "``--readthedocs-font-size``"
+msgstr ""
+
+#: ../../../addons.rst:108
+msgid "**Flyout menu**"
+msgstr ""
+
+#: ../../../addons.rst:110
+msgid "``--readthedocs-flyout-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:111
+msgid "``--readthedocs-flyout-color``"
+msgstr ""
+
+#: ../../../addons.rst:112
+msgid "``--readthedocs-flyout-current-version-color``"
+msgstr ""
+
+#: ../../../addons.rst:113
+msgid "``--readthedocs-flyout-font-family``"
+msgstr ""
+
+#: ../../../addons.rst:114
+msgid "``--readthedocs-flyout-font-size``"
+msgstr ""
+
+#: ../../../addons.rst:115
+msgid "``--readthedocs-flyout-header-font-size``"
+msgstr ""
+
+#: ../../../addons.rst:116
+msgid "``--readthedocs-flyout-item-link-color``"
+msgstr ""
+
+#: ../../../addons.rst:117
+msgid "``--readthedocs-flyout-link-color``"
+msgstr ""
+
+#: ../../../addons.rst:118
+msgid "``--readthedocs-flyout-section-heading-color``"
+msgstr ""
+
+#: ../../../addons.rst:120
+msgid "**Notifications**"
+msgstr ""
+
+#: ../../../addons.rst:122
+msgid "``--readthedocs-notification-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:123
+msgid "``--readthedocs-notification-color``"
+msgstr ""
+
+#: ../../../addons.rst:124
+msgid "``--readthedocs-notification-font-family``"
+msgstr ""
+
+#: ../../../addons.rst:125
+msgid "``--readthedocs-notification-font-size``"
+msgstr ""
+
+#: ../../../addons.rst:126
+msgid "``--readthedocs-notification-link-color``"
+msgstr ""
+
+#: ../../../addons.rst:127
+msgid "``--readthedocs-notification-title-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:128
+msgid "``--readthedocs-notification-title-color``"
+msgstr ""
+
+#: ../../../addons.rst:129
+msgid "``--readthedocs-notification-toast-font-size``"
+msgstr ""
+
+#: ../../../addons.rst:131
+msgid "**Search**"
+msgstr ""
+
+#: ../../../addons.rst:133
+msgid "``--readthedocs-search-backdrop-color``"
+msgstr ""
+
+#: ../../../addons.rst:134
+msgid "``--readthedocs-search-color``"
+msgstr ""
+
+#: ../../../addons.rst:135
+msgid "``--readthedocs-search-content-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:136
+msgid "``--readthedocs-search-content-border-color``"
+msgstr ""
+
+#: ../../../addons.rst:137
+msgid "``--readthedocs-search-filters-border-color``"
+msgstr ""
+
+#: ../../../addons.rst:138
+msgid "``--readthedocs-search-font-family``"
+msgstr ""
+
+#: ../../../addons.rst:139
+msgid "``--readthedocs-search-font-size``"
+msgstr ""
+
+#: ../../../addons.rst:140
+msgid "``--readthedocs-search-footer-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:141
+msgid "``--readthedocs-search-footer-code-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:142
+msgid "``--readthedocs-search-footer-code-border-color``"
+msgstr ""
+
+#: ../../../addons.rst:143
+msgid "``--readthedocs-search-input-background-color``"
+msgstr ""
+
+#: ../../../addons.rst:144
+msgid "``--readthedocs-search-result-section-border-color``"
+msgstr ""
+
+#: ../../../addons.rst:145
+msgid "``--readthedocs-search-result-section-color``"
+msgstr ""
+
+#: ../../../addons.rst:146
+msgid "``--readthedocs-search-result-section-highlight-color``"
+msgstr ""
+
+#: ../../../addons.rst:147
+msgid "``--readthedocs-search-result-section-subheading-color``"
+msgstr ""
+
+#: ../../../addons.rst:149
+msgid ""
+"You can find default values and full CSS in our `Addons source <https://"
+"github.com/readthedocs/addons/tree/main/src>`_."
+msgstr ""
+
+#: ../../../addons.rst:152
+msgid "Custom event integration"
+msgstr ""
+
+#: ../../../addons.rst:154
+msgid ""
+"Read the Docs provides a custom event ``readthedocs-addons-data-ready`` that "
+"allows you to access the Addons data and integrate it into your theme or "
+"documentation. The event provides access to the version data, project "
+"information, and other Addons configuration."
+msgstr ""
+
+#: ../../../addons.rst:157
+msgid "To use the custom event:"
+msgstr ""
+
+#: ../../../addons.rst:159
+msgid "Add the required meta tag to your HTML template:"
+msgstr ""
+
+#: ../../../addons.rst:161
+msgid "<meta name=\"readthedocs-addons-api-version\" content=\"1\" />"
+msgstr ""
+
+#: ../../../addons.rst:165
+msgid "Add a JavaScript event listener to handle the data:"
+msgstr ""
+
+#: ../../../addons.rst:167
+msgid ""
+"document.addEventListener(\n"
+"  \"readthedocs-addons-data-ready\",\n"
+"  function (event) {\n"
+"    // Access the addons data\n"
+"    const config = event.detail.data();\n"
+"\n"
+"    // Example: Create a version selector\n"
+"    const versions = config.versions.active.map(version => ({\n"
+"      slug: version.slug,\n"
+"      url: version.urls.documentation\n"
+"    }));\n"
+"\n"
+"    // Use the data to build your UI\n"
+"    console.log('Available versions:', versions);\n"
+"  }\n"
+");"
+msgstr ""
+
+#: ../../../addons.rst:187
+msgid "Event data reference"
+msgstr ""
+
+#: ../../../addons.rst:189
+msgid ""
+"The ``event.detail.data()`` object contains all the Addons configuration, "
+"including:"
+msgstr ""
+
+#: ../../../addons.rst:191
+msgid "``addons`` - Individual addon configurations"
+msgstr ""
+
+#: ../../../addons.rst:192
+msgid "``builds.current`` - Details about the current build"
+msgstr ""
+
+#: ../../../addons.rst:193
+msgid "``projects.current`` - Current project details"
+msgstr ""
+
+#: ../../../addons.rst:194
+msgid "``projects.translations`` - Available translations"
+msgstr ""
+
+#: ../../../addons.rst:195
+msgid "``versions.current`` - Details about the current version"
+msgstr ""
+
+#: ../../../addons.rst:196
+msgid "``versions.active`` - List of all active and not hidden versions"
+msgstr ""
+
+#: ../../../addons.rst:0
+msgid "Click to see an example of the Addons data"
+msgstr ""
+
+#: ../../../addons.rst:200
+msgid ""
+"{\n"
+"\"addons\": {\n"
+"    \"Most of this config is currently for internal use.\": \"We are working "
+"on making this more public.\",\n"
+"},\n"
+"\"api_version\": \"1\",\n"
+"\"builds\": {\n"
+"    \"current\": {\n"
+"        \"commit\": \"6db46a36ed3da98de658b50c66b458bbfa513a4e\",\n"
+"        \"created\": \"2025-01-07T16:02:16.842871Z\",\n"
+"        \"duration\": 78,\n"
+"        \"error\": \"\",\n"
+"        \"finished\": \"2025-01-07T16:03:34.842Z\",\n"
+"        \"id\": 26773762,\n"
+"        \"project\": \"docs\",\n"
+"        \"state\": {\n"
+"            \"code\": \"finished\",\n"
+"            \"name\": \"Finished\"\n"
+"        },\n"
+"        \"success\": true,\n"
+"        \"urls\": {\n"
+"            \"build\": \"https://app.readthedocs.org/projects/docs/"
+"builds/26773762/\",\n"
+"            \"project\": \"https://app.readthedocs.org/projects/docs/\",\n"
+"            \"version\": \"https://app.readthedocs.org/projects/docs/version/"
+"stable/edit/\"\n"
+"        },\n"
+"        \"version\": \"stable\"\n"
+"    }\n"
+"},\n"
+"\"domains\": {\n"
+"    \"dashboard\": \"readthedocs.org\"\n"
+"},\n"
+"\"projects\": {\n"
+"    \"current\": {\n"
+"        \"created\": \"2016-12-20T06:26:09.098922Z\",\n"
+"        \"default_branch\": \"main\",\n"
+"        \"default_version\": \"stable\",\n"
+"        \"external_builds_privacy_level\": \"public\",\n"
+"        \"homepage\": null,\n"
+"        \"id\": 74581,\n"
+"        \"language\": {\n"
+"            \"code\": \"en\",\n"
+"            \"name\": \"English\"\n"
+"        },\n"
+"        \"modified\": \"2024-11-13T17:09:09.007795Z\",\n"
+"        \"name\": \"docs\",\n"
+"        \"privacy_level\": \"public\",\n"
+"        \"programming_language\": {\n"
+"            \"code\": \"py\",\n"
+"            \"name\": \"Python\"\n"
+"        },\n"
+"        \"repository\": {\n"
+"            \"type\": \"git\",\n"
+"            \"url\": \"https://github.com/readthedocs/readthedocs.org\"\n"
+"        },\n"
+"        \"single_version\": false,\n"
+"        \"slug\": \"docs\",\n"
+"        \"subproject_of\": null,\n"
+"        \"tags\": [\n"
+"            \"docs\",\n"
+"            \"python\",\n"
+"            \"sphinx-doc\"\n"
+"        ],\n"
+"        \"translation_of\": null,\n"
+"        \"urls\": {\n"
+"            \"builds\": \"https://app.readthedocs.org/projects/docs/builds/"
+"\",\n"
+"            \"documentation\": \"https://docs.readthedocs.io/en/stable/\",\n"
+"            \"downloads\": null,\n"
+"            \"home\": \"https://app.readthedocs.org/projects/docs/\",\n"
+"            \"versions\": \"https://app.readthedocs.org/projects/docs/"
+"versions/\"\n"
+"        },\n"
+"        \"users\": [\n"
+"            {\n"
+"                \"username\": \"eric\"\n"
+"            },\n"
+"            {\n"
+"                \"username\": \"davidfischer\"\n"
+"            },\n"
+"            {\n"
+"                \"username\": \"humitos\"\n"
+"            },\n"
+"            {\n"
+"                \"username\": \"plaindocs\"\n"
+"            },\n"
+"            {\n"
+"                \"username\": \"agj\"\n"
+"            },\n"
+"            {\n"
+"                \"username\": \"stsewd\"\n"
+"            }\n"
+"        ],\n"
+"        \"versioning_scheme\": \"multiple_versions_with_translations\"\n"
+"    },\n"
+"    \"translations\": []\n"
+"},\n"
+"\"readthedocs\": {\n"
+"    \"analytics\": {\n"
+"        \"code\": \"UA-17997319-1\"\n"
+"    }\n"
+"},\n"
+"\"versions\": {\n"
+"    \"active\": [\n"
+"        {\n"
+"            \"active\": true,\n"
+"            \"aliases\": [],\n"
+"            \"built\": true,\n"
+"            \"downloads\": {\n"
+"                \"epub\": \"https://docs.readthedocs.io/_/downloads/en/"
+"stable/epub/\",\n"
+"                \"htmlzip\": \"https://docs.readthedocs.io/_/downloads/en/"
+"stable/htmlzip/\"\n"
+"            },\n"
+"            \"hidden\": false,\n"
+"            \"id\": 2604018,\n"
+"            \"identifier\": \"6db46a36ed3da98de658b50c66b458bbfa513a4e\",\n"
+"            \"privacy_level\": \"public\",\n"
+"            \"ref\": \"11.18.0\",\n"
+"            \"slug\": \"stable\",\n"
+"            \"type\": \"tag\",\n"
+"            \"urls\": {\n"
+"                \"dashboard\": {\n"
+"                    \"edit\": \"https://app.readthedocs.org/projects/docs/"
+"version/stable/edit/\"\n"
+"                },\n"
+"                \"documentation\": \"https://docs.readthedocs.io/en/stable/"
+"\",\n"
+"                \"vcs\": \"https://github.com/readthedocs/readthedocs.org/"
+"tree/11.18.0/\"\n"
+"            },\n"
+"            \"verbose_name\": \"stable\"\n"
+"        }\n"
+"    ],\n"
+"    \"current\": {\n"
+"        \"active\": true,\n"
+"        \"aliases\": [],\n"
+"        \"built\": true,\n"
+"        \"downloads\": {\n"
+"            \"epub\": \"https://docs.readthedocs.io/_/downloads/en/stable/"
+"epub/\",\n"
+"            \"htmlzip\": \"https://docs.readthedocs.io/_/downloads/en/stable/"
+"htmlzip/\"\n"
+"        },\n"
+"        \"hidden\": false,\n"
+"        \"id\": 2604018,\n"
+"        \"identifier\": \"6db46a36ed3da98de658b50c66b458bbfa513a4e\",\n"
+"        \"privacy_level\": \"public\",\n"
+"        \"ref\": \"11.18.0\",\n"
+"        \"slug\": \"stable\",\n"
+"        \"type\": \"tag\",\n"
+"        \"urls\": {\n"
+"            \"dashboard\": {\n"
+"                \"edit\": \"https://app.readthedocs.org/projects/docs/"
+"version/stable/edit/\"\n"
+"            },\n"
+"            \"documentation\": \"https://docs.readthedocs.io/en/stable/\",\n"
+"            \"vcs\": \"https://github.com/readthedocs/readthedocs.org/"
+"tree/11.18.0/\"\n"
+"        },\n"
+"        \"verbose_name\": \"stable\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../addons.rst:353
+msgid ""
+"You can see a live example of this in our `Addons API response for these "
+"docs <https://docs.readthedocs.io/_/addons/?client-version=0.22.0&api-"
+"version=1&project-slug=docs&version-slug=stable>`_."
+msgstr ""
+
+#: ../../../addons.rst:356
+msgid "Example: creating a version selector"
+msgstr ""
+
+#: ../../../addons.rst:358
+msgid ""
+"Here's a complete example showing how to create a version selector using the "
+"Addons data:"
+msgstr ""
+
+#: ../../../addons.rst:360
+msgid ""
+"document.addEventListener(\n"
+"  \"readthedocs-addons-data-ready\",\n"
+"  function (event) {\n"
+"    const config = event.detail.data();\n"
+"\n"
+"    // Create the version selector HTML\n"
+"    const versionSelector = `\n"
+"      <div class=\"version-selector\">\n"
+"        <select onchange=\"window.location.href=this.value\">\n"
+"          <option value=\"${config.versions.current.urls.documentation}\">\n"
+"            ${config.versions.current.slug}\n"
+"          </option>\n"
+"          ${config.versions.active\n"
+"            .filter(v => v.slug !== config.versions.current.slug)\n"
+"            .map(version => `\n"
+"              <option value=\"${version.urls.documentation}\">\n"
+"                ${version.slug}\n"
+"              </option>\n"
+"            `).join('')}\n"
+"        </select>\n"
+"      </div>\n"
+"    `;\n"
+"\n"
+"    // Insert the version selector into your page\n"
+"    document.querySelector('#your-target-element')\n"
+"      .insertAdjacentHTML('beforeend', versionSelector);\n"
+"  }\n"
+");"
+msgstr ""
+
+#: ../../../addons.rst:392
+msgid "Diving deeper"
+msgstr ""
+
+#: ../../../addons.rst:394
+msgid ""
+"You can read more about all of the Addons functionality by diving into each "
+"Addon above. If you are a developer and would like to integrate with our "
+"Addons or use our existing data, you can :doc:`reach out </support>` to us "
+"and we would love to work with you."
+msgstr ""

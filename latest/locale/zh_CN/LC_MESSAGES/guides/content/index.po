@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/content/index.rst:55
+msgid "Search engine optimization (SEO) for documentation projects"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Using traffic analytics"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Using search analytics"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Enabling offline formats"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Embedding content from your documentation"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Managing translations for Sphinx projects"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Supporting Unicode in Sphinx PDFs"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Cross-referencing with Sphinx"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Linking to other projects with Intersphinx"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Using Jupyter notebooks in Sphinx"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Migrating from rST to MyST"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Adding custom CSS or JavaScript to Sphinx documentation"
+msgstr ""
+
+#: ../../../guides/content/index.rst:55
+msgid "Adding \"Edit Source\" links on your Sphinx theme"
+msgstr ""
+
+#: ../../../guides/content/index.rst:2
+msgid "How-to guides: content, themes and SEO"
+msgstr ""
+
+#: ../../../guides/content/index.rst:4
+msgid ""
+"⏩️ :doc:`Search engine optimization (SEO) for documentation projects </"
+"guides/technical-docs-seo-guide>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:5
+msgid ""
+"This article explains how documentation can be optimized to appear in search "
+"results, ultimately increasing traffic to your docs."
+msgstr ""
+
+#: ../../../guides/content/index.rst:8
+msgid "⏩️ :doc:`Using traffic analytics </traffic-analytics>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:9
+msgid ""
+"In this guide, you can learn to use Read the Docs' built-in traffic "
+"analytics for your documentation project."
+msgstr ""
+
+#: ../../../guides/content/index.rst:11
+msgid ""
+"⏩️ :doc:`Managing translations for Sphinx projects </guides/manage-"
+"translations-sphinx>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:12
+msgid ""
+"This guide walks through the process needed to manage translations of your "
+"documentation. Once this work is done, you can setup your project under Read "
+"the Docs to build each language of your documentation by reading :doc:`/"
+"localization`."
+msgstr ""
+
+#: ../../../guides/content/index.rst:15
+msgid ""
+"⏩️ :doc:`Supporting Unicode in Sphinx PDFs </guides/pdf-non-ascii-languages>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:16
+msgid ""
+"Sphinx offers different LaTeX engines that have better support for Unicode "
+"characters, relevant for instance for Japanese or Chinese."
+msgstr ""
+
+#: ../../../guides/content/index.rst:18
+msgid ""
+"⏩️ :doc:`Cross-referencing with Sphinx </guides/cross-referencing-with-"
+"sphinx>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:19
+msgid ""
+"When writing documentation you often need to link to other pages of your "
+"documentation, other sections of the current page, or sections from other "
+"pages."
+msgstr ""
+
+#: ../../../guides/content/index.rst:22
+msgid ""
+"⏩️ :doc:`Linking to other projects with Intersphinx </guides/intersphinx>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:23
+msgid ""
+"This section shows you how to maintain references to named sections of other "
+"external Sphinx projects."
+msgstr ""
+
+#: ../../../guides/content/index.rst:25
+msgid "⏩️ :doc:`Using Jupyter notebooks in Sphinx </guides/jupyter>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:26
+msgid ""
+"There are a few extensions that allow integrating Jupyter and Sphinx, and "
+"this document will explain how to achieve some of the most commonly "
+"requested features."
+msgstr ""
+
+#: ../../../guides/content/index.rst:29
+msgid "⏩️ :doc:`Migrating from rST to MyST </guides/migrate-rest-myst>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:30
+msgid ""
+"In this guide, you will find how you can start writing Markdown in your "
+"existing reStructuredText project, or migrate it completely."
+msgstr ""
+
+#: ../../../guides/content/index.rst:34
+msgid "⏩️ :doc:`Enabling offline formats </guides/enable-offline-formats>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:35
+msgid ""
+"This guide provides step-by-step instructions to enabling offline formats of "
+"your documentation."
+msgstr ""
+
+#: ../../../guides/content/index.rst:37
+msgid "⏩️ :doc:`Using search analytics </search-analytics>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:38
+msgid ""
+"In this guide, you can learn to use Read the Docs' built-in search analytics "
+"for your documentation project."
+msgstr ""
+
+#: ../../../guides/content/index.rst:40
+msgid ""
+"⏩️ :doc:`Adding custom CSS or JavaScript to Sphinx documentation </guides/"
+"adding-custom-css>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:41
+msgid ""
+"Adding additional CSS or JavaScript files to your Sphinx documentation can "
+"let you customize the look and feel of your docs or add additional "
+"functionality."
+msgstr ""
+
+#: ../../../guides/content/index.rst:45
+msgid ""
+"⏩️ :doc:`Embedding content from your documentation </guides/embedding-"
+"content>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:46
+msgid ""
+"Did you know that Read the Docs has a public API that you can use to embed "
+"documentation content? There are a number of use cases for embedding "
+"content, so we've built our integration in a way that enables users to build "
+"on top of it."
+msgstr ""
+
+#: ../../../guides/content/index.rst:50
+msgid ""
+"⏩️ :doc:`Adding \"Edit Source\" links on your Sphinx theme </guides/edit-"
+"source-links-sphinx>`"
+msgstr ""
+
+#: ../../../guides/content/index.rst:51
+msgid ""
+"Using your own theme? Add some extra variables in the Sphinx "
+"``html_context``, to add an \"edit source\" link at the top of all pages."
+msgstr ""

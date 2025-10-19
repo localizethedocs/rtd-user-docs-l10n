@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/mkdocs.rst:-1
+msgid "Hosting MkDocs sites on Read the Docs."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:2
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:7
+msgid ""
+"`MkDocs`_ is a fast, simple static site generator that's geared towards "
+"building project documentation. MkDocs is written in Python, and supports "
+"documentation written in Markdown. When using MkDocs, we recommend using the "
+"`Material for MkDocs`_ theme, and this guide is mostly focused on the "
+"integration required to make it work well on Read the Docs."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:12
+msgid ""
+"Minimal configuration is required to build an existing MkDocs project on "
+"Read the Docs:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:14
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:14
+msgid ""
+" version: 2\n"
+"\n"
+" build:\n"
+"   os: \"ubuntu-24.04\"\n"
+"   tools:\n"
+"     python: \"3\"\n"
+"   # We recommend using a requirements file for reproducible builds.\n"
+"   # This is just a quick example to get started.\n"
+"   # https://docs.readthedocs.io/page/guides/reproducible-builds.html\n"
+"   jobs:\n"
+"     pre_install:\n"
+"       - pip install mkdocs-material\n"
+"\n"
+" mkdocs:\n"
+"   configuration: mkdocs.yml"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:37
+msgid "Configuring Material for MkDocs on Read the Docs"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:39
+msgid ""
+"In order to use the Material for MkDocs theme on Read the Docs, you need to "
+"install and configure it. In your `mkdocs.yml` file, set the theme to "
+"`material`:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:43 ../../../intro/mkdocs.rst:74
+#: ../../../intro/mkdocs.rst:111 ../../../intro/mkdocs.rst:173
+msgid "mkdocs.yml"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:43
+msgid ""
+" theme:\n"
+"   name: material"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:49
+msgid ""
+"With these changes, your MkDocs project will use the Material for MkDocs "
+"theme when built on Read the Docs, and should work with the configuration "
+"file shown above."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:53
+msgid "Quick start"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:55
+msgid ""
+"You can use our :ref:`MkDocs example project <examples:mkdocs>` as a "
+"reference to create a new MkDocs project."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:56
+msgid ""
+"If you have an existing MkDocs project you want to host on Read the Docs, "
+"check out our :doc:`/intro/add-project` guide."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:57
+msgid ""
+"If you're new to MkDocs, check out the official `Getting Started <https://"
+"www.mkdocs.org/getting-started/>`_ guide."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:60
+msgid "Configuring MkDocs and Read the Docs Addons"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:62
+msgid ""
+"There are some additional steps you can take to configure your MkDocs "
+"project to work better with Read the Docs, and these apply to all MkDocs "
+"projects."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:66
+msgid "Set the canonical URL"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:68
+msgid ""
+"A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
+"version of a web page to prevent duplicated content."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:71
+msgid ""
+"Set your MkDocs `site URL`_ to your Read the Docs canonical URL using a :doc:"
+"`Read the Docs environment variable </reference/environment-variables>`:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:74
+msgid "site_url: !ENV READTHEDOCS_CANONICAL_URL"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:82
+msgid "Configuring Material for MkDocs and Read the Docs Addons"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:84
+msgid ""
+"`Material for MkDocs`_ is a powerful documentation theme on top of MkDocs. "
+"The following steps are specific to integrating Material for MkDocs and Read "
+"the Docs."
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:92
+msgid "Configure Read the Docs search"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:94
+msgid ""
+"To configure your site to use :doc:`Read the Docs search </server-side-"
+"search/index>` instead of the default search:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:96
+msgid "Add the following block of JavaScript:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:98 ../../../intro/mkdocs.rst:136
+msgid "javascript/readthedocs.js"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:98
+msgid ""
+"document.addEventListener(\"DOMContentLoaded\", function(event) {\n"
+"// Trigger Read the Docs' search addon instead of Material MkDocs default\n"
+"document.querySelector(\".md-search__input\").addEventListener(\"focus\", "
+"(e) => {\n"
+"        const event = new CustomEvent(\"readthedocs-search-show\");\n"
+"        document.dispatchEvent(event);\n"
+"    });\n"
+"});"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:109
+msgid "Include ``javascript/readthedocs.js`` in your MkDocs configuration:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:111 ../../../intro/mkdocs.rst:173
+msgid ""
+"extra_javascript:\n"
+"    - javascript/readthedocs.js"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:118
+msgid "Integrate the Read the Docs version menu into your site navigation"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:120
+msgid ""
+"To integrate the :ref:`flyout-menu:Addons flyout menu` version menu into "
+"your site navigation:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:122
+msgid ""
+"Override the ``main.html`` template to include the data in the ``meta`` "
+"attribute:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:124
+msgid "overrides/main.html"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:124
+msgid ""
+"{% extends \"base.html\" %}\n"
+"\n"
+"{% block site_meta %}\n"
+"{{ super() }}\n"
+"<meta name=\"readthedocs-addons-api-version\" content=\"1\" />\n"
+"{% endblock %}"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:134
+msgid ""
+"Parse the version data into a dropdown menu using JS in ``javascript/"
+"readthedocs.js``:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:136
+msgid ""
+"// Use CustomEvent to generate the version selector\n"
+"document.addEventListener(\n"
+"        \"readthedocs-addons-data-ready\",\n"
+"        function (event) {\n"
+"        const config = event.detail.data();\n"
+"        const versioning = `\n"
+"<div class=\"md-version\">\n"
+"<button class=\"md-version__current\" aria-label=\"Select version\">\n"
+"    ${config.versions.current.slug}\n"
+"</button>\n"
+"\n"
+"<ul class=\"md-version__list\">\n"
+"${ config.versions.active.map(\n"
+"    (version) => `\n"
+"    <li class=\"md-version__item\">\n"
+"    <a href=\"${ version.urls.documentation }\" class=\"md-version__link\">\n"
+"        ${ version.slug }\n"
+"    </a>\n"
+"            </li>`).join(\"\\n\")}\n"
+"</ul>\n"
+"</div>`;\n"
+"\n"
+"    // Check if we already added versions and remove them if so.\n"
+"    // This happens when using the \"Instant loading\" feature.\n"
+"    // See https://squidfunk.github.io/mkdocs-material/setup/setting-up-"
+"navigation/#instant-loading\n"
+"    const currentVersions = document.querySelector(\".md-version\");\n"
+"    if (currentVersions !== null) {\n"
+"      currentVersions.remove();\n"
+"    }\n"
+"    document.querySelector(\".md-header__topic\")."
+"insertAdjacentHTML(\"beforeend\", versioning);\n"
+"});"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:171
+msgid ""
+"Make sure that ``javascript/readthedocs.js`` is included in your MkDocs "
+"configuration:"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:180
+msgid "Example repository and demo"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:182
+msgid "Example repository"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:183
+msgid "https://github.com/readthedocs/test-builds/tree/mkdocs-material"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:185
+msgid "Demo"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:186
+msgid "https://test-builds.readthedocs.io/en/mkdocs-material/"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:189
+msgid "Further reading"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:191
+msgid "`Material for MkDocs documentation`_"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:192
+msgid "`Markdown syntax guide`_"
+msgstr ""
+
+#: ../../../intro/mkdocs.rst:193
+msgid "`Writing your docs with MkDocs`_"
+msgstr ""

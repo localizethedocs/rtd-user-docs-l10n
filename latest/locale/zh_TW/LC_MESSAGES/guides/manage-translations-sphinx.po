@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/manage-translations-sphinx.rst:2
+msgid "How to manage translations for Sphinx projects"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:4
+msgid ""
+"This guide walks through the process needed to manage translations of your "
+"documentation. Once this work is done, you can setup your project under Read "
+"the Docs to build each language of your documentation by reading :doc:`/"
+"localization`."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:8
+msgid "Overview"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:10
+msgid ""
+"There are many different ways to manage documentation in multiple languages "
+"by using different tools or services. All of them have their pros and cons "
+"depending on the context of your project or organization."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:13
+msgid ""
+"In this guide we will focus our efforts around two different methods: manual "
+"and using Transifex_."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:15
+msgid ""
+"In both methods, we need to follow these steps to translate our "
+"documentation:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:17
+msgid ""
+"Create translatable files (``.pot`` and ``.po`` extensions) from source "
+"language"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:18
+msgid ""
+"Translate the text on those files from source language to target language"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:19
+msgid "Build the documentation in *target language* using the translated texts"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:21
+msgid ""
+"Besides these steps, once we have published our first translated version of "
+"our documentation, we will want to keep it updated from the source language. "
+"At that time, the workflow would be:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:24
+msgid "Update our translatable files from source language"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:25
+msgid ""
+"Translate only *new* and *modified* texts in source language into target "
+"language"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:26
+msgid "Build the documentation using the most up to date translations"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:30
+msgid "Create translatable files"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:32
+msgid ""
+"To generate these ``.pot`` files it's needed to run this command from your "
+"``docs/`` directory:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:38
+msgid "sphinx-build -b gettext . _build/gettext"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:41
+msgid ""
+"We recommend configuring Sphinx to use gettext_uuid_ as ``True`` and also "
+"gettext_compact_ as ``False`` to generate ``.pot`` files."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:50
+msgid "This command will leave the generated files under ``_build/gettext``."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:54
+msgid "Translate text from source language"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:57
+msgid "Manually"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:59
+msgid "We recommend using `sphinx-intl`_ tool for this workflow."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:63
+msgid "First, you need to install it:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:69
+msgid "pip install sphinx-intl"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:70
+msgid ""
+"As a second step, we want to create a directory with each translated file "
+"per target language (in this example we are using Spanish/Argentina and "
+"Portuguese/Brazil). This can be achieved with the following command:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:77
+msgid "sphinx-intl update -p _build/gettext -l es_AR -l pt_BR"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:78
+msgid ""
+"This command will create a directory structure similar to the following "
+"(with one ``.po`` file per ``.rst`` file in your documentation)::"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:81
+msgid ""
+"locale\n"
+"├── es_AR\n"
+"│   └── LC_MESSAGES\n"
+"│       └── index.po\n"
+"└── pt_BR\n"
+"    └── LC_MESSAGES\n"
+"        └── index.po"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:90
+msgid ""
+"Now, you can just open those ``.po`` files with a text editor and translate "
+"them taking care of no breaking the reST notation. Example:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:93
+msgid ""
+"# b8f891b8443f4a45994c9c0a6bec14c3\n"
+"#: ../../index.rst:4\n"
+"msgid \"\"\n"
+"\"Read the Docs hosts documentation for the open source community.\"\n"
+"\"It supports :ref:`Sphinx <sphinx>` docs written with reStructuredText.\"\n"
+"msgstr \"\"\n"
+"\"FILL HERE BY TARGET LANGUAGE FILL HERE BY TARGET LANGUAGE FILL HERE \"\n"
+"\"BY TARGET LANGUAGE :ref:`Sphinx <sphinx>` FILL HERE.\""
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:106
+msgid "Using Transifex"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:108
+msgid ""
+"Transifex_ is a platform that simplifies the manipulation of ``.po`` files "
+"and offers many useful features to make the translation process as smooth as "
+"possible. These features includes a great web based UI, `Translation "
+"Memory`_, collaborative translation, etc."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:114
+msgid ""
+"You need to create an account in their service and a new project before "
+"start."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:116
+msgid ""
+"After that, you need to install the `Transifex CLI`_ tool which will help "
+"you in the process to upload source files, update them and also download "
+"translated files. To do this, run this command:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:124
+msgid ""
+"curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | "
+"bash"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:125
+msgid ""
+"After installing it, you need to configure your account. For this, you need "
+"to create an API Token for your user to access this service through the "
+"command line. This can be done under your `User's Settings`_."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:131
+msgid ""
+"With the token, you have two options: to export as ``TX_TOKEN`` environment "
+"variable or to store it in ``~/.transifexrc``."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:133
+msgid ""
+"You can export the token to an environment variable, using an ``export`` "
+"command, which activates it in your current command line session:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:139
+msgid ""
+"# ``1/xxxx`` is the API token you generated\n"
+"export TX_TOKEN=1/xxxx"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:140
+msgid ""
+"In order to store the token permanently, you can save it in a ``~/."
+"transifexrc`` file. It should look like this:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:143
+msgid ""
+"[https://www.transifex.com]\n"
+"rest_hostname = https://rest.api.transifex.com\n"
+"token         = 1/xxxx"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:150
+msgid ""
+"Now, it is time to set the project's Transifex configuration and to map "
+"every ``.pot`` file you have created in the previous step to a resource "
+"under Transifex. To achieve this, you need to run this command:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:162
+msgid ""
+"sphinx-intl create-txconfig\n"
+"sphinx-intl update-txconfig-resources \\\n"
+"    --pot-dir _build/gettext \\\n"
+"    --locale-dir locale \\\n"
+"    --transifex-organization-name $TRANSIFEX_ORGANIZATION \\\n"
+"    --transifex-project-name $TRANSIFEX_PROJECT"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:163
+msgid ""
+"This command will generate a file at ``.tx/config`` with all the information "
+"needed by the ``tx`` tool to keep your translation synchronized."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:170
+msgid ""
+"Finally, you need to upload these files to Transifex platform so translators "
+"can start their work. To do this, you can run this command:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:177
+msgid "tx push --source"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:178
+msgid ""
+"Now, you can go to your Transifex's project and check that there is one "
+"resource per ``.rst`` file of your documentation. After the source files are "
+"translated using Transifex, you can download all the translations for all "
+"the languages by running:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:184
+msgid "tx pull --all"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:185
+msgid ""
+"This command will leave the ``.po`` files needed for building the "
+"documentation in the target language under ``locale/<lang>/LC_MESSAGES``."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:189
+msgid ""
+"It's important to use always the same method to translate the documentation "
+"and do not mix them. Otherwise, it's very easy to end up with inconsistent "
+"translations or losing already translated text."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:194
+msgid "Build the documentation in target language"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:197
+msgid ""
+"Finally, to build our documentation in Spanish(Argentina) we need to tell "
+"Sphinx builder the target language with the following command:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:202
+msgid "sphinx-build -b html -D language=es_AR . _build/html/es_AR"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:205
+msgid ""
+"There is no need to create a new ``conf.py`` to redefine the ``language`` "
+"for the Spanish version of this documentation, but you need to set "
+"locale_dirs_ to ``[\"locale\"]`` for Sphinx to find the translated content."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:210
+msgid ""
+"After running this command, the Spanish(Argentina) version of your "
+"documentation will be under ``_build/html/es_AR``."
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:214
+msgid "Summary"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:217
+msgid "Update sources to be translated"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:219
+msgid ""
+"Once you have done changes in your documentation, you may want to make these "
+"additions/modifications available for translators so they can update it:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:221
+msgid "Create the ``.pot`` files:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:233
+msgid "Push new files to Transifex"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:241
+msgid "Build documentation from up to date translation"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:243
+msgid ""
+"When translators have finished their job, you may want to update the "
+"documentation by pulling the changes from Transifex:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:245
+msgid "Pull up to date translations from Transifex:"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:251
+msgid "Commit and push these changes to our repo"
+msgstr ""
+
+#: ../../../guides/manage-translations-sphinx.rst:259
+msgid ""
+"The last ``git push`` will trigger a build per translation defined as part "
+"of your project under Read the Docs and make it immediately available."
+msgstr ""

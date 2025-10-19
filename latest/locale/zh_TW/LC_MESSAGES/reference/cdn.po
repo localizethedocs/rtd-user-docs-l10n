@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/cdn.rst:2
+msgid "Content Delivery Network (CDN) and caching"
+msgstr ""
+
+#: ../../../reference/cdn.rst:4
+msgid ""
+"A CDN is used for making documentation pages *fast* for your users. CDNs "
+"increase speed by caching documentation content in multiple data centers "
+"around the world, and then serving docs from the data center closest to the "
+"user."
+msgstr ""
+
+#: ../../../reference/cdn.rst:8
+msgid "We support CDNs on both of our sites:"
+msgstr ""
+
+#: ../../../reference/cdn.rst:10
+msgid "On |org_brand|,"
+msgstr ""
+
+#: ../../../reference/cdn.rst:11
+msgid ""
+"we are able to provide a CDN to all the projects that we host. This service "
+"is graciously sponsored by `Cloudflare`_."
+msgstr ""
+
+#: ../../../reference/cdn.rst:13
+msgid "On |com_brand|,"
+msgstr ""
+
+#: ../../../reference/cdn.rst:14
+msgid ""
+"the CDN is included as part of all of our plans. We use `Cloudflare`_ for "
+"this as well."
+msgstr ""
+
+#: ../../../reference/cdn.rst:18
+msgid "CDN benefits"
+msgstr ""
+
+#: ../../../reference/cdn.rst:20
+msgid "Having a CDN in front of your documentation has many benefits:"
+msgstr ""
+
+#: ../../../reference/cdn.rst:22
+msgid ""
+"**Improved reliability**: Since docs are served from multiple places, one "
+"can go down and the docs are still accessible."
+msgstr ""
+
+#: ../../../reference/cdn.rst:23
+msgid ""
+"**Improved performance**: Data takes time to travel across space, so "
+"connecting to a server closer to the user makes documentation load faster."
+msgstr ""
+
+#: ../../../reference/cdn.rst:26
+msgid "Automatic cache refresh"
+msgstr ""
+
+#: ../../../reference/cdn.rst:28
+msgid ""
+"We automatically refresh the cache on the CDN when the following actions "
+"happen:"
+msgstr ""
+
+#: ../../../reference/cdn.rst:30
+msgid "Your project is saved."
+msgstr ""
+
+#: ../../../reference/cdn.rst:31
+msgid "Your domain is saved."
+msgstr ""
+
+#: ../../../reference/cdn.rst:32
+msgid "A new version of your documentation is built."
+msgstr ""
+
+#: ../../../reference/cdn.rst:34
+msgid ""
+"By refreshing the cache according to these rules, readers should **never see "
+"outdated content**. This makes the end-user experience seamless and fast."
+msgstr ""
