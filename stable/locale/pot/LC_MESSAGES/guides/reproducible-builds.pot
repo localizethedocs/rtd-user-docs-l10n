@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/reproducible-builds.rst:2
+msgid "How to create reproducible builds"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:4
+msgid ""
+"Your documentation depends on a number of dependencies to be built. If your "
+"docs don't have :term:`reproducible` builds, an update in a dependency can "
+"break your builds when least expected, or make your docs look different from "
+"your local version. This guide will help you to keep your builds working "
+"over time, so that you can focus on content."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:13
+msgid "Contents"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:16
+msgid ""
+"This page explains how to pin the versions that correctly build your "
+"project. The versions used in this page are just for illustrative purpose. "
+"They are not the latest nor the recommended versions. It is up to you to "
+"find those versions."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:22
+msgid "Define OS and tool versions in the config file"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:24
+msgid ""
+"We recommend defining the explicit version of the OS and tool versions used "
+"to build your documentation using the ``.readthedocs.yaml``. This file "
+"*provides you per version settings*, and *those settings live in your Git "
+"repository*."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:29
+msgid ""
+"This allows you to validate changes using :doc:`pull requests </pull-"
+"requests>`, and ensures that all your versions can be rebuilt from a "
+"reproducible configuration."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:33
+#: ../../../guides/reproducible-builds.rst:54
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:33
+msgid ""
+"version: 2\n"
+"\n"
+"# Explicitly set the OS and Python versions\n"
+"build:\n"
+"  os: \"ubuntu-24.04\"\n"
+"  tools:\n"
+"    nodejs: \"20\"\n"
+"    python: \"3.12\""
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:47
+msgid "Use a requirements file for Python dependencies"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:49
+msgid ""
+"We recommend using a Pip :ref:`requirements file <pip:requirements-file-"
+"format>` or Conda :ref:`environment file <config-file/v2:conda.environment>` "
+"to :term:`pin <pinning>` Python dependencies. This ensures that top-level "
+"dependencies and extensions don't change."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:52
+msgid "A configuration file with explicit dependencies looks like this:"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:54
+msgid ""
+"# Explicitly set the version of Python and its requirements\n"
+"python:\n"
+"  install:\n"
+"    - requirements: docs/requirements.txt"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:63
+#: ../../../guides/reproducible-builds.rst:95
+msgid "docs/requirements.txt"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:63
+msgid ""
+"# Defining the exact version will make sure things don't break\n"
+"sphinx==5.3.0\n"
+"sphinx_rtd_theme==1.1.1\n"
+"sphinx-notfound-page==1.0.2"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:73
+msgid ""
+"Remember to update your docs' dependencies from time to time to get new "
+"improvements and fixes. It also makes it easy to manage in case a version "
+"reaches its end of support date."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:77
+msgid "Pin your transitive dependencies"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:79
+msgid ""
+"Once you have :term:`pinned <pinning>` your own dependencies, the next "
+"things to worry about are the dependencies of your dependencies. These are "
+"called *transitive dependencies*, and they can upgrade without warning if "
+"you do not pin these packages as well."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:84
+msgid ""
+"We recommend `pip-tools`_ to help address this problem. It allows you to "
+"specify a ``requirements.in`` file with your top-level dependencies, and it "
+"generates a ``requirements.txt`` file with the full set of transitive "
+"dependencies pinned."
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:90
+msgid "docs/requirements.in"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:90
+msgid "sphinx==5.3.0"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:95
+msgid ""
+"#\n"
+"# This file is autogenerated by pip-compile with Python 3.10\n"
+"# by the following command:\n"
+"#\n"
+"#    pip-compile docs.in\n"
+"#\n"
+"alabaster==0.7.12\n"
+"    # via sphinx\n"
+"babel==2.11.0\n"
+"    # via sphinx\n"
+"certifi==2022.12.7\n"
+"    # via requests\n"
+"charset-normalizer==2.1.1\n"
+"    # via requests\n"
+"docutils==0.19\n"
+"    # via sphinx\n"
+"idna==3.4\n"
+"    # via requests\n"
+"imagesize==1.4.1\n"
+"    # via sphinx\n"
+"jinja2==3.1.2\n"
+"    # via sphinx\n"
+"markupsafe==2.1.1\n"
+"    # via jinja2\n"
+"packaging==22.0\n"
+"    # via sphinx\n"
+"pygments==2.13.0\n"
+"    # via sphinx\n"
+"pytz==2022.7\n"
+"    # via babel\n"
+"requests==2.28.1\n"
+"    # via sphinx\n"
+"snowballstemmer==2.2.0\n"
+"    # via sphinx\n"
+"sphinx==5.3.0\n"
+"    # via -r docs.in\n"
+"sphinxcontrib-applehelp==1.0.2\n"
+"    # via sphinx\n"
+"sphinxcontrib-devhelp==1.0.2\n"
+"    # via sphinx\n"
+"sphinxcontrib-htmlhelp==2.0.0\n"
+"    # via sphinx\n"
+"sphinxcontrib-jsmath==1.0.1\n"
+"    # via sphinx\n"
+"sphinxcontrib-qthelp==1.0.3\n"
+"    # via sphinx\n"
+"sphinxcontrib-serializinghtml==1.1.5\n"
+"    # via sphinx\n"
+"urllib3==1.26.13\n"
+"    # via requests"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:151
+msgid ":doc:`/config-file/v2`"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:152
+msgid "Configuration file reference"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:153
+msgid ":doc:`/builds`"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:154
+msgid "Build process information"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:155
+msgid ":doc:`/build-customization`"
+msgstr ""
+
+#: ../../../guides/reproducible-builds.rst:156
+msgid "Customizing builds to do more"
+msgstr ""

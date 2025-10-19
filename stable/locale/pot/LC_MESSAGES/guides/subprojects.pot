@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/subprojects.rst:2
+msgid "Managing subprojects"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:4
+msgid ""
+"Subprojects can be used to nest projects together under a single parent "
+"project, which is most commonly used to share a single custom domain across "
+"multiple projects."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:9
+msgid ":doc:`/subprojects`"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:10
+msgid ""
+"Learn what the subproject feature can do, how it works, and how to use "
+"custom domains and subproject aliases."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:14
+msgid "Adding a subproject"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:16
+msgid ""
+"The following steps can be used to connect two existing projects together:"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:18
+msgid ""
+"Go to :menuselection:`Settings --> Subprojects` for the project that will "
+"act as your **parent project**."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:20
+msgid "Click :guilabel:`Add subproject`"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:22
+msgid ""
+"Choose a project to connect as a subproject using the :guilabel:`Subproject` "
+"dropdown"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:26
+msgid "For users of |org_brand|"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:27
+msgid ""
+"You need to be *maintainer* of a subproject in order to choose it from your "
+"main project."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:29
+msgid "For users of |com_brand|"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:30
+msgid ""
+"You need to have *admin access* to the subproject in order to choose it from "
+"your main project."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:32 ../../../guides/subprojects.rst:36
+msgid "Project subproject creation"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:38
+msgid ""
+"If you would like the subproject to use a different name in the URL "
+"structure of your built documentation, you can alter that subproject :"
+"guilabel:`Alias` field -- otherwise leave this blank."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:41
+msgid "Click on :guilabel:`Add subproject`"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:43
+msgid ""
+"After adding the subproject, the URL the project is served from will by "
+"changed to the URL displayed in the updated list of subprojects."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:46 ../../../guides/subprojects.rst:50
+msgid "Project subproject list with a new subproject added"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:60
+msgid "Updating a subproject"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:62
+msgid ""
+"You can update a subproject by clicking the configure button |button-edit| "
+"in the list of subprojects. On the following page, it's possible to change "
+"both the subproject and its alias using the :guilabel:`Subproject` dropdown "
+"and the :guilabel:`Alias` field. Click :guilabel:`Update subproject` to save "
+"your changes."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:52
+msgid "Configure button"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:67
+msgid ""
+"The URL the subproject documentation is served from will be updated after "
+"you save your changes."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:70
+msgid "Deleting a subproject"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:72
+msgid ""
+"You can delete a subproject connection by clicking the delete button |button-"
+"delete| in the list of subprojects. Confirm the deletion on the popup that "
+"shows to delete the subproject connection."
+msgstr ""
+
+#: ../../../guides/subprojects.rst:55
+msgid "Delete button"
+msgstr ""
+
+#: ../../../guides/subprojects.rst:75
+msgid ""
+"The subproject connection will be removed and the project that was "
+"configured as a subproject will return to being served from it's own domain. "
+"**This will not remove either project, only the subproject relationship will "
+"be removed.**"
+msgstr ""

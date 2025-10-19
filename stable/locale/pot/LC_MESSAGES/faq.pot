@@ -1,0 +1,536 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../faq.rst:2
+msgid "Frequently asked questions"
+msgstr ""
+
+#: ../../../faq.rst:14
+msgid "Building and publishing your project"
+msgstr ""
+
+#: ../../../faq.rst:21
+msgid "Why does my project have status \"failing\"?"
+msgstr ""
+
+#: ../../../faq.rst:23
+msgid ""
+"Projects have the status \"failing\" because something in the build process "
+"has failed. This can be because the project is not correctly configured, "
+"because the contents of the Git repository cannot be built, or in the most "
+"rare cases because a system that Read the Docs connects to is not working."
+msgstr ""
+
+#: ../../../faq.rst:28
+msgid ""
+"First, you should check out the :guilabel:`Builds` tab of your project. By "
+"clicking on the failing step, you will be able to see details that can lead "
+"to resolutions to your build error."
+msgstr ""
+
+#: ../../../faq.rst:32
+msgid ""
+"If the solution is not self-evident, you can use an important word or "
+"message from the error to search for a solution."
+msgstr ""
+
+#: ../../../faq.rst:37
+msgid ":doc:`/guides/build-troubleshooting`"
+msgstr ""
+
+#: ../../../faq.rst:38
+msgid "Common errors and solutions for build failures."
+msgstr ""
+
+#: ../../../faq.rst:40 ../../../faq.rst:133
+msgid "Other FAQ entries"
+msgstr ""
+
+#: ../../../faq.rst:41 ../../../faq.rst:134
+msgid ""
+":ref:`faq:How do I add additional software dependencies for my documentation?"
+"`"
+msgstr ""
+
+#: ../../../faq.rst:42
+msgid ""
+":ref:`faq:why do i get import errors from libraries depending on c modules?`"
+msgstr ""
+
+#: ../../../faq.rst:46
+msgid "Why do I get import errors from libraries depending on C modules?"
+msgstr ""
+
+#: ../../../faq.rst:50
+msgid "Another use case for this is when you have a module with a C extension."
+msgstr ""
+
+#: ../../../faq.rst:52
+msgid ""
+"This happens because the build system does not have the dependencies for "
+"building your project, such as C libraries needed by some Python packages (e."
+"g. ``libevent`` or ``mysql``). For libraries that cannot be :ref:`installed "
+"via apt <config-file/v2:build.apt_packages>` in the builder there is another "
+"way to successfully build the documentation despite missing dependencies."
+msgstr ""
+
+#: ../../../faq.rst:58
+msgid ""
+"With Sphinx you can use the built-in `autodoc_mock_imports`_ for mocking. If "
+"such libraries are installed via ``setup.py``, you also will need to remove "
+"all the C-dependent libraries from your ``install_requires`` in the Read the "
+"Docs environment."
+msgstr ""
+
+#: ../../../faq.rst:66
+msgid "Where do I need to put my docs for Read the Docs to find it?"
+msgstr ""
+
+#: ../../../faq.rst:68
+msgid ""
+"You can put your docs wherever your want on your repository. However, you "
+"will need to tell Read the Docs where your Sphinx's (i.e. ``conf.py``) or "
+"MkDocs' (i.e. ``mkdocs.yml``) configuration file lives in order to build "
+"your documentation."
+msgstr ""
+
+#: ../../../faq.rst:72
+msgid ""
+"This is done by using ``sphinx.configuration`` or ``mkdocs.configuration`` "
+"config key in your Read the Docs configuration file. Read :doc:`config-file/"
+"index` to know more about this."
+msgstr ""
+
+#: ../../../faq.rst:77
+msgid "How can I avoid search results having a deprecated version of my docs?"
+msgstr ""
+
+#: ../../../faq.rst:79
+msgid ""
+"If readers search something related to your docs in Google, it will probably "
+"return the most relevant version of your documentation. It may happen that "
+"this version is already deprecated and you want to stop Google indexing it "
+"as a result, and start suggesting the latest (or newer) one."
+msgstr ""
+
+#: ../../../faq.rst:83
+msgid ""
+"To accomplish this, you can add a ``robots.txt`` file to your "
+"documentation's root so it ends up served at the root URL of your project "
+"(for example, https://yourproject.readthedocs.io/robots.txt). We have "
+"documented how to set this up in :doc:`/reference/robots`."
+msgstr ""
+
+#: ../../../faq.rst:89
+msgid "How do I change the version slug of my project?"
+msgstr ""
+
+#: ../../../faq.rst:91
+msgid ""
+"You can change the slug of your versions from the versions tab of your "
+"project, see :ref:`versions:Version URL identifier (slug)` for more "
+"information."
+msgstr ""
+
+#: ../../../faq.rst:96
+msgid "What commit of Read the Docs is in production?"
+msgstr ""
+
+#: ../../../faq.rst:98
+msgid ""
+"We deploy readthedocs.org from the ``rel`` branch in our GitHub repository. "
+"You can see the latest commits that have been deployed by looking on GitHub: "
+"https://github.com/readthedocs/readthedocs.org/commits/rel"
+msgstr ""
+
+#: ../../../faq.rst:101
+msgid "We also keep an up-to-date :doc:`changelog </changelog>`."
+msgstr ""
+
+#: ../../../faq.rst:106
+msgid "Additional features and configuration"
+msgstr ""
+
+#: ../../../faq.rst:109
+msgid "How do I add additional software dependencies for my documentation?"
+msgstr ""
+
+#: ../../../faq.rst:111
+msgid ""
+"For most Python dependencies, you can specify a requirements file which "
+"details your dependencies. You can also set your project documentation to "
+"install your Python project itself as a dependency."
+msgstr ""
+
+#: ../../../faq.rst:117
+msgid ":doc:`/builds`"
+msgstr ""
+
+#: ../../../faq.rst:118
+msgid "An overview of the build process."
+msgstr ""
+
+#: ../../../faq.rst:120
+msgid ":doc:`/guides/reproducible-builds`"
+msgstr ""
+
+#: ../../../faq.rst:121
+msgid ""
+"General information about adding dependencies and best-practices for "
+"maintaining them."
+msgstr ""
+
+#: ../../../faq.rst:123
+msgid ":doc:`/build-customization`"
+msgstr ""
+
+#: ../../../faq.rst:124
+msgid ""
+"How to customize your builds, for example if you need to build with "
+"different tools from Sphinx or if you need to add additional packages for "
+"the Ubuntu-based builder."
+msgstr ""
+
+#: ../../../faq.rst:127
+msgid ":doc:`/config-file/v2`"
+msgstr ""
+
+#: ../../../faq.rst:128
+msgid "Reference for the main configuration file, `.readthedocs.yaml`"
+msgstr ""
+
+#: ../../../faq.rst:130
+msgid ":ref:`build.apt_packages <config-file/v2:build.apt_packages>`"
+msgstr ""
+
+#: ../../../faq.rst:131
+msgid ""
+"Reference for adding Debian packages with apt for the Ubuntu-based builders"
+msgstr ""
+
+#: ../../../faq.rst:135
+msgid ""
+":ref:`faq:Why do I get import errors from libraries depending on C modules?`"
+msgstr ""
+
+#: ../../../faq.rst:139
+msgid "How do I change behavior when building with Read the Docs?"
+msgstr ""
+
+#: ../../../faq.rst:141
+msgid ""
+"When Read the Docs builds your project, it sets the :envvar:`READTHEDOCS` "
+"environment variable to the string ``'True'``. So within your Sphinx :file:"
+"`conf.py` file, you can vary the behavior based on this. For example:"
+msgstr ""
+
+#: ../../../faq.rst:145
+msgid ""
+"import os\n"
+"\n"
+"on_rtd = os.environ.get(\"READTHEDOCS\") == \"True\"\n"
+"if on_rtd:\n"
+"    html_theme = \"default\"\n"
+"else:\n"
+"    html_theme = \"nature\""
+msgstr ""
+
+#: ../../../faq.rst:155
+msgid ""
+"The :envvar:`READTHEDOCS` variable is also available in the Sphinx build "
+"environment, and will be set to ``True`` when building on Read the Docs:"
+msgstr ""
+
+#: ../../../faq.rst:159
+msgid ""
+"{% if READTHEDOCS %}\n"
+"Woo\n"
+"{% endif %}"
+msgstr ""
+
+#: ../../../faq.rst:167
+msgid "I want comments in my docs"
+msgstr ""
+
+#: ../../../faq.rst:169
+msgid ""
+"Read the Docs doesn't have explicit support for this. That said, a tool like "
+"`Disqus`_ (and the `sphinxcontrib-disqus`_ plugin) can be used for this "
+"purpose on Read the Docs."
+msgstr ""
+
+#: ../../../faq.rst:176
+msgid "Can I remove advertising from my documentation?"
+msgstr ""
+
+#: ../../../faq.rst:178
+msgid ""
+"Yes. See :ref:`Opting out of advertising <advertising/ethical-advertising:"
+"Opting Out>`."
+msgstr ""
+
+#: ../../../faq.rst:182
+msgid "How do I change my project slug (the URL your docs are served at)?"
+msgstr ""
+
+#: ../../../faq.rst:184
+msgid ""
+"We don't support allowing folks to change the slug for their project. You "
+"can update the name which is shown on the site, but not the actual URL that "
+"documentation is served."
+msgstr ""
+
+#: ../../../faq.rst:188
+msgid ""
+"The main reason for this is that all existing URLs to the content will "
+"break. You can delete and re-create the project with the proper name to get "
+"a new slug, but you really shouldn't do this if you have existing inbound "
+"links, as it `breaks the internet <http://www.w3.org/Provider/Style/URI."
+"html>`_."
+msgstr ""
+
+#: ../../../faq.rst:193
+msgid ""
+"Instead, you can consider *migrating your documentation to another domain* "
+"with :doc:`/user-defined-redirects`."
+msgstr ""
+
+#: ../../../faq.rst:196
+msgid ""
+"If that isn't enough, you can request the change sending an email to "
+"support@readthedocs.org."
+msgstr ""
+
+#: ../../../faq.rst:200
+msgid "Big projects"
+msgstr ""
+
+#: ../../../faq.rst:203
+msgid "How do I host multiple projects on one custom domain?"
+msgstr ""
+
+#: ../../../faq.rst:205
+msgid ""
+"We support the concept of subprojects, which allows multiple projects to "
+"share a single domain. If you add a subproject to a project, that "
+"documentation will be served under the parent project's subdomain or custom "
+"domain."
+msgstr ""
+
+#: ../../../faq.rst:209
+msgid ""
+"For example, Kombu is a subproject of Celery, so you can access it on the "
+"`celery.readthedocs.io` domain:"
+msgstr ""
+
+#: ../../../faq.rst:213
+msgid "https://celery.readthedocs.io/projects/kombu/en/latest/"
+msgstr ""
+
+#: ../../../faq.rst:215
+msgid "This also works the same for custom domains:"
+msgstr ""
+
+#: ../../../faq.rst:217
+msgid "http://docs.celeryq.dev/projects/kombu/en/latest/"
+msgstr ""
+
+#: ../../../faq.rst:219
+msgid "You can add subprojects in the project admin dashboard."
+msgstr ""
+
+#: ../../../faq.rst:221
+msgid ""
+"For details on custom domains, see our documentation on :doc:`/custom-"
+"domains`."
+msgstr ""
+
+#: ../../../faq.rst:224
+msgid "How do I support multiple languages of documentation?"
+msgstr ""
+
+#: ../../../faq.rst:226
+msgid ""
+"Read the Docs supports multiple languages. See the section on :doc:"
+"`localization`."
+msgstr ""
+
+#: ../../../faq.rst:232
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../faq.rst:240
+msgid "I want to use the Read the Docs theme"
+msgstr ""
+
+#: ../../../faq.rst:242
+msgid ""
+"To use the Read the Docs theme, you have to specify that in your Sphinx's "
+"``conf.py`` file."
+msgstr ""
+
+#: ../../../faq.rst:245
+msgid ""
+"Read the `sphinx-rtd-theme documentation <https://sphinx-rtd-theme."
+"readthedocs.io/en/stable/installing.html>`_ for instructions to enable it in "
+"your Sphinx project."
+msgstr ""
+
+#: ../../../faq.rst:250
+msgid "Image scaling doesn't work in my documentation"
+msgstr ""
+
+#: ../../../faq.rst:252
+msgid ""
+"Image scaling in ``docutils`` depends on ``Pillow``. If you notice that "
+"image scaling is not working properly on your Sphinx project, you may need "
+"to add ``Pillow`` to your requirements to fix this issue. Read more about :"
+"doc:`guides/reproducible-builds` to define your dependencies in a "
+"``requirements.txt`` file."
+msgstr ""
+
+#: ../../../faq.rst:258
+msgid "Python"
+msgstr ""
+
+#: ../../../faq.rst:261
+msgid ""
+"Can I document a Python package that is not at the root of my repository?"
+msgstr ""
+
+#: ../../../faq.rst:263
+msgid ""
+"Yes. The most convenient way to access a Python package for example via "
+"`Sphinx's autoapi`_ in your documentation is to use the ``python.install."
+"method: pip`` (:ref:`config-file/v2:python.install`) configuration key."
+msgstr ""
+
+#: ../../../faq.rst:267
+msgid ""
+"This configuration will tell Read the Docs to install your package in the "
+"virtual environment used to build your documentation so your documentation "
+"tool can access to it."
+msgstr ""
+
+#: ../../../faq.rst:274
+msgid "Does Read the Docs work well with \"legible\" docstrings?"
+msgstr ""
+
+#: ../../../faq.rst:276
+msgid ""
+"Yes. One criticism of Sphinx is that its annotated docstrings are too dense "
+"and difficult for humans to read. In response, many projects have adopted "
+"customized docstring styles that are simultaneously informative and legible. "
+"The `NumPy <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-"
+"standard>`__ and `Google <https://google.github.io/styleguide/pyguide."
+"html#38-comments-and-docstrings>`__ styles are two popular docstring "
+"formats.  Fortunately, the default Read the Docs theme handles both formats "
+"just fine, provided your ``conf.py`` specifies an appropriate Sphinx "
+"extension that knows how to convert your customized docstrings.  Two such "
+"extensions are `numpydoc <https://github.com/numpy/numpydoc>`_ and `napoleon "
+"<http://sphinxcontrib-napoleon.readthedocs.io>`_. Only ``napoleon`` is able "
+"to handle both docstring formats. Its default output more closely matches "
+"the format of standard Sphinx annotations, and as a result, it tends to look "
+"a bit better with the default theme."
+msgstr ""
+
+#: ../../../faq.rst:295
+msgid ""
+"To use these extensions you need to specify the dependencies on your project "
+"by following this :doc:`guide </guides/reproducible-builds>`."
+msgstr ""
+
+#: ../../../faq.rst:300
+msgid "I need to install a package in a environment with pinned versions"
+msgstr ""
+
+#: ../../../faq.rst:302
+msgid ""
+"If you'd like to pin your dependencies outside the package, you can add this "
+"line to your requirements or environment file (if you are using Conda)."
+msgstr ""
+
+#: ../../../faq.rst:305
+msgid "In your ``requirements.txt`` file::"
+msgstr ""
+
+#: ../../../faq.rst:307
+msgid ""
+"# path to the directory containing setup.py relative to the project root\n"
+"-e ."
+msgstr ""
+
+#: ../../../faq.rst:310
+msgid "In your Conda environment file (``environment.yml``)::"
+msgstr ""
+
+#: ../../../faq.rst:312
+msgid ""
+"# path to the directory containing setup.py relative to the environment "
+"file\n"
+"-e .."
+msgstr ""
+
+#: ../../../faq.rst:317
+msgid "Other documentation frameworks"
+msgstr ""
+
+#: ../../../faq.rst:320
+msgid "How can I deploy Jupyter Book projects on Read the Docs?"
+msgstr ""
+
+#: ../../../faq.rst:322
+msgid "According to `its own documentation <https://jupyterbook.org/>`_,"
+msgstr ""
+
+#: ../../../faq.rst:324
+msgid ""
+"Jupyter Book is an open source project for building beautiful, publication-"
+"quality books and documents from computational material."
+msgstr ""
+
+#: ../../../faq.rst:327
+msgid ""
+"Even though `Jupyter Book leverages Sphinx \"for almost everything that it "
+"does\" <https://jupyterbook.org/explain/sphinx.html#jupyter-book-is-a-"
+"distribution-of-sphinx>`_, it purposely hides Sphinx ``conf.py`` files from "
+"the user, and instead generates them on the fly from its declarative "
+"``_config.yml``. As a result, you need to follow some extra steps to make "
+"Jupyter Book work on Read the Docs."
+msgstr ""
+
+#: ../../../faq.rst:334
+msgid ""
+"As described in :doc:`the official documentation <jupyterbook:publish/"
+"readthedocs>`, you can manually convert your Jupyter Book project to Sphinx "
+"with the following configuration:"
+msgstr ""
+
+#: ../../../faq.rst:337
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../faq.rst:337
+msgid ""
+" build:\n"
+"     jobs:\n"
+"         pre_build:\n"
+"         # Generate the Sphinx configuration for this Jupyter Book so it "
+"builds.\n"
+"         - \"jupyter-book config sphinx docs/\""
+msgstr ""

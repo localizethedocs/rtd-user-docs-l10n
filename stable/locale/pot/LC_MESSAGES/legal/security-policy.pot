@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../legal/security-policy.rst:2
+msgid "Security policy"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:4
+msgid ""
+"Read the Docs adheres to the following security policies and procedures with "
+"regards to development, operations, and managing infrastructure. You can "
+"also find information on how we handle specific user data in our :doc:`/"
+"privacy-policy`."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:9
+msgid ""
+"Our engineering team monitors several sources for security threats and "
+"responds accordingly to security threats and notifications."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:12
+msgid ""
+"We monitor 3rd party software included in our application and in our "
+"infrastructure for security notifications. Any relevant security patches are "
+"applied and released immediately."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:15
+msgid ""
+"We monitor our infrastructure providers for signs of attacks or abuse and "
+"will respond accordingly to threats."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:19
+msgid "Infrastructure"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:21
+msgid ""
+"Read the Docs infrastructure is hosted on Amazon Web Services (AWS).  We "
+"also use Cloudflare services to mitigate attacks and abuse."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:25
+msgid "`AWS security policies`_"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:26
+msgid "`Cloudflare privacy and security policies`_"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:32
+msgid "Data and data center"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:34
+msgid ""
+"All user data is stored in the USA in multi-tenant datastores in Amazon Web "
+"Services data centers. Physical access to these data centers is secured with "
+"a `variety of controls`_ to prevent unauthorized access."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:41
+msgid "Application"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:43
+msgid "Encryption in transit"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:44
+msgid ""
+"All documentation, application dashboard, and API access is transmitted "
+"using SSL encryption. We do not support unencrypted requests, even for "
+"public project documentation hosting."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:48
+msgid "Temporary repository storage"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:49
+msgid ""
+"We do not store or cache user repository data, temporary storage is used for "
+"every project build on Read the Docs."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:52
+msgid "Authentication"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:53
+msgid ""
+"Read the Docs supports SSO with GitHub, GitLab, Bitbucket, and Google "
+"Workspaces (formerly G Suite)."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:56
+msgid "Payment security"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:57
+msgid ""
+"We do not store or process any payment details. All payment information is "
+"stored with our payment provider, Stripe -- a PCI-certified level 1 payment "
+"provider."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:62
+msgid "Engineering and operational practices"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:64
+msgid "Immutable infrastructure"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:65
+msgid ""
+"We don’t make live changes to production code or infrastructure. All changes "
+"to our application and our infrastructure go through the same code review "
+"process before being applied and released."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:69
+msgid "Continuous integration"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:70
+msgid ""
+"We are constantly testing changes to our application code and operational "
+"changes to our infrastructure."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:73
+msgid "Incident response"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:74
+msgid ""
+"Our engineering team is on a rotating on-call schedule to respond to "
+"security or availability incidents."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:78
+msgid "Account security"
+msgstr ""
+
+#: ../../../legal/security-policy.rst:80
+msgid "All traffic is encrypted in transit so your login is protected."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:81
+msgid ""
+"Read the Docs stores only one-way hashes of all passwords. Nobody at Read "
+"the Docs has access to your passwords."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:83
+msgid "Account login is protected from brute force attacks with rate limiting."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:84
+msgid ""
+"While most projects and docs on Read the Docs are public, we treat your "
+"private repositories and private documentation as confidential and Read the "
+"Docs employees may only view them with your explicit permission in response "
+"to your support requests, or when required for security purposes."
+msgstr ""
+
+#: ../../../legal/security-policy.rst:89
+msgid "You can read more about account privacy in our :doc:`/privacy-policy`."
+msgstr ""
