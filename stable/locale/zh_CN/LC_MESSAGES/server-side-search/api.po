@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../server-side-search/api.rst:2
+msgid "Server side search API"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:4
+msgid ""
+"You can integrate our :doc:`server side search </server-side-search/index>` "
+"in your documentation by using our API."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:6
+msgid ""
+"If you are using :doc:`/commercial/index` you will need to replace https://"
+"app.readthedocs.org/ with https://app.readthedocs.com/ in all the URLs used "
+"in the following examples. Check :ref:`server-side-search/api:authentication "
+"and authorization` if you are using private versions."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:11
+msgid "API v3"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:15
+msgid ""
+"Return a list of search results for a project or subset of projects. Results "
+"are divided into sections with highlights of the matching term."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:0
+msgid "Query Parameters"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:20
+msgid "Search query (see :doc:`/server-side-search/syntax`)"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:21
+#: ../../../server-side-search/api.rst:190
+msgid "Jump to a specific page"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:22
+#: ../../../server-side-search/api.rst:191
+msgid "Limits the results per page, default is 50"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:0
+msgid "Response JSON Object"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:26
+#: ../../../server-side-search/api.rst:195
+msgid "The type of the result, currently page is the only type."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:27
+msgid "The project object"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:28
+msgid "The version object"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:29
+#: ../../../server-side-search/api.rst:199
+msgid "The title of the page"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:30
+#: ../../../server-side-search/api.rst:200
+msgid "Canonical domain of the resulting page"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:31
+#: ../../../server-side-search/api.rst:201
+msgid "Path to the resulting page"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:32
+#: ../../../server-side-search/api.rst:202
+msgid ""
+"An object containing a list of substrings with matching terms. Note that the "
+"text is HTML escaped with the matching terms inside a ``<span>`` tag."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:34
+#: ../../../server-side-search/api.rst:204
+msgid ""
+"A list of block objects containing search results from the page. Currently, "
+"there is one type of block:  - section: A page section with a linkable "
+"anchor (``id`` attribute)."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:36
+#: ../../../server-side-search/api.rst:206
+msgid ""
+"A list of block objects containing search results from the page. Currently, "
+"there is one type of block:"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:39
+#: ../../../server-side-search/api.rst:209
+msgid "section: A page section with a linkable anchor (``id`` attribute)."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:43
+#: ../../../server-side-search/api.rst:213
+msgid ""
+"Except for highlights, any other content is not HTML escaped, you shouldn't "
+"include it in your page without escaping it first."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:46
+#: ../../../server-side-search/api.rst:216
+msgid "**Example request**:"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:50
+msgid ""
+"$ curl \"https://app.readthedocs.org/api/v3/search/?q=project:"
+"docs%20server%20side%20search\""
+msgstr ""
+
+#: ../../../server-side-search/api.rst:54
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/search/'\n"
+"params = {\n"
+"   'q': 'project:docs server side search',\n"
+"}\n"
+"response = requests.get(URL, params=params)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:64
+#: ../../../server-side-search/api.rst:236
+msgid "**Example response**:"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:66
+msgid ""
+"{\n"
+"    \"count\": 41,\n"
+"    \"next\": \"https://app.readthedocs.org/api/v3/search/?page=2&q=project:"
+"docs%20server+side+search\",\n"
+"    \"previous\": null,\n"
+"    \"projects\": [\n"
+"       {\n"
+"         \"slug\": \"docs\",\n"
+"         \"versions\": [\n"
+"           {\"slug\": \"latest\"}\n"
+"         ]\n"
+"       }\n"
+"    ],\n"
+"    \"query\": \"server side search\",\n"
+"    \"results\": [\n"
+"        {\n"
+"            \"type\": \"page\",\n"
+"            \"project\": {\n"
+"               \"slug\": \"docs\",\n"
+"               \"alias\": null\n"
+"            },\n"
+"            \"version\": {\n"
+"               \"slug\": \"latest\"\n"
+"            },\n"
+"            \"title\": \"Server Side Search\",\n"
+"            \"domain\": \"https://docs.readthedocs.io\",\n"
+"            \"path\": \"/en/latest/server-side-search.html\",\n"
+"            \"highlights\": {\n"
+"                \"title\": [\n"
+"                    \"<span>Server</span> <span>Side</span> <span>Search</"
+"span>\"\n"
+"                ]\n"
+"            },\n"
+"            \"blocks\": [\n"
+"               {\n"
+"                  \"type\": \"section\",\n"
+"                  \"id\": \"server-side-search\",\n"
+"                  \"title\": \"Server Side Search\",\n"
+"                  \"content\": \"Read the Docs provides full-text search "
+"across all of the pages of all projects, this is powered by Elasticsearch."
+"\",\n"
+"                  \"highlights\": {\n"
+"                     \"title\": [\n"
+"                        \"<span>Server</span> <span>Side</span> "
+"<span>Search</span>\"\n"
+"                     ],\n"
+"                     \"content\": [\n"
+"                        \"You can <span>search</span> all projects at https:"
+"&#x2F;&#x2F;readthedocs.org&#x2F;<span>search</span>&#x2F\"\n"
+"                     ]\n"
+"                  }\n"
+"               },\n"
+"               {\n"
+"                  \"type\": \"domain\",\n"
+"                  \"role\": \"http:get\",\n"
+"                  \"name\": \"/_/api/v2/search/\",\n"
+"                  \"id\": \"get--_-api-v2-search-\",\n"
+"                  \"content\": \"Retrieve search results for docs\",\n"
+"                  \"highlights\": {\n"
+"                     \"name\": [\"\"],\n"
+"                     \"content\": [\"Retrieve <span>search</span> results "
+"for docs\"]\n"
+"                  }\n"
+"               }\n"
+"            ]\n"
+"        },\n"
+"    ]\n"
+"}"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:132
+msgid "Migrating from API v2"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:134
+msgid ""
+"Instead of using query arguments to specify the project and version to "
+"search, you need to do it from the query itself, this is if you had the "
+"following parameters:"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:138
+msgid "project: docs"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:139
+msgid "version: latest"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:140
+msgid "q: test"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:142
+msgid "Now you need to use:"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:144
+msgid "q: project:docs/latest test"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:146
+msgid ""
+"The response of the API is very similar to V2, with the following changes:"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:149
+msgid "``project`` is an object, not a string."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:150
+msgid "``version`` is an object, not a string."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:151
+msgid ""
+"``project_alias`` isn't present, it is contained in the ``project`` object."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:154
+msgid ""
+"When searching on a parent project, results from their subprojects won't be "
+"included automatically, to include results from subprojects use the "
+"``subprojects`` parameter."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:159
+msgid "Authentication and authorization"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:161
+msgid ""
+"If you are using :ref:`private versions <versions:Version states>`, users "
+"will only be allowed to search projects they have permissions over. "
+"Authentication and authorization is done using the current session, or any "
+"of the valid :doc:`sharing methods </commercial/sharing>`."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:166
+msgid ""
+"To be able to use the user's current session you need to use the API from "
+"the domain where your docs are being served (``<you-docs-domain>/_/api/v3/"
+"search/``). This is ``https://docs.readthedocs-hosted.com/_/api/v3/search/`` "
+"for the ``https://docs.readthedocs-hosted.com/`` project, for example."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:172
+msgid "API v2 (deprecated)"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:176
+msgid ""
+"Please use our :ref:`server-side-search/api:api v3` instead, see :ref:"
+"`server-side-search/api:migrating from api v2`."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:181
+msgid ""
+"Return a list of search results for a project, including results from its :"
+"doc:`/subprojects`. Results are divided into sections with highlights of the "
+"matching term."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:187
+msgid "Search query"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:188
+msgid "Project slug"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:189
+msgid "Version slug"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:196
+msgid "The project slug"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:197
+msgid "Alias of the project if it's a subproject."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:198
+msgid "The version slug"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:220
+msgid ""
+"$ curl \"https://app.readthedocs.org/api/v2/search/?"
+"project=docs&version=latest&q=server%20side%20search\""
+msgstr ""
+
+#: ../../../server-side-search/api.rst:224
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v2/search/'\n"
+"params = {\n"
+"   'q': 'server side search',\n"
+"   'project': 'docs',\n"
+"   'version': 'latest',\n"
+"}\n"
+"response = requests.get(URL, params=params)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:238
+msgid ""
+"{\n"
+"    \"count\": 41,\n"
+"    \"next\": \"https://app.readthedocs.org/api/v2/search/?"
+"page=2&project=read-the-docs&q=server+side+search&version=latest\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\n"
+"        {\n"
+"            \"type\": \"page\",\n"
+"            \"project\": \"docs\",\n"
+"            \"project_alias\": null,\n"
+"            \"version\": \"latest\",\n"
+"            \"title\": \"Server Side Search\",\n"
+"            \"domain\": \"https://docs.readthedocs.io\",\n"
+"            \"path\": \"/en/latest/server-side-search.html\",\n"
+"            \"highlights\": {\n"
+"                \"title\": [\n"
+"                    \"<span>Server</span> <span>Side</span> <span>Search</"
+"span>\"\n"
+"                ]\n"
+"            },\n"
+"            \"blocks\": [\n"
+"               {\n"
+"                  \"type\": \"section\",\n"
+"                  \"id\": \"server-side-search\",\n"
+"                  \"title\": \"Server Side Search\",\n"
+"                  \"content\": \"Read the Docs provides full-text search "
+"across all of the pages of all projects, this is powered by Elasticsearch."
+"\",\n"
+"                  \"highlights\": {\n"
+"                     \"title\": [\n"
+"                        \"<span>Server</span> <span>Side</span> "
+"<span>Search</span>\"\n"
+"                     ],\n"
+"                     \"content\": [\n"
+"                        \"You can <span>search</span> all projects at https:"
+"&#x2F;&#x2F;readthedocs.org&#x2F;<span>search</span>&#x2F\"\n"
+"                     ]\n"
+"                  }\n"
+"               }\n"
+"            ]\n"
+"        },\n"
+"    ]\n"
+"}"
+msgstr ""

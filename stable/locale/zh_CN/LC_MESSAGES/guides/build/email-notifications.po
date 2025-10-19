@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build/email-notifications.rst:2
+msgid "How to setup email notifications"
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:4
+msgid ""
+"In this brief guide, you can learn how to setup a simple build notification "
+"via email."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:7
+msgid ""
+"Read the Docs allows you to configure emails that will be notified on "
+"failing builds. This makes sure that you are aware of failures happening in "
+"an otherwise automated process."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:12
+msgid ":doc:`/guides/build/webhooks`"
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:13
+msgid ""
+"How to use webhooks to be notified about builds on popular platforms like "
+"Slack and Discord."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:15
+msgid ":doc:`/pull-requests`"
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:16
+msgid ""
+"Configure automated feedback and documentation site previews for your pull "
+"requests."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:20
+msgid "Email notifications"
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:22
+msgid ""
+"Follow these steps to add an email address to be notified about build "
+"failures:"
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:24
+msgid "Go to :menuselection:`Admin --> Notifications` in your project."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:25
+msgid ""
+"Fill in the **Email** field under the **New Email Notifications** heading"
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:26
+msgid ""
+"Press :guilabel:`Add` and the email is saved and will be displayed in the "
+"list of **Existing notifications**."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:28
+msgid "The newly added email address will be notified once a build fails."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:33
+msgid ""
+"We don't send email notifications on :doc:`builds from pull requests </pull-"
+"requests>`."
+msgstr ""

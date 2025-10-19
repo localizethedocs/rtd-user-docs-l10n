@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/management/2fa.rst:2
+msgid "Configuring two-factor authentication"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:4
+msgid ""
+"Two-factor authentication (2FA) adds an extra layer of security to your Read "
+"the Docs account. When you enable 2FA, you need to provide two pieces of "
+"information to log in: your password and a verification code."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:8
+msgid "Enabling two-factor authentication"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:10
+msgid "To enable 2FA:"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:12 ../../../guides/management/2fa.rst:30
+#: ../../../guides/management/2fa.rst:39
+msgid "Go to your account settings."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:13 ../../../guides/management/2fa.rst:31
+#: ../../../guides/management/2fa.rst:40
+msgid "Click on :guilabel:`Two-factor authentication`."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:14 ../../../guides/management/2fa.rst:17
+msgid "Click on :guilabel:`Activate`."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:15
+msgid "Scan the QR code with your authenticator app."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:16
+msgid "Enter the verification code from your authenticator app."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:18
+msgid "Save your recovery codes in a safe place."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:22
+msgid ""
+"If you lose access to your authenticator app, you can use the recovery codes "
+"to log in. Keep them in a safe place, as they are the only way to access "
+"your account if you lose your device."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:26
+msgid "Disabling two-factor authentication"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:28
+msgid "To disable 2FA:"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:32
+msgid "Click on :guilabel:`Deactivate`."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:35
+msgid "Managing recovery codes"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:37
+msgid "To manage your recovery codes:"
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:41
+msgid "Click on :guilabel:`Manage recovery codes`."
+msgstr ""
+
+#: ../../../guides/management/2fa.rst:43
+msgid "From there you can download your recovery codes or generate new ones."
+msgstr ""

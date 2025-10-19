@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../commercial/sharing.rst:2
+msgid "Sharing private documentation"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:6
+msgid ""
+"Sharing private documentation is useful for giving quick access to your "
+"documentation to users outside of your organization. It allows you to share "
+"specific projects or versions of a project with users who don't have access "
+"to your organization."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:9
+msgid "Common sharing use cases include:"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:11
+msgid "Sharing a project with contractors or partners."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:12
+msgid "Sharing documentation for your product only to specific customers."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:13
+msgid "Embedding documentation in a SaaS application dashboard."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:16
+msgid "Creating a shared item"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:18
+msgid ""
+"Go into your project's :guilabel:`Admin` page and click on :guilabel:"
+"`Sharing`."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:19
+msgid "Click on :guilabel:`New Share`"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:20
+msgid ""
+"Select access type (secret link, password, or HTTP header token), add an "
+"expiration date and a *Description* to help with managing access in the "
+"future."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:22
+msgid ""
+"Check ``Allow access to all versions?`` if you want to grant access to all "
+"versions, or uncheck that option and select the specific versions you want "
+"to grant access to."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:24
+msgid "Click :guilabel:`Save`."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:25
+msgid "Get the info needed to share your documentation with other users:"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:27
+msgid "**Secret link:** copy the link that is generated"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:28
+msgid "**Password:** copy the link and password"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:29
+msgid ""
+"**HTTP header token**: Copy the token, and then pass the ``Authorization`` "
+"header in your HTTP request."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:31
+msgid "Give that information to the person who you want to give access."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:35
+msgid "You can always revoke access by removing the sharing item on this page."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:38
+msgid "Sharing methods"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:41
+msgid "Secret link"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:43
+msgid ""
+"Once the person you send the link to clicks it, they will have access to the "
+"documentation while their browser window is open."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:46
+msgid ""
+"If you want to link to a specific page, you can do this by passing the "
+"``next`` query parameter in the URL. For example ``https://mydocs."
+"readthedocs-hosted.com/_/sharing/xxxxxxxxx?next=/en/latest/page.html``."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:51
+msgid ""
+"This is useful for sharing access to an entire set of documentation for a "
+"user. You can embed these links in an internal wiki, for example, and all "
+"your employees will be able to browse the docs without a login."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:56
+msgid "Password"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:58
+msgid ""
+"Once the person you send the link to clicks on the link, they will see an "
+"*Authorization required* page asking them for the password you generated. "
+"When the user enters the password, they will gain access to view your "
+"project."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:64
+msgid ""
+"This is useful for when you have documentation you want users to bookmark. "
+"They can enter a URL directly and enter the password when prompted."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:68
+msgid "HTTP Authorization Header"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:71
+msgid ""
+"This approach is useful for automated scripts. It only allows access to a "
+"page when the header is present, so it doesn't allow browsing docs inside of "
+"a browser."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:76
+msgid "Token Authorization"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:78
+msgid ""
+"You need to send the ``Authorization`` header with the token on each HTTP "
+"request. The header has the form ``Authorization: Token <TOKEN>``. For "
+"example:"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:85
+msgid ""
+"curl -H \"Authorization: Token $TOKEN\" https://docs.example.com/en/latest/"
+"example.html"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:87
+msgid "Basic Authorization"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:89
+msgid ""
+"You can also use basic authorization, with the token as user and an empty "
+"password. For example:"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:95
+msgid ""
+"curl --url https://docs.example.com/en/latest/example.html --user '$TOKEN:'"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:97
+msgid "Typical sharing configurations"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:99
+msgid ""
+"There are a few common ways to architect sharing, with trade-offs between "
+"them, and you should choose the one that best fits your use case."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:104
+msgid "Bulk passwords"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:106
+msgid ""
+"If you want to limit access to a group of users, you can create a password "
+"for each user, and then share the password with them. This allows users to "
+"access the documentation directly, but requires more management on your end. "
+"Any time a new user needs access or you want to remove access, you will need "
+"to generate a new password for them."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:115
+msgid "Authenticated redirect"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:117
+msgid ""
+"If you want to share documentation with a group of users, you need to "
+"authenticate those users against your own system first. The simplest way to "
+"do this is to create an authenticated redirect on your site, which then "
+"redirects to the Read the Docs :ref:`commercial/sharing:secret link`."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:122
+msgid ""
+"This should require very little customization, and will ensure that only "
+"authenticated users can access the documentation. The downside is that users "
+"won't be able to access the documentation directly from a bookmark, and will "
+"have to go through your site first."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:128
+msgid "Authenticated proxy"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:130
+msgid ""
+"If you want a more transparent experience for your users, you can create a "
+"proxy that authenticates users against your system, and then proxies the "
+"request to Read the Docs. This is more complex to set up, but will allow "
+"users to access the documentation directly from a bookmark."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:136
+msgid ""
+"This approach would use a :ref:`commercial/sharing:HTTP Authorization "
+"Header` to authenticate users, and would be configured in your proxy server."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:140
+msgid "Proxy example"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:142
+msgid ""
+"Below is an example of how to configure Nginx to proxy requests to Read the "
+"Docs while adding the token in the `Authorization` header."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:144
+msgid ""
+"server {\n"
+"    listen 80;\n"
+"    server_name docs.example.com;\n"
+"\n"
+"    location / {\n"
+"        proxy_pass https://docs-example.readthedocs-hosted.com;\n"
+"\n"
+"        # Add Authorization header with the token\n"
+"        proxy_set_header Authorization \"Token <TOKEN>\";\n"
+"\n"
+"        # Optionally forward other headers\n"
+"        proxy_set_header Host $host;\n"
+"        proxy_set_header X-Real-IP $remote_addr;\n"
+"        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n"
+"        proxy_set_header X-Forwarded-Proto $scheme;\n"
+"    }\n"
+"}"
+msgstr ""

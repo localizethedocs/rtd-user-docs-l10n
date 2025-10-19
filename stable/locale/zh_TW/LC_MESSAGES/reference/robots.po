@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/robots.rst:2
+msgid "``robots.txt`` support"
+msgstr ""
+
+#: ../../../reference/robots.rst:4
+msgid ""
+"The `robots.txt`_ files allow you to customize how your documentation is "
+"indexed in search engines. It's useful for:"
+msgstr ""
+
+#: ../../../reference/robots.rst:7
+msgid "Hiding various pages from search engines"
+msgstr ""
+
+#: ../../../reference/robots.rst:8
+msgid "Disabling certain web crawlers from accessing your documentation"
+msgstr ""
+
+#: ../../../reference/robots.rst:9
+msgid "Disallowing any indexing of your documentation"
+msgstr ""
+
+#: ../../../reference/robots.rst:11
+msgid ""
+"Read the Docs automatically generates one for you with a configuration that "
+"works for most projects. By default, the automatically created ``robots."
+"txt``:"
+msgstr ""
+
+#: ../../../reference/robots.rst:14
+msgid ""
+"Hides versions which are set to :ref:`Hidden <versions:Version states>` from "
+"being indexed."
+msgstr ""
+
+#: ../../../reference/robots.rst:15
+msgid "Allows indexing of all other versions."
+msgstr ""
+
+#: ../../../reference/robots.rst:19
+msgid ""
+"``robots.txt`` files are respected by most search engines, but they aren't a "
+"guarantee that your pages will not be indexed. Search engines may choose to "
+"ignore your ``robots.txt`` file, and index your docs anyway."
+msgstr ""
+
+#: ../../../reference/robots.rst:24
+msgid ""
+"If you require *private* documentation, please see :doc:`/commercial/"
+"sharing`."
+msgstr ""
+
+#: ../../../reference/robots.rst:27
+msgid "How it works"
+msgstr ""
+
+#: ../../../reference/robots.rst:29
+msgid ""
+"You can customize this file to add more rules to it. The ``robots.txt`` file "
+"will be served from the **default version** of your project. This is because "
+"the ``robots.txt`` file is served at the top-level of your domain, so we "
+"must choose a version to find the file in. The **default version** is the "
+"best place to look for it."
+msgstr ""
+
+#: ../../../reference/robots.rst:36
+msgid "Tool integration"
+msgstr ""
+
+#: ../../../reference/robots.rst:38
+msgid ""
+"Documentation tools will have different ways of generating a ``robots.txt`` "
+"file. We have examples for some of the most popular tools below."
+msgstr ""
+
+#: ../../../reference/robots.rst:43
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../reference/robots.rst:45
+msgid ""
+"Sphinx uses the `html_extra_path`_ configuration value to add static files "
+"to its final HTML output. You need to create a ``robots.txt`` file and put "
+"it under the path defined in ``html_extra_path``."
+msgstr ""
+
+#: ../../../reference/robots.rst:48
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../reference/robots.rst:50
+msgid ""
+"MkDocs needs the ``robots.txt`` to be at the directory defined by the "
+"`docs_dir`_ configuration value."
+msgstr ""
+
+#: ../../../reference/robots.rst:58
+msgid ":doc:`/guides/technical-docs-seo-guide`"
+msgstr ""

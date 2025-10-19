@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/connecting-git-account.rst:2
+msgid "How to connect your Read the Docs account to your Git provider"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:4
+msgid ""
+"In this how to article, we cover how to connect an account on |"
+"git_providers_or| with your Read the Docs account. This is relevant if you "
+"have signed up for Read the Docs with your email or want to connect "
+"additional providers."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:9
+msgid ""
+"If you are going to import repositories from |git_providers_or|, you should "
+"connect your Read the Docs account to your Git provider first."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:14
+msgid ""
+"If you signed up or logged in to Read the Docs with your |git_providers_or| "
+"credentials, you're all done. Your account is connected ✅️. You only need "
+"this how-to if you want to connect additional Git providers."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:19
+msgid "Adding a connection"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:21
+msgid ""
+"To connect your Read the Docs account with a Git provider, go to the main "
+"login menu: :guilabel:`<Username dropdown>` > :guilabel:`Settings` > :"
+"guilabel:`Connected Services`."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:24
+msgid ""
+"From here, you'll be able to connect to your |git_providers_or| account. "
+"This process will ask you to authorize an integration with Read the Docs."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:27
+msgid "Screenshot of example OAuth dialog on GitHub"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:32
+msgid "An example of how your OAuth dialog on GitHub may look."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:34
+msgid ""
+"After approving the request, you will be taken back to Read the Docs. You "
+"will now see the account appear in the list of connected services."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:38
+msgid ""
+"Screenshot of Read the Docs \"Connected Services\" page with multiple "
+"services connected"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:43
+msgid "Connected Services [#f1]_ [#f2]_ shows the list of Git providers that"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:45
+msgid ""
+"Now your connection is ready and you will be able to import and configure "
+"Git repositories with just a few clicks."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:49
+msgid ":doc:`/reference/git-integration`"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:50
+msgid ""
+"Learn how the connected account is used for automatically configuring Git "
+"repositories and Read the Docs projects and which **permissions** that are "
+"required from your Git provider."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:54
+msgid "Removing a connection"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:56
+msgid ""
+"You may at any time delete the connection from Read the Docs. Delete the "
+"connection makes Read the Docs forget the immediate access, but you should "
+"also disable our OAuth Application from your Git provider."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:60
+msgid "On GitHub, navigate to `Authorized OAuth Apps`_."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:61
+msgid "On Bitbucket, navigate to `Application Authorizations`_."
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:62
+msgid "On GitLab, navigat to `Applications`_"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:68
+msgid ""
+"`Connected Services on readthedocs.org <https://app.readthedocs.org/accounts/"
+"social/connections/>`_"
+msgstr ""
+
+#: ../../../guides/connecting-git-account.rst:69
+msgid ""
+"`Connected Services on readthedocs.com <https://app.readthedocs.com/accounts/"
+"social/connections/>`_"
+msgstr ""

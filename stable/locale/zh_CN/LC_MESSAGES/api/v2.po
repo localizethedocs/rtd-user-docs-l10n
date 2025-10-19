@@ -1,0 +1,721 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/v2.rst:2
+msgid "API v2"
+msgstr ""
+
+#: ../../../api/v2.rst:4
+msgid ""
+"The Read the Docs API uses :abbr:`REST (Representational State Transfer)`. "
+"JSON is returned by all API responses including errors and HTTP response "
+"status codes are to designate success and failure."
+msgstr ""
+
+#: ../../../api/v2.rst:10
+msgid ""
+"API v2 is planned to be deprecated soon, though we have not yet set a time "
+"frame for deprecation yet. We will alert users with our plans when we do."
+msgstr ""
+
+#: ../../../api/v2.rst:13
+msgid ""
+"For now, API v2 is still used by some legacy application operations still, "
+"but we highly recommend Read the Docs users use :doc:`API v3 </api/v3>` "
+"instead."
+msgstr ""
+
+#: ../../../api/v2.rst:17
+msgid "Some improvements in :doc:`API v3 </api/v3>` are:"
+msgstr ""
+
+#: ../../../api/v2.rst:19
+msgid "Token based authentication"
+msgstr ""
+
+#: ../../../api/v2.rst:20
+msgid "Easier to use URLs which no longer use numerical ids"
+msgstr ""
+
+#: ../../../api/v2.rst:21
+msgid "More common user actions are exposed through the API"
+msgstr ""
+
+#: ../../../api/v2.rst:22
+msgid "Improved error reporting"
+msgstr ""
+
+#: ../../../api/v2.rst:24
+msgid "See its full documentation at :doc:`/api/v3`."
+msgstr ""
+
+#: ../../../api/v2.rst:28
+msgid "Authentication and authorization"
+msgstr ""
+
+#: ../../../api/v2.rst:30
+msgid ""
+"Requests to the Read the Docs public API are for public information only and "
+"do not require any authentication."
+msgstr ""
+
+#: ../../../api/v2.rst:35
+msgid "Resources"
+msgstr ""
+
+#: ../../../api/v2.rst:38
+msgid "Projects"
+msgstr ""
+
+#: ../../../api/v2.rst:40
+msgid ""
+"Projects are the main building block of Read the Docs. Projects are built "
+"when there are changes to the code and the resulting documentation is hosted "
+"and served by Read the Docs."
+msgstr ""
+
+#: ../../../api/v2.rst:44
+msgid ""
+"As an example, this documentation is part of the `Docs project`_ which has "
+"documentation at https://docs.readthedocs.io."
+msgstr ""
+
+#: ../../../api/v2.rst:47
+msgid ""
+"You can always view your Read the Docs projects in your `project dashboard`_."
+msgstr ""
+
+#: ../../../api/v2.rst:53
+msgid "Project list"
+msgstr ""
+
+#: ../../../api/v2.rst:57
+msgid "Retrieve a list of all Read the Docs projects."
+msgstr ""
+
+#: ../../../api/v2.rst:59 ../../../api/v2.rst:239 ../../../api/v2.rst:338
+msgid "**Example request**:"
+msgstr ""
+
+#: ../../../api/v2.rst:64
+msgid "curl https://app.readthedocs.org/api/v2/project/?slug=pip"
+msgstr ""
+
+#: ../../../api/v2.rst:65 ../../../api/v2.rst:245 ../../../api/v2.rst:350
+msgid "**Example response**:"
+msgstr ""
+
+#: ../../../api/v2.rst:67
+msgid ""
+"{\n"
+"    \"count\": 1,\n"
+"    \"next\": null,\n"
+"    \"previous\": null,\n"
+"    \"results\": [PROJECTS]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:0
+msgid "Response JSON Object"
+msgstr ""
+
+#: ../../../api/v2.rst:76
+msgid "URI for next set of Projects."
+msgstr ""
+
+#: ../../../api/v2.rst:77
+msgid "URI for previous set of Projects."
+msgstr ""
+
+#: ../../../api/v2.rst:78
+msgid "Total number of Projects."
+msgstr ""
+
+#: ../../../api/v2.rst:79
+msgid "Array of ``Project`` objects."
+msgstr ""
+
+#: ../../../api/v2.rst:0
+msgid "Query Parameters"
+msgstr ""
+
+#: ../../../api/v2.rst:81
+msgid "Narrow the results by matching the exact project slug"
+msgstr ""
+
+#: ../../../api/v2.rst:84
+msgid "Project details"
+msgstr ""
+
+#: ../../../api/v2.rst:88
+msgid "Retrieve details of a single project."
+msgstr ""
+
+#: ../../../api/v2.rst:90
+msgid ""
+"{\n"
+"    \"id\": 6,\n"
+"    \"name\": \"Pip\",\n"
+"    \"slug\": \"pip\",\n"
+"    \"programming_language\": \"py\",\n"
+"    \"default_version\": \"stable\",\n"
+"    \"default_branch\": \"master\",\n"
+"    \"repo_type\": \"git\",\n"
+"    \"repo\": \"https://github.com/pypa/pip\",\n"
+"    \"description\": \"Pip Installs Packages.\",\n"
+"    \"language\": \"en\",\n"
+"    \"documentation_type\": \"sphinx_htmldir\",\n"
+"    \"canonical_url\": \"http://pip.pypa.io/en/stable/\",\n"
+"    \"users\": [USERS]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:109
+msgid "The ID of the project"
+msgstr ""
+
+#: ../../../api/v2.rst:110
+msgid "The name of the project."
+msgstr ""
+
+#: ../../../api/v2.rst:111
+msgid "The project slug (used in the URL)."
+msgstr ""
+
+#: ../../../api/v2.rst:112
+msgid "The programming language of the project (eg. \"py\", \"js\")"
+msgstr ""
+
+#: ../../../api/v2.rst:113
+msgid "The default version of the project (eg. \"latest\", \"stable\", \"v3\")"
+msgstr ""
+
+#: ../../../api/v2.rst:114
+msgid "The default version control branch"
+msgstr ""
+
+#: ../../../api/v2.rst:115
+msgid "Version control repository of the project"
+msgstr ""
+
+#: ../../../api/v2.rst:116
+msgid "The repository URL for the project"
+msgstr ""
+
+#: ../../../api/v2.rst:117 ../../../api/v2.rst:119
+msgid "An RST description of the project"
+msgstr ""
+
+#: ../../../api/v2.rst:118
+msgid "The language code of this project"
+msgstr ""
+
+#: ../../../api/v2.rst:120
+msgid "The canonical URL of the default docs"
+msgstr ""
+
+#: ../../../api/v2.rst:121
+msgid "Array of ``User`` IDs who are maintainers of the project."
+msgstr ""
+
+#: ../../../api/v2.rst:0
+msgid "Status Codes"
+msgstr ""
+
+#: ../../../api/v2.rst:123 ../../../api/v2.rst:217 ../../../api/v2.rst:320
+msgid "no error"
+msgstr ""
+
+#: ../../../api/v2.rst:124
+msgid "There is no ``Project`` with this ID"
+msgstr ""
+
+#: ../../../api/v2.rst:127
+msgid "Project versions"
+msgstr ""
+
+#: ../../../api/v2.rst:131
+msgid ""
+"Retrieve a list of active versions (eg. \"latest\", \"stable\", \"v1.x\") "
+"for a single project."
+msgstr ""
+
+#: ../../../api/v2.rst:133
+msgid ""
+"{\n"
+"    \"versions\": [VERSION, VERSION, ...]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:139
+msgid "Version objects for the given ``Project``"
+msgstr ""
+
+#: ../../../api/v2.rst:141
+msgid ""
+"See the :ref:`Version detail <api-version-detail>` call for the format of "
+"the ``Version`` object."
+msgstr ""
+
+#: ../../../api/v2.rst:144
+msgid "Versions"
+msgstr ""
+
+#: ../../../api/v2.rst:146
+msgid "Versions are different versions of the same project documentation"
+msgstr ""
+
+#: ../../../api/v2.rst:148
+msgid ""
+"The versions for a given project can be viewed in a project's version "
+"screen. For example, here is the `Pip project's version screen`_."
+msgstr ""
+
+#: ../../../api/v2.rst:154
+msgid "Version list"
+msgstr ""
+
+#: ../../../api/v2.rst:158
+msgid "Retrieve a list of all Versions for all projects"
+msgstr ""
+
+#: ../../../api/v2.rst:160
+msgid ""
+"{\n"
+"    \"count\": 1000,\n"
+"    \"previous\": null,\n"
+"    \"results\": [VERSIONS],\n"
+"    \"next\": \"https://app.readthedocs.org/api/v2/version/?"
+"limit=10&offset=10\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:170
+msgid "URI for next set of Versions."
+msgstr ""
+
+#: ../../../api/v2.rst:171
+msgid "URI for previous set of Versions."
+msgstr ""
+
+#: ../../../api/v2.rst:172
+msgid "Total number of Versions."
+msgstr ""
+
+#: ../../../api/v2.rst:173
+msgid "Array of ``Version`` objects."
+msgstr ""
+
+#: ../../../api/v2.rst:175
+msgid "Narrow to the versions for a specific ``Project``"
+msgstr ""
+
+#: ../../../api/v2.rst:176
+msgid ""
+"Pass ``true`` or ``false`` to show only active or inactive versions. By "
+"default, the API returns all versions."
+msgstr ""
+
+#: ../../../api/v2.rst:182
+msgid "Version detail"
+msgstr ""
+
+#: ../../../api/v2.rst:186
+msgid "Retrieve details of a single version."
+msgstr ""
+
+#: ../../../api/v2.rst:188
+msgid ""
+"{\n"
+"    \"id\": 1437428,\n"
+"    \"slug\": \"stable\",\n"
+"    \"verbose_name\": \"stable\",\n"
+"    \"built\": true,\n"
+"    \"active\": true,\n"
+"    \"type\": \"tag\",\n"
+"    \"identifier\": \"3a6b3995c141c0888af6591a59240ba5db7d9914\",\n"
+"    \"privacy_level\": \"public\",\n"
+"    \"downloads\": {\n"
+"        \"pdf\": \"//readthedocs.org/projects/pip/downloads/pdf/stable/\",\n"
+"        \"htmlzip\": \"//readthedocs.org/projects/pip/downloads/htmlzip/"
+"stable/\",\n"
+"        \"epub\": \"//readthedocs.org/projects/pip/downloads/epub/stable/\"\n"
+"    },\n"
+"    \"project\": {PROJECT},\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:207
+msgid "The ID of the version"
+msgstr ""
+
+#: ../../../api/v2.rst:208
+msgid "The name of the version."
+msgstr ""
+
+#: ../../../api/v2.rst:209
+msgid "The version slug."
+msgstr ""
+
+#: ../../../api/v2.rst:210
+msgid "Whether this version has been built"
+msgstr ""
+
+#: ../../../api/v2.rst:211
+msgid "Whether this version is still active"
+msgstr ""
+
+#: ../../../api/v2.rst:212
+msgid "The type of this version (typically \"tag\" or \"branch\")"
+msgstr ""
+
+#: ../../../api/v2.rst:213
+msgid ""
+"A version control identifier for this version (eg. the commit hash of the "
+"tag)"
+msgstr ""
+
+#: ../../../api/v2.rst:214
+msgid "URLs to downloads of this version's documentation"
+msgstr ""
+
+#: ../../../api/v2.rst:215
+msgid "Details of the ``Project`` for this version."
+msgstr ""
+
+#: ../../../api/v2.rst:218
+msgid "There is no ``Version`` with this ID"
+msgstr ""
+
+#: ../../../api/v2.rst:222
+msgid "Builds"
+msgstr ""
+
+#: ../../../api/v2.rst:224
+msgid ""
+"Builds are created by Read the Docs whenever a ``Project`` has its "
+"documentation built. Frequently this happens automatically via a web hook "
+"but can be triggered manually."
+msgstr ""
+
+#: ../../../api/v2.rst:227
+msgid ""
+"Builds can be viewed in the build screen for a project. For example, here is "
+"`Pip's build screen`_."
+msgstr ""
+
+#: ../../../api/v2.rst:233
+msgid "Build list"
+msgstr ""
+
+#: ../../../api/v2.rst:237
+msgid "Retrieve details of builds ordered by most recent first"
+msgstr ""
+
+#: ../../../api/v2.rst:244
+msgid "curl https://app.readthedocs.org/api/v2/build/?project__slug=pip"
+msgstr ""
+
+#: ../../../api/v2.rst:247
+msgid ""
+"{\n"
+"    \"count\": 100,\n"
+"    \"next\": null,\n"
+"    \"previous\": null,\n"
+"    \"results\": [BUILDS]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:256
+msgid "URI for next set of Builds."
+msgstr ""
+
+#: ../../../api/v2.rst:257
+msgid "URI for previous set of Builds."
+msgstr ""
+
+#: ../../../api/v2.rst:258
+msgid "Total number of Builds."
+msgstr ""
+
+#: ../../../api/v2.rst:259
+msgid "Array of ``Build`` objects."
+msgstr ""
+
+#: ../../../api/v2.rst:261
+msgid "Narrow to builds for a specific ``Project``"
+msgstr ""
+
+#: ../../../api/v2.rst:262
+msgid "Narrow to builds for a specific ``commit``"
+msgstr ""
+
+#: ../../../api/v2.rst:265
+msgid "Build detail"
+msgstr ""
+
+#: ../../../api/v2.rst:269
+msgid "Retrieve details of a single build."
+msgstr ""
+
+#: ../../../api/v2.rst:271
+msgid ""
+"{\n"
+"    \"id\": 7367364,\n"
+"    \"date\": \"2018-06-19T15:15:59.135894\",\n"
+"    \"length\": 59,\n"
+"    \"type\": \"html\",\n"
+"    \"state\": \"finished\",\n"
+"    \"success\": true,\n"
+"    \"error\": \"\",\n"
+"    \"commit\": \"6f808d743fd6f6907ad3e2e969c88a549e76db30\",\n"
+"    \"docs_url\": \"http://pip.pypa.io/en/latest/\",\n"
+"    \"project\": 13,\n"
+"    \"project_slug\": \"pip\",\n"
+"    \"version\": 3681,\n"
+"    \"version_slug\": \"latest\",\n"
+"    \"commands\": [\n"
+"        {\n"
+"            \"description\": \"\",\n"
+"            \"start_time\": \"2018-06-19T20:16:00.951959\",\n"
+"            \"exit_code\": 0,\n"
+"            \"build\": 7367364,\n"
+"            \"command\": \"git remote set-url origin git://github.com/pypa/"
+"pip.git\",\n"
+"            \"run_time\": 0,\n"
+"            \"output\": \"\",\n"
+"            \"id\": 42852216,\n"
+"            \"end_time\": \"2018-06-19T20:16:00.969170\"\n"
+"        },\n"
+"        ...\n"
+"    ],\n"
+"    ...\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:305
+msgid "The ID of the build"
+msgstr ""
+
+#: ../../../api/v2.rst:306
+msgid "The ISO-8601 datetime of the build."
+msgstr ""
+
+#: ../../../api/v2.rst:307
+msgid "The length of the build in seconds."
+msgstr ""
+
+#: ../../../api/v2.rst:308
+msgid "The type of the build (one of \"html\", \"pdf\", \"epub\")"
+msgstr ""
+
+#: ../../../api/v2.rst:309
+msgid ""
+"The state of the build (one of \"triggered\", \"building\", \"installing\", "
+"\"cloning\", or \"finished\")"
+msgstr ""
+
+#: ../../../api/v2.rst:310
+msgid "Whether the build was successful"
+msgstr ""
+
+#: ../../../api/v2.rst:311
+msgid "An error message if the build was unsuccessful"
+msgstr ""
+
+#: ../../../api/v2.rst:312
+msgid "A version control identifier for this build (eg. the commit hash)"
+msgstr ""
+
+#: ../../../api/v2.rst:313
+msgid "The canonical URL of the build docs"
+msgstr ""
+
+#: ../../../api/v2.rst:314
+msgid "The ID of the project being built"
+msgstr ""
+
+#: ../../../api/v2.rst:315
+msgid "The slug for the project being built"
+msgstr ""
+
+#: ../../../api/v2.rst:316
+msgid "The ID of the version of the project being built"
+msgstr ""
+
+#: ../../../api/v2.rst:317
+msgid "The slug for the version of the project being built"
+msgstr ""
+
+#: ../../../api/v2.rst:318
+msgid "Array of commands for the build with details including output."
+msgstr ""
+
+#: ../../../api/v2.rst:321
+msgid "There is no ``Build`` with this ID"
+msgstr ""
+
+#: ../../../api/v2.rst:323
+msgid ""
+"Some fields primarily used for UI elements in Read the Docs are omitted."
+msgstr ""
+
+#: ../../../api/v2.rst:327
+msgid "Embed"
+msgstr ""
+
+#: ../../../api/v2.rst:331
+msgid "Retrieve HTML-formatted content from documentation page or section."
+msgstr ""
+
+#: ../../../api/v2.rst:335
+msgid ""
+"The content will be returned as is, without any sanitization or escaping. "
+"You should not include content from arbitrary projects, or projects you do "
+"not trust."
+msgstr ""
+
+#: ../../../api/v2.rst:343
+msgid ""
+"curl https://app.readthedocs.org/api/v2/embed/?"
+"project=docs&version=latest&doc=features&path=features.html"
+msgstr ""
+
+#: ../../../api/v2.rst:344
+msgid "or"
+msgstr ""
+
+#: ../../../api/v2.rst:349
+msgid ""
+"curl https://app.readthedocs.org/api/v2/embed/?url=https://docs.readthedocs."
+"io/en/latest/features.html"
+msgstr ""
+
+#: ../../../api/v2.rst:352
+msgid ""
+"{\n"
+"    \"content\": [\n"
+"        \"<div class=\\\"section\\\" id=\\\"read-the-docs-features\\"
+"\">\\n<h1>Read the Docs...\"\n"
+"    ],\n"
+"    \"headers\": [\n"
+"        {\n"
+"            \"Read the Docs features\": \"#\"\n"
+"        },\n"
+"        {\n"
+"            \"Automatic Documentation Deployment\": \"#automatic-"
+"documentation-deployment\"\n"
+"        },\n"
+"        {\n"
+"            \"Custom Domains & White Labeling\": \"#custom-domains-white-"
+"labeling\"\n"
+"        },\n"
+"        {\n"
+"            \"Versioned Documentation\": \"#versioned-documentation\"\n"
+"        },\n"
+"        {\n"
+"            \"Downloadable Documentation\": \"#downloadable-documentation\"\n"
+"        },\n"
+"        {\n"
+"            \"Full-Text Search\": \"#full-text-search\"\n"
+"        },\n"
+"        {\n"
+"            \"Open Source and Customer Focused\": \"#open-source-and-"
+"customer-focused\"\n"
+"        }\n"
+"    ],\n"
+"    \"url\": \"https://docs.readthedocs.io/en/latest/features\",\n"
+"    \"meta\": {\n"
+"        \"project\": \"docs\",\n"
+"        \"version\": \"latest\",\n"
+"        \"doc\": \"features\",\n"
+"        \"section\": \"read the docs features\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v2.rst:390
+msgid "HTML content of the section."
+msgstr ""
+
+#: ../../../api/v2.rst:391
+msgid "section's headers in the document."
+msgstr ""
+
+#: ../../../api/v2.rst:392
+msgid "URL of the document."
+msgstr ""
+
+#: ../../../api/v2.rst:393
+msgid "meta data of the requested section."
+msgstr ""
+
+#: ../../../api/v2.rst:395
+msgid "Read the Docs project's slug."
+msgstr ""
+
+#: ../../../api/v2.rst:396
+msgid "document to fetch content from."
+msgstr ""
+
+#: ../../../api/v2.rst:398
+msgid "*optional* Read the Docs version's slug (default: ``latest``)."
+msgstr ""
+
+#: ../../../api/v2.rst:399
+msgid "*optional* section within the document to fetch."
+msgstr ""
+
+#: ../../../api/v2.rst:400
+msgid "*optional* full path to the document including extension."
+msgstr ""
+
+#: ../../../api/v2.rst:402
+msgid "full URL of the document (and section) to fetch content from."
+msgstr ""
+
+#: ../../../api/v2.rst:406
+msgid ""
+"You can call this endpoint by sending at least ``project`` and ``doc`` *or* "
+"``url`` attribute."
+msgstr ""
+
+#: ../../../api/v2.rst:410
+msgid "Undocumented resources and endpoints"
+msgstr ""
+
+#: ../../../api/v2.rst:412
+msgid ""
+"There are some undocumented endpoints in the API. These should not be used "
+"and could change at any time. These include:"
+msgstr ""
+
+#: ../../../api/v2.rst:416
+msgid ""
+"Endpoints for returning footer and version data to be injected into docs. "
+"(``/api/v2/footer_html``)"
+msgstr ""
+
+#: ../../../api/v2.rst:418
+msgid "Endpoints used for advertising (``/api/v2/sustainability/``)"
+msgstr ""
+
+#: ../../../api/v2.rst:419
+msgid "Any other endpoints not detailed above."
+msgstr ""

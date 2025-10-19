@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/index.rst:10
+msgid "Project setup and configuration"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Build process"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Upgrading and maintaining projects"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Content, themes and SEO"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Security and access"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Account management"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Best practice"
+msgstr ""
+
+#: ../../../guides/index.rst:10
+msgid "Troubleshooting problems"
+msgstr ""
+
+#: ../../../guides/index.rst:4
+msgid "How-to guides A-Z"
+msgstr ""
+
+#: ../../../guides/index.rst:6
+msgid ""
+"These guides will help walk you through specific use cases related to Read "
+"the Docs itself, documentation tools like Sphinx and MkDocs and how to write "
+"successful documentation."
+msgstr ""

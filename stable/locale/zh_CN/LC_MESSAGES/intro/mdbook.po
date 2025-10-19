@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/mdbook.rst:-1
+msgid "Learn how to host mdBook documentation on Read the Docs."
+msgstr ""
+
+#: ../../../intro/mdbook.rst:2
+msgid "mdBook"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:7
+msgid "`mdBook`_ is a command line tool to create books with Markdown."
+msgstr ""
+
+#: ../../../intro/mdbook.rst:9
+msgid ""
+"Minimal configuration is required to build an existing mdBook project on "
+"Read the Docs."
+msgstr ""
+
+#: ../../../intro/mdbook.rst:11
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:11
+msgid ""
+" version: 2\n"
+"\n"
+" build:\n"
+"   os: ubuntu-lts-latest\n"
+"   tools:\n"
+"     rust: latest\n"
+"   jobs:\n"
+"     install:\n"
+"       - cargo install mdbook\n"
+"     build:\n"
+"       html:\n"
+"         # For an example book..\n"
+"         # - mdbook init docs\n"
+"         - mdbook build docs --dest-dir $READTHEDOCS_OUTPUT/html"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:32
+msgid "Getting started"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:34
+msgid ""
+"If you have an existing mdBook project you want to host on Read the Docs, "
+"check out our :doc:`/intro/add-project` guide."
+msgstr ""
+
+#: ../../../intro/mdbook.rst:35
+msgid ""
+"If you're new to mdBook, check out the official `Getting started with "
+"mdBook`_ guide."
+msgstr ""
+
+#: ../../../intro/mdbook.rst:40
+msgid "Example repository and demo"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:42
+msgid "Example repository"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:43
+msgid "https://github.com/readthedocs/test-builds/tree/mdbook"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:45
+msgid "Demo"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:46
+msgid "https://test-builds.readthedocs.io/en/mdbook/"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:49
+msgid "Further reading"
+msgstr ""
+
+#: ../../../intro/mdbook.rst:51
+msgid "`mdBook documentation`_"
+msgstr ""

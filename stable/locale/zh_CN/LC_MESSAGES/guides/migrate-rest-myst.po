@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/migrate-rest-myst.md:1
+msgid "How to migrate from reStructuredText to MyST Markdown"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:3
+msgid ""
+"In this guide, you will find how you can start writing Markdown in your "
+"existing reStructuredText project, or migrate it completely."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:7
+msgid ""
+"Sphinx is usually associated with reStructuredText, the markup language {pep}"
+"`designed for the CPython project in the early '00s <287>`. However, for "
+"quite some time Sphinx has been compatible with Markdown as well, thanks to "
+"a number of extensions."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:12
+msgid ""
+"The most powerful of such extensions is {doc}`MyST-Parser <myst-parser:"
+"index>`, which implements a CommonMark-compliant, extensible Markdown "
+"dialect with support for the Sphinx roles and directives that make it so "
+"useful."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:16
+msgid ""
+"If, **instead of migrating**, you are starting a new project from scratch, "
+"have a look at {doc}`myst-parser:intro`. If you are starting a **project for "
+"Jupyter**, you can start with Jupyter Book, which uses ``MyST-Parser``, see "
+"the official Jupyter Book tutorial: {doc}`jupyterbook:start/your-first-book`"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:20
+msgid "How to write  your content both in reStructuredText and MyST"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:22
+msgid ""
+"It is useful to ask whether a migration is necessary in the first place. "
+"Doing bulk migrations of large projects with lots of work in progress will "
+"create conflicts for ongoing changes. On the other hand, your writers might "
+"prefer to have some files in Markdown and some others in reStructuredText, "
+"for whatever reason. Luckily, Sphinx supports reading both types of markup "
+"at the same time without problems."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:29
+msgid ""
+"To start using MyST in your existing Sphinx project, first [install the "
+"`myst-parser` Python package](https://myst-parser.readthedocs.io/en/stable/"
+"intro.html#installation) and then [enable it on your configuration](https://"
+"myst-parser.readthedocs.io/en/stable/intro.html#enable-myst-in-sphinx):"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:33
+#: ../../../guides/migrate-rest-myst.md:99
+msgid "conf.py"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:33
+msgid ""
+"extensions = [\n"
+"    # Your existing extensions\n"
+"    ...,\n"
+"    \"myst_parser\",\n"
+"]"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:44
+msgid ""
+"Your reStructuredText documents will keep rendering, and you will be able to "
+"add MyST documents with the `.md` extension that will be processed by MyST-"
+"Parser."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:48
+msgid ""
+"As an example, _this guide_ is written in MyST while the rest of the Read "
+"the Docs documentation is written in reStructuredText."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:52
+msgid ""
+"By default, MyST-Parser registers the `.md` suffix for MyST source files. If "
+"you want to use a different suffix, you can do so by changing your "
+"`source_suffix` configuration value in `conf.py`."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:57
+msgid "How to convert existing reStructuredText documentation to MyST"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:59
+msgid ""
+"To convert existing reST documents to MyST, you can use the `rst2myst` CLI "
+"script shipped by {doc}`rst-to-myst:index`. The script supports converting "
+"the documents one by one, or scanning a series of directories to convert "
+"them in bulk."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:64
+msgid ""
+"After {doc}``installing `rst-to-myst` <rst-to-myst:index>``, you can run the "
+"script as follows:"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:67
+msgid ""
+"$ rst2myst convert docs/source/index.rst  # Converts index.rst to index.md\n"
+"$ rst2myst convert docs/**/*.rst  # Convert every .rst file under the docs "
+"directory\n"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:72
+msgid ""
+"This will create a `.md` MyST file for every `.rst` source file converted."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:74
+msgid "How to modify the behaviour of `rst2myst`"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:76
+msgid ""
+"The `rst2myst` accepts several flags to modify its behavior. All of them "
+"have sensible defaults, so you don't have to specify them unless you want to."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:80
+msgid "These are a few options you might find useful:"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:82
+msgid "{option}``-d, --dry-run <rst-to-myst:rst2myst-convert.--dry-run>``"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:83
+msgid ""
+"Only verify that the script would work correctly, without actually writing "
+"any files."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:86
+msgid ""
+"{option}``-R, --replace-files <rst-to-myst:rst2myst-convert.--replace-"
+"files>``"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:87
+msgid ""
+"Replace the `.rst` files by their `.md` equivalent, rather than writing a "
+"new `.md` file next to the old `.rst` one."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:90
+msgid ""
+"You can read the full list of options in {doc}``the `rst2myst` documentation "
+"<rst-to-myst:cli>``."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:93
+msgid "How to enable optional syntax"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:95
+msgid ""
+"Some reStructuredText syntax will require you to enable certain MyST "
+"plugins. For example, to write [reST definition lists], you need to add a "
+"`myst_enable_extensions` variable to your Sphinx configuration, as follows:"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:99
+msgid ""
+"myst_enable_extensions = [\n"
+"    \"deflist\",\n"
+"]"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:106
+msgid ""
+"You can learn more about {doc}`other MyST-Parser plugins <myst-parser:syntax/"
+"optional>` in their documentation."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:111
+msgid "How to write reStructuredText syntax within MyST"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:113
+msgid ""
+"There is a small chance that `rst2myst` does not properly understand a piece "
+"of reST syntax, either because there is a bug in the tool or because that "
+"syntax does not have a MyST equivalent yet. For example, {ref}`as explained "
+"in the documentation <myst-parser:howto/autodoc>`, the `sphinx.ext.autodoc` "
+"extension is incompatible with MyST."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:119
+msgid ""
+"Fortunately, MyST supports an `eval-rst` directive that will parse the "
+"content as reStructuredText, rather than MyST. For example:"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:123
+msgid ""
+"```{eval-rst}\n"
+".. note::\n"
+"\n"
+"   Complete MyST migration.\n"
+"\n"
+"```\n"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:132
+msgid "will produce the following result:"
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:137
+msgid "Complete MyST migration."
+msgstr ""
+
+#: ../../../guides/migrate-rest-myst.md:141
+msgid ""
+"As a result, this allows you to conduct a gradual migration, at the expense "
+"of having heterogeneous syntax in your source files. In any case, the HTML "
+"output will be the same."
+msgstr ""

@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/private-python-packages.rst:2
+msgid "How to install private python packages"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:6
+msgid "This guide is for :doc:`/commercial/index`."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:8
+msgid ""
+"Read the Docs uses :ref:`pip <config-file/v2:python.install>` to install "
+"your Python packages. If you have private dependencies, you can install them "
+"from a :ref:`private Git repository <guides/private-python-packages:From a "
+"Git repository>` or a :ref:`private repository manager <guides/private-"
+"python-packages:From a repository manager other than PyPI>`."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:14
+msgid "From a Git repository"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:16
+msgid ""
+"Pip supports installing packages from a :ref:`Git repository <pip:vcs "
+"support>` using the URI form:"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:18
+msgid ""
+"``git+https://gitprovider.com/user/project.git@{version}`` (public "
+"repository)"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:19
+msgid ""
+"``git+https://{token}@gitprovider.com/user/project.git@{version}`` (private "
+"repository)"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:21
+msgid ""
+"Where ``version`` can be a tag, a branch, or a commit, and ``token`` is a "
+"personal access token with read only permissions from your provider."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:25
+msgid ""
+"To install a private package from a Git repositories, add the URI to your :"
+"ref:`requirements file <config-file/v2:Requirements file>`. Make sure to use "
+"an environment variable for the token, so you don't have to hard code it in "
+"the URI."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:27
+msgid ""
+"`Pip automatically  expands <https://pip.pypa.io/en/stable/reference/"
+"requirements-file-format/#using-environment-variables>`__ environment "
+"variables in POSIX format: using only uppercase letters and ``_``, and "
+"including a dollar sign and curly brackets around the name, like "
+"``${API_TOKEN}``."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:29
+msgid ""
+"See :doc:`using environment variables in Read the Docs </environment-"
+"variables>` for more information."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:32
+msgid "How to get a personal access token from our supported providers"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:35
+msgid "GitHub"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:37
+msgid ""
+"You need to create a fine-grained personal access token with the "
+"``Contents`` repository permission set to ``Read-only``. Follow the `GitHub "
+"documentation <https://docs.github.com/en/authentication/keeping-your-"
+"account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-"
+"grained-personal-access-token>`__ on how to create a fine-grained personal "
+"access token."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:41
+#: ../../../guides/private-python-packages.rst:67
+msgid "URI example:"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:43
+msgid ""
+"git+https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/user/project."
+"git@{version}"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:48
+msgid "GitLab"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:50
+msgid ""
+"You need to create a deploy token with the ``read_repository`` scope for the "
+"repository you want to install the package from. Follow the `GitLab "
+"documentation <https://docs.gitlab.com/ee/user/project/deploy_tokens/"
+"#creating-a-deploy-token>`__ on how to create a deploy token."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:54
+msgid ""
+"URI example, where ``GITLAB_TOKEN_USER`` is the user from the deploy token "
+"you created, not your GitLab user:"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:56
+msgid ""
+"git+https://${GITLAB_TOKEN_USER}:${GITLAB_TOKEN}@gitlab.com/user/project."
+"git@{version}"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:61
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:63
+msgid ""
+"You need to create an app password with ``Read repositories`` permissions. "
+"Follow the `Bitbucket documentation <https://confluence.atlassian.com/"
+"bitbucket/app-passwords-828781300.html>`__ on how to create an app password."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:69
+msgid ""
+"git+https://${BITBUCKET_USER}:${BITBUCKET_APP_PASSWORD}@bitbucket.org/user/"
+"project.git@{version}'"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:73
+msgid "Here ``BITBUCKET_USER`` is your Bitbucket user."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:77
+msgid ""
+"Bitbucket doesn't support app passwords per repository. An app password will "
+"grant read access to all repositories the user has access to. You can create "
+"a `machine user <https://confluence.atlassian.com/bitbucketserver/ssh-access-"
+"keys-for-system-use-776639781.html>`__ to give read access only to the "
+"repositories you need."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:82
+msgid "From a repository manager other than PyPI"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:84
+msgid ""
+"By default Pip installs your packages from `PyPI <https://pypi.org/>`__. If "
+"you are using a different repository manager like *pypiserver*, or *Nexus "
+"Repository*, you need to get the index URL from your repository manager and "
+"set the :option:`pip:--index-url` option in one of the following ways:"
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:88
+msgid ""
+"Set the ``PIP_INDEX_URL`` :doc:`environment variable in Read the Docs </"
+"environment-variables>` with the index URL. See the Requirements File "
+"`environment variables <https://pip.pypa.io/en/stable/reference/requirements-"
+"file-format#using-environment-variables>`__ reference."
+msgstr ""
+
+#: ../../../guides/private-python-packages.rst:90
+msgid ""
+"Put ``--index-url=https://my-index-url.com/`` at the top of your "
+"requirements file. See :ref:`pip:requirements-file-format`."
+msgstr ""

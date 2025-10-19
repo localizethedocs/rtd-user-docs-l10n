@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../about/index.rst:2
+msgid "About Read the Docs"
+msgstr ""
+
+#: ../../../about/index.rst:4
+msgid ""
+"Read the Docs is a C Corporation registered in Oregon. Our bootstrapped "
+"company is owned and fully controlled by the founders, and fully funded by "
+"our customers and advertisers. This allows us to **focus 100% on our users**."
+msgstr ""
+
+#: ../../../about/index.rst:9
+msgid "We have two main sources of revenue:"
+msgstr ""
+
+#: ../../../about/index.rst:11
+msgid ""
+"|com_brand| - where we `provide <https://app.readthedocs.com>`__ a valuable "
+"paid service to companies."
+msgstr ""
+
+#: ../../../about/index.rst:12
+msgid ""
+"|org_brand| - where we provide a free service to the open source community, "
+"funded via :doc:`/advertising/ethical-advertising`."
+msgstr ""
+
+#: ../../../about/index.rst:14
+msgid ""
+"We believe that having both paying customers and ethical advertising is the "
+"best way to create a sustainable platform for our users. We have built "
+"something that we expect to last a long time, and we are able to make "
+"decisions based only on the best interest of our community and customers."
+msgstr ""
+
+#: ../../../about/index.rst:18
+msgid ""
+"All of the source code for Read the Docs is open source. You are welcome to :"
+"doc:`contribute <rtd-dev:contribute>` the features you want or run your own "
+"instance. We should note that we generally only support our hosted versions "
+"as a matter of :doc:`our philosophy </open-source-philosophy>`."
+msgstr ""
+
+#: ../../../about/index.rst:22
+msgid ""
+"We owe a great deal to the open source community that we are a part of, so "
+"we provide free ads via our :ref:`community ads <advertising/ethical-"
+"advertising:Community Ads>` program. This allows us to give back to the "
+"communities and projects that we support and depend on."
+msgstr ""
+
+#: ../../../about/index.rst:26
+msgid ""
+"We are proud about the way we manage our company and products, and are glad "
+"to have you on board with us in this :doc:`great documentation journey </"
+"story>`."
+msgstr ""
+
+#: ../../../about/index.rst:29
+msgid ""
+"If you want to dive more into more specific information and our policies, "
+"we've brought most of the most important ones below."
+msgstr ""
+
+#: ../../../about/index.rst:32
+msgid "⏩ :doc:`/commercial/index`"
+msgstr ""
+
+#: ../../../about/index.rst:33
+msgid "Learn more about how our company provides paid solutions"
+msgstr ""
+
+#: ../../../about/index.rst:35
+msgid "⏩ :doc:`/reference/policies`"
+msgstr ""
+
+#: ../../../about/index.rst:36
+msgid "Policies and legal documents used by |org_brand| and |com_brand|."
+msgstr ""
+
+#: ../../../about/index.rst:38
+msgid "⏩ :doc:`/advertising/index`"
+msgstr ""
+
+#: ../../../about/index.rst:39
+msgid "Information about how advertisement in Read the Docs"
+msgstr ""
+
+#: ../../../about/index.rst:41
+msgid "⏩ :doc:`/story`"
+msgstr ""
+
+#: ../../../about/index.rst:42
+msgid "A brief throwback to how we were founded"
+msgstr ""
+
+#: ../../../about/index.rst:44
+msgid "⏩ :doc:`/sponsors`"
+msgstr ""
+
+#: ../../../about/index.rst:45
+msgid ""
+"Read about who currently sponsors Read the Docs and who sponsored us in the "
+"past."
+msgstr ""
+
+#: ../../../about/index.rst:47
+msgid "⏩ :doc:`/open-source-philosophy`"
+msgstr ""
+
+#: ../../../about/index.rst:48
+msgid "Our philosophy is anchored in open source."
+msgstr ""
+
+#: ../../../about/index.rst:50
+msgid "⏩ :doc:`/team`"
+msgstr ""
+
+#: ../../../about/index.rst:51
+msgid "How we work and who we are."
+msgstr ""
+
+#: ../../../about/index.rst:53
+msgid "⏩ :doc:`/support`"
+msgstr ""
+
+#: ../../../about/index.rst:54
+msgid "Read this before asking for help: How to get support and where."
+msgstr ""
+
+#: ../../../about/index.rst:56
+msgid "⏩ :doc:`/glossary`"
+msgstr ""
+
+#: ../../../about/index.rst:57
+msgid "A useful index of terms used in our docs"
+msgstr ""
+
+#: ../../../about/index.rst:61
+msgid "`Our website <https://about.readthedocs.com>`__"
+msgstr ""
+
+#: ../../../about/index.rst:62
+msgid ""
+"Our primary website has general-purpose information about Read the Docs like "
+"pricing and feature overviews."
+msgstr ""

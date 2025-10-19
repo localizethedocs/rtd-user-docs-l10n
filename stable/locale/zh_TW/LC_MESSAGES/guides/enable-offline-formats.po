@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/enable-offline-formats.rst:2
+msgid "How to enable offline formats"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:4
+msgid ""
+"This guide provides **step-by-step instructions to enabling offline "
+"formats** of your documentation."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:6
+msgid ""
+"They are automatically built by Read the Docs during our default build "
+"process, as long as you have the configuration enabled to turn this on."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:10
+msgid "Enabling offline formats"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:12
+msgid ""
+"Offline formats are enabled by the :ref:`config-file/v2:formats` key in our "
+"config file. A simple example is here:"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:15
+msgid ""
+"# Build PDF & ePub\n"
+"formats:\n"
+"  - epub\n"
+"  - pdf"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:23
+msgid "Verifying offline formats"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:25
+msgid ""
+"You can verify that offline formats are building in your :guilabel:`Project "
+"dashboard` > :guilabel:`Downloads`:"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:31
+msgid "Deleting offline formats"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:33
+msgid ""
+"The entries in the Downloads section of your project dashboard reflect the "
+"formats specified in your config file for each active version."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:36
+msgid ""
+"This means that if you wish to remove downloadable content for a given "
+"version, you can do so by removing the matching :ref:`config-file/v2:"
+"formats` key from your config file."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:42
+msgid "Continue learning"
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:46
+msgid ""
+"Other pages in our documentation are relevant to this feature, and might be "
+"a useful next step."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:50
+msgid ":doc:`/downloadable-documentation` - Overview of this feature."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:51
+msgid ""
+":ref:`config-file/v2:formats` - Configuration file options for offline "
+"formats."
+msgstr ""

@@ -1,0 +1,2349 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/v3.rst:2
+msgid "API v3"
+msgstr ""
+
+#: ../../../api/v3.rst:4
+msgid ""
+"The Read the Docs API uses :abbr:`REST (Representational State Transfer)`. "
+"JSON is returned by all API responses including errors and HTTP response "
+"status codes are to designate success and failure."
+msgstr ""
+
+#: ../../../api/v3.rst:12
+msgid "Table of contents"
+msgstr ""
+
+#: ../../../api/v3.rst:15
+msgid "Authentication and authorization"
+msgstr ""
+
+#: ../../../api/v3.rst:17
+msgid ""
+"Requests to the Read the Docs public API are for public and private "
+"information. Endpoints that return public information do not require "
+"authentication."
+msgstr ""
+
+#: ../../../api/v3.rst:22
+msgid "Token"
+msgstr ""
+
+#: ../../../api/v3.rst:24
+msgid ""
+"The ``Authorization`` HTTP header can be specified with ``Token <your-access-"
+"token>`` to authenticate as a user and have the same permissions that the "
+"user itself."
+msgstr ""
+
+#: ../../../api/v3.rst:30 ../../../api/v3.rst:84
+msgid "|org_brand|"
+msgstr ""
+
+#: ../../../api/v3.rst:34
+msgid ""
+"On |org_brand|, you will find your access Token under `your profile settings "
+"<https://app.readthedocs.org/accounts/tokens/>`__."
+msgstr ""
+
+#: ../../../api/v3.rst:37 ../../../api/v3.rst:90
+msgid "|com_brand|"
+msgstr ""
+
+#: ../../../api/v3.rst:41
+msgid ""
+"On |com_brand|, you will find your access Token under `your profile settings "
+"<https://app.readthedocs.com/accounts/tokens/>`__."
+msgstr ""
+
+#: ../../../api/v3.rst:46
+msgid "Session"
+msgstr ""
+
+#: ../../../api/v3.rst:48
+msgid ""
+"Session authentication is allowed, so the API can be used by our dashboard "
+"and other internal services."
+msgstr ""
+
+#: ../../../api/v3.rst:51
+msgid "Rate limiting"
+msgstr ""
+
+#: ../../../api/v3.rst:53
+msgid ""
+"The API limits unauthenticated requests to 5 per minute and authenticated "
+"requests to 60 per minute."
+msgstr ""
+
+#: ../../../api/v3.rst:56
+msgid "Pagination"
+msgstr ""
+
+#: ../../../api/v3.rst:58
+msgid ""
+"All endpoints that return a list of objects are paginated. By default, 10 "
+"objects are returned per page, but you can change this using the ``limit`` "
+"query parameter. The response includes a ``count``, ``next``, and "
+"``previous`` attributes to navigate between pages."
+msgstr ""
+
+#: ../../../api/v3.rst:64
+msgid "Resources"
+msgstr ""
+
+#: ../../../api/v3.rst:66
+msgid ""
+"This section shows all the resources that are currently available in APIv3. "
+"There are some URL attributes that applies to all of these resources:"
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "?fields="
+msgstr ""
+
+#: ../../../api/v3.rst:71
+msgid "Specify which fields are going to be returned in the response."
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "?omit="
+msgstr ""
+
+#: ../../../api/v3.rst:75
+msgid "Specify which fields are going to be omitted from the response."
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "?expand="
+msgstr ""
+
+#: ../../../api/v3.rst:79
+msgid ""
+"Some resources allow to expand/add extra fields on their responses (see "
+"`Project details <#project-details>`__ for example)."
+msgstr ""
+
+#: ../../../api/v3.rst:88
+msgid ""
+"You can browse the full API by accessing its root URL: https://app."
+"readthedocs.org/api/v3/"
+msgstr ""
+
+#: ../../../api/v3.rst:94
+msgid ""
+"You can browse the full API by accessing its root URL: https://app."
+"readthedocs.com/api/v3/"
+msgstr ""
+
+#: ../../../api/v3.rst:99
+msgid ""
+"If you are using :doc:`Read the Docs for Business </commercial/index>` take "
+"into account that you will need to replace https://app.readthedocs.org/ by "
+"https://app.readthedocs.com/ in all the URLs used in the following examples."
+msgstr ""
+
+#: ../../../api/v3.rst:104
+msgid "Projects"
+msgstr ""
+
+#: ../../../api/v3.rst:107
+msgid "Projects list"
+msgstr ""
+
+#: ../../../api/v3.rst:111
+msgid "Retrieve a list of all the projects for the current logged in user."
+msgstr ""
+
+#: ../../../api/v3.rst:113 ../../../api/v3.rst:221 ../../../api/v3.rst:346
+#: ../../../api/v3.rst:420 ../../../api/v3.rst:493 ../../../api/v3.rst:538
+#: ../../../api/v3.rst:581 ../../../api/v3.rst:649 ../../../api/v3.rst:712
+#: ../../../api/v3.rst:806 ../../../api/v3.rst:846 ../../../api/v3.rst:896
+#: ../../../api/v3.rst:934 ../../../api/v3.rst:971 ../../../api/v3.rst:1031
+#: ../../../api/v3.rst:1067 ../../../api/v3.rst:1248 ../../../api/v3.rst:1310
+#: ../../../api/v3.rst:1363 ../../../api/v3.rst:1478 ../../../api/v3.rst:1532
+#: ../../../api/v3.rst:1573 ../../../api/v3.rst:1628 ../../../api/v3.rst:1677
+#: ../../../api/v3.rst:1754 ../../../api/v3.rst:1815 ../../../api/v3.rst:1878
+#: ../../../api/v3.rst:2005
+msgid "**Example request**:"
+msgstr ""
+
+#: ../../../api/v3.rst:117
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/"
+msgstr ""
+
+#: ../../../api/v3.rst:121
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:130 ../../../api/v3.rst:238 ../../../api/v3.rst:394
+#: ../../../api/v3.rst:555 ../../../api/v3.rst:598 ../../../api/v3.rst:729
+#: ../../../api/v3.rst:823 ../../../api/v3.rst:865 ../../../api/v3.rst:913
+#: ../../../api/v3.rst:951 ../../../api/v3.rst:1013 ../../../api/v3.rst:1084
+#: ../../../api/v3.rst:1296 ../../../api/v3.rst:1352 ../../../api/v3.rst:1515
+#: ../../../api/v3.rst:1590 ../../../api/v3.rst:1645 ../../../api/v3.rst:1694
+#: ../../../api/v3.rst:1771 ../../../api/v3.rst:1832 ../../../api/v3.rst:1895
+#: ../../../api/v3.rst:2011
+msgid "**Example response**:"
+msgstr ""
+
+#: ../../../api/v3.rst:132
+msgid ""
+"{\n"
+"    \"count\": 25,\n"
+"    \"next\": \"/api/v3/projects/?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [{\n"
+"        \"id\": 12345,\n"
+"        \"name\": \"Pip\",\n"
+"        \"slug\": \"pip\",\n"
+"        \"created\": \"2010-10-23T18:12:31+00:00\",\n"
+"        \"modified\": \"2018-12-11T07:21:11+00:00\",\n"
+"        \"language\": {\n"
+"            \"code\": \"en\",\n"
+"            \"name\": \"English\"\n"
+"        },\n"
+"        \"programming_language\": {\n"
+"            \"code\": \"py\",\n"
+"            \"name\": \"Python\"\n"
+"        },\n"
+"        \"repository\": {\n"
+"            \"url\": \"https://github.com/pypa/pip\",\n"
+"            \"type\": \"git\"\n"
+"        },\n"
+"        \"default_version\": \"stable\",\n"
+"        \"default_branch\": \"master\",\n"
+"        \"subproject_of\": null,\n"
+"        \"translation_of\": null,\n"
+"        \"urls\": {\n"
+"            \"documentation\": \"http://pip.pypa.io/en/stable/\",\n"
+"            \"home\": \"https://pip.pypa.io/\"\n"
+"        },\n"
+"        \"tags\": [\n"
+"            \"distutils\",\n"
+"            \"easy_install\",\n"
+"            \"egg\",\n"
+"            \"setuptools\",\n"
+"            \"virtualenv\"\n"
+"        ],\n"
+"        \"users\": [\n"
+"            {\n"
+"                \"username\": \"dstufft\"\n"
+"            }\n"
+"        ],\n"
+"        \"active_versions\": {\n"
+"            \"stable\": \"{VERSION}\",\n"
+"            \"latest\": \"{VERSION}\",\n"
+"            \"19.0.2\": \"{VERSION}\"\n"
+"        },\n"
+"        \"_links\": {\n"
+"            \"_self\": \"/api/v3/projects/pip/\",\n"
+"            \"versions\": \"/api/v3/projects/pip/versions/\",\n"
+"            \"builds\": \"/api/v3/projects/pip/builds/\",\n"
+"            \"subprojects\": \"/api/v3/projects/pip/subprojects/\",\n"
+"            \"superproject\": \"/api/v3/projects/pip/superproject/\",\n"
+"            \"redirects\": \"/api/v3/projects/pip/redirects/\",\n"
+"            \"translations\": \"/api/v3/projects/pip/translations/\"\n"
+"        }\n"
+"    }]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "Query Parameters"
+msgstr ""
+
+#: ../../../api/v3.rst:193
+msgid "return projects with matching name"
+msgstr ""
+
+#: ../../../api/v3.rst:194
+msgid "return projects with matching slug"
+msgstr ""
+
+#: ../../../api/v3.rst:195
+msgid "language code as ``en``, ``es``, ``ru``, etc."
+msgstr ""
+
+#: ../../../api/v3.rst:196
+msgid "programming language code as ``py``, ``js``, etc."
+msgstr ""
+
+#: ../../../api/v3.rst:198 ../../../api/v3.rst:1147
+msgid ""
+"The ``results`` in response is an array of project data, which is same as :"
+"http:get:`/api/v3/projects/(string:project_slug)/`."
+msgstr ""
+
+#: ../../../api/v3.rst:205 ../../../api/v3.rst:318 ../../../api/v3.rst:402
+msgid ":doc:`Read the Docs for Business </commercial/index>`, also accepts"
+msgstr ""
+
+#: ../../../api/v3.rst:209
+msgid ""
+"**expand** (*string*) -- Add additional fields in the response. Allowed "
+"values are: ``organization``."
+msgstr ""
+
+#: ../../../api/v3.rst:215
+msgid "Project details"
+msgstr ""
+
+#: ../../../api/v3.rst:219
+msgid "Retrieve details of a single project."
+msgstr ""
+
+#: ../../../api/v3.rst:225
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/"
+msgstr ""
+
+#: ../../../api/v3.rst:229
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:240
+msgid ""
+"{\n"
+"    \"id\": 12345,\n"
+"    \"name\": \"Pip\",\n"
+"    \"slug\": \"pip\",\n"
+"    \"created\": \"2010-10-23T18:12:31+00:00\",\n"
+"    \"modified\": \"2018-12-11T07:21:11+00:00\",\n"
+"    \"language\": {\n"
+"        \"code\": \"en\",\n"
+"        \"name\": \"English\"\n"
+"    },\n"
+"    \"programming_language\": {\n"
+"        \"code\": \"py\",\n"
+"        \"name\": \"Python\"\n"
+"    },\n"
+"    \"repository\": {\n"
+"        \"url\": \"https://github.com/pypa/pip\",\n"
+"        \"type\": \"git\"\n"
+"    },\n"
+"    \"default_version\": \"stable\",\n"
+"    \"default_branch\": \"master\",\n"
+"    \"subproject_of\": null,\n"
+"    \"translation_of\": null,\n"
+"    \"urls\": {\n"
+"        \"documentation\": \"http://pip.pypa.io/en/stable/\",\n"
+"        \"home\": \"https://app.readthedocs.org/projects/pip/\",\n"
+"        \"downloads\": null,\n"
+"        \"builds\": \"https://app.readthedocs.org/projects/pip/builds/\",\n"
+"        \"versions\": \"https://app.readthedocs.org/projects/pip/versions/"
+"\",\n"
+"    },\n"
+"    \"tags\": [\n"
+"        \"distutils\",\n"
+"        \"easy_install\",\n"
+"        \"egg\",\n"
+"        \"setuptools\",\n"
+"        \"virtualenv\"\n"
+"    ],\n"
+"    \"users\": [\n"
+"        {\n"
+"            \"username\": \"dstufft\"\n"
+"        }\n"
+"    ],\n"
+"    \"active_versions\": {\n"
+"        \"stable\": \"{VERSION}\",\n"
+"        \"latest\": \"{VERSION}\",\n"
+"        \"19.0.2\": \"{VERSION}\"\n"
+"    },\n"
+"    \"privacy_level\": \"public\",\n"
+"    \"external_builds_privacy_level\": \"public\",\n"
+"    \"versioning_scheme\": \"multiple_versions_with_translations\",\n"
+"    \"_links\": {\n"
+"        \"_self\": \"/api/v3/projects/pip/\",\n"
+"        \"versions\": \"/api/v3/projects/pip/versions/\",\n"
+"        \"builds\": \"/api/v3/projects/pip/builds/\",\n"
+"        \"subprojects\": \"/api/v3/projects/pip/subprojects/\",\n"
+"        \"superproject\": \"/api/v3/projects/pip/superproject/\",\n"
+"        \"redirects\": \"/api/v3/projects/pip/redirects/\",\n"
+"        \"translations\": \"/api/v3/projects/pip/translations/\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:302
+msgid ""
+"Add additional fields in the response. Allowed values are: "
+"``active_versions``. Multiple fields can be passed separated by commas."
+msgstr ""
+
+#: ../../../api/v3.rst:308
+msgid "``versioning_scheme`` can be one of the following values:"
+msgstr ""
+
+#: ../../../api/v3.rst:310
+msgid "``multiple_versions_with_translations``"
+msgstr ""
+
+#: ../../../api/v3.rst:311
+msgid "``multiple_versions_without_translations``"
+msgstr ""
+
+#: ../../../api/v3.rst:312
+msgid "``single_version_without_translations``"
+msgstr ""
+
+#: ../../../api/v3.rst:322
+msgid ""
+"**expand** (*string*) -- Add additional fields in the response. Allowed "
+"values are: ``organization``. We used to return a full organization object "
+"in the response, due to privacy concerns, now we return only the slug of the "
+"organization. If you need to get the full organization object, you can use "
+"the organization endpoint with the slug."
+msgstr ""
+
+#: ../../../api/v3.rst:330
+msgid ""
+"The ``single_version`` attribute is deprecated, use ``versioning_scheme`` "
+"instead."
+msgstr ""
+
+#: ../../../api/v3.rst:335
+msgid ""
+"Previously, ``translation_of`` and ``subproject_of`` returned a full project "
+"object, due to privacy concerns, now they return only the slug of the "
+"project. If you need to get the full project object, you can use the project "
+"endpoint with the slug."
+msgstr ""
+
+#: ../../../api/v3.rst:340
+msgid "Project create"
+msgstr ""
+
+#: ../../../api/v3.rst:344
+msgid "Import a project under authenticated user."
+msgstr ""
+
+#: ../../../api/v3.rst:350
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:358
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:373 ../../../api/v3.rst:447 ../../../api/v3.rst:676
+#: ../../../api/v3.rst:998 ../../../api/v3.rst:1275 ../../../api/v3.rst:1337
+#: ../../../api/v3.rst:1505
+msgid "The content of ``body.json`` is like,"
+msgstr ""
+
+#: ../../../api/v3.rst:375
+msgid ""
+"{\n"
+"    \"name\": \"Test Project\",\n"
+"    \"repository\": {\n"
+"        \"url\": \"https://github.com/readthedocs/template\",\n"
+"        \"type\": \"git\"\n"
+"    },\n"
+"    \"homepage\": \"http://template.readthedocs.io/\",\n"
+"    \"programming_language\": \"py\",\n"
+"    \"language\": \"es\",\n"
+"    \"privacy_level\": \"public\",\n"
+"    \"external_builds_privacy_level\": \"public\",\n"
+"    \"tags\": [\n"
+"        \"automation\",\n"
+"        \"sphinx\"\n"
+"    ]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:396
+msgid "`See Project details <#project-details>`__"
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "Request JSON Object"
+msgstr ""
+
+#: ../../../api/v3.rst:406
+msgid ""
+"**organization** (*string*) -- required organization's slug under the "
+"project will be imported."
+msgstr ""
+
+#: ../../../api/v3.rst:407
+msgid ""
+"**teams** (*string*) -- optional teams' slugs the project will belong to."
+msgstr ""
+
+#: ../../../api/v3.rst:411 ../../../api/v3.rst:481 ../../../api/v3.rst:690
+msgid ""
+"Privacy levels are only available in :doc:`Read the Docs for Business </"
+"commercial/index>`."
+msgstr ""
+
+#: ../../../api/v3.rst:414
+msgid "Project update"
+msgstr ""
+
+#: ../../../api/v3.rst:418
+msgid "Update an existing project."
+msgstr ""
+
+#: ../../../api/v3.rst:424
+msgid ""
+"$ curl \\\n"
+"  -X PATCH \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:432
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.patch(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:449
+msgid ""
+"{\n"
+"    \"name\": \"New name for the project\",\n"
+"    \"repository\": {\n"
+"        \"url\": \"https://github.com/readthedocs/readthedocs.org\",\n"
+"        \"type\": \"git\"\n"
+"    },\n"
+"    \"language\": \"ja\",\n"
+"    \"programming_language\": \"py\",\n"
+"    \"homepage\": \"https://app.readthedocs.org/\",\n"
+"    \"tags\" : [\n"
+"        \"extension\",\n"
+"        \"mkdocs\"\n"
+"    ]\n"
+"    \"default_version\": \"v0.27.0\",\n"
+"    \"default_branch\": \"develop\",\n"
+"    \"analytics_code\": \"UA000000\",\n"
+"    \"analytics_disabled\": false,\n"
+"    \"versioning_scheme\": \"multiple_versions_with_translations\",\n"
+"    \"external_builds_enabled\": true,\n"
+"    \"privacy_level\": \"public\",\n"
+"    \"external_builds_privacy_level\": \"public\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:476
+msgid ""
+"Adding ``tags`` will replace existing tags with the new list, and if omitted "
+"won't change the tags."
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "Status Codes"
+msgstr ""
+
+#: ../../../api/v3.rst:483 ../../../api/v3.rst:686
+msgid "Updated successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:487
+msgid "Project versions sync"
+msgstr ""
+
+#: ../../../api/v3.rst:491
+msgid "Trigger a background task to sync the versions of the project."
+msgstr ""
+
+#: ../../../api/v3.rst:497
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" \\\n"
+"  https://app.readthedocs.org/api/v3/projects/pip/sync-versions/"
+msgstr ""
+
+#: ../../../api/v3.rst:504
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/sync-versions/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:516
+msgid "Task created successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:517
+msgid "Bad request, task not created"
+msgstr ""
+
+#: ../../../api/v3.rst:520
+msgid "Versions"
+msgstr ""
+
+#: ../../../api/v3.rst:522
+msgid "Versions are different versions of the same project documentation."
+msgstr ""
+
+#: ../../../api/v3.rst:524
+msgid ""
+"The versions for a given project can be viewed in a project's version page. "
+"For example, here is the `Pip project's version page`_. See :doc:`/versions` "
+"for more information."
+msgstr ""
+
+#: ../../../api/v3.rst:532
+msgid "Versions listing"
+msgstr ""
+
+#: ../../../api/v3.rst:536
+msgid "Retrieve a list of all versions for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:542
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/versions/"
+msgstr ""
+
+#: ../../../api/v3.rst:546
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:557
+msgid ""
+"{\n"
+"    \"count\": 25,\n"
+"    \"next\": \"/api/v3/projects/pip/versions/?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\"VERSION\"]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:566
+msgid "return only active versions"
+msgstr ""
+
+#: ../../../api/v3.rst:567
+msgid "return only built versions"
+msgstr ""
+
+#: ../../../api/v3.rst:568
+msgid "return versions with specific privacy level (``public`` or ``private``)"
+msgstr ""
+
+#: ../../../api/v3.rst:569
+msgid "return versions with matching slug"
+msgstr ""
+
+#: ../../../api/v3.rst:570
+msgid "return versions with specific type (``branch`` or ``tag``)"
+msgstr ""
+
+#: ../../../api/v3.rst:571
+msgid "return versions with matching version name"
+msgstr ""
+
+#: ../../../api/v3.rst:575
+msgid "Version detail"
+msgstr ""
+
+#: ../../../api/v3.rst:579
+msgid "Retrieve details of a single version."
+msgstr ""
+
+#: ../../../api/v3.rst:585
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/versions/stable/"
+msgstr ""
+
+#: ../../../api/v3.rst:589
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/stable/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:600
+msgid ""
+"{\n"
+"    \"id\": 71652437,\n"
+"    \"slug\": \"stable\",\n"
+"    \"verbose_name\": \"stable\",\n"
+"    \"identifier\": \"3a6b3995c141c0888af6591a59240ba5db7d9914\",\n"
+"    \"ref\": \"19.0.2\",\n"
+"    \"built\": true,\n"
+"    \"active\": true,\n"
+"    \"aliases\": [\"VERSION\"],\n"
+"    \"hidden\": false,\n"
+"    \"type\": \"tag\",\n"
+"    \"privacy_level\": \"public\",\n"
+"    \"downloads\": {\n"
+"        \"pdf\": \"https://pip.readthedocs.io/_/downloads/pdf/pip/stable/"
+"\",\n"
+"        \"htmlzip\": \"https://pip.readthedocs.io/_/downloads/htmlzip/pip/"
+"stable/\",\n"
+"        \"epub\": \"https://pip.readthedocs.io/_/downloads/epub/pip/stable/"
+"\"\n"
+"    },\n"
+"    \"urls\": {\n"
+"        \"dashboard\": {\n"
+"            \"edit\": \"https://app.readthedocs.org/dashboard/pip/version/"
+"stable/edit/\"\n"
+"        },\n"
+"        \"documentation\": \"https://pip.pypa.io/en/stable/\",\n"
+"        \"vcs\": \"https://github.com/pypa/pip/tree/19.0.2\"\n"
+"    },\n"
+"    \"_links\": {\n"
+"        \"_self\": \"/api/v3/projects/pip/versions/stable/\",\n"
+"        \"builds\": \"/api/v3/projects/pip/versions/stable/builds/\",\n"
+"        \"project\": \"/api/v3/projects/pip/\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "Response JSON Object"
+msgstr ""
+
+#: ../../../api/v3.rst:633
+msgid ""
+"the version slug where the ``stable`` version points to. ``null`` when it's "
+"not the stable version."
+msgstr ""
+
+#: ../../../api/v3.rst:635
+msgid "the version has at least one successful build."
+msgstr ""
+
+#: ../../../api/v3.rst:638
+msgid "Version update"
+msgstr ""
+
+#: ../../../api/v3.rst:642
+msgid "Update a version."
+msgstr ""
+
+#: ../../../api/v3.rst:644
+msgid ""
+"When a version is deactivated, its documentation is removed, and when it's "
+"activated, a new build is triggered."
+msgstr ""
+
+#: ../../../api/v3.rst:647
+msgid "Updates to a version also invalidates its CDN cache."
+msgstr ""
+
+#: ../../../api/v3.rst:653
+msgid ""
+"$ curl \\\n"
+"  -X PATCH \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/versions/0.23/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:661
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/0.23/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.patch(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:678
+msgid ""
+"{\n"
+"    \"active\": true,\n"
+"    \"hidden\": false,\n"
+"    \"privacy_level\": \"public\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:693
+msgid "Builds"
+msgstr ""
+
+#: ../../../api/v3.rst:695
+msgid ""
+"Builds are created by Read the Docs whenever a ``Project`` has its "
+"documentation built. Frequently this happens automatically via a web hook "
+"but can be triggered manually."
+msgstr ""
+
+#: ../../../api/v3.rst:698
+msgid ""
+"Builds can be viewed in the build page for a project. For example, here is "
+"`Pip's build page`_. See :doc:`/builds` for more information."
+msgstr ""
+
+#: ../../../api/v3.rst:706
+msgid "Build details"
+msgstr ""
+
+#: ../../../api/v3.rst:710
+msgid "Retrieve details of a single build for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:716
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/builds/8592686/?expand=config"
+msgstr ""
+
+#: ../../../api/v3.rst:720
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/builds/8592686/?"
+"expand=config'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:731
+msgid ""
+"{\n"
+"    \"id\": 8592686,\n"
+"    \"version\": \"latest\",\n"
+"    \"project\": \"pip\",\n"
+"    \"created\": \"2018-06-19T15:15:59+00:00\",\n"
+"    \"finished\": \"2018-06-19T15:16:58+00:00\",\n"
+"    \"duration\": 59,\n"
+"    \"state\": {\n"
+"        \"code\": \"finished\",\n"
+"        \"name\": \"Finished\"\n"
+"    },\n"
+"    \"success\": true,\n"
+"    \"error\": null,\n"
+"    \"commit\": \"6f808d743fd6f6907ad3e2e969c88a549e76db30\",\n"
+"    \"config\": {\n"
+"        \"version\": \"1\",\n"
+"        \"formats\": [\n"
+"            \"htmlzip\",\n"
+"            \"epub\",\n"
+"            \"pdf\"\n"
+"        ],\n"
+"        \"python\": {\n"
+"            \"version\": 3,\n"
+"            \"install\": [\n"
+"                {\n"
+"                    \"requirements\": \".../stable/tools/docs-requirements."
+"txt\"\n"
+"                }\n"
+"            ],\n"
+"        },\n"
+"        \"conda\": null,\n"
+"        \"build\": {\n"
+"            \"image\": \"readthedocs/build:latest\"\n"
+"        },\n"
+"        \"doctype\": \"sphinx_htmldir\",\n"
+"        \"sphinx\": {\n"
+"            \"builder\": \"sphinx_htmldir\",\n"
+"            \"configuration\": \".../stable/docs/html/conf.py\",\n"
+"            \"fail_on_warning\": false\n"
+"        },\n"
+"        \"mkdocs\": {\n"
+"            \"configuration\": null,\n"
+"            \"fail_on_warning\": false\n"
+"        },\n"
+"        \"submodules\": {\n"
+"            \"include\": \"all\",\n"
+"            \"exclude\": [],\n"
+"            \"recursive\": true\n"
+"        }\n"
+"    },\n"
+"    \"_links\": {\n"
+"        \"_self\": \"/api/v3/projects/pip/builds/8592686/\",\n"
+"        \"project\": \"/api/v3/projects/pip/\",\n"
+"        \"version\": \"/api/v3/projects/pip/versions/latest/\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:789
+msgid "The ISO-8601 datetime when the build was created."
+msgstr ""
+
+#: ../../../api/v3.rst:790
+msgid "The ISO-8601 datetime when the build has finished."
+msgstr ""
+
+#: ../../../api/v3.rst:791
+msgid "The length of the build in seconds."
+msgstr ""
+
+#: ../../../api/v3.rst:792
+msgid ""
+"The state of the build (one of ``triggered``, ``building``, ``installing``, "
+"``cloning``, ``finished`` or ``cancelled``)"
+msgstr ""
+
+#: ../../../api/v3.rst:793
+msgid "An error message if the build was unsuccessful"
+msgstr ""
+
+#: ../../../api/v3.rst:795
+msgid "Add additional fields in the response. Allowed value is ``config``."
+msgstr ""
+
+#: ../../../api/v3.rst:800
+msgid "Builds listing"
+msgstr ""
+
+#: ../../../api/v3.rst:804
+msgid "Retrieve list of all the builds on this project."
+msgstr ""
+
+#: ../../../api/v3.rst:810
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/builds/"
+msgstr ""
+
+#: ../../../api/v3.rst:814
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/builds/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:825
+msgid ""
+"{\n"
+"    \"count\": 15,\n"
+"    \"next\": \"/api/v3/projects/pip/builds?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\"BUILD\"]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:834
+msgid "commit hash to filter the builds returned by commit"
+msgstr ""
+
+#: ../../../api/v3.rst:835
+msgid "filter the builds that are currently building/running"
+msgstr ""
+
+#: ../../../api/v3.rst:839
+msgid "Build triggering"
+msgstr ""
+
+#: ../../../api/v3.rst:844
+msgid "Trigger a new build for the ``version_slug`` version of this project."
+msgstr ""
+
+#: ../../../api/v3.rst:850
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/versions/latest/builds/"
+msgstr ""
+
+#: ../../../api/v3.rst:856
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/latest/"
+"builds/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.post(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:867
+msgid ""
+"{\n"
+"    \"build\": \"{BUILD}\",\n"
+"    \"project\": \"{PROJECT}\",\n"
+"    \"version\": \"{VERSION}\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:875
+msgid "the build was triggered"
+msgstr ""
+
+#: ../../../api/v3.rst:879
+msgid "Subprojects"
+msgstr ""
+
+#: ../../../api/v3.rst:881
+msgid ""
+"Projects can be configured in a nested manner, by configuring a project as a "
+"subproject of another project. This allows for documentation projects to "
+"share a search index and a namespace or custom domain, but still be "
+"maintained independently. See :doc:`/subprojects` for more information."
+msgstr ""
+
+#: ../../../api/v3.rst:889
+msgid "Subproject details"
+msgstr ""
+
+#: ../../../api/v3.rst:894
+msgid "Retrieve details of a subproject relationship."
+msgstr ""
+
+#: ../../../api/v3.rst:900
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/subprojects/subproject-alias/"
+msgstr ""
+
+#: ../../../api/v3.rst:904
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/"
+"subproject-alias/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:915
+msgid ""
+"{\n"
+"    \"alias\": \"subproject-alias\",\n"
+"    \"child\": [\"PROJECT\"],\n"
+"    \"_links\": {\n"
+"        \"parent\": \"/api/v3/projects/pip/\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:927
+msgid "Subprojects listing"
+msgstr ""
+
+#: ../../../api/v3.rst:932
+msgid "Retrieve a list of all sub-projects for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:938
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/subprojects/"
+msgstr ""
+
+#: ../../../api/v3.rst:942
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:953
+msgid ""
+"{\n"
+"    \"count\": 25,\n"
+"    \"next\": \"/api/v3/projects/pip/subprojects/?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\"SUBPROJECT RELATIONSHIP\"]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:964
+msgid "Subproject create"
+msgstr ""
+
+#: ../../../api/v3.rst:969
+msgid "Create a subproject relationship between two projects."
+msgstr ""
+
+#: ../../../api/v3.rst:975
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/subprojects/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:983
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1000
+msgid ""
+"{\n"
+"    \"child\": \"subproject-child-slug\",\n"
+"    \"alias\": \"subproject-alias\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1009
+msgid ""
+"``child`` must be a project that you have access to. Or if you are using :"
+"doc:`/commercial/index`, additionally the project must be under the same "
+"organization as the parent project."
+msgstr ""
+
+#: ../../../api/v3.rst:1015
+msgid "`See Subproject details <#subproject-details>`_"
+msgstr ""
+
+#: ../../../api/v3.rst:1017
+msgid "slug of the child project in the relationship."
+msgstr ""
+
+#: ../../../api/v3.rst:1018
+msgid ""
+"optional slug alias to be used in the URL (e.g ``/projects/<alias>/en/latest/"
+"``). If not provided, child project's slug is used as alias."
+msgstr ""
+
+#: ../../../api/v3.rst:1021
+msgid "Subproject created successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1025
+msgid "Subproject delete"
+msgstr ""
+
+#: ../../../api/v3.rst:1029
+msgid "Delete a subproject relationship."
+msgstr ""
+
+#: ../../../api/v3.rst:1035
+msgid ""
+"$ curl \\\n"
+"  -X DELETE \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/subprojects/subproject-alias/"
+msgstr ""
+
+#: ../../../api/v3.rst:1041
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/"
+"subproject-alias/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.delete(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1050
+msgid "Subproject deleted successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1054
+msgid "Translations"
+msgstr ""
+
+#: ../../../api/v3.rst:1056
+msgid ""
+"Translations are the same version of a Project in a different language. See :"
+"doc:`/localization` for more information."
+msgstr ""
+
+#: ../../../api/v3.rst:1060
+msgid "Translations listing"
+msgstr ""
+
+#: ../../../api/v3.rst:1065
+msgid "Retrieve a list of all translations for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:1071
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/translations/"
+msgstr ""
+
+#: ../../../api/v3.rst:1075
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/translations/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1086
+msgid ""
+"{\n"
+"    \"count\": 25,\n"
+"    \"next\": \"/api/v3/projects/pip/translations/?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [{\n"
+"        \"id\": 12345,\n"
+"        \"name\": \"Pip\",\n"
+"        \"slug\": \"pip\",\n"
+"        \"created\": \"2010-10-23T18:12:31+00:00\",\n"
+"        \"modified\": \"2018-12-11T07:21:11+00:00\",\n"
+"        \"language\": {\n"
+"            \"code\": \"en\",\n"
+"            \"name\": \"English\"\n"
+"        },\n"
+"        \"programming_language\": {\n"
+"            \"code\": \"py\",\n"
+"            \"name\": \"Python\"\n"
+"        },\n"
+"        \"repository\": {\n"
+"            \"url\": \"https://github.com/pypa/pip\",\n"
+"            \"type\": \"git\"\n"
+"        },\n"
+"        \"default_version\": \"stable\",\n"
+"        \"default_branch\": \"master\",\n"
+"        \"subproject_of\": null,\n"
+"        \"translation_of\": null,\n"
+"        \"urls\": {\n"
+"            \"documentation\": \"http://pip.pypa.io/en/stable/\",\n"
+"            \"home\": \"https://pip.pypa.io/\"\n"
+"        },\n"
+"        \"tags\": [\n"
+"            \"distutils\",\n"
+"            \"easy_install\",\n"
+"            \"egg\",\n"
+"            \"setuptools\",\n"
+"            \"virtualenv\"\n"
+"        ],\n"
+"        \"users\": [\n"
+"            {\n"
+"                \"username\": \"dstufft\"\n"
+"            }\n"
+"        ],\n"
+"        \"active_versions\": {\n"
+"            \"stable\": \"{VERSION}\",\n"
+"            \"latest\": \"{VERSION}\",\n"
+"            \"19.0.2\": \"{VERSION}\"\n"
+"        },\n"
+"        \"_links\": {\n"
+"            \"_self\": \"/api/v3/projects/pip/\",\n"
+"            \"versions\": \"/api/v3/projects/pip/versions/\",\n"
+"            \"builds\": \"/api/v3/projects/pip/builds/\",\n"
+"            \"subprojects\": \"/api/v3/projects/pip/subprojects/\",\n"
+"            \"superproject\": \"/api/v3/projects/pip/superproject/\",\n"
+"            \"redirects\": \"/api/v3/projects/pip/redirects/\",\n"
+"            \"translations\": \"/api/v3/projects/pip/translations/\"\n"
+"        }\n"
+"    }]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1152
+msgid "Redirects"
+msgstr ""
+
+#: ../../../api/v3.rst:1154
+msgid ""
+"Redirects allow the author to redirect an old URL of the documentation to a "
+"new one. This is useful when pages are moved around in the structure of the "
+"documentation set. See :doc:`/user-defined-redirects` for more information."
+msgstr ""
+
+#: ../../../api/v3.rst:1160
+msgid "Redirect details"
+msgstr ""
+
+#: ../../../api/v3.rst:1164
+msgid "Retrieve details of a single redirect for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:1166 ../../../api/v3.rst:1213 ../../../api/v3.rst:1402
+#: ../../../api/v3.rst:1443
+msgid "**Example request**"
+msgstr ""
+
+#: ../../../api/v3.rst:1170
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/redirects/1/"
+msgstr ""
+
+#: ../../../api/v3.rst:1174
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1183 ../../../api/v3.rst:1230 ../../../api/v3.rst:1419
+#: ../../../api/v3.rst:1460
+msgid "**Example response**"
+msgstr ""
+
+#: ../../../api/v3.rst:1185
+msgid ""
+"{\n"
+"    \"pk\": 1,\n"
+"    \"created\": \"2019-04-29T10:00:00Z\",\n"
+"    \"modified\": \"2019-04-29T12:00:00Z\",\n"
+"    \"project\": \"pip\",\n"
+"    \"from_url\": \"/docs/\",\n"
+"    \"to_url\": \"/documentation/\",\n"
+"    \"type\": \"page\",\n"
+"    \"http_status\": 302,\n"
+"    \"description\": \"\",\n"
+"    \"enabled\": true,\n"
+"    \"force\": false,\n"
+"    \"position\": 0,\n"
+"    \"_links\": {\n"
+"        \"_self\": \"/api/v3/projects/pip/redirects/1/\",\n"
+"        \"project\": \"/api/v3/projects/pip/\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1207
+msgid "Redirects listing"
+msgstr ""
+
+#: ../../../api/v3.rst:1211
+msgid "Retrieve list of all the redirects for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1217
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/redirects/"
+msgstr ""
+
+#: ../../../api/v3.rst:1221
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1232
+msgid ""
+"{\n"
+"    \"count\": 25,\n"
+"    \"next\": \"/api/v3/projects/pip/redirects/?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\"REDIRECT\"]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1242
+msgid "Redirect create"
+msgstr ""
+
+#: ../../../api/v3.rst:1246
+msgid "Create a redirect for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1252
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/redirects/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:1260
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1277
+msgid ""
+"{\n"
+"    \"from_url\": \"/docs/\",\n"
+"    \"to_url\": \"/documentation/\",\n"
+"    \"type\": \"page\",\n"
+"    \"position\": 0,\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1288
+msgid ""
+"``type`` can be one of ``page``, ``exact``, ``clean_url_to_html`` and "
+"``html_to_clean_url``."
+msgstr ""
+
+#: ../../../api/v3.rst:1289
+msgid ""
+"Depending on the ``type`` of the redirect, some fields may not be needed:"
+msgstr ""
+
+#: ../../../api/v3.rst:1291
+msgid "``page`` and ``exact`` types require ``from_url`` and ``to_url``."
+msgstr ""
+
+#: ../../../api/v3.rst:1292
+msgid ""
+"``clean_url_to_html`` and ``html_to_clean_url`` types do not require "
+"``from_url`` and ``to_url``."
+msgstr ""
+
+#: ../../../api/v3.rst:1294
+msgid "Position starts at 0 and is used to order redirects."
+msgstr ""
+
+#: ../../../api/v3.rst:1298 ../../../api/v3.rst:1354
+msgid "`See Redirect details <#redirect-details>`_"
+msgstr ""
+
+#: ../../../api/v3.rst:1300
+msgid "redirect created successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1304
+msgid "Redirect update"
+msgstr ""
+
+#: ../../../api/v3.rst:1308
+msgid "Update a redirect for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1314
+msgid ""
+"$ curl \\\n"
+"  -X PUT \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/redirects/1/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:1322
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.put(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1339
+msgid ""
+"{\n"
+"    \"from_url\": \"/docs/\",\n"
+"    \"to_url\": \"/documentation.html\",\n"
+"    \"type\": \"page\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1349
+msgid ""
+"If the position of the redirect is changed, it will be inserted in the new "
+"position and the other redirects will be reordered."
+msgstr ""
+
+#: ../../../api/v3.rst:1357
+msgid "Redirect delete"
+msgstr ""
+
+#: ../../../api/v3.rst:1361
+msgid "Delete a redirect for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1367
+msgid ""
+"$ curl \\\n"
+"  -X DELETE \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/redirects/1/"
+msgstr ""
+
+#: ../../../api/v3.rst:1373
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.delete(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1382
+msgid "Redirect deleted successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1386
+msgid "Environment variables"
+msgstr ""
+
+#: ../../../api/v3.rst:1388
+msgid ""
+"Environment variables are variables that you can define for your project. "
+"These variables are used in the build process when building your "
+"documentation. They are for example useful to define secrets in a safe way "
+"that can be used by your documentation to build properly. Environment "
+"variables can also be made public, allowing for them to be used in PR "
+"builds. See :doc:`/environment-variables`."
+msgstr ""
+
+#: ../../../api/v3.rst:1396
+msgid "Environment variable details"
+msgstr ""
+
+#: ../../../api/v3.rst:1400
+msgid "Retrieve details of a single environment variable for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:1406
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/environmentvariables/1/"
+msgstr ""
+
+#: ../../../api/v3.rst:1410
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
+"environmentvariables/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1421
+msgid ""
+"{\n"
+"    \"_links\": {\n"
+"        \"_self\": \"https://app.readthedocs.org/api/v3/projects/project/"
+"environmentvariables/1/\",\n"
+"        \"project\": \"https://app.readthedocs.org/api/v3/projects/project/"
+"\"\n"
+"    },\n"
+"\"created\": \"2019-04-29T10:00:00Z\",\n"
+"\"modified\": \"2019-04-29T12:00:00Z\",\n"
+"\"pk\": 1,\n"
+"\"project\": \"project\",\n"
+"\"public\": false,\n"
+"\"name\": \"ENVVAR\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1437
+msgid "Environment variables listing"
+msgstr ""
+
+#: ../../../api/v3.rst:1441
+msgid "Retrieve list of all the environment variables for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1447
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/projects/pip/environmentvariables/"
+msgstr ""
+
+#: ../../../api/v3.rst:1451
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
+"environmentvariables/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1462
+msgid ""
+"{\n"
+"    \"count\": 15,\n"
+"    \"next\": \"/api/v3/projects/pip/environmentvariables/?"
+"limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\"ENVIRONMENTVARIABLE\"]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1472
+msgid "Environment variable create"
+msgstr ""
+
+#: ../../../api/v3.rst:1476
+msgid "Create an environment variable for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1482
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/environmentvariables/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:1490
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
+"environmentvariables/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1507
+msgid ""
+"{\n"
+"    \"name\": \"MYVAR\",\n"
+"    \"value\": \"My secret value\",\n"
+"    \"public\": true\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1517
+msgid "`See Environment Variable details <#environmentvariable-details>`_"
+msgstr ""
+
+#: ../../../api/v3.rst:1519
+msgid "Environment variable created successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1523
+msgid ""
+"The `public` field is optional. If set to `true`, the environment variable "
+"will be exposed in PR builds. Defaults to `false`."
+msgstr ""
+
+#: ../../../api/v3.rst:1526
+msgid "Environment variable delete"
+msgstr ""
+
+#: ../../../api/v3.rst:1530
+msgid "Delete an environment variable for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1536
+msgid ""
+"$ curl \\\n"
+"  -X DELETE \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/v3/"
+"projects/pip/environmentvariables/1/"
+msgstr ""
+
+#: ../../../api/v3.rst:1542
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
+"environmentvariables/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.delete(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:0
+msgid "Request Headers"
+msgstr ""
+
+#: ../../../api/v3.rst:1551 ../../../api/v3.rst:1860 ../../../api/v3.rst:1989
+msgid "token to authenticate."
+msgstr ""
+
+#: ../../../api/v3.rst:1553
+msgid "Environment variable deleted successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1557
+msgid "Organizations"
+msgstr ""
+
+#: ../../../api/v3.rst:1561
+msgid ""
+"The ``/api/v3/organizations/`` endpoint is only available in :doc:`Read the "
+"Docs for Business </commercial/index>` currently. We plan to have "
+"organizations on |org_brand| in a near future and we will add support for "
+"this endpoint at the same time."
+msgstr ""
+
+#: ../../../api/v3.rst:1566
+msgid "Organizations list"
+msgstr ""
+
+#: ../../../api/v3.rst:1571
+msgid ""
+"Retrieve a list of all the organizations for the current logged in user."
+msgstr ""
+
+#: ../../../api/v3.rst:1577
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
+"v3/organizations/"
+msgstr ""
+
+#: ../../../api/v3.rst:1581
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/organizations/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1592
+msgid ""
+"{\n"
+"    \"count\": 1,\n"
+"    \"next\": null,\n"
+"    \"previous\": null,\n"
+"    \"results\": [\n"
+"        {\n"
+"            \"_links\": {\n"
+"                \"_self\": \"https://app.readthedocs.com/api/v3/"
+"organizations/pypa/\",\n"
+"                \"projects\": \"https://app.readthedocs.com/api/v3/"
+"organizations/pypa/projects/\"\n"
+"            },\n"
+"            \"created\": \"2019-02-22T21:54:52.768630Z\",\n"
+"            \"description\": \"\",\n"
+"            \"disabled\": false,\n"
+"            \"email\": \"pypa@psf.org\",\n"
+"            \"modified\": \"2020-07-02T12:35:32.418423Z\",\n"
+"            \"name\": \"Python Package Authority\",\n"
+"            \"owners\": [\n"
+"                {\n"
+"                    \"username\": \"dstufft\"\n"
+"                }\n"
+"            ],\n"
+"            \"slug\": \"pypa\",\n"
+"            \"url\": \"https://github.com/pypa/\"\n"
+"        }\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1622
+msgid "Organization details"
+msgstr ""
+
+#: ../../../api/v3.rst:1626
+msgid "Retrieve details of a single organization."
+msgstr ""
+
+#: ../../../api/v3.rst:1632
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
+"v3/organizations/pypa/"
+msgstr ""
+
+#: ../../../api/v3.rst:1636
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/organizations/pypa/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1647
+msgid ""
+"{\n"
+"    \"_links\": {\n"
+"        \"_self\": \"https://app.readthedocs.com/api/v3/organizations/pypa/"
+"\",\n"
+"        \"projects\": \"https://app.readthedocs.com/api/v3/organizations/"
+"pypa/projects/\"\n"
+"    },\n"
+"    \"created\": \"2019-02-22T21:54:52.768630Z\",\n"
+"    \"description\": \"\",\n"
+"    \"disabled\": false,\n"
+"    \"email\": \"pypa@psf.com\",\n"
+"    \"modified\": \"2020-07-02T12:35:32.418423Z\",\n"
+"    \"name\": \"Python Package Authority\",\n"
+"    \"owners\": [\n"
+"        {\n"
+"            \"username\": \"dstufft\"\n"
+"        }\n"
+"    ],\n"
+"    \"slug\": \"pypa\",\n"
+"    \"url\": \"https://github.com/pypa/\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1671
+msgid "Organization projects list"
+msgstr ""
+
+#: ../../../api/v3.rst:1675
+msgid "Retrieve list of projects under an organization."
+msgstr ""
+
+#: ../../../api/v3.rst:1681
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
+"v3/organizations/pypa/projects/"
+msgstr ""
+
+#: ../../../api/v3.rst:1685
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/organizations/pypa/projects/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1696
+msgid ""
+"{\n"
+"    \"count\": 1,\n"
+"    \"next\": null,\n"
+"    \"previous\": null,\n"
+"    \"results\": [\n"
+"        {\n"
+"            \"_links\": {\n"
+"                \"_self\": \"https://app.readthedocs.com/api/v3/projects/"
+"pypa-pip/\",\n"
+"                \"builds\": \"https://app.readthedocs.com/api/v3/projects/"
+"pypa-pip/builds/\",\n"
+"                \"environmentvariables\": \"https://app.readthedocs.com/api/"
+"v3/projects/pypa-pip/environmentvariables/\",\n"
+"                \"redirects\": \"https://app.readthedocs.com/api/v3/projects/"
+"pypa-pip/redirects/\",\n"
+"                \"subprojects\": \"https://app.readthedocs.com/api/v3/"
+"projects/pypa-pip/subprojects/\",\n"
+"                \"superproject\": \"https://app.readthedocs.com/api/v3/"
+"projects/pypa-pip/superproject/\",\n"
+"                \"translations\": \"https://app.readthedocs.com/api/v3/"
+"projects/pypa-pip/translations/\",\n"
+"                \"versions\": \"https://app.readthedocs.com/api/v3/projects/"
+"pypa-pip/versions/\"\n"
+"            },\n"
+"            \"created\": \"2019-02-22T21:59:13.333614Z\",\n"
+"            \"default_branch\": \"master\",\n"
+"            \"default_version\": \"latest\",\n"
+"            \"homepage\": null,\n"
+"            \"id\": 2797,\n"
+"            \"language\": {\n"
+"                \"code\": \"en\",\n"
+"                \"name\": \"English\"\n"
+"            },\n"
+"            \"modified\": \"2019-08-08T16:27:25.939531Z\",\n"
+"            \"name\": \"pip\",\n"
+"            \"programming_language\": {\n"
+"                \"code\": \"py\",\n"
+"                \"name\": \"Python\"\n"
+"            },\n"
+"            \"repository\": {\n"
+"                \"type\": \"git\",\n"
+"                \"url\": \"https://github.com/pypa/pip\"\n"
+"            },\n"
+"            \"slug\": \"pypa-pip\",\n"
+"            \"subproject_of\": null,\n"
+"            \"tags\": [],\n"
+"            \"translation_of\": null,\n"
+"            \"urls\": {\n"
+"                \"builds\": \"https://app.readthedocs.com/projects/pypa-pip/"
+"builds/\",\n"
+"                \"documentation\": \"https://pypa-pip.readthedocs-hosted.com/"
+"en/latest/\",\n"
+"                \"home\": \"https://app.readthedocs.com/projects/pypa-pip/"
+"\",\n"
+"                \"versions\": \"https://app.readthedocs.com/projects/pypa-"
+"pip/versions/\"\n"
+"            }\n"
+"        }\n"
+"    ]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1748
+msgid "Organization teams list"
+msgstr ""
+
+#: ../../../api/v3.rst:1752
+msgid "Retrieve list of teams under an organization."
+msgstr ""
+
+#: ../../../api/v3.rst:1758
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
+"v3/organizations/pypa/teams/"
+msgstr ""
+
+#: ../../../api/v3.rst:1762
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/organizations/pypa/teams/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1773
+msgid ""
+"{\n"
+"   \"count\": 2,\n"
+"   \"next\": null,\n"
+"   \"previous\": null,\n"
+"   \"results\": [\n"
+"      {\n"
+"            \"access\": \"admin\",\n"
+"            \"created\": \"2024-07-01T21:19:55.573819Z\",\n"
+"            \"modified\": \"2024-07-01T21:19:55.573837Z\",\n"
+"            \"name\": \"Admins\",\n"
+"            \"slug\": \"admins\"\n"
+"      },\n"
+"      {\n"
+"            \"access\": \"readonly\",\n"
+"            \"created\": \"2024-07-01T21:19:55.593815Z\",\n"
+"            \"modified\": \"2024-07-01T21:19:55.593829Z\",\n"
+"            \"name\": \"Read Only\",\n"
+"            \"slug\": \"read-only\"\n"
+"      }\n"
+"   ]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1797
+msgid "Add additional fields in the response. Allowed values are: ``members``."
+msgstr ""
+
+#: ../../../api/v3.rst:1801
+msgid "Remote organizations"
+msgstr ""
+
+#: ../../../api/v3.rst:1803
+msgid ""
+"Remote organizations are the VCS organizations connected via ``GitHub``, "
+"``GitLab`` and ``Bitbucket``."
+msgstr ""
+
+#: ../../../api/v3.rst:1808
+msgid "Remote organization listing"
+msgstr ""
+
+#: ../../../api/v3.rst:1813
+msgid "Retrieve a list of all Remote Organizations for the authenticated user."
+msgstr ""
+
+#: ../../../api/v3.rst:1819
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/remote/organizations/"
+msgstr ""
+
+#: ../../../api/v3.rst:1823
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/remote/organizations/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1834
+msgid ""
+"{\n"
+"    \"count\": 20,\n"
+"    \"next\": \"api/v3/remote/organizations/?limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\n"
+"        {\n"
+"            \"avatar_url\": \"https://avatars.githubusercontent.com/u/12345?"
+"v=4\",\n"
+"            \"created\": \"2019-04-29T10:00:00Z\",\n"
+"            \"modified\": \"2019-04-29T12:00:00Z\",\n"
+"            \"name\": \"Organization Name\",\n"
+"            \"pk\": 1,\n"
+"            \"slug\": \"organization\",\n"
+"            \"url\": \"https://github.com/organization\",\n"
+"            \"vcs_provider\": \"github\"\n"
+"        }\n"
+"    ]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1855
+msgid "The ``results`` in response is an array of remote organizations data."
+msgstr ""
+
+#: ../../../api/v3.rst:1857
+msgid "return remote organizations with containing the name"
+msgstr ""
+
+#: ../../../api/v3.rst:1858
+msgid ""
+"return remote organizations for specific vcs provider (``github``, "
+"``gitlab`` or ``bitbucket``)"
+msgstr ""
+
+#: ../../../api/v3.rst:1864
+msgid "Remote repositories"
+msgstr ""
+
+#: ../../../api/v3.rst:1866
+msgid ""
+"Remote repositories are the importable repositories connected via "
+"``GitHub``, ``GitLab`` and ``Bitbucket``."
+msgstr ""
+
+#: ../../../api/v3.rst:1871
+msgid "Remote repository listing"
+msgstr ""
+
+#: ../../../api/v3.rst:1876
+msgid "Retrieve a list of all Remote Repositories for the authenticated user."
+msgstr ""
+
+#: ../../../api/v3.rst:1882
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
+"v3/remote/repositories/?expand=remote_organization"
+msgstr ""
+
+#: ../../../api/v3.rst:1886
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.org/api/v3/remote/repositories/?"
+"expand=remote_organization'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1897
+msgid ""
+"{\n"
+"    \"count\": 20,\n"
+"    \"next\": \"api/v3/remote/repositories/?"
+"expand=remote_organization&limit=10&offset=10\",\n"
+"    \"previous\": null,\n"
+"    \"results\": [\n"
+"        {\n"
+"            \"remote_organization\": {\n"
+"                \"avatar_url\": \"https://avatars.githubusercontent.com/"
+"u/12345?v=4\",\n"
+"                \"created\": \"2019-04-29T10:00:00Z\",\n"
+"                \"modified\": \"2019-04-29T12:00:00Z\",\n"
+"                \"name\": \"Organization Name\",\n"
+"                \"pk\": 1,\n"
+"                \"slug\": \"organization\",\n"
+"                \"url\": \"https://github.com/organization\",\n"
+"                \"vcs_provider\": \"github\"\n"
+"            },\n"
+"            \"projects\": [{\n"
+"                \"id\": 12345,\n"
+"                \"name\": \"project\",\n"
+"                \"slug\": \"project\",\n"
+"                \"created\": \"2010-10-23T18:12:31+00:00\",\n"
+"                \"modified\": \"2018-12-11T07:21:11+00:00\",\n"
+"                \"language\": {\n"
+"                    \"code\": \"en\",\n"
+"                    \"name\": \"English\"\n"
+"                },\n"
+"                \"programming_language\": {\n"
+"                    \"code\": \"py\",\n"
+"                    \"name\": \"Python\"\n"
+"                },\n"
+"                \"repository\": {\n"
+"                    \"url\": \"https://github.com/organization/project\",\n"
+"                    \"type\": \"git\"\n"
+"                },\n"
+"                \"default_version\": \"stable\",\n"
+"                \"default_branch\": \"master\",\n"
+"                \"subproject_of\": null,\n"
+"                \"translation_of\": null,\n"
+"                \"urls\": {\n"
+"                    \"documentation\": \"http://project.readthedocs.io/en/"
+"stable/\",\n"
+"                    \"home\": \"https://app.readthedocs.org/projects/project/"
+"\"\n"
+"                },\n"
+"                \"tags\": [\n"
+"                    \"test\"\n"
+"                ],\n"
+"                \"users\": [\n"
+"                    {\n"
+"                        \"username\": \"dstufft\"\n"
+"                    }\n"
+"                ],\n"
+"                \"_links\": {\n"
+"                    \"_self\": \"/api/v3/projects/project/\",\n"
+"                    \"versions\": \"/api/v3/projects/project/versions/\",\n"
+"                    \"builds\": \"/api/v3/projects/project/builds/\",\n"
+"                    \"subprojects\": \"/api/v3/projects/project/subprojects/"
+"\",\n"
+"                    \"superproject\": \"/api/v3/projects/project/"
+"superproject/\",\n"
+"                    \"redirects\": \"/api/v3/projects/project/redirects/\",\n"
+"                    \"translations\": \"/api/v3/projects/project/"
+"translations/\"\n"
+"                }\n"
+"            }],\n"
+"            \"avatar_url\": \"https://avatars3.githubusercontent.com/u/test-"
+"organization?v=4\",\n"
+"            \"clone_url\": \"https://github.com/organization/project.git\",\n"
+"            \"created\": \"2019-04-29T10:00:00Z\",\n"
+"            \"description\": \"This is a test project.\",\n"
+"            \"full_name\": \"organization/project\",\n"
+"            \"html_url\": \"https://github.com/organization/project\",\n"
+"            \"modified\": \"2019-04-29T12:00:00Z\",\n"
+"            \"name\": \"project\",\n"
+"            \"pk\": 1,\n"
+"            \"ssh_url\": \"git@github.com:organization/project.git\",\n"
+"            \"vcs\": \"git\",\n"
+"            \"vcs_provider\": \"github\",\n"
+"            \"default_branch\": \"master\",\n"
+"            \"private\": false,\n"
+"            \"admin\": true\n"
+"        }\n"
+"    ]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1979
+msgid "The ``results`` in response is an array of remote repositories data."
+msgstr ""
+
+#: ../../../api/v3.rst:1981
+msgid "return remote repositories containing the name"
+msgstr ""
+
+#: ../../../api/v3.rst:1982
+msgid ""
+"return remote repositories containing the full name (it includes the "
+"username/organization the project belongs to)"
+msgstr ""
+
+#: ../../../api/v3.rst:1983
+msgid ""
+"return remote repositories for specific vcs provider (``github``, ``gitlab`` "
+"or ``bitbucket``)"
+msgstr ""
+
+#: ../../../api/v3.rst:1984
+msgid ""
+"return remote repositories for specific remote organization (using remote "
+"organization ``slug``)"
+msgstr ""
+
+#: ../../../api/v3.rst:1985
+msgid ""
+"Add additional fields in the response. Allowed values are: "
+"``remote_organization``. Multiple fields can be passed separated by commas."
+msgstr ""
+
+#: ../../../api/v3.rst:1993
+msgid "Embed"
+msgstr ""
+
+#: ../../../api/v3.rst:1997
+msgid ""
+"Retrieve HTML-formatted content from documentation page or section. Read :"
+"doc:`/guides/embedding-content` to know more about how to use this endpoint."
+msgstr ""
+
+#: ../../../api/v3.rst:2002
+msgid ""
+"The content will be returned as is, without any sanitization or escaping. "
+"You should not include content from arbitrary projects, or projects you do "
+"not trust."
+msgstr ""
+
+#: ../../../api/v3.rst:2010
+msgid ""
+"curl https://app.readthedocs.org/api/v3/embed/?url=https://docs.readthedocs."
+"io/en/latest/features.html%23read-the-docs-features"
+msgstr ""
+
+#: ../../../api/v3.rst:2013
+msgid ""
+"{\n"
+"    \"url\": \"https://docs.readthedocs.io/en/latest/features.html#read-the-"
+"docs-features\",\n"
+"    \"fragment\": \"read-the-docs-features\",\n"
+"    \"content\": \"<div class=\\\"section\\\" id=\\\"read-the-docs-features\\"
+"\">\\n<h1>Read the Docs ...\",\n"
+"    \"external\": false\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:2022
+msgid "URL of the document."
+msgstr ""
+
+#: ../../../api/v3.rst:2023
+msgid "fragmet part of the URL used to query the page."
+msgstr ""
+
+#: ../../../api/v3.rst:2024
+msgid "HTML content of the section."
+msgstr ""
+
+#: ../../../api/v3.rst:2025
+msgid "whether or not the page is hosted on Read the Docs or externally."
+msgstr ""
+
+#: ../../../api/v3.rst:2027
+msgid ""
+"full URL of the document (with optional fragment) to fetch content from."
+msgstr ""
+
+#: ../../../api/v3.rst:2028
+msgid ""
+"*optional* documentation tool key name used to generate the target "
+"documentation (currently, only ``sphinx`` is accepted)"
+msgstr ""
+
+#: ../../../api/v3.rst:2029
+msgid ""
+"*optional* documentation tool version used to generate the target "
+"documentation (e.g. ``4.2.0``)."
+msgstr ""
+
+#: ../../../api/v3.rst:2030
+msgid ""
+"*optional* CSS selector for the main content of the page (e.g. ``div#main``)."
+msgstr ""
+
+#: ../../../api/v3.rst:2034
+msgid ""
+"Passing ``?doctool=``, ``?doctoolversion=`` and ``?maincontent=`` may "
+"improve the response since the endpoint will know more about the exact "
+"structure of the HTML and can make better decisions."
+msgstr ""
+
+#: ../../../api/v3.rst:2038
+msgid "Additional APIs"
+msgstr ""
+
+#: ../../../api/v3.rst:2040
+msgid ":doc:`Server side search API </server-side-search/api>`."
+msgstr ""

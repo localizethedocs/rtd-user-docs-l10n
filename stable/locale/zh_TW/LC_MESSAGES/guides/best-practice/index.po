@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/best-practice/index.rst:29
+msgid "Deprecating content"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:29
+msgid "Best practices for linking to your documentation"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:29
+msgid "Creating reproducible builds"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:29
+msgid "Search engine optimization (SEO) for documentation projects"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:29
+msgid "Hiding a version"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:2
+msgid "How-to guides: best practices"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:4
+msgid ""
+"Over the years, we have become familiar with a number of methods that work "
+"well and which we consider **best practice**."
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:7
+msgid ""
+"⏩️ :doc:`Best practices for linking to your documentation </guides/best-"
+"practice/links>`"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:8
+msgid ""
+"Documentation changes over time, and links and cross-references can become "
+"challenging manage for various reasons. Here is a set of best practices "
+"explaining and addressing these challenges."
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:12
+msgid "⏩️ :doc:`Deprecating content </guides/deprecating-content>`"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:13
+msgid "Best practice for removing or deprecating documentation content."
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:15
+msgid "⏩️ :doc:`Creating reproducible builds </guides/reproducible-builds>`"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:16
+msgid ""
+"Every documentation project has dependencies that are required to build it. "
+"Using an unspecified versions of these dependencies means that your project "
+"can start breaking. In this guide, learn how to protect your project against "
+"breaking randomly. **This is one of our most popular guides!**"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:22
+msgid ""
+"⏩️ :doc:`Search engine optimization (SEO) for documentation projects </"
+"guides/technical-docs-seo-guide>`"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:23
+msgid ""
+"This article explains how documentation can be optimized to appear in search "
+"results, increasing traffic to your docs."
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:26
+msgid "⏩️ :doc:`Hiding a version </guides/hiding-a-version>`"
+msgstr ""
+
+#: ../../../guides/best-practice/index.rst:27
+msgid ""
+"Learn how you can keep your entire version history online without "
+"overwhelming the reader with version choices."
+msgstr ""

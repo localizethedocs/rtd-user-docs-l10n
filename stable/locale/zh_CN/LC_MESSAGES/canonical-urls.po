@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../canonical-urls.rst:2
+msgid "Canonical URLs"
+msgstr ""
+
+#: ../../../canonical-urls.rst:4
+msgid ""
+"A `canonical URL`_ allows you to specify the preferred version of a web page "
+"to prevent duplicated content. Here are some examples of when a canonical "
+"URL is used:"
+msgstr ""
+
+#: ../../../canonical-urls.rst:8
+msgid ""
+"Search engines use your canonical URL to link users to the correct version "
+"and domain of your documentation."
+msgstr ""
+
+#: ../../../canonical-urls.rst:9
+msgid ""
+"Many popular chat clients and social media networks generate link previews, "
+"using your canonical URL as the final destination."
+msgstr ""
+
+#: ../../../canonical-urls.rst:12
+msgid ""
+"If canonical URLs aren't used, it's easy for outdated documentation to be "
+"the top search result for various pages in your documentation. This is not a "
+"perfect solution for this problem, but generally people finding outdated "
+"documentation is a big problem, and this is one of the suggested ways to "
+"solve it from search engines."
+msgstr ""
+
+#: ../../../canonical-urls.rst:21
+msgid "How Read the Docs generates canonical URLs"
+msgstr ""
+
+#: ../../../canonical-urls.rst:23
+msgid "The canonical URL takes the following into account:"
+msgstr ""
+
+#: ../../../canonical-urls.rst:25
+msgid "The default version of your project (usually \"latest\" or \"stable\")."
+msgstr ""
+
+#: ../../../canonical-urls.rst:26
+msgid ""
+"The canonical :doc:`custom domain </custom-domains>` if you have one, "
+"otherwise the default :ref:`subdomain <default-subdomain>` will be used."
+msgstr ""
+
+#: ../../../canonical-urls.rst:29
+msgid ""
+"For example, if you have a project named ``example-docs`` with a custom "
+"domain ``https://docs.example.com``, then your documentation will be served "
+"at ``https://example-docs.readthedocs.io`` and ``https://docs.example.com``. "
+"Without specifying a canonical URL, a search engine like Google will index "
+"both domains."
+msgstr ""
+
+#: ../../../canonical-urls.rst:34
+msgid ""
+"You'll want to use ``https://docs.example.com`` as your canonical domain. "
+"This means that when Google indexes a page like ``https://example-docs."
+"readthedocs.io/en/latest/``, it will know that it should really point at "
+"``https://docs.example.com/en/latest/``, thus avoiding duplicating the "
+"content."
+msgstr ""
+
+#: ../../../canonical-urls.rst:41
+msgid ""
+"If you want your custom domain to be set as the canonical, you need to set "
+"``Canonical:  This domain is the primary one where the documentation is "
+"served from`` in the :guilabel:`Admin` > :guilabel:`Domains` section of your "
+"project settings."
+msgstr ""
+
+#: ../../../canonical-urls.rst:47
+msgid "How to specify the canonical URL"
+msgstr ""
+
+#: ../../../canonical-urls.rst:49
+msgid ""
+"A canonical URL is automatically passed to the build process as "
+"``READTHEDOCS_CANONICAL_URL`` :doc:`environment variable </reference/"
+"environment-variables>`. You can use this variable to configure your "
+"documentation tool to use it (eg. Sphinx does this via the ``html_baseurl`` "
+"config, MkDocs via ``site_url`` and Pelican with ``SITEURL``)"
+msgstr ""

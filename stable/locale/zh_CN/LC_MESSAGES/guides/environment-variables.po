@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/environment-variables.rst:2
+msgid "How to use custom environment variables"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:4
+msgid ""
+"If extra environment variables are needed in the build process, you can "
+"define them from the project's :term:`dashboard`."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:9
+msgid ":doc:`/environment-variables`"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:10
+msgid ""
+"Learn more about how Read the Docs applies environment variables in your "
+"builds."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:12
+msgid ""
+"Go to your project's :menuselection:`Admin --> Environment Variables` and "
+"click on :guilabel:`Add Environment Variable`. You will then see the form "
+"for adding an environment variable:"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:15
+msgid "Screenshot of the form for adding an environment variable"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:18
+msgid ""
+"Fill in the :guilabel:`Name` field, this is the name of your variable, for "
+"instance ``SECRET_TOKEN`` or ``PIP_EXTRA_INDEX_URL``."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:19
+msgid ""
+"Fill in the :guilabel:`Value` field with the environment variable's value, "
+"for instance a secret token or a build configuration."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:20
+msgid ""
+"Check the :guilabel:`Public` option if you want to expose this environment "
+"variable to :doc:`builds from pull requests </pull-requests>`."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:25
+msgid ""
+"If you make your environment variable **public**, any user that can create a "
+"pull request on your repository will be able to see the value of this "
+"environment variable. In other words, **do not use this option if your "
+"environment variable is a secret.**"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:30
+msgid ""
+"Finally, click on :guilabel:`Save`. Your custom environment variable is "
+"immediately active for all future builds and you are ready to start using it."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:34
+msgid ""
+"Note that once you create an environment variable, you won't be able to edit "
+"or view its value. The only way to edit an environment variable is to delete "
+"and create it again."
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:38
+msgid "Keep reading for a few examples of using environment variables. ⬇️"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:41
+msgid "Accessing environment variables in code"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:43
+msgid ""
+"After adding an environment variable, you can read it from your build "
+"process, for example in your Sphinx's configuration file:"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:47
+msgid "conf.py"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:47
+msgid ""
+"import os\n"
+"import requests\n"
+"\n"
+"# Access to our custom environment variables\n"
+"username = os.environ.get(\"USERNAME\")\n"
+"password = os.environ.get(\"PASSWORD\")\n"
+"\n"
+"# Request a username/password protected URL\n"
+"response = requests.get(\n"
+"    \"https://httpbin.org/basic-auth/username/password\",\n"
+"    auth=(username, password),\n"
+")"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:64
+msgid "Accessing environment variables in build commands"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:66
+msgid ""
+"You can also use any of these variables from :term:`user-defined build jobs` "
+"in your project's configuration file:"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:68
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:68
+msgid ""
+"version: 2\n"
+"build:\n"
+"  os: ubuntu-22.04\n"
+"  tools:\n"
+"    python: 3.10\n"
+"  jobs:\n"
+"    post_install:\n"
+"      - curl -u ${USERNAME}:${PASSWORD} https://httpbin.org/basic-auth/"
+"username/password"
+msgstr ""
+
+#: ../../../guides/environment-variables.rst:82
+msgid ""
+"If you use ``${SECRET_ENV}`` in a command in ``.readthedocs.yaml``, the "
+"private value of the environment variable is not substituted in log entries "
+"of the command. It will also be logged as ``${SECRET_ENV}``."
+msgstr ""
