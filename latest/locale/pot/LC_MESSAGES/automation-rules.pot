@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../automation-rules.rst:2
+msgid "Automation rules"
+msgstr ""
+
+#: ../../../automation-rules.rst:4
+msgid ""
+"Automation rules allow project maintainers to automate actions on new "
+"branches and tags in Git repositories. If you are familiar with :term:"
+"`GitOps`, this might seem familiar. The goal of automation rules is to be "
+"able to control versioning through your Git repository and avoid duplicating "
+"these efforts on Read the Docs."
+msgstr ""
+
+#: ../../../automation-rules.rst:12
+msgid ":doc:`/guides/automation-rules`"
+msgstr ""
+
+#: ../../../automation-rules.rst:13
+msgid ""
+"A practical guide to managing automated versioning of your documentation."
+msgstr ""
+
+#: ../../../automation-rules.rst:15
+msgid ":doc:`/versions`"
+msgstr ""
+
+#: ../../../automation-rules.rst:16
+msgid "General explanation of how versioning works on Read the Docs"
+msgstr ""
+
+#: ../../../automation-rules.rst:19
+msgid "How automation rules work"
+msgstr ""
+
+#: ../../../automation-rules.rst:21
+msgid ""
+"When a new tag or branch is pushed to your repository, Read the Docs "
+"receives a webhook. We then create a new Read the Docs *version* that "
+"matches your new Git *tag or branch*."
+msgstr ""
+
+#: ../../../automation-rules.rst:25
+msgid ""
+"All automation rules are evaluated for this version, in the order they are "
+"listed. If the version **matches** the version type and the pattern in the "
+"rule, the specified **action** is performed on that version."
+msgstr ""
+
+#: ../../../automation-rules.rst:34
+msgid ""
+"Versions can match multiple automation rules, and all matching actions will "
+"be performed on the version."
+msgstr ""
+
+#: ../../../automation-rules.rst:38
+msgid "Matching a version in Git"
+msgstr ""
+
+#: ../../../automation-rules.rst:40
+msgid ""
+"We have a couple predefined ways to match against versions that are created, "
+"and you can also define your own."
+msgstr ""
+
+#: ../../../automation-rules.rst:44
+msgid "Predefined matches"
+msgstr ""
+
+#: ../../../automation-rules.rst:46
+msgid "Automation rules support two predefined version matches:"
+msgstr ""
+
+#: ../../../automation-rules.rst:48
+msgid "**Any version**: All new versions will match the rule."
+msgstr ""
+
+#: ../../../automation-rules.rst:49
+msgid ""
+"**SemVer versions**: All new versions that follow `semantic versioning "
+"<https://semver.org/>`__ (with or without a `v` prefix) will match the rule."
+msgstr ""
+
+#: ../../../automation-rules.rst:53
+msgid "Custom matches"
+msgstr ""
+
+#: ../../../automation-rules.rst:55
+msgid ""
+"If none of the above predefined matches meet your use case, you can use a "
+"**Custom match**."
+msgstr ""
+
+#: ../../../automation-rules.rst:58
+msgid ""
+"The custom match should be a valid `Python regular expression <https://docs."
+"python.org/3/library/re.html>`__. Each new version will be tested against "
+"this regular expression."
+msgstr ""
+
+#: ../../../automation-rules.rst:62
+msgid "Actions for versions"
+msgstr ""
+
+#: ../../../automation-rules.rst:64
+msgid ""
+"When an automation rule matches a new version, the specified action is "
+"performed on that version. Currently, the following actions are available:"
+msgstr ""
+
+#: ../../../automation-rules.rst:68
+msgid "Activate version"
+msgstr ""
+
+#: ../../../automation-rules.rst:69
+msgid "Activates and builds the version."
+msgstr ""
+
+#: ../../../automation-rules.rst:71
+msgid "Hide version"
+msgstr ""
+
+#: ../../../automation-rules.rst:72
+msgid ""
+"Hides the version. If the version is not active, activates it and builds the "
+"version. See :ref:`versions:Version states`."
+msgstr ""
+
+#: ../../../automation-rules.rst:75
+msgid "Make version public"
+msgstr ""
+
+#: ../../../automation-rules.rst:76
+msgid ""
+"Sets the version's privacy level to public. See :ref:`versions:Version "
+"states`."
+msgstr ""
+
+#: ../../../automation-rules.rst:79
+msgid "Make version private"
+msgstr ""
+
+#: ../../../automation-rules.rst:80
+msgid ""
+"Sets the version's privacy level to private. See :ref:`versions:Version "
+"states`."
+msgstr ""
+
+#: ../../../automation-rules.rst:83
+msgid "Set version as default"
+msgstr ""
+
+#: ../../../automation-rules.rst:84
+msgid ""
+"Sets the version as the :term:`default version`. It also activates and "
+"builds the version. See :ref:`root_url_redirect`."
+msgstr ""
+
+#: ../../../automation-rules.rst:88
+msgid "Delete version"
+msgstr ""
+
+#: ../../../automation-rules.rst:89
+msgid ""
+"When a branch or tag is deleted from your repository, Read the Docs will "
+"delete it *only if isn't active*. This action allows you to delete *active* "
+"versions when a branch or tag is deleted from your repository."
+msgstr ""
+
+#: ../../../automation-rules.rst:93
+msgid "There are a couple caveats to these rules that are useful:"
+msgstr ""
+
+#: ../../../automation-rules.rst:95
+msgid ""
+"The :term:`default version` isn't deleted even if it matches a rule. You can "
+"use the ``Set version as default`` action to change the default version "
+"before deleting the current one."
+msgstr ""
+
+#: ../../../automation-rules.rst:98
+msgid ""
+"If your versions follow :pep:`440`, Read the Docs activates and builds the "
+"version if it's greater than the current stable version. The stable version "
+"is also automatically updated at the same time. See more in :doc:`versions`."
+msgstr ""
+
+#: ../../../automation-rules.rst:104
+msgid "Order"
+msgstr ""
+
+#: ../../../automation-rules.rst:106
+msgid ""
+"When a new Read the Docs version is created, all rules with a successful "
+"match will have their action triggered, in the order they appear on the :"
+"guilabel:`Automation Rules` page."
+msgstr ""
+
+#: ../../../automation-rules.rst:111
+msgid "Examples"
+msgstr ""
+
+#: ../../../automation-rules.rst:114
+msgid "Activate all new tags"
+msgstr ""
+
+#: ../../../automation-rules.rst:116 ../../../automation-rules.rst:130
+msgid "Match: ``Any version``"
+msgstr ""
+
+#: ../../../automation-rules.rst:117 ../../../automation-rules.rst:138
+#: ../../../automation-rules.rst:150 ../../../automation-rules.rst:166
+msgid "Version type: ``Tag``"
+msgstr ""
+
+#: ../../../automation-rules.rst:118 ../../../automation-rules.rst:125
+#: ../../../automation-rules.rst:151 ../../../automation-rules.rst:157
+#: ../../../automation-rules.rst:167
+msgid "Action: ``Activate version``"
+msgstr ""
+
+#: ../../../automation-rules.rst:121
+msgid "Activate only new branches that belong to the ``1.x`` release"
+msgstr ""
+
+#: ../../../automation-rules.rst:123
+msgid "Custom match: ``^1\\.\\d+$``"
+msgstr ""
+
+#: ../../../automation-rules.rst:124 ../../../automation-rules.rst:131
+#: ../../../automation-rules.rst:156
+msgid "Version type: ``Branch``"
+msgstr ""
+
+#: ../../../automation-rules.rst:128
+msgid "Delete an active version when a branch is deleted"
+msgstr ""
+
+#: ../../../automation-rules.rst:132
+msgid "Action: ``Delete version``"
+msgstr ""
+
+#: ../../../automation-rules.rst:135
+msgid ""
+"Set as default new tags that have the ``-stable`` or ``-release`` suffix"
+msgstr ""
+
+#: ../../../automation-rules.rst:137
+msgid "Custom match: ``-(stable|release)$``"
+msgstr ""
+
+#: ../../../automation-rules.rst:139
+msgid "Action: ``Set version as default``"
+msgstr ""
+
+#: ../../../automation-rules.rst:143
+msgid ""
+"You can also create two rules: one to match ``-stable`` and other to match "
+"``-release``."
+msgstr ""
+
+#: ../../../automation-rules.rst:147
+msgid "Activate all new tags and branches that start with ``v`` or ``V``"
+msgstr ""
+
+#: ../../../automation-rules.rst:149 ../../../automation-rules.rst:155
+msgid "Custom match: ``^[vV]``"
+msgstr ""
+
+#: ../../../automation-rules.rst:160
+msgid "Activate all new tags that don't contain the ``-nightly`` suffix"
+msgstr ""
+
+#: ../../../automation-rules.rst:165
+msgid "Custom match: ``.*(?<!-nightly)$``"
+msgstr ""

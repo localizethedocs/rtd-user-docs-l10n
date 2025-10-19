@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../custom-domains.rst:2
+msgid "Custom domains"
+msgstr ""
+
+#: ../../../custom-domains.rst:4
+msgid ""
+"By configuring a *custom domain* for your project, your project can serve "
+"documentation from a domain you control, for instance ``docs.example.com``. "
+"This is great for maintaining a consistent brand for your product and its "
+"documentation."
+msgstr ""
+
+#: ../../../custom-domains.rst:12
+msgid "Default subdomains"
+msgstr ""
+
+#: ../../../custom-domains.rst:13
+msgid ""
+"*Without a custom domain configured*, your project's documentation is served "
+"from a Read the Docs domain using a unique subdomain for your project:"
+msgstr ""
+
+#: ../../../custom-domains.rst:16
+msgid "``<project name>.readthedocs.io`` for |org_brand|."
+msgstr ""
+
+#: ../../../custom-domains.rst:17
+msgid ""
+"``<organization name>-<project name>.readthedocs-hosted.com`` for |"
+"com_brand|. The addition of the organization name allows multiple "
+"organizations to have projects with the same name."
+msgstr ""
+
+#: ../../../custom-domains.rst:22
+msgid ":doc:`/guides/custom-domains`"
+msgstr ""
+
+#: ../../../custom-domains.rst:23
+msgid "How to create and manage custom domains for your project."
+msgstr ""
+
+#: ../../../custom-domains.rst:26
+msgid "Features"
+msgstr ""
+
+#: ../../../custom-domains.rst:28
+msgid "Automatic SSL"
+msgstr ""
+
+#: ../../../custom-domains.rst:29
+msgid ""
+"SSL certificates are automatically issued through Cloudflare for every "
+"custom domain. No extra set up is required beyond configuring your project's "
+"custom domain."
+msgstr ""
+
+#: ../../../custom-domains.rst:32
+msgid "CDN caching"
+msgstr ""
+
+#: ../../../custom-domains.rst:33
+msgid ""
+"Response caching is provided through a :doc:`CDN </reference/cdn>` for all "
+"documentation projects, including projects using a custom domain. CDN "
+"caching improves page response time for your documentation's users, and the "
+"CDN edge network provides low latency response times regardless of location."
+msgstr ""
+
+#: ../../../custom-domains.rst:38
+msgid "Multiple domains"
+msgstr ""
+
+#: ../../../custom-domains.rst:39
+msgid ""
+"Projects can be configured to be served from multiple domains, which always "
+"includes the :ref:`project's default subdomain <default-subdomain>`. Only "
+"one domain can be configured as the canonical domain however, and any "
+"requests to non-canonical domains and subdomains will redirect to the "
+"canonical domain."
+msgstr ""
+
+#: ../../../custom-domains.rst:44
+msgid "Canonical domains"
+msgstr ""
+
+#: ../../../custom-domains.rst:45
+msgid ""
+"The canonical domain configures the primary domain the documentation will "
+"serve from, and also sets the domain search engines use for search results "
+"when hosting from multiple domains. Projects can only have one canonical "
+"domain, which is the :ref:`project's default subdomain <default-subdomain>` "
+"if no other canonical domain is defined."
+msgstr ""
+
+#: ../../../custom-domains.rst:52
+msgid ":doc:`/canonical-urls`"
+msgstr ""
+
+#: ../../../custom-domains.rst:53
+msgid ""
+"How canonical domains affect your project's canonical URL, and why canonical "
+"URLs are important."
+msgstr ""
+
+#: ../../../custom-domains.rst:56
+msgid ":doc:`/subprojects`"
+msgstr ""
+
+#: ../../../custom-domains.rst:57
+msgid "How to share a custom domain between multiple projects."
+msgstr ""
