@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../server-side-search/index.rst:2
+msgid "Server side search"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:4
+msgid ""
+"Read the Docs provides full-text search across all of the pages of all "
+"projects, this is powered by Elasticsearch_."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:9
+msgid ":doc:`/server-side-search/syntax`"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:10
+msgid "Syntax options for searching Read the Docs projects"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:11
+msgid ":doc:`/server-side-search/api`"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:12
+msgid "Reference to the Server Side Search API"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:15
+msgid "Search features"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:17
+msgid "Read the Docs has the following search features:"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:19
+msgid "Search across :doc:`subprojects </subprojects>`"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:20
+msgid ""
+"Subprojects allow you to host multiple discrete projects on a single domain. "
+"Every subproject hosted on that same domain is included in the search "
+"results of the main project."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:23
+msgid "Search results land on the exact content you were looking for"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:24
+msgid ""
+"We index every heading in the document, allowing you to get search results "
+"exactly to the content that you are searching for. Try this out by searching "
+"for `\"full-text search\"`_."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:28
+msgid "Full control over which results should be listed first"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:29
+msgid ""
+"Set a custom rank per page, allowing you to deprecate content, and always "
+"show relevant content to your users first. See :ref:`config-file/v2:search."
+"ranking`."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:33
+msgid "Search across projects you have access to"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:34
+msgid ""
+"Search across all the projects you have access to in your Dashboard. **Don't "
+"remember where you found that document the other day? No problem, you can "
+"search across them all.**"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:38
+msgid ""
+"You can also specify what projects you want to search using the ``project:"
+"{name}`` syntax, for example: `\"project:docs project:dev search\"`_. See :"
+"doc:`/server-side-search/syntax`."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:43
+msgid "Special query syntax for more specific results"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:44
+msgid ""
+"We support a full range of search queries. You can see some examples at :ref:"
+"`server-side-search/syntax:special queries`."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:47
+msgid "Configurable"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:48
+msgid ""
+"Tweak search results according to your needs using a :ref:`configuration "
+"file <config-file/v2:search>`."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:51
+msgid "Ready to use"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:52
+msgid ""
+"We override the default search engine of your Sphinx project with ours to "
+"provide you with all these benefits within your project. We fallback to the "
+"built-in search engine from your project if ours doesn't return any results, "
+"just in case we missed something |:smile:|."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:57
+msgid "API"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:58
+msgid "Integrate our search as you like. See :doc:`/server-side-search/api`."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:61
+msgid "Analytics"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:62
+msgid "Know what your users are searching for. See :doc:`/search-analytics`"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:68
+msgid "Search analytics demo"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:73
+msgid "Search analytics demo. Read more in :doc:`/search-analytics`."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:79
+msgid "Search as you type"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:81
+msgid ""
+"Search as-you-type allows users to quickly find exactly what they are "
+"looking for while typing. It also saves recent searches, for future "
+"reference."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:84
+msgid "Try it by pressing :guilabel:`/` (forward slash) and typing."
+msgstr ""

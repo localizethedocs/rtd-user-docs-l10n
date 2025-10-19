@@ -34,12 +34,12 @@
   },
   "pot" : 
   {
-    "branch" : "",
+    "branch" : "main",
     "commit" : 
     {
-      "date" : "",
-      "hash" : "",
-      "title" : ""
+      "date" : "2025-10-14 16:19:22 +0200",
+      "hash" : "9d7adbd477ee1cd4808fd5e8d9d6932171cfa038",
+      "title" : "Merge branch 'release/15.4.1'"
     }
   },
   "type" : "branch",

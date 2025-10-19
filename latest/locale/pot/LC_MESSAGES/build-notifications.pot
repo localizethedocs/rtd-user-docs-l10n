@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../build-notifications.rst:2
+msgid "Build failure notifications"
+msgstr ""
+
+#: ../../../build-notifications.rst:4
+msgid ""
+"Build notifications can alert you when your documentation builds fail so you "
+"can take immediate action. We offer the following methods for being notified:"
+msgstr ""
+
+#: ../../../build-notifications.rst:7
+msgid "Email notifications:"
+msgstr ""
+
+#: ../../../build-notifications.rst:8
+msgid ""
+"Read the Docs allows you to configure build notifications via email. When "
+"builds fail, configured email addresses are notified."
+msgstr ""
+
+#: ../../../build-notifications.rst:12
+msgid "Build Status Webhooks:"
+msgstr ""
+
+#: ../../../build-notifications.rst:13
+msgid ""
+"Build notifications can happen via :term:`webhooks <webhook>`. This means "
+"that we are able to support a wide variety of services that receive "
+"notifications."
+msgstr ""
+
+#: ../../../build-notifications.rst:16
+msgid "Slack and Discord are supported through ready-made templates."
+msgstr ""
+
+#: ../../../build-notifications.rst:18
+msgid ""
+"Webhooks can be customized through your own template and a variety of "
+"variable substitutions."
+msgstr ""
+
+#: ../../../build-notifications.rst:22
+msgid ""
+"We don't trigger email notifications or build status webhooks on :doc:"
+"`builds from pull requests </pull-requests>`."
+msgstr ""
+
+#: ../../../build-notifications.rst:25
+msgid ":doc:`/guides/build/email-notifications`"
+msgstr ""
+
+#: ../../../build-notifications.rst:26
+msgid ""
+"Enable email notifications on failed builds, so you always know that your "
+"docs are deploying successfully."
+msgstr ""
+
+#: ../../../build-notifications.rst:29
+msgid ":doc:`/guides/build/webhooks`"
+msgstr ""
+
+#: ../../../build-notifications.rst:30
+msgid ""
+"Steps for setting up build notifications via webhooks, including examples "
+"for popular platforms like Slack and Discord."
+msgstr ""

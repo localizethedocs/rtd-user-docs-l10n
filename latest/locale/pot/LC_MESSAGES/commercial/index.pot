@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../commercial/index.rst:2
+msgid "Business hosting"
+msgstr ""
+
+#: ../../../commercial/index.rst:7
+msgid ""
+"We offer |com_brand| for building and hosting documentation for private "
+"repositories."
+msgstr ""
+
+#: ../../../commercial/index.rst:9
+msgid ""
+"In order to get started quickly, you can start a `free 30-day trial <https://"
+"about.readthedocs.com/pricing/>`__ to test out the platform."
+msgstr ""
+
+#: ../../../commercial/index.rst:13
+msgid "`Read the Docs features <https://about.readthedocs.com/features/>`__"
+msgstr ""
+
+#: ../../../commercial/index.rst:14
+msgid ""
+"A high-level overview of platform features, and the `pricing page <https://"
+"about.readthedocs.com/pricing/>`__ has a feature breakdown by subscription "
+"level."
+msgstr ""
+
+#: ../../../commercial/index.rst:18
+msgid "Commercial documentation solutions"
+msgstr ""
+
+#: ../../../commercial/index.rst:20
+msgid ""
+"In addition to providing the same features as |org_brand|, commercial "
+"subscriptions to Read the Docs add additional features and run on separate "
+"infrastructure."
+msgstr ""
+
+#: ../../../commercial/index.rst:23
+msgid ""
+"The following list is a high-level overview of the areas covered by |"
+"com_brand|. If you want a full feature breakdown, please refer to our "
+"`pricing page <https://about.readthedocs.com/pricing/>`__."
+msgstr ""
+
+#: ../../../commercial/index.rst:26
+msgid "Private repositories and private documentation"
+msgstr ""
+
+#: ../../../commercial/index.rst:27
+msgid ""
+"The largest difference between the community solution and our commercial "
+"offering is the ability to connect to private repositories, to restrict "
+"documentation access to certain users, or to share private documentation via "
+"private hyperlinks."
+msgstr ""
+
+#: ../../../commercial/index.rst:32
+msgid "Priority support"
+msgstr ""
+
+#: ../../../commercial/index.rst:33
+msgid ""
+"We have a dedicated support team that responds to support requests during "
+"business hours."
+msgstr ""
+
+#: ../../../commercial/index.rst:35
+msgid "Advertising-free"
+msgstr ""
+
+#: ../../../commercial/index.rst:36
+msgid "All commercially hosted documentation is always ad-free."
+msgstr ""
+
+#: ../../../commercial/index.rst:38
+msgid "Business features"
+msgstr ""
+
+#: ../../../commercial/index.rst:39
+msgid ""
+"Enjoy additional functionality specifically for larger organizations such as "
+"team management, single sign-on, and audit logging."
+msgstr ""
+
+#: ../../../commercial/index.rst:44
+msgid ":doc:`/commercial/organizations`"
+msgstr ""
+
+#: ../../../commercial/index.rst:45
+msgid ":doc:`/commercial/single-sign-on`"
+msgstr ""
+
+#: ../../../commercial/index.rst:46
+msgid ":doc:`/security-log`"
+msgstr ""

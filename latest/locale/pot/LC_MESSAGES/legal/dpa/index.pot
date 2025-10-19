@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../legal/dpa/index.rst:2
+msgid "Data Processing Addendum (DPA)"
+msgstr ""
+
+#: ../../../legal/dpa/index.rst:9
+msgid ""
+"Read the Docs can execute a DPA with any customer that receives data from "
+"the EU. You can complete this by reviewing and accepting the following pre-"
+"signed agreement:"
+msgstr ""
+
+#: ../../../legal/dpa/index.rst:12
+msgid ""
+"`Review the Read the Docs Data Processing Addendum <https://readthedocs."
+"eversign.com/embedded/fa9e5a24917c4440a1770251102a044e>`_"
+msgstr ""
+
+#: ../../../legal/dpa/index.rst:15
+msgid ":doc:`Read the Docs sub-processor list <subprocessors>`"
+msgstr ""
+
+#: ../../../legal/dpa/index.rst:16
+msgid "An up-to-date list of the sub-processors we use for hosting services."
+msgstr ""

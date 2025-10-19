@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/access/index.rst:32
+msgid "Single sign-on (SSO) with GitHub, GitLab, or Bitbucket"
+msgstr ""
+
+#: ../../../guides/access/index.rst:32
+msgid "Single sign-on (SSO) with Google Workspace"
+msgstr ""
+
+#: ../../../guides/access/index.rst:32
+msgid "Single sign-on (SSO) with SAML"
+msgstr ""
+
+#: ../../../guides/access/index.rst:32
+msgid "Managing Read the Docs teams"
+msgstr ""
+
+#: ../../../guides/access/index.rst:32
+msgid "Using private Git submodules"
+msgstr ""
+
+#: ../../../guides/access/index.rst:32
+msgid "Installing private python packages"
+msgstr ""
+
+#: ../../../guides/access/index.rst:32
+msgid "Manage maintainers"
+msgstr ""
+
+#: ../../../guides/access/index.rst:2
+msgid "How-to guides: security and access"
+msgstr ""
+
+#: ../../../guides/access/index.rst:4
+msgid ""
+"⏩️ :doc:`Single sign-on (SSO) with GitHub, GitLab, or Bitbucket </guides/"
+"setup-single-sign-on-github-gitlab-bitbucket>`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:5
+msgid ""
+"When using an :doc:`organization </commercial/organizations>` on  |"
+"com_brand|, you can configure SSO for your users to authenticate to Read the "
+"Docs."
+msgstr ""
+
+#: ../../../guides/access/index.rst:8
+msgid ""
+"⏩️ :doc:`Single sign-on (SSO) with Google Workspace </guides/setup-single-"
+"sign-on-google-email>`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:9
+msgid ""
+"When using an :doc:`organization </commercial/organizations>` on  |"
+"com_brand|, you can configure SSO for your users to authenticate to Read the "
+"Docs. This guide is written for Google Workspace."
+msgstr ""
+
+#: ../../../guides/access/index.rst:13
+msgid ""
+"⏩️ :doc:`Managing Read the Docs teams </guides/manage-read-the-docs-teams>`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:14
+msgid ""
+"When using an :doc:`organization </commercial/organizations>` on  |"
+"com_brand|, it's possible to create different teams with custom access "
+"levels."
+msgstr ""
+
+#: ../../../guides/access/index.rst:17
+msgid "⏩️ :doc:`/guides/creating-project-private-repository`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:18
+msgid ""
+"How to create and configure a project using a private repository on |"
+"com_brand|."
+msgstr ""
+
+#: ../../../guides/access/index.rst:20
+msgid "⏩️ :doc:`Using private Git submodules </guides/private-submodules>`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:21
+msgid ""
+"If you are using private Git repositories and they also contain private Git "
+"submodules, you need to follow a few special steps."
+msgstr ""
+
+#: ../../../guides/access/index.rst:24
+msgid ""
+"⏩️ :doc:`Installing private python packages </guides/private-python-"
+"packages>`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:25
+msgid ""
+"If you have private dependencies, you can install them from a :ref:`private "
+"Git repository <guides/private-python-packages:From a Git repository>` or a :"
+"ref:`private repository manager <guides/private-python-packages:From a "
+"repository manager other than PyPI>`."
+msgstr ""
+
+#: ../../../guides/access/index.rst:29
+msgid "⏩️ :doc:`Manage Maintainers </guides/managing-maintainers>`"
+msgstr ""
+
+#: ../../../guides/access/index.rst:30
+msgid "Learn how to manage maintainers for your projects on |org_brand|."
+msgstr ""

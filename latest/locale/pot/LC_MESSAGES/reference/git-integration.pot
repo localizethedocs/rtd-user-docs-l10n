@@ -1,0 +1,895 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/git-integration.rst:2
+msgid "Git integration (GitHub, GitLab, Bitbucket)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:4
+msgid ""
+"Your Read the Docs account can be connected to your Git provider's account. "
+"Connecting your account provides the following features:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:7
+msgid "🔑️ Easy login"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:8
+msgid "Log in to Read the Docs with your |git_providers_or| account."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:10
+msgid "🔁️ List your projects"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:11
+msgid ""
+"Select a project to automatically import from all your Git repositories and "
+"organizations. See: :doc:`/intro/add-project`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:14
+msgid "⚙️ Automatic configuration"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:15
+msgid ""
+"Have your Git repository automatically configured with your Read the Docs :"
+"term:`webhook`, which allows Read the Docs to build your docs on every "
+"change to your repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:18
+msgid "🚥️ Commit status"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:19
+msgid ""
+"See your documentation build status as a commit status indicator on :doc:"
+"`pull request builds </pull-requests>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:23
+msgid ":ref:`intro/add-project:Manually add your project`"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:24
+msgid ""
+"Using a different provider? You can configure it manually. Read the Docs "
+"still supports other providers such as Gitea or GitHub Enterprise."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:28
+msgid "Getting started"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:30
+msgid "✅️ Signed up with your Git provider?"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:31
+msgid ""
+"If you signed up or logged in to Read the Docs with your |git_providers_or| "
+"credentials, you're all done. Your account is connected."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:34
+msgid "The rest of this guide explains how the automatic configuration works."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:36
+msgid "⏩️️ Signed up with your email address?"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:37
+msgid ""
+"If you have signed up to Read the Docs with your email address, you can add "
+"the connection to the Git provider afterward. You can also add a connection "
+"to an additional Git provider this way."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:41
+msgid "Please follow :doc:`/guides/connecting-git-account` in this case."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:43
+msgid ""
+"Once you have your account connected, you can follow the :doc:`/intro/add-"
+"project` guide to actually add your project to Read the Docs."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:47
+msgid "How automatic configuration works"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:49
+msgid ""
+"When your Read the Docs account is connected to |git_providers_or| and you :"
+"doc:`add a new Read the Docs project </intro/add-project>`:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:51
+msgid ""
+"Read the Docs automatically creates a Read the Docs Integration that matches "
+"your Git provider."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:52
+msgid ""
+"Read the Docs creates an incoming webhook with your Git provider, which is "
+"automatically added to your Git repository's settings using the account "
+"connection."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:54
+msgid ""
+"After project creation, you can continue to configure the project. All "
+"settings can be modified, including the ones that were automatically created."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:61
+msgid ""
+"A single Read the Docs account can connect to many different Git providers. "
+"This allows you to have a single login for all your various identities."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:65
+msgid "Read the Docs incoming webhook"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:69
+msgid ""
+"When using our :ref:`reference/git-integration:GitHub App`, Read the Docs "
+"subscribes to all required events. You don't need to create a webhook on "
+"your repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:72
+msgid ""
+"Accounts with |git_providers_and| integration automatically have Read the "
+"Docs' incoming :term:`webhook` configured on all Git repositories that are "
+"imported. Other setups can set up the webhook through :doc:`manual "
+"configuration </guides/setup/git-repo-manual>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:75
+msgid ""
+"When an incoming webhook notification is received, Read the Docs ensures "
+"that it matches an existing project. Once the webhook is validated, an "
+"action is taken based on the information inside of the webhook."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:80
+msgid "Possible webhook action outcomes are:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:82
+msgid ":doc:`Builds </builds>` the latest commit."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:83
+msgid ""
+"Synchronizes your versions based on the latest tag and branch data in Git."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:84
+msgid "Creates a :doc:`pull request build </pull-requests>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:85
+msgid "Runs your :doc:`automation rules</automation-rules>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:87
+msgid "Screenshot of the Dashboard view for the incoming webhook"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:90
+msgid ""
+"All calls to the incoming webhook are logged. Each call can trigger builds "
+"and version synchronization."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:93
+msgid ""
+"On |com_brand|, Git integration makes it possible for us to synchronize your "
+"Git repository's access rights from your Git provider. That way, the same "
+"access rights are effective on Read the Docs and you don't have to configure "
+"access in two places. See more in our :ref:`sso_git_provider`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:99
+msgid "How does the connection work?"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:101
+msgid ""
+"Read the Docs uses `OAuth`_ to connect to your account at |"
+"git_providers_or|. You are asked to grant permissions for Read the Docs to "
+"perform a number of actions on your behalf."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:104
+msgid ""
+"At the same time, we use this process for authentication (login) since we "
+"trust that |git_providers_or| have verified your user account and email "
+"address."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:107
+msgid ""
+"By granting Read the Docs the requested permissions, we are issued a secret "
+"OAuth token from your Git provider. Using the secret token, we can "
+"automatically configure repositories during :doc:`project creation </intro/"
+"add-project>`. We also use the token to send back build statuses and preview "
+"URLs for :doc:`pull requests </pull-requests>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:117
+msgid ""
+"Access granted to Read the Docs can always be revoked. This is a function "
+"offered by all Git providers."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:121
+msgid "Git provider integrations"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:123
+msgid ""
+"If your project is using :doc:`Organizations </commercial/organizations>` (|"
+"com_brand|) or :term:`maintainers <maintainer>` (|org_brand|), then you need "
+"to be aware of *who* is setting up the integration for the project."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:126
+msgid ""
+"The Read the Docs user who sets up the project through the automatic import "
+"should also have admin rights to the Git repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:128
+msgid ""
+"A Git provider integration is active through the authentication of the user "
+"that creates the integration. If this user is removed, make sure to verify "
+"and potentially recreate all Git integrations for the project."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:134
+msgid ""
+"When using our :ref:`reference/git-integration:GitHub App`, If the original "
+"user who connected the repository to Read the Docs loses access to the "
+"project or repository, the GitHub App will still have access to the "
+"repository, and the integrations will continue to work."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:139
+msgid "Permissions for connected accounts"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:141
+msgid ""
+"Read the Docs does not generally ask for *write* permission to your "
+"repository code (with one exception detailed below). However, we do need "
+"permissions for authorizing your account so that you can log in to Read the "
+"Docs with your connected account credentials."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:148
+msgid "GitHub"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:150
+msgid ""
+"Read the Docs requests the following permissions (more precisely, `OAuth "
+"scopes`_) when connecting your Read the Docs account to GitHub."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:155
+msgid "Read access to your email address (``user:email``)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:156
+msgid ""
+"We ask for this so you can create a Read the Docs account and log in with "
+"your GitHub credentials."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:158
+msgid "Administering webhooks (``admin:repo_hook``)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:159
+msgid ""
+"We ask for this so we can create :term:`webhooks <webhook>` on your "
+"repositories when you import them into Read the Docs. This allows us to "
+"build the docs when you push new commits."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:162
+msgid "Read access to your organizations (``read:org``)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:163
+#: ../../../reference/git-integration.rst:220
+msgid ""
+"We ask for this so we know which organizations you have access to. This "
+"allows you to filter repositories by organization when importing "
+"repositories."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:166
+msgid "Repository status (``repo:status``)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:167
+msgid ""
+"Repository statuses allow Read the Docs to report the status (e.g. passed, "
+"failed, pending) of pull requests to GitHub."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:172
+msgid ""
+":doc:`Read the Docs for Business </commercial/index>` asks for one "
+"additional permission (``repo``) to allow access to private repositories and "
+"to allow us to set up SSH keys to clone your private repositories. "
+"Unfortunately, this is the permission for read/write control of the "
+"repository but there isn't a more granular permission that only allows "
+"setting up SSH keys for read access."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:179
+#: ../../../reference/git-integration.rst:273
+msgid "GitHub App"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:181
+msgid ""
+"Read the Docs requests the following permissions when connecting your Read "
+"the Docs account to our :ref:`GitHub App <reference/git-integration:GitHub "
+"App>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:183
+msgid "Account email addresses (read only)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:184
+msgid ""
+"We ask for this so we can verify your email address and create a Read the "
+"Docs account."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:186
+msgid ""
+"When installing the Read the Docs GitHub App in a repository, you will be "
+"asked to grant the following permissions:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:188
+msgid "Repository permissions"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:189
+msgid "Commit statuses (read and write)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:190
+msgid "This allows Read the Docs to report the status of the build to GitHub."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:191
+msgid "Contents (read only)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:192
+msgid ""
+"This allows Read the Docs to clone the repository and build the "
+"documentation."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:193
+msgid "Metadata (read only)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:194
+msgid ""
+"This allows Read the Docs to read the repository collaborators and the "
+"permissions they have on the repository. This is used to determine if the "
+"user can connect a repository to a Read the Docs project."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:196
+msgid "Pull requests (read and write)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:197
+msgid ""
+"This allows Read the Docs to subscribe to pull request events, and to create "
+"a comment on the pull request with information about the build."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:199
+msgid "Checks (read and write)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:200
+msgid ""
+"This allows Read the Docs to use the GitHub Checks API to report the status "
+"of the build. This isn't used yet, but we may use it in the future."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:203
+msgid "Organization permissions"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:204
+msgid "Members (read only)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:205
+msgid "This allows Read the Docs to read the organization members."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:207
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:209
+msgid "We request permissions for:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:211
+msgid "Administering your repositories (``repository:admin``)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:212
+msgid ""
+"We ask for this so we can create :term:`webhooks <webhook>` on your "
+"repositories when you import them into Read the Docs. This allows us to "
+"build the docs when you push new commits. NB! This permission scope does "
+"**not** include any write access to code."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:216
+msgid "Reading your account information including your email address"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:217
+msgid ""
+"We ask for this so you can create a Read the Docs account and log in with "
+"your Bitbucket credentials."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:219
+msgid "Read access to your team memberships"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:223
+msgid "Read access to your repositories"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:224
+msgid "We ask for this so we know which repositories you have access to."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:226
+msgid ""
+"To read more about Bitbucket permissions, see `official Bitbucket "
+"documentation on API scopes`_"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:231
+msgid "GitLab"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:233
+msgid "Like the others, we request permissions for:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:235
+msgid "Reading your account information (``read_user``)"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:236
+msgid "API access (``api``) which is needed to create webhooks in GitLab"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:242
+msgid "GitHub permission troubleshooting"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:244
+msgid "**Repositories not in your list to import**."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:246
+msgid ""
+"Many organizations require approval for each OAuth application that is used, "
+"or you might have disabled it in the past for your personal account. This "
+"can happen at the personal or organization level, depending on where the "
+"project you are trying to access has permissions from."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:253
+msgid "Personal Account"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:255
+msgid ""
+"You need to make sure that you have granted access to the Read the Docs "
+"`OAuth App`_ to your **personal GitHub account**. If you do not see Read the "
+"Docs in the `OAuth App`_ settings, you might need to disconnect and "
+"reconnect the GitHub service."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:258
+msgid ""
+"GitHub docs on `requesting access to your personal OAuth`_ for step-by-step "
+"instructions."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:263
+msgid "Organization Account"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:265
+msgid ""
+"You need to make sure that you have granted access to the Read the Docs "
+"OAuth App to your **organization GitHub account**. If you don't see \"Read "
+"the Docs\" listed, then you might need to connect GitHub to your social "
+"accounts as noted above."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:268
+msgid ""
+"GitHub doc on `requesting access to your organization OAuth`_ for step-by-"
+"step instructions."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:277
+msgid ""
+"Our GitHub App is currently in beta, see our `blog post <https://about."
+"readthedocs.com/blog/2025/06/announcing-our-github-app-beta/>`__ for more "
+"information."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:279
+msgid ""
+"We are in the process of migrating our GitHub OAuth application to a `GitHub "
+"App <https://docs.github.com/en/apps/overview>`__. We have two GitHub Apps, "
+"one for each of our platforms:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:282
+msgid ""
+"`Read the Docs Community <https://github.com/apps/read-the-docs-community>`__"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:283
+msgid ""
+"`Read the Docs Business <https://github.com/apps/read-the-docs-business>`__"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:286
+msgid "Features"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:288
+msgid ""
+"When using GitHub, Read the Docs uses a GitHub App to interact with your "
+"repositories. This has the following benefits over using an OAuth "
+"application:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:291
+msgid ""
+"More control over which repositories Read the Docs can access. You don't "
+"need to grant access to all your repositories in order to create an account "
+"or connect a project to a single repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:293
+msgid ""
+"No need to create webhooks on your repositories. The GitHub App subscribes "
+"to all required events when you install it."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:295
+msgid ""
+"No need to create a deploy key on your repository (|com_brand| only). The "
+"GitHub App can clone your private repositories using a temporal token."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:297
+msgid ""
+"If the original user who connected the repository to Read the Docs loses "
+"access to the project or repository, the GitHub App will still have access "
+"to the repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:299
+msgid ""
+"You can revoke access to the GitHub App at any time from your GitHub "
+"settings."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:300
+msgid ""
+"Never out of sync with changes on your repository. The GitHub App subscribes "
+"to all required events and will always keep your project up to date with "
+"your repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:304
+msgid "Adding a project from a repository"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:306
+msgid ""
+"To add a project from a repository, you need to install the Read the Docs "
+"GitHub App and grant access to that repository."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:309
+#: ../../../reference/git-integration.rst:322
+#: ../../../reference/git-integration.rst:365
+#: ../../../reference/git-integration.rst:412
+msgid ""
+"`Read the Docs Community <https://github.com/apps/read-the-docs-community/"
+"installations/new/>`__"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:310
+#: ../../../reference/git-integration.rst:323
+#: ../../../reference/git-integration.rst:366
+#: ../../../reference/git-integration.rst:413
+msgid ""
+"`Read the Docs Business <https://github.com/apps/read-the-docs-business/"
+"installations/new/>`__"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:312
+msgid ""
+"Once you have installed the GitHub App, click on the :guilabel:`Projects` "
+"tab, and click on :guilabel:`Add project`, search for the repository you "
+"want to create a project for, and then follow the instructions from there."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:316
+msgid "Connect a repository to an existing project"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:318
+msgid ""
+"In case you manually added a project on Read the Docs, or if you want to "
+"connect your project to a different repository, you need to install the Read "
+"the Docs GitHub App and grant access to the repository you want to connect."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:325
+msgid ""
+"Once you have installed the GitHub App, go the :guilabel:`Settings` page of "
+"the project, and select the repository you want to connect from the :"
+"guilabel:`Connected repository` dropdown."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:329
+msgid "Manually migrating a project"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:331
+msgid ""
+"We recommend using the migration page to migrate your projects from the old "
+"OAuth application to the new GitHub App."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:333
+msgid ""
+"`Read the Docs Community <https://app.readthedocs.com/accounts/migrate-to-"
+"github-app/>`__"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:334
+msgid ""
+"`Read the Docs Business <https://app.readthedocs.com/accounts/migrate-to-"
+"github-app/>`__"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:336
+msgid ""
+"But in case you need to manually migrate a project, you can follow these "
+"steps:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:339
+msgid ""
+"Go to the :guilabel:`Settings` page of your Read the Docs project, and click "
+"on :guilabel:`Integrations`, and delete all the integrations that are listed "
+"there."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:341
+msgid ""
+"Go to the settings page of your GitHub repository, click on :guilabel:"
+"`Webhooks`, and delete all the webhooks with URLs that start with:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:344
+msgid ""
+"``https://readthedocs.org/api/v2/webhook/<your-project-slug>`` or ``https://"
+"app.readthedocs.org/api/v2/webhook/<your-project-slug>`` for Read the Docs "
+"Community."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:345
+msgid ""
+"``https://readthedocs.com/api/v2/webhook/<your-project-slug>`` or ``https://"
+"app.readthedocs.com/api/v2/webhook/<your-project-slug>`` for Read the Docs "
+"Business."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:347
+msgid ""
+"For projects using Read the Docs Business, go to the settings page of your "
+"GitHub repository, click on :guilabel:`Deploy keys`, and delete the deploy "
+"with a title matching the format ``support@readthedocs.com (<your-project-"
+"slug>)``."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:350
+msgid ""
+":ref:`Connect the project to the repository <reference/git-integration:"
+"Connect a repository to an existing project>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:353
+msgid "Revoking access"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:357
+msgid ""
+"If you revoke access to the GitHub App with any of the methods below, all "
+"projects linked to that repository will stop working, but the projects and "
+"its documentation will still be available. If you grant access to the "
+"repository again, you will need to :ref:`manually connect your project to "
+"the repository <reference/git-integration:Connect a repository to an "
+"existing project>`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:363
+msgid ""
+"You can revoke access to the Read the Docs GitHub App at any time from your "
+"GitHub settings."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:368
+msgid "There are three ways to revoke access to the Read the Docs GitHub App:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:370
+msgid "Revoke access to one or more repositories:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:371
+msgid ""
+"Remove the repositories from the list of repositories that the GitHub App "
+"has access to."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:372
+msgid "Suspend the GitHub App:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:373
+msgid ""
+"This will suspend the GitHub App and revoke access to all repositories. The "
+"installation and configuration will still be available, and you can re-"
+"enable the GitHub App at any time."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:376
+msgid "Uninstall the GitHub App:"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:377
+msgid ""
+"This will uninstall the GitHub App and revoke access to all repositories. "
+"The installation and configuration will be removed, and you will need to re-"
+"install the GitHub App and reconfigure it to use it again."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:382
+msgid "Security"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:384
+msgid ""
+"When cloning private repositories (|com_brand| only) Read the Docs creates "
+"an `installation access token <https://docs.github.com/en/rest/apps/apps?"
+"apiVersion=2022-11-28#create-an-installation-access-token-for-an-app>`__, "
+"which has read access to the `contents permission <https://docs.github.com/"
+"en/rest/authentication/permissions-required-for-github-apps?"
+"apiVersion=2022-11-28#repository-permissions-for-contents>`__, and it's "
+"scoped to the repository to be cloned."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:389
+msgid ""
+"This token is valid for one hour and GitHub automatically grants read access "
+"to the `metadata permission <https://docs.github.com/en/rest/authentication/"
+"permissions-required-for-github-apps?apiVersion=2022-11-28#repository-"
+"permissions-for-metadata>`__, which allows to query the repository "
+"collaborators, events, and other metadata. By default, Read the Docs doesn't "
+"show this token during the build, but the token is available during the "
+"whole build process. Make sure to not print it in your build logs, and that "
+"only trusted users are able to trigger builds on your project."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:398
+msgid ""
+"If your repository is public, Read the Docs will not create an installation "
+"access token."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:402
+msgid ""
+"The build log page is publicly accessible only if your project and version "
+"to build are marked as public. See more in :doc:`/commercial/privacy-level`."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:406
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:408
+msgid "Repository not found in the repository list"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:409
+msgid ""
+"Make sure you have installed the corresponding GitHub App in your GitHub "
+"account or organization, and have granted access to the repository your "
+"project will be connected to."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:415
+msgid ""
+"If you still can't see the repository in the list, you may need to wait a "
+"couple of minutes and refresh the page, or click on the \"Refresh your "
+"repositories\" button on the project creation page."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:419
+msgid "Repository is in the list, but isn't usable"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:420
+msgid ""
+"Make sure you have admin access to the repository you are trying to use for "
+"your project. If you are using |org_brand|, make sure your project is "
+"public, or use |com_brand| to create projects from private repositories."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:424
+msgid ""
+"If you still can't use the repository for your project, you may need to wait "
+"a couple of minutes and refresh the page, or click on the \"Refresh your "
+"repositories\" button on the project creation page."
+msgstr ""
