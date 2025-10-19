@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../legal/dpa/subprocessors.rst:2
+msgid "Sub-processor list"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:0
+msgid "Effective"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:4
+msgid "April 16, 2021"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:0
+msgid "Last updated"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:5
+msgid "August 9, 2024"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:7
+msgid ""
+"Read the Docs for Business uses services from the following sub-processors "
+"to provide documentation hosting services. This document supplements :doc:"
+"`our Data Processing Addendum <index>` and may be separately updated on a "
+"periodic basis. A sub-processor is a third party data processor who has or "
+"potentially will have access to or will process personal data."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:14
+msgid ""
+"Previous versions of this document, as well as the change history to this "
+"document, are available `on GitHub`_"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:20
+msgid "Infrastructure"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:22
+msgid "Amazon Web Services, Inc."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:23
+msgid "Cloud infrastructure provider."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:26
+msgid "Services"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:28
+msgid "Elasticsearch B.V."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:29
+msgid ""
+"Hosted ElasticSearch services for documentation search. Search indexes do "
+"not include user data."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:32
+msgid "Sendgrid, Inc."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:33
+msgid ""
+"Provides email delivery to dashboard and admin users for site notifications "
+"and other generated messages. The body of notification emails can include "
+"user information, including email address."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:37
+msgid "Plausible"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:38
+msgid ""
+"Website analytics for dashboard and Read the Docs owned documentation sites."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:40
+msgid "Stripe Inc."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:41
+msgid ""
+"Subscription payment provider. Data collected can include user data "
+"necessary to process payment transactions, however this data is not "
+"processed directly by Read the Docs."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:46
+msgid "Monitoring"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:48
+msgid "New Relic"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:49
+msgid ""
+"Application performance analytics. Data collected can include user data and "
+"visitor data used within application code."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:52
+msgid "Sentry"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:53
+msgid ""
+"Error analytics service used to log and track application errors. Error "
+"reports can include arguments passed to application code, which can include "
+"user and visitor data."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:58
+msgid "Support"
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:60
+msgid "FrontApp, Inc."
+msgstr ""
+
+#: ../../../legal/dpa/subprocessors.rst:61
+msgid ""
+"Customer email support service. Can have access to user data, including user "
+"email and IP address, and stores communications related to user data."
+msgstr ""

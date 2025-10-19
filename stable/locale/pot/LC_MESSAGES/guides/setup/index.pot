@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/setup/index.rst:40
+msgid "Connecting your Read the Docs account to your Git provider"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:40
+msgid "Configuring a Git repository manually"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:40
+msgid "Managing custom domains"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:40
+msgid "Hiding a version"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:40
+msgid "Using a .readthedocs.yaml file in a sub-folder"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:40
+msgid "Using custom URL redirects in documentation projects"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:2
+msgid "How-to guides: project setup and configuration"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:4
+msgid ""
+"The following how-to guides help you solve common tasks and challenges in "
+"the setup and configuration stages."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:6
+msgid ""
+"⏩️ :doc:`Connecting your Read the Docs account to your Git provider </guides/"
+"connecting-git-account>`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:7
+msgid ""
+"Steps to connect an account on |git_providers_or| with your Read the Docs "
+"account."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:9
+msgid ""
+"⏩️ :doc:`Configuring a Git repository manually </guides/setup/git-repo-"
+"manual>`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:10
+msgid ""
+"If you are connecting a Git repository from another provider (for instance "
+"Gitea or Codeberg), this guide tells you how to add and configure the "
+"webhook **manually**."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:13
+msgid "⏩️ :doc:`Managing custom domains </guides/custom-domains>`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:14
+msgid ""
+"Hosting your documentation using your own domain name, such as ``docs."
+"example.com``."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:16
+msgid ""
+"⏩️ :doc:`Using custom URL redirects in documentation projects </guides/"
+"redirects>`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:17
+msgid ""
+"Configuring your Read the Docs project for redirecting visitors from one "
+"location to another."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:19
+msgid "⏩️ :doc:`/guides/subprojects`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:20
+msgid ""
+"Use subprojects to nest multiple projects into a single custom domain or "
+"single documentation project."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:22
+msgid ""
+"⏩️ :doc:`Using a .readthedocs.yaml file in a sub-folder </guides/setup/"
+"monorepo>`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:23
+msgid ""
+"This guide shows how to configure a Read the Docs project to use a custom "
+"path for the ``.readthedocs.yaml`` build configuration. *Monorepos* that "
+"have multiple documentation projects in the same Git repository can benefit "
+"from this feature."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:26
+msgid "⏩️ :doc:`Hiding a version </guides/hiding-a-version>`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:27
+msgid ""
+"Is your version (flyout) menu overwhelmed and hard to navigate? Here's how "
+"to make it shorter."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:30
+msgid ""
+"⏩️ :ref:`versioning-schemes:How to change the URL versioning scheme of your "
+"project`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:31
+msgid ""
+"Change how the URLs of your documentation look like, and if your project "
+"supports multiple versions or translations."
+msgstr ""
+
+#: ../../../guides/setup/index.rst:36
+msgid ":doc:`/tutorial/index`"
+msgstr ""
+
+#: ../../../guides/setup/index.rst:37
+msgid "All you need to know to get started."
+msgstr ""

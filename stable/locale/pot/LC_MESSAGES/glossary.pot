@@ -1,0 +1,397 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../glossary.rst:2
+msgid "Glossary"
+msgstr ""
+
+#: ../../../glossary.rst:4
+msgid ""
+"This page includes a number of terms that we use in our documentation, so "
+"that you have a reference for how we're using them."
+msgstr ""
+
+#: ../../../glossary.rst:8
+msgid "CI/CD"
+msgstr ""
+
+#: ../../../glossary.rst:10
+msgid ""
+"CI/CD is a common way to write *Continuous Integration and Continuous "
+"Deployment*. In some scenarios, they exist as two separate platforms. Read "
+"the Docs is a combined CI/CD platform made for documentation."
+msgstr ""
+
+#: ../../../glossary.rst:13
+msgid "configuration file"
+msgstr ""
+
+#: ../../../glossary.rst:15
+msgid ""
+"YAML configuration file (e.g. ``.readthedocs.yaml``) that configures the "
+"build process of your project on Read the Docs."
+msgstr ""
+
+#: ../../../glossary.rst:19
+msgid ":doc:`/config-file/index`"
+msgstr ""
+
+#: ../../../glossary.rst:20
+msgid ""
+"Practical steps to add a configuration file to your documentation project."
+msgstr ""
+
+#: ../../../glossary.rst:22
+msgid "dashboard"
+msgstr ""
+
+#: ../../../glossary.rst:24
+msgid ""
+"The \"admin\" site where Read the Docs projects are managed and configured. "
+"This varies for our two properties:"
+msgstr ""
+
+#: ../../../glossary.rst:27
+msgid "|com_brand|: https://app.readthedocs.com/dashboard/"
+msgstr ""
+
+#: ../../../glossary.rst:28
+msgid "|org_brand|: https://app.readthedocs.org/dashboard/"
+msgstr ""
+
+#: ../../../glossary.rst:29
+msgid "default version"
+msgstr ""
+
+#: ../../../glossary.rst:31
+msgid ""
+"Projects have a *default version*, usually the latest stable version of a "
+"project. The *default version* is the URL that is redirected to when a users "
+"loads the `/` URL for your project."
+msgstr ""
+
+#: ../../../glossary.rst:33
+msgid "diff"
+msgstr ""
+
+#: ../../../glossary.rst:35
+msgid ""
+"A way to see the changes between two pieces of text, which shows the added "
+"and removed content with a green and red color respectively."
+msgstr ""
+
+#: ../../../glossary.rst:37
+msgid "discoverability"
+msgstr ""
+
+#: ../../../glossary.rst:39
+msgid ""
+"A documentation page is said to be *discoverable* when a user that needs it "
+"can find it through various methods: Navigation, search, and links from "
+"other pages are the most typical ways of making content *discoverable*."
+msgstr ""
+
+#: ../../../glossary.rst:41
+msgid "Docs as Code"
+msgstr ""
+
+#: ../../../glossary.rst:43
+msgid ""
+"A term used to describe the workflow of keeping documentation in a Git "
+"repository, along with source code. Popular in the open source software "
+"movement, and used by many technology companies."
+msgstr ""
+
+#: ../../../glossary.rst:47
+msgid "flyout menu"
+msgstr ""
+
+#: ../../../glossary.rst:49
+msgid ""
+"Menu displayed on the documentation, readily accessible for readers, "
+"containing the list active versions, links to static downloads, and other "
+"useful links. Read more in our :doc:`/flyout-menu` page."
+msgstr ""
+
+#: ../../../glossary.rst:51
+msgid "GitOps"
+msgstr ""
+
+#: ../../../glossary.rst:53
+msgid ""
+"Denotes the use of code maintained in Git to automate building, testing, and "
+"deployment of infrastructure. In terms of documentation, GitOps is "
+"applicable for Read the Docs, as the configuration for building "
+"documentation is stored in ``.readthedocs.yaml``, and rules for publication "
+"of documentation can be :doc:`automated </automation-rules>`. Similar to :"
+"term:`Docs as Code`."
+msgstr ""
+
+#: ../../../glossary.rst:59
+msgid "maintainer"
+msgstr ""
+
+#: ../../../glossary.rst:61
+msgid ""
+"A *maintainer* is a special role that only exists on |org_brand|. The "
+"creator of a project on |org_brand| can invite other collaborators as "
+"*maintainers* with full ownership rights."
+msgstr ""
+
+#: ../../../glossary.rst:64
+msgid ""
+"The *maintainer* role does not exist on |com_brand|, which instead provides :"
+"doc:`/commercial/organizations`."
+msgstr ""
+
+#: ../../../glossary.rst:65
+msgid "pinning"
+msgstr ""
+
+#: ../../../glossary.rst:67
+msgid ""
+"To *pin* a requirement means to explicitly specify which version should be "
+"used. *Pinning* software requirements is the most important technique to "
+"make a project :term:`reproducible`."
+msgstr ""
+
+#: ../../../glossary.rst:70
+msgid ""
+"When documentation builds, software dependencies are installed in their "
+"latest versions permitted by the pinning specification. Since software "
+"packages are frequently released, we are usually trying to avoid "
+"incompatibilities in a new release from suddenly breaking a documentation "
+"build."
+msgstr ""
+
+#: ../../../glossary.rst:75
+msgid "Examples of Python dependencies::"
+msgstr ""
+
+#: ../../../glossary.rst:77
+msgid ""
+"# Exact pinning: Only allow Sphinx 5.3.0\n"
+"sphinx==5.3.0\n"
+"\n"
+"# Loose pinning: Lower and upper bounds result in the latest 5.3.x release\n"
+"sphinx>=5.3,<5.4\n"
+"\n"
+"# Very loose pinning: Lower and upper bounds result in the latest 5.x "
+"release\n"
+"sphinx>=5,<6"
+msgstr ""
+
+#: ../../../glossary.rst:86
+msgid "Read the Docs recommends using **exact pinning**."
+msgstr ""
+
+#: ../../../glossary.rst:88 ../../../glossary.rst:112
+msgid "See: :doc:`/guides/reproducible-builds`."
+msgstr ""
+
+#: ../../../glossary.rst:89
+msgid "pre-defined build jobs"
+msgstr ""
+
+#: ../../../glossary.rst:91
+msgid ""
+"Commands executed by Read the Docs when performing the build process. They "
+"cannot be overwritten by the user."
+msgstr ""
+
+#: ../../../glossary.rst:93
+msgid "project home"
+msgstr ""
+
+#: ../../../glossary.rst:95
+msgid ""
+"Page where you can access all the features of Read the Docs, from having an "
+"overview to browsing the latest builds or administering your project."
+msgstr ""
+
+#: ../../../glossary.rst:97
+msgid "project page"
+msgstr ""
+
+#: ../../../glossary.rst:99
+msgid "Another name for :term:`project home`."
+msgstr ""
+
+#: ../../../glossary.rst:100
+msgid "reproducible"
+msgstr ""
+
+#: ../../../glossary.rst:102
+msgid ""
+"A documentation project is said to be *reproducible* when its sources build "
+"correctly on Read the Docs over a period of many years. You can also think "
+"of being *reproducible* as being *robust* or *resillient*."
+msgstr ""
+
+#: ../../../glossary.rst:105
+msgid ""
+"Being \"reproducible\" is an important positive quality goal of "
+"documentation."
+msgstr ""
+
+#: ../../../glossary.rst:107
+msgid ""
+"When builds are not reproducible and break due to external factors, they "
+"need frequent troubleshooting and manual fixing."
+msgstr ""
+
+#: ../../../glossary.rst:110
+msgid ""
+"The most common external factor is that new versions of software "
+"dependencies are released."
+msgstr ""
+
+#: ../../../glossary.rst:113
+msgid "root URL"
+msgstr ""
+
+#: ../../../glossary.rst:115
+msgid ""
+"Home URL of your documentation without the ``/<lang>`` and ``/<version>`` "
+"segments. For projects without custom domains, the one ending in ``."
+"readthedocs.io/`` (for example, ``https://docs.readthedocs.io`` as opposed "
+"to ``https://docs.readthedocs.io/en/latest``)."
+msgstr ""
+
+#: ../../../glossary.rst:118
+msgid "slug"
+msgstr ""
+
+#: ../../../glossary.rst:120
+msgid ""
+"A unique identifier for a project or version. This value comes from the "
+"project or version name, which is reduced to lowercase letters, numbers, and "
+"hyphens. You can retrieve your project or version slugs from :doc:`our API "
+"<api/v3>`."
+msgstr ""
+
+#: ../../../glossary.rst:124
+msgid "static website"
+msgstr ""
+
+#: ../../../glossary.rst:126
+msgid ""
+"A static site or static website is a collection of HTML files, images, CSS "
+"and JavaScript that are served statically, as opposed to dynamic websites "
+"that generate a unique response for each request, using databases and user "
+"sessions."
+msgstr ""
+
+#: ../../../glossary.rst:129
+msgid ""
+"Static websites are highly portable, as they do not depend on the webserver. "
+"They can also be viewed offline."
+msgstr ""
+
+#: ../../../glossary.rst:132
+msgid "Documentation projects served on Read the Docs are *static websites*."
+msgstr ""
+
+#: ../../../glossary.rst:134
+msgid ""
+"Tools to manage and generate static websites are commonly known as *static "
+"site generators* and there is a big overlap with documentation tools. Some "
+"static site generators are also documentation tools, and some documentation "
+"tools are also used to generate normal websites."
+msgstr ""
+
+#: ../../../glossary.rst:138
+msgid ""
+"For instance, :doc:`Sphinx <sphinx:index>` is made for documentation but "
+"also used for blogging."
+msgstr ""
+
+#: ../../../glossary.rst:139
+msgid "subproject"
+msgstr ""
+
+#: ../../../glossary.rst:141
+msgid ""
+"Project A can be configured such that when requesting a URL ``/projects/"
+"<subproject-slug>``, the root of project B is returned. In this case, "
+"*project B* is the subproject. Read more in :doc:`/subprojects`."
+msgstr ""
+
+#: ../../../glossary.rst:145
+msgid "user-defined build jobs"
+msgstr ""
+
+#: ../../../glossary.rst:147
+msgid ""
+"Commands defined by the user that Read the Docs will execute when performing "
+"the build process."
+msgstr ""
+
+#: ../../../glossary.rst:148
+msgid "virtualenv"
+msgstr ""
+
+#: ../../../glossary.rst:150
+msgid ""
+"The default way for Python projects to create an isolated environment. This "
+"ensures that a :doc:`reproducible set of dependencies </guides/reproducible-"
+"builds>` are installed so that you project builds the same way each time."
+msgstr ""
+
+#: ../../../glossary.rst:151
+msgid "webhook"
+msgstr ""
+
+#: ../../../glossary.rst:153
+msgid ""
+"A webhook is a special URL that can be called from another service, usually "
+"with a secret token. It is commonly used to start a build or a deployment or "
+"to send a status update."
+msgstr ""
+
+#: ../../../glossary.rst:157
+msgid "There are two important types of webhooks for Read the Docs:"
+msgstr ""
+
+#: ../../../glossary.rst:159
+msgid ""
+"Git providers have webhooks which are special URLs that Read the Docs can "
+"call in order to notify about documentation builds."
+msgstr ""
+
+#: ../../../glossary.rst:160
+msgid ""
+"Read the Docs has a unique webhook for each project that the Git provider "
+"calls when changes happen in Git."
+msgstr ""
+
+#: ../../../glossary.rst:164
+msgid ":doc:`/guides/setup/git-repo-manual`"
+msgstr ""
+
+#: ../../../glossary.rst:165
+msgid "Manually configuration for Git repositories."
+msgstr ""
+
+#: ../../../glossary.rst:167
+msgid ":doc:`/build-notifications`"
+msgstr ""
+
+#: ../../../glossary.rst:168
+msgid "Receive notifications when your documentation builds fail."
+msgstr ""

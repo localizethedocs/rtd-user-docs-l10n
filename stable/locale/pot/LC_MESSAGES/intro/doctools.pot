@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/doctools.rst:2
+msgid "Popular documentation tools"
+msgstr ""
+
+#: ../../../intro/doctools.rst:4
+msgid ""
+"Read the Docs provides documentation hosting for any tool that can output "
+"HTML. We provide a number of features that are well-suited to documentation "
+"specifically, but you can host any kind of HTML content on Read the Docs."
+msgstr ""
+
+#: ../../../intro/doctools.rst:8
+msgid ""
+"Below is a list of popular documentation tools that you can use to write "
+"your documentation."
+msgstr ""
+
+#: ../../../intro/doctools.rst:12
+msgid ""
+":doc:`/build-customization` Learn how to build documentation with any tool."
+msgstr ""
+
+#: ../../../intro/doctools.rst:17
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../intro/doctools.rst:20
+msgid "MkDocs is a powerful documentation tool for markdown."
+msgstr ""
+
+#: ../../../intro/doctools.rst:22 ../../../intro/doctools.rst:32
+#: ../../../intro/doctools.rst:42 ../../../intro/doctools.rst:52
+#: ../../../intro/doctools.rst:62 ../../../intro/doctools.rst:72
+#: ../../../intro/doctools.rst:83
+msgid "Supported formats"
+msgstr ""
+
+#: ../../../intro/doctools.rst:23 ../../../intro/doctools.rst:53
+#: ../../../intro/doctools.rst:63 ../../../intro/doctools.rst:73
+msgid ":bdg-success:`md`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:24 ../../../intro/doctools.rst:34
+#: ../../../intro/doctools.rst:44 ../../../intro/doctools.rst:54
+#: ../../../intro/doctools.rst:64 ../../../intro/doctools.rst:75
+#: ../../../intro/doctools.rst:86
+msgid "Written in"
+msgstr ""
+
+#: ../../../intro/doctools.rst:25 ../../../intro/doctools.rst:35
+msgid ":bdg-info:`python`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:27
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../intro/doctools.rst:30
+msgid ""
+"Sphinx is a powerful documentation generator that has many features for "
+"writing technical documentation."
+msgstr ""
+
+#: ../../../intro/doctools.rst:33
+msgid ":bdg-success:`rst` :bdg-success:`md`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:37
+msgid "Docusaurus"
+msgstr ""
+
+#: ../../../intro/doctools.rst:40
+msgid ""
+"Docusaurus is a static-site generator that builds a single-page application "
+"with fast client-side navigation and out-of-the-box documentation features."
+msgstr ""
+
+#: ../../../intro/doctools.rst:43
+msgid ":bdg-success:`mdx` :bdg-success:`md`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:45
+msgid ":bdg-info:`React`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:47
+msgid "Markdoc"
+msgstr ""
+
+#: ../../../intro/doctools.rst:50
+msgid ""
+"Markdoc is a documentation tool developed by Stripe that allows you to write "
+"documentation in a custom Markdown flavor."
+msgstr ""
+
+#: ../../../intro/doctools.rst:55 ../../../intro/doctools.rst:87
+msgid ":bdg-info:`javascript`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:57
+msgid "mdBook"
+msgstr ""
+
+#: ../../../intro/doctools.rst:60
+msgid ""
+"mdBook is a command line tool to create books with Markdown built in Rust."
+msgstr ""
+
+#: ../../../intro/doctools.rst:65
+msgid ":bdg-info:`rust`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:67
+msgid "VitePress"
+msgstr ""
+
+#: ../../../intro/doctools.rst:70
+msgid ""
+"VitePress is a static site generator with a focus on performance and "
+"simplicity."
+msgstr ""
+
+#: ../../../intro/doctools.rst:76
+msgid ":bdg-info:`typescript`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:78
+msgid "Antora"
+msgstr ""
+
+#: ../../../intro/doctools.rst:81
+msgid ""
+"Antora is a static site generator for creating documentation sites from "
+"AsciiDoc content."
+msgstr ""
+
+#: ../../../intro/doctools.rst:84
+msgid ":bdg-success:`adoc`"
+msgstr ""

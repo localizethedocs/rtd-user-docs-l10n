@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../advertising/ad-customization.rst:4
+msgid "Customizing advertising"
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:8
+msgid ""
+"This document details features that are a **work in progress**. To discuss "
+"this document, please get in touch in the `issue tracker`_."
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:13
+msgid ""
+"In addition to allowing users and documentation authors to :ref:`opt out "
+"<advertising/ethical-advertising:Opting out>` of advertising, we allow some "
+"additional controls for documentation authors to control the positioning and "
+"styling of advertising. This can improve the performance of advertising or "
+"make sure the ad is in a place where it fits well with the documentation."
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:22
+msgid "Controlling the placement of an ad"
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:24
+msgid ""
+"It is possible for a documentation author to instruct Read the Docs to "
+"position advertising in a specific location. This is done by adding a "
+"specific element to the generated body. The ad will be inserted into this "
+"container wherever this element is in the document body."
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:29
+msgid "<div id=\"ethical-ad-placement\"></div>"
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:35
+msgid "In Sphinx"
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:37
+msgid ""
+"In Sphinx, this is typically done by adding a new template (under "
+"`templates_path`_) for inclusion in the `HTML sidebar`_ in your ``conf.py``."
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:44
+msgid ""
+"## In conf.py\n"
+"html_sidebars = {\n"
+"    \"**\": [\n"
+"        \"localtoc.html\",\n"
+"        \"ethicalads.html\",  # Put the ad below the navigation but above "
+"previous/next\n"
+"        \"relations.html\",\n"
+"        \"sourcelink.html\",\n"
+"        \"searchbox.html\",\n"
+"    ]\n"
+"}"
+msgstr ""
+
+#: ../../../advertising/ad-customization.rst:57
+msgid ""
+"<!-- In _templates/ethicalads.html -->\n"
+"<div id=\"ethical-ad-placement\"></div>"
+msgstr ""
