@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dmca/index.rst:2
+msgid "DMCA takedown policy"
+msgstr ""
+
+#: ../../../dmca/index.rst:4
+msgid ""
+"These are the guidelines that Read the Docs follows when handling DMCA "
+"takedown requests and takedown counter requests. If you are a copyright "
+"holder wishing to submit a takedown request, or an author that has been "
+"notified of a takedown request, please familiarize yourself with `our "
+"process`__. You will be asked to confirm that you have reviewed information "
+"if you submit a request or counter request."
+msgstr ""
+
+#: ../../../dmca/index.rst:13
+msgid ""
+"We aim to keep this entire process as transparent as possible. Our process "
+"is modeled after `GitHub's DMCA takedown process`__, which we appreciate for "
+"its focus on transparency and fairness. All requests and counter requests "
+"will be posted to this page below, in the `Request Archive`_. These requests "
+"will be redacted to remove all identifying information, except for Read the "
+"Docs user and project names."
+msgstr ""
+
+#: ../../../dmca/index.rst:23
+msgid "Takedown process"
+msgstr ""
+
+#: ../../../dmca/index.rst:25
+msgid ""
+"Here are the steps the Read the Docs will follow in the takedown request "
+"process:"
+msgstr ""
+
+#: ../../../dmca/index.rst:27
+msgid "Copyright holder submits a request"
+msgstr ""
+
+#: ../../../dmca/index.rst:28
+msgid ""
+"This request, if valid, will be posted publicly on this page, `down "
+"below`__. The author affected by the takedown request will be notified with "
+"a link to the takedown request."
+msgstr ""
+
+#: ../../../dmca/index.rst:32
+msgid ""
+"For more information on submitting a takedown request, see: `Submitting a "
+"Request`_"
+msgstr ""
+
+#: ../../../dmca/index.rst:37
+msgid "Author is contacted"
+msgstr ""
+
+#: ../../../dmca/index.rst:38
+msgid ""
+"The author of the content in question will be asked to make changes to the "
+"content specified in the takedown request. The author will have 24 hours to "
+"make these changes. The copyright holder will be notified if and when this "
+"process begins"
+msgstr ""
+
+#: ../../../dmca/index.rst:43
+msgid "Author acknowledges changes have been made"
+msgstr ""
+
+#: ../../../dmca/index.rst:44
+msgid ""
+"The author must notify Read the Docs that changes have been made within 24 "
+"hours of receiving a takedown request. If the author does not respond to "
+"this request, the default action will be to disable the Read the Docs "
+"project and remove any hosted versions"
+msgstr ""
+
+#: ../../../dmca/index.rst:49
+msgid "Copyright holder review"
+msgstr ""
+
+#: ../../../dmca/index.rst:50
+msgid ""
+"If the author has made changes, the copyright holder will be notified of "
+"these changes. If the changes are sufficient, no further action is required, "
+"though copyright holders are welcome to submit a formal retraction. If the "
+"changes are not sufficient, the author's changes can be rejected. If the "
+"takedown request requires alteration, a new request must be submitted.  If "
+"Read the Docs does not receive a review response from the copyright holder "
+"within 2 weeks, the default action at this step is to assume the takedown "
+"request has been retracted."
+msgstr ""
+
+#: ../../../dmca/index.rst:59
+msgid "Content may be disabled"
+msgstr ""
+
+#: ../../../dmca/index.rst:60
+msgid ""
+"If the author does not respond to a request for changes, or if the copyright "
+"holder has rejected the author's changes during the review process, the "
+"documentation project in question will be disabled."
+msgstr ""
+
+#: ../../../dmca/index.rst:64
+msgid "Author submits a counter request"
+msgstr ""
+
+#: ../../../dmca/index.rst:65
+msgid ""
+"If the author believes their content was disabled as a result of a mistake, "
+"a counter request may be submitted. It would be advised that authors seek "
+"legal council before continuing. If the submitted counter request is "
+"sufficiently detailed, this counter will also be added to `this page`__. The "
+"copyright holder will be notified, with a link to this counter request."
+msgstr ""
+
+#: ../../../dmca/index.rst:72
+msgid ""
+"For more information on submitting a counter request, see: `Submitting a "
+"Counter`_"
+msgstr ""
+
+#: ../../../dmca/index.rst:77
+msgid "Copyright holder may file legal action"
+msgstr ""
+
+#: ../../../dmca/index.rst:78
+msgid ""
+"At this point, if the copyright holder wishes to keep the offending content "
+"disabled, the copyright holder must file for legal action ordering the "
+"author refrain from infringing activities on Read the Docs. The copyright "
+"holder will have 2 weeks to supply Read the Docs with a copy of a valid "
+"legal complaint against the author. The default action here, if the "
+"copyright holder does not respond to this request, is to re-enable the "
+"author's project."
+msgstr ""
+
+#: ../../../dmca/index.rst:87
+msgid "Submitting a request"
+msgstr ""
+
+#: ../../../dmca/index.rst:89
+msgid "Your request must:"
+msgstr ""
+
+#: ../../../dmca/index.rst:91 ../../../dmca/index.rst:121
+msgid "Acknowledge this process"
+msgstr ""
+
+#: ../../../dmca/index.rst:92 ../../../dmca/index.rst:122
+msgid ""
+"You must first acknowledge you are familiar with our DMCA takedown request "
+"process. If you do not acknowledge that you are familiar with our process, "
+"you will be instructed to review this information."
+msgstr ""
+
+#: ../../../dmca/index.rst:96
+msgid "Identify the infringing content"
+msgstr ""
+
+#: ../../../dmca/index.rst:97
+msgid ""
+"You should list URLs to each piece of infringing content. If you allege that "
+"the entire project is infringing on copyrights you hold, please specify the "
+"entire project as infringing."
+msgstr ""
+
+#: ../../../dmca/index.rst:101
+msgid "Identify infringement resolution"
+msgstr ""
+
+#: ../../../dmca/index.rst:102
+msgid ""
+"You will need to specify what a user must do in order to avoid having the "
+"rest of their content disabled. Be as specific as possible with this. "
+"Specify if this means adding attribution, identify specific files or content "
+"that should be removed, or if you allege the entire project is infringing, "
+"your should be specific as to why it is infringing."
+msgstr ""
+
+#: ../../../dmca/index.rst:108 ../../../dmca/index.rst:129
+msgid "Include your contact information"
+msgstr ""
+
+#: ../../../dmca/index.rst:109 ../../../dmca/index.rst:130
+msgid "Include your name, email, physical address, and phone number."
+msgstr ""
+
+#: ../../../dmca/index.rst:111 ../../../dmca/index.rst:132
+msgid "Include your signature"
+msgstr ""
+
+#: ../../../dmca/index.rst:112 ../../../dmca/index.rst:133
+msgid "This can be a physical or electronic signature."
+msgstr ""
+
+#: ../../../dmca/index.rst:114
+msgid ""
+"Please complete this :download:`takedown request template <../_static/dmca/"
+"takedown-template.txt>` and send it to: support@readthedocs.com"
+msgstr ""
+
+#: ../../../dmca/index.rst:117
+msgid "Submitting a counter"
+msgstr ""
+
+#: ../../../dmca/index.rst:119
+msgid "Your counter request must:"
+msgstr ""
+
+#: ../../../dmca/index.rst:126
+msgid "Identify the infringing content that was removed"
+msgstr ""
+
+#: ../../../dmca/index.rst:127
+msgid ""
+"Specify URLs in the original takedown request that you wish to challenge."
+msgstr ""
+
+#: ../../../dmca/index.rst:135
+msgid "Requests can be submitted to: support@readthedocs.com"
+msgstr ""
+
+#: ../../../dmca/index.rst:138
+msgid "Request archive"
+msgstr ""
+
+#: ../../../dmca/index.rst:140
+msgid ""
+"For better transparency into copyright ownership and the DMCA takedown "
+"process, Read the Docs maintains this archive of previous DMCA takedown "
+"requests. This is modeled after `GitHub's DMCA archive`__."
+msgstr ""
+
+#: ../../../dmca/index.rst:146
+msgid "The following DMCA takedown requests have been submitted:"
+msgstr ""

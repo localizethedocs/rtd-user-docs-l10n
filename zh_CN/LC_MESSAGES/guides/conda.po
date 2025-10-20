@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/conda.rst:2
+msgid "How to use Conda as your Python environment"
+msgstr ""
+
+#: ../../../guides/conda.rst:4
+msgid ""
+"Read the Docs supports Conda as an environment management tool, along with "
+"Virtualenv. Conda support is useful for people who depend on C libraries, "
+"and need them installed when building their documentation."
+msgstr ""
+
+#: ../../../guides/conda.rst:9
+msgid ""
+"This work was funded by `Clinical Graphics`_ -- many thanks for their "
+"support of open source."
+msgstr ""
+
+#: ../../../guides/conda.rst:14
+msgid "Activating conda"
+msgstr ""
+
+#: ../../../guides/conda.rst:16
+msgid ""
+"Conda support is available using a :doc:`../config-file/index`, see :ref:"
+"`config-file/v2:conda`."
+msgstr ""
+
+#: ../../../guides/conda.rst:18
+msgid ""
+"Our Docker images use Miniconda, a minimal conda installer. After specifying "
+"your project requirements using a conda ``environment.yml`` file, Read the "
+"Docs will create the environment (using ``conda env create``) and add the "
+"core dependencies needed to build the documentation."
+msgstr ""
+
+#: ../../../guides/conda.rst:24
+msgid "Creating the ``environment.yml``"
+msgstr ""
+
+#: ../../../guides/conda.rst:26
+msgid "There are several ways of `exporting a conda environment`_:"
+msgstr ""
+
+#: ../../../guides/conda.rst:28
+msgid ""
+"``conda env export`` will produce a complete list of all the packages "
+"installed in the environment with their exact versions. This is the best "
+"option to ensure reproducibility, but can create problems if done from a "
+"different operative system than the target machine, in our case Ubuntu Linux."
+msgstr ""
+
+#: ../../../guides/conda.rst:32
+msgid ""
+"``conda env export --from-history`` will only include packages that were "
+"explicitly requested in the environment, excluding the transitive "
+"dependencies. This is the best option to maximize cross-platform "
+"compatibility, however it may include packages that are not needed to build "
+"your docs."
+msgstr ""
+
+#: ../../../guides/conda.rst:35
+msgid ""
+"And finally, you can also write it by hand. This allows you to pick exactly "
+"the packages needed to build your docs (which also results in faster builds) "
+"and overcomes some limitations in the conda exporting capabilities."
+msgstr ""
+
+#: ../../../guides/conda.rst:39
+msgid "For example, using the second method for an existing environment:"
+msgstr ""
+
+#: ../../../guides/conda.rst:41
+msgid ""
+"$ conda activate rtd38\n"
+"(rtd38) $ conda env export --from-history | tee environment.yml\n"
+"name: rtd38\n"
+"channels:\n"
+"  - defaults\n"
+"  - conda-forge\n"
+"dependencies:\n"
+"  - rasterio==1.2\n"
+"  - python=3.8\n"
+"  - pytorch-cpu=1.7\n"
+"prefix: /home/docs/.conda/envs/rtd38"
+msgstr ""
+
+#: ../../../guides/conda.rst:55
+msgid ""
+"Read the Docs will override the ``name`` and ``prefix`` of the environment "
+"when creating it, so they can have any value, or not be present at all."
+msgstr ""
+
+#: ../../../guides/conda.rst:58
+msgid ""
+"Bear in mind that ``rasterio==1.2`` (double ``==``) will install version "
+"``1.2.0``, whereas ``python=3.8`` (single ``=``) will fetch the latest ``3.8."
+"*`` version, which is ``3.8.8`` at the time of writing."
+msgstr ""
+
+#: ../../../guides/conda.rst:66
+msgid "Effective use of channels"
+msgstr ""
+
+#: ../../../guides/conda.rst:68
+msgid ""
+"Conda packages are usually hosted on https://anaconda.org/, a registration-"
+"free artifact archive maintained by Anaconda Inc. Contrary to what happens "
+"with the Python Package Index, different users can potentially host the same "
+"package in the same repository, each of them using their own *channel*. "
+"Therefore, when installing a conda package, conda also needs to know which "
+"channels to use, and which ones take precedence."
+msgstr ""
+
+#: ../../../guides/conda.rst:74
+msgid ""
+"If not specified, conda will use ``defaults``, the channel maintained by "
+"Anaconda Inc. and subject to `Anaconda Terms of Service`_. It contains well-"
+"tested versions of the most widely used packages. However, some packages are "
+"not available on the ``defaults`` channel, and even if they are, they might "
+"not be on their latest versions."
+msgstr ""
+
+#: ../../../guides/conda.rst:79
+msgid ""
+"As an alternative, there are channels maintained by the community that have "
+"a broader selection of packages and more up-to-date versions of them, the "
+"most popular one being ``conda-forge``."
+msgstr ""
+
+#: ../../../guides/conda.rst:82
+msgid ""
+"To use the ``conda-forge`` channel when specifying your project "
+"dependencies, include it in the list of ``channels`` in ``environment.yml``, "
+"and conda will rank them in order of appearance. To maximize compatibility, "
+"we recommend putting ``conda-forge`` above ``defaults``:"
+msgstr ""
+
+#: ../../../guides/conda.rst:86
+msgid ""
+"name: rtd38\n"
+"channels:\n"
+"  - conda-forge\n"
+"  - defaults\n"
+"dependencies:\n"
+"  - python=3.8\n"
+"  # Rest of the dependencies"
+msgstr ""
+
+#: ../../../guides/conda.rst:96
+msgid ""
+"If you want to opt out the ``defaults`` channel completely, replace it by "
+"``nodefaults`` in the list of channels. See `the relevant conda docs`_ for "
+"more information."
+msgstr ""
+
+#: ../../../guides/conda.rst:103
+msgid "Making builds faster with mamba"
+msgstr ""
+
+#: ../../../guides/conda.rst:105
+msgid ""
+"One important thing to note is that, when enabling the ``conda-forge`` "
+"channel, the conda dependency solver requires a large amount of RAM and long "
+"solve times. This is `a known issue`_ due to the sheer amount of packages "
+"available in conda-forge."
+msgstr ""
+
+#: ../../../guides/conda.rst:109
+msgid ""
+"As an alternative, you can instruct Read the Docs to use mamba_, a drop-in "
+"replacement for conda that is much faster and reduces the memory consumption "
+"of the dependency solving process."
+msgstr ""
+
+#: ../../../guides/conda.rst:113
+msgid ""
+"To do that, add a ``.readthedocs.yaml`` :doc:`configuration file </config-"
+"file/v2>` with these contents:"
+msgstr ""
+
+#: ../../../guides/conda.rst:116
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../guides/conda.rst:116
+msgid ""
+"version: 2\n"
+"\n"
+"build:\n"
+"  os: \"ubuntu-24.04\"\n"
+"  tools:\n"
+"    python: \"miniconda3-3.12-24.9\"\n"
+"\n"
+"conda:\n"
+"  environment: environment.yml"
+msgstr ""
+
+#: ../../../guides/conda.rst:129
+msgid ""
+"You can read more about the :ref:`config-file/v2:build.tools.python` "
+"configuration in our documentation."
+msgstr ""
+
+#: ../../../guides/conda.rst:136
+msgid "Mixing conda and pip packages"
+msgstr ""
+
+#: ../../../guides/conda.rst:138
+msgid ""
+"There are valid reasons to use pip inside a conda environment: some "
+"dependency might not be available yet as a conda package in any channel, or "
+"you might want to avoid precompiled binaries entirely. In either case, it is "
+"possible to specify the subset of packages that will be installed with pip "
+"in the ``environment.yml`` file. For example:"
+msgstr ""
+
+#: ../../../guides/conda.rst:144
+msgid ""
+"name: rtd38\n"
+"channels:\n"
+"  - conda-forge\n"
+"  - defaults\n"
+"dependencies:\n"
+"  - rasterio==1.2\n"
+"  - python=3.8\n"
+"  - pytorch-cpu=1.7\n"
+"  - pip>=20.1  # pip is needed as dependency\n"
+"  - pip:\n"
+"    - black==20.8b1"
+msgstr ""
+
+#: ../../../guides/conda.rst:158
+msgid ""
+"The `conda developers recommend in their best practices`_ to install as many "
+"requirements as possible with conda, then use pip to minimize possible "
+"conflicts and interoperability issues."
+msgstr ""
+
+#: ../../../guides/conda.rst:162
+msgid ""
+"Notice that ``conda env export --from-history`` does not include packages "
+"installed with pip, see `this conda issue`_ for discussion."
+msgstr ""
+
+#: ../../../guides/conda.rst:169
+msgid "Compiling your project sources"
+msgstr ""
+
+#: ../../../guides/conda.rst:171
+msgid ""
+"If your project contains extension modules written in a compiled language "
+"(C, C++, FORTRAN) or server-side JavaScript, you might need special tools to "
+"build it from source that are not readily available on our Docker images, "
+"such as a suitable compiler, CMake, Node.js, and others."
+msgstr ""
+
+#: ../../../guides/conda.rst:176
+msgid ""
+"Luckily, conda is a language-agnostic package manager, and many of these "
+"development tools are already packaged on ``conda-forge`` or more "
+"specialized channels."
+msgstr ""
+
+#: ../../../guides/conda.rst:179
+msgid ""
+"For example, this conda environment contains the required dependencies to "
+"compile `Slycot`_ on Read the Docs:"
+msgstr ""
+
+#: ../../../guides/conda.rst:182
+msgid ""
+"name: slycot38\n"
+"channels:\n"
+"  - conda-forge\n"
+"  - defaults\n"
+"dependencies:\n"
+"  - python=3.8\n"
+"  - cmake\n"
+"  - numpy\n"
+"  - compilers"
+msgstr ""
+
+#: ../../../guides/conda.rst:197
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../guides/conda.rst:199
+msgid ""
+"If you have problems on the environment creation phase, either because the "
+"build runs out of memory or time or because some conflicts are found, you "
+"can try some of these mitigations:"
+msgstr ""
+
+#: ../../../guides/conda.rst:204
+msgid ""
+"Reduce the number of channels in ``environment.yml``, even leaving ``conda-"
+"forge`` only and opting out of the defaults adding ``nodefaults``."
+msgstr ""
+
+#: ../../../guides/conda.rst:206
+msgid ""
+"Constrain the package versions as much as possible to reduce the solution "
+"space."
+msgstr ""
+
+#: ../../../guides/conda.rst:207
+msgid ""
+":ref:`Use mamba <guides/conda:Making builds faster with mamba>`, an "
+"alternative package manager fully compatible with conda packages."
+msgstr ""
+
+#: ../../../guides/conda.rst:209
+msgid ""
+"And, if all else fails, :ref:`request more resources <guides/build-using-too-"
+"many-resources:Requests more resources>`."
+msgstr ""
+
+#: ../../../guides/conda.rst:213
+msgid "Custom Installs"
+msgstr ""
+
+#: ../../../guides/conda.rst:215
+msgid ""
+"If you are running a custom installation of Read the Docs, you will need the "
+"``conda`` executable installed somewhere on your ``PATH``. Because of the "
+"way ``conda`` works, we can't safely install it as a normal dependency into "
+"the normal Python virtualenv."
+msgstr ""
+
+#: ../../../guides/conda.rst:220
+msgid ""
+"Installing conda into a virtualenv will override the ``activate`` script, "
+"making it so you can't properly activate that virtualenv anymore."
+msgstr ""

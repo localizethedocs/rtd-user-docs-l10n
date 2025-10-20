@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../commercial/single-sign-on.rst:2
+msgid "Single sign-on (SSO)"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:6
+msgid ""
+"Single sign-on is an optional feature on |com_brand| for all users. By "
+"default, you will use :doc:`teams </guides/manage-read-the-docs-teams>` "
+"within Read the Docs to manage user authorization. :abbr:`SSO (single sign-"
+"on)` will allow you to grant permissions to your organization's projects in "
+"an easy way."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:11
+msgid "Currently, we support two different types of single sign-on:"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:13
+msgid ""
+"Authentication *and* authorization are managed by the identity provider "
+"(GitHub, Bitbucket or GitLab)"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:14
+msgid ""
+"Authentication (*only*) is managed by the identity provider (Google "
+"Workspace account with a verified email address)"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:19
+msgid "Single sign-on with GitHub, Bitbucket, or GitLab"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:21
+msgid ""
+"Using an identity provider that supports authentication and authorization "
+"allows organization owners to manage who has access to projects on Read the "
+"Docs, directly from the provider itself. If a user needs access to your "
+"documentation project on Read the Docs, that user just needs to be granted "
+"permissions in the Git repository associated with the project."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:27
+msgid ""
+"Once you enable this option, your existing Read the Docs teams will not be "
+"used. All authentication will be done using your git provider, including any "
+"two-factor authentication and additional single sign-on that they support."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:32
+msgid ""
+"Learn how to configure this SSO method with our :doc:`/guides/setup-single-"
+"sign-on-github-gitlab-bitbucket`."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:37
+msgid "SSO with Google Workspace"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:39
+msgid ""
+"This feature allows you to easily manage access to users with a specific "
+"email address (e.g. ``employee@company.com``), where ``company.com`` is a "
+"registered Google Workspace domain. As this identity provider does not "
+"provide information about which projects a user has access to, permissions "
+"are managed by the :ref:`internal Read the Docs's teams <commercial/"
+"organizations:Team Types>` authorization system."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:44
+msgid ""
+"This feature is only available on the **Pro plan** and above. Learn how to "
+"configure this SSO method with our :doc:`/guides/setup-single-sign-on-google-"
+"email`."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:50
+msgid "SSO with SAML"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:54
+msgid ""
+"This feature is in beta, and will be available for **Enterprise** plans "
+"only. Contact :doc:`support </support>` to enable this feature for your "
+"organization."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:57
+msgid "**At the moment only Okta is supported as a SAML identity provider.**"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:59
+msgid ""
+"This feature allows you to easily manage access to users that are part of "
+"your identity provider. As SAML doesn't provide information about which "
+"projects a user has access to, permissions are managed by the :ref:`internal "
+"Read the Docs's teams <commercial/organizations:Team Types>` authorization "
+"system. Learn how to configure this SSO method with our :doc:`guide </guides/"
+"set-up-single-sign-on-saml>`."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:65
+msgid "Requesting additional providers"
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:67
+msgid ""
+"We are always interested in hearing from our users about what authentication "
+"needs they have. You can reach out to our :doc:`/support` to talk with us "
+"about any additional authentication needs you might have."
+msgstr ""
+
+#: ../../../commercial/single-sign-on.rst:71
+msgid ""
+"Many additional providers can be supported via GitHub, Bitbucket, and GitLab "
+"SSO. We will depend on those sites in order to authenticate you, so you can "
+"use all your existing SSO methods already configured on those services."
+msgstr ""
