@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../explanation/advanced.rst:9
 msgid "⏩️ :doc:`/subprojects`"
-msgstr ""
+msgstr "⏩️ :doc:`/subprojects`"
 
 #: ../../../explanation/advanced.rst:10
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../explanation/advanced.rst:12
 msgid "⏩️ :doc:`/localization`"
-msgstr ""
+msgstr "⏩️ :doc:`/localization`"
 
 #: ../../../explanation/advanced.rst:13
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../explanation/advanced.rst:15
 msgid "⏩️ :doc:`/downloadable-documentation`"
-msgstr ""
+msgstr "⏩️ :doc:`/downloadable-documentation`"
 
 #: ../../../explanation/advanced.rst:16
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../explanation/advanced.rst:18
 msgid "⏩️ :doc:`/environment-variables`"
-msgstr ""
+msgstr "⏩️ :doc:`/environment-variables`"
 
 #: ../../../explanation/advanced.rst:19
 msgid ""
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../explanation/advanced.rst:21
 msgid "⏩️ :doc:`/explanation/configuration-file`"
-msgstr ""
+msgstr "⏩️ :doc:`/explanation/configuration-file`"
 
 #: ../../../explanation/advanced.rst:22
 msgid ""

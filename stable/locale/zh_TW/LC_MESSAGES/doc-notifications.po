@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../doc-notifications.rst:2
 msgid "Documentation notifications"
-msgstr ""
+msgstr "文件通知"
 
 #: ../../../doc-notifications.rst:4
 msgid ""
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../doc-notifications.rst:9
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../doc-notifications.rst:11
 msgid "The current notifications are:"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../doc-notifications.rst:18
 msgid "Manage notifications"
-msgstr ""
+msgstr "管理通知"
 
 #: ../../../doc-notifications.rst:20
 msgid "To manage notifications for your project:"

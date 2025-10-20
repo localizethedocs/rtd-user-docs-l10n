@@ -27,11 +27,11 @@ msgstr ""
 
 #: ../../../guides/build/index.rst:29
 msgid "Using custom environment variables"
-msgstr ""
+msgstr "使用自訂環境變數"
 
 #: ../../../guides/build/index.rst:29
 msgid "Managing versions automatically"
-msgstr ""
+msgstr "自動管理版本"
 
 #: ../../../guides/build/index.rst:2
 msgid "How-to guides: build process"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../guides/build/index.rst:8
 msgid "⏩️ :doc:`/guides/build/webhooks`"
-msgstr ""
+msgstr "⏩️ :doc:`/guides/build/webhooks`"
 
 #: ../../../guides/build/index.rst:9
 msgid ""

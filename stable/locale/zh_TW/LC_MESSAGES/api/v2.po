@@ -305,6 +305,13 @@ msgid ""
 "limit=10&offset=10\"\n"
 "}"
 msgstr ""
+"{\n"
+"    \"count\": 1000,\n"
+"    \"previous\": null,\n"
+"    \"results\": [VERSIONS],\n"
+"    \"next\": \"https://app.readthedocs.org/api/v2/version/?"
+"limit=10&offset=10\"\n"
+"}"
 
 #: ../../../api/v2.rst:170
 msgid "URI for next set of Versions."

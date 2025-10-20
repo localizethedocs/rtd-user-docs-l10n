@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../intro/markdoc.rst:11
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/markdoc.rst:11
 msgid ""

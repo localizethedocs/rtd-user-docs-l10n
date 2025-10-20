@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../intro/antora.rst:11
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/antora.rst:11
 msgid ""

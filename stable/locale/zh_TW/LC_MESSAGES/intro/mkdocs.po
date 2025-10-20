@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../intro/mkdocs.rst:14
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/mkdocs.rst:14
 msgid ""

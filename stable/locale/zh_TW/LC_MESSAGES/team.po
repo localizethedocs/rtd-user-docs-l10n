@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../team.rst:2
 msgid "Read the Docs team"
-msgstr ""
+msgstr "Read the Docs 團隊"
 
 #: ../../../team.rst:4
 msgid ""

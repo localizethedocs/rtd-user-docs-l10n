@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../about/index.rst:2
 msgid "About Read the Docs"
-msgstr ""
+msgstr "關於 Read the Docs"
 
 #: ../../../about/index.rst:4
 msgid ""

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../explanation/index.rst:11
 msgid "⏩️ :doc:`/subprojects`"
-msgstr ""
+msgstr "⏩️ :doc:`/subprojects`"
 
 #: ../../../explanation/index.rst:12
 msgid ""
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../explanation/index.rst:14
 msgid "⏩️ :doc:`/localization`"
-msgstr ""
+msgstr "⏩️ :doc:`/localization`"
 
 #: ../../../explanation/index.rst:15
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../explanation/index.rst:17
 msgid "⏩️ :doc:`/downloadable-documentation`"
-msgstr ""
+msgstr "⏩️ :doc:`/downloadable-documentation`"
 
 #: ../../../explanation/index.rst:18
 msgid ""
@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../explanation/index.rst:20
 msgid "⏩️ :doc:`/environment-variables`"
-msgstr ""
+msgstr "⏩️ :doc:`/environment-variables`"
 
 #: ../../../explanation/index.rst:21
 msgid ""

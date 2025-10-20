@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../intro/vitepress.rst:11
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/vitepress.rst:11
 msgid ""

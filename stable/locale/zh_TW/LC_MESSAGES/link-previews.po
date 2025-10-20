@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../link-previews.rst:2
 msgid "Link previews"
-msgstr ""
+msgstr "連結預覽"
 
 #: ../../../link-previews.rst:4
 msgid ""

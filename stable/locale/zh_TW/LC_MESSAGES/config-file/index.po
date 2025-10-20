@@ -370,7 +370,7 @@ msgstr ""
 
 #: ../../../config-file/index.rst:173
 msgid ":doc:`/build-customization`"
-msgstr ""
+msgstr ":doc:`/build-customization`"
 
 #: ../../../config-file/index.rst:174
 msgid ""

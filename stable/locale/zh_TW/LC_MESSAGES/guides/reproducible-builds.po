@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../../guides/reproducible-builds.rst:90
 msgid "sphinx==5.3.0"
-msgstr ""
+msgstr "sphinx==5.3.0"
 
 #: ../../../guides/reproducible-builds.rst:95
 msgid ""
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../../guides/reproducible-builds.rst:151
 msgid ":doc:`/config-file/v2`"
-msgstr ""
+msgstr ":doc:`/config-file/v2`"
 
 #: ../../../guides/reproducible-builds.rst:152
 msgid "Configuration file reference"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: ../../../guides/reproducible-builds.rst:155
 msgid ":doc:`/build-customization`"
-msgstr ""
+msgstr ":doc:`/build-customization`"
 
 #: ../../../guides/reproducible-builds.rst:156
 msgid "Customizing builds to do more"

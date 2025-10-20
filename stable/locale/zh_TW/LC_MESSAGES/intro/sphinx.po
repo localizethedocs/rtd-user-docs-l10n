@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:15
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/sphinx.rst:15
 msgid ""
@@ -165,6 +165,9 @@ msgid ""
 "     (\"readthedocs.js\", {\"defer\": \"defer\"}),\n"
 " ]"
 msgstr ""
+" html_js_files = [\n"
+"     (\"readthedocs.js\", {\"defer\": \"defer\"}),\n"
+" ]"
 
 #: ../../../intro/sphinx.rst:99
 msgid "Integrate the Read the Docs version menu into your site navigation"
@@ -222,7 +225,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:121
 msgid "extensions = [\"myst_parser\"]"
-msgstr ""
+msgstr "extensions = [\"myst_parser\"]"
 
 #: ../../../intro/sphinx.rst:125
 msgid ""
