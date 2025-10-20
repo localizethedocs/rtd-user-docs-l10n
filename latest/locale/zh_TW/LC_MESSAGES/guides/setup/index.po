@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../../guides/setup/index.rst:36
 msgid ":doc:`/tutorial/index`"
-msgstr ""
+msgstr ":doc:`/tutorial/index`"
 
 #: ../../../guides/setup/index.rst:37
 msgid "All you need to know to get started."

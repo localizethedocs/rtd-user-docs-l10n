@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../guides/index.rst:10
 msgid "Project setup and configuration"
-msgstr ""
+msgstr "專案設定與組態"
 
 #: ../../../guides/index.rst:10
 msgid "Build process"
@@ -39,11 +39,11 @@ msgstr ""
 
 #: ../../../guides/index.rst:10
 msgid "Account management"
-msgstr ""
+msgstr "帳號管理"
 
 #: ../../../guides/index.rst:10
 msgid "Best practice"
-msgstr ""
+msgstr "最佳實踐"
 
 #: ../../../guides/index.rst:10
 msgid "Troubleshooting problems"

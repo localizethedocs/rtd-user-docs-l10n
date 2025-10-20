@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../continuous-deployment.rst:6
 msgid "Continuous Documentation Deployment"
-msgstr ""
+msgstr "持續文件部署"
 
 #: ../../../continuous-deployment.rst:8
 msgid ""

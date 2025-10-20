@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../index.rst:14 ../../../index.rst:95 ../../../index.rst:172
 msgid "Project setup and configuration"
-msgstr ""
+msgstr "專案設定與組態"
 
 #: ../../../index.rst:26 ../../../index.rst:95 ../../../index.rst:183
 msgid "Build process"
@@ -35,15 +35,15 @@ msgstr ""
 
 #: ../../../index.rst:39 ../../../index.rst:194
 msgid "Hosting documentation"
-msgstr ""
+msgstr "託管文件"
 
 #: ../../../index.rst:56
 msgid "Reading documentation"
-msgstr ""
+msgstr "閱讀文件"
 
 #: ../../../index.rst:69 ../../../index.rst:214
 msgid "Maintaining projects"
-msgstr ""
+msgstr "維護專案"
 
 #: ../../../index.rst:83 ../../../index.rst:228
 msgid "Business features"
@@ -63,11 +63,11 @@ msgstr ""
 
 #: ../../../index.rst:95
 msgid "Account management"
-msgstr ""
+msgstr "帳號管理"
 
 #: ../../../index.rst:95
 msgid "Best practice"
-msgstr ""
+msgstr "最佳實踐"
 
 #: ../../../index.rst:95
 msgid "Troubleshooting problems"
@@ -79,11 +79,11 @@ msgstr ""
 
 #: ../../../index.rst:109
 msgid "Developer Documentation"
-msgstr ""
+msgstr "開發者文件"
 
 #: ../../../index.rst:109
 msgid "Read the Docs website"
-msgstr ""
+msgstr "Read the Docs 網站"
 
 #: ../../../index.rst:109 ../../../index.rst:256
 msgid "Reference"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: ../../../index.rst:162
 msgid ":doc:`/tutorial/index`"
-msgstr ""
+msgstr ":doc:`/tutorial/index`"
 
 #: ../../../index.rst:163
 msgid "Follow the Read the Docs tutorial."
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../../index.rst:165
 msgid ":doc:`/intro/doctools`"
-msgstr ""
+msgstr ":doc:`/intro/doctools`"
 
 #: ../../../index.rst:166
 msgid "Quick start for MkDocs and Docusaurus."
@@ -175,7 +175,7 @@ msgstr ""
 
 #: ../../../index.rst:168
 msgid ":doc:`/examples`"
-msgstr ""
+msgstr ":doc:`/examples`"
 
 #: ../../../index.rst:169
 msgid ""
@@ -188,7 +188,7 @@ msgstr ""
 
 #: ../../../index.rst:176
 msgid ":doc:`/config-file/index`"
-msgstr ""
+msgstr ":doc:`/config-file/index`"
 
 #: ../../../index.rst:177
 msgid "Learn how to configure your project with a ``.readthedocs.yaml`` file."
@@ -196,7 +196,7 @@ msgstr ""
 
 #: ../../../index.rst:179
 msgid ":doc:`/guides/reproducible-builds`"
-msgstr ""
+msgstr ":doc:`/guides/reproducible-builds`"
 
 #: ../../../index.rst:180
 msgid "Keep your builds working by making them reproducible."
@@ -208,7 +208,7 @@ msgstr ""
 
 #: ../../../index.rst:187
 msgid ":doc:`/builds`"
-msgstr ""
+msgstr ":doc:`/builds`"
 
 #: ../../../index.rst:188
 msgid "Understand how documentation builds happen."
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../../../index.rst:190
 msgid ":doc:`/pull-requests`"
-msgstr ""
+msgstr ":doc:`/pull-requests`"
 
 #: ../../../index.rst:191 ../../../index.rst:247
 msgid "Setup pull request builds and enjoy previews of each commit."
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../../index.rst:198
 msgid ":doc:`/versions`"
-msgstr ""
+msgstr ":doc:`/versions`"
 
 #: ../../../index.rst:199
 msgid "Give your readers multiple versions of your documentation."
@@ -236,7 +236,7 @@ msgstr ""
 
 #: ../../../index.rst:201
 msgid ":doc:`/subprojects`"
-msgstr ""
+msgstr ":doc:`/subprojects`"
 
 #: ../../../index.rst:202
 msgid "Host multiple projects under a single domain."
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../../index.rst:204
 msgid ":doc:`/localization`"
-msgstr ""
+msgstr ":doc:`/localization`"
 
 #: ../../../index.rst:205
 msgid "Translate your documentation into multiple languages."
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../../../index.rst:207
 msgid ":doc:`/versioning-schemes`"
-msgstr ""
+msgstr ":doc:`/versioning-schemes`"
 
 #: ../../../index.rst:208
 msgid "Learn about different URL versioning schemes."
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../../index.rst:210
 msgid ":doc:`/custom-domains`"
-msgstr ""
+msgstr ":doc:`/custom-domains`"
 
 #: ../../../index.rst:211
 msgid "Brand your documentation on your own domain."
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../../index.rst:218
 msgid ":doc:`/user-defined-redirects`"
-msgstr ""
+msgstr ":doc:`/user-defined-redirects`"
 
 #: ../../../index.rst:219
 msgid "Redirect your old URLs to new ones."
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../../index.rst:221
 msgid ":doc:`/traffic-analytics`"
-msgstr ""
+msgstr ":doc:`/traffic-analytics`"
 
 #: ../../../index.rst:222
 msgid "Learn more about how users are interacting with your documentation."
@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../../index.rst:224
 msgid ":doc:`/security-log`"
-msgstr ""
+msgstr ":doc:`/security-log`"
 
 #: ../../../index.rst:225
 msgid "Keep track of security events in your project."
@@ -300,7 +300,7 @@ msgstr ""
 
 #: ../../../index.rst:232
 msgid ":doc:`/commercial/organizations`"
-msgstr ""
+msgstr ":doc:`/commercial/organizations`"
 
 #: ../../../index.rst:233
 msgid "Manage permissions across multiple teams."
@@ -308,7 +308,7 @@ msgstr ""
 
 #: ../../../index.rst:235
 msgid ":doc:`/commercial/single-sign-on`"
-msgstr ""
+msgstr ":doc:`/commercial/single-sign-on`"
 
 #: ../../../index.rst:236
 msgid "Stay secure with single sign-on."
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../../../index.rst:238
 msgid ":doc:`/commercial/sharing`"
-msgstr ""
+msgstr ":doc:`/commercial/sharing`"
 
 #: ../../../index.rst:239
 msgid "Share your private docs easily with contractors or customers."
@@ -328,11 +328,11 @@ msgstr ""
 
 #: ../../../index.rst:246
 msgid ":doc:`/guides/pull-requests`"
-msgstr ""
+msgstr ":doc:`/guides/pull-requests`"
 
 #: ../../../index.rst:249
 msgid ":doc:`/guides/cross-referencing-with-sphinx`"
-msgstr ""
+msgstr ":doc:`/guides/cross-referencing-with-sphinx`"
 
 #: ../../../index.rst:250
 msgid "Learn how to use cross-references in a Sphinx project."
@@ -352,7 +352,7 @@ msgstr ""
 
 #: ../../../index.rst:260
 msgid ":doc:`/api/index`"
-msgstr ""
+msgstr ":doc:`/api/index`"
 
 #: ../../../index.rst:261
 msgid "Integrate Read the Docs into your other workflows."
@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../../../index.rst:263
 msgid ":doc:`/changelog`"
-msgstr ""
+msgstr ":doc:`/changelog`"
 
 #: ../../../index.rst:264
 msgid "See what's new in Read the Docs."
@@ -368,7 +368,7 @@ msgstr ""
 
 #: ../../../index.rst:266
 msgid ":doc:`/about/index`"
-msgstr ""
+msgstr ":doc:`/about/index`"
 
 #: ../../../index.rst:267
 msgid "Learn more about Read the Docs and our company."

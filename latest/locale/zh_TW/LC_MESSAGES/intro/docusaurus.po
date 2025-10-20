@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../intro/docusaurus.rst:2
 msgid "Docusaurus"
-msgstr ""
+msgstr "Docusaurus"
 
 #: ../../../intro/docusaurus.rst:7
 msgid ""
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../intro/docusaurus.rst:13
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/docusaurus.rst:13
 msgid ""

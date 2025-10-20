@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:28
 msgid "Our services"
-msgstr ""
+msgstr "我們的服務"
 
 #: ../../../privacy-policy.rst:30
 msgid "Read the Docs is made up of:"
@@ -656,7 +656,7 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:401
 msgid "Contacting Read the Docs"
-msgstr ""
+msgstr "聯絡 Read the Docs"
 
 #: ../../../privacy-policy.rst:403
 msgid ""

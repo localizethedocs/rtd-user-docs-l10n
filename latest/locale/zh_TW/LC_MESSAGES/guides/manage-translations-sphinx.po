@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:8
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../guides/manage-translations-sphinx.rst:10
 msgid ""
@@ -348,7 +348,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:221
 msgid "Create the ``.pot`` files:"
-msgstr ""
+msgstr "建立 ``.pot`` 檔案："
 
 #: ../../../guides/manage-translations-sphinx.rst:233
 msgid "Push new files to Transifex"

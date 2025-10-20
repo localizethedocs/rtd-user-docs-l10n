@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../badges.rst:2
 msgid "Status badges"
-msgstr ""
+msgstr "狀態徽章"
 
 #: ../../../badges.rst:4
 msgid ""
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../badges.rst:12
 msgid "Display states"
-msgstr ""
+msgstr "顯示狀態"
 
 #: ../../../badges.rst:14
 msgid "Badges have the following states which can be shown to users:"

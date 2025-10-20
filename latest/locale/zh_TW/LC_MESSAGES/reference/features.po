@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:9
 msgid "⏩️ :doc:`/custom-domains`"
-msgstr ""
+msgstr "⏩️ :doc:`/custom-domains`"
 
 #: ../../../reference/features.rst:10
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:14
 msgid "⏩️ :doc:`/reference/git-integration`"
-msgstr ""
+msgstr "⏩️ :doc:`/reference/git-integration`"
 
 #: ../../../reference/features.rst:15
 msgid ""
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:20
 msgid "⏩️ :doc:`/versions`"
-msgstr ""
+msgstr "⏩️ :doc:`/versions`"
 
 #: ../../../reference/features.rst:21
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:27
 msgid "⏩️ :doc:`/pull-requests`"
-msgstr ""
+msgstr "⏩️ :doc:`/pull-requests`"
 
 #: ../../../reference/features.rst:28
 msgid ""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:31
 msgid "⏩️ :doc:`/build-notifications`"
-msgstr ""
+msgstr "⏩️ :doc:`/build-notifications`"
 
 #: ../../../reference/features.rst:32
 msgid ""
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:34
 msgid "⏩️ :doc:`/traffic-analytics`"
-msgstr ""
+msgstr "⏩️ :doc:`/traffic-analytics`"
 
 #: ../../../reference/features.rst:35
 msgid ""
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:37
 msgid "⏩️ :doc:`/search-analytics`"
-msgstr ""
+msgstr "⏩️ :doc:`/search-analytics`"
 
 #: ../../../reference/features.rst:38
 msgid "Search analytics allow you to see what your users are searching for."
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:40
 msgid "⏩️ :doc:`/user-defined-redirects`"
-msgstr ""
+msgstr "⏩️ :doc:`/user-defined-redirects`"
 
 #: ../../../reference/features.rst:41
 msgid ""
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:44
 msgid "⏩️ :doc:`/commercial/sharing`"
-msgstr ""
+msgstr "⏩️ :doc:`/commercial/sharing`"
 
 #: ../../../reference/features.rst:45
 msgid ""
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:47
 msgid "⏩️ :doc:`/reference/cdn`"
-msgstr ""
+msgstr "⏩️ :doc:`/reference/cdn`"
 
 #: ../../../reference/features.rst:48
 msgid ""
@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:52
 msgid "⏩️ :doc:`/reference/sitemaps`"
-msgstr ""
+msgstr "⏩️ :doc:`/reference/sitemaps`"
 
 #: ../../../reference/features.rst:53
 msgid ""
@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:57
 msgid "⏩️ :doc:`/reference/404-not-found`"
-msgstr ""
+msgstr "⏩️ :doc:`/reference/404-not-found`"
 
 #: ../../../reference/features.rst:58
 msgid ""
@@ -152,7 +152,7 @@ msgstr ""
 
 #: ../../../reference/features.rst:62
 msgid "⏩️ :doc:`/reference/robots`"
-msgstr ""
+msgstr "⏩️ :doc:`/reference/robots`"
 
 #: ../../../reference/features.rst:63
 msgid ""

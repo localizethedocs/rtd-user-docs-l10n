@@ -66,6 +66,9 @@ msgid ""
 "    'js/custom.js',\n"
 "]"
 msgstr ""
+"html_js_files = [\n"
+"    'js/custom.js',\n"
+"]"
 
 #: ../../../guides/adding-custom-css.rst:44
 msgid ""

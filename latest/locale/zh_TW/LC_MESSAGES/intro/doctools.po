@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../intro/doctools.rst:17
 msgid "MkDocs"
-msgstr ""
+msgstr "MkDocs"
 
 #: ../../../intro/doctools.rst:20
 msgid "MkDocs is a powerful documentation tool for markdown."

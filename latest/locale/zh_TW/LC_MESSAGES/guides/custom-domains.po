@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../../../guides/custom-domains.rst:102
 msgid ":doc:`/subprojects`"
-msgstr ""
+msgstr ":doc:`/subprojects`"
 
 #: ../../../guides/custom-domains.rst:103
 msgid ""

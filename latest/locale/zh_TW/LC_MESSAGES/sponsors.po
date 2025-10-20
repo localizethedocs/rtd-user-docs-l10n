@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../sponsors.rst:2
 msgid "Sponsors of Read the Docs"
-msgstr ""
+msgstr "Read the Docs 的贊助者"
 
 #: ../../../sponsors.rst:4
 msgid ""

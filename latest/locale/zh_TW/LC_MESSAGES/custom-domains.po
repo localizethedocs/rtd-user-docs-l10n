@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../../custom-domains.rst:56
 msgid ":doc:`/subprojects`"
-msgstr ""
+msgstr ":doc:`/subprojects`"
 
 #: ../../../custom-domains.rst:57
 msgid "How to share a custom domain between multiple projects."

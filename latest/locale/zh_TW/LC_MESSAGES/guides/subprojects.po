@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../guides/subprojects.rst:9
 msgid ":doc:`/subprojects`"
-msgstr ""
+msgstr ":doc:`/subprojects`"
 
 #: ../../../guides/subprojects.rst:10
 msgid ""

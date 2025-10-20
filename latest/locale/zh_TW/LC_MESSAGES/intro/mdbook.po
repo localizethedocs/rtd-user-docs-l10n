@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../intro/mdbook.rst:11
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/mdbook.rst:11
 msgid ""

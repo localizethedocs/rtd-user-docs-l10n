@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../../commercial/sharing.rst:56
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: ../../../commercial/sharing.rst:58
 msgid ""

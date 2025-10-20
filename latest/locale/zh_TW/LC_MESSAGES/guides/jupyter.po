@@ -61,12 +61,12 @@ msgstr ""
 
 #: ../../../guides/jupyter.rst:40 ../../../guides/jupyter.rst:211
 msgid "nbsphinx"
-msgstr ""
+msgstr "nbsphinx"
 
 #: ../../../guides/jupyter.rst:42 ../../../guides/jupyter.rst:51
 #: ../../../guides/jupyter.rst:213 ../../../guides/jupyter.rst:222
 msgid "conf.py"
-msgstr ""
+msgstr "conf.py"
 
 #: ../../../guides/jupyter.rst:42
 msgid ""
@@ -74,10 +74,13 @@ msgid ""
 "    \"nbsphinx\",\n"
 "]"
 msgstr ""
+"extensions = [\n"
+"    \"nbsphinx\",\n"
+"]"
 
 #: ../../../guides/jupyter.rst:49 ../../../guides/jupyter.rst:220
 msgid "MyST-NB"
-msgstr ""
+msgstr "MyST-NB"
 
 #: ../../../guides/jupyter.rst:51
 msgid ""
@@ -85,6 +88,9 @@ msgid ""
 "    \"myst_nb\",\n"
 "]"
 msgstr ""
+"extensions = [\n"
+"    \"myst_nb\",\n"
+"]"
 
 #: ../../../guides/jupyter.rst:58
 msgid ""
@@ -94,7 +100,7 @@ msgstr ""
 
 #: ../../../guides/jupyter.rst:63 ../../../guides/jupyter.rst:260
 msgid "reStructuredText"
-msgstr ""
+msgstr "reStructuredText"
 
 #: ../../../guides/jupyter.rst:65
 msgid ""
@@ -104,6 +110,11 @@ msgid ""
 "\n"
 "   notebooks/Example 1"
 msgstr ""
+".. toctree::\n"
+"   :maxdepth: 2\n"
+"   :caption: Contents:\n"
+"\n"
+"   notebooks/Example 1"
 
 #: ../../../guides/jupyter.rst:73 ../../../guides/jupyter.rst:271
 msgid "MyST (Markdown)"
