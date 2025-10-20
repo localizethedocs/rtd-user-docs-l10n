@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../flyout-menu.rst:4
 msgid "Flyout menu"
-msgstr ""
+msgstr "飛出式選單"
 
 #: ../../../flyout-menu.rst:6
 msgid ""

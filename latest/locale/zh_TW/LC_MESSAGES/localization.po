@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../localization.rst:2
 msgid "Localization and Internationalization"
-msgstr ""
+msgstr "在地化與國際化"
 
 #: ../../../localization.rst:4
 msgid ""

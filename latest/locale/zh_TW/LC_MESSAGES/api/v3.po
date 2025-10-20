@@ -1054,7 +1054,7 @@ msgstr ""
 
 #: ../../../api/v3.rst:879
 msgid "Subprojects"
-msgstr ""
+msgstr "子專案"
 
 #: ../../../api/v3.rst:881
 msgid ""

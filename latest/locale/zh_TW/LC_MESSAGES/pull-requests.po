@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../pull-requests.rst:2
 msgid "Pull request previews"
-msgstr ""
+msgstr "拉取請求預覽"
 
 #: ../../../pull-requests.rst:4
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../pull-requests.rst:35
 msgid "Pull request notifications"
-msgstr ""
+msgstr "拉取請求通知"
 
 #: ../../../pull-requests.rst:36
 msgid ""

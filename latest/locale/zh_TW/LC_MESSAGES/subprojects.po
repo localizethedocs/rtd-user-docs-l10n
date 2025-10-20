@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../subprojects.rst:2
 msgid "Subprojects"
-msgstr ""
+msgstr "子專案"
 
 #: ../../../subprojects.rst:4
 msgid ""

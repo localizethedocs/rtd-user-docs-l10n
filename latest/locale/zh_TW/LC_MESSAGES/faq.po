@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../faq.rst:2
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "常見問題集"
 
 #: ../../../faq.rst:14
 msgid "Building and publishing your project"
-msgstr ""
+msgstr "建置並發布您的專案"
 
 #: ../../../faq.rst:21
 msgid "Why does my project have status \"failing\"?"
@@ -377,7 +377,7 @@ msgstr ""
 
 #: ../../../faq.rst:240
 msgid "I want to use the Read the Docs theme"
-msgstr ""
+msgstr "我想要使用 Read the Docs 主題"
 
 #: ../../../faq.rst:242
 msgid ""
