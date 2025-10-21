@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/docusaurus.rst:-1
+msgid "Hosting Docusaurus sites on Read the Docs."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:2
+msgid "Docusaurus"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:7
+msgid ""
+"`Docusaurus`_ is a static-site generator that builds a single-page "
+"application with fast client-side navigation and out-of-the-box "
+"documentation features."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:9
+msgid ""
+"Minimal configuration required to build a Docusaurus project on Read the "
+"Docs looks like this, specifying a Node.js toolchain on Ubuntu, using "
+"multiple :ref:`build <config-file/v2:build>` jobs to install the "
+"requirements, build the site, and copy the output to $READTHEDOCS_OUTPUT:"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:13
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:13
+msgid ""
+" version: 2\n"
+" build:\n"
+"   os: \"ubuntu-22.04\"\n"
+"   tools:\n"
+"     nodejs: \"18\"\n"
+"   jobs:\n"
+"     # \"docs/\" was created following the Docusaurus tutorial:\n"
+"     # npx create-docusaurus@latest docs classic\n"
+"     # but you can just use your existing Docusaurus site\n"
+"     install:\n"
+"       # Install Docusaurus dependencies\n"
+"       - cd docs/ && npm install\n"
+"     build:\n"
+"       html:\n"
+"         # Build the site\n"
+"         - cd docs/ && npm run build\n"
+"         # Copy generated files into Read the Docs directory\n"
+"         - mkdir --parents $READTHEDOCS_OUTPUT/html/\n"
+"         - cp --recursive docs/build/* $READTHEDOCS_OUTPUT/html/"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:39 ../../../intro/docusaurus.rst:41
+msgid "Limitations"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Feature"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Supported"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Search"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Provides full-text search capabilities."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Not supported"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Files changed"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:1
+msgid "Ability to see what HTML files change in pull request previews."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:48
+msgid "Quick start"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:50
+msgid ""
+"If you have an existing Docusaurus project you want to host on Read the "
+"Docs, check out our :doc:`/intro/add-project` guide."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:51
+msgid ""
+"If you're new to Docusaurus, check out the official `Fast Track`_ guide."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:56
+msgid "Configuring Docusaurus and Read the Docs Addons"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:58
+msgid ""
+"For optimal integration with Read the Docs, make the following optional "
+"configuration changes to your Docusaurus config."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:66
+msgid "Set the canonical URL"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:68
+msgid ""
+"A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
+"version of a web page to prevent duplicated content."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:71
+msgid ""
+"Set your Docusaurus `url`_ to your Read the Docs canonical URL using `dotenv "
+"<https://www.npmjs.com/package/dotenv>`__ and a :doc:`Read the Docs "
+"environment variable </reference/environment-variables>`:"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:74
+msgid "docusaurus.config.js"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:74
+msgid ""
+"import 'dotenv/config';\n"
+"\n"
+"export default {\n"
+"    url: process.env.READTHEDOCS_CANONICAL_URL,\n"
+"};"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:86
+msgid "Example repository and demo"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:88
+msgid "Example repository"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:89
+msgid "https://github.com/readthedocs/test-builds/tree/docusaurus"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:91
+msgid "Demo"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:92
+msgid "https://test-builds.readthedocs.io/en/docusaurus/"
+msgstr ""

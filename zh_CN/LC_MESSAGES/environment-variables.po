@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../environment-variables.rst:4
+msgid "Environment variable overview"
+msgstr ""
+
+#: ../../../environment-variables.rst:6
+msgid ""
+"Read the Docs allows you to define your own environment variables to be used "
+"in the build process. It also defines a set of :doc:`default environment "
+"variables </reference/environment-variables>` with information about your "
+"build. These are useful for different purposes:"
+msgstr ""
+
+#: ../../../environment-variables.rst:10
+msgid ""
+"Custom environment variables are useful for adding build secrets such as API "
+"tokens."
+msgstr ""
+
+#: ../../../environment-variables.rst:11
+msgid ""
+"Default environment variables are useful for varying your build specifically "
+"for Read the Docs or specific types of builds on Read the Docs."
+msgstr ""
+
+#: ../../../environment-variables.rst:19
+msgid ""
+"Custom environment variables are defined in the :term:`dashboard` interface "
+"in :menuselection:`Admin --> Environment variables`. Environment variables "
+"are defined for a project's entire build process, :ref:`with 2 important "
+"exceptions <custom_env_var_exceptions>`."
+msgstr ""
+
+#: ../../../environment-variables.rst:23
+msgid ""
+"Aside from storing secrets, there are :ref:`other patterns <environment-"
+"variables:Patterns of using environment variables>` that take advantage of "
+"environment variables, like reusing the same *monorepo* configuration in "
+"multiple documentation projects. In cases where the environment variable "
+"isn't a secret, like a build tool flag, you should also be aware of the :ref:"
+"`alternatives to environment variables <environment-variables:Alternatives "
+"to environment variables>`."
+msgstr ""
+
+#: ../../../environment-variables.rst:32
+msgid ":doc:`/guides/environment-variables`"
+msgstr ""
+
+#: ../../../environment-variables.rst:33
+msgid ""
+"A practical example of adding and accessing custom environment variables."
+msgstr ""
+
+#: ../../../environment-variables.rst:35
+msgid ":doc:`/reference/environment-variables`"
+msgstr ""
+
+#: ../../../environment-variables.rst:36
+msgid ""
+"Reference to all pre-defined environment variables for your build "
+"environments."
+msgstr ""
+
+#: ../../../environment-variables.rst:38
+msgid ""
+":ref:`Public API reference: Environment variables <api/v3:Environment "
+"Variables>`"
+msgstr ""
+
+#: ../../../environment-variables.rst:39
+msgid "Reference for managing custom environments via Read the Docs' API."
+msgstr ""
+
+#: ../../../environment-variables.rst:42
+msgid "Environment variables and build process"
+msgstr ""
+
+#: ../../../environment-variables.rst:44
+msgid ""
+"When a :doc:`build process </builds>` is started, :doc:`pre-defined "
+"environment variables </reference/environment-variables>` and custom "
+"environment variables are added *at each step* of the build process. The two "
+"sets of environment variables are merged together during the build process "
+"and are exposed to all of the executed commands, with pre-defined variables "
+"taking precedence over custom environment variables."
+msgstr ""
+
+#: ../../../environment-variables.rst:51
+msgid "There are two noteworthy exceptions for *custom environment variables*:"
+msgstr ""
+
+#: ../../../environment-variables.rst:53
+msgid "Build checkout step"
+msgstr ""
+
+#: ../../../environment-variables.rst:54
+msgid ""
+"Custom environment variables are **not** available during the checkout step "
+"of the :doc:`build process </builds>`"
+msgstr ""
+
+#: ../../../environment-variables.rst:55
+msgid "Pull request builds"
+msgstr ""
+
+#: ../../../environment-variables.rst:56
+msgid ""
+"Custom environment variables that are not marked as :guilabel:`Public` will "
+"not be available in :doc:`pull request builds </pull-requests>`"
+msgstr ""
+
+#: ../../../environment-variables.rst:63
+msgid "Limitations"
+msgstr ""
+
+#: ../../../environment-variables.rst:65
+msgid "Individual environment variables are limited to 48 KB in size."
+msgstr ""
+
+#: ../../../environment-variables.rst:66
+msgid ""
+"The total size of all environment variables in a project is limited to 256 "
+"KB."
+msgstr ""
+
+#: ../../../environment-variables.rst:69
+msgid "Patterns of using environment variables"
+msgstr ""
+
+#: ../../../environment-variables.rst:71
+msgid ""
+"Aside from storing secrets, environment variables are also useful if you "
+"need to make either your :doc:`.readthedocs.yaml </config-file/v2>` or the "
+"commands called in the :doc:`build process </builds>` behave depending on :"
+"doc:`pre-defined environment variables </reference/environment-variables>` "
+"or your own custom environment variables."
+msgstr ""
+
+#: ../../../environment-variables.rst:76
+msgid "Example: Multiple projects from the same Git repo"
+msgstr ""
+
+#: ../../../environment-variables.rst:78
+msgid ""
+"If you have the need to build multiple documentation websites from the same "
+"Git repository, you can use an environment variable to configure the "
+"behavior of your :doc:`build commands </build-customization>` or Sphinx "
+"``conf.py`` file."
+msgstr ""
+
+#: ../../../environment-variables.rst:82
+msgid ""
+"An example of this is found in *the documentation project that you are "
+"looking at now*. Using the Sphinx extension `sphinx-multiproject`_, the "
+"following configuration code decides whether to build the *user* or "
+"*developer* documentation. This is defined by the ``PROJECT`` environment "
+"variable:"
+msgstr ""
+
+#: ../../../environment-variables.rst:87
+msgid "Read the Docs' conf.py [1]_ is used to build 2 documentation projects."
+msgstr ""
+
+#: ../../../environment-variables.rst:87
+msgid ""
+"from multiproject.utils import get_project\n"
+"\n"
+"# (...)\n"
+"\n"
+"multiproject_projects = {\n"
+"    \"user\": {\n"
+"        \"use_config_file\": False,\n"
+"        \"config\": {\n"
+"            \"project\": \"Read the Docs user documentation\",\n"
+"        },\n"
+"    },\n"
+"    \"dev\": {\n"
+"        \"use_config_file\": False,\n"
+"        \"config\": {\n"
+"            \"project\": \"Read the Docs developer documentation\",\n"
+"        },\n"
+"    },\n"
+"}\n"
+"\n"
+"\n"
+"docset = get_project(multiproject_projects)"
+msgstr ""
+
+#: ../../../environment-variables.rst:113
+msgid "https://github.com/readthedocs/readthedocs.org/blob/main/docs/conf.py"
+msgstr ""
+
+#: ../../../environment-variables.rst:116
+msgid "Alternatives to environment variables"
+msgstr ""
+
+#: ../../../environment-variables.rst:118
+msgid ""
+"In some scenarios, it's more feasible to define your build's environment "
+"variables using the ``.readthedocs.yaml`` :doc:`configuration file </config-"
+"file/index>`. Using the :term:`dashboard` for administering environment "
+"variables may not be the right fit if you already know that you want to "
+"manage environment variables *as code*."
+msgstr ""
+
+#: ../../../environment-variables.rst:121
+msgid "Consider the following scenario:"
+msgstr ""
+
+#: ../../../environment-variables.rst:123
+msgid "The environment variable **is not** a secret."
+msgstr ""
+
+#: ../../../environment-variables.rst:125
+msgid "**and**"
+msgstr ""
+
+#: ../../../environment-variables.rst:126
+msgid "The environment variable is used just once for a custom command."
+msgstr ""
+
+#: ../../../environment-variables.rst:128
+msgid ""
+"In this case, you can define the environment variable *as code* using :doc:`/"
+"build-customization`. The following example shows how a non-secret single-"
+"purpose environment variable can also be used."
+msgstr ""
+
+#: ../../../environment-variables.rst:131
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../environment-variables.rst:131
+msgid ""
+"version: 2\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"  jobs:\n"
+"    post_build:\n"
+"      - EXAMPLE_ENVIRONMENT_VARIABLE=foobar command --flag"
+msgstr ""

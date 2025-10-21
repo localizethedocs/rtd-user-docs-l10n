@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/managing-maintainers.rst:2
+msgid "How to manage maintainers for your project"
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:4
+msgid ""
+"|org_brand| allows you to manage maintainers for your projects. Every "
+"project is configured with its own list of maintainers who will all have "
+"admin privileges to the project, so be careful when adding new maintainers."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:9
+msgid ""
+"When you add a maintainer to your project, they will be invited to join the "
+"project as a maintainer. They will receive an email notification with a link "
+"to accept the invitation, and won't have access to the project until they "
+"accept the invitation."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:15
+msgid "Adding a maintainer"
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:17
+msgid "Adding a maintainer gives them admin access to your project."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:19
+#: ../../../guides/managing-maintainers.rst:32
+msgid "Follow these steps:"
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:21
+#: ../../../guides/managing-maintainers.rst:34
+msgid "Navigate to the :guilabel:`Settings` tab of your project."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:22
+#: ../../../guides/managing-maintainers.rst:35
+msgid "Under :guilabel:`Setup`, click on the :guilabel:`Maintainers` tab."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:23
+msgid "Click the :guilabel:`Add maintainer` button."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:24
+msgid "Fill out the form with the new maintainer's username or email address."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:25
+msgid "Click :guilabel:`Invite`."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:28
+msgid "Removing a maintainer"
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:30
+msgid "Removing a maintainer revokes their admin access to your project."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:36
+msgid "Find the maintainer you want to remove in the list."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:37
+msgid "Click the :guilabel:`Remove` button next to their name."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:38
+msgid "Confirm the removal in the dialog that appears."
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:42
+msgid ":doc:`/guides/manage-read-the-docs-teams`"
+msgstr ""
+
+#: ../../../guides/managing-maintainers.rst:43
+msgid "Learn how to manage teams within an organization on |com_brand|."
+msgstr ""

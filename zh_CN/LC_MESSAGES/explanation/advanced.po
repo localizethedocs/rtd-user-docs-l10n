@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../explanation/advanced.rst:4
+msgid "Deep dive into Read the Docs"
+msgstr ""
+
+#: ../../../explanation/advanced.rst:6
+msgid ""
+"In this section, we explain some of the more specific or advanced concepts "
+"of writing documentation on Read the Docs."
+msgstr ""
+
+#: ../../../explanation/advanced.rst:9
+msgid "⏩️ :doc:`/subprojects`"
+msgstr ""
+
+#: ../../../explanation/advanced.rst:10
+msgid ""
+"*Subprojects* are a flexible for gathering multiple projects under the same "
+"domain."
+msgstr ""
+
+#: ../../../explanation/advanced.rst:12
+msgid "⏩️ :doc:`/localization`"
+msgstr ""
+
+#: ../../../explanation/advanced.rst:13
+msgid ""
+"Learn more about multilingual documentation projects and how translation "
+"workflows are supported."
+msgstr ""
+
+#: ../../../explanation/advanced.rst:15
+msgid "⏩️ :doc:`/downloadable-documentation`"
+msgstr ""
+
+#: ../../../explanation/advanced.rst:16
+msgid ""
+"An introduction to adding downloadable files, like PDFs, that can be read "
+"offline."
+msgstr ""
+
+#: ../../../explanation/advanced.rst:18
+msgid "⏩️ :doc:`/environment-variables`"
+msgstr ""
+
+#: ../../../explanation/advanced.rst:19
+msgid ""
+"Environment variables can be used to make your documentation builds flexible "
+"and easy to customize."
+msgstr ""
+
+#: ../../../explanation/advanced.rst:21
+msgid "⏩️ :doc:`/explanation/configuration-file`"
+msgstr ""
+
+#: ../../../explanation/advanced.rst:22
+msgid ""
+"Some background on our configuration file and versioning configuration files."
+msgstr ""
