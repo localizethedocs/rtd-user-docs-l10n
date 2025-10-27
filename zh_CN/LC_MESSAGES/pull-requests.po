@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../pull-requests.rst:2
+msgid "Pull request previews"
+msgstr ""
+
+#: ../../../pull-requests.rst:4
+msgid ""
+"Your project can be configured to build and preview documentation for every "
+"new pull request. Previewing changes during review makes it easier to catch "
+"formatting and display issues before they go live."
+msgstr ""
+
+#: ../../../pull-requests.rst:9
+msgid "Features"
+msgstr ""
+
+#: ../../../pull-requests.rst:11
+msgid "Build on pull request events"
+msgstr ""
+
+#: ../../../pull-requests.rst:12
+msgid ""
+"We create and build a new version when a pull request is opened, and rebuild "
+"it whenever a new commit is pushed."
+msgstr ""
+
+#: ../../../pull-requests.rst:15
+msgid "Build status report"
+msgstr ""
+
+#: ../../../pull-requests.rst:16
+msgid ""
+"Your project's pull request build status will show as one of your pull "
+"request's checks. This status will update as the build is running, and will "
+"show a success or failure status when the build completes."
+msgstr ""
+
+#: ../../../pull-requests.rst:20
+msgid "GitHub build status reporting for pull requests."
+msgstr ""
+
+#: ../../../pull-requests.rst:25
+msgid "GitHub build status reporting"
+msgstr ""
+
+#: ../../../pull-requests.rst:27
+msgid "Build overview with changed files"
+msgstr ""
+
+#: ../../../pull-requests.rst:28
+msgid ""
+"We create a comment on the pull request including a link to the preview of "
+"the documentation, and a list of the :doc:`files that changed </visual-"
+"diff>` between the current pull request and the latest version of the "
+"project's documentation."
+msgstr ""
+
+#: ../../../pull-requests.rst:33
+msgid ""
+"This feature is only available for projects connected to a :ref:`reference/"
+"git-integration:GitHub App`."
+msgstr ""
+
+#: ../../../pull-requests.rst:35
+msgid "Pull request notifications"
+msgstr ""
+
+#: ../../../pull-requests.rst:36
+msgid ""
+"A pull request notifications is shown at the top of preview pages, which let "
+"readers know they aren't viewing an active version of the project."
+msgstr ""
+
+#: ../../../pull-requests.rst:39
+msgid ":doc:`Visual diff </visual-diff>`"
+msgstr ""
+
+#: ../../../pull-requests.rst:40
+msgid ""
+"Visual diff shows proposed changes by visually highlighting the differences "
+"between the current pull request and the latest version of the project's "
+"documentation."
+msgstr ""
+
+#: ../../../pull-requests.rst:42
+msgid ""
+"Press ``d`` to toggle between Visual diff and normal pull request preview."
+msgstr ""
+
+#: ../../../pull-requests.rst:46
+msgid ":doc:`/guides/pull-requests`"
+msgstr ""
+
+#: ../../../pull-requests.rst:47
+msgid "A guide to configuring pull request builds on Read the Docs."
+msgstr ""
+
+#: ../../../pull-requests.rst:50
+msgid "Security"
+msgstr ""
+
+#: ../../../pull-requests.rst:52
+msgid ""
+"If pull request previews are enabled for your project, anyone who can open a "
+"pull request on your repository will be able to trigger a build of your "
+"documentation. For this reason, pull request previews are served from a "
+"different domain than your main documentation (``org.readthedocs.build`` and "
+"``com.readthedocs.build``)."
+msgstr ""
+
+#: ../../../pull-requests.rst:57
+msgid ""
+"Builds from pull requests have access to environment variables that are "
+"marked as *Public* only, if you have environment variables with private "
+"information, make sure they aren't marked as *Public*. See :ref:`environment-"
+"variables:Environment variables and build process` for more information."
+msgstr ""
+
+#: ../../../pull-requests.rst:61
+msgid ""
+"On |com_brand| you can set pull request previews to be private or public, If "
+"you didn't import your project manually and your repository is public, the "
+"privacy level of pull request previews will be set to *Public*. Public pull "
+"request previews are available to anyone with the link to the preview, while "
+"private previews are only available to users with access to the Read the "
+"Docs project."
+msgstr ""
+
+#: ../../../pull-requests.rst:69
+msgid ""
+"If you set the privacy level of pull request previews to *Private*, make "
+"sure that only trusted users can open pull requests in your repository."
+msgstr ""
+
+#: ../../../pull-requests.rst:72
+msgid ""
+"Setting pull request previews to private on a public repository can allow a "
+"malicious user to access read-only APIs using the user's session that is "
+"reading the pull request preview. Similar to `GHSA-pw32-ffxw-68rh <https://"
+"github.com/readthedocs/readthedocs.org/security/advisories/GHSA-pw32-"
+"ffxw-68rh>`__."
+msgstr ""

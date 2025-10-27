@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../support.rst:2
+msgid "Site support"
+msgstr ""
+
+#: ../../../support.rst:4
+msgid ""
+"Read the Docs offers support for projects on our :doc:`Read the Docs for "
+"Business </commercial/index>` and |org_brand| platforms. We're happy to "
+"assist with any questions or problems you have using either of our platforms."
+msgstr ""
+
+#: ../../../support.rst:8
+msgid ""
+"Read the Docs does not offer support for questions or problems with "
+"documentation tools or content. If you have a question or problem using a "
+"particular documentation tool, you should refer to :ref:`external resources "
+"<support:External resources>` for help instead."
+msgstr ""
+
+#: ../../../support.rst:12
+msgid "Some examples of requests that we support are:"
+msgstr ""
+
+#: ../../../support.rst:14
+msgid ""
+"\"How do I transfer ownership of a Read the Docs project to another "
+"maintainer?\""
+msgstr ""
+
+#: ../../../support.rst:15
+msgid "\"Why are my project builds being cancelled automatically?\""
+msgstr ""
+
+#: ../../../support.rst:16
+msgid "\"How do I manage my subscription?\""
+msgstr ""
+
+#: ../../../support.rst:18
+msgid ""
+"You might also find the answers you are looking for in our :doc:"
+"`documentation guides </guides/index>`. These provide step-by-step solutions "
+"to common user requests."
+msgstr ""
+
+#: ../../../support.rst:23
+msgid "|com_brand|"
+msgstr ""
+
+#: ../../../support.rst:25
+msgid "Please fill out the form at https://app.readthedocs.com/support/."
+msgstr ""
+
+#: ../../../support.rst:27
+msgid ""
+"Our team responds to support requests within 2 business days or earlier for "
+"most plans. Faster support response times and support SLAs are available "
+"with plan upgrades."
+msgstr ""
+
+#: ../../../support.rst:30
+msgid ""
+"If you are unable to create or access your account, you can email us at "
+"support@readthedocs.com."
+msgstr ""
+
+#: ../../../support.rst:32
+msgid "|org_brand|"
+msgstr ""
+
+#: ../../../support.rst:34
+msgid ""
+"Please fill out the form at https://app.readthedocs.org/support/, and we "
+"will reply as soon as possible."
+msgstr ""
+
+#: ../../../support.rst:37
+msgid ""
+"If you are unable to create or access your account, you can email us at "
+"support@readthedocs.org."
+msgstr ""
+
+#: ../../../support.rst:40
+msgid "External resources"
+msgstr ""
+
+#: ../../../support.rst:42
+msgid ""
+"If you have questions about how to use a documentation tool or authoring "
+"content for your project, or have an issue that isn't related to a bug with "
+"Read the Docs, `Stack Overflow`_ is the best place for your question."
+msgstr ""
+
+#: ../../../support.rst:46
+msgid "Examples of good questions for Stack Overflow are:"
+msgstr ""
+
+#: ../../../support.rst:48
+msgid ""
+"\"What is the best way to structure the table of contents across a project?\""
+msgstr ""
+
+#: ../../../support.rst:49
+msgid ""
+"\"How do I structure translations inside of my project for easiest "
+"contribution from users?\""
+msgstr ""
+
+#: ../../../support.rst:50
+msgid ""
+"\"How do I use Sphinx to use SVG images in HTML output but PNG in PDF output?"
+"\""
+msgstr ""
+
+#: ../../../support.rst:53
+msgid ""
+"Tag questions with ``read-the-docs`` so other folks can find them easily."
+msgstr ""
+
+#: ../../../support.rst:56
+msgid "Bug reports"
+msgstr ""
+
+#: ../../../support.rst:58
+msgid ""
+"If you have an issue with the actual functioning of Read the Docs, you can "
+"file bug reports on our `GitHub issue tracker`_. You can also :doc:"
+"`contribute changes and fixes <rtd-dev:contribute>` to Read the Docs, as the "
+"code is open source."
+msgstr ""
