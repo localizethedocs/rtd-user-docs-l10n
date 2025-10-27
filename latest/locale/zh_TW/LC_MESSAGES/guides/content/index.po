@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../guides/content/index.rst:55
 msgid "Migrating from rST to MyST"
-msgstr ""
+msgstr "從 rST 遷移到 MyST"
 
 #: ../../../guides/content/index.rst:55
 msgid "Adding custom CSS or JavaScript to Sphinx documentation"

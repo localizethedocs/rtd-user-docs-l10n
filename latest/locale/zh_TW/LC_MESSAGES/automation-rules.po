@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../../automation-rules.rst:12
 msgid ":doc:`/guides/automation-rules`"
-msgstr ""
+msgstr ":doc:`/guides/automation-rules`"
 
 #: ../../../automation-rules.rst:13
 msgid ""
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../automation-rules.rst:15
 msgid ":doc:`/versions`"
-msgstr ""
+msgstr ":doc:`/versions`"
 
 #: ../../../automation-rules.rst:16
 msgid "General explanation of how versioning works on Read the Docs"
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../automation-rules.rst:71
 msgid "Hide version"
-msgstr ""
+msgstr "隱藏版本"
 
 #: ../../../automation-rules.rst:72
 msgid ""

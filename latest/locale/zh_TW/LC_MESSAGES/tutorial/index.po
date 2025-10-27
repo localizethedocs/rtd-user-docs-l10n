@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:2
 msgid "Read the Docs tutorial"
-msgstr ""
+msgstr "Read the Docs 教學"
 
 #: ../../../tutorial/index.rst:4
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:59
 msgid "Creating a Read the Docs account"
-msgstr ""
+msgstr "建立 Read the Docs 帳號"
 
 #: ../../../tutorial/index.rst:61
 msgid ""
@@ -243,7 +243,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:116
 msgid "Repository URL"
-msgstr ""
+msgstr "儲存庫 URL"
 
 #: ../../../tutorial/index.rst:117
 msgid ""
@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:119
 msgid "Default branch"
-msgstr ""
+msgstr "預設分支"
 
 #: ../../../tutorial/index.rst:120
 msgid "Name of the default branch of the project, leave it as ``main``."
@@ -626,7 +626,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:349
 msgid "Installing Python dependencies"
-msgstr ""
+msgstr "安裝 Python 相依項"
 
 #: ../../../tutorial/index.rst:351
 msgid ""
@@ -787,7 +787,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:453
 msgid "Modifying versions"
-msgstr ""
+msgstr "修改版本"
 
 #: ../../../tutorial/index.rst:455
 msgid ""

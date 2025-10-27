@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../intro/markdoc.rst:34
 msgid "Example configuration"
-msgstr ""
+msgstr "範例組態"
 
 #: ../../../intro/markdoc.rst:36
 msgid ""
@@ -135,7 +135,7 @@ msgstr ""
 
 #: ../../../intro/markdoc.rst:81
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/markdoc.rst:82
 msgid "https://github.com/readthedocs/test-builds/tree/markdoc"
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../../intro/markdoc.rst:88
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/markdoc.rst:90
 msgid "`Markdoc documentation`_"

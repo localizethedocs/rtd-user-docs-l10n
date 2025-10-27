@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:34
 msgid ":doc:`/config-file/index`"
-msgstr ""
+msgstr ":doc:`/config-file/index`"
 
 #: ../../../config-file/v2.rst:35
 msgid ""
@@ -640,35 +640,35 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:337
 msgid "``14``"
-msgstr ""
+msgstr "``14``"
 
 #: ../../../config-file/v2.rst:338
 msgid "``16``"
-msgstr ""
+msgstr "``16``"
 
 #: ../../../config-file/v2.rst:339
 msgid "``18``"
-msgstr ""
+msgstr "``18``"
 
 #: ../../../config-file/v2.rst:340
 msgid "``19``"
-msgstr ""
+msgstr "``19``"
 
 #: ../../../config-file/v2.rst:341
 msgid "``20``"
-msgstr ""
+msgstr "``20``"
 
 #: ../../../config-file/v2.rst:342
 msgid "``22``"
-msgstr ""
+msgstr "``22``"
 
 #: ../../../config-file/v2.rst:343
 msgid "``23``"
-msgstr ""
+msgstr "``23``"
 
 #: ../../../config-file/v2.rst:347
 msgid "build.tools.ruby"
-msgstr ""
+msgstr "build.tools.ruby"
 
 #: ../../../config-file/v2.rst:349
 msgid "Ruby version to use."
@@ -692,39 +692,39 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:364
 msgid "``1.55``"
-msgstr ""
+msgstr "``1.55``"
 
 #: ../../../config-file/v2.rst:365
 msgid "``1.61``"
-msgstr ""
+msgstr "``1.61``"
 
 #: ../../../config-file/v2.rst:366
 msgid "``1.64``"
-msgstr ""
+msgstr "``1.64``"
 
 #: ../../../config-file/v2.rst:367
 msgid "``1.70``"
-msgstr ""
+msgstr "``1.70``"
 
 #: ../../../config-file/v2.rst:368
 msgid "``1.75``"
-msgstr ""
+msgstr "``1.75``"
 
 #: ../../../config-file/v2.rst:369
 msgid "``1.78``"
-msgstr ""
+msgstr "``1.78``"
 
 #: ../../../config-file/v2.rst:370
 msgid "``1.82``"
-msgstr ""
+msgstr "``1.82``"
 
 #: ../../../config-file/v2.rst:371
 msgid "``1.86``"
-msgstr ""
+msgstr "``1.86``"
 
 #: ../../../config-file/v2.rst:375
 msgid "build.tools.golang"
-msgstr ""
+msgstr "build.tools.golang"
 
 #: ../../../config-file/v2.rst:377
 msgid "Go version to use."
@@ -732,39 +732,39 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:381
 msgid "``1.17``"
-msgstr ""
+msgstr "``1.17``"
 
 #: ../../../config-file/v2.rst:382
 msgid "``1.18``"
-msgstr ""
+msgstr "``1.18``"
 
 #: ../../../config-file/v2.rst:383
 msgid "``1.19``"
-msgstr ""
+msgstr "``1.19``"
 
 #: ../../../config-file/v2.rst:384
 msgid "``1.20``"
-msgstr ""
+msgstr "``1.20``"
 
 #: ../../../config-file/v2.rst:385
 msgid "``1.21``"
-msgstr ""
+msgstr "``1.21``"
 
 #: ../../../config-file/v2.rst:386
 msgid "``1.22``"
-msgstr ""
+msgstr "``1.22``"
 
 #: ../../../config-file/v2.rst:387
 msgid "``1.23``"
-msgstr ""
+msgstr "``1.23``"
 
 #: ../../../config-file/v2.rst:388
 msgid "``1.24``"
-msgstr ""
+msgstr "``1.24``"
 
 #: ../../../config-file/v2.rst:392
 msgid "build.apt_packages"
-msgstr ""
+msgstr "build.apt_packages"
 
 #: ../../../config-file/v2.rst:394
 msgid ""
@@ -1031,7 +1031,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:602
 msgid "``html``"
-msgstr ""
+msgstr "``html``"
 
 #: ../../../config-file/v2.rst:605
 msgid ""
@@ -1041,7 +1041,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:609
 msgid "sphinx.configuration"
-msgstr ""
+msgstr "sphinx.configuration"
 
 #: ../../../config-file/v2.rst:611
 msgid "The path to the ``conf.py`` file, relative to the root of the project."
@@ -1049,7 +1049,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:617
 msgid "sphinx.fail_on_warning"
-msgstr ""
+msgstr "sphinx.fail_on_warning"
 
 #: ../../../config-file/v2.rst:619
 msgid ""
@@ -1061,11 +1061,11 @@ msgstr ""
 #: ../../../config-file/v2.rst:623 ../../../config-file/v2.rst:664
 #: ../../../config-file/v2.rst:734
 msgid "``bool``"
-msgstr ""
+msgstr "``bool``"
 
 #: ../../../config-file/v2.rst:627
 msgid "mkdocs"
-msgstr ""
+msgstr "mkdocs"
 
 #: ../../../config-file/v2.rst:629
 msgid "Configuration for MkDocs documentation."
@@ -1094,7 +1094,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:651
 msgid "mkdocs.configuration"
-msgstr ""
+msgstr "mkdocs.configuration"
 
 #: ../../../config-file/v2.rst:653
 msgid ""

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../guides/custom-domains.rst:10
 msgid "Adding a custom domain"
-msgstr ""
+msgstr "增添自訂域名"
 
 #: ../../../guides/custom-domains.rst:12
 msgid ""

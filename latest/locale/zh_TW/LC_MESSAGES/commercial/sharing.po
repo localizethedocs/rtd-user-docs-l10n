@@ -168,7 +168,7 @@ msgstr ""
 
 #: ../../../commercial/sharing.rst:76
 msgid "Token Authorization"
-msgstr ""
+msgstr "代符授權"
 
 #: ../../../commercial/sharing.rst:78
 msgid ""

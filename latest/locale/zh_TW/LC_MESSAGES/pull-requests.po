@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../../pull-requests.rst:46
 msgid ":doc:`/guides/pull-requests`"
-msgstr ""
+msgstr ":doc:`/guides/pull-requests`"
 
 #: ../../../pull-requests.rst:47
 msgid "A guide to configuring pull request builds on Read the Docs."

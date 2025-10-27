@@ -158,7 +158,7 @@ msgstr ""
 
 #: ../../../intro/mkdocs.rst:92
 msgid "Configure Read the Docs search"
-msgstr ""
+msgstr "組態 Read the Docs 搜尋"
 
 #: ../../../intro/mkdocs.rst:94
 msgid ""
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../../../intro/mkdocs.rst:182
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/mkdocs.rst:183
 msgid "https://github.com/readthedocs/test-builds/tree/mkdocs-material"
@@ -297,7 +297,7 @@ msgstr ""
 
 #: ../../../intro/mkdocs.rst:189
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/mkdocs.rst:191
 msgid "`Material for MkDocs documentation`_"

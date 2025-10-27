@@ -229,7 +229,7 @@ msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:94
 msgid ":doc:`/guides/manage-read-the-docs-teams`"
-msgstr ""
+msgstr ":doc:`/guides/manage-read-the-docs-teams`"
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:95
 msgid "Additional user management options"
@@ -237,7 +237,7 @@ msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:96
 msgid ":doc:`/commercial/single-sign-on`"
-msgstr ""
+msgstr ":doc:`/commercial/single-sign-on`"
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:97
 msgid "Information about choosing a single sign-on approach"

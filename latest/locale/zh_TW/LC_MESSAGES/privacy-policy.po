@@ -500,7 +500,7 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:298
 msgid "How Read the Docs secures your information"
-msgstr ""
+msgstr "Read the Docs 如何保護您的資訊"
 
 #: ../../../privacy-policy.rst:300
 msgid ""

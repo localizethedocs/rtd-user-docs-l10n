@@ -397,7 +397,7 @@ msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:150
 msgid ":doc:`/guides/manage-read-the-docs-teams`"
-msgstr ""
+msgstr ":doc:`/guides/manage-read-the-docs-teams`"
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:151
 msgid "Additional user management options"
@@ -405,7 +405,7 @@ msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:152
 msgid ":doc:`/commercial/single-sign-on`"
-msgstr ""
+msgstr ":doc:`/commercial/single-sign-on`"
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:153
 msgid "Information about choosing a single sign-on approach"

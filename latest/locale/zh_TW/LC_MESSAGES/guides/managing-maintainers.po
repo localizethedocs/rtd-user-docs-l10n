@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../guides/managing-maintainers.rst:42
 msgid ":doc:`/guides/manage-read-the-docs-teams`"
-msgstr ""
+msgstr ":doc:`/guides/manage-read-the-docs-teams`"
 
 #: ../../../guides/managing-maintainers.rst:43
 msgid "Learn how to manage teams within an organization on |com_brand|."

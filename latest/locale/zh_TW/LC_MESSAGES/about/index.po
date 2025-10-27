@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../about/index.rst:32
 msgid "⏩ :doc:`/commercial/index`"
-msgstr ""
+msgstr "⏩ :doc:`/commercial/index`"
 
 #: ../../../about/index.rst:33
 msgid "Learn more about how our company provides paid solutions"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../about/index.rst:35
 msgid "⏩ :doc:`/reference/policies`"
-msgstr ""
+msgstr "⏩ :doc:`/reference/policies`"
 
 #: ../../../about/index.rst:36
 msgid "Policies and legal documents used by |org_brand| and |com_brand|."
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../../about/index.rst:38
 msgid "⏩ :doc:`/advertising/index`"
-msgstr ""
+msgstr "⏩ :doc:`/advertising/index`"
 
 #: ../../../about/index.rst:39
 msgid "Information about how advertisement in Read the Docs"
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../../about/index.rst:41
 msgid "⏩ :doc:`/story`"
-msgstr ""
+msgstr "⏩ :doc:`/story`"
 
 #: ../../../about/index.rst:42
 msgid "A brief throwback to how we were founded"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../../about/index.rst:44
 msgid "⏩ :doc:`/sponsors`"
-msgstr ""
+msgstr "⏩ :doc:`/sponsors`"
 
 #: ../../../about/index.rst:45
 msgid ""
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../../about/index.rst:47
 msgid "⏩ :doc:`/open-source-philosophy`"
-msgstr ""
+msgstr "⏩ :doc:`/open-source-philosophy`"
 
 #: ../../../about/index.rst:48
 msgid "Our philosophy is anchored in open source."
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../../about/index.rst:50
 msgid "⏩ :doc:`/team`"
-msgstr ""
+msgstr "⏩ :doc:`/team`"
 
 #: ../../../about/index.rst:51
 msgid "How we work and who we are."
@@ -141,7 +141,7 @@ msgstr ""
 
 #: ../../../about/index.rst:53
 msgid "⏩ :doc:`/support`"
-msgstr ""
+msgstr "⏩ :doc:`/support`"
 
 #: ../../../about/index.rst:54
 msgid "Read this before asking for help: How to get support and where."
@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../../about/index.rst:56
 msgid "⏩ :doc:`/glossary`"
-msgstr ""
+msgstr "⏩ :doc:`/glossary`"
 
 #: ../../../about/index.rst:57
 msgid "A useful index of terms used in our docs"

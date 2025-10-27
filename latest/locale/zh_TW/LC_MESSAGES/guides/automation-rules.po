@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../guides/automation-rules.rst:2
 msgid "How to manage versions automatically"
-msgstr ""
+msgstr "如何自動管理版本"
 
 #: ../../../guides/automation-rules.rst:4
 msgid ""

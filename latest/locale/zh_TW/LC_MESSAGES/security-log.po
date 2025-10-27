@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../security-log.rst:15
 msgid ":doc:`/legal/security-policy`"
-msgstr ""
+msgstr ":doc:`/legal/security-policy`"
 
 #: ../../../security-log.rst:16
 msgid ""
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../../security-log.rst:59
 msgid ":doc:`/security`"
-msgstr ""
+msgstr ":doc:`/security`"
 
 #: ../../../security-log.rst:60
 msgid ""

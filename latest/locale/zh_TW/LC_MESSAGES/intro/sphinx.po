@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:2
 msgid "Sphinx"
-msgstr ""
+msgstr "Sphinx"
 
 #: ../../../intro/sphinx.rst:7
 msgid ""
@@ -111,15 +111,15 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:62 ../../../intro/sphinx.rst:91
 msgid "conf.py"
-msgstr ""
+msgstr "conf.py"
 
 #: ../../../intro/sphinx.rst:62
 msgid "html_baseurl = os.environ.get(\"READTHEDOCS_CANONICAL_URL\", \"/\")"
-msgstr ""
+msgstr "html_baseurl = os.environ.get(\"READTHEDOCS_CANONICAL_URL\", \"/\")"
 
 #: ../../../intro/sphinx.rst:70
 msgid "Configure Read the Docs search"
-msgstr ""
+msgstr "組態 Read the Docs 搜尋"
 
 #: ../../../intro/sphinx.rst:72
 msgid ""
@@ -140,7 +140,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:79
 msgid "readthedocs.js"
-msgstr ""
+msgstr "readthedocs.js"
 
 #: ../../../intro/sphinx.rst:79
 msgid ""
@@ -217,7 +217,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:118
 msgid "pip install myst-parser"
-msgstr ""
+msgstr "pip install myst-parser"
 
 #: ../../../intro/sphinx.rst:119
 msgid "Then in your ``conf.py``:"
@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:132
 msgid ":doc:`/guides/migrate-rest-myst`"
-msgstr ""
+msgstr ":doc:`/guides/migrate-rest-myst`"
 
 #: ../../../intro/sphinx.rst:133
 msgid ""
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:140
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/sphinx.rst:141
 msgid "https://github.com/readthedocs/test-builds/tree/full-feature"
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:147
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/sphinx.rst:149
 msgid "`Sphinx documentation`_"

@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../../intro/antora.rst:40
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/antora.rst:41
 msgid "https://github.com/readthedocs/test-builds/tree/antora"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../../intro/antora.rst:47
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/antora.rst:49
 msgid "`Antora documentation`_"

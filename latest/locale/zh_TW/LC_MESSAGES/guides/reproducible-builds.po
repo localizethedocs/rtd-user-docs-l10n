@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../../../guides/reproducible-builds.rst:153
 msgid ":doc:`/builds`"
-msgstr ""
+msgstr ":doc:`/builds`"
 
 #: ../../../guides/reproducible-builds.rst:154
 msgid "Build process information"

@@ -77,11 +77,11 @@ msgstr ""
 
 #: ../../../api/v2.rst:35
 msgid "Resources"
-msgstr ""
+msgstr "資源"
 
 #: ../../../api/v2.rst:38
 msgid "Projects"
-msgstr ""
+msgstr "專案"
 
 #: ../../../api/v2.rst:40
 msgid ""
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../../../api/v2.rst:53
 msgid "Project list"
-msgstr ""
+msgstr "專案列表"
 
 #: ../../../api/v2.rst:57
 msgid "Retrieve a list of all Read the Docs projects."
@@ -130,6 +130,12 @@ msgid ""
 "    \"results\": [PROJECTS]\n"
 "}"
 msgstr ""
+"{\n"
+"    \"count\": 1,\n"
+"    \"next\": null,\n"
+"    \"previous\": null,\n"
+"    \"results\": [PROJECTS]\n"
+"}"
 
 #: ../../../api/v2.rst:0
 msgid "Response JSON Object"
@@ -153,7 +159,7 @@ msgstr ""
 
 #: ../../../api/v2.rst:0
 msgid "Query Parameters"
-msgstr ""
+msgstr "查詢參數"
 
 #: ../../../api/v2.rst:81
 msgid "Narrow the results by matching the exact project slug"
@@ -248,7 +254,7 @@ msgstr ""
 
 #: ../../../api/v2.rst:127
 msgid "Project versions"
-msgstr ""
+msgstr "專案版本"
 
 #: ../../../api/v2.rst:131
 msgid ""
@@ -262,6 +268,9 @@ msgid ""
 "    \"versions\": [VERSION, VERSION, ...]\n"
 "}"
 msgstr ""
+"{\n"
+"    \"versions\": [VERSION, VERSION, ...]\n"
+"}"
 
 #: ../../../api/v2.rst:139
 msgid "Version objects for the given ``Project``"
@@ -275,7 +284,7 @@ msgstr ""
 
 #: ../../../api/v2.rst:144
 msgid "Versions"
-msgstr ""
+msgstr "版本"
 
 #: ../../../api/v2.rst:146
 msgid "Versions are different versions of the same project documentation"
@@ -289,7 +298,7 @@ msgstr ""
 
 #: ../../../api/v2.rst:154
 msgid "Version list"
-msgstr ""
+msgstr "版本列表"
 
 #: ../../../api/v2.rst:158
 msgid "Retrieve a list of all Versions for all projects"

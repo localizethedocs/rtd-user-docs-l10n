@@ -170,15 +170,15 @@ msgstr ""
 
 #: ../../../localization.rst:86
 msgid "`Weblate <https://weblate.org/>`_"
-msgstr ""
+msgstr "`Weblate <https://weblate.org/>`_"
 
 #: ../../../localization.rst:87
 msgid "`Transifex <https://www.transifex.com/>`_"
-msgstr ""
+msgstr "`Transifex <https://www.transifex.com/>`_"
 
 #: ../../../localization.rst:88
 msgid "`Crowdin <https://crowdin.com/>`_"
-msgstr ""
+msgstr "`Crowdin <https://crowdin.com/>`_"
 
 #: ../../../localization.rst:90
 msgid ""

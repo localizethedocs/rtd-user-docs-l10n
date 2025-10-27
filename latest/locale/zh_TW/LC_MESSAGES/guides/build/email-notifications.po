@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../guides/build/email-notifications.rst:2
 msgid "How to setup email notifications"
-msgstr ""
+msgstr "如何設定電子郵件通知"
 
 #: ../../../guides/build/email-notifications.rst:4
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../guides/build/email-notifications.rst:20
 msgid "Email notifications"
-msgstr ""
+msgstr "電子郵件通知"
 
 #: ../../../guides/build/email-notifications.rst:22
 msgid ""

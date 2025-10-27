@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../intro/mdbook.rst:42
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/mdbook.rst:43
 msgid "https://github.com/readthedocs/test-builds/tree/mdbook"
@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../../intro/mdbook.rst:49
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/mdbook.rst:51
 msgid "`mdBook documentation`_"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../intro/doctools.rst:2
 msgid "Popular documentation tools"
-msgstr ""
+msgstr "熱門文件工具"
 
 #: ../../../intro/doctools.rst:4
 msgid ""

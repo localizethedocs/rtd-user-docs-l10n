@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../glossary.rst:19
 msgid ":doc:`/config-file/index`"
-msgstr ""
+msgstr ":doc:`/config-file/index`"
 
 #: ../../../glossary.rst:20
 msgid ""
@@ -383,7 +383,7 @@ msgstr ""
 
 #: ../../../glossary.rst:164
 msgid ":doc:`/guides/setup/git-repo-manual`"
-msgstr ""
+msgstr ":doc:`/guides/setup/git-repo-manual`"
 
 #: ../../../glossary.rst:165
 msgid "Manually configuration for Git repositories."

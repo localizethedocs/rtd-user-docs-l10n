@@ -162,7 +162,7 @@ msgstr ""
 
 #: ../../../guides/intersphinx.rst:93
 msgid ":doc:`sphinx:usage/extensions/intersphinx`"
-msgstr ""
+msgstr ":doc:`sphinx:usage/extensions/intersphinx`"
 
 #: ../../../guides/intersphinx.rst:94
 msgid ":doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`"

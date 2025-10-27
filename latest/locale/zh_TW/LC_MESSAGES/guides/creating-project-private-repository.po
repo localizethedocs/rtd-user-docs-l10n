@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:44
 msgid ":doc:`/guides/setup/git-repo-manual`"
-msgstr ""
+msgstr ":doc:`/guides/setup/git-repo-manual`"
 
 #: ../../../guides/creating-project-private-repository.rst:45
 msgid ""
