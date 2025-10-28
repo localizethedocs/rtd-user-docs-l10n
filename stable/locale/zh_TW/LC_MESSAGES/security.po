@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../security.rst:21
 msgid ":doc:`/legal/security-policy`"
-msgstr ""
+msgstr ":doc:`/legal/security-policy`"
 
 #: ../../../security.rst:22
 msgid ""

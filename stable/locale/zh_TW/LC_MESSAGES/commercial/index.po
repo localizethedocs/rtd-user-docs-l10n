@@ -104,12 +104,12 @@ msgstr ""
 
 #: ../../../commercial/index.rst:44
 msgid ":doc:`/commercial/organizations`"
-msgstr ""
+msgstr ":doc:`/commercial/organizations`"
 
 #: ../../../commercial/index.rst:45
 msgid ":doc:`/commercial/single-sign-on`"
-msgstr ""
+msgstr ":doc:`/commercial/single-sign-on`"
 
 #: ../../../commercial/index.rst:46
 msgid ":doc:`/security-log`"
-msgstr ""
+msgstr ":doc:`/security-log`"

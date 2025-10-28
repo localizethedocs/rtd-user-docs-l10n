@@ -41,6 +41,7 @@ msgid ""
 "Having a \"stable\" and \"latest\" branch so that users can see the current "
 "release and the upcoming changes."
 msgstr ""
+"擁有「穩定版」和「最新版」分支，讓使用者能看到當前的發行版和即將推出的變更。"
 
 #: ../../../versions.rst:11
 msgid ""
@@ -51,7 +52,7 @@ msgstr ""
 
 #: ../../../versions.rst:14
 msgid "Versions are Git tags and branches"
-msgstr ""
+msgstr "版本是 Git 標記和分支"
 
 #: ../../../versions.rst:16
 msgid ""
@@ -85,7 +86,7 @@ msgstr ""
 
 #: ../../../versions.rst:36
 msgid "Version states"
-msgstr ""
+msgstr "版本狀態"
 
 #: ../../../versions.rst:38
 msgid ""
@@ -198,7 +199,7 @@ msgstr ""
 
 #: ../../../versions.rst:81
 msgid "Managing your versions"
-msgstr ""
+msgstr "管理您的版本"
 
 #: ../../../versions.rst:83
 msgid ""
@@ -306,7 +307,7 @@ msgstr ""
 
 #: ../../../versions.rst:131
 msgid "Version warning notifications"
-msgstr ""
+msgstr "版本警告通知"
 
 #: ../../../versions.rst:133
 msgid ""
@@ -332,7 +333,7 @@ msgstr ""
 
 #: ../../../versions.rst:141
 msgid "Latest version notification"
-msgstr ""
+msgstr "最新版本通知"
 
 #: ../../../versions.rst:142
 msgid ""

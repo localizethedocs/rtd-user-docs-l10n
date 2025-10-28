@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../custom-domains.rst:2
 msgid "Custom domains"
-msgstr ""
+msgstr "自訂域名"
 
 #: ../../../custom-domains.rst:4
 msgid ""

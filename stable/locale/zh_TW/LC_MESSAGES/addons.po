@@ -230,139 +230,139 @@ msgstr ""
 
 #: ../../../addons.rst:110
 msgid "``--readthedocs-flyout-background-color``"
-msgstr ""
+msgstr "``--readthedocs-flyout-background-color``"
 
 #: ../../../addons.rst:111
 msgid "``--readthedocs-flyout-color``"
-msgstr ""
+msgstr "``--readthedocs-flyout-color``"
 
 #: ../../../addons.rst:112
 msgid "``--readthedocs-flyout-current-version-color``"
-msgstr ""
+msgstr "``--readthedocs-flyout-current-version-color``"
 
 #: ../../../addons.rst:113
 msgid "``--readthedocs-flyout-font-family``"
-msgstr ""
+msgstr "``--readthedocs-flyout-font-family``"
 
 #: ../../../addons.rst:114
 msgid "``--readthedocs-flyout-font-size``"
-msgstr ""
+msgstr "``--readthedocs-flyout-font-size``"
 
 #: ../../../addons.rst:115
 msgid "``--readthedocs-flyout-header-font-size``"
-msgstr ""
+msgstr "``--readthedocs-flyout-header-font-size``"
 
 #: ../../../addons.rst:116
 msgid "``--readthedocs-flyout-item-link-color``"
-msgstr ""
+msgstr "``--readthedocs-flyout-item-link-color``"
 
 #: ../../../addons.rst:117
 msgid "``--readthedocs-flyout-link-color``"
-msgstr ""
+msgstr "``--readthedocs-flyout-link-color``"
 
 #: ../../../addons.rst:118
 msgid "``--readthedocs-flyout-section-heading-color``"
-msgstr ""
+msgstr "``--readthedocs-flyout-section-heading-color``"
 
 #: ../../../addons.rst:120
 msgid "**Notifications**"
-msgstr ""
+msgstr "**通知**"
 
 #: ../../../addons.rst:122
 msgid "``--readthedocs-notification-background-color``"
-msgstr ""
+msgstr "``--readthedocs-notification-background-color``"
 
 #: ../../../addons.rst:123
 msgid "``--readthedocs-notification-color``"
-msgstr ""
+msgstr "``--readthedocs-notification-color``"
 
 #: ../../../addons.rst:124
 msgid "``--readthedocs-notification-font-family``"
-msgstr ""
+msgstr "``--readthedocs-notification-font-family``"
 
 #: ../../../addons.rst:125
 msgid "``--readthedocs-notification-font-size``"
-msgstr ""
+msgstr "``--readthedocs-notification-font-size``"
 
 #: ../../../addons.rst:126
 msgid "``--readthedocs-notification-link-color``"
-msgstr ""
+msgstr "``--readthedocs-notification-link-color``"
 
 #: ../../../addons.rst:127
 msgid "``--readthedocs-notification-title-background-color``"
-msgstr ""
+msgstr "``--readthedocs-notification-title-background-color``"
 
 #: ../../../addons.rst:128
 msgid "``--readthedocs-notification-title-color``"
-msgstr ""
+msgstr "``--readthedocs-notification-title-color``"
 
 #: ../../../addons.rst:129
 msgid "``--readthedocs-notification-toast-font-size``"
-msgstr ""
+msgstr "``--readthedocs-notification-toast-font-size``"
 
 #: ../../../addons.rst:131
 msgid "**Search**"
-msgstr ""
+msgstr "**搜尋**"
 
 #: ../../../addons.rst:133
 msgid "``--readthedocs-search-backdrop-color``"
-msgstr ""
+msgstr "``--readthedocs-search-backdrop-color``"
 
 #: ../../../addons.rst:134
 msgid "``--readthedocs-search-color``"
-msgstr ""
+msgstr "``--readthedocs-search-color``"
 
 #: ../../../addons.rst:135
 msgid "``--readthedocs-search-content-background-color``"
-msgstr ""
+msgstr "``--readthedocs-search-content-background-color``"
 
 #: ../../../addons.rst:136
 msgid "``--readthedocs-search-content-border-color``"
-msgstr ""
+msgstr "``--readthedocs-search-content-border-color``"
 
 #: ../../../addons.rst:137
 msgid "``--readthedocs-search-filters-border-color``"
-msgstr ""
+msgstr "``--readthedocs-search-filters-border-color``"
 
 #: ../../../addons.rst:138
 msgid "``--readthedocs-search-font-family``"
-msgstr ""
+msgstr "``--readthedocs-search-font-family``"
 
 #: ../../../addons.rst:139
 msgid "``--readthedocs-search-font-size``"
-msgstr ""
+msgstr "``--readthedocs-search-font-size``"
 
 #: ../../../addons.rst:140
 msgid "``--readthedocs-search-footer-background-color``"
-msgstr ""
+msgstr "``--readthedocs-search-footer-background-color``"
 
 #: ../../../addons.rst:141
 msgid "``--readthedocs-search-footer-code-background-color``"
-msgstr ""
+msgstr "``--readthedocs-search-footer-code-background-color``"
 
 #: ../../../addons.rst:142
 msgid "``--readthedocs-search-footer-code-border-color``"
-msgstr ""
+msgstr "``--readthedocs-search-footer-code-border-color``"
 
 #: ../../../addons.rst:143
 msgid "``--readthedocs-search-input-background-color``"
-msgstr ""
+msgstr "``--readthedocs-search-input-background-color``"
 
 #: ../../../addons.rst:144
 msgid "``--readthedocs-search-result-section-border-color``"
-msgstr ""
+msgstr "``--readthedocs-search-result-section-border-color``"
 
 #: ../../../addons.rst:145
 msgid "``--readthedocs-search-result-section-color``"
-msgstr ""
+msgstr "``--readthedocs-search-result-section-color``"
 
 #: ../../../addons.rst:146
 msgid "``--readthedocs-search-result-section-highlight-color``"
-msgstr ""
+msgstr "``--readthedocs-search-result-section-highlight-color``"
 
 #: ../../../addons.rst:147
 msgid "``--readthedocs-search-result-section-subheading-color``"
-msgstr ""
+msgstr "``--readthedocs-search-result-section-subheading-color``"
 
 #: ../../../addons.rst:149
 msgid ""

@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../continuous-deployment.rst:59
 msgid ":doc:`/guides/setup/git-repo-manual`"
-msgstr ""
+msgstr ":doc:`/guides/setup/git-repo-manual`"
 
 #: ../../../continuous-deployment.rst:60 ../../../continuous-deployment.rst:62
 msgid ""

@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../../intro/vitepress.rst:35
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../intro/vitepress.rst:37
 msgid ""
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../../intro/vitepress.rst:71
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/vitepress.rst:72
 msgid "https://github.com/readthedocs/test-builds/tree/vitepress"
@@ -141,7 +141,7 @@ msgstr ""
 
 #: ../../../intro/vitepress.rst:78
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/vitepress.rst:80
 msgid "`VitePress documentation`_"

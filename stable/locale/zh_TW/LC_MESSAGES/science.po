@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../../science.rst:0
 msgid "⚙️ Automatic builds"
-msgstr ""
+msgstr "⚙️ 自動建置"
 
 #: ../../../science.rst:73
 msgid ""
@@ -357,7 +357,7 @@ msgstr ""
 
 #: ../../../science.rst:152
 msgid "Jupyter Project Documentation"
-msgstr ""
+msgstr "Jupyter 專案文件"
 
 #: ../../../science.rst:156
 msgid "Chainladder - Property and Casualty Loss Reserving in Python"

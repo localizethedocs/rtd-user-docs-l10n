@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:2
 msgid "Adding a documentation project"
-msgstr ""
+msgstr "增添文件專案"
 
 #: ../../../intro/add-project.rst:7
 msgid ""
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:14
 msgid "Automatically add your project"
-msgstr ""
+msgstr "自動增添您的專案"
 
 #: ../../../intro/add-project.rst:16 ../../../intro/add-project.rst:36
 msgid "Go to your :term:`dashboard`."
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:29
 msgid ":doc:`/reference/git-integration`"
-msgstr ""
+msgstr ":doc:`/reference/git-integration`"
 
 #: ../../../intro/add-project.rst:30
 msgid ""
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:34
 msgid "Manually add your project"
-msgstr ""
+msgstr "手動增添您的專案"
 
 #: ../../../intro/add-project.rst:38
 msgid "Click on :guilabel:`Configure manually`."
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:49
 msgid ":doc:`/guides/setup/git-repo-manual`"
-msgstr ""
+msgstr ":doc:`/guides/setup/git-repo-manual`"
 
 #: ../../../intro/add-project.rst:50
 msgid ""
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:61
 msgid ":doc:`/builds`"
-msgstr ""
+msgstr ":doc:`/builds`"
 
 #: ../../../intro/add-project.rst:62
 msgid "Explanation about the build process."
@@ -138,7 +138,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:64
 msgid ":doc:`/config-file/index`"
-msgstr ""
+msgstr ":doc:`/config-file/index`"
 
 #: ../../../intro/add-project.rst:65
 msgid ""
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:67
 msgid ":doc:`/versions`"
-msgstr ""
+msgstr ":doc:`/versions`"
 
 #: ../../../intro/add-project.rst:68
 msgid "Manage multiple versions of your documentation project."

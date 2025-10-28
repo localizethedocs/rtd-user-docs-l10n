@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../commercial/single-sign-on.rst:2
 msgid "Single sign-on (SSO)"
-msgstr ""
+msgstr "單一登入（SSO）"
 
 #: ../../../shared/admonition-rtd-business.rst:2
 msgid ""

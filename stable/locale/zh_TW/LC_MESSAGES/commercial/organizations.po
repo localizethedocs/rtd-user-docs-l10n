@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../commercial/organizations.rst:12
 msgid ":doc:`/guides/manage-read-the-docs-teams`"
-msgstr ""
+msgstr ":doc:`/guides/manage-read-the-docs-teams`"
 
 #: ../../../commercial/organizations.rst:13
 msgid "A step-by-step guide to managing teams."

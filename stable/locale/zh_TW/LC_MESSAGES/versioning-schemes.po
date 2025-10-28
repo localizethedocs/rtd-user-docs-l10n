@@ -69,19 +69,19 @@ msgstr ""
 
 #: ../../../versioning-schemes.rst:26
 msgid "``/en/latest/``"
-msgstr ""
+msgstr "``/en/latest/``"
 
 #: ../../../versioning-schemes.rst:27
 msgid "``/en/1.5/``"
-msgstr ""
+msgstr "``/en/1.5/``"
 
 #: ../../../versioning-schemes.rst:28
 msgid "``/es/latest/install.html``"
-msgstr ""
+msgstr "``/es/latest/install.html``"
 
 #: ../../../versioning-schemes.rst:29
 msgid "``/es/1.5/contributing.html``"
-msgstr ""
+msgstr "``/es/1.5/contributing.html``"
 
 #: ../../../versioning-schemes.rst:32
 msgid "Multiple versions without translations"
@@ -95,11 +95,11 @@ msgstr ""
 
 #: ../../../versioning-schemes.rst:39
 msgid "``/latest/``"
-msgstr ""
+msgstr "``/latest/``"
 
 #: ../../../versioning-schemes.rst:40
 msgid "``/1.5/install.html``"
-msgstr ""
+msgstr "``/1.5/install.html``"
 
 #: ../../../versioning-schemes.rst:44
 msgid "This means you can't have translations for your documentation."
@@ -130,11 +130,11 @@ msgstr ""
 
 #: ../../../versioning-schemes.rst:58
 msgid "``/``"
-msgstr ""
+msgstr "``/``"
 
 #: ../../../versioning-schemes.rst:59
 msgid "``/install.html``"
-msgstr ""
+msgstr "``/install.html``"
 
 #: ../../../versioning-schemes.rst:63
 msgid ""

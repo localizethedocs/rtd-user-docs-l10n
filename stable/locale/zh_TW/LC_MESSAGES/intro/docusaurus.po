@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../../intro/docusaurus.rst:74
 msgid "docusaurus.config.js"
-msgstr ""
+msgstr "docusaurus.config.js"
 
 #: ../../../intro/docusaurus.rst:74
 msgid ""
@@ -164,7 +164,7 @@ msgstr ""
 
 #: ../../../intro/docusaurus.rst:88
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/docusaurus.rst:89
 msgid "https://github.com/readthedocs/test-builds/tree/docusaurus"

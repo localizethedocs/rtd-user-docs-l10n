@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../subprojects.rst:26
 msgid ":doc:`/guides/intersphinx`"
-msgstr ""
+msgstr ":doc:`/guides/intersphinx`"
 
 #: ../../../subprojects.rst:27
 msgid ""

@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../intro/accounts.rst:11
 msgid "Email and password"
-msgstr ""
+msgstr "電子郵件和密碼"
 
 #: ../../../intro/accounts.rst:13
 msgid ""

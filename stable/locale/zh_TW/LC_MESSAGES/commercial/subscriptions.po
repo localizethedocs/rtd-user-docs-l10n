@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../commercial/subscriptions.rst:2
 msgid "How to manage your subscription"
-msgstr ""
+msgstr "如何管理您的訂閱"
 
 #: ../../../commercial/subscriptions.rst:4
 msgid ""

@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:23
 msgid ":doc:`/abandoned-projects`"
-msgstr ""
+msgstr ":doc:`/abandoned-projects`"
 
 #: ../../../reference/policies.rst:24
 msgid "Our policy of taking action on abandoned projects."
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:26
 msgid ":doc:`/unofficial-projects`"
-msgstr ""
+msgstr ":doc:`/unofficial-projects`"
 
 #: ../../../reference/policies.rst:27
 msgid "Our policy of taking action on unofficial and unmaintained projects."
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:34
 msgid ":doc:`/privacy-policy`"
-msgstr ""
+msgstr ":doc:`/privacy-policy`"
 
 #: ../../../reference/policies.rst:35
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:37
 msgid ":doc:`/legal/security-policy`"
-msgstr ""
+msgstr ":doc:`/legal/security-policy`"
 
 #: ../../../reference/policies.rst:38
 msgid "Our policies around application and infrastructure security."
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:40
 msgid ":doc:`/security`"
-msgstr ""
+msgstr ":doc:`/security`"
 
 #: ../../../reference/policies.rst:41
 msgid ""
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:43
 msgid ":doc:`/legal/dpa/index`"
-msgstr ""
+msgstr ":doc:`/legal/dpa/index`"
 
 #: ../../../reference/policies.rst:44
 msgid ""
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../reference/policies.rst:47
 msgid ":doc:`/dmca/index`"
-msgstr ""
+msgstr ":doc:`/dmca/index`"
 
 #: ../../../reference/policies.rst:48
 msgid ""

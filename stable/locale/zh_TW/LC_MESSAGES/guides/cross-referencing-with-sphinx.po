@@ -389,15 +389,15 @@ msgstr ""
 
 #: ../../../guides/cross-referencing-with-sphinx.rst:247
 msgid ":doc:`intersphinx`"
-msgstr ""
+msgstr ":doc:`intersphinx`"
 
 #: ../../../guides/cross-referencing-with-sphinx.rst:248
 msgid ":doc:`/guides/intersphinx`"
-msgstr ""
+msgstr ":doc:`/guides/intersphinx`"
 
 #: ../../../guides/cross-referencing-with-sphinx.rst:249
 msgid ":doc:`Custom title </guides/intersphinx>`"
-msgstr ""
+msgstr ":doc:`自訂標題 </guides/intersphinx>`"
 
 #: ../../../guides/cross-referencing-with-sphinx.rst:253
 msgid ""

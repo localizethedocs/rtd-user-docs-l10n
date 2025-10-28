@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../guides/connecting-git-account.rst:49
 msgid ":doc:`/reference/git-integration`"
-msgstr ""
+msgstr ":doc:`/reference/git-integration`"
 
 #: ../../../guides/connecting-git-account.rst:50
 msgid ""

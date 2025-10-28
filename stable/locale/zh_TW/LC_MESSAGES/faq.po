@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../../../faq.rst:117
 msgid ":doc:`/builds`"
-msgstr ""
+msgstr ":doc:`/builds`"
 
 #: ../../../faq.rst:118
 msgid "An overview of the build process."

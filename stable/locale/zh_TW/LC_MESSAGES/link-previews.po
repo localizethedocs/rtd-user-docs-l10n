@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../link-previews.rst:19
 msgid "Enabling link previews"
-msgstr ""
+msgstr "啟用連結預覽"
 
 #: ../../../link-previews.rst:21
 msgid "Go to the new :term:`dashboard`."
