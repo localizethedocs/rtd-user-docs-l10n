@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../explanation/documentation-structure.rst:2
+msgid "How to structure your documentation"
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:4
+msgid ""
+"A documentation project's ultimate goal is to be read and understood by a "
+"reader. Readers need to be able to :term:`discover <discoverability>` the "
+"information that they need. Without an defined structure, readers either "
+"won't find information that they need or get frustrated on the way."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:9
+msgid ""
+"One of the largest benefits of a good structure is that it removes questions "
+"that keep authors from writing documentation. Starting with a blank page is "
+"often the hardest part of documentation, so anything we can do to remove "
+"this problem is a win."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:14
+msgid "Choosing a structure"
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:16
+msgid ""
+"Good news! You don't have to invent all of the structure yourself, since a "
+"lot of experience-based work has been done to come up with a universal "
+"documentation structure."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:20
+msgid ""
+"In order to avoid starting with a blank page, we recommend a simple process:"
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:23
+msgid ""
+"Choose a structure for your documentation. We recommend `Diátaxis <https://"
+"diataxis.fr/>`_ for this."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:24
+msgid "Find a :doc:`example project </examples>` or template to start from."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:25
+msgid "Start writing by filling in the structure."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:27
+msgid ""
+"This process helps you get started quickly, and helps keep things consistent "
+"for the reader of your documentation."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:33
+msgid "Diátaxis Methodology"
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:35
+msgid ""
+"The documentation you're reading is written using the Diátaxis framework. It "
+"has four major parts as summarized by this image:"
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:40
+msgid ""
+"We recommend that you read more about it in the `official Diátaxis "
+"documentation <https://diataxis.fr/>`_."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:43
+msgid "Explaining the structure to your users"
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:45
+msgid ""
+"One of the benefits of Diátaxis is that it's a well-known structure, and "
+"users might already be familiar with it. As long as you stick to the "
+"structure, your users should be able to use existing experience to navigate."
+msgstr ""
+
+#: ../../../explanation/documentation-structure.rst:50
+msgid ""
+"Using the names that are defined (eg. Tutorials, Explanation) in a user-"
+"facing way also helps here."
+msgstr ""

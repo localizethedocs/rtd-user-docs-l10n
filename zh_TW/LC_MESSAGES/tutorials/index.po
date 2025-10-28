@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tutorials/index.rst:7
+msgid "Tutorials"
+msgstr ""
+
+#: ../../../tutorials/index.rst:9
+msgid "⏩️ :doc:`/tutorial/index`"
+msgstr ""
+
+#: ../../../tutorials/index.rst:10
+msgid ""
+"This is where you should go if you are trying Read the Docs for the first "
+"time!"
+msgstr ""
+
+#: ../../../tutorials/index.rst:12
+msgid "⏩️ :doc:`/intro/sphinx`"
+msgstr ""
+
+#: ../../../tutorials/index.rst:13
+msgid ""
+"Sphinx is the most popular documentation tool on our platform. It supports "
+"both reStructuredText and Markdown formats, and can generate rich API "
+"documentation from your source code. We recommend Sphinx for documentation "
+"that includes API reference documentation."
+msgstr ""
+
+#: ../../../tutorials/index.rst:17
+msgid "⏩️ :doc:`/intro/mkdocs`"
+msgstr ""
+
+#: ../../../tutorials/index.rst:18
+msgid ""
+"Another great and popular tool is MkDocs. This is especially popular because "
+"of its default of using Markdown. This tool is well-supported on our "
+"platform and that's why we have a tutorial."
+msgstr ""
+
+#: ../../../tutorials/index.rst:22
+msgid "⏩️ :doc:`/intro/add-project`"
+msgstr ""
+
+#: ../../../tutorials/index.rst:23
+msgid ""
+"If you already wrote your documentation, this guide will help you get "
+"started at the most natural point: importing an existing documentation "
+"project."
+msgstr ""
+
+#: ../../../tutorials/index.rst:27
+msgid "⏩️ :doc:`/config-file/index`"
+msgstr ""
+
+#: ../../../tutorials/index.rst:28
+msgid ""
+"Practical steps to add a configuration file to your documentation project."
+msgstr ""
+
+#: ../../../tutorials/index.rst:30
+msgid "⏩️ :doc:`/examples`"
+msgstr ""
+
+#: ../../../tutorials/index.rst:31
+msgid ""
+"If you are bootstrapping a new documentation project, here is a list of "
+"example projects that you can derive your setup from."
+msgstr ""

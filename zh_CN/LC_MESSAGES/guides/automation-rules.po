@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/automation-rules.rst:2
+msgid "How to manage versions automatically"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:4
+msgid ""
+"In this guide, we show you how to define rules to automate creation of new "
+"versions on Read the Docs, using your Git repository's version logic. "
+"Automating your versioning on Read the Docs means you only have to handle "
+"your versioning logic in Git."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:11
+msgid ":doc:`/versions`"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:12
+msgid "Learn more about versioning of documentation in general."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:14
+msgid ":doc:`/automation-rules`"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:15
+msgid "Reference for all different rules and actions possible with automation."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:18
+msgid "Adding a new automation rule"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:20
+msgid "First you need to go to the automation rule creation page:"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:22
+msgid "Navigate to :menuselection:`Admin --> Automation Rules`."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:23
+msgid "Click on :guilabel:`Add Rule` and you will see the following form."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:25
+msgid "Screenshot of the \"Add Rule\" form"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:28
+msgid "In the :guilabel:`Automation Rule` form, you need to fill in 4 fields:"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:30
+msgid ""
+"Enter a :guilabel:`Description` that you can refer to later. For example, "
+"entering \"Create new stable version\" is a good title, as it explains the "
+"intention of the rule."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:34
+msgid ""
+"Choose a :guilabel:`Match`, which is the pattern you wish to detect in "
+"either a Git branch or tag."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:37
+msgid ""
+":ref:`Any version <automation-rules:Predefined matches>` matches all values."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:38
+msgid ""
+":ref:`SemVer versions <automation-rules:Predefined matches>` matches only "
+"values that have the `SemVer`_ format."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:39
+msgid ""
+":ref:`Custom match <automation-rules:Custom matches>` matches your own "
+"pattern (entered below). If you choose this option, a field :guilabel:"
+"`Custom match` will automatically appear below the drop-down where you can "
+"add a regular expression in `Python regex format`_."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:43
+msgid ""
+"Choose a :guilabel:`Version type`. You can choose between *Tag* or *Branch*, "
+"denoting *Git tag* or *Git branch*."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:47
+msgid "Finally, choose the :guilabel:`Action`:"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:49
+msgid ":ref:`Activate version <automation-rules:Actions for versions>`"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:50
+msgid ":ref:`Hide version <automation-rules:Actions for versions>`"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:51
+msgid ":ref:`Set version as default <automation-rules:Actions for versions>`"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:52
+msgid ""
+":ref:`Delete version (on branch/tag deletion) <automation-rules:Actions for "
+"versions>`"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:55
+msgid ""
+"Now your rule is ready and you can press :guilabel:`Save`. The rule takes "
+"effect immediately when a new version is created, but does not apply to old "
+"versions."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:61
+msgid "Examples of common usage"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:62
+msgid ""
+"See :ref:`the list of examples <automation-rules:Examples>` for rules that "
+"are commonly used."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:64
+msgid "Want to test if your rule works?"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:65
+msgid ""
+"If you are using Git in order to create new versions, create a Git tag or "
+"branch that matches the rule and check if your automation action is "
+"triggered. After the experiment, you can delete both from Git and Read the "
+"Docs."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:74
+msgid "Ordering your rules"
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:76
+msgid ""
+"The order your rules are listed in  :menuselection:`Admin --> Automation "
+"Rules` matters. Each action will be performed in that order, so earlier "
+"rules have a higher priority."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:80
+msgid "You can change the order using the up and down arrow buttons."
+msgstr ""
+
+#: ../../../guides/automation-rules.rst:84
+msgid ""
+"New rules are added at the start of the list (i.e. they have the highest "
+"priority)."
+msgstr ""
