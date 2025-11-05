@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-10-23 11:40:45 -0700",
-        "hash" : "a60ef040978424be9fe2def7f6e0dee300fbfc73",
-        "title" : "Add base classes for rich choice select fields (#12524)"
+        "date" : "2025-10-30 12:16:56 -0500",
+        "hash" : "582aa15b63e297fac7652cba8d7ea084f009786d",
+        "title" : "Version sync: skip syncing versions when lsremote fails (#12540)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-10-23 11:40:45 -0700",
-        "hash" : "a60ef040978424be9fe2def7f6e0dee300fbfc73",
-        "title" : "Add base classes for rich choice select fields (#12524)"
+        "date" : "2025-10-30 12:16:56 -0500",
+        "hash" : "582aa15b63e297fac7652cba8d7ea084f009786d",
+        "title" : "Version sync: skip syncing versions when lsremote fails (#12540)"
       }
     }
   },
