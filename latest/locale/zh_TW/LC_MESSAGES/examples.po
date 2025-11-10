@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../examples.rst:2
 msgid "Example projects"
-msgstr ""
+msgstr "範例專案"
 
 #: ../../../examples.rst:4
 msgid ""

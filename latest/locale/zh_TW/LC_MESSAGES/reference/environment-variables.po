@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../reference/environment-variables.rst:0
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../reference/environment-variables.rst:16
 msgid "``readthedocs.org``"
