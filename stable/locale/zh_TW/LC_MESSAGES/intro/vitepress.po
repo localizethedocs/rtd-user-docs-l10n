@@ -121,7 +121,7 @@ msgstr ""
 
 #: ../../../intro/vitepress.rst:69
 msgid "https://dbtoolsbundle.readthedocs.io/en/stable/"
-msgstr ""
+msgstr "https://dbtoolsbundle.readthedocs.io/en/stable/"
 
 #: ../../../intro/vitepress.rst:71
 msgid "Example repository"

@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../../commercial/organizations.rst:40
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../commercial/organizations.rst:42
 msgid ""

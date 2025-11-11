@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../localization.rst:70
 msgid "Translation workflows"
-msgstr ""
+msgstr "翻譯工作流"
 
 #: ../../../localization.rst:72
 msgid ""

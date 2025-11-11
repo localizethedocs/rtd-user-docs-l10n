@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../build-notifications.rst:2
 msgid "Build failure notifications"
-msgstr ""
+msgstr "建置失敗通知"
 
 #: ../../../build-notifications.rst:4
 msgid ""
