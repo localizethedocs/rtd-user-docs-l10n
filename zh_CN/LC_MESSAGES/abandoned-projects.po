@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../abandoned-projects.rst:2
+msgid "Abandoned projects policy"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:4
+msgid ""
+"This policy describes the process by which a Read the Docs project :term:"
+"`slug` may be changed."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:6
+msgid ""
+"If you want to de-list a project's fork from search results, please see :doc:"
+"`/unofficial-projects`."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:9
+msgid "Rationale"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:11
+msgid ""
+"Conflict between the current use of the name and a different suggested use "
+"of the same name occasionally arise.  This document aims to provide general "
+"guidelines for solving the most typical cases of such conflicts."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:16
+msgid "Specification"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:18
+msgid ""
+"The main idea behind this policy is that Read the Docs serves the "
+"community.  Every user is invited to upload content under the Terms of Use, "
+"understanding that it is at the sole risk of the user."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:22
+msgid ""
+"While Read the Docs is not a backup service, the core team of Read the Docs "
+"does their best to keep that content accessible indefinitely in its "
+"published form. However, in certain edge cases the greater community's needs "
+"might outweigh the individual's expectation of ownership of a project name."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:27
+msgid "The use cases covered by this policy are:"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:29 ../../../abandoned-projects.rst:55
+msgid "Abandoned projects"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:30
+msgid ""
+"Renaming a project so that the original project name can be used by a "
+"different project"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:33
+msgid "Active projects"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:34
+msgid "Resolving disputes over a name"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:37
+msgid "Implementation"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:40
+msgid "Reachability"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:42
+msgid ""
+"The user of Read the Docs is solely responsible for being reachable by the "
+"core team for matters concerning projects that the user owns. In every case "
+"where contacting the user is necessary, the core team will try to do so, "
+"using the following means of contact:"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:47
+msgid "E-mail address on file in the user's profile"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:48
+msgid "E-mail addresses found in the given project's documentation"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:49
+msgid "E-mail address on the project's home page"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:51
+msgid ""
+"The core team will stop trying to reach the user after six weeks and the "
+"user will be considered *unreachable*."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:57
+msgid "A project is considered *abandoned* when ALL of the following are met:"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:59
+msgid "Owner is unreachable (see `Reachability`_)"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:60
+msgid ""
+"The project has no proper documentation being served (no successful builds) "
+"or does not have any releases within the past twelve months"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:62
+msgid ""
+"No activity from the owner on the project's home page (or no home page "
+"found)."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:65
+msgid "All other projects are considered *active*."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:68
+msgid "Renaming of an abandoned project"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:70
+msgid "Projects are never renamed solely on the basis of abandonment."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:72
+msgid ""
+"An *abandoned* project can be renamed (by appending ``-abandoned`` and a "
+"uniquifying integer if needed) for purposes of reusing the name when ALL of "
+"the following are met:"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:76
+msgid ""
+"The project has been determined *abandoned* by the rules described above"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:77
+msgid ""
+"The candidate is able to demonstrate their own failed attempts to contact "
+"the existing owner"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:79
+msgid ""
+"The candidate is able to demonstrate that the project suggested to reuse the "
+"name already exists and meets notability requirements"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:81
+msgid ""
+"The candidate is able to demonstrate why a fork under a different name is "
+"not an acceptable workaround"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:83
+msgid "The project has fewer than 100 monthly pageviews"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:84
+msgid "The core team does not have any additional reservations."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:88
+msgid "Reporting an abandoned project"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:90
+msgid ""
+"You can report an abandoned project according to this policy by contacting "
+"our :doc:`/support`."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:92
+msgid "Please include the following information:"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:94
+msgid ""
+"URL of abandoned documentation project: ...\n"
+"URL of abandoned project's repository (if any): ...\n"
+"URL of abandoned project's website (if any): ...\n"
+"\n"
+"Are you suggesting that an alternative project should take over the\n"
+"name (slug) abandoned project? (y/n)\n"
+"\n"
+"URL of alternative documentation (if any): ...\n"
+"URL of alternative website (if any): ...\n"
+"URL of alternative repository (if any): ...\n"
+"\n"
+"Describe attempts of reaching the owner(s) of the abandoned project:\n"
+"..."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:112
+msgid "Name conflict resolution for active projects"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:114
+msgid ""
+"The core team of Read the Docs are not arbiters in disputes around *active* "
+"projects. The core team recommends users to get in touch with each other and "
+"solve the issue by respectful communication."
+msgstr ""
+
+#: ../../../abandoned-projects.rst:119
+msgid "Prior art"
+msgstr ""
+
+#: ../../../abandoned-projects.rst:121
+msgid ""
+"The Python Package Index (PyPI) policy for claiming abandoned packages "
+"(`PEP-0541 <https://www.python.org/dev/peps/pep-0541>`_) heavily influenced "
+"this policy."
+msgstr ""
