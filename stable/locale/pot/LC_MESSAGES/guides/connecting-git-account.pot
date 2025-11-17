@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -119,7 +120,7 @@ msgid "On Bitbucket, navigate to `Application Authorizations`_."
 msgstr ""
 
 #: ../../../guides/connecting-git-account.rst:62
-msgid "On GitLab, navigat to `Applications`_"
+msgid "On GitLab, navigate to `Applications`_"
 msgstr ""
 
 #: ../../../guides/connecting-git-account.rst:68
