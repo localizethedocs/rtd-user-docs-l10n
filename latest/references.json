@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-10-30 12:16:56 -0500",
-        "hash" : "582aa15b63e297fac7652cba8d7ea084f009786d",
-        "title" : "Version sync: skip syncing versions when lsremote fails (#12540)"
+        "date" : "2025-11-12 10:48:24 -0800",
+        "hash" : "b0274f3c1d10b32b522c608b8dc34c656e3aa0e9",
+        "title" : "Handle Docker exceptions without explanation attribute (#12570)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-10-30 12:16:56 -0500",
-        "hash" : "582aa15b63e297fac7652cba8d7ea084f009786d",
-        "title" : "Version sync: skip syncing versions when lsremote fails (#12540)"
+        "date" : "2025-11-12 10:48:24 -0800",
+        "hash" : "b0274f3c1d10b32b522c608b8dc34c656e3aa0e9",
+        "title" : "Handle Docker exceptions without explanation attribute (#12570)"
       }
     }
   },
