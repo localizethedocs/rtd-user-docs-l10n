@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 17:13+0000\n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/technical-docs-seo-guide.rst:59
-msgid "Avoid low content pages or pages with very little original content."
+msgid "Avoid low content pages or pages with minimal original content."
 msgstr ""
 
 #: ../../../guides/technical-docs-seo-guide.rst:60
