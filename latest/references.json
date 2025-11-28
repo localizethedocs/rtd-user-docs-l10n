@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-11-12 10:48:24 -0800",
-        "hash" : "b0274f3c1d10b32b522c608b8dc34c656e3aa0e9",
-        "title" : "Handle Docker exceptions without explanation attribute (#12570)"
+        "date" : "2025-11-24 09:28:46 +0100",
+        "hash" : "45bd0ad02c2059aecd288d4edfbc517fea50adaa",
+        "title" : "Dependencies: all packages updated via pip-tools (#12591)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-11-12 10:48:24 -0800",
-        "hash" : "b0274f3c1d10b32b522c608b8dc34c656e3aa0e9",
-        "title" : "Handle Docker exceptions without explanation attribute (#12570)"
+        "date" : "2025-11-24 09:28:46 +0100",
+        "hash" : "45bd0ad02c2059aecd288d4edfbc517fea50adaa",
+        "title" : "Dependencies: all packages updated via pip-tools (#12591)"
       }
     }
   },
