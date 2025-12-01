@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-01 08:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,17 +158,35 @@ msgstr ""
 msgid "Search analytics demo. Read more in :doc:`/search-analytics`."
 msgstr ""
 
-#: ../../../server-side-search/index.rst:79
+#: ../../../server-side-search/index.rst:78
 msgid "Search as you type"
 msgstr ""
 
-#: ../../../server-side-search/index.rst:81
+#: ../../../server-side-search/index.rst:80
 msgid ""
 "Search as-you-type allows users to quickly find exactly what they are "
 "looking for while typing. It also saves recent searches, for future "
 "reference."
 msgstr ""
 
-#: ../../../server-side-search/index.rst:84
+#: ../../../server-side-search/index.rst:83
 msgid "Try it by pressing :guilabel:`/` (forward slash) and typing."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:86
+msgid "How main content is detected"
+msgstr ""
+
+#: ../../../server-side-search/index.rst:88
+msgid ""
+"Server Side Search indexes the \"main content\" of HTML pages, ignoring "
+"headers, footers, navigation, and other page elements that aren't part of "
+"the documentation content itself. This keeps results focused and avoids "
+"repeated elements like nav menus from polluting relevance."
+msgstr ""
+
+#: ../../../server-side-search/index.rst:92
+msgid ""
+"For details on how the main content area is detected, see :ref:`reference/"
+"main-content-detection:detection logic`."
 msgstr ""

@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-01 08:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/zensical.rst:-1
+msgid "Learn how to host Zensical sites on Read the Docs."
+msgstr ""
+
+#: ../../../intro/zensical.rst:2
+msgid "Deploying Zensical on Read the Docs"
+msgstr ""
+
+#: ../../../intro/zensical.rst:7
+msgid ""
+"Zensical_ is a modern static site generator designed to simplify building "
+"and maintaining project documentation. It's built by the creators of "
+"Material for MkDocs and shares the same core design principles and "
+"philosophy – batteries included, easy to use, with powerful customization "
+"options."
+msgstr ""
+
+#: ../../../intro/zensical.rst:12
+msgid ""
+"Minimal configuration is required to build an existing Zensical project on "
+"Read the Docs:"
+msgstr ""
+
+#: ../../../intro/zensical.rst:14
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../intro/zensical.rst:14
+msgid ""
+" version: 2\n"
+"\n"
+" build:\n"
+" os: ubuntu-24.04\n"
+" tools:\n"
+"     python: latest\n"
+" jobs:\n"
+"   # We recommend using a requirements file for reproducible builds.\n"
+"   # This is just a quick example to get started.\n"
+"   # https://docs.readthedocs.io/page/guides/reproducible-builds.html\n"
+"   install:\n"
+"     - pip install zensical\n"
+"   build:\n"
+"     html:\n"
+"       - zensical build\n"
+"   post_build:\n"
+"     - mkdir -p $READTHEDOCS_OUTPUT/html/\n"
+"     - cp --recursive site/* $READTHEDOCS_OUTPUT/html/"
+msgstr ""
+
+#: ../../../intro/zensical.rst:39
+msgid "Quick start"
+msgstr ""
+
+#: ../../../intro/zensical.rst:41
+msgid ""
+"If you have an existing Zensical project you want to host on Read the Docs, "
+"check out our :doc:`/intro/add-project` guide."
+msgstr ""
+
+#: ../../../intro/zensical.rst:42
+msgid ""
+"If you're new to Zensical, check out the official `Getting Started <https://"
+"zensical.org/docs/get-started/>`_ guide."
+msgstr ""
+
+#: ../../../intro/zensical.rst:45
+msgid "Configuring Zensical and Read the Docs Addons"
+msgstr ""
+
+#: ../../../intro/zensical.rst:47
+msgid ""
+"There are some additional steps you can take to configure your Zensical "
+"project to work better with Read the Docs."
+msgstr ""
+
+#: ../../../intro/zensical.rst:54
+msgid "Set the canonical URL"
+msgstr ""
+
+#: ../../../intro/zensical.rst:56
+msgid ""
+"A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
+"version of a web page to prevent duplicated content."
+msgstr ""
+
+#: ../../../intro/zensical.rst:59
+msgid ""
+"Set your Zensical `site URL`_ to your Read the Docs canonical URL using a :"
+"doc:`Read the Docs environment variable </reference/environment-variables>`:"
+msgstr ""
+
+#: ../../../intro/zensical.rst:62
+msgid "zensical.toml"
+msgstr ""
+
+#: ../../../intro/zensical.rst:62
+msgid ""
+"[project]\n"
+"# Note: variable interpolation is not yet supported in Zensical "
+"configuration files,\n"
+"# so you can use the explicit value for now.\n"
+"site_url = \"https://your-project.readthedocs.io/\""
+msgstr ""
+
+#: ../../../intro/zensical.rst:73
+msgid "Example repository and demo"
+msgstr ""
+
+#: ../../../intro/zensical.rst:75
+msgid "Example repository"
+msgstr ""
+
+#: ../../../intro/zensical.rst:76
+msgid "https://github.com/readthedocs/test-builds/tree/zensical"
+msgstr ""
+
+#: ../../../intro/zensical.rst:78
+msgid "Demo"
+msgstr ""
+
+#: ../../../intro/zensical.rst:79
+msgid "https://test-builds.readthedocs.io/en/zensical/"
+msgstr ""
+
+#: ../../../intro/zensical.rst:82
+msgid "Further reading"
+msgstr ""
+
+#: ../../../intro/zensical.rst:84
+msgid "`Zensical documentation`_"
+msgstr ""
+
+#: ../../../intro/zensical.rst:85
+msgid "`Markdown syntax guide`_"
+msgstr ""
