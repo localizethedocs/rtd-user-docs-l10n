@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-01 08:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,18 @@ msgstr ""
 msgid "Hosting Sphinx documentation on Read the Docs."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:2
-msgid "Sphinx"
-msgstr "Sphinx"
+#: ../../../intro/sphinx.rst:3
+msgid "Deploying Sphinx on Read the Docs"
+msgstr ""
 
-#: ../../../intro/sphinx.rst:7
+#: ../../../intro/sphinx.rst:8
 msgid ""
 "`Sphinx`_ is a powerful documentation generator that has many features for "
 "writing technical documentation. Sphinx is written in Python, and supports "
 "documentation written in reStructuredText and Markdown."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:11
+#: ../../../intro/sphinx.rst:12
 msgid ""
 "Minimal configuration required to build an existing Sphinx project on Read "
 "the Docs looks like this, specifying a Python 3.x toolchain on Ubuntu, using "
@@ -40,11 +40,11 @@ msgid ""
 "location of the installation requirements:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:15
+#: ../../../intro/sphinx.rst:16
 msgid ".readthedocs.yaml"
 msgstr ".readthedocs.yaml"
 
-#: ../../../intro/sphinx.rst:15
+#: ../../../intro/sphinx.rst:16
 msgid ""
 " version: 2\n"
 "\n"
@@ -61,88 +61,88 @@ msgid ""
 "     - requirements: requirements.txt"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:35
+#: ../../../intro/sphinx.rst:36
 msgid "Quick start"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:37
+#: ../../../intro/sphinx.rst:38
 msgid ""
 "If you have an existing Sphinx project you want to host on Read the Docs, "
 "check out our :doc:`/intro/add-project` guide."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:38
+#: ../../../intro/sphinx.rst:39
 msgid ""
 "If you're new to Sphinx, check out the official `Getting started with "
 "Sphinx`_ guide."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:39
+#: ../../../intro/sphinx.rst:40
 msgid ""
 "For a step-by-step tutorial on Read the Docs using an example Sphinx "
 "project, take a look at the :doc:`/tutorial/index`."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:44
+#: ../../../intro/sphinx.rst:45
 msgid "Configuring Sphinx and Read the Docs Addons"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:46
+#: ../../../intro/sphinx.rst:47
 msgid ""
 "For optimal integration with Read the Docs, make the following optional "
 "configuration changes to your Sphinx config."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:54
+#: ../../../intro/sphinx.rst:55
 msgid "Set the canonical URL"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:56
+#: ../../../intro/sphinx.rst:57
 msgid ""
 "A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
 "version of a web page to prevent duplicated content."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:59
+#: ../../../intro/sphinx.rst:60
 msgid ""
 "Set your `html_baseurl`_ to your Read the Docs canonical URL using a :doc:"
 "`Read the Docs environment variable </reference/environment-variables>`:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:62 ../../../intro/sphinx.rst:91
+#: ../../../intro/sphinx.rst:63 ../../../intro/sphinx.rst:92
 msgid "conf.py"
 msgstr "conf.py"
 
-#: ../../../intro/sphinx.rst:62
+#: ../../../intro/sphinx.rst:63
 msgid "html_baseurl = os.environ.get(\"READTHEDOCS_CANONICAL_URL\", \"/\")"
 msgstr "html_baseurl = os.environ.get(\"READTHEDOCS_CANONICAL_URL\", \"/\")"
 
-#: ../../../intro/sphinx.rst:70
+#: ../../../intro/sphinx.rst:71
 msgid "Configure Read the Docs search"
 msgstr "組態 Read the Docs 搜尋"
 
-#: ../../../intro/sphinx.rst:72
+#: ../../../intro/sphinx.rst:73
 msgid ""
 "If you're using the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme."
 "readthedocs.io/en/stable/>`__, :doc:`Server side search </server-side-search/"
 "index>` already works out of the box."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:75
+#: ../../../intro/sphinx.rst:76
 msgid ""
 "If you're using a different theme, enable :doc:`Server side search </server-"
 "side-search/index>`:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:77
+#: ../../../intro/sphinx.rst:78
 msgid "Add a snippet of JavaScript:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:79
+#: ../../../intro/sphinx.rst:80
 msgid "readthedocs.js"
 msgstr "readthedocs.js"
 
-#: ../../../intro/sphinx.rst:79
+#: ../../../intro/sphinx.rst:80
 msgid ""
 "// Trigger the Read the Docs Addons Search modal when clicking on \"Search "
 "docs\" input from the topnav.\n"
@@ -155,11 +155,11 @@ msgid ""
 "});"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:89
+#: ../../../intro/sphinx.rst:90
 msgid "Include it in your build:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:91
+#: ../../../intro/sphinx.rst:92
 msgid ""
 " html_js_files = [\n"
 "     (\"readthedocs.js\", {\"defer\": \"defer\"}),\n"
@@ -169,17 +169,17 @@ msgstr ""
 "     (\"readthedocs.js\", {\"defer\": \"defer\"}),\n"
 " ]"
 
-#: ../../../intro/sphinx.rst:99
+#: ../../../intro/sphinx.rst:100
 msgid "Integrate the Read the Docs version menu into your site navigation"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:101
+#: ../../../intro/sphinx.rst:102
 msgid ""
 "The :ref:`flyout-menu:Addons flyout menu` displays differently depending on "
 "which Sphinx theme your documentation uses."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:103
+#: ../../../intro/sphinx.rst:104
 msgid ""
 "If you're using the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme."
 "readthedocs.io/en/stable/>`__, the :ref:`flyout-menu:Addons flyout menu` is "
@@ -192,100 +192,103 @@ msgid ""
 "configure it."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:105
+#: ../../../intro/sphinx.rst:106
 msgid ""
 "If you're using another theme, the flyout menu displays in the bottom right "
 "of the docs."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:107
+#: ../../../intro/sphinx.rst:108
 msgid ""
 "In either case, you can configure the flyout menu sorting and display "
 "options in :guilabel:`Settings`, under :guilabel:`Addons`."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:110
+#: ../../../intro/sphinx.rst:111
 msgid "Using Markdown with Sphinx"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:112
+#: ../../../intro/sphinx.rst:113
 msgid ""
 "You can use `Markdown using MyST`_ and reStructuredText in the same Sphinx "
 "project. We support this natively on Read the Docs, and you can also use it "
 "locally by installing ``myst-parser``:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:118
+#: ../../../intro/sphinx.rst:119
 msgid "pip install myst-parser"
 msgstr "pip install myst-parser"
 
-#: ../../../intro/sphinx.rst:119
+#: ../../../intro/sphinx.rst:120
 msgid "Then in your ``conf.py``:"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:121
+#: ../../../intro/sphinx.rst:122
 msgid "extensions = [\"myst_parser\"]"
 msgstr "extensions = [\"myst_parser\"]"
 
-#: ../../../intro/sphinx.rst:125
+#: ../../../intro/sphinx.rst:126
 msgid ""
 "You can now continue writing your docs in ``.md`` files and it will work "
 "with Sphinx."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:129
+#: ../../../intro/sphinx.rst:130
 msgid ""
 "`Getting started with MyST in Sphinx <https://myst-parser.readthedocs.io/en/"
 "latest/sphinx/intro.html>`_"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:130
+#: ../../../intro/sphinx.rst:131
 msgid ""
 "Learn how to use MyST to write Markdown documentation in your Sphinx project."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:132
+#: ../../../intro/sphinx.rst:133
 msgid ":doc:`/guides/migrate-rest-myst`"
 msgstr ":doc:`/guides/migrate-rest-myst`"
 
-#: ../../../intro/sphinx.rst:133
+#: ../../../intro/sphinx.rst:134
 msgid ""
 "Start writing Markdown in your existing reStructuredText project, or migrate "
 "it completely."
 msgstr ""
 
-#: ../../../intro/sphinx.rst:138
+#: ../../../intro/sphinx.rst:139
 msgid "Example repository and demo"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:140
+#: ../../../intro/sphinx.rst:141
 msgid "Example repository"
 msgstr "範例儲存庫"
 
-#: ../../../intro/sphinx.rst:141
+#: ../../../intro/sphinx.rst:142
 msgid "https://github.com/readthedocs/test-builds/tree/full-feature"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:143
+#: ../../../intro/sphinx.rst:144
 msgid "Demo"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:144
+#: ../../../intro/sphinx.rst:145
 msgid "https://test-builds.readthedocs.io/en/full-feature"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:147
+#: ../../../intro/sphinx.rst:148
 msgid "Further reading"
 msgstr "延伸閱讀"
 
-#: ../../../intro/sphinx.rst:149
+#: ../../../intro/sphinx.rst:150
 msgid "`Sphinx documentation`_"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:150
+#: ../../../intro/sphinx.rst:151
 msgid ":doc:`RestructuredText primer <sphinx:usage/restructuredtext/basics>`"
 msgstr ""
 
-#: ../../../intro/sphinx.rst:151
+#: ../../../intro/sphinx.rst:152
 msgid "`An introduction to Sphinx and Read the Docs for technical writers`_"
 msgstr ""
+
+#~ msgid "Sphinx"
+#~ msgstr "Sphinx"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-01 08:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,27 +21,27 @@ msgstr ""
 msgid "Learn how to host VitePress documentation on Read the Docs."
 msgstr ""
 
-#: ../../../intro/vitepress.rst:2
-msgid "VitePress"
+#: ../../../intro/vitepress.rst:3
+msgid "Deploying VitePress on Read the Docs"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:7
+#: ../../../intro/vitepress.rst:8
 msgid ""
 "`VitePress`_ is a static site generator with a focus on performance and "
 "simplicity."
 msgstr ""
 
-#: ../../../intro/vitepress.rst:9
+#: ../../../intro/vitepress.rst:10
 msgid ""
 "Minimal configuration is required to build an existing VitePress project on "
 "Read the Docs."
 msgstr ""
 
-#: ../../../intro/vitepress.rst:11
+#: ../../../intro/vitepress.rst:12
 msgid ".readthedocs.yaml"
 msgstr ".readthedocs.yaml"
 
-#: ../../../intro/vitepress.rst:11
+#: ../../../intro/vitepress.rst:12
 msgid ""
 " version: 2\n"
 "\n"
@@ -62,38 +62,38 @@ msgid ""
 "                 - mv docs/.vitepress/dist $READTHEDOCS_OUTPUT/html"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:35
+#: ../../../intro/vitepress.rst:36
 msgid "Getting started"
 msgstr "開始使用"
 
-#: ../../../intro/vitepress.rst:37
+#: ../../../intro/vitepress.rst:38
 msgid ""
 "If you have an existing VitePress project you want to host on Read the Docs, "
 "check out our :doc:`/intro/add-project` guide."
 msgstr ""
 
-#: ../../../intro/vitepress.rst:38
+#: ../../../intro/vitepress.rst:39
 msgid ""
 "If you're new to VitePress, check out the official `Getting started with "
 "VitePress`_ guide."
 msgstr ""
 
-#: ../../../intro/vitepress.rst:43
+#: ../../../intro/vitepress.rst:44
 msgid "Using the proper base path"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:45
+#: ../../../intro/vitepress.rst:46
 msgid ""
 "To ensure that your VitePress site works correctly on Read the Docs, you "
 "need to set the ``base`` option in your VitePress configuration to the "
 "correct base path:"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:48
+#: ../../../intro/vitepress.rst:49
 msgid ".vitepress/config.js"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:48
+#: ../../../intro/vitepress.rst:49
 msgid ""
 " import { defineConfig } from 'vitepress'\n"
 "\n"
@@ -111,38 +111,38 @@ msgid ""
 " })"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:66
+#: ../../../intro/vitepress.rst:67
 msgid "Example repository and demo"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:68
+#: ../../../intro/vitepress.rst:69
 msgid "Production example from DbToolsBundle"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:69
+#: ../../../intro/vitepress.rst:70
 msgid "https://dbtoolsbundle.readthedocs.io/en/stable/"
 msgstr "https://dbtoolsbundle.readthedocs.io/en/stable/"
 
-#: ../../../intro/vitepress.rst:71
+#: ../../../intro/vitepress.rst:72
 msgid "Example repository"
 msgstr "範例儲存庫"
 
-#: ../../../intro/vitepress.rst:72
+#: ../../../intro/vitepress.rst:73
 msgid "https://github.com/readthedocs/test-builds/tree/vitepress"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:74
+#: ../../../intro/vitepress.rst:75
 msgid "Demo"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:75
+#: ../../../intro/vitepress.rst:76
 msgid "https://test-builds.readthedocs.io/en/vitepress/"
 msgstr ""
 
-#: ../../../intro/vitepress.rst:78
+#: ../../../intro/vitepress.rst:79
 msgid "Further reading"
 msgstr "延伸閱讀"
 
-#: ../../../intro/vitepress.rst:80
+#: ../../../intro/vitepress.rst:81
 msgid "`VitePress documentation`_"
 msgstr ""

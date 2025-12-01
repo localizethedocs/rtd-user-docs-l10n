@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-01 08:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "Hosting MkDocs sites on Read the Docs."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:2
-msgid "MkDocs"
+#: ../../../intro/mkdocs.rst:3
+msgid "Deploying MkDocs on Read the Docs"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:7
+#: ../../../intro/mkdocs.rst:8
 msgid ""
 "`MkDocs`_ is a fast, simple static site generator that's geared towards "
 "building project documentation. MkDocs is written in Python, and supports "
@@ -34,17 +34,17 @@ msgid ""
 "integration required to make it work well on Read the Docs."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:12
+#: ../../../intro/mkdocs.rst:13
 msgid ""
 "Minimal configuration is required to build an existing MkDocs project on "
 "Read the Docs:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:14
+#: ../../../intro/mkdocs.rst:15
 msgid ".readthedocs.yaml"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:14
+#: ../../../intro/mkdocs.rst:15
 msgid ""
 " version: 2\n"
 "\n"
@@ -63,118 +63,118 @@ msgid ""
 "   configuration: mkdocs.yml"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:37
+#: ../../../intro/mkdocs.rst:38
 msgid "Configuring Material for MkDocs on Read the Docs"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:39
+#: ../../../intro/mkdocs.rst:40
 msgid ""
 "In order to use the Material for MkDocs theme on Read the Docs, you need to "
 "install and configure it. In your `mkdocs.yml` file, set the theme to "
 "`material`:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:43 ../../../intro/mkdocs.rst:74
-#: ../../../intro/mkdocs.rst:111 ../../../intro/mkdocs.rst:173
+#: ../../../intro/mkdocs.rst:44 ../../../intro/mkdocs.rst:75
+#: ../../../intro/mkdocs.rst:112 ../../../intro/mkdocs.rst:174
 msgid "mkdocs.yml"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:43
+#: ../../../intro/mkdocs.rst:44
 msgid ""
 " theme:\n"
 "   name: material"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:49
+#: ../../../intro/mkdocs.rst:50
 msgid ""
 "With these changes, your MkDocs project will use the Material for MkDocs "
 "theme when built on Read the Docs, and should work with the configuration "
 "file shown above."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:53
+#: ../../../intro/mkdocs.rst:54
 msgid "Quick start"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:55
+#: ../../../intro/mkdocs.rst:56
 msgid ""
 "You can use our :ref:`MkDocs example project <examples:mkdocs>` as a "
 "reference to create a new MkDocs project."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:56
+#: ../../../intro/mkdocs.rst:57
 msgid ""
 "If you have an existing MkDocs project you want to host on Read the Docs, "
 "check out our :doc:`/intro/add-project` guide."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:57
+#: ../../../intro/mkdocs.rst:58
 msgid ""
 "If you're new to MkDocs, check out the official `Getting Started <https://"
 "www.mkdocs.org/getting-started/>`_ guide."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:60
+#: ../../../intro/mkdocs.rst:61
 msgid "Configuring MkDocs and Read the Docs Addons"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:62
+#: ../../../intro/mkdocs.rst:63
 msgid ""
 "There are some additional steps you can take to configure your MkDocs "
 "project to work better with Read the Docs, and these apply to all MkDocs "
 "projects."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:66
+#: ../../../intro/mkdocs.rst:67
 msgid "Set the canonical URL"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:68
+#: ../../../intro/mkdocs.rst:69
 msgid ""
 "A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
 "version of a web page to prevent duplicated content."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:71
+#: ../../../intro/mkdocs.rst:72
 msgid ""
 "Set your MkDocs `site URL`_ to your Read the Docs canonical URL using a :doc:"
 "`Read the Docs environment variable </reference/environment-variables>`:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:74
+#: ../../../intro/mkdocs.rst:75
 msgid "site_url: !ENV READTHEDOCS_CANONICAL_URL"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:82
+#: ../../../intro/mkdocs.rst:83
 msgid "Configuring Material for MkDocs and Read the Docs Addons"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:84
+#: ../../../intro/mkdocs.rst:85
 msgid ""
 "`Material for MkDocs`_ is a powerful documentation theme on top of MkDocs. "
 "The following steps are specific to integrating Material for MkDocs and Read "
 "the Docs."
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:92
+#: ../../../intro/mkdocs.rst:93
 msgid "Configure Read the Docs search"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:94
+#: ../../../intro/mkdocs.rst:95
 msgid ""
 "To configure your site to use :doc:`Read the Docs search </server-side-"
 "search/index>` instead of the default search:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:96
+#: ../../../intro/mkdocs.rst:97
 msgid "Add the following block of JavaScript:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:98 ../../../intro/mkdocs.rst:136
+#: ../../../intro/mkdocs.rst:99 ../../../intro/mkdocs.rst:137
 msgid "javascript/readthedocs.js"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:98
+#: ../../../intro/mkdocs.rst:99
 msgid ""
 "document.addEventListener(\"DOMContentLoaded\", function(event) {\n"
 "// Trigger Read the Docs' search addon instead of Material MkDocs default\n"
@@ -186,37 +186,37 @@ msgid ""
 "});"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:109
+#: ../../../intro/mkdocs.rst:110
 msgid "Include ``javascript/readthedocs.js`` in your MkDocs configuration:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:111 ../../../intro/mkdocs.rst:173
+#: ../../../intro/mkdocs.rst:112 ../../../intro/mkdocs.rst:174
 msgid ""
 "extra_javascript:\n"
 "    - javascript/readthedocs.js"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:118
+#: ../../../intro/mkdocs.rst:119
 msgid "Integrate the Read the Docs version menu into your site navigation"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:120
+#: ../../../intro/mkdocs.rst:121
 msgid ""
 "To integrate the :ref:`flyout-menu:Addons flyout menu` version menu into "
 "your site navigation:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:122
+#: ../../../intro/mkdocs.rst:123
 msgid ""
 "Override the ``main.html`` template to include the data in the ``meta`` "
 "attribute:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:124
+#: ../../../intro/mkdocs.rst:125
 msgid "overrides/main.html"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:124
+#: ../../../intro/mkdocs.rst:125
 msgid ""
 "{% extends \"base.html\" %}\n"
 "\n"
@@ -226,13 +226,13 @@ msgid ""
 "{% endblock %}"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:134
+#: ../../../intro/mkdocs.rst:135
 msgid ""
 "Parse the version data into a dropdown menu using JS in ``javascript/"
 "readthedocs.js``:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:136
+#: ../../../intro/mkdocs.rst:137
 msgid ""
 "// Use CustomEvent to generate the version selector\n"
 "document.addEventListener(\n"
@@ -269,44 +269,44 @@ msgid ""
 "});"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:171
+#: ../../../intro/mkdocs.rst:172
 msgid ""
 "Make sure that ``javascript/readthedocs.js`` is included in your MkDocs "
 "configuration:"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:180
+#: ../../../intro/mkdocs.rst:181
 msgid "Example repository and demo"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:182
+#: ../../../intro/mkdocs.rst:183
 msgid "Example repository"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:183
+#: ../../../intro/mkdocs.rst:184
 msgid "https://github.com/readthedocs/test-builds/tree/mkdocs-material"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:185
+#: ../../../intro/mkdocs.rst:186
 msgid "Demo"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:186
+#: ../../../intro/mkdocs.rst:187
 msgid "https://test-builds.readthedocs.io/en/mkdocs-material/"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:189
+#: ../../../intro/mkdocs.rst:190
 msgid "Further reading"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:191
+#: ../../../intro/mkdocs.rst:192
 msgid "`Material for MkDocs documentation`_"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:192
+#: ../../../intro/mkdocs.rst:193
 msgid "`Markdown syntax guide`_"
 msgstr ""
 
-#: ../../../intro/mkdocs.rst:193
+#: ../../../intro/mkdocs.rst:194
 msgid "`Writing your docs with MkDocs`_"
 msgstr ""
