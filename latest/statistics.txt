@@ -1,20 +1,20 @@
 [zh_CN]
 Number     of completed   po    files   : 0
 Number     of progressing po    files   : 0
-Number     of unstarted   po    files   : 141
-Number     of total       po    files   : 141
+Number     of unstarted   po    files   : 144
+Number     of total       po    files   : 144
 Percentage of completed   po    files   : 0%
 Number     of translated  msgid entries : 0
 Number     of fuzzy       msgid entries : 0
-Number     of total       msgid entries : 11407
+Number     of total       msgid entries : 11508
 Percentage of translated  msgid entries : 0%
 [zh_TW]
 Number     of completed   po    files   : 0
 Number     of progressing po    files   : 72
-Number     of unstarted   po    files   : 69
-Number     of total       po    files   : 141
+Number     of unstarted   po    files   : 72
+Number     of total       po    files   : 144
 Percentage of completed   po    files   : 0%
 Number     of translated  msgid entries : 338
 Number     of fuzzy       msgid entries : 0
-Number     of total       msgid entries : 11407
+Number     of total       msgid entries : 11508
 Percentage of translated  msgid entries : 2%
