@@ -289,6 +289,3 @@ msgstr ""
 #: ../../../intro/sphinx.rst:152
 msgid "`An introduction to Sphinx and Read the Docs for technical writers`_"
 msgstr ""
-
-#~ msgid "Sphinx"
-#~ msgstr "Sphinx"

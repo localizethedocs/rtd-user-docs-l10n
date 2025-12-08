@@ -203,6 +203,3 @@ msgstr ""
 #: ../../../intro/docusaurus.rst:109
 msgid "https://test-builds.readthedocs.io/en/docusaurus/"
 msgstr ""
-
-#~ msgid "Docusaurus"
-#~ msgstr "Docusaurus"
