@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../intro/docusaurus.rst:2
 msgid "Docusaurus"
-msgstr "Docusaurus"
+msgstr ""
 
 #: ../../../intro/docusaurus.rst:7
 msgid ""

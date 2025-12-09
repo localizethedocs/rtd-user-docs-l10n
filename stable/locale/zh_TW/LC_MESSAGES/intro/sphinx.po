@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:2
 msgid "Sphinx"
-msgstr "Sphinx"
+msgstr ""
 
 #: ../../../intro/sphinx.rst:7
 msgid ""
