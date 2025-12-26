@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,109 +50,141 @@ msgstr ""
 #: ../../../intro/doctools.rst:22 ../../../intro/doctools.rst:32
 #: ../../../intro/doctools.rst:42 ../../../intro/doctools.rst:52
 #: ../../../intro/doctools.rst:62 ../../../intro/doctools.rst:72
-#: ../../../intro/doctools.rst:83
+#: ../../../intro/doctools.rst:82 ../../../intro/doctools.rst:93
+#: ../../../intro/doctools.rst:104
 msgid "Supported formats"
 msgstr ""
 
-#: ../../../intro/doctools.rst:23 ../../../intro/doctools.rst:53
+#: ../../../intro/doctools.rst:23 ../../../intro/doctools.rst:33
 #: ../../../intro/doctools.rst:63 ../../../intro/doctools.rst:73
+#: ../../../intro/doctools.rst:83
 msgid ":bdg-success:`md`"
 msgstr ""
 
 #: ../../../intro/doctools.rst:24 ../../../intro/doctools.rst:34
 #: ../../../intro/doctools.rst:44 ../../../intro/doctools.rst:54
-#: ../../../intro/doctools.rst:64 ../../../intro/doctools.rst:75
-#: ../../../intro/doctools.rst:86
+#: ../../../intro/doctools.rst:64 ../../../intro/doctools.rst:74
+#: ../../../intro/doctools.rst:85 ../../../intro/doctools.rst:96
+#: ../../../intro/doctools.rst:107
 msgid "Written in"
 msgstr ""
 
-#: ../../../intro/doctools.rst:25 ../../../intro/doctools.rst:35
+#: ../../../intro/doctools.rst:25 ../../../intro/doctools.rst:45
 msgid ":bdg-info:`python`"
 msgstr ""
 
 #: ../../../intro/doctools.rst:27
-msgid "Sphinx"
+msgid "Zensical"
 msgstr ""
 
 #: ../../../intro/doctools.rst:30
+msgid ""
+"Zensical is a static-site generator built by the creators of Material for "
+"MkDocs."
+msgstr ""
+
+#: ../../../intro/doctools.rst:35
+msgid ":bdg-info:`rust` :bdg-info:`python`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:37
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../intro/doctools.rst:40
 msgid ""
 "Sphinx is a powerful documentation generator that has many features for "
 "writing technical documentation."
 msgstr ""
 
-#: ../../../intro/doctools.rst:33
+#: ../../../intro/doctools.rst:43
 msgid ":bdg-success:`rst` :bdg-success:`md`"
 msgstr ""
 
-#: ../../../intro/doctools.rst:37
+#: ../../../intro/doctools.rst:47
 msgid "Docusaurus"
 msgstr ""
 
-#: ../../../intro/doctools.rst:40
+#: ../../../intro/doctools.rst:50
 msgid ""
 "Docusaurus is a static-site generator that builds a single-page application "
 "with fast client-side navigation and out-of-the-box documentation features."
 msgstr ""
 
-#: ../../../intro/doctools.rst:43
+#: ../../../intro/doctools.rst:53
 msgid ":bdg-success:`mdx` :bdg-success:`md`"
 msgstr ""
 
-#: ../../../intro/doctools.rst:45
+#: ../../../intro/doctools.rst:55
 msgid ":bdg-info:`React`"
 msgstr ""
 
-#: ../../../intro/doctools.rst:47
+#: ../../../intro/doctools.rst:57
 msgid "Markdoc"
 msgstr ""
 
-#: ../../../intro/doctools.rst:50
+#: ../../../intro/doctools.rst:60
 msgid ""
 "Markdoc is a documentation tool developed by Stripe that allows you to write "
 "documentation in a custom Markdown flavor."
 msgstr ""
 
-#: ../../../intro/doctools.rst:55 ../../../intro/doctools.rst:87
+#: ../../../intro/doctools.rst:65 ../../../intro/doctools.rst:97
+#: ../../../intro/doctools.rst:108
 msgid ":bdg-info:`javascript`"
 msgstr ""
 
-#: ../../../intro/doctools.rst:57
+#: ../../../intro/doctools.rst:67
 msgid "mdBook"
 msgstr ""
 
-#: ../../../intro/doctools.rst:60
+#: ../../../intro/doctools.rst:70
 msgid ""
 "mdBook is a command line tool to create books with Markdown built in Rust."
 msgstr ""
 
-#: ../../../intro/doctools.rst:65
+#: ../../../intro/doctools.rst:75
 msgid ":bdg-info:`rust`"
 msgstr ""
 
-#: ../../../intro/doctools.rst:67
+#: ../../../intro/doctools.rst:77
 msgid "VitePress"
 msgstr ""
 
-#: ../../../intro/doctools.rst:70
+#: ../../../intro/doctools.rst:80
 msgid ""
 "VitePress is a static site generator with a focus on performance and "
 "simplicity."
 msgstr ""
 
-#: ../../../intro/doctools.rst:76
+#: ../../../intro/doctools.rst:86
 msgid ":bdg-info:`typescript`"
 msgstr ""
 
-#: ../../../intro/doctools.rst:78
+#: ../../../intro/doctools.rst:88
 msgid "Antora"
 msgstr ""
 
-#: ../../../intro/doctools.rst:81
+#: ../../../intro/doctools.rst:91
 msgid ""
 "Antora is a static site generator for creating documentation sites from "
 "AsciiDoc content."
 msgstr ""
 
-#: ../../../intro/doctools.rst:84
+#: ../../../intro/doctools.rst:94
 msgid ":bdg-success:`adoc`"
+msgstr ""
+
+#: ../../../intro/doctools.rst:99
+msgid "MyST Markdown"
+msgstr ""
+
+#: ../../../intro/doctools.rst:102
+msgid ""
+"MyST Markdown is a powerful authoring framework for scientific communication "
+"including blogs, books, papers, and articles."
+msgstr ""
+
+#: ../../../intro/doctools.rst:105
+msgid ":bdg-success:`md` :bdg-success:`ipynb`"
 msgstr ""

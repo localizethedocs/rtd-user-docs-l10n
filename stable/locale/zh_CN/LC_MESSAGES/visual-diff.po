@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,14 +176,41 @@ msgid "This option can be changed by contacting :doc:`/support`."
 msgstr ""
 
 #: ../../../visual-diff.rst:86
-msgid "Limitations and known issues"
+msgid "How main content is detected"
 msgstr ""
 
 #: ../../../visual-diff.rst:88
+msgid ""
+"The visual diff compares the \"main content\" of HTML pages, ignoring "
+"headers, footers, navigation, and other page elements that aren't part of "
+"the documentation content itself. This helps avoid false positives, like all "
+"pages being marked as changed because of a date or commit hash being updated "
+"in the footer."
+msgstr ""
+
+#: ../../../visual-diff.rst:92
+msgid ""
+"For details on how the main content area is detected, see :ref:`reference/"
+"main-content-detection:detection logic`."
+msgstr ""
+
+#: ../../../visual-diff.rst:97
+msgid ""
+"If the heuristic root element picked by Visual Diff is wrong for your "
+"project theme, set the :guilabel:`CSS main content selector` under :guilabel:"
+"`Settings > Addons`. Visual Diff honors this override; other features like "
+"Server Side Search do not."
+msgstr ""
+
+#: ../../../visual-diff.rst:100
+msgid "Limitations and known issues"
+msgstr ""
+
+#: ../../../visual-diff.rst:102
 msgid "The diff considers HTML files only."
 msgstr ""
 
-#: ../../../visual-diff.rst:89
+#: ../../../visual-diff.rst:103
 msgid ""
 "The diff is done between the files from the latest successful build of the "
 "pull request and the default base version (latest by default). If your pull "
@@ -191,16 +218,7 @@ msgid ""
 "and may show unrelated files and sections as changed."
 msgstr ""
 
-#: ../../../visual-diff.rst:91
-msgid ""
-"The diff is done by comparing the \"main content\" of the HTML files. This "
-"means that some changes outside the main content, like header or footer, may "
-"not be detected. This is done to avoid showing changes that are not relevant "
-"to the documentation content itself. Like all pages being marked as changed "
-"because of a date or commit hash being updated in the footer."
-msgstr ""
-
-#: ../../../visual-diff.rst:95
+#: ../../../visual-diff.rst:105
 msgid ""
 "Invisible changes. Some sections may be highlighted as changed, even when "
 "they haven't actually visually changed. This can happen when the underlying "
@@ -208,14 +226,14 @@ msgid ""
 "URL is updated"
 msgstr ""
 
-#: ../../../visual-diff.rst:97
+#: ../../../visual-diff.rst:107
 msgid ""
 "Tables may be shown to have changes when they have not actually changed. "
 "This is due to subtle variations in how HTML tables are rendered, and will "
 "be fixed in a future version."
 msgstr ""
 
-#: ../../../visual-diff.rst:99
+#: ../../../visual-diff.rst:109
 msgid ""
 "The background of diff chunks may be incorrect when we are unable to detect "
 "the correct main parent element for the chunk."

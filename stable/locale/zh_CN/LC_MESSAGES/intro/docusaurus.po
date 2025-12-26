@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,18 @@ msgstr ""
 msgid "Hosting Docusaurus sites on Read the Docs."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:2
-msgid "Docusaurus"
+#: ../../../intro/docusaurus.rst:3
+msgid "Deploying Docusaurus on Read the Docs"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:7
+#: ../../../intro/docusaurus.rst:8
 msgid ""
 "`Docusaurus`_ is a static-site generator that builds a single-page "
 "application with fast client-side navigation and out-of-the-box "
 "documentation features."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:9
+#: ../../../intro/docusaurus.rst:10
 msgid ""
 "Minimal configuration required to build a Docusaurus project on Read the "
 "Docs looks like this, specifying a Node.js toolchain on Ubuntu, using "
@@ -40,11 +40,11 @@ msgid ""
 "requirements, build the site, and copy the output to $READTHEDOCS_OUTPUT:"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:13
+#: ../../../intro/docusaurus.rst:14
 msgid ".readthedocs.yaml"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:13
+#: ../../../intro/docusaurus.rst:14
 msgid ""
 " version: 2\n"
 " build:\n"
@@ -67,7 +67,7 @@ msgid ""
 "         - cp --recursive docs/build/* $READTHEDOCS_OUTPUT/html/"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:39 ../../../intro/docusaurus.rst:41
+#: ../../../intro/docusaurus.rst:40 ../../../intro/docusaurus.rst:42
 msgid "Limitations"
 msgstr ""
 
@@ -103,53 +103,79 @@ msgstr ""
 msgid "Ability to see what HTML files change in pull request previews."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:48
+#: ../../../intro/docusaurus.rst:49
 msgid "Quick start"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:50
+#: ../../../intro/docusaurus.rst:51
 msgid ""
 "If you have an existing Docusaurus project you want to host on Read the "
 "Docs, check out our :doc:`/intro/add-project` guide."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:51
+#: ../../../intro/docusaurus.rst:52
 msgid ""
 "If you're new to Docusaurus, check out the official `Fast Track`_ guide."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:56
+#: ../../../intro/docusaurus.rst:57
 msgid "Configuring Docusaurus and Read the Docs Addons"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:58
+#: ../../../intro/docusaurus.rst:59
 msgid ""
 "For optimal integration with Read the Docs, make the following optional "
 "configuration changes to your Docusaurus config."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:66
+#: ../../../intro/docusaurus.rst:67
+msgid "Configure trailing slashes"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:69
+msgid ""
+"For proper operation on Read the Docs, you need to set ``trailingSlash: "
+"true`` in your Docusaurus configuration. This ensures that URLs like ``/docs/"
+"intro`` are handled as ``/docs/intro/`` and the corresponding ``index.html`` "
+"file is served correctly."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:72
+msgid ""
+"Without this setting (or if set to ``false``), you will need to configure "
+"redirects to ensure proper URL resolution."
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:74 ../../../intro/docusaurus.rst:91
+msgid "docusaurus.config.js"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:74
+msgid ""
+"export default {\n"
+"    // Required for compatibility with Read the Docs\n"
+"    trailingSlash: true,\n"
+"};"
+msgstr ""
+
+#: ../../../intro/docusaurus.rst:83
 msgid "Set the canonical URL"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:68
+#: ../../../intro/docusaurus.rst:85
 msgid ""
 "A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
 "version of a web page to prevent duplicated content."
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:71
+#: ../../../intro/docusaurus.rst:88
 msgid ""
 "Set your Docusaurus `url`_ to your Read the Docs canonical URL using `dotenv "
 "<https://www.npmjs.com/package/dotenv>`__ and a :doc:`Read the Docs "
 "environment variable </reference/environment-variables>`:"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:74
-msgid "docusaurus.config.js"
-msgstr ""
-
-#: ../../../intro/docusaurus.rst:74
+#: ../../../intro/docusaurus.rst:91
 msgid ""
 "import 'dotenv/config';\n"
 "\n"
@@ -158,22 +184,22 @@ msgid ""
 "};"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:86
+#: ../../../intro/docusaurus.rst:103
 msgid "Example repository and demo"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:88
+#: ../../../intro/docusaurus.rst:105
 msgid "Example repository"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:89
+#: ../../../intro/docusaurus.rst:106
 msgid "https://github.com/readthedocs/test-builds/tree/docusaurus"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:91
+#: ../../../intro/docusaurus.rst:108
 msgid "Demo"
 msgstr ""
 
-#: ../../../intro/docusaurus.rst:92
+#: ../../../intro/docusaurus.rst:109
 msgid "https://test-builds.readthedocs.io/en/docusaurus/"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,63 +226,99 @@ msgid ""
 msgstr ""
 
 #: ../../../builds.rst:116
-msgid "Build resources"
+msgid "Automatic disabling of builds"
 msgstr ""
 
 #: ../../../builds.rst:118
+msgid ""
+"To reduce resource consumption and improve build queue times for all users, "
+"Read the Docs will automatically disable builds for projects that have too "
+"many consecutive failed builds on their default version."
+msgstr ""
+
+#: ../../../builds.rst:121
+msgid ""
+"When a project has **25 consecutive failed builds** on its default version, "
+"we will disable builds for the project."
+msgstr ""
+
+#: ../../../builds.rst:124
+msgid ""
+"This helps ensure that projects with persistent build issues don't consume "
+"resources that could be used by active projects."
+msgstr ""
+
+#: ../../../builds.rst:128
+msgid ""
+"This only applies to the default version of a project. Builds on other "
+"versions (branches, tags, pull requests) are not counted towards this limit."
+msgstr ""
+
+#: ../../../builds.rst:131
+msgid ""
+"If your project has been disabled due to consecutive build failures, you'll "
+"need to re-enable from your project settings. Make sure to fix the "
+"underlying issue to avoid being disabled again."
+msgstr ""
+
+#: ../../../builds.rst:135
+msgid "Build resources"
+msgstr ""
+
+#: ../../../builds.rst:137
 msgid "Every build has limited resources assigned to it. Our build limits are:"
 msgstr ""
 
-#: ../../../builds.rst:123
+#: ../../../builds.rst:142
 msgid "|com_brand|"
 msgstr ""
 
-#: ../../../builds.rst:125
+#: ../../../builds.rst:144
 msgid "30 minutes build time (upgradable)"
 msgstr ""
 
-#: ../../../builds.rst:126
+#: ../../../builds.rst:145
 msgid "7GB of memory (upgradable)"
 msgstr ""
 
-#: ../../../builds.rst:127
+#: ../../../builds.rst:146
 msgid "Concurrent builds vary based on your pricing plan"
 msgstr ""
 
-#: ../../../builds.rst:129
+#: ../../../builds.rst:148
 msgid ""
 "If you are having trouble with your documentation builds, you can reach our "
 "support at support@readthedocs.com."
 msgstr ""
 
-#: ../../../builds.rst:132
+#: ../../../builds.rst:151
 msgid "|org_brand|"
 msgstr ""
 
-#: ../../../builds.rst:134
+#: ../../../builds.rst:153
 msgid "15 minutes build time"
 msgstr ""
 
-#: ../../../builds.rst:135
+#: ../../../builds.rst:154
 msgid "7GB of memory"
 msgstr ""
 
-#: ../../../builds.rst:136
+#: ../../../builds.rst:155
 msgid "2 concurrent builds"
 msgstr ""
 
-#: ../../../builds.rst:137
+#: ../../../builds.rst:156
 msgid "5GB of disk storage (soft limit)"
 msgstr ""
 
-#: ../../../builds.rst:139
+#: ../../../builds.rst:158
 msgid ""
 "We can increase build time on a per-project basis. Send an email to "
 "support@readthedocs.org providing a good reason why your documentation needs "
 "more resources."
 msgstr ""
 
-#: ../../../builds.rst:142
+#: ../../../builds.rst:161
 msgid ""
 "If your business is hitting build limits hosting documentation on Read the "
 "Docs, please consider :doc:`Read the Docs for Business </commercial/index>` "
