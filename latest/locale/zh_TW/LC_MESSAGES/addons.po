@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,56 +101,64 @@ msgstr ""
 msgid "Understand what your users are searching for"
 msgstr ""
 
+#: ../../../addons.rst:35
+msgid ":doc:`Custom script </custom-script>`"
+msgstr ""
+
 #: ../../../addons.rst:36
+msgid "Inject custom JavaScript into your documentation"
+msgstr ""
+
+#: ../../../addons.rst:39
 msgid "Configuring Read the Docs Addons"
 msgstr ""
 
-#: ../../../addons.rst:38
+#: ../../../addons.rst:41
 msgid ""
 "Individual configuration options for each addon are available in :guilabel:"
 "`Settings`."
 msgstr ""
 
-#: ../../../addons.rst:40
+#: ../../../addons.rst:43
 msgid "Go to the new :term:`dashboard`."
 msgstr ""
 
-#: ../../../addons.rst:41
+#: ../../../addons.rst:44
 msgid "Click on a project name."
 msgstr ""
 
-#: ../../../addons.rst:42
+#: ../../../addons.rst:45
 msgid "Go to :guilabel:`Settings`."
 msgstr ""
 
-#: ../../../addons.rst:43
+#: ../../../addons.rst:46
 msgid "In the left bar, go to :guilabel:`Addons`."
 msgstr ""
 
-#: ../../../addons.rst:44
+#: ../../../addons.rst:47
 msgid "Configure each Addon individually."
 msgstr ""
 
-#: ../../../addons.rst:47
+#: ../../../addons.rst:50
 msgid "Integrating with Addons"
 msgstr ""
 
-#: ../../../addons.rst:50
+#: ../../../addons.rst:53
 msgid "Integrate with Search as you type"
 msgstr ""
 
-#: ../../../addons.rst:52
+#: ../../../addons.rst:55
 msgid ""
 "To configure your site to use :doc:`Read the Docs search </server-side-"
 "search/index>` instead of the default search, adapt the following block of "
 "JavaScript to your own site:"
 msgstr ""
 
-#: ../../../addons.rst:54
+#: ../../../addons.rst:57
 msgid "javascript/readthedocs.js"
 msgstr ""
 
-#: ../../../addons.rst:54
+#: ../../../addons.rst:57
 msgid ""
 "// TODO: Change me if needed\n"
 "const selector = \"input[type='search']\";\n"
@@ -164,35 +172,35 @@ msgid ""
 "});"
 msgstr ""
 
-#: ../../../addons.rst:68
+#: ../../../addons.rst:71
 msgid ""
 "Depending on the tool you are using, you may need to change the selector to "
 "match the search input field. You will also need to ensure that the "
 "JavaScript file is included in your documentation build."
 msgstr ""
 
-#: ../../../addons.rst:73
+#: ../../../addons.rst:76
 msgid "Addons data and customization"
 msgstr ""
 
-#: ../../../addons.rst:75
+#: ../../../addons.rst:78
 msgid ""
 "Addons can be customized using CSS variables and the data used by Addons can "
 "be accessed using a custom event."
 msgstr ""
 
-#: ../../../addons.rst:78
+#: ../../../addons.rst:81
 msgid "CSS variable customization"
 msgstr ""
 
-#: ../../../addons.rst:80
+#: ../../../addons.rst:83
 msgid ""
 "Addons use CSS custom properties (`CSS variables <https://developer.mozilla."
 "org/en-US/docs/Web/CSS/--*>`_) to allow for easy customization. To customize "
 "addons, add CSS variable definitions to your theme's CSS:"
 msgstr ""
 
-#: ../../../addons.rst:83
+#: ../../../addons.rst:86
 msgid ""
 ":root {\n"
 "    /* Reduce Read the Docs' flyout font a little bit */\n"
@@ -208,7 +216,7 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../addons.rst:98
+#: ../../../addons.rst:101
 msgid "CSS variables reference"
 msgstr ""
 
@@ -216,165 +224,165 @@ msgstr ""
 msgid "Click to see all available CSS variables"
 msgstr ""
 
-#: ../../../addons.rst:104
+#: ../../../addons.rst:107
 msgid "**Global variables**"
 msgstr ""
 
-#: ../../../addons.rst:106
+#: ../../../addons.rst:109
 msgid "``--readthedocs-font-size``"
 msgstr ""
 
-#: ../../../addons.rst:108
+#: ../../../addons.rst:111
 msgid "**Flyout menu**"
 msgstr ""
 
-#: ../../../addons.rst:110
+#: ../../../addons.rst:113
 msgid "``--readthedocs-flyout-background-color``"
 msgstr "``--readthedocs-flyout-background-color``"
 
-#: ../../../addons.rst:111
+#: ../../../addons.rst:114
 msgid "``--readthedocs-flyout-color``"
 msgstr "``--readthedocs-flyout-color``"
 
-#: ../../../addons.rst:112
+#: ../../../addons.rst:115
 msgid "``--readthedocs-flyout-current-version-color``"
 msgstr "``--readthedocs-flyout-current-version-color``"
 
-#: ../../../addons.rst:113
+#: ../../../addons.rst:116
 msgid "``--readthedocs-flyout-font-family``"
 msgstr "``--readthedocs-flyout-font-family``"
 
-#: ../../../addons.rst:114
+#: ../../../addons.rst:117
 msgid "``--readthedocs-flyout-font-size``"
 msgstr "``--readthedocs-flyout-font-size``"
 
-#: ../../../addons.rst:115
+#: ../../../addons.rst:118
 msgid "``--readthedocs-flyout-header-font-size``"
 msgstr "``--readthedocs-flyout-header-font-size``"
 
-#: ../../../addons.rst:116
+#: ../../../addons.rst:119
 msgid "``--readthedocs-flyout-item-link-color``"
 msgstr "``--readthedocs-flyout-item-link-color``"
 
-#: ../../../addons.rst:117
+#: ../../../addons.rst:120
 msgid "``--readthedocs-flyout-link-color``"
 msgstr "``--readthedocs-flyout-link-color``"
 
-#: ../../../addons.rst:118
+#: ../../../addons.rst:121
 msgid "``--readthedocs-flyout-section-heading-color``"
 msgstr "``--readthedocs-flyout-section-heading-color``"
 
-#: ../../../addons.rst:120
+#: ../../../addons.rst:123
 msgid "**Notifications**"
 msgstr "**通知**"
 
-#: ../../../addons.rst:122
+#: ../../../addons.rst:125
 msgid "``--readthedocs-notification-background-color``"
 msgstr "``--readthedocs-notification-background-color``"
 
-#: ../../../addons.rst:123
+#: ../../../addons.rst:126
 msgid "``--readthedocs-notification-color``"
 msgstr "``--readthedocs-notification-color``"
 
-#: ../../../addons.rst:124
+#: ../../../addons.rst:127
 msgid "``--readthedocs-notification-font-family``"
 msgstr "``--readthedocs-notification-font-family``"
 
-#: ../../../addons.rst:125
+#: ../../../addons.rst:128
 msgid "``--readthedocs-notification-font-size``"
 msgstr "``--readthedocs-notification-font-size``"
 
-#: ../../../addons.rst:126
+#: ../../../addons.rst:129
 msgid "``--readthedocs-notification-link-color``"
 msgstr "``--readthedocs-notification-link-color``"
 
-#: ../../../addons.rst:127
+#: ../../../addons.rst:130
 msgid "``--readthedocs-notification-title-background-color``"
 msgstr "``--readthedocs-notification-title-background-color``"
 
-#: ../../../addons.rst:128
+#: ../../../addons.rst:131
 msgid "``--readthedocs-notification-title-color``"
 msgstr "``--readthedocs-notification-title-color``"
 
-#: ../../../addons.rst:129
+#: ../../../addons.rst:132
 msgid "``--readthedocs-notification-toast-font-size``"
 msgstr "``--readthedocs-notification-toast-font-size``"
 
-#: ../../../addons.rst:131
+#: ../../../addons.rst:134
 msgid "**Search**"
 msgstr "**搜尋**"
 
-#: ../../../addons.rst:133
+#: ../../../addons.rst:136
 msgid "``--readthedocs-search-backdrop-color``"
 msgstr "``--readthedocs-search-backdrop-color``"
 
-#: ../../../addons.rst:134
+#: ../../../addons.rst:137
 msgid "``--readthedocs-search-color``"
 msgstr "``--readthedocs-search-color``"
 
-#: ../../../addons.rst:135
+#: ../../../addons.rst:138
 msgid "``--readthedocs-search-content-background-color``"
 msgstr "``--readthedocs-search-content-background-color``"
 
-#: ../../../addons.rst:136
+#: ../../../addons.rst:139
 msgid "``--readthedocs-search-content-border-color``"
 msgstr "``--readthedocs-search-content-border-color``"
 
-#: ../../../addons.rst:137
+#: ../../../addons.rst:140
 msgid "``--readthedocs-search-filters-border-color``"
 msgstr "``--readthedocs-search-filters-border-color``"
 
-#: ../../../addons.rst:138
+#: ../../../addons.rst:141
 msgid "``--readthedocs-search-font-family``"
 msgstr "``--readthedocs-search-font-family``"
 
-#: ../../../addons.rst:139
+#: ../../../addons.rst:142
 msgid "``--readthedocs-search-font-size``"
 msgstr "``--readthedocs-search-font-size``"
 
-#: ../../../addons.rst:140
+#: ../../../addons.rst:143
 msgid "``--readthedocs-search-footer-background-color``"
 msgstr "``--readthedocs-search-footer-background-color``"
 
-#: ../../../addons.rst:141
+#: ../../../addons.rst:144
 msgid "``--readthedocs-search-footer-code-background-color``"
 msgstr "``--readthedocs-search-footer-code-background-color``"
 
-#: ../../../addons.rst:142
+#: ../../../addons.rst:145
 msgid "``--readthedocs-search-footer-code-border-color``"
 msgstr "``--readthedocs-search-footer-code-border-color``"
 
-#: ../../../addons.rst:143
+#: ../../../addons.rst:146
 msgid "``--readthedocs-search-input-background-color``"
 msgstr "``--readthedocs-search-input-background-color``"
 
-#: ../../../addons.rst:144
+#: ../../../addons.rst:147
 msgid "``--readthedocs-search-result-section-border-color``"
 msgstr "``--readthedocs-search-result-section-border-color``"
 
-#: ../../../addons.rst:145
+#: ../../../addons.rst:148
 msgid "``--readthedocs-search-result-section-color``"
 msgstr "``--readthedocs-search-result-section-color``"
 
-#: ../../../addons.rst:146
+#: ../../../addons.rst:149
 msgid "``--readthedocs-search-result-section-highlight-color``"
 msgstr "``--readthedocs-search-result-section-highlight-color``"
 
-#: ../../../addons.rst:147
+#: ../../../addons.rst:150
 msgid "``--readthedocs-search-result-section-subheading-color``"
 msgstr "``--readthedocs-search-result-section-subheading-color``"
 
-#: ../../../addons.rst:149
+#: ../../../addons.rst:152
 msgid ""
 "You can find default values and full CSS in our `Addons source <https://"
 "github.com/readthedocs/addons/tree/main/src>`_."
 msgstr ""
 
-#: ../../../addons.rst:152
+#: ../../../addons.rst:155
 msgid "Custom event integration"
 msgstr ""
 
-#: ../../../addons.rst:154
+#: ../../../addons.rst:157
 msgid ""
 "Read the Docs provides a custom event ``readthedocs-addons-data-ready`` that "
 "allows you to access the Addons data and integrate it into your theme or "
@@ -382,23 +390,23 @@ msgid ""
 "information, and other Addons configuration."
 msgstr ""
 
-#: ../../../addons.rst:157
+#: ../../../addons.rst:160
 msgid "To use the custom event:"
 msgstr ""
 
-#: ../../../addons.rst:159
+#: ../../../addons.rst:162
 msgid "Add the required meta tag to your HTML template:"
 msgstr ""
 
-#: ../../../addons.rst:161
+#: ../../../addons.rst:164
 msgid "<meta name=\"readthedocs-addons-api-version\" content=\"1\" />"
 msgstr ""
 
-#: ../../../addons.rst:165
+#: ../../../addons.rst:168
 msgid "Add a JavaScript event listener to handle the data:"
 msgstr ""
 
-#: ../../../addons.rst:167
+#: ../../../addons.rst:170
 msgid ""
 "document.addEventListener(\n"
 "  \"readthedocs-addons-data-ready\",\n"
@@ -418,37 +426,37 @@ msgid ""
 ");"
 msgstr ""
 
-#: ../../../addons.rst:187
+#: ../../../addons.rst:190
 msgid "Event data reference"
 msgstr ""
 
-#: ../../../addons.rst:189
+#: ../../../addons.rst:192
 msgid ""
 "The ``event.detail.data()`` object contains all the Addons configuration, "
 "including:"
 msgstr ""
 
-#: ../../../addons.rst:191
+#: ../../../addons.rst:194
 msgid "``addons`` - Individual addon configurations"
 msgstr ""
 
-#: ../../../addons.rst:192
+#: ../../../addons.rst:195
 msgid "``builds.current`` - Details about the current build"
 msgstr ""
 
-#: ../../../addons.rst:193
+#: ../../../addons.rst:196
 msgid "``projects.current`` - Current project details"
 msgstr ""
 
-#: ../../../addons.rst:194
+#: ../../../addons.rst:197
 msgid "``projects.translations`` - Available translations"
 msgstr ""
 
-#: ../../../addons.rst:195
+#: ../../../addons.rst:198
 msgid "``versions.current`` - Details about the current version"
 msgstr ""
 
-#: ../../../addons.rst:196
+#: ../../../addons.rst:199
 msgid "``versions.active`` - List of all active and not hidden versions"
 msgstr ""
 
@@ -456,7 +464,7 @@ msgstr ""
 msgid "Click to see an example of the Addons data"
 msgstr ""
 
-#: ../../../addons.rst:200
+#: ../../../addons.rst:203
 msgid ""
 "{\n"
 "\"addons\": {\n"
@@ -624,24 +632,24 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../addons.rst:353
+#: ../../../addons.rst:356
 msgid ""
 "You can see a live example of this in our `Addons API response for these "
 "docs <https://docs.readthedocs.io/_/addons/?client-version=0.22.0&api-"
 "version=1&project-slug=docs&version-slug=stable>`_."
 msgstr ""
 
-#: ../../../addons.rst:356
+#: ../../../addons.rst:359
 msgid "Example: creating a version selector"
 msgstr ""
 
-#: ../../../addons.rst:358
+#: ../../../addons.rst:361
 msgid ""
 "Here's a complete example showing how to create a version selector using the "
 "Addons data:"
 msgstr ""
 
-#: ../../../addons.rst:360
+#: ../../../addons.rst:363
 msgid ""
 "document.addEventListener(\n"
 "  \"readthedocs-addons-data-ready\",\n"
@@ -673,11 +681,11 @@ msgid ""
 ");"
 msgstr ""
 
-#: ../../../addons.rst:392
+#: ../../../addons.rst:395
 msgid "Diving deeper"
 msgstr ""
 
-#: ../../../addons.rst:394
+#: ../../../addons.rst:397
 msgid ""
 "You can read more about all of the Addons functionality by diving into each "
 "Addon above. If you are a developer and would like to integrate with our "

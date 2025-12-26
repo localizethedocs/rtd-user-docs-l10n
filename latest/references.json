@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-11-27 12:13:48 +0100",
-        "hash" : "391a5a0f95616443489c46845a487c7032c9e2eb",
-        "title" : "Docs: add Zensical documentation to doctools (#12606)"
+        "date" : "2025-12-19 11:35:11 -0500",
+        "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
+        "title" : "Search: Disable search indexing for inactive projects (#12666)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-11-27 12:13:48 +0100",
-        "hash" : "391a5a0f95616443489c46845a487c7032c9e2eb",
-        "title" : "Docs: add Zensical documentation to doctools (#12606)"
+        "date" : "2025-12-19 11:35:11 -0500",
+        "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
+        "title" : "Search: Disable search indexing for inactive projects (#12666)"
       }
     }
   },

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../guides/build/index.rst:29
+#: ../../../guides/build/index.rst:33
 msgid "Setup email notifications"
 msgstr ""
 
-#: ../../../guides/build/index.rst:29
+#: ../../../guides/build/index.rst:33
 msgid "Configuring pull request builds"
 msgstr ""
 
-#: ../../../guides/build/index.rst:29
+#: ../../../guides/build/index.rst:33
 msgid "Using custom environment variables"
 msgstr "使用自訂環境變數"
 
-#: ../../../guides/build/index.rst:29
+#: ../../../guides/build/index.rst:33
 msgid "Managing versions automatically"
 msgstr "自動管理版本"
+
+#: ../../../guides/build/index.rst:33
+msgid "Skip builds based on conditions"
+msgstr ""
 
 #: ../../../guides/build/index.rst:2
 msgid "How-to guides: build process"
@@ -90,4 +94,15 @@ msgid ""
 "your versioning logic in Git. Learn how to define rules to automate creation "
 "of new versions on Read the Docs, entirely using your Git repository's "
 "version logic."
+msgstr ""
+
+#: ../../../guides/build/index.rst:23
+msgid "⏩️ :doc:`Skip builds based on conditions </guides/build/skip-build>`"
+msgstr ""
+
+#: ../../../guides/build/index.rst:24
+msgid ""
+"Use the special exit code 183 to programmatically cancel builds based on "
+"custom conditions. This helps save resources by avoiding unnecessary "
+"documentation builds."
 msgstr ""

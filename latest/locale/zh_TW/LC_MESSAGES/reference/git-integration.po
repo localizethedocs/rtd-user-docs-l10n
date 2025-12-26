@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -645,126 +645,133 @@ msgstr ""
 #: ../../../reference/git-integration.rst:306
 msgid ""
 "To add a project from a repository, you need to install the Read the Docs "
-"GitHub App and grant access to that repository."
+"GitHub App and grant access to that repository. Use the links below to "
+"complete the installation and permissions, then create the project from your "
+"**Read the Docs account**."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:309
-#: ../../../reference/git-integration.rst:322
-#: ../../../reference/git-integration.rst:365
-#: ../../../reference/git-integration.rst:412
+#: ../../../reference/git-integration.rst:311
+#: ../../../reference/git-integration.rst:326
+#: ../../../reference/git-integration.rst:370
+#: ../../../reference/git-integration.rst:417
 msgid ""
 "`Read the Docs Community <https://github.com/apps/read-the-docs-community/"
 "installations/new/>`__"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:310
-#: ../../../reference/git-integration.rst:323
-#: ../../../reference/git-integration.rst:366
-#: ../../../reference/git-integration.rst:413
+#: ../../../reference/git-integration.rst:312
+#: ../../../reference/git-integration.rst:327
+#: ../../../reference/git-integration.rst:371
+#: ../../../reference/git-integration.rst:418
 msgid ""
 "`Read the Docs Business <https://github.com/apps/read-the-docs-business/"
 "installations/new/>`__"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:312
+#: ../../../reference/git-integration.rst:314
 msgid ""
-"Once you have installed the GitHub App, click on the :guilabel:`Projects` "
-"tab, and click on :guilabel:`Add project`, search for the repository you "
-"want to create a project for, and then follow the instructions from there."
-msgstr ""
-
-#: ../../../reference/git-integration.rst:316
-msgid "Connect a repository to an existing project"
+"Once you have installed the GitHub App, in Read the Docs, click on the :"
+"guilabel:`Projects` tab, and click on :guilabel:`Add project`, search for "
+"the repository you want to create a project for, and then follow the "
+"instructions from there."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:318
+msgid "Connect a repository to an existing project"
+msgstr ""
+
+#: ../../../reference/git-integration.rst:320
 msgid ""
 "In case you manually added a project on Read the Docs, or if you want to "
 "connect your project to a different repository, you need to install the Read "
-"the Docs GitHub App and grant access to the repository you want to connect."
-msgstr ""
-
-#: ../../../reference/git-integration.rst:325
-msgid ""
-"Once you have installed the GitHub App, go the :guilabel:`Settings` page of "
-"the project, and select the repository you want to connect from the :"
-"guilabel:`Connected repository` dropdown."
+"the Docs GitHub App and grant access to the repository you want to connect. "
+"As with adding a project, complete installation and permissions via the "
+"links below, and select the repository from your **project settings on Read "
+"the Docs**."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:329
+msgid ""
+"Once you have installed the GitHub App, go to the :guilabel:`Settings` page "
+"of the project in Read the Docs, and select the repository you want to "
+"connect from the :guilabel:`Connected repository` dropdown."
+msgstr ""
+
+#: ../../../reference/git-integration.rst:333
 msgid "Manually migrating a project"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:331
+#: ../../../reference/git-integration.rst:335
 msgid ""
 "We recommend using the migration page to migrate your projects from the old "
 "OAuth application to the new GitHub App."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:333
+#: ../../../reference/git-integration.rst:337
 msgid ""
-"`Read the Docs Community <https://app.readthedocs.com/accounts/migrate-to-"
+"`Read the Docs Community <https://app.readthedocs.org/accounts/migrate-to-"
 "github-app/>`__"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:334
+#: ../../../reference/git-integration.rst:338
 msgid ""
 "`Read the Docs Business <https://app.readthedocs.com/accounts/migrate-to-"
 "github-app/>`__"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:336
+#: ../../../reference/git-integration.rst:340
 msgid ""
 "But in case you need to manually migrate a project, you can follow these "
 "steps:"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:339
+#: ../../../reference/git-integration.rst:343
 msgid ""
 "Go to the :guilabel:`Settings` page of your Read the Docs project, and click "
-"on :guilabel:`Integrations`, and delete all the integrations that are listed "
-"there."
+"on the :guilabel:`Integrations` tab in Read the Docs, and delete all the "
+"integrations that are listed there."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:341
+#: ../../../reference/git-integration.rst:345
 msgid ""
-"Go to the settings page of your GitHub repository, click on :guilabel:"
-"`Webhooks`, and delete all the webhooks with URLs that start with:"
+"Go to the settings page of your GitHub repository, click on the GitHub :"
+"guilabel:`Webhooks` tab, and delete all the webhooks with URLs that start "
+"with:"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:344
+#: ../../../reference/git-integration.rst:348
 msgid ""
 "``https://readthedocs.org/api/v2/webhook/<your-project-slug>`` or ``https://"
 "app.readthedocs.org/api/v2/webhook/<your-project-slug>`` for Read the Docs "
 "Community."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:345
+#: ../../../reference/git-integration.rst:349
 msgid ""
 "``https://readthedocs.com/api/v2/webhook/<your-project-slug>`` or ``https://"
 "app.readthedocs.com/api/v2/webhook/<your-project-slug>`` for Read the Docs "
 "Business."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:347
+#: ../../../reference/git-integration.rst:351
 msgid ""
 "For projects using Read the Docs Business, go to the settings page of your "
-"GitHub repository, click on :guilabel:`Deploy keys`, and delete the deploy "
-"with a title matching the format ``support@readthedocs.com (<your-project-"
-"slug>)``."
+"GitHub repository, click on the GitHub :guilabel:`Deploy keys` tab, and "
+"delete the deploy with a title matching the format ``support@readthedocs.com "
+"(<your-project-slug>)``."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:350
+#: ../../../reference/git-integration.rst:354
 msgid ""
 ":ref:`Connect the project to the repository <reference/git-integration:"
 "Connect a repository to an existing project>`."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:353
+#: ../../../reference/git-integration.rst:357
 msgid "Revoking access"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:357
+#: ../../../reference/git-integration.rst:361
 msgid ""
 "If you revoke access to the GitHub App with any of the methods below, all "
 "projects linked to that repository will stop working, but the projects and "
@@ -774,53 +781,55 @@ msgid ""
 "existing project>`."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:363
+#: ../../../reference/git-integration.rst:367
 msgid ""
 "You can revoke access to the Read the Docs GitHub App at any time from your "
-"GitHub settings."
+"GitHub settings. All revocation options happen from your **account or "
+"organization settings**; no action is required inside Read the Docs until "
+"you decide to reconnect a project."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:368
+#: ../../../reference/git-integration.rst:373
 msgid "There are three ways to revoke access to the Read the Docs GitHub App:"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:370
+#: ../../../reference/git-integration.rst:375
 msgid "Revoke access to one or more repositories:"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:371
+#: ../../../reference/git-integration.rst:376
 msgid ""
 "Remove the repositories from the list of repositories that the GitHub App "
 "has access to."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:372
+#: ../../../reference/git-integration.rst:377
 msgid "Suspend the GitHub App:"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:373
+#: ../../../reference/git-integration.rst:378
 msgid ""
 "This will suspend the GitHub App and revoke access to all repositories. The "
 "installation and configuration will still be available, and you can re-"
 "enable the GitHub App at any time."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:376
+#: ../../../reference/git-integration.rst:381
 msgid "Uninstall the GitHub App:"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:377
+#: ../../../reference/git-integration.rst:382
 msgid ""
 "This will uninstall the GitHub App and revoke access to all repositories. "
 "The installation and configuration will be removed, and you will need to re-"
 "install the GitHub App and reconfigure it to use it again."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:382
+#: ../../../reference/git-integration.rst:387
 msgid "Security"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:384
+#: ../../../reference/git-integration.rst:389
 msgid ""
 "When cloning private repositories (|com_brand| only) Read the Docs creates "
 "an `installation access token <https://docs.github.com/en/rest/apps/apps?"
@@ -831,7 +840,7 @@ msgid ""
 "scoped to the repository to be cloned."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:389
+#: ../../../reference/git-integration.rst:394
 msgid ""
 "This token is valid for one hour and GitHub automatically grants read access "
 "to the `metadata permission <https://docs.github.com/en/rest/authentication/"
@@ -843,52 +852,52 @@ msgid ""
 "only trusted users are able to trigger builds on your project."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:398
+#: ../../../reference/git-integration.rst:403
 msgid ""
 "If your repository is public, Read the Docs will not create an installation "
 "access token."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:402
+#: ../../../reference/git-integration.rst:407
 msgid ""
 "The build log page is publicly accessible only if your project and version "
 "to build are marked as public. See more in :doc:`/commercial/privacy-level`."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:406
+#: ../../../reference/git-integration.rst:411
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:408
+#: ../../../reference/git-integration.rst:413
 msgid "Repository not found in the repository list"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:409
+#: ../../../reference/git-integration.rst:414
 msgid ""
 "Make sure you have installed the corresponding GitHub App in your GitHub "
 "account or organization, and have granted access to the repository your "
 "project will be connected to."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:415
+#: ../../../reference/git-integration.rst:420
 msgid ""
 "If you still can't see the repository in the list, you may need to wait a "
 "couple of minutes and refresh the page, or click on the \"Refresh your "
 "repositories\" button on the project creation page."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:419
+#: ../../../reference/git-integration.rst:424
 msgid "Repository is in the list, but isn't usable"
 msgstr ""
 
-#: ../../../reference/git-integration.rst:420
+#: ../../../reference/git-integration.rst:425
 msgid ""
 "Make sure you have admin access to the repository you are trying to use for "
 "your project. If you are using |org_brand|, make sure your project is "
 "public, or use |com_brand| to create projects from private repositories."
 msgstr ""
 
-#: ../../../reference/git-integration.rst:424
+#: ../../../reference/git-integration.rst:429
 msgid ""
 "If you still can't use the repository for your project, you may need to wait "
 "a couple of minutes and refresh the page, or click on the \"Refresh your "

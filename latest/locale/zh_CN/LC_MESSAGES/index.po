@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 08:56+0000\n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,15 +25,15 @@ msgstr ""
 msgid "Getting started"
 msgstr ""
 
-#: ../../../index.rst:14 ../../../index.rst:96 ../../../index.rst:173
+#: ../../../index.rst:14 ../../../index.rst:97 ../../../index.rst:174
 msgid "Project setup and configuration"
 msgstr ""
 
-#: ../../../index.rst:26 ../../../index.rst:96 ../../../index.rst:184
+#: ../../../index.rst:26 ../../../index.rst:97 ../../../index.rst:185
 msgid "Build process"
 msgstr ""
 
-#: ../../../index.rst:39 ../../../index.rst:195
+#: ../../../index.rst:39 ../../../index.rst:196
 msgid "Hosting documentation"
 msgstr ""
 
@@ -41,51 +41,51 @@ msgstr ""
 msgid "Reading documentation"
 msgstr ""
 
-#: ../../../index.rst:69 ../../../index.rst:215
+#: ../../../index.rst:69 ../../../index.rst:216
 msgid "Maintaining projects"
 msgstr ""
 
-#: ../../../index.rst:84 ../../../index.rst:229
+#: ../../../index.rst:85 ../../../index.rst:230
 msgid "Business features"
 msgstr ""
 
-#: ../../../index.rst:96
+#: ../../../index.rst:97
 msgid "Upgrading and maintaining projects"
 msgstr ""
 
-#: ../../../index.rst:96
+#: ../../../index.rst:97
 msgid "Content, themes and SEO"
 msgstr ""
 
-#: ../../../index.rst:96
+#: ../../../index.rst:97
 msgid "Security and access"
 msgstr ""
 
-#: ../../../index.rst:96
+#: ../../../index.rst:97
 msgid "Account management"
 msgstr ""
 
-#: ../../../index.rst:96
+#: ../../../index.rst:97
 msgid "Best practice"
 msgstr ""
 
-#: ../../../index.rst:96
+#: ../../../index.rst:97
 msgid "Troubleshooting problems"
 msgstr ""
 
-#: ../../../index.rst:96 ../../../index.rst:243
+#: ../../../index.rst:97 ../../../index.rst:244
 msgid "How-to guides"
 msgstr ""
 
-#: ../../../index.rst:110
+#: ../../../index.rst:111
 msgid "Developer Documentation"
 msgstr ""
 
-#: ../../../index.rst:110
+#: ../../../index.rst:111
 msgid "Read the Docs website"
 msgstr ""
 
-#: ../../../index.rst:110 ../../../index.rst:257
+#: ../../../index.rst:111 ../../../index.rst:258
 msgid "Reference"
 msgstr ""
 
@@ -99,13 +99,13 @@ msgstr ""
 msgid "Read the Docs: documentation simplified"
 msgstr ""
 
-#: ../../../index.rst:126
+#: ../../../index.rst:127
 msgid ""
 "<a style=\"display: none;\" rel=\"me\" href=\"https://fosstodon.org/"
 "@readthedocs\">Mastodon</a>"
 msgstr ""
 
-#: ../../../index.rst:130
+#: ../../../index.rst:131
 msgid ""
 "Read the Docs simplifies managing software documentation by building and "
 "hosting your docs automatically, using the Git workflow you already use for "
@@ -113,33 +113,33 @@ msgid ""
 "know, and makes keeping your docs updated easier."
 msgstr ""
 
-#: ../../../index.rst:136
+#: ../../../index.rst:137
 msgid "Up to date documentation"
 msgstr ""
 
-#: ../../../index.rst:137
+#: ../../../index.rst:138
 msgid ""
 "Whenever you push code to Git, Read the Docs will automatically build your "
 "docs so your code and documentation are always up-to-date. Get started with "
 "our :doc:`tutorial </tutorial/index>`."
 msgstr ""
 
-#: ../../../index.rst:142
+#: ../../../index.rst:143
 msgid "Documentation for every version"
 msgstr ""
 
-#: ../../../index.rst:143
+#: ../../../index.rst:144
 msgid ""
 "Read the Docs can host multiple versions of your docs. Keep your 1.0 and 2.0 "
 "documentation online, pulled directly from Git. Start hosting all your :doc:"
 "`versions </versions>`."
 msgstr ""
 
-#: ../../../index.rst:148
+#: ../../../index.rst:149
 msgid "Open source and user focused"
 msgstr ""
 
-#: ../../../index.rst:149
+#: ../../../index.rst:150
 msgid ""
 "Our company is bootstrapped and 100% user-focused, so our product gets "
 "better for our users instead of our investors. |org_brand| hosts "
@@ -149,227 +149,227 @@ msgid ""
 "page <https://about.readthedocs.com/pricing/>`_."
 msgstr ""
 
-#: ../../../index.rst:157
+#: ../../../index.rst:158
 msgid "First time here?"
 msgstr ""
 
-#: ../../../index.rst:159
+#: ../../../index.rst:160
 msgid "We have a few places for you to get started:"
 msgstr ""
 
-#: ../../../index.rst:163
+#: ../../../index.rst:164
 msgid ":doc:`/tutorial/index`"
 msgstr ""
 
-#: ../../../index.rst:164
+#: ../../../index.rst:165
 msgid "Follow the Read the Docs tutorial."
 msgstr ""
 
-#: ../../../index.rst:166
+#: ../../../index.rst:167
 msgid ":doc:`/intro/doctools`"
 msgstr ""
 
-#: ../../../index.rst:167
+#: ../../../index.rst:168
 msgid "Quick start for MkDocs and Docusaurus."
 msgstr ""
 
-#: ../../../index.rst:169
+#: ../../../index.rst:170
 msgid ":doc:`/examples`"
 msgstr ""
 
-#: ../../../index.rst:170
+#: ../../../index.rst:171
 msgid ""
 "Start your journey with an example project to learn how to use Read the Docs."
 msgstr ""
 
-#: ../../../index.rst:175
+#: ../../../index.rst:176
 msgid "Start with the basics of setting up your project:"
 msgstr ""
 
-#: ../../../index.rst:177
+#: ../../../index.rst:178
 msgid ":doc:`/config-file/index`"
 msgstr ""
 
-#: ../../../index.rst:178
+#: ../../../index.rst:179
 msgid "Learn how to configure your project with a ``.readthedocs.yaml`` file."
 msgstr ""
 
-#: ../../../index.rst:180
+#: ../../../index.rst:181
 msgid ":doc:`/guides/reproducible-builds`"
 msgstr ""
 
-#: ../../../index.rst:181
+#: ../../../index.rst:182
 msgid "Keep your builds working by making them reproducible."
 msgstr ""
 
-#: ../../../index.rst:186
+#: ../../../index.rst:187
 msgid "Build your documentation with ease:"
 msgstr ""
 
-#: ../../../index.rst:188
+#: ../../../index.rst:189
 msgid ":doc:`/builds`"
 msgstr ""
 
-#: ../../../index.rst:189
+#: ../../../index.rst:190
 msgid "Understand how documentation builds happen."
 msgstr ""
 
-#: ../../../index.rst:191
+#: ../../../index.rst:192
 msgid ":doc:`/pull-requests`"
 msgstr ""
 
-#: ../../../index.rst:192 ../../../index.rst:248
+#: ../../../index.rst:193 ../../../index.rst:249
 msgid "Setup pull request builds and enjoy previews of each commit."
 msgstr ""
 
-#: ../../../index.rst:197
+#: ../../../index.rst:198
 msgid "Learn more about our hosting features:"
 msgstr ""
 
-#: ../../../index.rst:199
+#: ../../../index.rst:200
 msgid ":doc:`/versions`"
 msgstr ""
 
-#: ../../../index.rst:200
+#: ../../../index.rst:201
 msgid "Give your readers multiple versions of your documentation."
 msgstr ""
 
-#: ../../../index.rst:202
+#: ../../../index.rst:203
 msgid ":doc:`/subprojects`"
 msgstr ""
 
-#: ../../../index.rst:203
+#: ../../../index.rst:204
 msgid "Host multiple projects under a single domain."
 msgstr ""
 
-#: ../../../index.rst:205
+#: ../../../index.rst:206
 msgid ":doc:`/localization`"
 msgstr ""
 
-#: ../../../index.rst:206
+#: ../../../index.rst:207
 msgid "Translate your documentation into multiple languages."
 msgstr ""
 
-#: ../../../index.rst:208
+#: ../../../index.rst:209
 msgid ":doc:`/versioning-schemes`"
 msgstr ""
 
-#: ../../../index.rst:209
+#: ../../../index.rst:210
 msgid "Learn about different URL versioning schemes."
 msgstr ""
 
-#: ../../../index.rst:211
+#: ../../../index.rst:212
 msgid ":doc:`/custom-domains`"
 msgstr ""
 
-#: ../../../index.rst:212
+#: ../../../index.rst:213
 msgid "Brand your documentation on your own domain."
 msgstr ""
 
-#: ../../../index.rst:217
+#: ../../../index.rst:218
 msgid "All the tools you need as your project matures:"
 msgstr ""
 
-#: ../../../index.rst:219
+#: ../../../index.rst:220
 msgid ":doc:`/user-defined-redirects`"
 msgstr ""
 
-#: ../../../index.rst:220
+#: ../../../index.rst:221
 msgid "Redirect your old URLs to new ones."
 msgstr ""
 
-#: ../../../index.rst:222
+#: ../../../index.rst:223
 msgid ":doc:`/traffic-analytics`"
 msgstr ""
 
-#: ../../../index.rst:223
+#: ../../../index.rst:224
 msgid "Learn more about how users are interacting with your documentation."
 msgstr ""
 
-#: ../../../index.rst:225
+#: ../../../index.rst:226
 msgid ":doc:`/security-log`"
 msgstr ""
 
-#: ../../../index.rst:226
+#: ../../../index.rst:227
 msgid "Keep track of security events in your project."
 msgstr ""
 
-#: ../../../index.rst:231
+#: ../../../index.rst:232
 msgid "Our Business hosting has everything your business needs:"
 msgstr ""
 
-#: ../../../index.rst:233
+#: ../../../index.rst:234
 msgid ":doc:`/commercial/organizations`"
 msgstr ""
 
-#: ../../../index.rst:234
+#: ../../../index.rst:235
 msgid "Manage permissions across multiple teams."
 msgstr ""
 
-#: ../../../index.rst:236
+#: ../../../index.rst:237
 msgid ":doc:`/commercial/single-sign-on`"
 msgstr ""
 
-#: ../../../index.rst:237
+#: ../../../index.rst:238
 msgid "Stay secure with single sign-on."
 msgstr ""
 
-#: ../../../index.rst:239
+#: ../../../index.rst:240
 msgid ":doc:`/commercial/sharing`"
 msgstr ""
 
-#: ../../../index.rst:240
+#: ../../../index.rst:241
 msgid "Share your private docs easily with contractors or customers."
 msgstr ""
 
-#: ../../../index.rst:245
+#: ../../../index.rst:246
 msgid "Step-by-step guides for common tasks:"
 msgstr ""
 
-#: ../../../index.rst:247
+#: ../../../index.rst:248
 msgid ":doc:`/guides/pull-requests`"
 msgstr ""
 
-#: ../../../index.rst:250
+#: ../../../index.rst:251
 msgid ":doc:`/guides/cross-referencing-with-sphinx`"
 msgstr ""
 
-#: ../../../index.rst:251
+#: ../../../index.rst:252
 msgid "Learn how to use cross-references in a Sphinx project."
 msgstr ""
 
-#: ../../../index.rst:253
+#: ../../../index.rst:254
 msgid ":doc:`All how-to guides </guides/index>`"
 msgstr ""
 
-#: ../../../index.rst:254
+#: ../../../index.rst:255
 msgid "Browse all our how-to guides."
 msgstr ""
 
-#: ../../../index.rst:259
+#: ../../../index.rst:260
 msgid "More detailed information about Read the Docs:"
 msgstr ""
 
-#: ../../../index.rst:261
+#: ../../../index.rst:262
 msgid ":doc:`/api/index`"
 msgstr ""
 
-#: ../../../index.rst:262
+#: ../../../index.rst:263
 msgid "Integrate Read the Docs into your other workflows."
 msgstr ""
 
-#: ../../../index.rst:264
+#: ../../../index.rst:265
 msgid ":doc:`/changelog`"
 msgstr ""
 
-#: ../../../index.rst:265
+#: ../../../index.rst:266
 msgid "See what's new in Read the Docs."
 msgstr ""
 
-#: ../../../index.rst:267
+#: ../../../index.rst:268
 msgid ":doc:`/about/index`"
 msgstr ""
 
-#: ../../../index.rst:268
+#: ../../../index.rst:269
 msgid "Learn more about Read the Docs and our company."
 msgstr ""
