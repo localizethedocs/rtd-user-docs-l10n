@@ -1,0 +1,630 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Read the Docs Addons" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="addons.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Read the Docs Addons is a group of features for documentation readers and maintainers that you can add to any documentation set hosted on Read the Docs. They are used in the rendered documentation, and can be accessed via hotkeys or on screen UI elements. Visual diff, Highlight changed output fro..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Read the Docs Addons is a group of features for documentation readers and maintainers that you can add to any documentation set hosted on Read the Docs. They are used in the rendered documentation, and can be accessed via hotkeys or on screen UI elements. Visual diff, Highlight changed output fro..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read the Docs Addons &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/addons.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Account authentication methods" href="intro/accounts.html" />
+    <link rel="prev" title="Configuration file reference" href="config-file/v2.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Read the Docs Addons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-read-the-docs-addons">Configuring Read the Docs Addons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integrating-with-addons">Integrating with Addons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#integrate-with-search-as-you-type">Integrate with Search as you type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#addons-data-and-customization">Addons data and customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#css-variable-customization">CSS variable customization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#css-variables-reference">CSS variables reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-event-integration">Custom event integration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#event-data-reference">Event data reference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-creating-a-version-selector">Example: creating a version selector</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#diving-deeper">Diving deeper</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Read the Docs Addons</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/addons.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="read-the-docs-addons">
+<h1>Read the Docs Addons<a class="headerlink" href="#read-the-docs-addons" title="Link to this heading"></a></h1>
+<p><strong>Read the Docs Addons</strong> is a group of features for documentation readers and maintainers that you can add to any documentation set hosted on Read the Docs.
+They are used in the rendered documentation,
+and can be accessed via hotkeys or on screen UI elements.</p>
+<dl class="simple">
+<dt><a class="reference internal" href="visual-diff.html"><span class="doc">Visual diff</span></a></dt><dd><p>Highlight changed output from pull requests</p>
+</dd>
+<dt><a class="reference internal" href="link-previews.html"><span class="doc">Link previews</span></a></dt><dd><p>See the content the link points to before clicking on it</p>
+</dd>
+<dt><a class="reference internal" href="doc-notifications.html"><span class="doc">Documentation notification</span></a></dt><dd><p>Alert users to various documentation states</p>
+</dd>
+<dt><a class="reference internal" href="flyout-menu.html"><span class="doc">Flyout</span></a></dt><dd><p>Easily switch between versions and translations</p>
+</dd>
+<dt><a class="reference internal" href="versions.html"><span class="doc">Non-stable notification</span></a></dt><dd><p>Notify readers that they are reading docs from a non stable release</p>
+</dd>
+<dt><a class="reference internal" href="versions.html"><span class="doc">Latest version notification</span></a></dt><dd><p>Notify readers that they are reading docs from a development version</p>
+</dd>
+<dt><a class="reference internal" href="server-side-search/index.html"><span class="doc">Search as you type</span></a></dt><dd><p>Get search results faster</p>
+</dd>
+<dt><a class="reference internal" href="traffic-analytics.html"><span class="doc">Traffic analytics</span></a></dt><dd><p>See what pages your users are reading</p>
+</dd>
+<dt><a class="reference internal" href="search-analytics.html"><span class="doc">Search analytics</span></a></dt><dd><p>Understand what your users are searching for</p>
+</dd>
+<dt><a class="reference internal" href="custom-script.html"><span class="doc">Custom script</span></a></dt><dd><p>Inject custom JavaScript into your documentation</p>
+</dd>
+</dl>
+<section id="configuring-read-the-docs-addons">
+<h2>Configuring Read the Docs Addons<a class="headerlink" href="#configuring-read-the-docs-addons" title="Link to this heading"></a></h2>
+<p>Individual configuration options for each addon are available in <span class="guilabel">Settings</span>.</p>
+<ol class="arabic simple">
+<li><p>Go to the new <a class="reference internal" href="glossary.html#term-dashboard"><span class="xref std std-term">dashboard</span></a>.</p></li>
+<li><p>Click on a project name.</p></li>
+<li><p>Go to <span class="guilabel">Settings</span>.</p></li>
+<li><p>In the left bar, go to <span class="guilabel">Addons</span>.</p></li>
+<li><p>Configure each Addon individually.</p></li>
+</ol>
+</section>
+<section id="integrating-with-addons">
+<h2>Integrating with Addons<a class="headerlink" href="#integrating-with-addons" title="Link to this heading"></a></h2>
+<section id="integrate-with-search-as-you-type">
+<h3>Integrate with Search as you type<a class="headerlink" href="#integrate-with-search-as-you-type" title="Link to this heading"></a></h3>
+<p>To configure your site to use <a class="reference internal" href="server-side-search/index.html"><span class="doc">Read the Docs search</span></a> instead of the default search, adapt the following block of JavaScript to your own site:</p>
+<blockquote>
+<div><div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">javascript/readthedocs.js</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// TODO: Change me if needed</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">selector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;input[type=&#39;search&#39;]&quot;</span><span class="p">;</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Trigger Read the Docs&#39; search addon instead of the default search</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="nx">selector</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">CustomEvent</span><span class="p">(</span><span class="s2">&quot;readthedocs-search-show&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="nb">document</span><span class="p">.</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="nx">event</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Depending on the tool you are using,
+you may need to change the selector to match the search input field.
+You will also need to ensure that the JavaScript file is included in your documentation build.</p>
+</div>
+</section>
+</section>
+<section id="addons-data-and-customization">
+<h2>Addons data and customization<a class="headerlink" href="#addons-data-and-customization" title="Link to this heading"></a></h2>
+<p>Addons can be customized using CSS variables and the data used by Addons can be accessed using a custom event.</p>
+<section id="css-variable-customization">
+<h3>CSS variable customization<a class="headerlink" href="#css-variable-customization" title="Link to this heading"></a></h3>
+<p>Addons use CSS custom properties (<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*">CSS variables</a>) to allow for easy customization.
+To customize addons, add CSS variable definitions to your theme's CSS:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c">/* Reduce Read the Docs&#39; flyout font a little bit */</span>
+<span class="w">    </span><span class="nv">--readthedocs-flyout-font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.7</span><span class="kt">rem</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c">/* Reduce Read the Docs&#39; notification font a little bit */</span>
+<span class="w">    </span><span class="nv">--readthedocs-notification-font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="kt">rem</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c">/* This customization is not yet perfect because we can&#39;t change the `line-height` yet. */</span>
+<span class="w">    </span><span class="c">/* See https://github.com/readthedocs/addons/issues/197 */</span>
+<span class="w">    </span><span class="nv">--readthedocs-search-font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.7</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="css-variables-reference">
+<h4>CSS variables reference<a class="headerlink" href="#css-variables-reference" title="Link to this heading"></a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Click to see all available CSS variables</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Global variables</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-font-size</span></code></p></li>
+</ul>
+<p class="sd-card-text"><strong>Flyout menu</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-current-version-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-font-family</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-font-size</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-header-font-size</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-item-link-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-link-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-flyout-section-heading-color</span></code></p></li>
+</ul>
+<p class="sd-card-text"><strong>Notifications</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-font-family</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-font-size</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-link-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-title-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-title-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-notification-toast-font-size</span></code></p></li>
+</ul>
+<p class="sd-card-text"><strong>Search</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-backdrop-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-content-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-content-border-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-filters-border-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-font-family</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-font-size</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-footer-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-footer-code-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-footer-code-border-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-input-background-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-result-section-border-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-result-section-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-result-section-highlight-color</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">--readthedocs-search-result-section-subheading-color</span></code></p></li>
+</ul>
+</div>
+</details><p>You can find default values and full CSS in our <a class="reference external" href="https://github.com/readthedocs/addons/tree/main/src">Addons source</a>.</p>
+</section>
+</section>
+<section id="custom-event-integration">
+<h3>Custom event integration<a class="headerlink" href="#custom-event-integration" title="Link to this heading"></a></h3>
+<p>Read the Docs provides a custom event <code class="docutils literal notranslate"><span class="pre">readthedocs-addons-data-ready</span></code> that allows you to access the Addons data and integrate it into your theme or documentation.
+The event provides access to the version data, project information, and other Addons configuration.</p>
+<p>To use the custom event:</p>
+<ol class="arabic">
+<li><p>Add the required meta tag to your HTML template:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;readthedocs-addons-api-version&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="p">/&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Add a JavaScript event listener to handle the data:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
+<span class="w">  </span><span class="s2">&quot;readthedocs-addons-data-ready&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Access the addons data</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">data</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Example: Create a version selector</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">versions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">config</span><span class="p">.</span><span class="nx">versions</span><span class="p">.</span><span class="nx">active</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">version</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">      </span><span class="nx">slug</span><span class="o">:</span><span class="w"> </span><span class="nx">version</span><span class="p">.</span><span class="nx">slug</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="nx">version</span><span class="p">.</span><span class="nx">urls</span><span class="p">.</span><span class="nx">documentation</span>
+<span class="w">    </span><span class="p">}));</span>
+
+<span class="w">    </span><span class="c1">// Use the data to build your UI</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Available versions:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">versions</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<section id="event-data-reference">
+<h4>Event data reference<a class="headerlink" href="#event-data-reference" title="Link to this heading"></a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">event.detail.data()</span></code> object contains all the Addons configuration, including:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">addons</span></code> - Individual addon configurations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">builds.current</span></code> - Details about the current build</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">projects.current</span></code> - Current project details</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">projects.translations</span></code> - Available translations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">versions.current</span></code> - Details about the current version</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">versions.active</span></code> - List of all active and not hidden versions</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Click to see an example of the Addons data</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;addons&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;Most of this config is currently for internal use.&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;We are working on making this more public.&quot;</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="nt">&quot;api_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
+<span class="nt">&quot;builds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;current&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;commit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6db46a36ed3da98de658b50c66b458bbfa513a4e&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-07T16:02:16.842871Z&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;duration&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">78</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;finished&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-07T16:03:34.842Z&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">26773762</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;project&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;finished&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Finished&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;urls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/builds/26773762/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;project&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/version/stable/edit/&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">},</span>
+<span class="nt">&quot;domains&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;dashboard&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readthedocs.org&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;projects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;current&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2016-12-20T06:26:09.098922Z&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;default_branch&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;main&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;default_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;external_builds_privacy_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;homepage&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">74581</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;English&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;modified&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-13T17:09:09.007795Z&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;privacy_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;programming_language&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;py&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Python&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;repository&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/readthedocs/readthedocs.org&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;single_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;subproject_of&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;python&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;sphinx-doc&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;translation_of&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;urls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;builds&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/builds/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;documentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/en/stable/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;downloads&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;home&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;versions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/versions/&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;users&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eric&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;davidfischer&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;humitos&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;plaindocs&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;agj&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stsewd&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;versioning_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;multiple_versions_with_translations&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;translations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="p">},</span>
+<span class="nt">&quot;readthedocs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;analytics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UA-17997319-1&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">},</span>
+<span class="nt">&quot;versions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;active&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;active&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;aliases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">            </span><span class="nt">&quot;built&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;downloads&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;epub&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/_/downloads/en/stable/epub/&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;htmlzip&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/_/downloads/en/stable/htmlzip/&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;hidden&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2604018</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6db46a36ed3da98de658b50c66b458bbfa513a4e&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;privacy_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ref&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11.18.0&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tag&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;urls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;dashboard&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;edit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/version/stable/edit/&quot;</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="nt">&quot;documentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/en/stable/&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;vcs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/readthedocs/readthedocs.org/tree/11.18.0/&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;verbose_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;current&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;active&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;aliases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">        </span><span class="nt">&quot;built&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;downloads&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;epub&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/_/downloads/en/stable/epub/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;htmlzip&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/_/downloads/en/stable/htmlzip/&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;hidden&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2604018</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6db46a36ed3da98de658b50c66b458bbfa513a4e&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;privacy_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ref&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11.18.0&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tag&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;urls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;dashboard&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;edit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/projects/docs/version/stable/edit/&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;documentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/en/stable/&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;vcs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/readthedocs/readthedocs.org/tree/11.18.0/&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;verbose_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</details><p>You can see a live example of this in our <a class="reference external" href="https://docs.readthedocs.io/_/addons/?client-version=0.22.0&amp;api-version=1&amp;project-slug=docs&amp;version-slug=stable">Addons API response for these docs</a>.</p>
+</section>
+<section id="example-creating-a-version-selector">
+<h4>Example: creating a version selector<a class="headerlink" href="#example-creating-a-version-selector" title="Link to this heading"></a></h4>
+<p>Here's a complete example showing how to create a version selector using the Addons data:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
+<span class="w">  </span><span class="s2">&quot;readthedocs-addons-data-ready&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">data</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Create the version selector HTML</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">versionSelector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">      &lt;div class=&quot;version-selector&quot;&gt;</span>
+<span class="sb">        &lt;select onchange=&quot;window.location.href=this.value&quot;&gt;</span>
+<span class="sb">          &lt;option value=&quot;</span><span class="si">${</span><span class="nx">config</span><span class="p">.</span><span class="nx">versions</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">urls</span><span class="p">.</span><span class="nx">documentation</span><span class="si">}</span><span class="sb">&quot;&gt;</span>
+<span class="sb">            </span><span class="si">${</span><span class="nx">config</span><span class="p">.</span><span class="nx">versions</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">slug</span><span class="si">}</span>
+<span class="sb">          &lt;/option&gt;</span>
+<span class="sb">          </span><span class="si">${</span><span class="nx">config</span><span class="p">.</span><span class="nx">versions</span><span class="p">.</span><span class="nx">active</span>
+<span class="w">            </span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">v</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">slug</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nx">config</span><span class="p">.</span><span class="nx">versions</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">slug</span><span class="p">)</span>
+<span class="w">            </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">version</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">              &lt;option value=&quot;</span><span class="si">${</span><span class="nx">version</span><span class="p">.</span><span class="nx">urls</span><span class="p">.</span><span class="nx">documentation</span><span class="si">}</span><span class="sb">&quot;&gt;</span>
+<span class="sb">                </span><span class="si">${</span><span class="nx">version</span><span class="p">.</span><span class="nx">slug</span><span class="si">}</span>
+<span class="sb">              &lt;/option&gt;</span>
+<span class="sb">            `</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="si">}</span>
+<span class="sb">        &lt;/select&gt;</span>
+<span class="sb">      &lt;/div&gt;</span>
+<span class="sb">    `</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Insert the version selector into your page</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#your-target-element&#39;</span><span class="p">)</span>
+<span class="w">      </span><span class="p">.</span><span class="nx">insertAdjacentHTML</span><span class="p">(</span><span class="s1">&#39;beforeend&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">versionSelector</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="diving-deeper">
+<h2>Diving deeper<a class="headerlink" href="#diving-deeper" title="Link to this heading"></a></h2>
+<p>You can read more about all of the Addons functionality by diving into each Addon above.
+If you are a developer and would like to integrate with our Addons or use our existing data,
+you can <a class="reference internal" href="support.html"><span class="doc">reach out</span></a> to us and we would love to work with you.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="config-file/v2.html" class="btn btn-neutral float-left" title="Configuration file reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="intro/accounts.html" class="btn btn-neutral float-right" title="Account authentication methods" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
