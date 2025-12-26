@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,27 +21,27 @@ msgstr ""
 msgid "Hosting Markdoc documentation on Read the Docs."
 msgstr ""
 
-#: ../../../intro/markdoc.rst:2
-msgid "Markdoc"
+#: ../../../intro/markdoc.rst:3
+msgid "Deploying Markdoc on Read the Docs"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:7
+#: ../../../intro/markdoc.rst:8
 msgid ""
 "`Markdoc`_ is a powerful documentation framework that allows you to write "
 "documentation in a flavor of Markdown."
 msgstr ""
 
-#: ../../../intro/markdoc.rst:9
+#: ../../../intro/markdoc.rst:10
 msgid ""
 "Minimal configuration is required to build an existing Markdoc project on "
 "Read the Docs."
 msgstr ""
 
-#: ../../../intro/markdoc.rst:11
+#: ../../../intro/markdoc.rst:12
 msgid ".readthedocs.yaml"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:11
+#: ../../../intro/markdoc.rst:12
 msgid ""
 " version: 2\n"
 "\n"
@@ -61,21 +61,21 @@ msgid ""
 "       - cp --verbose --recursive docs/out/* $READTHEDOCS_OUTPUT/html/"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:34
+#: ../../../intro/markdoc.rst:35
 msgid "Example configuration"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:36
+#: ../../../intro/markdoc.rst:37
 msgid ""
 "In order to build a Markdoc project on Read the Docs, you need to generate "
 "static HTML from the Next.js build:"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:39
+#: ../../../intro/markdoc.rst:40
 msgid "next.config.js"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:39
+#: ../../../intro/markdoc.rst:40
 msgid ""
 "const withMarkdoc = require('@markdoc/next.js');\n"
 "\n"
@@ -102,57 +102,57 @@ msgid ""
 "});"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:65
+#: ../../../intro/markdoc.rst:66
 msgid "Limitations"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:67
+#: ../../../intro/markdoc.rst:68
 msgid ""
 "All Read the Docs features are supported for Markdoc projects. There may be "
 "some Markdoc features that depend on server-side rendering that are not "
 "supported."
 msgstr ""
 
-#: ../../../intro/markdoc.rst:71
+#: ../../../intro/markdoc.rst:72
 msgid "Getting started"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:73
+#: ../../../intro/markdoc.rst:74
 msgid ""
 "If you have an existing Markdoc project you want to host on Read the Docs, "
 "check out our :doc:`/intro/add-project` guide."
 msgstr ""
 
-#: ../../../intro/markdoc.rst:74
+#: ../../../intro/markdoc.rst:75
 msgid ""
 "If you're new to Markdoc, check out the official `Getting started with "
 "Markdoc`_ guide."
 msgstr ""
 
-#: ../../../intro/markdoc.rst:79
+#: ../../../intro/markdoc.rst:80
 msgid "Example repository and demo"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:81
+#: ../../../intro/markdoc.rst:82
 msgid "Example repository"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:82
+#: ../../../intro/markdoc.rst:83
 msgid "https://github.com/readthedocs/test-builds/tree/markdoc"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:84
+#: ../../../intro/markdoc.rst:85
 msgid "Demo"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:85
+#: ../../../intro/markdoc.rst:86
 msgid "https://test-builds.readthedocs.io/en/markdoc/"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:88
+#: ../../../intro/markdoc.rst:89
 msgid "Further reading"
 msgstr ""
 
-#: ../../../intro/markdoc.rst:90
+#: ../../../intro/markdoc.rst:91
 msgid "`Markdoc documentation`_"
 msgstr ""

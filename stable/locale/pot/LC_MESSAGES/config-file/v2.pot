@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgid "Sphinx"
 msgstr ""
 
 #: ../../../config-file/v2.rst:19 ../../../config-file/v2.rst:26
-#: ../../../config-file/v2.rst:536
+#: ../../../config-file/v2.rst:540
 msgid ".readthedocs.yaml"
 msgstr ""
 
@@ -158,8 +158,8 @@ msgid "Required"
 msgstr ""
 
 #: ../../../config-file/v2.rst:57 ../../../config-file/v2.rst:266
-#: ../../../config-file/v2.rst:284 ../../../config-file/v2.rst:614
-#: ../../../config-file/v2.rst:656
+#: ../../../config-file/v2.rst:284 ../../../config-file/v2.rst:618
+#: ../../../config-file/v2.rst:660
 msgid "``true``"
 msgstr ""
 
@@ -187,9 +187,9 @@ msgid "Type"
 msgstr ""
 
 #: ../../../config-file/v2.rst:71 ../../../config-file/v2.rst:139
-#: ../../../config-file/v2.rst:188 ../../../config-file/v2.rst:400
-#: ../../../config-file/v2.rst:565 ../../../config-file/v2.rst:695
-#: ../../../config-file/v2.rst:714
+#: ../../../config-file/v2.rst:188 ../../../config-file/v2.rst:404
+#: ../../../config-file/v2.rst:569 ../../../config-file/v2.rst:699
+#: ../../../config-file/v2.rst:718
 msgid "``list``"
 msgstr ""
 
@@ -206,9 +206,9 @@ msgid "Default"
 msgstr ""
 
 #: ../../../config-file/v2.rst:73 ../../../config-file/v2.rst:140
-#: ../../../config-file/v2.rst:189 ../../../config-file/v2.rst:401
-#: ../../../config-file/v2.rst:567 ../../../config-file/v2.rst:696
-#: ../../../config-file/v2.rst:715
+#: ../../../config-file/v2.rst:189 ../../../config-file/v2.rst:405
+#: ../../../config-file/v2.rst:571 ../../../config-file/v2.rst:700
+#: ../../../config-file/v2.rst:719
 msgid "``[]``"
 msgstr ""
 
@@ -319,15 +319,15 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:150 ../../../config-file/v2.rst:172
 #: ../../../config-file/v2.rst:173 ../../../config-file/v2.rst:226
-#: ../../../config-file/v2.rst:613 ../../../config-file/v2.rst:655
+#: ../../../config-file/v2.rst:617 ../../../config-file/v2.rst:659
 msgid "``path``"
 msgstr ""
 
 #: ../../../config-file/v2.rst:151 ../../../config-file/v2.rst:174
-#: ../../../config-file/v2.rst:227 ../../../config-file/v2.rst:465
-#: ../../../config-file/v2.rst:504 ../../../config-file/v2.rst:566
-#: ../../../config-file/v2.rst:624 ../../../config-file/v2.rst:665
-#: ../../../config-file/v2.rst:735
+#: ../../../config-file/v2.rst:227 ../../../config-file/v2.rst:469
+#: ../../../config-file/v2.rst:508 ../../../config-file/v2.rst:570
+#: ../../../config-file/v2.rst:628 ../../../config-file/v2.rst:669
+#: ../../../config-file/v2.rst:739
 msgid "``false``"
 msgstr ""
 
@@ -474,9 +474,9 @@ msgid "Arbitrary Docker images are not supported."
 msgstr ""
 
 #: ../../../config-file/v2.rst:264 ../../../config-file/v2.rst:308
-#: ../../../config-file/v2.rst:335 ../../../config-file/v2.rst:351
-#: ../../../config-file/v2.rst:362 ../../../config-file/v2.rst:379
-#: ../../../config-file/v2.rst:600
+#: ../../../config-file/v2.rst:336 ../../../config-file/v2.rst:353
+#: ../../../config-file/v2.rst:364 ../../../config-file/v2.rst:382
+#: ../../../config-file/v2.rst:604
 msgid "``string``"
 msgstr ""
 
@@ -507,8 +507,8 @@ msgstr ""
 msgid "Version specifiers for each tool. It must contain at least one tool."
 msgstr ""
 
-#: ../../../config-file/v2.rst:282 ../../../config-file/v2.rst:461
-#: ../../../config-file/v2.rst:502
+#: ../../../config-file/v2.rst:282 ../../../config-file/v2.rst:465
+#: ../../../config-file/v2.rst:506
 msgid "``dict``"
 msgstr ""
 
@@ -588,192 +588,208 @@ msgstr ""
 msgid "``3.13``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:320 ../../../config-file/v2.rst:344
-#: ../../../config-file/v2.rst:355 ../../../config-file/v2.rst:372
-#: ../../../config-file/v2.rst:389
+#: ../../../config-file/v2.rst:320
+msgid "``3.14``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:321 ../../../config-file/v2.rst:346
+#: ../../../config-file/v2.rst:357 ../../../config-file/v2.rst:375
+#: ../../../config-file/v2.rst:393
 msgid "``latest`` (alias for the latest version available on Read the Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:321
+#: ../../../config-file/v2.rst:322
 msgid "``miniconda3-4.7``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:322
+#: ../../../config-file/v2.rst:323
 msgid "``miniconda3-3.12-24.1``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:323
+#: ../../../config-file/v2.rst:324
 msgid "``miniconda3-3.12-24.9``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:324
+#: ../../../config-file/v2.rst:325
 msgid ""
 "``miniconda-latest`` (alias for the latest version available on Read the "
 "Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:325
+#: ../../../config-file/v2.rst:326
 msgid "``mambaforge-4.10``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:326
+#: ../../../config-file/v2.rst:327
 msgid "``mambaforge-22.9``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:327
+#: ../../../config-file/v2.rst:328
 msgid "``mambaforge-23.11``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:328
+#: ../../../config-file/v2.rst:329
 msgid ""
 "``mambaforge-latest`` (alias for the latest version available on Read the "
 "Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:331
+#: ../../../config-file/v2.rst:332
 msgid "build.tools.nodejs"
 msgstr ""
 
-#: ../../../config-file/v2.rst:333
+#: ../../../config-file/v2.rst:334
 msgid "Node.js version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:337
+#: ../../../config-file/v2.rst:338
 msgid "``14``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:338
+#: ../../../config-file/v2.rst:339
 msgid "``16``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:339
+#: ../../../config-file/v2.rst:340
 msgid "``18``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:340
+#: ../../../config-file/v2.rst:341
 msgid "``19``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:341
+#: ../../../config-file/v2.rst:342
 msgid "``20``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:342
+#: ../../../config-file/v2.rst:343
 msgid "``22``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:343
+#: ../../../config-file/v2.rst:344
 msgid "``23``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:347
-msgid "build.tools.ruby"
+#: ../../../config-file/v2.rst:345
+msgid "``24``"
 msgstr ""
 
 #: ../../../config-file/v2.rst:349
+msgid "build.tools.ruby"
+msgstr ""
+
+#: ../../../config-file/v2.rst:351
 msgid "Ruby version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:353
+#: ../../../config-file/v2.rst:355
 msgid "``3.3``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:354
+#: ../../../config-file/v2.rst:356
 msgid "``3.4``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:358
+#: ../../../config-file/v2.rst:360
 msgid "build.tools.rust"
 msgstr ""
 
-#: ../../../config-file/v2.rst:360
+#: ../../../config-file/v2.rst:362
 msgid "Rust version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:364
+#: ../../../config-file/v2.rst:366
 msgid "``1.55``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:365
+#: ../../../config-file/v2.rst:367
 msgid "``1.61``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:366
+#: ../../../config-file/v2.rst:368
 msgid "``1.64``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:367
+#: ../../../config-file/v2.rst:369
 msgid "``1.70``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:368
+#: ../../../config-file/v2.rst:370
 msgid "``1.75``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:369
+#: ../../../config-file/v2.rst:371
 msgid "``1.78``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:370
+#: ../../../config-file/v2.rst:372
 msgid "``1.82``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:371
+#: ../../../config-file/v2.rst:373
 msgid "``1.86``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:375
+#: ../../../config-file/v2.rst:374
+msgid "``1.91``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:378
 msgid "build.tools.golang"
 msgstr ""
 
-#: ../../../config-file/v2.rst:377
+#: ../../../config-file/v2.rst:380
 msgid "Go version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:381
+#: ../../../config-file/v2.rst:384
 msgid "``1.17``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:382
+#: ../../../config-file/v2.rst:385
 msgid "``1.18``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:383
+#: ../../../config-file/v2.rst:386
 msgid "``1.19``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:384
+#: ../../../config-file/v2.rst:387
 msgid "``1.20``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:385
+#: ../../../config-file/v2.rst:388
 msgid "``1.21``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:386
+#: ../../../config-file/v2.rst:389
 msgid "``1.22``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:387
+#: ../../../config-file/v2.rst:390
 msgid "``1.23``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:388
+#: ../../../config-file/v2.rst:391
 msgid "``1.24``"
 msgstr ""
 
 #: ../../../config-file/v2.rst:392
+msgid "``1.25``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:396
 msgid "build.apt_packages"
 msgstr ""
 
-#: ../../../config-file/v2.rst:394
+#: ../../../config-file/v2.rst:398
 msgid ""
 "List of `APT packages`_ to install. Our build servers run various Ubuntu LTS "
 "versions with the default set of package repositories installed. We don't "
 "currently support PPA's or other custom repositories."
 msgstr ""
 
-#: ../../../config-file/v2.rst:403
+#: ../../../config-file/v2.rst:407
 msgid ""
 "version: 2\n"
 "\n"
@@ -783,23 +799,23 @@ msgid ""
 "    - cmake"
 msgstr ""
 
-#: ../../../config-file/v2.rst:414
+#: ../../../config-file/v2.rst:418
 msgid ""
 "When possible avoid installing Python packages using apt (``python3-numpy`` "
 "for example), :doc:`use pip or conda instead </guides/reproducible-builds>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:419
+#: ../../../config-file/v2.rst:423
 msgid ""
 "Currently, it's not possible to use this option when using :ref:`config-file/"
 "v2:build.commands`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:423
+#: ../../../config-file/v2.rst:427
 msgid "build.jobs"
 msgstr ""
 
-#: ../../../config-file/v2.rst:425
+#: ../../../config-file/v2.rst:429
 msgid ""
 "Commands to be run before or after a Read the Docs :term:`pre-defined build "
 "jobs`, or to override a specific job. This allows you to run custom commands "
@@ -807,7 +823,7 @@ msgid ""
 "for more details."
 msgstr ""
 
-#: ../../../config-file/v2.rst:430
+#: ../../../config-file/v2.rst:434
 msgid ""
 "version: 2\n"
 "\n"
@@ -823,13 +839,13 @@ msgid ""
 "      - echo `date`"
 msgstr ""
 
-#: ../../../config-file/v2.rst:447
+#: ../../../config-file/v2.rst:451
 msgid ""
 "Each build step consists of a list of commands to be executed. ``build.os`` "
 "and ``build.tools`` are also required to use ``build.jobs``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:452
+#: ../../../config-file/v2.rst:456
 msgid ""
 "If the :ref:`config-file/v2:sphinx` or  :ref:`config-file/v2:mkdocs` keys "
 "are present in the configuration file, the default steps for each tool will "
@@ -840,7 +856,7 @@ msgid ""
 "environment in a specific directory."
 msgstr ""
 
-#: ../../../config-file/v2.rst:457
+#: ../../../config-file/v2.rst:461
 msgid ""
 "If neither of the ``sphinx`` or ``mkdocs`` keys are present in the "
 "configuration file, only the specified ``build.tools`` and ``build."
@@ -853,7 +869,7 @@ msgstr ""
 msgid "Allowed keys"
 msgstr ""
 
-#: ../../../config-file/v2.rst:462
+#: ../../../config-file/v2.rst:466
 msgid ""
 "``post_checkout``, ``pre_system_dependencies``, "
 "``post_system_dependencies``, ``pre_create_environment``, "
@@ -861,22 +877,22 @@ msgid ""
 "``post_install``, ``pre_build``, ``build``, ``post_build``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:466 ../../../config-file/v2.rst:505
-#: ../../../config-file/v2.rst:763
+#: ../../../config-file/v2.rst:470 ../../../config-file/v2.rst:509
+#: ../../../config-file/v2.rst:767
 msgid "``{}``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:469
+#: ../../../config-file/v2.rst:473
 msgid "build.jobs.build"
 msgstr ""
 
-#: ../../../config-file/v2.rst:471
+#: ../../../config-file/v2.rst:475
 msgid ""
 "Commands to override the default build process. When running builds from "
 "pull requests, only the ``html`` step will be executed."
 msgstr ""
 
-#: ../../../config-file/v2.rst:474
+#: ../../../config-file/v2.rst:478
 msgid ""
 "version: 2\n"
 "\n"
@@ -905,34 +921,34 @@ msgid ""
 "        - echo \"Hello world!\" > $READTHEDOCS_OUTPUT/epub/index.epub"
 msgstr ""
 
-#: ../../../config-file/v2.rst:503
+#: ../../../config-file/v2.rst:507
 msgid "``html``, ``pdf``, ``epub``, ``htmlzip``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:509
+#: ../../../config-file/v2.rst:513
 msgid ""
 "If any of the ``pdf``, ``epub``, or ``htmlzip`` steps are overridden, they "
 "should be included in the :ref:`config-file/v2:formats` list."
 msgstr ""
 
-#: ../../../config-file/v2.rst:514
+#: ../../../config-file/v2.rst:518
 msgid ""
 "For each format, you need to generate their output in the :ref:"
 "`$READTHEDOCS_OUTPUT <build-customization:where to put files>` directory."
 msgstr ""
 
-#: ../../../config-file/v2.rst:517
+#: ../../../config-file/v2.rst:521
 msgid "build.commands"
 msgstr ""
 
-#: ../../../config-file/v2.rst:519
+#: ../../../config-file/v2.rst:523
 msgid ""
 "Specify a list of commands that Read the Docs will run on the build process. "
 "When ``build.commands`` is used, none of the :term:`pre-defined build jobs` "
 "will be executed."
 msgstr ""
 
-#: ../../../config-file/v2.rst:522
+#: ../../../config-file/v2.rst:526
 msgid ""
 "version: 2\n"
 "\n"
@@ -946,11 +962,11 @@ msgid ""
 "html/ docs/"
 msgstr ""
 
-#: ../../../config-file/v2.rst:534
+#: ../../../config-file/v2.rst:538
 msgid "But we recommend using :ref:`config-file/v2:build.jobs` instead:"
 msgstr ""
 
-#: ../../../config-file/v2.rst:536
+#: ../../../config-file/v2.rst:540
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -966,7 +982,7 @@ msgid ""
 "$READTHEDOCS_OUTPUT/html/ docs/"
 msgstr ""
 
-#: ../../../config-file/v2.rst:551
+#: ../../../config-file/v2.rst:555
 msgid ""
 "``build.jobs`` offers the same functionality as ``build.commands``, but in a "
 "more structured way that allows you to define different commands for each "
@@ -974,28 +990,28 @@ msgid ""
 "apt_packages``. See :doc:`/build-customization` for more details."
 msgstr ""
 
-#: ../../../config-file/v2.rst:558
+#: ../../../config-file/v2.rst:562
 msgid ""
 "``build.os`` and ``build.tools`` are also required when using ``build."
 "commands``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:562
+#: ../../../config-file/v2.rst:566
 msgid ""
 "All items in the ``build.commands`` array are executed in a clean shell "
 "environment, i.e. environment changes do not persist and the working "
 "directory always start from the git repo."
 msgstr ""
 
-#: ../../../config-file/v2.rst:571
+#: ../../../config-file/v2.rst:575
 msgid "sphinx"
 msgstr ""
 
-#: ../../../config-file/v2.rst:573
+#: ../../../config-file/v2.rst:577
 msgid "Configuration for Sphinx documentation."
 msgstr ""
 
-#: ../../../config-file/v2.rst:575
+#: ../../../config-file/v2.rst:579
 msgid ""
 "version: 2\n"
 "\n"
@@ -1005,7 +1021,7 @@ msgid ""
 "  fail_on_warning: true"
 msgstr ""
 
-#: ../../../config-file/v2.rst:585
+#: ../../../config-file/v2.rst:589
 msgid ""
 "If you want to pin Sphinx to a specific version, use a ``requirements.txt`` "
 "or ``environment.yml`` file (see :ref:`config-file/v2:requirements file` "
@@ -1017,61 +1033,61 @@ msgid ""
 "2020 <build-default-versions:external dependencies>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:596
+#: ../../../config-file/v2.rst:600
 msgid "sphinx.builder"
 msgstr ""
 
-#: ../../../config-file/v2.rst:598
+#: ../../../config-file/v2.rst:602
 msgid "The builder type for the Sphinx documentation."
 msgstr ""
 
-#: ../../../config-file/v2.rst:601
+#: ../../../config-file/v2.rst:605
 msgid "``html``, ``dirhtml``, ``singlehtml``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:602
+#: ../../../config-file/v2.rst:606
 msgid "``html``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:605
+#: ../../../config-file/v2.rst:609
 msgid ""
 "The ``htmldir`` builder option was renamed to ``dirhtml`` to use the same "
 "name as sphinx. Configurations using the old name will continue working."
 msgstr ""
 
-#: ../../../config-file/v2.rst:609
+#: ../../../config-file/v2.rst:613
 msgid "sphinx.configuration"
 msgstr ""
 
-#: ../../../config-file/v2.rst:611
+#: ../../../config-file/v2.rst:615
 msgid "The path to the ``conf.py`` file, relative to the root of the project."
 msgstr ""
 
-#: ../../../config-file/v2.rst:617
+#: ../../../config-file/v2.rst:621
 msgid "sphinx.fail_on_warning"
 msgstr ""
 
-#: ../../../config-file/v2.rst:619
+#: ../../../config-file/v2.rst:623
 msgid ""
 "Turn warnings into errors (:option:`-W <sphinx:sphinx-build.-W>` and :option:"
 "`--keep-going <sphinx:sphinx-build.--keep-going>` options). This means the "
 "build fails if there is a warning and exits with exit status 1."
 msgstr ""
 
-#: ../../../config-file/v2.rst:623 ../../../config-file/v2.rst:664
-#: ../../../config-file/v2.rst:734
+#: ../../../config-file/v2.rst:627 ../../../config-file/v2.rst:668
+#: ../../../config-file/v2.rst:738
 msgid "``bool``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:627
+#: ../../../config-file/v2.rst:631
 msgid "mkdocs"
 msgstr ""
 
-#: ../../../config-file/v2.rst:629
+#: ../../../config-file/v2.rst:633
 msgid "Configuration for MkDocs documentation."
 msgstr ""
 
-#: ../../../config-file/v2.rst:631
+#: ../../../config-file/v2.rst:635
 msgid ""
 "version: 2\n"
 "\n"
@@ -1080,7 +1096,7 @@ msgid ""
 "  fail_on_warning: false"
 msgstr ""
 
-#: ../../../config-file/v2.rst:640
+#: ../../../config-file/v2.rst:644
 msgid ""
 "If you want to pin MkDocs to a specific version, use a ``requirements.txt`` "
 "or ``environment.yml`` file (see :ref:`config-file/v2:requirements file` "
@@ -1092,45 +1108,45 @@ msgid ""
 "<build-default-versions:external dependencies>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:651
+#: ../../../config-file/v2.rst:655
 msgid "mkdocs.configuration"
 msgstr ""
 
-#: ../../../config-file/v2.rst:653
+#: ../../../config-file/v2.rst:657
 msgid ""
 "The path to the ``mkdocs.yml`` file, relative to the root of the project."
 msgstr ""
 
-#: ../../../config-file/v2.rst:659
+#: ../../../config-file/v2.rst:663
 msgid "mkdocs.fail_on_warning"
 msgstr ""
 
-#: ../../../config-file/v2.rst:661
+#: ../../../config-file/v2.rst:665
 msgid ""
 "`Turn warnings into errors <https://www.mkdocs.org/user-guide/configuration/"
 "#strict>`__. This means that the build stops at the first warning and exits "
 "with exit status 1."
 msgstr ""
 
-#: ../../../config-file/v2.rst:668
+#: ../../../config-file/v2.rst:672
 msgid "submodules"
 msgstr ""
 
-#: ../../../config-file/v2.rst:670
+#: ../../../config-file/v2.rst:674
 msgid "VCS submodules configuration."
 msgstr ""
 
-#: ../../../config-file/v2.rst:674
+#: ../../../config-file/v2.rst:678
 msgid "Only Git is supported at the moment."
 msgstr ""
 
-#: ../../../config-file/v2.rst:678
+#: ../../../config-file/v2.rst:682
 msgid ""
 "You can't use ``include`` and ``exclude`` settings for submodules at the "
 "same time."
 msgstr ""
 
-#: ../../../config-file/v2.rst:680
+#: ../../../config-file/v2.rst:684
 msgid ""
 "version: 2\n"
 "\n"
@@ -1141,19 +1157,19 @@ msgid ""
 "  recursive: true"
 msgstr ""
 
-#: ../../../config-file/v2.rst:691
+#: ../../../config-file/v2.rst:695
 msgid "submodules.include"
 msgstr ""
 
-#: ../../../config-file/v2.rst:693
+#: ../../../config-file/v2.rst:697
 msgid "List of submodules to be included."
 msgstr ""
 
-#: ../../../config-file/v2.rst:700
+#: ../../../config-file/v2.rst:704
 msgid "You can use the ``all`` keyword to include all submodules."
 msgstr ""
 
-#: ../../../config-file/v2.rst:702
+#: ../../../config-file/v2.rst:706
 msgid ""
 "version: 2\n"
 "\n"
@@ -1161,21 +1177,21 @@ msgid ""
 "  include: all"
 msgstr ""
 
-#: ../../../config-file/v2.rst:710
+#: ../../../config-file/v2.rst:714
 msgid "submodules.exclude"
 msgstr ""
 
-#: ../../../config-file/v2.rst:712
+#: ../../../config-file/v2.rst:716
 msgid "List of submodules to be excluded."
 msgstr ""
 
-#: ../../../config-file/v2.rst:719
+#: ../../../config-file/v2.rst:723
 msgid ""
 "You can use the ``all`` keyword to exclude all submodules. This is the same "
 "as ``include: []``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:722
+#: ../../../config-file/v2.rst:726
 msgid ""
 "version: 2\n"
 "\n"
@@ -1183,27 +1199,27 @@ msgid ""
 "  exclude: all"
 msgstr ""
 
-#: ../../../config-file/v2.rst:730
+#: ../../../config-file/v2.rst:734
 msgid "submodules.recursive"
 msgstr ""
 
-#: ../../../config-file/v2.rst:732
+#: ../../../config-file/v2.rst:736
 msgid "Do a recursive clone of the submodules."
 msgstr ""
 
-#: ../../../config-file/v2.rst:739
+#: ../../../config-file/v2.rst:743
 msgid "This is ignored if there aren't submodules to clone."
 msgstr ""
 
-#: ../../../config-file/v2.rst:742
+#: ../../../config-file/v2.rst:746
 msgid "search"
 msgstr ""
 
-#: ../../../config-file/v2.rst:744
+#: ../../../config-file/v2.rst:748
 msgid "Settings for more control over :doc:`/server-side-search/index`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:746
+#: ../../../config-file/v2.rst:750
 msgid ""
 "version: 2\n"
 "\n"
@@ -1215,19 +1231,19 @@ msgid ""
 "    - 404.html"
 msgstr ""
 
-#: ../../../config-file/v2.rst:758
+#: ../../../config-file/v2.rst:762
 msgid "search.ranking"
 msgstr ""
 
-#: ../../../config-file/v2.rst:760
+#: ../../../config-file/v2.rst:764
 msgid "Set a custom search rank over pages matching a pattern."
 msgstr ""
 
-#: ../../../config-file/v2.rst:762
+#: ../../../config-file/v2.rst:766
 msgid "``map`` of patterns to ranks"
 msgstr ""
 
-#: ../../../config-file/v2.rst:765 ../../../config-file/v2.rst:816
+#: ../../../config-file/v2.rst:769 ../../../config-file/v2.rst:820
 msgid ""
 "Patterns are matched against the relative paths of the HTML files produced "
 "by the build, you should try to match ``index.html``, not ``docs/index."
@@ -1235,19 +1251,19 @@ msgid ""
 "the following special characters:"
 msgstr ""
 
-#: ../../../config-file/v2.rst:769
+#: ../../../config-file/v2.rst:773
 msgid "``*`` matches everything, including slashes."
 msgstr ""
 
-#: ../../../config-file/v2.rst:770 ../../../config-file/v2.rst:821
+#: ../../../config-file/v2.rst:774 ../../../config-file/v2.rst:825
 msgid "``?`` matches any single character."
 msgstr ""
 
-#: ../../../config-file/v2.rst:771 ../../../config-file/v2.rst:822
+#: ../../../config-file/v2.rst:775 ../../../config-file/v2.rst:826
 msgid "``[seq]`` matches any character in ``seq``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:773
+#: ../../../config-file/v2.rst:777
 msgid ""
 "The rank can be an integer number between -10 and 10 (inclusive). Pages with "
 "a rank closer to -10 will appear further down the list of results, and pages "
@@ -1255,13 +1271,13 @@ msgid ""
 "that 0 means *normal rank*, not *no rank*."
 msgstr ""
 
-#: ../../../config-file/v2.rst:778
+#: ../../../config-file/v2.rst:782
 msgid ""
 "If you are looking to completely ignore a page, check :ref:`config-file/v2:"
 "search.ignore`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:781
+#: ../../../config-file/v2.rst:785
 msgid ""
 "version: 2\n"
 "\n"
@@ -1279,39 +1295,39 @@ msgid ""
 "    '*/guides.html': 3"
 msgstr ""
 
-#: ../../../config-file/v2.rst:800
+#: ../../../config-file/v2.rst:804
 msgid "The final rank will be the last pattern to match the page."
 msgstr ""
 
-#: ../../../config-file/v2.rst:804
+#: ../../../config-file/v2.rst:808
 msgid ""
 "Is better to decrease the rank of pages you want to deprecate, rather than "
 "increasing the rank of the other pages."
 msgstr ""
 
-#: ../../../config-file/v2.rst:808
+#: ../../../config-file/v2.rst:812
 msgid "search.ignore"
 msgstr ""
 
-#: ../../../config-file/v2.rst:810
+#: ../../../config-file/v2.rst:814
 msgid ""
 "List of paths to ignore and exclude from the search index. Paths matched "
 "will not be included in search results."
 msgstr ""
 
-#: ../../../config-file/v2.rst:813
+#: ../../../config-file/v2.rst:817
 msgid "``list`` of patterns"
 msgstr ""
 
-#: ../../../config-file/v2.rst:814
+#: ../../../config-file/v2.rst:818
 msgid "``['search.html', 'search/index.html', '404.html', '404/index.html']``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:820
+#: ../../../config-file/v2.rst:824
 msgid "``*`` matches everything (including slashes)."
 msgstr ""
 
-#: ../../../config-file/v2.rst:824
+#: ../../../config-file/v2.rst:828
 msgid ""
 "version: 2\n"
 "\n"
@@ -1329,7 +1345,7 @@ msgid ""
 "     - '*/ref.html'"
 msgstr ""
 
-#: ../../../config-file/v2.rst:841
+#: ../../../config-file/v2.rst:845
 msgid ""
 "version: 2\n"
 "\n"
@@ -1346,17 +1362,17 @@ msgid ""
 "     - 404/index.html"
 msgstr ""
 
-#: ../../../config-file/v2.rst:859
+#: ../../../config-file/v2.rst:863
 msgid ""
 "Since Read the Docs fallbacks to the original search engine when no results "
 "are found, you may still see search results from ignored pages."
 msgstr ""
 
-#: ../../../config-file/v2.rst:863
+#: ../../../config-file/v2.rst:867
 msgid "Schema"
 msgstr ""
 
-#: ../../../config-file/v2.rst:865
+#: ../../../config-file/v2.rst:869
 msgid ""
 "You can see the complete schema `here <https://github.com/readthedocs/"
 "readthedocs.org/blob/main/readthedocs/rtd_tests/fixtures/spec/v2/schema."
