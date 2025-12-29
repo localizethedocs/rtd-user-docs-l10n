@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-19 11:35:11 -0500",
-      "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
-      "title" : "Search: Disable search indexing for inactive projects (#12666)"
+      "date" : "2025-12-22 12:12:43 +0100",
+      "hash" : "7d9a413f64bc4dbfa04cc0f208b0e090f7f72ded",
+      "title" : "Upgrade STORAGES setting to use Django's standard pattern (#12625)"
     }
   },
   "type" : "branch",
