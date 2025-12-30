@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Localization and Internationalization" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="localization.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="In this article, we explain high-level approaches to internationalizing and localizing your documentation. By default, Read the Docs assumes that your documentation is or might become multilingual one day. The initial default language is English and therefore you often see the initial build of yo..." />
+<meta property="og:image" content="_images/translation_bar.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="In this article, we explain high-level approaches to internationalizing and localizing your documentation. By default, Read the Docs assumes that your documentation is or might become multilingual one day. The initial default language is English and therefore you often see the initial build of yo..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Localization and Internationalization &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/localization.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="URL versioning schemes" href="versioning-schemes.html" />
+    <link rel="prev" title="Subprojects" href="subprojects.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">Subprojects</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Localization and Internationalization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#projects-with-one-language">Projects with one language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projects-with-multiple-translations">Projects with multiple translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#translation-workflows">Translation workflows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Localization and Internationalization</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/localization.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="localization-and-internationalization">
+<h1>Localization and Internationalization<a class="headerlink" href="#localization-and-internationalization" title="Link to this heading"></a></h1>
+<p>In this article, we explain high-level approaches to internationalizing and localizing your documentation.</p>
+<p>By default, Read the Docs assumes that your documentation is or <em>might become</em> multilingual one day.
+The initial default language is English and
+therefore you often see the initial build of your documentation published at <code class="docutils literal notranslate"><span class="pre">/en/latest/</span></code>,
+where the <code class="docutils literal notranslate"><span class="pre">/en</span></code> denotes that it's in English.
+By having the <code class="docutils literal notranslate"><span class="pre">en</span></code> URL component present from the beginning,
+you are ready for the eventuality that you would want a second language.</p>
+<p>Read the Docs supports hosting your documentation in multiple languages.
+Read below for the various approaches that we support.</p>
+<nav class="contents local" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#projects-with-one-language" id="id2">Projects with one language</a></p></li>
+<li><p><a class="reference internal" href="#projects-with-multiple-translations" id="id3">Projects with multiple translations</a></p>
+<ul>
+<li><p><a class="reference internal" href="#translation-workflows" id="id4">Translation workflows</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="projects-with-one-language">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Projects with one language</a><a class="headerlink" href="#projects-with-one-language" title="Link to this heading"></a></h2>
+<p>If your documentation isn't in English (the default),
+you should indicate which language you have written it in.</p>
+<p>It is easy to set the <em>Language</em> of your project.
+On the project <em>Admin</em> page (or <em>Import</em> page),
+simply select your desired <em>Language</em> from the dropdown.
+This will tell Read the Docs that your project is in the language.
+The language will be represented in the URL for your project.</p>
+<p>For example,
+a project that is in Spanish will have a default URL of <code class="docutils literal notranslate"><span class="pre">/es/latest/</span></code> instead of <code class="docutils literal notranslate"><span class="pre">/en/latest/</span></code>.</p>
+</section>
+<section id="projects-with-multiple-translations">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Projects with multiple translations</a><a class="headerlink" href="#projects-with-multiple-translations" title="Link to this heading"></a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="guides/manage-translations-sphinx.html"><span class="doc">How to manage translations for Sphinx projects</span></a></dt><dd><p>Describes the whole process for a Sphinx documentation projects with multiples languages
+in the same repository and how to keep the translations updated on time.</p>
+</dd>
+</dl>
+</div>
+<p>Each language must have its own project on Read the Docs.
+You will choose one to be the parent project,
+and add each of the other projects as &quot;Translations&quot; of the parent project.</p>
+<p>Let's use <code class="docutils literal notranslate"><span class="pre">godot</span></code> as an example.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">godot</span></code> project is the parent.
+Each translation then has its own project, for example <code class="docutils literal notranslate"><span class="pre">godot-es</span></code>.
+The <em>Language</em> for <code class="docutils literal notranslate"><span class="pre">godot-es</span></code> is set to <code class="docutils literal notranslate"><span class="pre">Spanish</span></code>.
+Then, on the  <em>Translations</em> page of the <code class="docutils literal notranslate"><span class="pre">godot</span></code> project, <code class="docutils literal notranslate"><span class="pre">godot-es</span></code> is set as translation.</p>
+<p>This has the results of serving:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">godot</span></code> at <code class="docutils literal notranslate"><span class="pre">https://docs.godotengine.org/en/stable/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">godot-es</span></code> at <code class="docutils literal notranslate"><span class="pre">https://docs.godotengine.org/es/stable/</span></code></p></li>
+</ul>
+<p>It also gets included in the Read the Docs <a class="reference internal" href="glossary.html#term-flyout-menu"><span class="xref std std-term">flyout menu</span></a>:</p>
+<img alt="_images/translation_bar.png" src="_images/translation_bar.png" />
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The default language of a custom domain is determined by the language of the
+parent project that the domain was configured on. See
+<a class="reference internal" href="custom-domains.html"><span class="doc">Custom domains</span></a> for more information.</p>
+</div>
+<section id="translation-workflows">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Translation workflows</a><a class="headerlink" href="#translation-workflows" title="Link to this heading"></a></h3>
+<p>When you work with translations,
+the workflow of your translators becomes a critical component.</p>
+<p>Considerations include:</p>
+<ul class="simple">
+<li><p>Are your translators able to use a Git workflow? For instance, are they able to translate directly via GitHub?</p></li>
+<li><p>Do you benefit from machine translation?</p></li>
+<li><p>Do you need different roles, for instance do you need translators and editors?</p></li>
+<li><p>What is your source language?</p></li>
+<li><p>When are your translated versions published?</p></li>
+</ul>
+<p>There are many translation platforms that support this workflow.
+These include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://weblate.org/">Weblate</a></p></li>
+<li><p><a class="reference external" href="https://www.transifex.com/">Transifex</a></p></li>
+<li><p><a class="reference external" href="https://crowdin.com/">Crowdin</a></p></li>
+</ul>
+<p>Because Read the Docs builds your Git repository,
+you can use any of the above solutions.
+Any solution that synchronizes your translations with your Git repository
+will ensure that your translations are automatically published with Read the Docs.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="subprojects.html" class="btn btn-neutral float-left" title="Subprojects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="versioning-schemes.html" class="btn btn-neutral float-right" title="URL versioning schemes" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Cross-site requests" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="api/cross-site-requests.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Cross site requests are allowed for the following endpoints:/api/v2/footer_html/,/api/v2/search/,/api/v2/embed/,/api/v2/sustainability/,/api/v3/embed/. Except for the sustainability API, all of the above endpoints don&#x27;t allow you to pass credentials in cross-site requests. In other words, th..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Cross site requests are allowed for the following endpoints:/api/v2/footer_html/,/api/v2/search/,/api/v2/embed/,/api/v2/sustainability/,/api/v3/embed/. Except for the sustainability API, all of the above endpoints don&#x27;t allow you to pass credentials in cross-site requests. In other words, th..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cross-site requests &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/api/cross-site-requests.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Frequently asked questions" href="../faq.html" />
+    <link rel="prev" title="Server side search API" href="../server-side-search/api.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Public REST API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="v3.html">API v3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="v2.html">API v2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../server-side-search/api.html">Server side search API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cross-site requests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cookies">Cookies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Public REST API</a></li>
+      <li class="breadcrumb-item active">Cross-site requests</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/api/cross-site-requests.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cross-site-requests">
+<h1>Cross-site requests<a class="headerlink" href="#cross-site-requests" title="Link to this heading"></a></h1>
+<p>Cross site requests are allowed for the following endpoints:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="v2.html#undocumented-resources-and-endpoints"><span class="std std-ref">/api/v2/footer_html/</span></a></p></li>
+<li><p><a class="reference internal" href="../server-side-search/api.html#api-v2-deprecated"><span class="std std-ref">/api/v2/search/</span></a></p></li>
+<li><p><a class="reference internal" href="v2.html#embed"><span class="std std-ref">/api/v2/embed/</span></a></p></li>
+<li><p><a class="reference internal" href="v2.html#undocumented-resources-and-endpoints"><span class="std std-ref">/api/v2/sustainability/</span></a></p></li>
+<li><p><a class="reference internal" href="v3.html#embed"><span class="std std-ref">/api/v3/embed/</span></a></p></li>
+</ul>
+<p>Except for the sustainability API, all of the above endpoints
+don't allow you to pass credentials in cross-site requests.
+In other words, these API endpoints allow you to access <strong>public information only</strong>.</p>
+<p>On a technical level, this is achieved by implementing the <a class="reference external" href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> standard,
+which is supported by all major browsers.
+We implement it such way that it strictly match the intention of the API endpoint.</p>
+<section id="cookies">
+<h2>Cookies<a class="headerlink" href="#cookies" title="Link to this heading"></a></h2>
+<p>On Read the Docs Community, our session cookies have the <code class="docutils literal notranslate"><span class="pre">SameSite</span></code> attribute set to <code class="docutils literal notranslate"><span class="pre">Lax</span></code>,
+This means that browsers will not include them in cross site requests.
+All resources in Read the Docs Community are public, you don't need to pass cookies to make use
+of our allowed APIs from other sites.</p>
+<p>On Read the Docs for Business, our session cookies have the <code class="docutils literal notranslate"><span class="pre">SameSite</span></code> attribute set to <code class="docutils literal notranslate"><span class="pre">Lax</span></code>,
+this means that browsers will not include them in cross site requests.
+If you need to have access to versions that the current user has permissions over,
+you can make use of our proxied APIs, they can be accessed from docs domains with the <code class="xref py py-obj docutils literal notranslate"><span class="pre">/_/</span></code> prefix.
+For example, you can make use of our search API from <code class="xref py py-obj docutils literal notranslate"><span class="pre">&lt;your-docs-domain&gt;/_/api/v2/search/</span></code>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../server-side-search/api.html" class="btn btn-neutral float-left" title="Server side search API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../faq.html" class="btn btn-neutral float-right" title="Frequently asked questions" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

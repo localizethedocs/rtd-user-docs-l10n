@@ -1,0 +1,518 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Server side search API" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="server-side-search/api.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="You can integrate our server side search in your documentation by using our API. If you are using Business hosting you will need to replace https://app.readthedocs.org/ with https://app.readthedocs.com/ in all the URLs used in the following examples. Check Authentication and authorization if you ..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="You can integrate our server side search in your documentation by using our API. If you are using Business hosting you will need to replace https://app.readthedocs.org/ with https://app.readthedocs.com/ in all the URLs used in the following examples. Check Authentication and authorization if you ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server side search API &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/server-side-search/api.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Cross-site requests" href="../api/cross-site-requests.html" />
+    <link rel="prev" title="API v2" href="../api/v2.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api/index.html">Public REST API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api/v3.html">API v3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/v2.html">API v2</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Server side search API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#api-v3">API v3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#migrating-from-api-v2">Migrating from API v2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#authentication-and-authorization">Authentication and authorization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-v2-deprecated">API v2 (deprecated)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/cross-site-requests.html">Cross-site requests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../api/index.html">Public REST API</a></li>
+      <li class="breadcrumb-item active">Server side search API</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/server-side-search/api.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="server-side-search-api">
+<h1>Server side search API<a class="headerlink" href="#server-side-search-api" title="Link to this heading"></a></h1>
+<p>You can integrate our <a class="reference internal" href="index.html"><span class="doc">server side search</span></a> in your documentation by using our API.</p>
+<p>If you are using <a class="reference internal" href="../commercial/index.html"><span class="doc">Business hosting</span></a> you will need to replace
+<a class="reference external" href="https://app.readthedocs.org/">https://app.readthedocs.org/</a> with <a class="reference external" href="https://app.readthedocs.com/">https://app.readthedocs.com/</a> in all the URLs used in the following examples.
+Check <a class="reference internal" href="#authentication-and-authorization"><span class="std std-ref">Authentication and authorization</span></a> if you are using private versions.</p>
+<section id="api-v3">
+<h2>API v3<a class="headerlink" href="#api-v3" title="Link to this heading"></a></h2>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v3-search-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v3/search/</span></span><a class="headerlink" href="#get--api-v3-search-" title="Link to this definition"></a></dt>
+<dd><p>Return a list of search results for a project or subset of projects.
+Results are divided into sections with highlights of the matching term.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>q</strong> -- Search query (see <a class="reference internal" href="syntax.html"><span class="doc">Search query syntax</span></a>)</p></li>
+<li><p><strong>page</strong> -- Jump to a specific page</p></li>
+<li><p><strong>page_size</strong> -- Limits the results per page, default is 50</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>string</em>) -- The type of the result, currently page is the only type.</p></li>
+<li><p><strong>project</strong> (<em>string</em>) -- The project object</p></li>
+<li><p><strong>version</strong> (<em>string</em>) -- The version object</p></li>
+<li><p><strong>title</strong> (<em>string</em>) -- The title of the page</p></li>
+<li><p><strong>domain</strong> (<em>string</em>) -- Canonical domain of the resulting page</p></li>
+<li><p><strong>path</strong> (<em>string</em>) -- Path to the resulting page</p></li>
+<li><p><strong>highlights</strong> (<em>object</em>) -- An object containing a list of substrings with matching terms.
+Note that the text is HTML escaped with the matching terms inside a <code class="docutils literal notranslate"><span class="pre">&lt;span&gt;</span></code> tag.</p></li>
+<li><p><strong>blocks</strong> (<em>object</em>) -- <p>A list of block objects containing search results from the page.
+Currently, there is one type of block:</p>
+<ul>
+<li><p>section: A page section with a linkable anchor (<code class="docutils literal notranslate"><span class="pre">id</span></code> attribute).</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Except for highlights, any other content is not HTML escaped,
+you shouldn't include it in your page without escaping it first.</p>
+</div>
+<p><strong>Example request</strong>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-QmFzaA==" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QmFzaA==" name="QmFzaA==" role="tab" tabindex="0">Bash</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-QmFzaA==" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-QmFzaA==" name="QmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/api/v3/search/?q=project:docs%20server%20side%20search&quot;</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="n">URL</span> <span class="o">=</span> <span class="s1">&#39;https://app.readthedocs.org/api/v3/search/&#39;</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="s1">&#39;project:docs server side search&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/api/v3/search/?page=2&amp;q=project:docs%20server+side+search&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;projects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">       </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;versions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">           </span><span class="p">{</span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;latest&quot;</span><span class="p">}</span>
+<span class="w">         </span><span class="p">]</span>
+<span class="w">       </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;server side search&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;page&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;project&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="nt">&quot;alias&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;slug&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;latest&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Server Side Search&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;domain&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/en/latest/server-side-search.html&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;highlights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                    </span><span class="s2">&quot;&lt;span&gt;Server&lt;/span&gt; &lt;span&gt;Side&lt;/span&gt; &lt;span&gt;Search&lt;/span&gt;&quot;</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;blocks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">               </span><span class="p">{</span>
+<span class="w">                  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;section&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;server-side-search&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Server Side Search&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Read the Docs provides full-text search across all of the pages of all projects, this is powered by Elasticsearch.&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;highlights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                     </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                        </span><span class="s2">&quot;&lt;span&gt;Server&lt;/span&gt; &lt;span&gt;Side&lt;/span&gt; &lt;span&gt;Search&lt;/span&gt;&quot;</span>
+<span class="w">                     </span><span class="p">],</span>
+<span class="w">                     </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                        </span><span class="s2">&quot;You can &lt;span&gt;search&lt;/span&gt; all projects at https:&amp;#x2F;&amp;#x2F;readthedocs.org&amp;#x2F;&lt;span&gt;search&lt;/span&gt;&amp;#x2F&quot;</span>
+<span class="w">                     </span><span class="p">]</span>
+<span class="w">                  </span><span class="p">}</span>
+<span class="w">               </span><span class="p">},</span>
+<span class="w">               </span><span class="p">{</span>
+<span class="w">                  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;domain&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http:get&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/_/api/v2/search/&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get--_-api-v2-search-&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Retrieve search results for docs&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;highlights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                     </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span>
+<span class="w">                     </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Retrieve &lt;span&gt;search&lt;/span&gt; results for docs&quot;</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">}</span>
+<span class="w">               </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<section id="migrating-from-api-v2">
+<h3>Migrating from API v2<a class="headerlink" href="#migrating-from-api-v2" title="Link to this heading"></a></h3>
+<p>Instead of using query arguments to specify the project
+and version to search, you need to do it from the query itself,
+this is if you had the following parameters:</p>
+<ul class="simple">
+<li><p>project: docs</p></li>
+<li><p>version: latest</p></li>
+<li><p>q: test</p></li>
+</ul>
+<p>Now you need to use:</p>
+<ul class="simple">
+<li><p>q: project:docs/latest test</p></li>
+</ul>
+<p>The response of the API is very similar to V2,
+with the following changes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">project</span></code> is an object, not a string.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> is an object, not a string.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">project_alias</span></code> isn't present,
+it is contained in the <code class="docutils literal notranslate"><span class="pre">project</span></code> object.</p></li>
+</ul>
+<p>When searching on a parent project,
+results from their subprojects won't be included automatically,
+to include results from subprojects use the <code class="docutils literal notranslate"><span class="pre">subprojects</span></code> parameter.</p>
+</section>
+</section>
+<section id="authentication-and-authorization">
+<h2>Authentication and authorization<a class="headerlink" href="#authentication-and-authorization" title="Link to this heading"></a></h2>
+<p>If you are using <a class="reference internal" href="../versions.html#version-states"><span class="std std-ref">private versions</span></a>,
+users will only be allowed to search projects they have permissions over.
+Authentication and authorization is done using the current session,
+or any of the valid <a class="reference internal" href="../commercial/sharing.html"><span class="doc">sharing methods</span></a>.</p>
+<p>To be able to use the user's current session you need to use the API from the domain where your docs are being served
+(<code class="docutils literal notranslate"><span class="pre">&lt;you-docs-domain&gt;/_/api/v3/search/</span></code>).
+This is <code class="docutils literal notranslate"><span class="pre">https://docs.readthedocs-hosted.com/_/api/v3/search/</span></code>
+for the <code class="docutils literal notranslate"><span class="pre">https://docs.readthedocs-hosted.com/</span></code> project, for example.</p>
+</section>
+<section id="api-v2-deprecated">
+<h2>API v2 (deprecated)<a class="headerlink" href="#api-v2-deprecated" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Please use our <a class="reference internal" href="#api-v3"><span class="std std-ref">API v3</span></a> instead,
+see <a class="reference internal" href="#migrating-from-api-v2"><span class="std std-ref">Migrating from API v2</span></a>.</p>
+</div>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-search-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/search/</span></span><a class="headerlink" href="#get--api-v2-search-" title="Link to this definition"></a></dt>
+<dd><p>Return a list of search results for a project,
+including results from its <a class="reference internal" href="../subprojects.html"><span class="doc">Subprojects</span></a>.
+Results are divided into sections with highlights of the matching term.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>q</strong> -- Search query</p></li>
+<li><p><strong>project</strong> -- Project slug</p></li>
+<li><p><strong>version</strong> -- Version slug</p></li>
+<li><p><strong>page</strong> -- Jump to a specific page</p></li>
+<li><p><strong>page_size</strong> -- Limits the results per page, default is 50</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>string</em>) -- The type of the result, currently page is the only type.</p></li>
+<li><p><strong>project</strong> (<em>string</em>) -- The project slug</p></li>
+<li><p><strong>project_alias</strong> (<em>string</em>) -- Alias of the project if it's a subproject.</p></li>
+<li><p><strong>version</strong> (<em>string</em>) -- The version slug</p></li>
+<li><p><strong>title</strong> (<em>string</em>) -- The title of the page</p></li>
+<li><p><strong>domain</strong> (<em>string</em>) -- Canonical domain of the resulting page</p></li>
+<li><p><strong>path</strong> (<em>string</em>) -- Path to the resulting page</p></li>
+<li><p><strong>highlights</strong> (<em>object</em>) -- An object containing a list of substrings with matching terms.
+Note that the text is HTML escaped with the matching terms inside a <code class="docutils literal notranslate"><span class="pre">&lt;span&gt;</span></code> tag.</p></li>
+<li><p><strong>blocks</strong> (<em>object</em>) -- <p>A list of block objects containing search results from the page.
+Currently, there is one type of block:</p>
+<ul>
+<li><p>section: A page section with a linkable anchor (<code class="docutils literal notranslate"><span class="pre">id</span></code> attribute).</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Except for highlights, any other content is not HTML escaped,
+you shouldn't include it in your page without escaping it first.</p>
+</div>
+<p><strong>Example request</strong>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-QmFzaA==" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QmFzaA==" name="QmFzaA==" role="tab" tabindex="0">Bash</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-QmFzaA==" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-QmFzaA==" name="QmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/api/v2/search/?project=docs&amp;version=latest&amp;q=server%20side%20search&quot;</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="n">URL</span> <span class="o">=</span> <span class="s1">&#39;https://app.readthedocs.org/api/v2/search/&#39;</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="s1">&#39;server side search&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;project&#39;</span><span class="p">:</span> <span class="s1">&#39;docs&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="s1">&#39;latest&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/api/v2/search/?page=2&amp;project=read-the-docs&amp;q=server+side+search&amp;version=latest&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;page&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;project&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;project_alias&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;latest&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Server Side Search&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;domain&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/en/latest/server-side-search.html&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;highlights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                    </span><span class="s2">&quot;&lt;span&gt;Server&lt;/span&gt; &lt;span&gt;Side&lt;/span&gt; &lt;span&gt;Search&lt;/span&gt;&quot;</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;blocks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">               </span><span class="p">{</span>
+<span class="w">                  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;section&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;server-side-search&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Server Side Search&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Read the Docs provides full-text search across all of the pages of all projects, this is powered by Elasticsearch.&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">&quot;highlights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                     </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                        </span><span class="s2">&quot;&lt;span&gt;Server&lt;/span&gt; &lt;span&gt;Side&lt;/span&gt; &lt;span&gt;Search&lt;/span&gt;&quot;</span>
+<span class="w">                     </span><span class="p">],</span>
+<span class="w">                     </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                        </span><span class="s2">&quot;You can &lt;span&gt;search&lt;/span&gt; all projects at https:&amp;#x2F;&amp;#x2F;readthedocs.org&amp;#x2F;&lt;span&gt;search&lt;/span&gt;&amp;#x2F&quot;</span>
+<span class="w">                     </span><span class="p">]</span>
+<span class="w">                  </span><span class="p">}</span>
+<span class="w">               </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../api/v2.html" class="btn btn-neutral float-left" title="API v2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../api/cross-site-requests.html" class="btn btn-neutral float-right" title="Cross-site requests" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
