@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../intro/zensical.rst:14
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/zensical.rst:14
 msgid ""
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../../intro/zensical.rst:75
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/zensical.rst:76
 msgid "https://github.com/readthedocs/test-builds/tree/zensical"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../../../intro/zensical.rst:82
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/zensical.rst:84
 msgid "`Zensical documentation`_"

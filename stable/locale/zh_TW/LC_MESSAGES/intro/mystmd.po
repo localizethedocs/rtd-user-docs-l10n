@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../intro/mystmd.rst:12
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/mystmd.rst:12
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../intro/mystmd.rst:37
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../intro/mystmd.rst:39
 msgid ""
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../../intro/mystmd.rst:47
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/mystmd.rst:48
 msgid "https://github.com/readthedocs/test-builds/tree/mystmd"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../../../intro/mystmd.rst:54
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/mystmd.rst:56
 msgid "`MyST Markdown documentation`_"
