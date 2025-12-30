@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/add-project.rst:-1
+msgid ""
+"Add your existing documentation from a Git repository into Read the Docs."
+msgstr ""
+
+#: ../../../intro/add-project.rst:2
+msgid "Adding a documentation project"
+msgstr "增添文件專案"
+
+#: ../../../intro/add-project.rst:7
+msgid ""
+"This page takes you through the process of adding a documentation project to "
+"Read the Docs. If you have :doc:`connected your Read the Docs account </"
+"guides/connecting-git-account>` to GitHub, Bitbucket, or GitLab, and you "
+"have admin access to the repository you want to add, you will be able to add "
+"your project automatically. Otherwise, you will need to add it manually and "
+"perform some extra steps."
+msgstr ""
+
+#: ../../../intro/add-project.rst:14
+msgid "Automatically add your project"
+msgstr "自動增添您的專案"
+
+#: ../../../intro/add-project.rst:16 ../../../intro/add-project.rst:36
+msgid "Go to your :term:`dashboard`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:17 ../../../intro/add-project.rst:37
+msgid "Click on :guilabel:`Add project`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:18
+msgid ""
+"Type the name of the repository you want to add and click on it. If you are "
+"using our :ref:`reference/git-integration:GitHub App`, make sure you have "
+"installed the :ref:`Read the Docs GitHub App <reference/git-integration:"
+"Troubleshooting>` in your repository."
+msgstr ""
+
+#: ../../../intro/add-project.rst:21 ../../../intro/add-project.rst:39
+msgid "Click on :guilabel:`Continue`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:22
+msgid "Edit any of the pre-filled fields with information of the repository."
+msgstr ""
+
+#: ../../../intro/add-project.rst:23 ../../../intro/add-project.rst:41
+msgid "Click on :guilabel:`Next`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:24 ../../../intro/add-project.rst:42
+msgid ""
+"Add a :term:`configuration file` to your repository if it doesn't exist yet."
+msgstr ""
+
+#: ../../../intro/add-project.rst:25 ../../../intro/add-project.rst:43
+msgid "Click on :guilabel:`This file exists`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:29
+msgid ":doc:`/reference/git-integration`"
+msgstr ":doc:`/reference/git-integration`"
+
+#: ../../../intro/add-project.rst:30
+msgid ""
+"Your project will be automatically configured with a Git integration. Learn "
+"more about all the features enabled by that integration on this page."
+msgstr ""
+
+#: ../../../intro/add-project.rst:34
+msgid "Manually add your project"
+msgstr "手動增添您的專案"
+
+#: ../../../intro/add-project.rst:38
+msgid "Click on :guilabel:`Configure manually`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:40
+msgid "Fill all the fields of the form."
+msgstr ""
+
+#: ../../../intro/add-project.rst:45
+msgid ""
+"Once your project is created, you'll need to manually configure the "
+"repository webhook if you would like to have new changes trigger builds for "
+"your project on Read the Docs."
+msgstr ""
+
+#: ../../../intro/add-project.rst:49
+msgid ":doc:`/guides/setup/git-repo-manual`"
+msgstr ":doc:`/guides/setup/git-repo-manual`"
+
+#: ../../../intro/add-project.rst:50
+msgid ""
+"Additional setup steps required for manually created projects. This guide "
+"covers setting up SSH keys and webhook integrations."
+msgstr ""
+
+#: ../../../intro/add-project.rst:53
+msgid "What's next"
+msgstr ""
+
+#: ../../../intro/add-project.rst:55
+msgid ""
+"Once your documentation project is created, a build will be triggered. It "
+"will automatically fetch the code from your repository and build the "
+"documentation. You can see the logs for the build process from your :term:"
+"`dashboard`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:61
+msgid ":doc:`/builds`"
+msgstr ":doc:`/builds`"
+
+#: ../../../intro/add-project.rst:62
+msgid "Explanation about the build process."
+msgstr ""
+
+#: ../../../intro/add-project.rst:64
+msgid ":doc:`/config-file/index`"
+msgstr ":doc:`/config-file/index`"
+
+#: ../../../intro/add-project.rst:65
+msgid ""
+"Practical steps to add a configuration file to your documentation project."
+msgstr ""
+
+#: ../../../intro/add-project.rst:67
+msgid ":doc:`/versions`"
+msgstr ":doc:`/versions`"
+
+#: ../../../intro/add-project.rst:68
+msgid "Manage multiple versions of your documentation project."
+msgstr ""
+
+#: ../../../intro/add-project.rst:70
+msgid ""
+"If you have any trouble, don't hesitate to reach out to us. The :doc:"
+"`support </support>` page has more information on getting in touch."
+msgstr ""
