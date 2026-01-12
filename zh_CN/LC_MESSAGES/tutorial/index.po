@@ -1,0 +1,1012 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-17 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tutorial/index.rst:2
+msgid "Read the Docs tutorial"
+msgstr ""
+
+#: ../../../tutorial/index.rst:4
+msgid ""
+"In this tutorial you will learn how to host a public documentation project "
+"on Read the Docs Community."
+msgstr ""
+
+#: ../../../tutorial/index.rst:8
+msgid ""
+"Find out the `differences between Read the Docs Community and Read the Docs "
+"for Business <https://about.readthedocs.com/pricing/#/community>`_."
+msgstr ""
+
+#: ../../../tutorial/index.rst:10
+msgid "In the tutorial we will:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:12
+msgid ""
+"Import a Sphinx project from a GitHub repository (no prior experience with "
+"Sphinx is required)."
+msgstr ""
+
+#: ../../../tutorial/index.rst:13
+msgid "Tailor the project's configuration."
+msgstr ""
+
+#: ../../../tutorial/index.rst:14
+msgid "Explore other useful Read the Docs features."
+msgstr ""
+
+#: ../../../tutorial/index.rst:16
+msgid ""
+"If you don't have a GitHub account, you'll need to `register for a free "
+"account <https://github.com/signup>`_ before you start."
+msgstr ""
+
+#: ../../../tutorial/index.rst:19
+msgid "Preparing your repository on GitHub"
+msgstr ""
+
+#: ../../../tutorial/index.rst:21
+msgid ""
+"`Sign in to GitHub <https://github.com/login>`_ and navigate to the "
+"`tutorial GitHub template <https://github.com/readthedocs/tutorial-template/"
+">`_."
+msgstr ""
+
+#: ../../../tutorial/index.rst:23
+msgid ""
+"Click the green :guilabel:`Use this template` button, then click :guilabel:"
+"`Create a new Repository`. On the new page:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:25
+msgid "Owner"
+msgstr ""
+
+#: ../../../tutorial/index.rst:26
+msgid ""
+"Leave the default, or change it to something suitable for a tutorial project."
+msgstr ""
+
+#: ../../../tutorial/index.rst:27
+msgid "Repository name"
+msgstr ""
+
+#: ../../../tutorial/index.rst:28
+msgid "Something memorable and appropriate, for example ``rtd-tutorial``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:29
+msgid "Visibility"
+msgstr ""
+
+#: ../../../tutorial/index.rst:30
+msgid "Make sure the project is \"Public\", rather than \"Private\"."
+msgstr ""
+
+#: ../../../tutorial/index.rst:32
+msgid ""
+"Click the green :guilabel:`Create repository` button to create a public "
+"repository that you will use in this Read the Docs tutorial, containing  "
+"following files:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:34
+msgid "``.readthedocs.yaml``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:35
+msgid "Read the Docs configuration file. Required."
+msgstr ""
+
+#: ../../../tutorial/index.rst:37
+msgid "``README.rst``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:38
+msgid "Description of the repository."
+msgstr ""
+
+#: ../../../tutorial/index.rst:40
+msgid "``pyproject.toml``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:41
+msgid ""
+"Python project metadata that makes it installable. Useful for automatic "
+"documentation generation from sources."
+msgstr ""
+
+#: ../../../tutorial/index.rst:44
+msgid "``lumache.py``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:45
+msgid "Source code of the fictional Python library."
+msgstr ""
+
+#: ../../../tutorial/index.rst:47
+msgid "``docs/``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:48
+msgid ""
+"Directory holding all the fictional Python library documentation in "
+"reStructuredText, the Sphinx configuration ``docs/source/conf.py`` and the "
+"root document ``docs/source/index.rst``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:51 ../../../tutorial/index.rst:56
+msgid "GitHub template for the tutorial"
+msgstr ""
+
+#: ../../../tutorial/index.rst:59
+msgid "Creating a Read the Docs account"
+msgstr ""
+
+#: ../../../tutorial/index.rst:61
+msgid ""
+"To create a Read the Docs account: navigate to the `Sign Up page <https://"
+"app.readthedocs.org/accounts/signup/>`_ and choose the option :guilabel:"
+"`Sign up with GitHub`. On the authorization page, click the green :guilabel:"
+"`Authorize readthedocs` button."
+msgstr ""
+
+#: ../../../tutorial/index.rst:66 ../../../tutorial/index.rst:71
+msgid "GitHub authorization page"
+msgstr ""
+
+#: ../../../tutorial/index.rst:75
+msgid ""
+"Read the Docs needs elevated permissions to perform certain operations that "
+"ensure that the workflow is as smooth as possible, like installing :term:"
+"`webhooks <webhook>`. If you want to learn more, check out :ref:`reference/"
+"git-integration:permissions for connected accounts`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:81
+msgid ""
+"After that, you will be redirected to Read the Docs to confirm your e-mail "
+"and username. Click the :guilabel:`Sign Up »` button to create your account "
+"and open your :term:`dashboard`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:84
+msgid ""
+"When you have clicked the link in your email from Read the Docs to \"verify "
+"your email address\" and finalize the process, your Read the Docs account "
+"will be ready to create your first project."
+msgstr ""
+
+#: ../../../tutorial/index.rst:86
+msgid "Read the Docs empty dashboard"
+msgstr ""
+
+#: ../../../tutorial/index.rst:91
+msgid "Welcome to your Read the Docs dashboard!"
+msgstr ""
+
+#: ../../../tutorial/index.rst:94
+msgid "Importing the project to Read the Docs"
+msgstr ""
+
+#: ../../../tutorial/index.rst:96
+msgid "To import your GitHub project to Read the Docs:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:98
+msgid ""
+"Click the :guilabel:`Import a Project` button on your `dashboard <https://"
+"app.readthedocs.org/dashboard/>`_."
+msgstr ""
+
+#: ../../../tutorial/index.rst:100
+msgid ""
+"Click the |:heavy_plus_sign:| button to the right of your ``rtd-tutorial`` "
+"project. If the list of repositories is empty, click the |:"
+"arrows_counterclockwise:| button."
+msgstr ""
+
+#: ../../../tutorial/index.rst:102 ../../../tutorial/index.rst:107
+msgid "Import projects workflow"
+msgstr ""
+
+#: ../../../tutorial/index.rst:109
+msgid "Enter some details about your Read the Docs project:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:111
+msgid "Name"
+msgstr ""
+
+#: ../../../tutorial/index.rst:112
+msgid ""
+"The name of the project, used to create a unique subdomain for each project. "
+"so it is better if you prepend your username, for example ``{username}-rtd-"
+"tutorial``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:116
+msgid "Repository URL"
+msgstr ""
+
+#: ../../../tutorial/index.rst:117
+msgid ""
+"The URL that contains the documentation source. Leave the automatically "
+"filled value."
+msgstr ""
+
+#: ../../../tutorial/index.rst:119
+msgid "Default branch"
+msgstr ""
+
+#: ../../../tutorial/index.rst:120
+msgid "Name of the default branch of the project, leave it as ``main``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:122
+msgid ""
+"Then click the :guilabel:`Next` button to create the project and open the :"
+"term:`project home`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:124
+msgid "You just created your first project on Read the Docs! |:tada:|"
+msgstr ""
+
+#: ../../../tutorial/index.rst:126 ../../../tutorial/index.rst:131
+msgid "Project home"
+msgstr ""
+
+#: ../../../tutorial/index.rst:134
+msgid "Checking the first build"
+msgstr ""
+
+#: ../../../tutorial/index.rst:136
+msgid ""
+"Read the Docs will build your project documentation right after you create "
+"it."
+msgstr ""
+
+#: ../../../tutorial/index.rst:138
+msgid "To see the build logs:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:140
+msgid ""
+"Click the :guilabel:`Your documentation is building` link on the :term:"
+"`project home`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:142
+msgid ""
+"If the build has not finished by the time you open it, you will see a "
+"spinner next to a \"Installing\" or \"Building\" indicator, meaning that it "
+"is still in progress."
+msgstr ""
+
+#: ../../../tutorial/index.rst:143
+msgid ""
+"If the build has finished, you'll see a green \"Build completed\" indicator, "
+"the completion date, the elapsed time, and a link to the generated "
+"documentation."
+msgstr ""
+
+#: ../../../tutorial/index.rst:145 ../../../tutorial/index.rst:150
+msgid "First successful documentation build"
+msgstr ""
+
+#: ../../../tutorial/index.rst:152
+msgid "Click on :guilabel:`View docs` to see your documentation live!"
+msgstr ""
+
+#: ../../../tutorial/index.rst:154 ../../../tutorial/index.rst:159
+msgid "HTML documentation live on Read the Docs"
+msgstr ""
+
+#: ../../../tutorial/index.rst:163
+msgid ""
+"Advertisement is one of our main sources of revenue. If you want to learn "
+"more about how do we fund our operations and explore options to go ad-free, "
+"check out our `Sustainability page <https://app.readthedocs.org/"
+"sustainability/>`_."
+msgstr ""
+
+#: ../../../tutorial/index.rst:168
+msgid ""
+"If you don't see the ad, you might be using an ad blocker. Our EthicalAds "
+"network respects your privacy, doesn't target you, and tries to be as "
+"unobtrusive as possible, so we would like to kindly ask you to :doc:`not "
+"block us </advertising/ad-blocking>` |:heart:|"
+msgstr ""
+
+#: ../../../tutorial/index.rst:174
+msgid "Configuring the project"
+msgstr ""
+
+#: ../../../tutorial/index.rst:176
+msgid ""
+"To update the project description and configure the notification settings:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:178
+msgid ""
+"Navigate back to the :term:`project page` and click the :guilabel:`⚙ Admin` "
+"button,to open the Settings page."
+msgstr ""
+
+#: ../../../tutorial/index.rst:180
+msgid "Update the project description by adding the following text:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:182
+msgid ""
+"Lumache (/lu'make/) is a Python library for cooks and food lovers that "
+"creates recipes mixing random ingredients."
+msgstr ""
+
+#: ../../../tutorial/index.rst:185
+msgid ""
+"Set the project homepage to ``https://world.openfoodfacts.org/``, and add "
+"``food, python`` to the list of public project tags."
+msgstr ""
+
+#: ../../../tutorial/index.rst:187
+msgid ""
+"To get a notification if the build fails, click the :guilabel:`Email "
+"Notifications` link on the left, add your email address, and click the :"
+"guilabel:`Add` button."
+msgstr ""
+
+#: ../../../tutorial/index.rst:190
+msgid "Triggering builds from pull requests"
+msgstr ""
+
+#: ../../../tutorial/index.rst:192
+msgid ""
+"Read the Docs can :doc:`trigger builds from GitHub pull requests </pull-"
+"requests>` and show you a preview of the documentation with those changes."
+msgstr ""
+
+#: ../../../tutorial/index.rst:195
+msgid "To trigger builds from pull requests:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:197
+msgid ""
+"Click the :guilabel:`Settings` link on the left under the :guilabel:`⚙ "
+"Admin` menu, check the \"Build pull requests for this project\" checkbox, "
+"and click the :guilabel:`Save` button at the bottom of the page."
+msgstr ""
+
+#: ../../../tutorial/index.rst:199
+msgid "Make some changes to your documentation:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:201
+msgid ""
+"Navigate to your GitHub repository, locating the file ``docs/source/index."
+"rst``, and clicking on the |:pencil2:| icon on the top-right with the "
+"tooltip \"Edit this file\" to open a web editor (more information `on their "
+"documentation`__)."
+msgstr ""
+
+#: ../../../tutorial/index.rst:205 ../../../tutorial/index.rst:210
+msgid "File view on GitHub before launching the editor"
+msgstr ""
+
+#: ../../../tutorial/index.rst:212
+msgid "In the editor, add the following sentence to the file:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:214
+msgid "docs/source/index.rst"
+msgstr ""
+
+#: ../../../tutorial/index.rst:214
+msgid "Lumache hosts its documentation on Read the Docs."
+msgstr ""
+
+#: ../../../tutorial/index.rst:219
+msgid ""
+"Write an appropriate commit message, choose the \"Create a **new branch** "
+"for this commit and start a pull request\" option."
+msgstr ""
+
+#: ../../../tutorial/index.rst:221
+msgid ""
+"Click the green :guilabel:`Propose changes` button to open the new pull "
+"request page, then click the :guilabel:`Create pull request` button below "
+"the description."
+msgstr ""
+
+#: ../../../tutorial/index.rst:223 ../../../tutorial/index.rst:228
+msgid "Read the Docs building the pull request from GitHub"
+msgstr ""
+
+#: ../../../tutorial/index.rst:230
+msgid ""
+"After opening the pull request, a Read the Docs check will appear indicating "
+"that it is building the documentation for that pull request. If you click "
+"the :guilabel:`Details` link while your project is building the build log "
+"will be opened. After building this link opens the documentation directly."
+msgstr ""
+
+#: ../../../tutorial/index.rst:236
+msgid "Adding a configuration file"
+msgstr ""
+
+#: ../../../tutorial/index.rst:238
+msgid ""
+"The Admin tab of the :term:`project home` has some *global* configuration "
+"settings for your project."
+msgstr ""
+
+#: ../../../tutorial/index.rst:240
+msgid ""
+"Build process configuration settings are in ``.readthedocs.yaml`` :doc:"
+"`configuration file </config-file/v2>`, in your Git repository, which means "
+"it can be different for every version or branch of your project (more on "
+"`versioning <#versioning-documentation>`_)."
+msgstr ""
+
+#: ../../../tutorial/index.rst:248
+msgid "Using different Python versions"
+msgstr ""
+
+#: ../../../tutorial/index.rst:250
+msgid ""
+"To build your project with Python 3.8 instead of the latest Python version, "
+"edit the ``.readthedocs.yaml`` file and change the Python version to 3.8 "
+"like this:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:252 ../../../tutorial/index.rst:325
+#: ../../../tutorial/index.rst:358 ../../../tutorial/index.rst:383
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../tutorial/index.rst:252
+msgid ""
+"version: 2\n"
+"\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.8\"\n"
+"\n"
+"python:\n"
+"  install:\n"
+"    - requirements: docs/requirements.txt\n"
+"\n"
+"sphinx:\n"
+"  configuration: docs/source/conf.py"
+msgstr ""
+
+#: ../../../tutorial/index.rst:270
+msgid ""
+"The :doc:`purpose of each key </config-file/v2>` in the ``.readthedocs."
+"yaml`` configuration file is:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:272
+msgid "``version``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:273
+msgid ""
+"Required, specifies :doc:`version 2 of the configuration file </config-file/"
+"v2>`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:275
+msgid "``build.os``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:276
+msgid ""
+"Required, specifies the Docker image used to build the documentation. :ref:"
+"`states the name of the base image <config-file/v2:build.os>`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:279
+msgid "``build.tools.python``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:280
+msgid ""
+"Specifies the :ref:`Python version <config-file/v2:build.tools.python>`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:282
+msgid "``python.install.requirements``"
+msgstr ""
+
+#: ../../../tutorial/index.rst:283
+msgid ""
+"Specifies what :ref:`Python dependencies <config-file/v2:python.install>` to "
+"install."
+msgstr ""
+
+#: ../../../tutorial/index.rst:285
+msgid ""
+"After you commit these changes, go back to your project home, navigate to "
+"the \"Builds\" page, and open the new build that just started. You will "
+"notice that one of the lines contains ``python -mvirtualenv``: if you click "
+"on it, you will see the full output of the corresponding command, stating "
+"that it used Python 3.8.6, the latest version of Python 3.8, to create the "
+"virtual environment."
+msgstr ""
+
+#: ../../../tutorial/index.rst:291 ../../../tutorial/index.rst:296
+msgid "Read the Docs build using Python 3.8"
+msgstr ""
+
+#: ../../../tutorial/index.rst:299
+msgid "Making build warnings more visible"
+msgstr ""
+
+#: ../../../tutorial/index.rst:301
+msgid ""
+"If you navigate to your HTML documentation, you will notice that the index "
+"page looks correct but the API section is empty. This is a common issue with "
+"Sphinx, and the reason is stated in the build logs. On the build page you "
+"opened before, click on the :guilabel:`View raw` link on the top right, "
+"which opens the build logs in plain text, and you will see several warnings:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:311
+msgid ""
+"WARNING: [autosummary] failed to import 'lumache': no module named lumache\n"
+"...\n"
+"WARNING: autodoc: failed to import function 'get_random_ingredients' from "
+"module 'lumache'; the following exception was raised:\n"
+"No module named 'lumache'\n"
+"WARNING: autodoc: failed to import exception 'InvalidKindError' from module "
+"'lumache'; the following exception was raised:\n"
+"No module named 'lumache'"
+msgstr ""
+
+#: ../../../tutorial/index.rst:320
+msgid ""
+"To spot these warnings more easily and help you to address them, add the "
+"``sphinx.fail_on_warning`` option to your Read the Docs configuration file."
+msgstr ""
+
+#: ../../../tutorial/index.rst:323
+msgid ""
+"To fail on warnings to your Read the Docs project, edit the ``.readthedocs."
+"yaml`` file in your project, add the three lines of ``sphinx`` configuration "
+"below, and commit the file:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:325
+msgid ""
+"version: 2\n"
+"\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.8\"\n"
+"\n"
+"python:\n"
+"  install:\n"
+"    - requirements: docs/requirements.txt\n"
+"\n"
+"sphinx:\n"
+"  configuration: docs/source/conf.py\n"
+"  fail_on_warning: true"
+msgstr ""
+
+#: ../../../tutorial/index.rst:344
+msgid ""
+"If you navigate to your \"Builds\" page, you will see a ``Failed`` build, "
+"which is expected because we've configured Sphinx to fail on warnings and "
+"several warnings were encountered during the build."
+msgstr ""
+
+#: ../../../tutorial/index.rst:346
+msgid "To learn how to fix these warnings, see the next section."
+msgstr ""
+
+#: ../../../tutorial/index.rst:349
+msgid "Installing Python dependencies"
+msgstr ""
+
+#: ../../../tutorial/index.rst:351
+msgid ""
+"The reason :py:mod:`sphinx:sphinx.ext.autosummary` and :py:mod:`sphinx:"
+"sphinx.ext.autodoc` fail to import the :ref:`tutorial/index:making build "
+"warnings more visible`, is because the ``lumache`` module is not installed."
+msgstr ""
+
+#: ../../../tutorial/index.rst:353
+msgid ""
+"You will need to specify those installation requirements in ``.readthedocs."
+"yaml``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:355
+msgid ""
+"To install your project dependencies and make your code available to Sphinx, "
+"edit ``.readthedocs.yaml``, add the ``python.install``  section and commit "
+"it:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:358
+msgid ""
+"python:\n"
+"  install:\n"
+"    - requirements: docs/requirements.txt\n"
+"    # Install our python package before building the docs\n"
+"    - method: pip\n"
+"      path: ."
+msgstr ""
+
+#: ../../../tutorial/index.rst:369
+msgid ""
+"Now, Read the Docs installs the Python code before starting the Sphinx "
+"build, which will finish seamlessly. If you go now to the API page of your "
+"HTML documentation, you will see the ``lumache`` summary! :tada:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:375
+msgid "Enabling PDF and EPUB builds"
+msgstr ""
+
+#: ../../../tutorial/index.rst:377
+msgid ""
+"Sphinx can build several other formats in addition to HTML, such as PDF and "
+"EPUB. You might want to enable these formats for your project so your users "
+"can read the documentation offline."
+msgstr ""
+
+#: ../../../tutorial/index.rst:381
+msgid "To do so, add the following ``formats`` to your ``.readthedocs.yaml``:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:383
+msgid ""
+"sphinx:\n"
+"  configuration: docs/source/conf.py\n"
+"  fail_on_warning: true\n"
+"\n"
+"formats:\n"
+"  - pdf\n"
+"  - epub"
+msgstr ""
+
+#: ../../../tutorial/index.rst:395
+msgid ""
+"After this change, PDF and EPUB downloads will be available both from the "
+"\"Downloads\" section of the :term:`project home`, as well as the :term:"
+"`flyout menu`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:399 ../../../tutorial/index.rst:403
+msgid "Downloads available from the flyout menu"
+msgstr ""
+
+#: ../../../tutorial/index.rst:406
+msgid "Versioning documentation"
+msgstr ""
+
+#: ../../../tutorial/index.rst:408
+msgid ""
+"Read the Docs supports having :doc:`several versions of your documentation </"
+"versions>`, in the same way that you have several versions of your code. By "
+"default, it creates a ``latest`` version that points to the default branch "
+"of your version control system (``main`` in the case of this tutorial), and "
+"that's why the URLs of your HTML documentation contain the string ``/latest/"
+"``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:416
+msgid "Creating a new version of your documentation"
+msgstr ""
+
+#: ../../../tutorial/index.rst:418
+msgid ""
+"Read the Docs automatically creates documentation versions from GitHub "
+"branches and tags that :ref:`follows some rules <versions:Versioning "
+"workflows>` about looking like version numbers, such as ``1.0``, ``2.0.3`` "
+"or ``4.x``."
+msgstr ""
+
+#: ../../../tutorial/index.rst:420
+msgid ""
+"To create version ``1.0`` of your code, and consequently of your "
+"documentation:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:422
+msgid ""
+"Navigate to your GitHub repository, click the branch selector, type ``1.0."
+"x``, and click \"Create branch: 1.0.x from 'main'\" (more information `in "
+"the GitHub documentation`__)."
+msgstr ""
+
+#: ../../../tutorial/index.rst:424
+msgid ""
+"Check that you now have version ``1.0.x`` in your :term:`project home`, "
+"click on the :guilabel:`Versions` button, and under \"Active Versions\" you "
+"will see two entries:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:426
+msgid "The ``latest`` version, pointing to the ``main`` branch."
+msgstr ""
+
+#: ../../../tutorial/index.rst:427
+msgid "A new ``stable`` version, pointing to the ``origin/1.0.x`` branch."
+msgstr ""
+
+#: ../../../tutorial/index.rst:432 ../../../tutorial/index.rst:437
+msgid "List of active versions of the project"
+msgstr ""
+
+#: ../../../tutorial/index.rst:439
+msgid ""
+"When you created your branch, Read the Docs created a new special version "
+"called ``stable`` pointing to it. When it's built it will be listed in the :"
+"term:`flyout menu`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:443
+msgid "Setting stable as the default"
+msgstr ""
+
+#: ../../../tutorial/index.rst:445
+msgid ""
+"To set ``stable`` as the *default version*, rather than ``latest``, so that "
+"users see the ``stable`` documentation when they visit the :term:`root URL` "
+"of your documentation:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:450
+msgid ""
+"In the :guilabel:`⚙ Admin` menu of your project home, go to the :guilabel:"
+"`Settings` link, choose ``stable`` in the \"Default version*\" dropdown, and "
+"hit :guilabel:`Save` at the bottom."
+msgstr ""
+
+#: ../../../tutorial/index.rst:453
+msgid "Modifying versions"
+msgstr ""
+
+#: ../../../tutorial/index.rst:455
+msgid ""
+"Both ``latest`` and ``stable`` are now *active*, which means that they are "
+"visible for users, and new builds can be triggered for them. In addition to "
+"these, Read the Docs also created an *inactive* ``1.0.x`` version, which "
+"will always point to the ``1.0.x`` branch of your repository."
+msgstr ""
+
+#: ../../../tutorial/index.rst:460 ../../../tutorial/index.rst:465
+msgid "List of inactive versions of the project"
+msgstr ""
+
+#: ../../../tutorial/index.rst:467
+msgid "To activate the ``1.0.x`` version:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:469
+msgid ""
+"On your :term:`project home`, go to the \"Versions\", locate ``1.0.x`` under "
+"\"Activate a version\", and click the :guilabel:`Activate` button."
+msgstr ""
+
+#: ../../../tutorial/index.rst:471
+msgid ""
+"On the \"Activate\" page with \"Active\" and \"Hidden\" checkboxes, check "
+"only \"Active\" and click :guilabel:`Save`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:475
+msgid ""
+"Read more about :ref:`hidden versions <versions:Version states>` in our "
+"documentation."
+msgstr ""
+
+#: ../../../tutorial/index.rst:514
+msgid "Getting project insights"
+msgstr ""
+
+#: ../../../tutorial/index.rst:516
+msgid ""
+"Once your project is up and running, you will probably want to understand "
+"how readers are using your documentation, addressing some common questions "
+"like:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:519
+msgid "what are the most visited pages?"
+msgstr ""
+
+#: ../../../tutorial/index.rst:520
+msgid "what are the most frequently used search terms?"
+msgstr ""
+
+#: ../../../tutorial/index.rst:521
+msgid "are readers finding what they are looking for?"
+msgstr ""
+
+#: ../../../tutorial/index.rst:523
+msgid ""
+"Read the Docs has traffic and search analytics tools to help you find "
+"answers to these questions."
+msgstr ""
+
+#: ../../../tutorial/index.rst:526
+msgid "Understanding traffic analytics"
+msgstr ""
+
+#: ../../../tutorial/index.rst:528
+msgid ""
+"The Traffic Analytics view gives you a simple overview of how your readers "
+"browse your documentation. It respects visitor privacy by not storing "
+"identifying information about your them."
+msgstr ""
+
+#: ../../../tutorial/index.rst:530
+msgid ""
+"This page shows the most viewed documentation pages of the past 30 days, "
+"plus a visualization of the daily views during that period."
+msgstr ""
+
+#: ../../../tutorial/index.rst:533
+msgid ""
+"To see the Traffic Analytics view, go back the :term:`project page` again, "
+"click the :guilabel:`⚙ Admin` button, and then click the :guilabel:`Traffic "
+"Analytics` section. You will see the list of pages in descending order of "
+"visits, and a similar visualization to this one:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:539 ../../../tutorial/index.rst:544
+msgid "Traffic Analytics plot"
+msgstr ""
+
+#: ../../../tutorial/index.rst:546
+msgid ""
+"You can also download this data in :abbr:`CSV (Comma-Separated Values)`  "
+"format for closer inspection. To do that, scroll to the bottom of the page "
+"and click the :guilabel:`Download all data` button."
+msgstr ""
+
+#: ../../../tutorial/index.rst:551
+msgid "Understanding search analytics"
+msgstr ""
+
+#: ../../../tutorial/index.rst:553
+msgid ""
+"As well as traffic analytics, Read the Docs shows :doc:`what terms your "
+"readers are searching for </search-analytics>`. This can inform decisions on "
+"what areas to focus on, or what parts of your project are less understood or "
+"more difficult to find."
+msgstr ""
+
+#: ../../../tutorial/index.rst:557
+msgid ""
+"To generate some artificial search statistics on the project, go to the HTML "
+"documentation, locate the Sphinx search box on the left, type "
+"``ingredients``, and press the :kbd:`Enter` key. You will be redirected to "
+"the search results page, which will show two entries."
+msgstr ""
+
+#: ../../../tutorial/index.rst:562
+msgid ""
+"Next, go back to the :guilabel:`⚙ Admin` section of your project page, and "
+"then click the :guilabel:`Search Analytics` section. You will see a table "
+"with the most searched queries (including the ``ingredients`` one you just "
+"typed), how many results did each query return, and how many times it was "
+"searched. Below the queries table, you will also see a visualization of the "
+"daily number of search queries during the past 30 days."
+msgstr ""
+
+#: ../../../tutorial/index.rst:570 ../../../tutorial/index.rst:575
+msgid "Most searched terms"
+msgstr ""
+
+#: ../../../tutorial/index.rst:577
+msgid ""
+"Like the Traffic Analytics, you can also download the whole dataset in CSV "
+"format by clicking on the :guilabel:`Download all data` button."
+msgstr ""
+
+#: ../../../tutorial/index.rst:581
+msgid "Where to go from here"
+msgstr ""
+
+#: ../../../tutorial/index.rst:583
+msgid "This is the end of the tutorial. You have accomplished a lot:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:585
+msgid "Forked a GitHub repository."
+msgstr ""
+
+#: ../../../tutorial/index.rst:586
+msgid "Connected it to Read the Docs."
+msgstr ""
+
+#: ../../../tutorial/index.rst:587
+msgid "Built its HTML documentation."
+msgstr ""
+
+#: ../../../tutorial/index.rst:588
+msgid "Customized the build process."
+msgstr ""
+
+#: ../../../tutorial/index.rst:589
+msgid "Added new documentation versions."
+msgstr ""
+
+#: ../../../tutorial/index.rst:590
+msgid "Browsed the project analytics."
+msgstr ""
+
+#: ../../../tutorial/index.rst:592
+msgid "Nice work!"
+msgstr ""
+
+#: ../../../tutorial/index.rst:594
+msgid ""
+"Here are some resources to help you continue learning about documentation "
+"and Read the Docs:"
+msgstr ""
+
+#: ../../../tutorial/index.rst:597
+msgid "Learn more about the platform :doc:`features </reference/features>`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:598
+msgid ""
+"Learn about other supported documentation generators in the :doc:`Sphinx "
+"tutorial <sphinx:tutorial/index>` or the `MkDocs User Guide <https://www."
+"mkdocs.org/user-guide/>`_."
+msgstr ""
+
+#: ../../../tutorial/index.rst:599
+msgid "See a list of Read the Docs :doc:`/examples`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:600
+msgid "Learn how to do specific tasks in the :doc:`/guides/index`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:601
+msgid ""
+"Learn about private project support and other enterprise features in :doc:"
+"`our commercial service guide </commercial/index>`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:603
+msgid ""
+"Join a global community of fellow `documentarians <writethedocs:"
+"documentarians>` in `Write the Docs <https://www.writethedocs.org/>`_ and :"
+"doc:`its Slack workspace <writethedocs:slack>`."
+msgstr ""
+
+#: ../../../tutorial/index.rst:605
+msgid ""
+"Contribute to Read the Docs in :doc:`rtd-dev:contribute`, we appreciate it!"
+msgstr ""
+
+#: ../../../tutorial/index.rst:607
+msgid "Happy documenting!"
+msgstr ""

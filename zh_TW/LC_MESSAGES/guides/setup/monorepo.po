@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/setup/monorepo.rst:4
+msgid "How to use a .readthedocs.yaml file in a sub-folder"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:6
+msgid ""
+"This guide shows how to configure a Read the Docs project to use a custom "
+"path for the ``.readthedocs.yaml`` build configuration. `Monorepos <https://"
+"en.wikipedia.org/wiki/Monorepo>`__ that have multiple documentation projects "
+"in the same Git repository can benefit from this feature."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:9
+msgid ""
+"By default, Read the Docs will use the ``.readthedocs.yaml`` at the top "
+"level of your Git repository. But if a Git repository contains multiple "
+"documentation projects that need different build configurations, you will "
+"need to have a ``.readthedocs.yaml`` file in multiple sub-folders."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:16
+msgid ""
+"`sphinx-multiproject <https://sphinx-multiproject.readthedocs.io/en/latest/"
+">`__"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:17
+msgid ""
+"If you are only using Sphinx projects and want to share the same build "
+"configuration, you can also use the ``sphinx-multiproject`` extension."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:20
+msgid ":doc:`/guides/environment-variables`"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:21
+msgid ""
+"You might also be able to reuse the same configuration file across multiple "
+"projects, using only environment variables. This is possible if the "
+"configuration pattern is very similar and the documentation tool is the same."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:26
+msgid "Implementation considerations"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:28
+msgid ""
+"This feature is currently *project-wide*. A custom build configuration file "
+"path is applied to all versions of your documentation."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:33
+msgid ""
+"Changing the configuration path will apply to all versions. Different "
+"versions of the project may not be able to build again if this path is "
+"changed."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:37
+msgid "Adding an additional project from the same repository"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:39
+msgid ""
+"Once you have added the first project from the :ref:`Import Wizard <intro/"
+"add-project:Automatically add your project>`, you will need to repeat this "
+"process again to add the additional project from the same repository."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:43
+msgid "Setting the custom build configuration file"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:45
+msgid ""
+"Once you have added a Git repository to a project that needs a custom "
+"configuration file path, navigate to :menuselection:`Admin --> Settings` and "
+"add the path to the :guilabel:`Build configuration file` field."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:48
+msgid ""
+"Screenshot of where to find the :guilabel:`Build configuration file` setting."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:51
+msgid ""
+"After pressing :guilabel:`Save`, you need to ensure that relevant versions "
+"of your documentation are built again."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:56
+msgid ""
+"Having multiple different build configuration files can be complex. We "
+"recommend setting up 1-2 projects in your Monorepo and getting them to build "
+"and publish successfully before adding additional projects to the equation."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:60
+msgid "Next steps"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:62
+msgid ""
+"Once you have your monorepo pattern implemented and tested and it's ready to "
+"roll out to all your projects, you should also consider the Read the Docs "
+"project setup for these individual projects."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:65
+msgid ""
+"Having individual projects gives you the full flexibility of the Read the "
+"Docs platform to make individual setups for each project."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:67
+msgid "For each project, it's now possible to configure:"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:69
+msgid ""
+"Sets of maintainers (or :doc:`organizations </commercial/organizations>` on |"
+"com_brand|)"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:70
+msgid ":doc:`Custom redirect rules </guides/custom-domains>`"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:71
+msgid ":doc:`Custom domains </guides/custom-domains>`"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:72
+msgid ":doc:`Automation rules </automation-rules>`"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:73
+msgid ":doc:`Traffic analytics </traffic-analytics>`"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:74
+msgid ""
+"Additional documentation tools with individual :doc:`build processes </build-"
+"customization>`: One project might use :doc:`Sphinx <sphinx:index>`, while "
+"another project setup might use `Asciidoctor <https://asciidoctor.org/>`__."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:78
+msgid ""
+"...and much more. *All* settings for a Read the Docs project is available "
+"for each individual project."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:82
+msgid ":doc:`/guides/subprojects`"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:83
+msgid ""
+"More information on nesting one project inside another project. In this "
+"setup, it is still possible to use the same monorepo for each subproject."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:87
+msgid "Other tips"
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:89
+msgid ""
+"For a monorepo, it's not desirable to have changes in unrelated sub-folders "
+"trigger new builds."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:92
+msgid ""
+"Therefore, you should consider setting up :doc:`conditional build "
+"cancellation rules </guides/build/skip-build>`. The configuration is added "
+"in each ``.readthedocs.yaml``, making it possible to write one conditional "
+"build rules per documentation project in the Monorepo 💯️"
+msgstr ""
