@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../server-side-search/syntax.rst:2
 msgid "Search query syntax"
-msgstr ""
+msgstr "搜尋查詢語法"
 
 #: ../../../server-side-search/syntax.rst:4
 msgid ""
