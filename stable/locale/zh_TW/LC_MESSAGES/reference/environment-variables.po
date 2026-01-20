@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../reference/environment-variables.rst:2
 msgid "Environment variable reference"
-msgstr ""
+msgstr "環境變數參考"
 
 #: ../../../reference/environment-variables.rst:4
 msgid ""
@@ -49,27 +49,27 @@ msgstr "範例"
 
 #: ../../../reference/environment-variables.rst:16
 msgid "``readthedocs.org``"
-msgstr ""
+msgstr "``readthedocs.org``"
 
 #: ../../../reference/environment-variables.rst:17
 msgid "``readthedocs.com``"
-msgstr ""
+msgstr "``readthedocs.com``"
 
 #: ../../../reference/environment-variables.rst:18
 msgid "``app.readthedocs.org``"
-msgstr ""
+msgstr "``app.readthedocs.org``"
 
 #: ../../../reference/environment-variables.rst:19
 msgid "``app.readthedocs.com``"
-msgstr ""
+msgstr "``app.readthedocs.com``"
 
 #: ../../../reference/environment-variables.rst:20
 msgid "``devthedocs.org``"
-msgstr ""
+msgstr "``devthedocs.org``"
 
 #: ../../../reference/environment-variables.rst:21
 msgid "``devthedocs.com``"
-msgstr ""
+msgstr "``devthedocs.com``"
 
 #: ../../../reference/environment-variables.rst:25
 msgid ""
