@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-19 11:35:11 -0500",
-      "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
-      "title" : "Search: Disable search indexing for inactive projects (#12666)"
+      "date" : "2026-01-26 09:33:23 +0100",
+      "hash" : "fb00afb4b730f1ac0f9ffc50eea6e0ae20807adb",
+      "title" : "Addons: Custom script form fields (#12710)"
     }
   },
   "type" : "branch",
