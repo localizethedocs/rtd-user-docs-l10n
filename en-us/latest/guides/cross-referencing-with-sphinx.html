@@ -1,0 +1,576 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to use cross-references with Sphinx" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/cross-referencing-with-sphinx.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="When writing documentation you often need to link to other pages of your documentation, other sections of the current page, or sections from other pages. An easy way is just to use the raw URL that Sphinx generates for each page/section. This works, but it has some disadvantages: Links can change..." />
+<meta property="og:image" content="_images/logo.png" />
+<meta property="og:image:alt" content="Logo" />
+<meta name="description" content="When writing documentation you often need to link to other pages of your documentation, other sections of the current page, or sections from other pages. An easy way is just to use the raw URL that Sphinx generates for each page/section. This works, but it has some disadvantages: Links can change..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use cross-references with Sphinx &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/cross-referencing-with-sphinx.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a48b73ee"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to link to other documentation projects with Intersphinx" href="intersphinx.html" />
+    <link rel="prev" title="How to support Unicode in Sphinx PDFs" href="pdf-non-ascii-languages.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="content/index.html">Content, themes and SEO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="technical-docs-seo-guide.html">Search engine optimization (SEO) for documentation projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traffic-analytics.html">Using traffic analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search-analytics.html">Using search analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enable-offline-formats.html">Enabling offline formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="embedding-content.html">Embedding content from your documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage-translations-sphinx.html">Managing translations for Sphinx projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdf-non-ascii-languages.html">Supporting Unicode in Sphinx PDFs</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cross-referencing with Sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting started</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#explicit-targets">Explicit targets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#implicit-targets">Implicit targets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cross-referencing-using-roles">Cross-referencing using roles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-ref-role">The ref role</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-doc-role">The doc role</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-numref-role">The numref role</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#automatically-label-sections">Automatically label sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#invalid-targets">Invalid targets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finding-the-reference-name">Finding the reference name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cross-referencing-targets-in-other-documentation-sites">Cross-referencing targets in other documentation sites</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="intersphinx.html">Linking to other projects with Intersphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Using Jupyter notebooks in Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrate-rest-myst.html">Migrating from rST to MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-custom-css.html">Adding custom CSS or JavaScript to Sphinx documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit-source-links-sphinx.html">Adding &quot;Edit Source&quot; links on your Sphinx theme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="content/index.html">How-to guides: content, themes and SEO</a></li>
+      <li class="breadcrumb-item active">How to use cross-references with Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/cross-referencing-with-sphinx.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-use-cross-references-with-sphinx">
+<h1>How to use cross-references with Sphinx<a class="headerlink" href="#how-to-use-cross-references-with-sphinx" title="Link to this heading"></a></h1>
+<p>When writing documentation you often need to link to other pages of your documentation,
+other sections of the current page, or sections from other pages.</p>
+<p id="target-to-paragraph">An easy way is just to use the raw URL that Sphinx generates for each page/section.
+This works, but it has some disadvantages:</p>
+<ul class="simple">
+<li><p>Links can change, so they are hard to maintain.</p></li>
+<li><p>Links can be verbose and hard to read, so it is unclear what page/section they are linking to.</p></li>
+<li><p>There is no easy way to link to specific sections like paragraphs, figures, or code blocks.</p></li>
+<li><p>URL links only work for the html version of your documentation.</p></li>
+</ul>
+<p>Instead, Sphinx offers a powerful way to linking to the different elements of the document,
+called <em>cross-references</em>.
+Some advantages of using them:</p>
+<ul class="simple">
+<li><p>Use a human-readable name of your choice, instead of a URL.</p></li>
+<li><p>Portable between formats: html, PDF, ePub.</p></li>
+<li><p>Sphinx will warn you of invalid references.</p></li>
+<li><p>You can cross reference more than just pages and section headers.</p></li>
+</ul>
+<p>This page describes some best-practices for cross-referencing with Sphinx
+with two markup options: reStructuredText and MyST (Markdown).</p>
+<ul class="simple">
+<li><p>If you are not familiar with reStructuredText,
+check <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html" title="(in Sphinx v9.1.0)"><span>reStructuredText Primer</span></a> for a quick introduction.</p></li>
+<li><p>If you want to learn more about the MyST Markdown dialect,
+check out <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/syntax/reference.html" title="(in MyST Parser v5.0.0)"><span>Syntax tokens</span></a>.</p></li>
+</ul>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#getting-started" id="id2">Getting started</a></p>
+<ul>
+<li><p><a class="reference internal" href="#explicit-targets" id="id3">Explicit targets</a></p></li>
+<li><p><a class="reference internal" href="#implicit-targets" id="id4">Implicit targets</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#cross-referencing-using-roles" id="id5">Cross-referencing using roles</a></p>
+<ul>
+<li><p><a class="reference internal" href="#the-ref-role" id="id6">The ref role</a></p></li>
+<li><p><a class="reference internal" href="#the-doc-role" id="id7">The doc role</a></p></li>
+<li><p><a class="reference internal" href="#the-numref-role" id="id8">The numref role</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#automatically-label-sections" id="id9">Automatically label sections</a></p></li>
+<li><p><a class="reference internal" href="#invalid-targets" id="id10">Invalid targets</a></p></li>
+<li><p><a class="reference internal" href="#finding-the-reference-name" id="id11">Finding the reference name</a></p></li>
+<li><p><a class="reference internal" href="#cross-referencing-targets-in-other-documentation-sites" id="id12">Cross-referencing targets in other documentation sites</a></p></li>
+</ul>
+</nav>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<section id="explicit-targets">
+<span id="my-target"></span><h3>Explicit targets<a class="headerlink" href="#explicit-targets" title="Link to this heading"></a></h3>
+<p>Cross referencing in Sphinx uses two components, <strong>references</strong> and <strong>targets</strong>.</p>
+<ul class="simple">
+<li><p><strong>references</strong> are pointers in your documentation to other parts of your documentation.</p></li>
+<li><p><strong>targets</strong> are where the references can point to.</p></li>
+</ul>
+<p>You can manually create a <em>target</em> in any location of your documentation, allowing
+you to <em>reference</em> it from other pages. These are called <strong>explicit targets</strong>.</p>
+<p>For example, one way of creating an explicit target for a section is:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_My target:</span>
+
+<span class="gh">Explicit targets</span>
+<span class="gh">~~~~~~~~~~~~~~~~</span>
+
+Reference <span class="s">`My target`_</span>.
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(My_target)=
+<span class="gu">## Explicit targets</span>
+
+Reference [](My_target).
+</pre></div>
+</div>
+</div></div>
+<p>Then the reference will be rendered as <a class="reference internal" href="#my-target">My target</a>.</p>
+<p>You can also add explicit targets before paragraphs (or any other part of a page).</p>
+<p>Another example, add a target to a paragraph:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_target to paragraph:</span>
+
+An easy way is just to use the final link of the page/section.
+This works, but it has <span class="na">:ref:</span><span class="nv">`some disadvantages &lt;target to paragraph&gt;`</span>:
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(target_to_paragraph)=
+
+An easy way is just to use the final link of the page/section.
+This works, but it has [<span class="nt">some disadvantages</span>](<span class="na">target_to_paragraph</span>):
+</pre></div>
+</div>
+</div></div>
+<p>Then the reference will be rendered as: <a class="reference external" href="targettoparagraph">some disadvantages</a>.</p>
+<p>You can also create <span class="target" id="in-line-targets">in-line targets</span> within an element on your page,
+allowing you to, for example, reference text <em>within</em> a paragraph.</p>
+<p>For example, an in-line target inside a paragraph:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-2-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-2-2-0" name="2-0" role="tab" tabindex="0">reStructuredText</button></div><div aria-labelledby="tab-2-2-0" class="sphinx-tabs-panel" id="panel-2-2-0" name="2-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>You can also create _<span class="nv">`in-line targets`</span> within an element on your page,
+allowing you to, for example, reference text <span class="ge">*within*</span> a paragraph.
+</pre></div>
+</div>
+</div></div>
+<p>Then you can reference it using <code class="docutils literal notranslate"><span class="pre">`in-line</span> <span class="pre">targets`_</span></code>,
+that will be rendered as: <a class="reference internal" href="#in-line-targets">in-line targets</a>.</p>
+</section>
+<section id="implicit-targets">
+<h3>Implicit targets<a class="headerlink" href="#implicit-targets" title="Link to this heading"></a></h3>
+<p>You may also reference some objects by name
+without explicitly giving them one
+by using <em>implicit targets</em>.</p>
+<p>When you create a section, a footnote, or a citation,
+Sphinx will create a target with the title as the name:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-3-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-3-3-0" name="3-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-3-3-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-3-3-1" name="3-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-3-3-0" class="sphinx-tabs-panel" id="panel-3-3-0" name="3-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>For example, to reference the previous section
+you can use <span class="s">`Explicit targets`_</span>.
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-3-1" class="sphinx-tabs-panel" hidden="true" id="panel-3-3-1" name="3-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>For example, to reference the previous section
+you can use [](#explicit-targets).
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This requires setting <code class="docutils literal notranslate"><span class="pre">myst_heading_anchors</span> <span class="pre">=</span> <span class="pre">2</span></code> in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>,
+see <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/syntax/optional.html#syntax-header-anchors" title="(in MyST Parser v5.0.0)"><span>Auto-generated header anchors</span></a>.</p>
+</div>
+</div></div>
+<p>The reference will be rendered as: <a class="reference internal" href="#explicit-targets">Explicit targets</a>.</p>
+</section>
+</section>
+<section id="cross-referencing-using-roles">
+<h2>Cross-referencing using roles<a class="headerlink" href="#cross-referencing-using-roles" title="Link to this heading"></a></h2>
+<p>All targets seen so far can be referenced only from the same page.
+Sphinx provides some roles that allow you to reference any explicit target from any page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since Sphinx will make all explicit targets available globally,
+all targets must be unique.</p>
+</div>
+<p>You can see the complete list of cross-referencing roles at <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/referencing.html#xref-syntax" title="(in Sphinx v9.1.0)"><span>Syntax</span></a>.
+Next, you will explore the most common ones.</p>
+<section id="the-ref-role">
+<h3>The ref role<a class="headerlink" href="#the-ref-role" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">ref</span></code> role can be used to reference any explicit targets. For example:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-4-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-4-4-0" name="4-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-4-4-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-4-4-1" name="4-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-4-4-0" class="sphinx-tabs-panel" id="panel-4-4-0" name="4-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> <span class="na">:ref:</span><span class="nv">`my target`</span>.
+<span class="m">-</span> <span class="na">:ref:</span><span class="nv">`Target to paragraph &lt;target to paragraph&gt;`</span>.
+<span class="m">-</span> <span class="na">:ref:</span><span class="nv">`Target inside a paragraph &lt;in-line targets&gt;`</span>.
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-4-1" class="sphinx-tabs-panel" hidden="true" id="panel-4-4-1" name="4-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>{ref}`my target`.
+<span class="k">-</span><span class="w"> </span>{ref}`Target to paragraph &lt;target_to_paragraph&gt;`.
+</pre></div>
+</div>
+</div></div>
+<p>That will be rendered as:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#my-target"><span class="std std-ref">Explicit targets</span></a>.</p></li>
+<li><p><a class="reference internal" href="#target-to-paragraph"><span class="std std-ref">Target to paragraph</span></a>.</p></li>
+<li><p><a class="reference internal" href="#in-line-targets"><span class="std std-ref">Target inside a paragraph</span></a>.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">ref</span></code> role also allow us to reference code blocks:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_target to code:</span>
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+   <span class="c1"># Add the extension</span>
+   <span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="s1">&#39;sphinx.ext.autosectionlabel&#39;</span><span class="p">,</span>
+   <span class="p">]</span>
+
+   <span class="c1"># Make sure the target is unique</span>
+   <span class="n">autosectionlabel_prefix_document</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>We can reference it using <code class="docutils literal notranslate"><span class="pre">:ref:`code</span> <span class="pre">&lt;target</span> <span class="pre">to</span> <span class="pre">code&gt;`</span></code>,
+that will be rendered as: <a class="reference internal" href="#target-to-code"><span class="std std-ref">code</span></a>.</p>
+</section>
+<section id="the-doc-role">
+<h3>The doc role<a class="headerlink" href="#the-doc-role" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">doc</span></code> role allows us to link to a page instead of just a section.
+The target name can be relative to the page where the role exists, or relative
+to your documentation’s root folder (in both cases, you should omit the extension).</p>
+<p>For example, to link to a page in the same directory as this one you can use:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-5-5-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-5-5-0" name="5-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-5-5-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-5-5-1" name="5-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-5-5-0" class="sphinx-tabs-panel" id="panel-5-5-0" name="5-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> <span class="na">:doc:</span><span class="nv">`intersphinx`</span>
+<span class="m">-</span> <span class="na">:doc:</span><span class="nv">`/guides/intersphinx`</span>
+<span class="m">-</span> <span class="na">:doc:</span><span class="nv">`Custom title &lt;/guides/intersphinx&gt;`</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-5-5-1" class="sphinx-tabs-panel" hidden="true" id="panel-5-5-1" name="5-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>{doc}`intersphinx`
+<span class="k">-</span><span class="w"> </span>{doc}`/guides/intersphinx`
+<span class="k">-</span><span class="w"> </span>{doc}`Custom title &lt;/guides/intersphinx&gt;`
+</pre></div>
+</div>
+</div></div>
+<p>That will be rendered as:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="intersphinx.html"><span class="doc">How to link to other documentation projects with Intersphinx</span></a></p></li>
+<li><p><a class="reference internal" href="intersphinx.html"><span class="doc">How to link to other documentation projects with Intersphinx</span></a></p></li>
+<li><p><a class="reference internal" href="intersphinx.html"><span class="doc">Custom title</span></a></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using paths relative to your documentation root is recommended,
+so you avoid changing the target name if the page is moved.</p>
+</div>
+</section>
+<section id="the-numref-role">
+<h3>The numref role<a class="headerlink" href="#the-numref-role" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">numref</span></code> role is used to reference <strong>numbered</strong> elements of your documentation.
+For example, tables and images.</p>
+<p>To activate numbered references, add this to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enable numref</span>
+<span class="n">numfig</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Next, ensure that an object you would like to reference has an explicit target.</p>
+<p>For example, you can create a target for the next image:</p>
+<figure class="align-center" id="id1">
+<span id="target-to-image"></span><a class="reference internal image-reference" href="../_images/logo.png"><img alt="Logo" src="../_images/logo.png" style="width: 240px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Link me!</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-6-6-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-6-6-0" name="6-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-6-6-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-6-6-1" name="6-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-6-6-0" class="sphinx-tabs-panel" id="panel-6-6-0" name="6-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_target to image:</span>
+
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> /img/logo.png
+   <span class="nc">:alt:</span> Logo
+   <span class="nc">:align:</span> center
+   <span class="nc">:width:</span> 240px
+
+   Link me!
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-6-6-1" class="sphinx-tabs-panel" hidden="true" id="panel-6-6-1" name="6-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(target_to_image)=
+
+```{figure} /img/logo.png
+:alt: Logo
+:align: center
+:width: 240px
+```
+</pre></div>
+</div>
+</div></div>
+<p>Finally, reference it using <code class="docutils literal notranslate"><span class="pre">:numref:`target</span> <span class="pre">to</span> <span class="pre">image`</span></code>,
+that will be rendered as <code class="docutils literal notranslate"><span class="pre">Fig.</span> <span class="pre">N</span></code>.
+Sphinx will enumerate the image automatically.</p>
+</section>
+</section>
+<section id="automatically-label-sections">
+<h2>Automatically label sections<a class="headerlink" href="#automatically-label-sections" title="Link to this heading"></a></h2>
+<p>Manually adding an explicit target to each section and making sure is unique
+is a big task! Fortunately, Sphinx includes an extension to help us with that problem,
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autosectionlabel.html" title="(in Sphinx v9.1.0)"><span class="xref std std-doc">autosectionlabel</span></a>.</p>
+<p>To activate the <code class="docutils literal notranslate"><span class="pre">autosectionlabel</span></code> extension, add this to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate" id="target-to-code"><div class="highlight"><pre><span></span><span class="c1"># Add the extension</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinx.ext.autosectionlabel&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Make sure the target is unique</span>
+<span class="n">autosectionlabel_prefix_document</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Sphinx will create explicit targets for all your sections,
+the name of target has the form <code class="docutils literal notranslate"><span class="pre">{path/to/page}:{title-of-section}</span></code>.</p>
+<p>For example, you can reference the previous section using:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-7-7-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-7-7-0" name="7-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-7-7-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-7-7-1" name="7-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-7-7-0" class="sphinx-tabs-panel" id="panel-7-7-0" name="7-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> <span class="na">:ref:</span><span class="nv">`guides/cross-referencing-with-sphinx:explicit targets`</span>.
+<span class="m">-</span> <span class="na">:ref:</span><span class="nv">`Custom title &lt;guides/cross-referencing-with-sphinx:explicit targets&gt;`</span>.
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-7-7-1" class="sphinx-tabs-panel" hidden="true" id="panel-7-7-1" name="7-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>{ref}`guides/cross-referencing-with-sphinx:explicit targets`.
+<span class="k">-</span><span class="w"> </span>{ref}`Custom title &lt;guides/cross-referencing-with-sphinx:explicit targets&gt;`.
+</pre></div>
+</div>
+</div></div>
+<p>That will be rendered as:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#explicit-targets"><span class="std std-ref">Explicit targets</span></a>.</p></li>
+<li><p><a class="reference internal" href="#explicit-targets"><span class="std std-ref">Custom title</span></a>.</p></li>
+</ul>
+</section>
+<section id="invalid-targets">
+<h2>Invalid targets<a class="headerlink" href="#invalid-targets" title="Link to this heading"></a></h2>
+<p>If you reference an invalid or undefined target Sphinx will warn us.
+You can use the <a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-W" title="(in Sphinx v9.1.0)"><code class="xref std std-option docutils literal notranslate"><span class="pre">-W</span></code></a> option when building your docs
+to fail the build if there are any invalid references.
+On Read the Docs you can use the <a class="reference internal" href="../config-file/v2.html#sphinx-fail-on-warning"><span class="std std-ref">sphinx.fail_on_warning</span></a> option.</p>
+</section>
+<section id="finding-the-reference-name">
+<h2>Finding the reference name<a class="headerlink" href="#finding-the-reference-name" title="Link to this heading"></a></h2>
+<p>When you build your documentation, Sphinx will generate an inventory of all
+explicit and implicit links called <code class="docutils literal notranslate"><span class="pre">objects.inv</span></code>. You can list all of these targets to
+explore what is available for you to reference.</p>
+<p>List all targets for built documentation with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt1:before {
+  content: "$ ";
+}
+</style><span class="prompt1">python<span class="w"> </span>-m<span class="w"> </span>sphinx.ext.intersphinx<span class="w"> </span>&lt;link&gt;</span>
+</pre></div></div><p>Where <code class="docutils literal notranslate"><span class="pre">&lt;link&gt;</span></code> is either a URL or a local path that points to your inventory file
+(usually in <code class="docutils literal notranslate"><span class="pre">_build/html/objects.inv</span></code>).
+For example, to see all targets from the Read the Docs documentation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">python<span class="w"> </span>-m<span class="w"> </span>sphinx.ext.intersphinx<span class="w"> </span>https://docs.readthedocs.io/en/stable/objects.inv</span>
+</pre></div></div></section>
+<section id="cross-referencing-targets-in-other-documentation-sites">
+<h2>Cross-referencing targets in other documentation sites<a class="headerlink" href="#cross-referencing-targets-in-other-documentation-sites" title="Link to this heading"></a></h2>
+<p>You can reference to docs outside your project too! See <a class="reference internal" href="intersphinx.html"><span class="doc">How to link to other documentation projects with Intersphinx</span></a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pdf-non-ascii-languages.html" class="btn btn-neutral float-left" title="How to support Unicode in Sphinx PDFs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="intersphinx.html" class="btn btn-neutral float-right" title="How to link to other documentation projects with Intersphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

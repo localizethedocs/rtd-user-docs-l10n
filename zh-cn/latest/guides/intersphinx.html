@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to link to other documentation projects with Intersphinx" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/intersphinx.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This section shows you how to maintain references to named sections of other external Sphinx projects. You may be familiar with using the:ref: role to link to any location of your docs. It helps you to keep all links within your docs up to date and warns you if a reference target moves or changes..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="This section shows you how to maintain references to named sections of other external Sphinx projects. You may be familiar with using the:ref: role to link to any location of your docs. It helps you to keep all links within your docs up to date and warns you if a reference target moves or changes..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to link to other documentation projects with Intersphinx &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/intersphinx.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="How to use Jupyter notebooks in Sphinx" href="jupyter.html" />
+    <link rel="prev" title="How to use cross-references with Sphinx" href="cross-referencing-with-sphinx.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="content/index.html">Content, themes and SEO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="technical-docs-seo-guide.html">Search engine optimization (SEO) for documentation projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traffic-analytics.html">Using traffic analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search-analytics.html">Using search analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enable-offline-formats.html">Enabling offline formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="embedding-content.html">Embedding content from your documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage-translations-sphinx.html">Managing translations for Sphinx projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdf-non-ascii-languages.html">Supporting Unicode in Sphinx PDFs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross-referencing-with-sphinx.html">Cross-referencing with Sphinx</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Linking to other projects with Intersphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-intersphinx">Using Intersphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intersphinx-in-read-the-docs">Intersphinx in Read the Docs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intersphinx-with-private-projects">Intersphinx with private projects</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Using Jupyter notebooks in Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrate-rest-myst.html">Migrating from rST to MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-custom-css.html">Adding custom CSS or JavaScript to Sphinx documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit-source-links-sphinx.html">Adding &quot;Edit Source&quot; links on your Sphinx theme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="content/index.html">How-to guides: content, themes and SEO</a></li>
+      <li class="breadcrumb-item active">How to link to other documentation projects with Intersphinx</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/intersphinx.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-link-to-other-documentation-projects-with-intersphinx">
+<h1>How to link to other documentation projects with Intersphinx<a class="headerlink" href="#how-to-link-to-other-documentation-projects-with-intersphinx" title="Link to this heading"></a></h1>
+<p>This section shows you how to maintain references to named sections of other external Sphinx projects.</p>
+<p>You may be familiar with using the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/referencing.html#ref-role" title="（在 Sphinx v9.1.0）"><span class="xref std std-ref">:ref: role</span></a> to
+<a class="reference internal" href="cross-referencing-with-sphinx.html"><span class="doc">link to any location of your docs</span></a>.
+It helps you to keep all links within your docs up to date and warns you if a reference target moves or changes
+so you can ensure that your docs don't have broken cross-references.</p>
+<p>Sometimes you may need to link to a specific section of another project's documentation.
+While you could just hyperlink directly, there is a better way.
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html" title="（在 Sphinx v9.1.0）"><span class="xref std std-doc">Intersphinx</span></a> allows you to use all <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/referencing.html#xref-syntax" title="（在 Sphinx v9.1.0）"><span class="xref std std-ref">cross-reference roles</span></a> from Sphinx with objects in other projects.
+That is, you could use the <code class="docutils literal notranslate"><span class="pre">:ref:</span></code> role to link to sections of other documentation projects.
+Sphinx will ensure that your cross-references to the other project exist and will raise a warning if they are deleted or changed so you can keep your docs up to date.</p>
+<p>If you are publishing several Sphinx projects together using Read the Docs' <em>subprojects</em> (see <a class="reference internal" href="../subprojects.html"><span class="doc">Subprojects</span></a>),
+you should use Intersphinx to reference your subprojects from other projects.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You can also use Sphinx's <code class="docutils literal notranslate"><span class="pre">linkcheck</span></code> builder to check for broken links.
+By default it will also check the validity of <code class="docutils literal notranslate"><span class="pre">#anchors</span></code> in links.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">sphinx-build<span class="w"> </span>-b<span class="w"> </span>linkcheck<span class="w"> </span>.<span class="w"> </span>_build/linkcheck</span>
+</pre></div></div><p>See all the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-the-linkcheck-builder">options for the linkcheck builder</a>.</p>
+</div>
+<section id="using-intersphinx">
+<h2>Using Intersphinx<a class="headerlink" href="#using-intersphinx" title="Link to this heading"></a></h2>
+<p>To use Intersphinx you need to add it to the list of extensions in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py file</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinx.ext.intersphinx&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>And use the <code class="docutils literal notranslate"><span class="pre">intersphinx_mapping</span></code> configuration to indicate the name and link of the projects you want to use.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py file</span>
+
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;sphinx&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;https://www.sphinx-doc.org/en/master/&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="p">}</span>
+
+<span class="c1"># We recommend adding the following config value.</span>
+<span class="c1"># Sphinx defaults to automatically resolve *unresolved* labels using all your Intersphinx mappings.</span>
+<span class="c1"># This behavior has unintended side-effects, namely that documentations local references can</span>
+<span class="c1"># suddenly resolve to an external location.</span>
+<span class="c1"># See also:</span>
+<span class="c1"># https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_disabled_reftypes</span>
+<span class="n">intersphinx_disabled_reftypes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;*&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If you are using Read the Docs' subprojects, you also need to enable the Intersphinx extension on each of the subprojects.
+For each subproject, you need to add the main project and all the other subprojects to <code class="docutils literal notranslate"><span class="pre">intersphinx_mapping</span></code>.</p>
+</div>
+<p>Now you can use the <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> name with a cross-reference role:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> <span class="na">:ref:</span><span class="nv">`sphinx:ref-role`</span>
+<span class="m">-</span> <span class="na">:ref:</span><span class="nv">`:ref: role &lt;sphinx:ref-role&gt;`</span>
+<span class="m">-</span> <span class="na">:doc:</span><span class="nv">`sphinx:usage/extensions/intersphinx`</span>
+<span class="m">-</span> <span class="na">:doc:</span><span class="nv">`Intersphinx &lt;sphinx:usage/extensions/intersphinx&gt;`</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>{ref}`sphinx:ref-role`
+<span class="k">-</span><span class="w"> </span>{ref}`:ref: role &lt;sphinx:ref-role&gt;`
+<span class="k">-</span><span class="w"> </span>{doc}`sphinx:usage/extensions/intersphinx`
+<span class="k">-</span><span class="w"> </span>{doc}`Intersphinx &lt;sphinx:usage/extensions/intersphinx&gt;`
+</pre></div>
+</div>
+</div></div>
+<p>Result:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/referencing.html#ref-role" title="（在 Sphinx v9.1.0）"><span>Cross-referencing arbitrary locations</span></a></p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/referencing.html#ref-role" title="（在 Sphinx v9.1.0）"><span class="xref std std-ref">:ref: role</span></a></p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html" title="（在 Sphinx v9.1.0）"><span>sphinx.ext.intersphinx – Link to other projects’ documentation</span></a></p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html" title="（在 Sphinx v9.1.0）"><span class="xref std std-doc">Intersphinx</span></a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You can get the targets used in Intersphinx by inspecting the source file of the project or
+using <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#showing-all-links-of-an-intersphinx-mapping-file">this utility</a>
+provided by Intersphinx:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">python<span class="w"> </span>-m<span class="w"> </span>sphinx.ext.intersphinx<span class="w"> </span>https://www.sphinx-doc.org/en/master/objects.inv</span>
+</pre></div></div></div>
+</section>
+<section id="intersphinx-in-read-the-docs">
+<h2>Intersphinx in Read the Docs<a class="headerlink" href="#intersphinx-in-read-the-docs" title="Link to this heading"></a></h2>
+<p>You can use Intersphinx to link to subprojects, translations, another version or any other project hosted in Read the Docs.
+For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py file</span>
+
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Links to &quot;v2&quot; version of the &quot;docs&quot; project.</span>
+    <span class="s2">&quot;docs-v2&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;https://docs.readthedocs.io/en/v2&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+    <span class="c1"># Links to the French translation of the &quot;docs&quot; project.</span>
+    <span class="s2">&quot;docs-fr&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;https://docs.readthedocs.io/fr/latest&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+    <span class="c1"># Links to the &quot;apis&quot; subproject of the &quot;docs&quot; project.</span>
+    <span class="s2">&quot;sub-apis&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;https://docs.readthedocs.io/projects/apis/en/latest&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="intersphinx-with-private-projects">
+<h2>Intersphinx with private projects<a class="headerlink" href="#intersphinx-with-private-projects" title="Link to this heading"></a></h2>
+<p>If you are using <a class="reference internal" href="../commercial/index.html"><span class="doc">Business hosting</span></a>,
+Intersphinx will not be able to fetch the inventory file from private docs.</p>
+<p>Intersphinx supports <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#using-intersphinx-with-inventory-file-under-basic-authorization">URLs with Basic Authorization</a>,
+which Read the Docs supports <a class="reference internal" href="../commercial/sharing.html#basic-authorization"><span class="std std-ref">using a token</span></a>.
+You need to generate a token for each project you want to use with Intersphinx.</p>
+<ol class="arabic simple">
+<li><p>Go the project you want to use with Intersphinx</p></li>
+<li><p>Click <span class="guilabel">Admin</span> &gt; <span class="guilabel">Sharing</span></p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">Header</span> <span class="pre">Token</span></code></p></li>
+<li><p>Set an expiration date long enough to use the token when building your project</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Share!</span></code>.</p></li>
+</ol>
+<p>Now we can add the link to the private project with the token like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py file</span>
+
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Links to a private project named &quot;docs&quot;</span>
+    <span class="s2">&quot;docs&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="s2">&quot;https://&lt;token-for-docs&gt;:@readthedocs-docs.readthedocs-hosted.com/en/latest&quot;</span><span class="p">,</span>
+        <span class="kc">None</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="c1"># Links to the private French translation of the &quot;docs&quot; project</span>
+    <span class="s2">&quot;docs&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="s2">&quot;https://&lt;token-for-fr-translation&gt;:@readthedocs-docs.readthedocs-hosted.com/fr/latest&quot;</span><span class="p">,</span>
+        <span class="kc">None</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="c1"># Links to the private &quot;apis&quot; subproject of the &quot;docs&quot; project</span>
+    <span class="s2">&quot;docs&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="s2">&quot;https://&lt;token-for-apis&gt;:@readthedocs-docs.readthedocs-hosted.com/projects/apis/en/latest&quot;</span><span class="p">,</span>
+        <span class="kc">None</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Sphinx will strip the token from the URLs when generating the links.</p>
+</div>
+<p>You can use your tokens with environment variables,
+so you don't have to hard code them in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.
+See <a class="reference internal" href="../environment-variables.html"><span class="doc">Environment variable overview</span></a> to use environment variables inside Read the Docs.</p>
+<p>For example,
+if you create an environment variable named <code class="docutils literal notranslate"><span class="pre">RTD_TOKEN_DOCS</span></code> with the token from the &quot;docs&quot; project.
+You can use it like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py file</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="n">RTD_TOKEN_DOCS</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;RTD_TOKEN_DOCS&quot;</span><span class="p">)</span>
+
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Links to a private project named &quot;docs&quot;</span>
+    <span class="s2">&quot;docs&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;https://</span><span class="si">{</span><span class="n">RTD_TOKEN_DOCS</span><span class="si">}</span><span class="s2">:@readthedocs-docs.readthedocs-hosted.com/en/latest&quot;</span><span class="p">,</span>
+        <span class="kc">None</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Another way of using Intersphinx with private projects is to download the inventory file and keep it in sync when the project changes.
+The inventory file is by default located at <code class="docutils literal notranslate"><span class="pre">objects.inv</span></code>, for example <code class="docutils literal notranslate"><span class="pre">https://readthedocs-docs.readthedocs-hosted.com/en/latest/objects.inv</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py file</span>
+
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Links to a private project named &quot;docs&quot; using a local inventory file.</span>
+    <span class="s2">&quot;docs&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="s2">&quot;https://readthedocs-docs.readthedocs-hosted.com/en/latest&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;path/to/local/objects.inv&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="cross-referencing-with-sphinx.html" class="btn btn-neutral float-left" title="How to use cross-references with Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="jupyter.html" class="btn btn-neutral float-right" title="How to use Jupyter notebooks in Sphinx" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
