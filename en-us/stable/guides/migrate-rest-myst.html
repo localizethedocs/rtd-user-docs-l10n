@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to migrate from reStructuredText to MyST Markdown" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/migrate-rest-myst.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="In this guide, you will find how you can start writing Markdown in your existing reStructuredText project, or migrate it completely. Sphinx is usually associated with reStructuredText, the markup language designed for the CPython project in the early ’00s. However, for quite some time Sphinx has ..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="In this guide, you will find how you can start writing Markdown in your existing reStructuredText project, or migrate it completely. Sphinx is usually associated with reStructuredText, the markup language designed for the CPython project in the early ’00s. However, for quite some time Sphinx has ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to migrate from reStructuredText to MyST Markdown &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/migrate-rest-myst.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a48b73ee"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to add custom CSS or JavaScript to Sphinx documentation" href="adding-custom-css.html" />
+    <link rel="prev" title="How to use Jupyter notebooks in Sphinx" href="jupyter.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="content/index.html">Content, themes and SEO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="technical-docs-seo-guide.html">Search engine optimization (SEO) for documentation projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traffic-analytics.html">Using traffic analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search-analytics.html">Using search analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enable-offline-formats.html">Enabling offline formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="embedding-content.html">Embedding content from your documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage-translations-sphinx.html">Managing translations for Sphinx projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdf-non-ascii-languages.html">Supporting Unicode in Sphinx PDFs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross-referencing-with-sphinx.html">Cross-referencing with Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intersphinx.html">Linking to other projects with Intersphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Using Jupyter notebooks in Sphinx</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Migrating from rST to MyST</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-write-your-content-both-in-restructuredtext-and-myst">How to write  your content both in reStructuredText and MyST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-convert-existing-restructuredtext-documentation-to-myst">How to convert existing reStructuredText documentation to MyST</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-modify-the-behaviour-of-rst2myst">How to modify the behaviour of <code class="docutils literal notranslate"><span class="pre">rst2myst</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-enable-optional-syntax">How to enable optional syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-write-restructuredtext-syntax-within-myst">How to write reStructuredText syntax within MyST</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="adding-custom-css.html">Adding custom CSS or JavaScript to Sphinx documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit-source-links-sphinx.html">Adding &quot;Edit Source&quot; links on your Sphinx theme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="content/index.html">How-to guides: content, themes and SEO</a></li>
+      <li class="breadcrumb-item active">How to migrate from reStructuredText to MyST Markdown</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/migrate-rest-myst.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-migrate-from-restructuredtext-to-myst-markdown">
+<h1>How to migrate from reStructuredText to MyST Markdown<a class="headerlink" href="#how-to-migrate-from-restructuredtext-to-myst-markdown" title="Link to this heading"></a></h1>
+<p>In this guide, you will find
+how you can start writing Markdown in your existing reStructuredText project,
+or migrate it completely.</p>
+<p>Sphinx is usually associated with reStructuredText, the markup language
+<span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0287/"><strong>designed for the CPython project in the early ’00s</strong></a>.
+However, for quite some time Sphinx has been compatible with Markdown as well,
+thanks to a number of extensions.</p>
+<p>The most powerful of such extensions is <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/index.html" title="(in MyST Parser v5.0.0)"><span class="xref std std-doc">MyST-Parser</span></a>,
+which implements a CommonMark-compliant, extensible Markdown dialect
+with support for the Sphinx roles and directives that make it so useful.</p>
+<p>If, <strong>instead of migrating</strong>, you are starting a new project from scratch,
+have a look at <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/intro.html" title="(in MyST Parser v5.0.0)"><span>🚀 Get Started</span></a>.
+If you are starting a <strong>project for Jupyter</strong>, you can start with Jupyter Book, which uses <code class="docutils literal notranslate"><span class="pre">MyST-Parser</span></code>, see the official Jupyter Book tutorial: <a class="reference external" href="https://jupyter-book.readthedocs.io/v1/start/your-first-book.html" title="(in Project name not set)"><span>Create your first book</span></a></p>
+<section id="how-to-write-your-content-both-in-restructuredtext-and-myst">
+<h2>How to write  your content both in reStructuredText and MyST<a class="headerlink" href="#how-to-write-your-content-both-in-restructuredtext-and-myst" title="Link to this heading"></a></h2>
+<p>It is useful to ask whether a migration is necessary in the first place.
+Doing bulk migrations of large projects with lots of work in progress
+will create conflicts for ongoing changes.
+On the other hand, your writers might prefer to have some files in Markdown
+and some others in reStructuredText, for whatever reason.
+Luckily, Sphinx supports reading both types of markup at the same time without problems.</p>
+<p>To start using MyST in your existing Sphinx project,
+first <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/intro.html#installation">install the <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> Python package</a>
+and then <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/intro.html#enable-myst-in-sphinx">enable it on your configuration</a>:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Your existing extensions</span>
+    <span class="o">...</span><span class="p">,</span>
+<span class="hll">    <span class="s2">&quot;myst_parser&quot;</span><span class="p">,</span>
+</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>Your reStructuredText documents will keep rendering,
+and you will be able to add MyST documents with the <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension
+that will be processed by MyST-Parser.</p>
+<p>As an example, <em>this guide</em> is written in MyST
+while the rest of the Read the Docs documentation is written in reStructuredText.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, MyST-Parser registers the <code class="docutils literal notranslate"><span class="pre">.md</span></code> suffix for MyST source files.
+If you want to use a different suffix, you can do so by changing your
+<code class="docutils literal notranslate"><span class="pre">source_suffix</span></code> configuration value in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+</div>
+</section>
+<section id="how-to-convert-existing-restructuredtext-documentation-to-myst">
+<h2>How to convert existing reStructuredText documentation to MyST<a class="headerlink" href="#how-to-convert-existing-restructuredtext-documentation-to-myst" title="Link to this heading"></a></h2>
+<p>To convert existing reST documents to MyST, you can use
+the <code class="docutils literal notranslate"><span class="pre">rst2myst</span></code> CLI script shipped by <a class="reference external" href="https://rst-to-myst.readthedocs.io/en/stable/index.html" title="(in RST-to-MyST v0.4.0)"><span>RST-to-MyST</span></a>.
+The script supports converting the documents one by one,
+or scanning a series of directories to convert them in bulk.</p>
+<p>After <a class="reference external" href="https://rst-to-myst.readthedocs.io/en/stable/index.html" title="(in RST-to-MyST v0.4.0)"><span class="xref std std-doc">installing `rst-to-myst`</span></a>,
+you can run the script as follows:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rst2myst<span class="w"> </span>convert<span class="w"> </span>docs/source/index.rst<span class="w">  </span><span class="c1"># Converts index.rst to index.md</span>
+<span class="gp">$ </span>rst2myst<span class="w"> </span>convert<span class="w"> </span>docs/**/*.rst<span class="w">  </span><span class="c1"># Convert every .rst file under the docs directory</span>
+</pre></div>
+</div>
+<p>This will create a <code class="docutils literal notranslate"><span class="pre">.md</span></code> MyST file for every <code class="docutils literal notranslate"><span class="pre">.rst</span></code> source file converted.</p>
+<section id="how-to-modify-the-behaviour-of-rst2myst">
+<h3>How to modify the behaviour of <code class="docutils literal notranslate"><span class="pre">rst2myst</span></code><a class="headerlink" href="#how-to-modify-the-behaviour-of-rst2myst" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">rst2myst</span></code> accepts several flags to modify its behavior.
+All of them have sensible defaults, so you don’t have to specify them
+unless you want to.</p>
+<p>These are a few options you might find useful:</p>
+<dl class="simple myst">
+<dt><a class="reference external" href="https://rst-to-myst.readthedocs.io/en/stable/cli.html#cmdoption-rst2myst-convert-d" title="(in RST-to-MyST v0.4.0)"><code class="xref std std-option docutils literal notranslate"><span class="pre">-d,</span> <span class="pre">--dry-run</span></code></a></dt><dd><p>Only verify that the script would work correctly,
+without actually writing any files.</p>
+</dd>
+<dt><a class="reference external" href="https://rst-to-myst.readthedocs.io/en/stable/cli.html#cmdoption-rst2myst-convert-R" title="(in RST-to-MyST v0.4.0)"><code class="xref std std-option docutils literal notranslate"><span class="pre">-R,</span> <span class="pre">--replace-files</span></code></a></dt><dd><p>Replace the <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files by their <code class="docutils literal notranslate"><span class="pre">.md</span></code> equivalent,
+rather than writing a new <code class="docutils literal notranslate"><span class="pre">.md</span></code> file next to the old <code class="docutils literal notranslate"><span class="pre">.rst</span></code> one.</p>
+</dd>
+</dl>
+<p>You can read the full list of options in
+<a class="reference external" href="https://rst-to-myst.readthedocs.io/en/stable/cli.html" title="(in RST-to-MyST v0.4.0)"><span class="xref std std-doc">the `rst2myst` documentation</span></a>.</p>
+</section>
+</section>
+<section id="how-to-enable-optional-syntax">
+<h2>How to enable optional syntax<a class="headerlink" href="#how-to-enable-optional-syntax" title="Link to this heading"></a></h2>
+<p>Some reStructuredText syntax will require you to enable certain MyST plugins.
+For example, to write <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html#definition-lists">reST definition lists</a>, you need to add a
+<code class="docutils literal notranslate"><span class="pre">myst_enable_extensions</span></code> variable to your Sphinx configuration, as follows:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">myst_enable_extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;deflist&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>You can learn more about <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/syntax/optional.html" title="(in MyST Parser v5.0.0)"><span class="xref std std-doc">other MyST-Parser plugins</span></a>
+in their documentation.</p>
+</section>
+<section id="how-to-write-restructuredtext-syntax-within-myst">
+<h2>How to write reStructuredText syntax within MyST<a class="headerlink" href="#how-to-write-restructuredtext-syntax-within-myst" title="Link to this heading"></a></h2>
+<p>There is a small chance that <code class="docutils literal notranslate"><span class="pre">rst2myst</span></code> does not properly understand a piece of reST syntax,
+either because there is a bug in the tool
+or because that syntax does not have a MyST equivalent yet.
+For example, <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/faq/index.html#howto-autodoc" title="(in MyST Parser v5.0.0)"><span class="xref std std-ref">as explained in the documentation</span></a>,
+the <code class="docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code> extension is incompatible with MyST.</p>
+<p>Fortunately, MyST supports an <code class="docutils literal notranslate"><span class="pre">eval-rst</span></code> directive
+that will parse the content as reStructuredText, rather than MyST.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{eval-rst}
+.. note::
+
+   Complete MyST migration.
+
+```
+</pre></div>
+</div>
+<p>will produce the following result:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Complete MyST migration.</p>
+</div>
+<p>As a result, this allows you to conduct a gradual migration,
+at the expense of having heterogeneous syntax in your source files.
+In any case, the HTML output will be the same.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="jupyter.html" class="btn btn-neutral float-left" title="How to use Jupyter notebooks in Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="adding-custom-css.html" class="btn btn-neutral float-right" title="How to add custom CSS or JavaScript to Sphinx documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
