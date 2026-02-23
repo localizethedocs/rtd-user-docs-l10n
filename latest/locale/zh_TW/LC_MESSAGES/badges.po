@@ -166,7 +166,7 @@ msgstr ""
 
 #: ../../../badges.rst:61
 msgid "Social Badge"
-msgstr ""
+msgstr "社交徽章"
 
 #: ../../../badges.rst:65
 msgid "Version-specific badges"

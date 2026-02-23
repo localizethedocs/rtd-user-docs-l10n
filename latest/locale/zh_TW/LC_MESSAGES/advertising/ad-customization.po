@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../advertising/ad-customization.rst:4
 msgid "Customizing advertising"
-msgstr ""
+msgstr "訂製廣告"
 
 #: ../../../advertising/ad-customization.rst:8
 msgid ""
