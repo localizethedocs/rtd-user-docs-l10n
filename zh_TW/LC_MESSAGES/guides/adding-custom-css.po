@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/adding-custom-css.rst:-1
+msgid ""
+"How to add additional CSS stylesheets or JavaScript files to your Sphinx "
+"documentation to override your Sphinx theme or add interactivity with "
+"JavaScript."
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:2
+msgid "How to add custom CSS or JavaScript to Sphinx documentation"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:10
+msgid ""
+"Adding additional CSS or JavaScript files to your Sphinx documentation can "
+"let you customize the look and feel of your docs or add additional "
+"functionality. For example, with a small snippet of CSS, your documentation "
+"could use a custom font or have a different background color."
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:16
+msgid ""
+"If your custom stylesheet is ``_static/css/custom.css``, you can add that "
+"CSS file to the documentation using the Sphinx option `html_css_files`_::"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:20
+msgid ""
+"## conf.py\n"
+"\n"
+"# These folders are copied to the documentation's HTML output\n"
+"html_static_path = ['_static']\n"
+"\n"
+"# These paths are either relative to html_static_path\n"
+"# or fully qualified paths (eg. https://...)\n"
+"html_css_files = [\n"
+"    'css/custom.css',\n"
+"]"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:32
+msgid "A similar approach can be used to add JavaScript files::"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:34
+msgid ""
+"html_js_files = [\n"
+"    'js/custom.js',\n"
+"]"
+msgstr ""
+"html_js_files = [\n"
+"    'js/custom.js',\n"
+"]"
+
+#: ../../../guides/adding-custom-css.rst:44
+msgid ""
+"The Sphinx HTML options ``html_css_files`` and ``html_js_files`` were added "
+"in Sphinx 1.8. Unless you have a good reason to use an older version, you "
+"are strongly encouraged to upgrade. Sphinx is almost entirely backwards "
+"compatible."
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:52
+msgid "Overriding or replacing a theme's stylesheet"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:54
+msgid ""
+"The above approach is preferred for adding additional stylesheets or "
+"JavaScript, but it is also possible to completely replace a Sphinx theme's "
+"stylesheet with your own stylesheet."
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:58
+msgid ""
+"If your replacement stylesheet exists at ``_static/css/yourtheme.css``, you "
+"can replace your theme's CSS file by setting ``html_style`` in your ``conf."
+"py``::"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:61
+msgid ""
+"## conf.py\n"
+"\n"
+"html_style = 'css/yourtheme.css'"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:65
+msgid ""
+"If you only need to override a few styles on the theme, you can include the "
+"theme's normal CSS using the CSS `@import rule <https://developer.mozilla."
+"org/en-US/docs/Web/CSS/@import>`_ ."
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:69
+msgid ""
+"/** css/yourtheme.css **/\n"
+"\n"
+"/* This line is theme specific - it includes the base theme CSS */\n"
+"@import '../alabaster.css';  /* for Alabaster */\n"
+"/*@import 'theme.css';       /* for the Read the Docs theme */\n"
+"\n"
+"body {\n"
+"    /* ... */\n"
+"}"
+msgstr ""
+
+#: ../../../guides/adding-custom-css.rst:84
+msgid ""
+"You can also add custom classes to your html elements. See `Docutils Class "
+"<https://docutils.sourceforge.io/docs/ref/rst/directives.html#class>`_ and "
+"this related `Sphinx footnote... <https://www.sphinx-doc.org/en/master/usage/"
+"restructuredtext/basics.html#id2>`_ for more information."
+msgstr ""

@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.rst:4
+msgid "Tutorial"
+msgstr ""
+
+#: ../../../index.rst:4
+msgid "Getting started"
+msgstr ""
+
+#: ../../../index.rst:14 ../../../index.rst:97 ../../../index.rst:174
+msgid "Project setup and configuration"
+msgstr "專案設定與組態"
+
+#: ../../../index.rst:26 ../../../index.rst:97 ../../../index.rst:185
+msgid "Build process"
+msgstr ""
+
+#: ../../../index.rst:39 ../../../index.rst:196
+msgid "Hosting documentation"
+msgstr "託管文件"
+
+#: ../../../index.rst:56
+msgid "Reading documentation"
+msgstr "閱讀文件"
+
+#: ../../../index.rst:69 ../../../index.rst:216
+msgid "Maintaining projects"
+msgstr "維護專案"
+
+#: ../../../index.rst:85 ../../../index.rst:230
+msgid "Business features"
+msgstr ""
+
+#: ../../../index.rst:97
+msgid "Upgrading and maintaining projects"
+msgstr ""
+
+#: ../../../index.rst:97
+msgid "Content, themes and SEO"
+msgstr ""
+
+#: ../../../index.rst:97
+msgid "Security and access"
+msgstr ""
+
+#: ../../../index.rst:97
+msgid "Account management"
+msgstr "帳號管理"
+
+#: ../../../index.rst:97
+msgid "Best practice"
+msgstr "最佳實踐"
+
+#: ../../../index.rst:97
+msgid "Troubleshooting problems"
+msgstr ""
+
+#: ../../../index.rst:97 ../../../index.rst:244
+msgid "How-to guides"
+msgstr "操作指南"
+
+#: ../../../index.rst:111
+msgid "Developer Documentation"
+msgstr "開發者文件"
+
+#: ../../../index.rst:111
+msgid "Read the Docs website"
+msgstr "Read the Docs 網站"
+
+#: ../../../index.rst:111 ../../../index.rst:258
+msgid "Reference"
+msgstr ""
+
+#: ../../../index.rst:-1
+msgid ""
+"Automate building, versioning, and hosting of your technical documentation "
+"continuously on Read the Docs."
+msgstr ""
+
+#: ../../../index.rst:2
+msgid "Read the Docs: documentation simplified"
+msgstr "Read the Docs：簡化文件管理"
+
+#: ../../../index.rst:127
+msgid ""
+"<a style=\"display: none;\" rel=\"me\" href=\"https://fosstodon.org/"
+"@readthedocs\">Mastodon</a>"
+msgstr ""
+"<a style=\"display: none;\" rel=\"me\" href=\"https://fosstodon.org/"
+"@readthedocs\">Mastodon</a>"
+
+#: ../../../index.rst:131
+msgid ""
+"Read the Docs simplifies managing software documentation by building and "
+"hosting your docs automatically, using the Git workflow you already use for "
+"code. Treating documentation like code lets your team use tools they already "
+"know, and makes keeping your docs updated easier."
+msgstr ""
+
+#: ../../../index.rst:137
+msgid "Up to date documentation"
+msgstr "最新的文件"
+
+#: ../../../index.rst:138
+msgid ""
+"Whenever you push code to Git, Read the Docs will automatically build your "
+"docs so your code and documentation are always up-to-date. Get started with "
+"our :doc:`tutorial </tutorial/index>`."
+msgstr ""
+"每當您將程式碼推送到 Git 時，Read the Docs 都會自動建置您的文件，確保您的程式"
+"碼與文件始終保持同步。請參考我們的\\ :doc:`教學 </tutorial/index>`\\ 開始使"
+"用。"
+
+#: ../../../index.rst:143
+msgid "Documentation for every version"
+msgstr "每個版本的文件"
+
+#: ../../../index.rst:144
+msgid ""
+"Read the Docs can host multiple versions of your docs. Keep your 1.0 and 2.0 "
+"documentation online, pulled directly from Git. Start hosting all your :doc:"
+"`versions </versions>`."
+msgstr ""
+
+#: ../../../index.rst:149
+msgid "Open source and user focused"
+msgstr "開源且以使用者為中心"
+
+#: ../../../index.rst:150
+msgid ""
+"Our company is bootstrapped and 100% user-focused, so our product gets "
+"better for our users instead of our investors. |org_brand| hosts "
+"documentation for over 100,000 large and small open source projects at no "
+"cost. |com_brand| supports hundreds of organizations with product and "
+"internal documentation. Learn more about these differences on `our pricing "
+"page <https://about.readthedocs.com/pricing/>`_."
+msgstr ""
+
+#: ../../../index.rst:158
+msgid "First time here?"
+msgstr ""
+
+#: ../../../index.rst:160
+msgid "We have a few places for you to get started:"
+msgstr ""
+
+#: ../../../index.rst:164
+msgid ":doc:`/tutorial/index`"
+msgstr ":doc:`/tutorial/index`"
+
+#: ../../../index.rst:165
+msgid "Follow the Read the Docs tutorial."
+msgstr ""
+
+#: ../../../index.rst:167
+msgid ":doc:`/intro/doctools`"
+msgstr ":doc:`/intro/doctools`"
+
+#: ../../../index.rst:168
+msgid "Quick start for MkDocs and Docusaurus."
+msgstr "MkDocs 與 Docusaurus 的快速使用。"
+
+#: ../../../index.rst:170
+msgid ":doc:`/examples`"
+msgstr ":doc:`/examples`"
+
+#: ../../../index.rst:171
+msgid ""
+"Start your journey with an example project to learn how to use Read the Docs."
+msgstr ""
+
+#: ../../../index.rst:176
+msgid "Start with the basics of setting up your project:"
+msgstr ""
+
+#: ../../../index.rst:178
+msgid ":doc:`/config-file/index`"
+msgstr ":doc:`/config-file/index`"
+
+#: ../../../index.rst:179
+msgid "Learn how to configure your project with a ``.readthedocs.yaml`` file."
+msgstr ""
+
+#: ../../../index.rst:181
+msgid ":doc:`/guides/reproducible-builds`"
+msgstr ":doc:`/guides/reproducible-builds`"
+
+#: ../../../index.rst:182
+msgid "Keep your builds working by making them reproducible."
+msgstr ""
+
+#: ../../../index.rst:187
+msgid "Build your documentation with ease:"
+msgstr "輕鬆建置您的文件："
+
+#: ../../../index.rst:189
+msgid ":doc:`/builds`"
+msgstr ":doc:`/builds`"
+
+#: ../../../index.rst:190
+msgid "Understand how documentation builds happen."
+msgstr "了解文件建置的運作方式。"
+
+#: ../../../index.rst:192
+msgid ":doc:`/pull-requests`"
+msgstr ":doc:`/pull-requests`"
+
+#: ../../../index.rst:193 ../../../index.rst:249
+msgid "Setup pull request builds and enjoy previews of each commit."
+msgstr "設定提取請求建置，並享受每次提交的預覽功能。"
+
+#: ../../../index.rst:198
+msgid "Learn more about our hosting features:"
+msgstr "深入了解我們的託管功能："
+
+#: ../../../index.rst:200
+msgid ":doc:`/versions`"
+msgstr ":doc:`/versions`"
+
+#: ../../../index.rst:201
+msgid "Give your readers multiple versions of your documentation."
+msgstr ""
+
+#: ../../../index.rst:203
+msgid ":doc:`/subprojects`"
+msgstr ":doc:`/subprojects`"
+
+#: ../../../index.rst:204
+msgid "Host multiple projects under a single domain."
+msgstr "在單一網域下託管多個專案。"
+
+#: ../../../index.rst:206
+msgid ":doc:`/localization`"
+msgstr ":doc:`/localization`"
+
+#: ../../../index.rst:207
+msgid "Translate your documentation into multiple languages."
+msgstr "將您的文件翻譯成多種語言。"
+
+#: ../../../index.rst:209
+msgid ":doc:`/versioning-schemes`"
+msgstr ":doc:`/versioning-schemes`"
+
+#: ../../../index.rst:210
+msgid "Learn about different URL versioning schemes."
+msgstr "了解不同的網址版本控制方案。"
+
+#: ../../../index.rst:212
+msgid ":doc:`/custom-domains`"
+msgstr ":doc:`/custom-domains`"
+
+#: ../../../index.rst:213
+msgid "Brand your documentation on your own domain."
+msgstr ""
+
+#: ../../../index.rst:218
+msgid "All the tools you need as your project matures:"
+msgstr ""
+
+#: ../../../index.rst:220
+msgid ":doc:`/user-defined-redirects`"
+msgstr ":doc:`/user-defined-redirects`"
+
+#: ../../../index.rst:221
+msgid "Redirect your old URLs to new ones."
+msgstr "將舊網址重新導向至新網址。"
+
+#: ../../../index.rst:223
+msgid ":doc:`/traffic-analytics`"
+msgstr ":doc:`/traffic-analytics`"
+
+#: ../../../index.rst:224
+msgid "Learn more about how users are interacting with your documentation."
+msgstr "深入了解使用者如何與您的文件進行互動。"
+
+#: ../../../index.rst:226
+msgid ":doc:`/security-log`"
+msgstr ":doc:`/security-log`"
+
+#: ../../../index.rst:227
+msgid "Keep track of security events in your project."
+msgstr "追蹤專案中的安全性事件。"
+
+#: ../../../index.rst:232
+msgid "Our Business hosting has everything your business needs:"
+msgstr ""
+
+#: ../../../index.rst:234
+msgid ":doc:`/commercial/organizations`"
+msgstr ":doc:`/commercial/organizations`"
+
+#: ../../../index.rst:235
+msgid "Manage permissions across multiple teams."
+msgstr ""
+
+#: ../../../index.rst:237
+msgid ":doc:`/commercial/single-sign-on`"
+msgstr ":doc:`/commercial/single-sign-on`"
+
+#: ../../../index.rst:238
+msgid "Stay secure with single sign-on."
+msgstr ""
+
+#: ../../../index.rst:240
+msgid ":doc:`/commercial/sharing`"
+msgstr ":doc:`/commercial/sharing`"
+
+#: ../../../index.rst:241
+msgid "Share your private docs easily with contractors or customers."
+msgstr ""
+
+#: ../../../index.rst:246
+msgid "Step-by-step guides for common tasks:"
+msgstr ""
+
+#: ../../../index.rst:248
+msgid ":doc:`/guides/pull-requests`"
+msgstr ":doc:`/guides/pull-requests`"
+
+#: ../../../index.rst:251
+msgid ":doc:`/guides/cross-referencing-with-sphinx`"
+msgstr ":doc:`/guides/cross-referencing-with-sphinx`"
+
+#: ../../../index.rst:252
+msgid "Learn how to use cross-references in a Sphinx project."
+msgstr ""
+
+#: ../../../index.rst:254
+msgid ":doc:`All how-to guides </guides/index>`"
+msgstr ""
+
+#: ../../../index.rst:255
+msgid "Browse all our how-to guides."
+msgstr "瀏覽我們所有的操作指南。"
+
+#: ../../../index.rst:260
+msgid "More detailed information about Read the Docs:"
+msgstr "更多關於 Read the Docs 的詳細資訊："
+
+#: ../../../index.rst:262
+msgid ":doc:`/api/index`"
+msgstr ":doc:`/api/index`"
+
+#: ../../../index.rst:263
+msgid "Integrate Read the Docs into your other workflows."
+msgstr "將 Read the Docs 整合到您的其他工作流程中。"
+
+#: ../../../index.rst:265
+msgid ":doc:`/changelog`"
+msgstr ":doc:`/changelog`"
+
+#: ../../../index.rst:266
+msgid "See what's new in Read the Docs."
+msgstr ""
+
+#: ../../../index.rst:268
+msgid ":doc:`/about/index`"
+msgstr ":doc:`/about/index`"
+
+#: ../../../index.rst:269
+msgid "Learn more about Read the Docs and our company."
+msgstr ""

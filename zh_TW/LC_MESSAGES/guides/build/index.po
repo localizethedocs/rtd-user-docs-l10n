@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build/index.rst:29
+msgid "Setup email notifications"
+msgstr ""
+
+#: ../../../guides/build/index.rst:29
+msgid "Configuring pull request builds"
+msgstr ""
+
+#: ../../../guides/build/index.rst:29
+msgid "Using custom environment variables"
+msgstr "使用自訂環境變數"
+
+#: ../../../guides/build/index.rst:29
+msgid "Managing versions automatically"
+msgstr "自動管理版本"
+
+#: ../../../guides/build/index.rst:2
+msgid "How-to guides: build process"
+msgstr ""
+
+#: ../../../guides/build/index.rst:4
+msgid ""
+"⏩️ :doc:`Set up email notifications </guides/build/email-notifications>`"
+msgstr ""
+
+#: ../../../guides/build/index.rst:5
+msgid ""
+"Email notifications can alert you when your builds fail. This is the most "
+"simple way to monitor your documentation builds."
+msgstr ""
+
+#: ../../../guides/build/index.rst:8
+msgid "⏩️ :doc:`/guides/build/webhooks`"
+msgstr "⏩️ :doc:`/guides/build/webhooks`"
+
+#: ../../../guides/build/index.rst:9
+msgid ""
+"Outgoing webhooks can used to send updates on builds to other services. We "
+"show examples using webhooks to connect to popular platforms like Slack and "
+"Discord."
+msgstr ""
+
+#: ../../../guides/build/index.rst:12
+msgid "⏩️ :doc:`Configuring pull request builds </guides/pull-requests>`"
+msgstr ""
+
+#: ../../../guides/build/index.rst:13
+msgid ""
+"Have your documentation built and access a preview for every :doc:`pull "
+"request builds </pull-requests>`."
+msgstr ""
+
+#: ../../../guides/build/index.rst:15
+msgid ""
+"⏩️ :doc:`Using custom environment variables </guides/environment-variables>`"
+msgstr ""
+
+#: ../../../guides/build/index.rst:16
+msgid ""
+"Extra environment variables, for instance secrets, may be needed in the "
+"build process and can be defined from the project's :term:`dashboard`."
+msgstr ""
+
+#: ../../../guides/build/index.rst:18
+msgid "⏩️ :doc:`Managing versions automatically </guides/automation-rules>`"
+msgstr ""
+
+#: ../../../guides/build/index.rst:19
+msgid ""
+"Automating your versioning on Read the Docs means you only have to handle "
+"your versioning logic in Git. Learn how to define rules to automate creation "
+"of new versions on Read the Docs, entirely using your Git repository's "
+"version logic."
+msgstr ""

@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../config-file/index.rst:2
+msgid "Configuration file overview"
+msgstr ""
+
+#: ../../../config-file/index.rst:4
+msgid ""
+"As part of the initial set up of a Read the Docs project, you need to create "
+"a **configuration file** called ``.readthedocs.yaml``. The configuration "
+"file tells Read the Docs what specific settings to use for your project."
+msgstr ""
+
+#: ../../../config-file/index.rst:8
+msgid "This tutorial covers:"
+msgstr ""
+
+#: ../../../config-file/index.rst:15
+msgid "Where to put your configuration file"
+msgstr ""
+
+#: ../../../config-file/index.rst:17
+msgid ""
+"The ``.readthedocs.yaml`` file should be placed in the top-most directory of "
+"your project's repository. When you have changed the configuration file, you "
+"need to commit and push the changes to your Git repository. Read the Docs "
+"will then automatically find and use the configuration to build your project."
+msgstr ""
+
+#: ../../../config-file/index.rst:24
+msgid ""
+"The Read the Docs configuration file is a `YAML`_ file. YAML is a human-"
+"friendly data serialization language for all programming languages. To learn "
+"more about the structure of these files, see the `YAML language overview`_."
+msgstr ""
+
+#: ../../../config-file/index.rst:34
+msgid "Getting started with a template"
+msgstr ""
+
+#: ../../../config-file/index.rst:36
+msgid ""
+"Here are some configuration file examples to help you get started. Pick an "
+"example based on the tool that your project is using, copy its contents to "
+"``.readthedocs.yaml``, and add the file to your Git repository."
+msgstr ""
+
+#: ../../../config-file/index.rst:43
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../config-file/index.rst:45
+msgid ""
+"If your project uses Sphinx, we offer a special builder optimized for Sphinx "
+"projects."
+msgstr ""
+
+#: ../../../config-file/index.rst:48 ../../../config-file/index.rst:59
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../config-file/index.rst:48
+msgid ""
+"# Read the Docs configuration file for Sphinx projects\n"
+"# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details\n"
+"\n"
+"# Required\n"
+"version: 2\n"
+"\n"
+"# Set the OS, Python version and other tools you might need\n"
+"build:\n"
+"  os: ubuntu-24.04\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"    # You can also specify other tool versions:\n"
+"    # nodejs: \"20\"\n"
+"    # rust: \"1.70\"\n"
+"    # golang: \"1.20\"\n"
+"\n"
+"# Build documentation in the \"docs/\" directory with Sphinx\n"
+"sphinx:\n"
+"  configuration: docs/conf.py\n"
+"  # You can configure Sphinx to use a different builder, for instance use "
+"the dirhtml builder for simpler URLs\n"
+"  # builder: \"dirhtml\"\n"
+"  # Fail on all warnings to avoid broken references\n"
+"  # fail_on_warning: true\n"
+"\n"
+"# Optionally build your docs in additional formats such as PDF and ePub\n"
+"# formats:\n"
+"#   - pdf\n"
+"#   - epub\n"
+"\n"
+"# Optional but recommended, declare the Python requirements required\n"
+"# to build your documentation\n"
+"# See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html\n"
+"# python:\n"
+"#   install:\n"
+"#     - requirements: docs/requirements.txt\n"
+msgstr ""
+
+#: ../../../config-file/index.rst:54
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../config-file/index.rst:56
+msgid ""
+"If your project uses MkDocs, we offer a special builder optimized for MkDocs "
+"projects."
+msgstr ""
+
+#: ../../../config-file/index.rst:59
+msgid ""
+"# Read the Docs configuration file for MkDocs projects\n"
+"# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details\n"
+"\n"
+"# Required\n"
+"version: 2\n"
+"\n"
+"# Set the version of Python and other tools you might need\n"
+"build:\n"
+"  os: ubuntu-22.04\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"\n"
+"mkdocs:\n"
+"  configuration: mkdocs.yml\n"
+"\n"
+"# Optionally declare the Python requirements required to build your docs\n"
+"python:\n"
+"  install:\n"
+"  - requirements: docs/requirements.txt\n"
+msgstr ""
+
+#: ../../../config-file/index.rst:64
+msgid ""
+"You can find more information about these tools in our :doc:`/intro/"
+"doctools`."
+msgstr ""
+
+#: ../../../config-file/index.rst:67
+msgid "Editing the template"
+msgstr ""
+
+#: ../../../config-file/index.rst:69
+msgid ""
+"Now that you have a ``.readthedocs.yaml`` file added to your Git repository, "
+"you should see Read the Docs trying to build your project with the "
+"configuration file. The configuration file probably needs some adjustments "
+"to accommodate exactly your project setup."
+msgstr ""
+
+#: ../../../config-file/index.rst:75
+msgid ""
+"If you added the configuration file in a separate branch, you may have to "
+"activate a :doc:`version </versions>` for that branch."
+msgstr ""
+
+#: ../../../config-file/index.rst:78
+msgid ""
+"If you have added the file in a pull request, you should enable :doc:`pull "
+"request builds </guides/pull-requests>`."
+msgstr ""
+
+#: ../../../config-file/index.rst:82
+msgid "Skip: file header and comments"
+msgstr ""
+
+#: ../../../config-file/index.rst:84
+msgid "There are some parts of the templates that you can leave in place:"
+msgstr ""
+
+#: ../../../config-file/index.rst:86
+msgid "``version`` key"
+msgstr ""
+
+#: ../../../config-file/index.rst:87
+msgid ""
+"The version key tells the system how to read the rest of the configuration "
+"file. The current and only supported version is **version 2**."
+msgstr ""
+
+#: ../../../config-file/index.rst:90
+msgid "Comments"
+msgstr ""
+
+#: ../../../config-file/index.rst:91
+msgid ""
+"We added comments that explain the configuration options and optional "
+"features. These lines begin with a ``#``."
+msgstr ""
+
+#: ../../../config-file/index.rst:94
+msgid "Commented out features"
+msgstr ""
+
+#: ../../../config-file/index.rst:95
+msgid ""
+"We use the ``#`` in front of some popular configuration options. They are "
+"there as examples, which you can choose to enable, delete or save for later."
+msgstr ""
+
+#: ../../../config-file/index.rst:100
+msgid "Adjust: ``build.os``"
+msgstr ""
+
+#: ../../../config-file/index.rst:102
+msgid ""
+"In our examples, we are using Read the Docs' custom image based on the "
+"latest Ubuntu release. Package versions in these images will not change "
+"drastically, though will receive periodic security updates."
+msgstr ""
+
+#: ../../../config-file/index.rst:107
+msgid ""
+"You should pay attention to this field if your project needs to build on an "
+"older version of Ubuntu, or in the future when you need features from a "
+"newer Ubuntu."
+msgstr ""
+
+#: ../../../config-file/index.rst:112
+msgid ":ref:`config-file/v2:build.os`"
+msgstr ""
+
+#: ../../../config-file/index.rst:113
+msgid "Configuration file reference with all values possible for ``build.os``."
+msgstr ""
+
+#: ../../../config-file/index.rst:116
+msgid "Adjust: Python configuration"
+msgstr ""
+
+#: ../../../config-file/index.rst:118
+msgid ""
+"If you are using Python in your builds, you should define the Python version "
+"in ``build.tools.python``."
+msgstr ""
+
+#: ../../../config-file/index.rst:121
+msgid ""
+"The ``python`` key contains a list of sub-keys, specifying the requirements "
+"to install."
+msgstr ""
+
+#: ../../../config-file/index.rst:124
+msgid ""
+"Use ``python.install.path`` to install the project itself as a Python "
+"package using pip"
+msgstr ""
+
+#: ../../../config-file/index.rst:125
+msgid ""
+"Use ``python.install.requirements`` to install packages from a requirements "
+"file"
+msgstr ""
+
+#: ../../../config-file/index.rst:126
+msgid "Use ``build.jobs`` to install packages using Poetry or PDM"
+msgstr ""
+
+#: ../../../config-file/index.rst:130
+msgid ":ref:`config-file/v2:build.tools.python`"
+msgstr ""
+
+#: ../../../config-file/index.rst:131
+msgid ""
+"Configuration file reference with all Python versions available for ``build."
+"tools.python``."
+msgstr ""
+
+#: ../../../config-file/index.rst:133
+msgid ":ref:`config-file/v2:python`"
+msgstr ""
+
+#: ../../../config-file/index.rst:134
+msgid ""
+"Configuration file reference for configuring the Python environment "
+"activated by ``build.tools.python``."
+msgstr ""
+
+#: ../../../config-file/index.rst:137
+msgid "Adjust: Sphinx and MkDocs version"
+msgstr ""
+
+#: ../../../config-file/index.rst:139
+msgid ""
+"If you are using either the ``sphinx`` or ``mkdocs`` builder, then Sphinx or "
+"MkDocs will be installed automatically in its latest version."
+msgstr ""
+
+#: ../../../config-file/index.rst:142
+msgid ""
+"But we recommend that you specify the version that your documentation "
+"project uses. The ``requirements`` key is a file path that points to a text "
+"(``.txt``) file that lists the Python packages you want Read the Docs to "
+"install."
+msgstr ""
+
+#: ../../../config-file/index.rst:148
+msgid ""
+":ref:`guides/reproducible-builds:Use a requirements file for Python "
+"dependencies`"
+msgstr ""
+
+#: ../../../config-file/index.rst:149
+msgid ""
+"This guide explains how to specify Python requirements, such as the version "
+"of Sphinx or MkDocs."
+msgstr ""
+
+#: ../../../config-file/index.rst:152
+msgid ":ref:`config-file/v2:sphinx`"
+msgstr ""
+
+#: ../../../config-file/index.rst:153
+msgid "Configuration file reference for configuring the Sphinx builder."
+msgstr ""
+
+#: ../../../config-file/index.rst:155
+msgid ":ref:`config-file/v2:mkdocs`"
+msgstr ""
+
+#: ../../../config-file/index.rst:156
+msgid "Configuration file reference for configuring the MkDocs builder."
+msgstr ""
+
+#: ../../../config-file/index.rst:159
+msgid "Next steps"
+msgstr ""
+
+#: ../../../config-file/index.rst:161
+msgid ""
+"There are more configuration options that the ones mentioned in this guide."
+msgstr ""
+
+#: ../../../config-file/index.rst:163
+msgid ""
+"After you add a configuration file your Git repository, and you can see that "
+"Read the Docs is building your documentation using the file, you should have "
+"a look at the complete configuration file reference for options that might "
+"apply to your project."
+msgstr ""
+
+#: ../../../config-file/index.rst:169
+msgid ":doc:`/config-file/v2`."
+msgstr ""
+
+#: ../../../config-file/index.rst:170
+msgid ""
+"The complete list of all possible ``.readthedocs.yaml`` settings, including "
+"the optional settings not covered in on this page."
+msgstr ""
+
+#: ../../../config-file/index.rst:173
+msgid ":doc:`/build-customization`"
+msgstr ""
+
+#: ../../../config-file/index.rst:174
+msgid ""
+"Are familiar with running a command line? Perhaps there are special commands "
+"that you know you want Read the Docs to run. Read this guide and learn more "
+"about how you add your own commands to ``.readthedocs.yaml``."
+msgstr ""

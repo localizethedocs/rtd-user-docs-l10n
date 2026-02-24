@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../commercial/organizations.rst:2
+msgid "Organizations"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:6
+msgid ""
+"In this article, we explain how the *organizations* feature allows you to "
+"manage access to your projects. On |com_brand|, your account is linked to an "
+"*organization*. Organizations allow you to define both individual and team "
+"permissions for your projects."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:12
+msgid ":doc:`/guides/manage-read-the-docs-teams`"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:13
+msgid "A step-by-step guide to managing teams."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:16
+msgid "Important objects"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:18
+msgid ""
+"**Owners** -- Get full access to both view and edit the organization and all "
+"projects"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:19
+msgid "**Members** -- Get access to a subset of the organization projects"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:20
+msgid "**Teams** -- Where you give members access to a set of projects."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:22
+msgid "The best way to think about this relationship is:"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:24
+msgid "*Owners* will create *Teams* to assign permissions to all *Members*."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:28
+msgid ""
+"Owners, Members, and Teams behave differently if you are using :ref:"
+"`sso_git_provider`."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:32
+msgid "Team types"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:34
+msgid "You can create two types of teams:"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:36
+msgid ""
+"**Admin** -- Team members have full access to administer the projects "
+"assigned to the team. Members are allowed to change all of the settings, set "
+"notifications, and perform any action under the :guilabel:`Admin` tab for "
+"each project."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:37
+msgid ""
+"**Read Only** -- Team members are only able to read the documentation of "
+"each project, and not able to change anything about each project."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:40
+msgid "Example"
+msgstr ""
+
+#: ../../../commercial/organizations.rst:42
+msgid ""
+"ACME would set up *Owners* of their organization, for example, Frank "
+"Roadrunner would be an owner. He has full access to the organization and all "
+"projects."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:46
+msgid ""
+"Wile E. Coyote is a contractor, and will just have access to the new project "
+"Road Builder."
+msgstr ""
+
+#: ../../../commercial/organizations.rst:49
+msgid ""
+"Roadrunner would set up a *Team* called *Contractors*. That team would have "
+"*Read Only* access to the *Road Builder* project. Then he would add *Wile E. "
+"Coyote* to the team. This would give him access to just this one project "
+"inside the organization."
+msgstr ""

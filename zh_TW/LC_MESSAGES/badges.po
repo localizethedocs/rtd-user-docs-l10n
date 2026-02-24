@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../badges.rst:2
+msgid "Status badges"
+msgstr "狀態徽章"
+
+#: ../../../badges.rst:4
+msgid ""
+"Status badges let you show the state of your documentation to your users. "
+"They will show if the latest build has passed, failed, or is in an unknown "
+"state. They are great for embedding in your README, or putting inside your "
+"actual doc pages."
+msgstr ""
+
+#: ../../../badges.rst:9
+msgid "You can see a badge in action in the `Read the Docs README`_."
+msgstr ""
+
+#: ../../../badges.rst:12
+msgid "Display states"
+msgstr "顯示狀態"
+
+#: ../../../badges.rst:14
+msgid "Badges have the following states which can be shown to users:"
+msgstr ""
+
+#: ../../../badges.rst:16
+msgid "**Green**: ``passing`` - the last build was successful."
+msgstr ""
+
+#: ../../../badges.rst:17
+msgid "**Red**: ``failing`` - the last build failed."
+msgstr ""
+
+#: ../../../badges.rst:18
+msgid ""
+"**Yellow**: ``unknown`` - we couldn't figure out the status of your last "
+"build."
+msgstr ""
+
+#: ../../../badges.rst:20
+msgid "An example of each is shown here:"
+msgstr ""
+
+#: ../../../badges.rst:22
+msgid "|green| |nbsp| |red| |nbsp| |yellow|"
+msgstr ""
+
+#: ../../../badges.rst:87
+msgid "green"
+msgstr ""
+
+#: ../../../badges.rst:88
+msgid "red"
+msgstr ""
+
+#: ../../../badges.rst:89
+msgid "yellow"
+msgstr ""
+
+#: ../../../badges.rst:25
+msgid "Automatically generated"
+msgstr ""
+
+#: ../../../badges.rst:27
+msgid ""
+"On the dashboard of a project, an example badge is displayed together with "
+"code snippets for reStructuredText, Markdown, and HTML."
+msgstr ""
+
+#: ../../../badges.rst:30
+msgid ""
+"Badges are generated on-demand for all Read the Docs projects, using the "
+"following URL syntax:"
+msgstr ""
+
+#: ../../../badges.rst:32
+msgid ""
+"https://app.readthedocs.org/projects/<project-slug>/badge/?"
+"version=<version>&style=<style>"
+msgstr ""
+
+#: ../../../badges.rst:37 ../../../badges.rst:44
+msgid "Style"
+msgstr ""
+
+#: ../../../badges.rst:39
+msgid ""
+"You can pass the ``style`` GET argument to get custom styled badges. This "
+"allows you to match the look and feel of your website. By default, the "
+"``flat`` style is used."
+msgstr ""
+
+#: ../../../badges.rst:44 ../../../badges.rst:59
+msgid "Badge"
+msgstr ""
+
+#: ../../../badges.rst:46
+msgid "flat - default"
+msgstr ""
+
+#: ../../../badges.rst:46
+msgid "|Flat Badge|"
+msgstr ""
+
+#: ../../../badges.rst:57
+msgid "Flat Badge"
+msgstr ""
+
+#: ../../../badges.rst:48
+msgid "flat-square"
+msgstr ""
+
+#: ../../../badges.rst:48
+msgid "|Flat-Square Badge|"
+msgstr ""
+
+#: ../../../badges.rst:58
+msgid "Flat-Square Badge"
+msgstr ""
+
+#: ../../../badges.rst:50
+msgid "for-the-badge"
+msgstr ""
+
+#: ../../../badges.rst:50
+msgid "|Badge|"
+msgstr ""
+
+#: ../../../badges.rst:52
+msgid "plastic"
+msgstr ""
+
+#: ../../../badges.rst:52
+msgid "|Plastic Badge|"
+msgstr ""
+
+#: ../../../badges.rst:60
+msgid "Plastic Badge"
+msgstr ""
+
+#: ../../../badges.rst:54
+msgid "social"
+msgstr ""
+
+#: ../../../badges.rst:54
+msgid "|Social Badge|"
+msgstr ""
+
+#: ../../../badges.rst:61
+msgid "Social Badge"
+msgstr "社交徽章"
+
+#: ../../../badges.rst:65
+msgid "Version-specific badges"
+msgstr ""
+
+#: ../../../badges.rst:67
+msgid ""
+"You can change the version of the documentation your badge points to. To do "
+"this, you can pass the ``version`` GET argument to the badge URL. By "
+"default, it will point at the *default version* you have specified for your "
+"project."
+msgstr ""
+
+#: ../../../badges.rst:71
+msgid "The badge URL looks like this:"
+msgstr ""
+
+#: ../../../badges.rst:73
+msgid ""
+"https://app.readthedocs.org/projects/<project-slug>/badge/?version=latest"
+msgstr ""
+
+#: ../../../badges.rst:79
+msgid "Badges on dashboard pages"
+msgstr ""
+
+#: ../../../badges.rst:81
+msgid ""
+"On each :term:`project home` page there is a badge that communicates the "
+"status of the default version. If you click on the badge icon, you will be "
+"given snippets for reStructuredText, Markdown, and HTML to make embedding it "
+"easier."
+msgstr ""
+
+#: ../../../badges.rst:95
+msgid "Badges for private projects"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../badges.rst:99
+msgid ""
+"For private projects, a badge URL cannot be guessed. A token is needed to "
+"display it. Private badge URLs are displayed on a private project's "
+"dashboard in place of public URLs."
+msgstr ""
