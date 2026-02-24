@@ -1,0 +1,460 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-24 08:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build/skip-build.rst:2
+msgid "Skip builds based on conditions"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:4
+msgid ""
+"Read the Docs provides a special build cancellation mechanism that allows "
+"you to programmatically skip builds based on custom conditions. This is "
+"useful when you want to avoid unnecessary documentation builds, saving build "
+"time and resources."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:11
+msgid "Table of contents"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:14
+msgid "How it works"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:16
+msgid ""
+"When any command in your build process exits with the special exit code "
+"``183``, Read the Docs will immediately cancel the build. The build will be "
+"marked as cancelled and will not consume build time or resources beyond that "
+"point."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:20
+msgid "Why exit code 183?"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:22
+msgid ""
+"The exit code 183 was chosen because it represents the word \"skip\" encoded "
+"in ASCII."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:24
+msgid ""
+">>> sum(list(\"skip\".encode(\"ascii\")))\n"
+"439\n"
+">>> 439 % 256  # Unix exit codes are limited to 0-255\n"
+"183"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:31
+msgid ""
+"The 256 modulo operation is necessary because `Unix exit codes are limited "
+"to 0-255 <https://tldp.org/LDP/abs/html/exitcodes.html>`_, and any value "
+"larger than 255 is automatically reduced by taking the modulo 256."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:35
+msgid "When to skip builds"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:37
+msgid ""
+"There are several scenarios where you might want to skip documentation "
+"builds:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:39
+msgid "**Save resources on irrelevant changes**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:40
+msgid ""
+"Skip builds when changes don't affect documentation, such as changes only to "
+"source code, tests, or CI configuration files."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:43
+msgid "**Avoid redundant builds**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:44
+msgid ""
+"Skip builds for draft pull requests, work-in-progress branches, or commits "
+"with specific markers like ``[skip ci]`` in the commit message."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:47
+msgid "**Conditional documentation updates**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:48
+msgid ""
+"Only build documentation when specific files or directories are modified, "
+"such as the ``docs/`` folder or configuration files."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:51
+msgid "**Branch-specific logic**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:52
+msgid ""
+"Skip builds on certain branches that don't require documentation updates, "
+"such as experimental or development branches."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:56
+msgid "Examples"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:58
+msgid ""
+"The following examples demonstrate common use cases for skipping builds. All "
+"examples use the :ref:`config-file/v2:build.jobs` configuration key in your "
+"``.readthedocs.yaml`` file."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:63
+msgid "Skip builds when documentation files haven't changed"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:65
+msgid ""
+"This example skips pull request builds when there are no changes to "
+"documentation-related files compared to the ``main`` branch:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:68
+#: ../../../guides/build/skip-build.rst:98
+#: ../../../guides/build/skip-build.rst:121
+#: ../../../guides/build/skip-build.rst:143
+msgid ".readthedocs.yaml"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:68
+msgid ""
+"version: 2\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"  jobs:\n"
+"    post_checkout:\n"
+"      # Cancel building pull requests when there aren't changes in the docs "
+"directory or YAML file.\n"
+"      # If there are no changes (git diff exits with 0) we force the command "
+"to return with 183.\n"
+"      # This is a special exit code on Read the Docs that will cancel the "
+"build immediately.\n"
+"      - |\n"
+"        if [ \"$READTHEDOCS_VERSION_TYPE\" = \"external\" ] && git diff --"
+"quiet origin/main -- docs/ .readthedocs.yaml;\n"
+"        then\n"
+"          exit 183;\n"
+"        fi"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:87
+msgid "You can customize this example by:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:89
+msgid ""
+"Adding more paths to check: ``docs/ .readthedocs.yaml requirements/docs.txt``"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:90
+msgid ""
+"Checking against a different branch: ``origin/develop`` instead of ``origin/"
+"main``"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:91
+msgid ""
+"Using different comparison operators to check for specific file patterns"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:94
+msgid "Skip builds based on commit message"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:96
+msgid ""
+"This example skips builds when the commit message contains ``[skip ci]`` or "
+"``[ci skip]``:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:98
+msgid ""
+"version: 2\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"  jobs:\n"
+"    post_checkout:\n"
+"      # Use `git log` to check if the latest commit contains \"skip ci\",\n"
+"      # in that case exit the command with 183 to cancel the build\n"
+"      - (git --no-pager log --pretty=\"tformat:%s -- %b\" -1 | paste -s -d "
+"\" \" | grep -viq \"skip ci\") || exit 183"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:112
+msgid ""
+"This pattern is commonly used in CI/CD systems to skip builds for "
+"administrative commits, such as version bumps or documentation typos."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:116
+msgid "Skip builds for specific branch patterns"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:118
+msgid ""
+"This example skips builds for branches that match certain patterns, such as "
+"personal development branches:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:121
+msgid ""
+"version: 2\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"  jobs:\n"
+"    post_checkout:\n"
+"      # Skip builds for branches starting with \"dev/\" or \"experiment/\"\n"
+"      - |\n"
+"        if echo \"$READTHEDOCS_GIT_IDENTIFIER\" | grep -qE \"^(dev|"
+"experiment)/\"; then\n"
+"          exit 183;\n"
+"        fi"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:138
+msgid "Skip builds based on file types"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:140
+msgid ""
+"This example skips builds when all changes are to non-documentation files, "
+"such as only images or data files:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:143
+msgid ""
+"version: 2\n"
+"build:\n"
+"  os: \"ubuntu-22.04\"\n"
+"  tools:\n"
+"    python: \"3.12\"\n"
+"  jobs:\n"
+"    post_checkout:\n"
+"      # Skip if only non-documentation files changed (e.g., only images or "
+"data files)\n"
+"      - |\n"
+"        if [ \"$READTHEDOCS_VERSION_TYPE\" = \"external\" ]; then\n"
+"          # Get list of changed files\n"
+"          CHANGED_FILES=$(git diff --name-only origin/main)\n"
+"          # Check if any changed files are documentation-related.\n"
+"          # If ALL files are non-documentation (grep finds no documentation "
+"files),\n"
+"          # then we skip the build by exiting with 183.\n"
+"          if ! echo \"$CHANGED_FILES\" | grep -qE \"\\.(rst|md|py|yaml|yml|"
+"txt|toml)$\"; then\n"
+"            exit 183;\n"
+"          fi\n"
+"        fi"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:167
+msgid "Best practices"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:169
+msgid "When implementing skip build logic, consider these best practices:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:171
+msgid "**Test your conditions locally**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:172
+msgid ""
+"Before deploying skip build logic, test your bash conditions locally to "
+"ensure they work as expected. Remember that the condition failing will "
+"cancel your build."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:175
+msgid "**Be specific with your conditions**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:176
+msgid ""
+"Write clear and specific conditions to avoid accidentally skipping builds "
+"that should run. Overly broad conditions might prevent important "
+"documentation updates."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:179
+msgid "**Document your skip logic**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:180
+msgid ""
+"Add comments in your ``.readthedocs.yaml`` file explaining why builds are "
+"skipped and under what conditions. This helps future maintainers understand "
+"the configuration."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:183
+msgid "**Consider the impact on pull requests**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:184
+msgid ""
+"If you skip builds on pull requests, reviewers won't have preview "
+"documentation. Make sure this aligns with your team's review process."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:187
+msgid "**Use environment variables**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:188
+msgid ""
+"Leverage :doc:`Read the Docs environment variables </reference/environment-"
+"variables>` like ``READTHEDOCS_VERSION_TYPE`` to make your conditions more "
+"precise."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:192
+msgid "Limitations"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:194
+msgid "Be aware of these limitations when using the skip build feature:"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:196
+msgid "**No partial cancellation**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:197
+msgid ""
+"Once a build is cancelled with exit code 183, the entire build stops "
+"immediately. You cannot selectively skip only certain parts of the build "
+"process."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:200
+msgid "**Not available in configuration file**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:201
+msgid ""
+"You cannot skip builds using conditions in the ``.readthedocs.yaml`` "
+"configuration syntax itself. All logic must be implemented in bash commands."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:204
+msgid "**Build is counted as cancelled**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:205
+msgid ""
+"Cancelled builds appear in your build history as cancelled, not as skipped "
+"or successful. This is different from builds that never start due to branch/"
+"version filters."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:208
+msgid "**Webhook notifications still trigger**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:209
+msgid ""
+"Even though the build is cancelled, webhook notifications (if configured) "
+"may still be sent with a cancelled status."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:213
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:215
+msgid "**Build is not being skipped**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:216
+msgid "Verify your condition logic is correct by testing it locally"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:217
+msgid "Check that the command is returning exit code 183 specifically"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:218
+msgid ""
+"Ensure you're using the correct :doc:`environment variables </reference/"
+"environment-variables>`"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:219
+msgid "Review the build logs to see if your condition is being evaluated"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:221
+msgid "**Builds are being skipped unexpectedly**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:222
+msgid "Review your condition logic to ensure it's not too broad"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:223
+msgid "Check for syntax errors in your bash commands"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:224
+msgid "Verify that file paths and branch names are correct"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:225
+msgid "Test the condition in different scenarios (PRs, branches, tags)"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:227
+msgid "**Cannot access Git information**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:228
+msgid ""
+"Some Git operations require a full clone. If you need Git history, you might "
+"need to `unshallow the clone <https://docs.readthedocs.io/en/stable/build-"
+"customization.html#unshallow-git-clone>`_"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:230
+msgid ""
+"Ensure you're running your skip logic in ``post_checkout`` to have access to "
+"the repository"
+msgstr ""
