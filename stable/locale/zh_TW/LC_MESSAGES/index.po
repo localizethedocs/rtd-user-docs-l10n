@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../index.rst:97 ../../../index.rst:244
 msgid "How-to guides"
-msgstr ""
+msgstr "操作指南"
 
 #: ../../../index.rst:111
 msgid "Developer Documentation"
@@ -97,13 +97,15 @@ msgstr ""
 
 #: ../../../index.rst:2
 msgid "Read the Docs: documentation simplified"
-msgstr ""
+msgstr "Read the Docs：簡化文件管理"
 
 #: ../../../index.rst:127
 msgid ""
 "<a style=\"display: none;\" rel=\"me\" href=\"https://fosstodon.org/"
 "@readthedocs\">Mastodon</a>"
 msgstr ""
+"<a style=\"display: none;\" rel=\"me\" href=\"https://fosstodon.org/"
+"@readthedocs\">Mastodon</a>"
 
 #: ../../../index.rst:131
 msgid ""
@@ -115,7 +117,7 @@ msgstr ""
 
 #: ../../../index.rst:137
 msgid "Up to date documentation"
-msgstr ""
+msgstr "最新的文件"
 
 #: ../../../index.rst:138
 msgid ""
@@ -123,10 +125,13 @@ msgid ""
 "docs so your code and documentation are always up-to-date. Get started with "
 "our :doc:`tutorial </tutorial/index>`."
 msgstr ""
+"每當您將程式碼推送到 Git 時，Read the Docs 都會自動建置您的文件，確保您的程式"
+"碼與文件始終保持同步。請參考我們的\\ :doc:`教學 </tutorial/index>`\\ 開始使"
+"用。"
 
 #: ../../../index.rst:143
 msgid "Documentation for every version"
-msgstr ""
+msgstr "每個版本的文件"
 
 #: ../../../index.rst:144
 msgid ""
@@ -137,7 +142,7 @@ msgstr ""
 
 #: ../../../index.rst:149
 msgid "Open source and user focused"
-msgstr ""
+msgstr "開源且以使用者為中心"
 
 #: ../../../index.rst:150
 msgid ""
@@ -171,7 +176,7 @@ msgstr ":doc:`/intro/doctools`"
 
 #: ../../../index.rst:168
 msgid "Quick start for MkDocs and Docusaurus."
-msgstr ""
+msgstr "MkDocs 與 Docusaurus 的快速使用。"
 
 #: ../../../index.rst:170
 msgid ":doc:`/examples`"
@@ -204,7 +209,7 @@ msgstr ""
 
 #: ../../../index.rst:187
 msgid "Build your documentation with ease:"
-msgstr ""
+msgstr "輕鬆建置您的文件："
 
 #: ../../../index.rst:189
 msgid ":doc:`/builds`"
@@ -212,7 +217,7 @@ msgstr ":doc:`/builds`"
 
 #: ../../../index.rst:190
 msgid "Understand how documentation builds happen."
-msgstr ""
+msgstr "了解文件建置的運作方式。"
 
 #: ../../../index.rst:192
 msgid ":doc:`/pull-requests`"
@@ -220,11 +225,11 @@ msgstr ":doc:`/pull-requests`"
 
 #: ../../../index.rst:193 ../../../index.rst:249
 msgid "Setup pull request builds and enjoy previews of each commit."
-msgstr ""
+msgstr "設定提取請求建置，並享受每次提交的預覽功能。"
 
 #: ../../../index.rst:198
 msgid "Learn more about our hosting features:"
-msgstr ""
+msgstr "深入了解我們的託管功能："
 
 #: ../../../index.rst:200
 msgid ":doc:`/versions`"
@@ -240,7 +245,7 @@ msgstr ":doc:`/subprojects`"
 
 #: ../../../index.rst:204
 msgid "Host multiple projects under a single domain."
-msgstr ""
+msgstr "在單一網域下託管多個專案。"
 
 #: ../../../index.rst:206
 msgid ":doc:`/localization`"
@@ -248,7 +253,7 @@ msgstr ":doc:`/localization`"
 
 #: ../../../index.rst:207
 msgid "Translate your documentation into multiple languages."
-msgstr ""
+msgstr "將您的文件翻譯成多種語言。"
 
 #: ../../../index.rst:209
 msgid ":doc:`/versioning-schemes`"
@@ -256,7 +261,7 @@ msgstr ":doc:`/versioning-schemes`"
 
 #: ../../../index.rst:210
 msgid "Learn about different URL versioning schemes."
-msgstr ""
+msgstr "了解不同的網址版本控制方案。"
 
 #: ../../../index.rst:212
 msgid ":doc:`/custom-domains`"
@@ -276,7 +281,7 @@ msgstr ":doc:`/user-defined-redirects`"
 
 #: ../../../index.rst:221
 msgid "Redirect your old URLs to new ones."
-msgstr ""
+msgstr "將舊網址重新導向至新網址。"
 
 #: ../../../index.rst:223
 msgid ":doc:`/traffic-analytics`"
@@ -284,7 +289,7 @@ msgstr ":doc:`/traffic-analytics`"
 
 #: ../../../index.rst:224
 msgid "Learn more about how users are interacting with your documentation."
-msgstr ""
+msgstr "深入了解使用者如何與您的文件進行互動。"
 
 #: ../../../index.rst:226
 msgid ":doc:`/security-log`"
@@ -292,7 +297,7 @@ msgstr ":doc:`/security-log`"
 
 #: ../../../index.rst:227
 msgid "Keep track of security events in your project."
-msgstr ""
+msgstr "追蹤專案中的安全性事件。"
 
 #: ../../../index.rst:232
 msgid "Our Business hosting has everything your business needs:"
@@ -344,11 +349,11 @@ msgstr ""
 
 #: ../../../index.rst:255
 msgid "Browse all our how-to guides."
-msgstr ""
+msgstr "瀏覽我們所有的操作指南。"
 
 #: ../../../index.rst:260
 msgid "More detailed information about Read the Docs:"
-msgstr ""
+msgstr "更多關於 Read the Docs 的詳細資訊："
 
 #: ../../../index.rst:262
 msgid ":doc:`/api/index`"
@@ -356,7 +361,7 @@ msgstr ":doc:`/api/index`"
 
 #: ../../../index.rst:263
 msgid "Integrate Read the Docs into your other workflows."
-msgstr ""
+msgstr "將 Read the Docs 整合到您的其他工作流程中。"
 
 #: ../../../index.rst:265
 msgid ":doc:`/changelog`"

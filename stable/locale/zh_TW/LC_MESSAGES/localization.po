@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../localization.rst:20
 msgid "Projects with one language"
-msgstr ""
+msgstr "單語言的專案"
 
 #: ../../../localization.rst:22
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../localization.rst:47
 msgid "Let's use ``godot`` as an example."
-msgstr ""
+msgstr "讓我們以 ``godot`` 作為範例。"
 
 #: ../../../localization.rst:49
 msgid ""
@@ -107,11 +107,11 @@ msgstr ""
 
 #: ../../../localization.rst:56
 msgid "``godot`` at ``https://docs.godotengine.org/en/stable/``"
-msgstr ""
+msgstr "``godot`` 位於 ``https://docs.godotengine.org/en/stable/``"
 
 #: ../../../localization.rst:57
 msgid "``godot-es`` at ``https://docs.godotengine.org/es/stable/``"
-msgstr ""
+msgstr "``godot-es`` 位於 ``https://docs.godotengine.org/es/stable/``"
 
 #: ../../../localization.rst:59
 msgid "It also gets included in the Read the Docs :term:`flyout menu`:"
@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../../localization.rst:78
 msgid "Do you benefit from machine translation?"
-msgstr ""
+msgstr "您是否收益於機器翻譯？"
 
 #: ../../../localization.rst:79
 msgid ""
