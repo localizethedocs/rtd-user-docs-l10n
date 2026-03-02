@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build/webhooks.rst:2
+msgid "Setting up outgoing webhooks"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:4
+msgid ""
+"When a project build is *triggered*, *successful* or *failed*, Read the Docs "
+"can notify external APIs using outgoing :term:`webhooks <webhook>`. These "
+"webhooks contain information about the build and build status and can allow "
+"an external service to use this information for alerting, monitoring, and "
+"many other custom configurations."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:12
+msgid ":doc:`/guides/build/email-notifications`"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:13
+msgid "Setup basic email notifications for build failures."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:15
+msgid ":doc:`/pull-requests`"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:16
+msgid ""
+"Configure automated feedback and documentation site previews for your pull "
+"requests."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:20
+msgid ""
+":doc:`Builds for pull requests </pull-requests>` do not trigger outgoing :"
+"term:`webhooks <webhook>`."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:23
+msgid "Creating a new webhook"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:25
+msgid "To create a new outgoing webhook for your project:"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:27
+msgid "Go to :menuselection:`Settings --> Outgoing webhooks` in your project."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:28
+msgid "Click :guilabel:`Add webhook`."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:29
+msgid ""
+"Fill in the :guilabel:`URL` field with the target URL for your endpoint."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:30
+msgid "Select the which events will trigger the webhook."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:31
+msgid ""
+"Modify the :guilabel:`JSON payload` field or leave the default (see below "
+"for more)."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:32
+msgid "Click on :guilabel:`Add webhook`"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:34 ../../../guides/build/webhooks.rst:38
+msgid "Form for creating a new webhook"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:40
+msgid ""
+"Every time one of the selected events trigger, Read the Docs will send a "
+"POST request to your webhook target URL. The default payload will look like "
+"this:"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:44
+msgid ""
+"{\n"
+"    \"event\": \"build:triggered\",\n"
+"    \"name\": \"docs\",\n"
+"    \"slug\": \"docs\",\n"
+"    \"version\": \"latest\",\n"
+"    \"commit\": \"2552bb609ca46865dc36401dee0b1865a0aee52d\",\n"
+"    \"build\": \"15173336\",\n"
+"    \"start_date\": \"2021-11-03T16:23:14\",\n"
+"    \"build_url\": \"https://app.readthedocs.org/projects/docs/"
+"builds/15173336/\",\n"
+"    \"docs_url\": \"https://docs.readthedocs.io/en/latest/\"\n"
+"}"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:58
+msgid ""
+"When a webhook is sent, a new entry will be added to the :guilabel:`Recent "
+"activity` list. You can click on each entry to see the webhook request, "
+"response, and the request payload."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:61 ../../../guides/build/webhooks.rst:65
+msgid "Recent activity of a webhook"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:68
+msgid "Custom payloads"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:70
+msgid ""
+"You can customize the payload of the webhook to fit the expected structure "
+"of your target endpoint. The payload structure must be valid JSON but can "
+"contain any of our `payload variable substitutions <Payload variable "
+"reference>`_."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:75
+msgid "Variable substitutions"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:77
+msgid ""
+"The following variable strings can be used in a custom payload to substitute "
+"information about the build and project in the webhook body."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:80
+msgid "``{{ event }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:81
+msgid ""
+"Event that triggered the webhook, one of ``build:triggered``, ``build:"
+"failed``, or ``build:passed``."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:83
+msgid "``{{ build.id }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:84
+msgid "Build ID."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:86
+msgid "``{{ build.commit }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:87
+msgid "Commit corresponding to the build, if present (otherwise ``\"\"``)."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:89
+msgid "``{{ build.url }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:90
+msgid ""
+"URL of the build, for example ``https://app.readthedocs.org/projects/docs/"
+"builds/15173336/``."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:92
+msgid "``{{ build.docs_url }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:93
+msgid ""
+"URL of the documentation corresponding to the build, for example ``https://"
+"docs.readthedocs.io/en/latest/``."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:96
+msgid "``{{ build.start_date }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:97
+msgid ""
+"Start date of the build (UTC, ISO format), for example "
+"``2021-11-03T16:23:14``."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:99
+msgid "``{{ organization.name }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:100
+msgid "Organization name (Commercial only)."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:102
+msgid "``{{ organization.slug }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:103
+msgid "Organization slug (Commercial only)."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:105
+msgid "``{{ project.slug }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:106
+msgid "Project slug."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:108
+msgid "``{{ project.name }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:109
+msgid "Project name."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:111
+msgid "``{{ project.url }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:112
+msgid "URL of the project :term:`dashboard`."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:114
+msgid "``{{ version.slug }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:115
+msgid "Version slug."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:117
+msgid "``{{ version.name }}``"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:118
+msgid "Version name."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:121
+msgid "Examples"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:125
+msgid "Slack"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:127
+msgid ""
+"{\n"
+"  \"attachments\": [\n"
+"    {\n"
+"      \"color\": \"#db3238\",\n"
+"      \"blocks\": [\n"
+"        {\n"
+"          \"type\": \"section\",\n"
+"          \"text\": {\n"
+"            \"type\": \"mrkdwn\",\n"
+"            \"text\": \"*Read the Docs build failed*\"\n"
+"          }\n"
+"        },\n"
+"        {\n"
+"          \"type\": \"section\",\n"
+"          \"fields\": [\n"
+"            {\n"
+"              \"type\": \"mrkdwn\",\n"
+"              \"text\": \"*Project*: <{{ project.url }}|{{ project.name }}"
+">\"\n"
+"            },\n"
+"            {\n"
+"              \"type\": \"mrkdwn\",\n"
+"              \"text\": \"*Version*: {{ version.name }} ({{ build."
+"commit }})\"\n"
+"            },\n"
+"            {\n"
+"              \"type\": \"mrkdwn\",\n"
+"              \"text\": \"*Build*: <{{ build.url }}|{{ build.id }}>\"\n"
+"            }\n"
+"          ]\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:164
+msgid ""
+"`Slack Incoming Webhooks documentation <https://api.slack.com/messaging/"
+"webhooks>`_"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:166
+msgid "Discord"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:168
+msgid ""
+"{\n"
+"  \"username\": \"Read the Docs\",\n"
+"  \"content\": \"Read the Docs build failed\",\n"
+"  \"embeds\": [\n"
+"    {\n"
+"      \"title\": \"Build logs\",\n"
+"      \"url\": \"{{ build.url }}\",\n"
+"      \"color\": 15258703,\n"
+"      \"fields\": [\n"
+"        {\n"
+"          \"name\": \"*Project*\",\n"
+"          \"value\": \"{{ project.url }}\",\n"
+"          \"inline\": true\n"
+"        },\n"
+"        {\n"
+"          \"name\": \"*Version*\",\n"
+"          \"value\": \"{{ version.name }} ({{ build.commit }})\",\n"
+"          \"inline\": true\n"
+"        },\n"
+"        {\n"
+"          \"name\": \"*Build*\",\n"
+"          \"value\": \"{{ build.url }}\"\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:199
+msgid ""
+"`Discord webhooks documentation <https://support.discord.com/hc/en-us/"
+"articles/228383668-Intro-to-Webhooks>`_"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:202
+msgid "Verifying the payload"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:204
+msgid ""
+"After you add a new webhook, Read the Docs will generate a secret key for it "
+"and use the key to generate a hash signature (HMAC-SHA256) for each payload. "
+"This signature is included in the ``X-Hub-Signature`` header of each request."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:208
+#: ../../../guides/build/webhooks.rst:213
+msgid "Webhook secret"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:215
+msgid ""
+"We highly recommend using this signature to verify that the webhook is "
+"coming from Read the Docs. To do so, you can add some custom code on your "
+"server, like this:"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:220
+msgid ""
+"import hashlib\n"
+"import hmac\n"
+"import os\n"
+"\n"
+"\n"
+"def verify_signature(payload, request_headers):\n"
+"    \"\"\"\n"
+"    Verify that the signature of payload is the same as the one coming from "
+"request_headers.\n"
+"    \"\"\"\n"
+"    digest = hmac.new(\n"
+"        key=os.environ[\"WEBHOOK_SECRET\"].encode(),\n"
+"        msg=payload.encode(),\n"
+"        digestmod=hashlib.sha256,\n"
+"    )\n"
+"    expected_signature = digest.hexdigest()\n"
+"\n"
+"    return hmac.compare_digest(\n"
+"        request_headers[\"X-Hub-Signature\"].encode(),\n"
+"        expected_signature.encode(),\n"
+"    )"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:244
+msgid "Legacy webhooks"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:246
+msgid ""
+"Webhooks created before the custom payloads functionality was added to Read "
+"the Docs send a payload with the following structure:"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:249
+msgid ""
+"{\n"
+"    \"name\": \"Read the Docs\",\n"
+"    \"slug\": \"rtd\",\n"
+"    \"build\": {\n"
+"        \"id\": 6321373,\n"
+"        \"commit\": \"e8dd17a3f1627dd206d721e4be08ae6766fda40\",\n"
+"        \"state\": \"finished\",\n"
+"        \"success\": false,\n"
+"        \"date\": \"2017-02-15 20:35:54\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:263
+msgid ""
+"To migrate to the new webhooks and keep a similar structure, you can use "
+"this as the webhook custom payload:"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:266
+msgid ""
+"{\n"
+"    \"name\": \"{{ project.name }}\",\n"
+"    \"slug\": \"{{ project.slug }}\",\n"
+"    \"build\": {\n"
+"        \"id\": \"{{ build.id }}\",\n"
+"        \"commit\": \"{{ build.commit }}\",\n"
+"        \"state\": \"{{ event }}\",\n"
+"        \"date\": \"{{ build.start_date }}\"\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:280
+msgid "Troubleshooting webhooks and payload discovery"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:282
+msgid ""
+"You can use public tools to discover, inspect, and test outgoing webhooks. "
+"These tools act as catch-all endpoints for HTTP requests and respond with a "
+"200 OK HTTP status code. You can use these payloads to develop your webhook "
+"services. You should exercise caution when using these tools as you might be "
+"sending sensitive data to external tools."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:288
+msgid "These public tools include:"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:290
+msgid "`Beeceptor <https://beeceptor.com/webhook-integration/>`__"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:291
+msgid ""
+"Create a temporary HTTPS endpoint and inspect incoming payloads. It lets you "
+"respond custom response code or messages from named HTTP mock server."
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:294
+msgid "`Webhook Tester <https://webhook-test.com/>`__"
+msgstr ""
+
+#: ../../../guides/build/webhooks.rst:295
+msgid ""
+"Inspect and debug incoming payloads. It lets you inspect all incoming "
+"requests to it’s URL/bucket."
+msgstr ""

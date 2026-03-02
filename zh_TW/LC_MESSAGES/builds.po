@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../builds.rst:2
+msgid "Build process overview"
+msgstr ""
+
+#: ../../../builds.rst:4
+msgid ""
+"Once a project has been added and a build is triggered, Read the Docs "
+"executes a set of :term:`pre-defined jobs <pre-defined build jobs>` to build "
+"and upload documentation. This page explains in detail what happens behind "
+"the scenes, and includes an overview of how you can change this process."
+msgstr ""
+
+#: ../../../builds.rst:10
+msgid "Understanding the build process"
+msgstr ""
+
+#: ../../../builds.rst:12
+msgid ""
+"Understanding how your content is built helps with debugging any problems "
+"you might hit. It also gives you the knowledge to customize the build "
+"process."
+msgstr ""
+
+#: ../../../builds.rst:17
+msgid ""
+"All the steps are run inside a Docker container, using the image defined in :"
+"ref:`config-file/v2:build.os`. The build has access to all :doc:`pre-defined "
+"environment variables </reference/environment-variables>` and :doc:`custom "
+"environment variables </environment-variables>`."
+msgstr ""
+
+#: ../../../builds.rst:20
+msgid "The build process includes the following jobs:"
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "checkout"
+msgstr ""
+
+#: ../../../builds.rst:24
+msgid ""
+"Checks out a project's code from the Git repository. On |com_brand|, this "
+"environment includes the SSH deploy key that gives access to the repository."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "system_dependencies"
+msgstr ""
+
+#: ../../../builds.rst:30
+msgid ""
+"Installs operating system and runtime dependencies. This includes specific "
+"versions of a language (e.g. Python, Node.js, Go, Rust) and also ``apt`` "
+"packages."
+msgstr ""
+
+#: ../../../builds.rst:33
+msgid ""
+":ref:`config-file/v2:build.tools` can be used to define a language version, "
+"and :ref:`config-file/v2:build.apt_packages` to define ``apt`` packages."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "create_environment"
+msgstr ""
+
+#: ../../../builds.rst:38
+msgid ""
+"Creates a Python environment to install all the dependencies in an isolated "
+"and reproducible way. Depending on what's defined by the project, a :term:"
+"`virtualenv` or a :ref:`conda environment <config-file/v2:conda>` will be "
+"used."
+msgstr ""
+
+#: ../../../builds.rst:44 ../../../builds.rst:60
+msgid ""
+"This step is only executed if the :ref:`config-file/v2:sphinx` or :ref:"
+"`config-file/v2:mkdocs` keys are defined."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "install"
+msgstr ""
+
+#: ../../../builds.rst:48
+msgid ""
+"Installs :doc:`default and project dependencies </build-default-versions>`. "
+"This includes any requirements you have configured in :ref:`config-file/v2:"
+"requirements file`."
+msgstr ""
+
+#: ../../../builds.rst:51
+msgid ""
+"If the project has extra Python requirements, :ref:`config-file/v2:python."
+"install` can be used to specify them."
+msgstr ""
+
+#: ../../../builds.rst:56
+msgid ""
+"We strongly recommend :doc:`pinning all the versions </guides/reproducible-"
+"builds>` required to build the documentation to avoid unexpected build "
+"errors."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "build"
+msgstr ""
+
+#: ../../../builds.rst:64
+msgid ""
+"Runs the main command to build the documentation for each of the formats "
+"declared (:ref:`config-file/v2:formats`). It will use Sphinx (:ref:`config-"
+"file/v2:sphinx`) or MkDocs (:ref:`config-file/v2:mkdocs`) depending on the "
+"project."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "upload"
+msgstr ""
+
+#: ../../../builds.rst:69
+msgid ""
+"Once the build process finishes successfully, the resulting artifacts (HTML, "
+"PDF, etc.) are uploaded to our servers. Our :doc:`CDN </reference/cdn>` is "
+"then purged so your docs are *always up to date*."
+msgstr ""
+
+#: ../../../builds.rst:75
+msgid ""
+"If you require additional build steps or customization, it's possible to run "
+"user-defined commands and :doc:`customize the build process </build-"
+"customization>`."
+msgstr ""
+
+#: ../../../builds.rst:79
+msgid "Cancelling builds"
+msgstr ""
+
+#: ../../../builds.rst:81
+msgid ""
+"There may be situations where you want to cancel a running build. Cancelling "
+"builds allows your team to speed up review times and also help us reduce "
+"server costs and our environmental footprint."
+msgstr ""
+
+#: ../../../builds.rst:84
+msgid "A couple common reasons you might want to cancel builds are:"
+msgstr ""
+
+#: ../../../builds.rst:86
+msgid "the build has an external dependency that hasn't been updated"
+msgstr ""
+
+#: ../../../builds.rst:87
+msgid "there were no changes on the documentation files"
+msgstr ""
+
+#: ../../../builds.rst:89
+msgid ""
+"For these scenarios, Read the Docs supports three different mechanisms to "
+"cancel a running build:"
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "Manually"
+msgstr ""
+
+#: ../../../builds.rst:94
+msgid ""
+"Project administrators can go to the build detail page and click :guilabel:"
+"`Cancel build`."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "Automatically"
+msgstr ""
+
+#: ../../../builds.rst:99
+msgid ""
+"When Read the Docs detects a push to a version that is already building, it "
+"cancels the running build and starts a new build using the latest commit."
+msgstr ""
+
+#: ../../../builds.rst:0
+msgid "Programmatically"
+msgstr ""
+
+#: ../../../builds.rst:104
+msgid ""
+"You can use user-defined commands on ``build.jobs`` or ``build.commands`` "
+"(see :doc:`build-customization`) to check for your own cancellation "
+"condition and then return exit code ``183`` to cancel a build. You can exit "
+"with the code ``0`` to continue running the build."
+msgstr ""
+
+#: ../../../builds.rst:108
+msgid ""
+"When this happens, Read the Docs will notify your :doc:`Git provider </"
+"reference/git-integration>` the build succeeded (✅), so the pull request "
+"doesn't have any failing checks."
+msgstr ""
+
+#: ../../../builds.rst:113
+msgid "Take a look at :doc:`/guides/build/skip-build` page for some examples."
+msgstr ""
+
+#: ../../../builds.rst:116
+msgid "Automatic disabling of builds"
+msgstr ""
+
+#: ../../../builds.rst:118
+msgid ""
+"To reduce resource consumption and improve build queue times for all users, "
+"Read the Docs will automatically disable builds for projects that have too "
+"many consecutive failed builds on their default version."
+msgstr ""
+
+#: ../../../builds.rst:121
+msgid ""
+"When a project has **25 consecutive failed builds** on its default version, "
+"we will disable builds for the project."
+msgstr ""
+
+#: ../../../builds.rst:124
+msgid ""
+"This helps ensure that projects with persistent build issues don't consume "
+"resources that could be used by active projects."
+msgstr ""
+
+#: ../../../builds.rst:128
+msgid ""
+"This only applies to the default version of a project. Builds on other "
+"versions (branches, tags, pull requests) are not counted towards this limit."
+msgstr ""
+
+#: ../../../builds.rst:131
+msgid ""
+"If your project has been disabled due to consecutive build failures, you'll "
+"need to re-enable from your project settings. Make sure to fix the "
+"underlying issue to avoid being disabled again."
+msgstr ""
+
+#: ../../../builds.rst:135
+msgid "Build resources"
+msgstr ""
+
+#: ../../../builds.rst:137
+msgid "Every build has limited resources assigned to it. Our build limits are:"
+msgstr ""
+
+#: ../../../builds.rst:142
+msgid "|com_brand|"
+msgstr ""
+
+#: ../../../builds.rst:144
+msgid "30 minutes build time (upgradable)"
+msgstr ""
+
+#: ../../../builds.rst:145
+msgid "7GB of memory (upgradable)"
+msgstr ""
+
+#: ../../../builds.rst:146
+msgid "Concurrent builds vary based on your pricing plan"
+msgstr ""
+
+#: ../../../builds.rst:148
+msgid ""
+"If you are having trouble with your documentation builds, you can reach our "
+"support at support@readthedocs.com."
+msgstr ""
+
+#: ../../../builds.rst:151
+msgid "|org_brand|"
+msgstr ""
+
+#: ../../../builds.rst:153
+msgid "15 minutes build time"
+msgstr ""
+
+#: ../../../builds.rst:154
+msgid "7GB of memory"
+msgstr ""
+
+#: ../../../builds.rst:155
+msgid "2 concurrent builds"
+msgstr ""
+
+#: ../../../builds.rst:156
+msgid "5GB of disk storage (soft limit)"
+msgstr ""
+
+#: ../../../builds.rst:158
+msgid ""
+"We can increase build time on a per-project basis. Send an email to "
+"support@readthedocs.org providing a good reason why your documentation needs "
+"more resources."
+msgstr ""
+
+#: ../../../builds.rst:161
+msgid ""
+"If your business is hitting build limits hosting documentation on Read the "
+"Docs, please consider :doc:`Read the Docs for Business </commercial/index>` "
+"which has options for additional build resources."
+msgstr ""
