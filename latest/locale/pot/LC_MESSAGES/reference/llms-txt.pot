@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/llms-txt.rst:2
+msgid "``llms.txt`` support"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:4
+msgid ""
+"The `llms.txt`_ file is a standard for providing LLM-friendly content to AI "
+"assistants and other language models. It allows you to provide a custom file "
+"that:"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:7
+msgid "Gives AI models structured information about your documentation"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:8
+msgid "Helps AI understand your project's structure and content"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:9
+msgid "Provides a more focused view of your documentation for AI consumption"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:11
+msgid ""
+"Read the Docs supports serving custom ``llms.txt`` files from your "
+"documentation."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:14
+msgid "How it works"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:16
+msgid ""
+"The ``llms.txt`` file will be served from the **default version** of your "
+"project at ``https://your-project.readthedocs.io/llms.txt``. This is because "
+"the ``llms.txt`` file is served at the top-level of your domain, so we must "
+"choose a version to find the file in. The **default version** is the best "
+"place to look for it."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:21
+msgid ""
+"If you also provide a ``llms-full.txt`` file, Read the Docs will serve it "
+"from ``https://your-project.readthedocs.io/llms-full.txt`` using the same "
+"rules."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:24
+msgid "To use this feature:"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:26
+msgid "Create a ``llms.txt`` file in your documentation source"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:27
+msgid "Configure your documentation tool to include it in the build output"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:28
+msgid "Read the Docs will automatically serve it at the root of your domain"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:32
+msgid "The ``llms.txt`` file will only be served if:"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:34
+msgid "Your default version is **public**"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:35
+msgid "Your default version is **active**"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:36
+msgid "Your default version has been **built**"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:37
+msgid "The ``llms.txt`` file exists in your build output"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:40
+msgid "Tool integration"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:42
+msgid ""
+"Documentation tools will have different ways of generating a ``llms.txt`` "
+"file. We have examples for some of the most popular tools below."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:47
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:49
+msgid ""
+"Sphinx uses the `html_extra_path`_ configuration value to add static files "
+"to its final HTML output. You need to create a ``llms.txt`` file and put it "
+"under the path defined in ``html_extra_path``."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:52
+msgid ""
+"You can also use the `sphinx-llm`_ extension to automatically generate an "
+"``llms.txt`` file from your documentation."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:54
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:56
+msgid ""
+"MkDocs needs the ``llms.txt`` to be at the directory defined by the "
+"`docs_dir`_ configuration value."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:58
+msgid ""
+"You can also use the `mkdocs-llmstxt`_ plugin to automatically generate an "
+"``llms.txt`` file from your documentation."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:61
+msgid "Alternative: Using redirects"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:63
+msgid ""
+"If you want to serve your ``llms.txt`` file from a versioned path (like ``/"
+"en/latest/llms.txt``), you can create an :doc:`exact redirect </guides/"
+"redirects>` from ``/llms.txt`` to ``/en/latest/llms.txt``. This gives you "
+"more control over which version serves the file."
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:75
+msgid ":doc:`/guides/redirects`"
+msgstr ""

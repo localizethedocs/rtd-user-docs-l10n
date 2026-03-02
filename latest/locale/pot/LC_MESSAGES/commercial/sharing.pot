@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-17 08:41+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,97 +51,107 @@ msgstr ""
 msgid "Embedding documentation in a SaaS application dashboard."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:16
-msgid "Creating a shared item"
+#: ../../../commercial/sharing.rst:17
+msgid ":doc:`/api/v3`"
 msgstr ""
 
 #: ../../../commercial/sharing.rst:18
+msgid ""
+"You can automate sharing methods via ``/api/v3/projects/<project_slug>/"
+"sharing/``."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:21
+msgid "Creating a shared item"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:23
 msgid ""
 "Go into your project's :guilabel:`Admin` page and click on :guilabel:"
 "`Sharing`."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:19
+#: ../../../commercial/sharing.rst:24
 msgid "Click on :guilabel:`New Share`"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:20
+#: ../../../commercial/sharing.rst:25
 msgid ""
 "Select access type (secret link, password, or HTTP header token), add an "
 "expiration date and a *Description* to help with managing access in the "
 "future."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:22
+#: ../../../commercial/sharing.rst:27
 msgid ""
 "Check ``Allow access to all versions?`` if you want to grant access to all "
 "versions, or uncheck that option and select the specific versions you want "
 "to grant access to."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:24
+#: ../../../commercial/sharing.rst:29
 msgid "Click :guilabel:`Save`."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:25
+#: ../../../commercial/sharing.rst:30
 msgid "Get the info needed to share your documentation with other users:"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:27
+#: ../../../commercial/sharing.rst:32
 msgid "**Secret link:** copy the link that is generated"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:28
+#: ../../../commercial/sharing.rst:33
 msgid "**Password:** copy the link and password"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:29
+#: ../../../commercial/sharing.rst:34
 msgid ""
 "**HTTP header token**: Copy the token, and then pass the ``Authorization`` "
 "header in your HTTP request."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:31
+#: ../../../commercial/sharing.rst:36
 msgid "Give that information to the person who you want to give access."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:35
+#: ../../../commercial/sharing.rst:40
 msgid "You can always revoke access by removing the sharing item on this page."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:38
+#: ../../../commercial/sharing.rst:43
 msgid "Sharing methods"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:41
+#: ../../../commercial/sharing.rst:46
 msgid "Secret link"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:43
+#: ../../../commercial/sharing.rst:48
 msgid ""
 "Once the person you send the link to clicks it, they will have access to the "
 "documentation while their browser window is open."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:46
+#: ../../../commercial/sharing.rst:51
 msgid ""
 "If you want to link to a specific page, you can do this by passing the "
 "``next`` query parameter in the URL. For example ``https://mydocs."
 "readthedocs-hosted.com/_/sharing/xxxxxxxxx?next=/en/latest/page.html``."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:51
+#: ../../../commercial/sharing.rst:56
 msgid ""
 "This is useful for sharing access to an entire set of documentation for a "
 "user. You can embed these links in an internal wiki, for example, and all "
 "your employees will be able to browse the docs without a login."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:56
+#: ../../../commercial/sharing.rst:61
 msgid "Password"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:58
+#: ../../../commercial/sharing.rst:63
 msgid ""
 "Once the person you send the link to clicks on the link, they will see an "
 "*Authorization required* page asking them for the password you generated. "
@@ -149,70 +159,70 @@ msgid ""
 "project."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:64
+#: ../../../commercial/sharing.rst:69
 msgid ""
 "This is useful for when you have documentation you want users to bookmark. "
 "They can enter a URL directly and enter the password when prompted."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:68
+#: ../../../commercial/sharing.rst:73
 msgid "HTTP Authorization Header"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:71
+#: ../../../commercial/sharing.rst:76
 msgid ""
 "This approach is useful for automated scripts. It only allows access to a "
 "page when the header is present, so it doesn't allow browsing docs inside of "
 "a browser."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:76
+#: ../../../commercial/sharing.rst:81
 msgid "Token Authorization"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:78
+#: ../../../commercial/sharing.rst:83
 msgid ""
 "You need to send the ``Authorization`` header with the token on each HTTP "
 "request. The header has the form ``Authorization: Token <TOKEN>``. For "
 "example:"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:85
+#: ../../../commercial/sharing.rst:90
 msgid ""
 "curl -H \"Authorization: Token $TOKEN\" https://docs.example.com/en/latest/"
 "example.html"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:87
+#: ../../../commercial/sharing.rst:92
 msgid "Basic Authorization"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:89
+#: ../../../commercial/sharing.rst:94
 msgid ""
 "You can also use basic authorization, with the token as user and an empty "
 "password. For example:"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:95
+#: ../../../commercial/sharing.rst:100
 msgid ""
 "curl --url https://docs.example.com/en/latest/example.html --user '$TOKEN:'"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:97
+#: ../../../commercial/sharing.rst:102
 msgid "Typical sharing configurations"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:99
+#: ../../../commercial/sharing.rst:104
 msgid ""
 "There are a few common ways to architect sharing, with trade-offs between "
 "them, and you should choose the one that best fits your use case."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:104
+#: ../../../commercial/sharing.rst:109
 msgid "Bulk passwords"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:106
+#: ../../../commercial/sharing.rst:111
 msgid ""
 "If you want to limit access to a group of users, you can create a password "
 "for each user, and then share the password with them. This allows users to "
@@ -221,11 +231,11 @@ msgid ""
 "to generate a new password for them."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:115
+#: ../../../commercial/sharing.rst:120
 msgid "Authenticated redirect"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:117
+#: ../../../commercial/sharing.rst:122
 msgid ""
 "If you want to share documentation with a group of users, you need to "
 "authenticate those users against your own system first. The simplest way to "
@@ -233,7 +243,7 @@ msgid ""
 "redirects to the Read the Docs :ref:`commercial/sharing:secret link`."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:122
+#: ../../../commercial/sharing.rst:127
 msgid ""
 "This should require minimal customization, and will ensure that only "
 "authenticated users can access the documentation. The downside is that users "
@@ -241,11 +251,11 @@ msgid ""
 "have to go through your site first."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:128
+#: ../../../commercial/sharing.rst:133
 msgid "Authenticated proxy"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:130
+#: ../../../commercial/sharing.rst:135
 msgid ""
 "If you want a more transparent experience for your users, you can create a "
 "proxy that authenticates users against your system, and then proxies the "
@@ -253,23 +263,23 @@ msgid ""
 "users to access the documentation directly from a bookmark."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:136
+#: ../../../commercial/sharing.rst:141
 msgid ""
 "This approach would use a :ref:`commercial/sharing:HTTP Authorization "
 "Header` to authenticate users, and would be configured in your proxy server."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:140
+#: ../../../commercial/sharing.rst:145
 msgid "Proxy example"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:142
+#: ../../../commercial/sharing.rst:147
 msgid ""
 "Below is an example of how to configure Nginx to proxy requests to Read the "
 "Docs while adding the token in the `Authorization` header."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:144
+#: ../../../commercial/sharing.rst:149
 msgid ""
 "server {\n"
 "    listen 80;\n"

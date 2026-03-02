@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-19 11:35:11 -0500",
-      "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
-      "title" : "Search: Disable search indexing for inactive projects (#12666)"
+      "date" : "2026-02-26 11:05:10 -0500",
+      "hash" : "c44b7d245a6513b53e8af3811ae00b108db5b141",
+      "title" : "GitHub App: don't sync all repos when a new repo is added (#12817)"
     }
   },
   "type" : "branch",

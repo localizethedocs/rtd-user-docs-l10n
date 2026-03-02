@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:46+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,16 +140,16 @@ msgid ""
 msgstr ""
 
 #: ../../../build-customization.rst:52 ../../../build-customization.rst:138
-#: ../../../build-customization.rst:152 ../../../build-customization.rst:186
-#: ../../../build-customization.rst:200 ../../../build-customization.rst:220
-#: ../../../build-customization.rst:241 ../../../build-customization.rst:265
-#: ../../../build-customization.rst:285 ../../../build-customization.rst:305
-#: ../../../build-customization.rst:337 ../../../build-customization.rst:361
-#: ../../../build-customization.rst:401 ../../../build-customization.rst:432
-#: ../../../build-customization.rst:458 ../../../build-customization.rst:490
-#: ../../../build-customization.rst:515 ../../../build-customization.rst:537
-#: ../../../build-customization.rst:556 ../../../build-customization.rst:577
-#: ../../../build-customization.rst:608
+#: ../../../build-customization.rst:152 ../../../build-customization.rst:230
+#: ../../../build-customization.rst:244 ../../../build-customization.rst:264
+#: ../../../build-customization.rst:285 ../../../build-customization.rst:309
+#: ../../../build-customization.rst:329 ../../../build-customization.rst:349
+#: ../../../build-customization.rst:381 ../../../build-customization.rst:405
+#: ../../../build-customization.rst:445 ../../../build-customization.rst:476
+#: ../../../build-customization.rst:502 ../../../build-customization.rst:534
+#: ../../../build-customization.rst:559 ../../../build-customization.rst:581
+#: ../../../build-customization.rst:600 ../../../build-customization.rst:621
+#: ../../../build-customization.rst:652
 msgid ".readthedocs.yaml"
 msgstr ""
 
@@ -356,21 +356,89 @@ msgid ""
 msgstr ""
 
 #: ../../../build-customization.rst:172
-msgid "Examples"
+msgid "Custom Git checkout commands (advanced)"
 msgstr ""
 
 #: ../../../build-customization.rst:174
+msgid ""
+"Read the Docs supports overriding the default :term:`checkout job <pre-"
+"defined build jobs>` with a custom sequence of :program:`git` commands. This "
+"is useful for advanced workflows like sparse checkouts or custom cloning "
+"strategies."
+msgstr ""
+
+#: ../../../build-customization.rst:178
+msgid ""
+"To enable this feature, go to your project's :term:`dashboard` and update :"
+"menuselection:`Settings --> Custom Git checkout commands`. Enter one command "
+"per line."
+msgstr ""
+
+#: ../../../build-customization.rst:184
+msgid ""
+"When you define custom Git checkout commands, Read the Docs will not run the "
+"default Git clone or checkout. Your commands must perform the clone and "
+"checkout of the desired revision."
+msgstr ""
+
+#: ../../../build-customization.rst:189
+msgid ""
+"If you just want to run some extra commands after the default Git checkout, "
+"like unshallowing the clone or fetching extra branches, you should use the "
+"``build.jobs.post_checkout`` user-defined job instead."
+msgstr ""
+
+#: ../../../build-customization.rst:193
+msgid ""
+"In case you want to clone submodules, you can use the :ref:`config-file/v2:"
+"submodules` config key for that."
+msgstr ""
+
+#: ../../../build-customization.rst:196
+msgid ""
+"Commands are executed in order, in the repository working directory. You can "
+"use :doc:`pre-defined environment variables </reference/environment-"
+"variables>` such as :envvar:`READTHEDOCS_GIT_CLONE_URL`, :envvar:"
+"`READTHEDOCS_GIT_IDENTIFIER`, and :envvar:`READTHEDOCS_REPOSITORY_PATH`."
+msgstr ""
+
+#: ../../../build-customization.rst:201
+msgid "Example of custom Git checkout commands"
+msgstr ""
+
+#: ../../../build-customization.rst:201
+msgid ""
+"git clone --no-checkout --filter=blob:none --depth 1 "
+"$READTHEDOCS_GIT_CLONE_URL .\n"
+"git sparse-checkout init --cone\n"
+"git sparse-checkout set docs\n"
+"git checkout $READTHEDOCS_GIT_IDENTIFIER"
+msgstr ""
+
+#: ../../../build-customization.rst:211
+msgid ""
+"This is an advanced feature. Incorrect commands can prevent builds from "
+"checking out code or can expose sensitive files in your repository. If you "
+"are unsure, use :doc:`build customization with build.jobs </build-"
+"customization>` instead."
+msgstr ""
+
+#: ../../../build-customization.rst:216
+msgid "Examples"
+msgstr ""
+
+#: ../../../build-customization.rst:218
 msgid ""
 "We've included some common examples where using :ref:`config-file/v2:build."
 "jobs` will be useful. These examples may require some adaptation for each "
 "projects' use case, we recommend you use them as a starting point."
 msgstr ""
 
-#: ../../../build-customization.rst:179
+#: ../../../build-customization.rst:223
 msgid "Unshallow git clone"
 msgstr ""
 
-#: ../../../build-customization.rst:181
+#: ../../../build-customization.rst:225
 msgid ""
 "Read the Docs does not perform a full clone in the ``checkout`` job in order "
 "to reduce network data and speed up the build process. Instead, it performs "
@@ -380,7 +448,7 @@ msgid ""
 "it's possible to unshallow the :program:`git clone`:"
 msgstr ""
 
-#: ../../../build-customization.rst:186
+#: ../../../build-customization.rst:230
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -392,13 +460,13 @@ msgid ""
 "      - git fetch --unshallow || true"
 msgstr ""
 
-#: ../../../build-customization.rst:198
+#: ../../../build-customization.rst:242
 msgid ""
 "If your build also relies on the contents of other branches, it may also be "
 "necessary to re-configure git to fetch these:"
 msgstr ""
 
-#: ../../../build-customization.rst:200
+#: ../../../build-customization.rst:244
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -413,17 +481,17 @@ msgid ""
 "      - git fetch --all --tags || true"
 msgstr ""
 
-#: ../../../build-customization.rst:216
+#: ../../../build-customization.rst:260
 msgid "Generate documentation from annotated sources with Doxygen"
 msgstr ""
 
-#: ../../../build-customization.rst:218
+#: ../../../build-customization.rst:262
 msgid ""
 "It's possible to run Doxygen as part of the build process to generate "
 "documentation from annotated sources:"
 msgstr ""
 
-#: ../../../build-customization.rst:220
+#: ../../../build-customization.rst:264
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -437,18 +505,18 @@ msgid ""
 "      - doxygen"
 msgstr ""
 
-#: ../../../build-customization.rst:236
+#: ../../../build-customization.rst:280
 msgid "Use MkDocs extensions with extra required steps"
 msgstr ""
 
-#: ../../../build-customization.rst:238
+#: ../../../build-customization.rst:282
 msgid ""
 "There are some MkDocs extensions that require specific commands to be run to "
 "generate extra pages before performing the build. For example, `pydoc-"
 "markdown <http://niklasrosenstein.github.io/pydoc-markdown/>`_"
 msgstr ""
 
-#: ../../../build-customization.rst:241
+#: ../../../build-customization.rst:285
 msgid ""
 "version: 2\n"
 "mkdocs:\n"
@@ -462,11 +530,11 @@ msgid ""
 "      - pydoc-markdown --build --site-dir \"$READTHEDOCS_OUTPUT/html\""
 msgstr ""
 
-#: ../../../build-customization.rst:257
+#: ../../../build-customization.rst:301
 msgid "Avoid having a dirty Git index"
 msgstr ""
 
-#: ../../../build-customization.rst:259
+#: ../../../build-customization.rst:303
 msgid ""
 "Read the Docs needs to modify some files before performing the build to be "
 "able to integrate with some of its features. Because of this reason, it "
@@ -478,7 +546,7 @@ msgid ""
 "the files that Read the Docs has modified."
 msgstr ""
 
-#: ../../../build-customization.rst:265
+#: ../../../build-customization.rst:309
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -490,11 +558,11 @@ msgid ""
 "      - git update-index --assume-unchanged environment.yml docs/conf.py"
 msgstr ""
 
-#: ../../../build-customization.rst:279
+#: ../../../build-customization.rst:323
 msgid "Perform a check for broken links"
 msgstr ""
 
-#: ../../../build-customization.rst:281
+#: ../../../build-customization.rst:325
 msgid ""
 "Sphinx comes with a `linkcheck <https://www.sphinx-doc.org/en/master/usage/"
 "builders/index.html#sphinx.builders.linkcheck.CheckExternalLinksBuilder>`_ "
@@ -503,7 +571,7 @@ msgid ""
 "readers aren't linked to non-existent pages."
 msgstr ""
 
-#: ../../../build-customization.rst:285
+#: ../../../build-customization.rst:329
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -516,18 +584,18 @@ msgid ""
 "$READTHEDOCS_OUTPUT/linkcheck"
 msgstr ""
 
-#: ../../../build-customization.rst:299
+#: ../../../build-customization.rst:343
 msgid "Support Git LFS (Large File Storage)"
 msgstr ""
 
-#: ../../../build-customization.rst:301
+#: ../../../build-customization.rst:345
 msgid ""
 "In case the repository contains large files that are tracked with Git LFS, "
 "there are some extra steps required to be able to download their content. "
 "It's possible to use ``post_checkout`` user-defined job for this."
 msgstr ""
 
-#: ../../../build-customization.rst:305
+#: ../../../build-customization.rst:349
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -554,11 +622,11 @@ msgid ""
 "      - ./git-lfs checkout"
 msgstr ""
 
-#: ../../../build-customization.rst:332
+#: ../../../build-customization.rst:376
 msgid "Install Node.js dependencies"
 msgstr ""
 
-#: ../../../build-customization.rst:334
+#: ../../../build-customization.rst:378
 msgid ""
 "It's possible to install Node.js together with the required dependencies by "
 "using :term:`user-defined build jobs`. To setup it, you need to define the "
@@ -566,7 +634,7 @@ msgid ""
 "post_install``:"
 msgstr ""
 
-#: ../../../build-customization.rst:337
+#: ../../../build-customization.rst:381
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -582,18 +650,18 @@ msgid ""
 "      - npm install -g jsdoc"
 msgstr ""
 
-#: ../../../build-customization.rst:355
+#: ../../../build-customization.rst:399
 msgid "Install dependencies with Poetry"
 msgstr ""
 
-#: ../../../build-customization.rst:357
+#: ../../../build-customization.rst:401
 msgid ""
 "Projects managed with `Poetry <https://python-poetry.org/>`__, can use the "
 "``post_create_environment`` user-defined job to use Poetry for installing "
 "Python dependencies. Take a look at the following example:"
 msgstr ""
 
-#: ../../../build-customization.rst:361
+#: ../../../build-customization.rst:405
 msgid ""
 "version: 2\n"
 "\n"
@@ -617,11 +685,11 @@ msgid ""
 "  configuration: docs/conf.py"
 msgstr ""
 
-#: ../../../build-customization.rst:386
+#: ../../../build-customization.rst:430
 msgid "Install dependencies with ``uv``"
 msgstr ""
 
-#: ../../../build-customization.rst:388
+#: ../../../build-customization.rst:432
 msgid ""
 "Projects managed with `uv <https://github.com/astral-sh/uv/>`__ can install "
 "`uv` with asdf, and then rely on it to set up the environment and install "
@@ -630,7 +698,7 @@ msgid ""
 "reducing the time taken to install compared to pip."
 msgstr ""
 
-#: ../../../build-customization.rst:393
+#: ../../../build-customization.rst:437
 msgid ""
 "The following examples assumes a uv project as described in its `projects "
 "concept <https://docs.astral.sh/uv/concepts/projects/>`__. As an "
@@ -641,11 +709,11 @@ msgid ""
 "concepts/projects/sync/#syncing-optional-dependencies>`__)."
 msgstr ""
 
-#: ../../../build-customization.rst:399
+#: ../../../build-customization.rst:443
 msgid "If a ``uv.lock`` file exists it is respected."
 msgstr ""
 
-#: ../../../build-customization.rst:401
+#: ../../../build-customization.rst:445
 msgid ""
 "version: 2\n"
 "\n"
@@ -668,24 +736,24 @@ msgid ""
 "--frozen --group docs"
 msgstr ""
 
-#: ../../../build-customization.rst:424
+#: ../../../build-customization.rst:468
 msgid "Install dependencies from Dependency Groups"
 msgstr ""
 
-#: ../../../build-customization.rst:426
+#: ../../../build-customization.rst:470
 msgid ""
 "Python `Dependency Groups <https://packaging.python.org/en/latest/"
 "specifications/dependency-groups/>`_ are a way of storing lists of "
 "dependencies in your ``pyproject.toml``."
 msgstr ""
 
-#: ../../../build-customization.rst:429
+#: ../../../build-customization.rst:473
 msgid ""
 "``pip`` version 25.1+ as well as many other tools support Dependency Groups. "
 "This example uses ``pip`` and installs from a group named ``docs``:"
 msgstr ""
 
-#: ../../../build-customization.rst:432
+#: ../../../build-customization.rst:476
 msgid ""
 "version: 2\n"
 "\n"
@@ -701,25 +769,25 @@ msgid ""
 "         - pip install --group 'docs'"
 msgstr ""
 
-#: ../../../build-customization.rst:447
+#: ../../../build-customization.rst:491
 msgid ""
 "For more information on relevant ``pip`` usage, see the `pip user guide on "
 "Dependency Groups <https://pip.pypa.io/en/stable/user_guide/#dependency-"
 "groups>`_."
 msgstr ""
 
-#: ../../../build-customization.rst:451
+#: ../../../build-customization.rst:495
 msgid "Install dependencies with ``pixi``"
 msgstr ""
 
-#: ../../../build-customization.rst:453
+#: ../../../build-customization.rst:497
 msgid ""
 "Projects can use `pixi <https://github.com/prefix-dev/pixi/>`__, to install "
 "Python dependencies, usually reducing the time taken to install compared to "
 "conda or pip. Take a look at the following example:"
 msgstr ""
 
-#: ../../../build-customization.rst:458
+#: ../../../build-customization.rst:502
 msgid ""
 "version: 2\n"
 "\n"
@@ -741,17 +809,17 @@ msgid ""
 "$READTHEDOCS_OUTPUT/html"
 msgstr ""
 
-#: ../../../build-customization.rst:479
+#: ../../../build-customization.rst:523
 msgid ""
 "MkDocs projects could use ``NO_COLOR=1 pixi run -e docs mkdocs build --"
 "strict --site-dir $READTHEDOCS_OUTPUT/html`` instead."
 msgstr ""
 
-#: ../../../build-customization.rst:482
+#: ../../../build-customization.rst:526
 msgid "Update Conda version"
 msgstr ""
 
-#: ../../../build-customization.rst:484
+#: ../../../build-customization.rst:528
 msgid ""
 "Projects using Conda may need to install the latest available version of "
 "Conda. This can be done by using the ``pre_create_environment`` user-defined "
@@ -759,7 +827,7 @@ msgid ""
 "following example:"
 msgstr ""
 
-#: ../../../build-customization.rst:490
+#: ../../../build-customization.rst:534
 msgid ""
 " version: 2\n"
 "\n"
@@ -778,11 +846,11 @@ msgid ""
 "   environment: environment.yml"
 msgstr ""
 
-#: ../../../build-customization.rst:510
+#: ../../../build-customization.rst:554
 msgid "Using Pelican"
 msgstr ""
 
-#: ../../../build-customization.rst:512
+#: ../../../build-customization.rst:556
 msgid ""
 "`Pelican <https://blog.getpelican.com/>`__ is a well-known static site "
 "generator that's commonly used for blogs and landing pages. If you are "
@@ -790,7 +858,7 @@ msgid ""
 "similar to the following:"
 msgstr ""
 
-#: ../../../build-customization.rst:515
+#: ../../../build-customization.rst:559
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -806,18 +874,18 @@ msgid ""
 "$READTHEDOCS_OUTPUT/html/ docs/"
 msgstr ""
 
-#: ../../../build-customization.rst:532
+#: ../../../build-customization.rst:576
 msgid "Using Docsify"
 msgstr ""
 
-#: ../../../build-customization.rst:534
+#: ../../../build-customization.rst:578
 msgid ""
 "`Docsify <https://docsify.js.org/>`__ generates documentation websites on "
 "the fly, without the need to build static HTML. These projects can be built "
 "using a configuration file like this:"
 msgstr ""
 
-#: ../../../build-customization.rst:537
+#: ../../../build-customization.rst:581
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -829,11 +897,11 @@ msgid ""
 "        - cp --recursive docs/* $READTHEDOCS_OUTPUT/html/"
 msgstr ""
 
-#: ../../../build-customization.rst:550
+#: ../../../build-customization.rst:594
 msgid "Using Asciidoc"
 msgstr ""
 
-#: ../../../build-customization.rst:552
+#: ../../../build-customization.rst:596
 msgid ""
 "`Asciidoctor <https://asciidoctor.org/>`__ is a fast processor for "
 "converting and generating documentation from AsciiDoc source. The "
@@ -842,7 +910,7 @@ msgid ""
 "Here is an example configuration file:"
 msgstr ""
 
-#: ../../../build-customization.rst:556
+#: ../../../build-customization.rst:600
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -857,18 +925,18 @@ msgid ""
 "        - asciidoctor -D $READTHEDOCS_OUTPUT/html index.asciidoc"
 msgstr ""
 
-#: ../../../build-customization.rst:572
+#: ../../../build-customization.rst:616
 msgid "Using pydoctor"
 msgstr ""
 
-#: ../../../build-customization.rst:574
+#: ../../../build-customization.rst:618
 msgid ""
 "`Pydoctor <https://github.com/twisted/pydoctor>`_ is an easy-to-use "
 "standalone API documentation tool for Python. Here is an example "
 "configuration file:"
 msgstr ""
 
-#: ../../../build-customization.rst:577
+#: ../../../build-customization.rst:621
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -889,25 +957,25 @@ msgid ""
 "            ./src/my_project"
 msgstr ""
 
-#: ../../../build-customization.rst:598
+#: ../../../build-customization.rst:642
 msgid "Generate text format with Sphinx"
 msgstr ""
 
-#: ../../../build-customization.rst:600
+#: ../../../build-customization.rst:644
 msgid ""
 "There might be various reasons why would you want to generate your "
 "documentation in `text` format (secondary to `html`). One of such reasons "
 "would be generating LLM friendly documentation."
 msgstr ""
 
-#: ../../../build-customization.rst:604
+#: ../../../build-customization.rst:648
 msgid ""
 "See the following example for how to add generation of additional `text` "
 "format to your existing documentation. Deviations from standard build "
 "configuration are highlighted/emphasized:"
 msgstr ""
 
-#: ../../../build-customization.rst:608
+#: ../../../build-customization.rst:652
 msgid ""
 "version: 2\n"
 "\n"
@@ -928,7 +996,7 @@ msgid ""
 "      - sphinx-build -n -b text docs $READTHEDOCS_OUTPUT/html/"
 msgstr ""
 
-#: ../../../build-customization.rst:630
+#: ../../../build-customization.rst:674
 msgid ""
 "The generated ``.txt`` files will be placed in the `html` directory, "
 "together with ``.html`` files."

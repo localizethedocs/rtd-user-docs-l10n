@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,14 +106,11 @@ msgid "Choose :guilabel:`SAML 2.0`, and click :guilabel:`Next`."
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:32
-msgid ""
-"Fill in the following fields with the information from `your SAML "
-"integration <https://app.readthedocs.com/organizations/choose/"
-"organization_saml/>`__:"
+msgid "Fill the following fields:"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:34
-msgid ":guilabel:`App name`: Read the Docs"
+msgid ":guilabel:`App name`: Read the Docs (or any name you want)"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:35
@@ -127,36 +124,55 @@ msgstr ""
 msgid ":guilabel:`App visibility`: (optional)"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:37
+#: ../../../guides/set-up-single-sign-on-saml.rst:38
+msgid "Click :guilabel:`Next`."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:39
+msgid ""
+"Fill in the following fields with the information from `your SAML "
+"integration <https://app.readthedocs.com/organizations/choose/"
+"organization_saml/>`__:"
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:41
 msgid ""
 ":guilabel:`Single Sign On URL`: ``https://app.readthedocs.com/accounts/saml/"
 "<organization-slug>/acs/`` (replace ``<organization-slug>`` with your "
 "organization slug)"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:38
+#: ../../../guides/set-up-single-sign-on-saml.rst:42
 msgid ""
 ":guilabel:`Audience URI (SP Entity ID)`: ``https://app.readthedocs.com/"
 "accounts/saml/<organization-slug>/metadata/`` (replace ``<organization-"
 "slug>`` with your organization slug)"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:39
+#: ../../../guides/set-up-single-sign-on-saml.rst:43
 msgid ":guilabel:`Name ID format`: ``EmailAddress``"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:40
+#: ../../../guides/set-up-single-sign-on-saml.rst:44
 msgid ":guilabel:`Application username`: ``Email``"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:41
+#: ../../../guides/set-up-single-sign-on-saml.rst:45
 msgid "Leave the rest of the fields as default."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:43
+#: ../../../guides/set-up-single-sign-on-saml.rst:47
+msgid "Select ``This is an internal app that we have created``."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:48
+msgid "Click :guilabel:`Finish`."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:49
 msgid ""
-"Add the following \"attribute statements\" to be used when creating a new "
-"user:"
+"After creating the application, go to the \"Attribute statements\" section, "
+"and add the following statements:"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:1
@@ -164,11 +180,7 @@ msgid "Name"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:1
-msgid "Format"
-msgstr ""
-
-#: ../../../guides/set-up-single-sign-on-saml.rst:1
-msgid "Value"
+msgid "Expression"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:1
@@ -176,89 +188,81 @@ msgid "user.id"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:1
-msgid "Basic"
+msgid "user.firstName"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:1
-msgid "user.firstName"
+msgid "user.profile.firstName"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:1
 msgid "user.lastName"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:52
-msgid "Click :guilabel:`Next`."
-msgstr ""
-
-#: ../../../guides/set-up-single-sign-on-saml.rst:53
-msgid "Select ``This is an internal app that we have created``."
-msgstr ""
-
-#: ../../../guides/set-up-single-sign-on-saml.rst:54
-msgid "Click :guilabel:`Finish`."
-msgstr ""
-
-#: ../../../guides/set-up-single-sign-on-saml.rst:59
-msgid "Enable SAML on your Read the Docs organization"
+#: ../../../guides/set-up-single-sign-on-saml.rst:1
+msgid "user.profile.lastName"
 msgstr ""
 
 #: ../../../guides/set-up-single-sign-on-saml.rst:61
+msgid "Enable SAML on your Read the Docs organization"
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:63
 msgid ""
 "Once you have created the SAML application in Okta, you need to enable SAML "
 "on Read the Docs."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:63
+#: ../../../guides/set-up-single-sign-on-saml.rst:65
 msgid "Copy the Metadata URL from the Okta application you just created."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:65
+#: ../../../guides/set-up-single-sign-on-saml.rst:67
 msgid "On Okta, click on the :guilabel:`Applications`."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:66
+#: ../../../guides/set-up-single-sign-on-saml.rst:68
 msgid "Click on the Read the Docs application."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:67
+#: ../../../guides/set-up-single-sign-on-saml.rst:69
 msgid "Click on the :guilabel:`Sign On` tab."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:68
+#: ../../../guides/set-up-single-sign-on-saml.rst:70
 msgid "Copy the :guilabel:`Metadata URL`."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:70
+#: ../../../guides/set-up-single-sign-on-saml.rst:72
 msgid ""
 "Go you your `organization's SAML settings page <https://app.readthedocs.com/"
 "organizations/choose/organization_saml/>`__."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:71
+#: ../../../guides/set-up-single-sign-on-saml.rst:73
 msgid "Paste the Metadata URL in the :guilabel:`Metadata URL` field."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:72
+#: ../../../guides/set-up-single-sign-on-saml.rst:74
 msgid "Leave the domain field empty."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:73
+#: ../../../guides/set-up-single-sign-on-saml.rst:75
 msgid "Click :guilabel:`Save`."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:75
+#: ../../../guides/set-up-single-sign-on-saml.rst:77
 msgid ""
 "Attaching the email domain your organization uses to enforce SAML is "
 "currently done by the Read the Docs team, contact :doc:`support </support>` "
 "using an account that's an owner of the organization."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:79
+#: ../../../guides/set-up-single-sign-on-saml.rst:81
 msgid "Configure a team for users to join automatically"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:81
+#: ../../../guides/set-up-single-sign-on-saml.rst:83
 msgid ""
 "After you have enabled SAML on your organization, a team named \"SAML "
 "Users\" will be created automatically, and all users that sign up with SAML "
@@ -266,42 +270,70 @@ msgid ""
 "configure a different team or teams for users to join automatically."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:86
+#: ../../../guides/set-up-single-sign-on-saml.rst:88
 msgid "To configure a team for users to join automatically:"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:88
+#: ../../../guides/set-up-single-sign-on-saml.rst:90
 msgid ""
 "Navigate to the `teams management page <https://app.readthedocs.com/"
 "organizations/choose/organization_team_list/>`__."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:89
+#: ../../../guides/set-up-single-sign-on-saml.rst:91
 msgid "Click the :guilabel:`<team name>`."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:90
+#: ../../../guides/set-up-single-sign-on-saml.rst:92
 msgid "Click :guilabel:`Edit team`"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:91
+#: ../../../guides/set-up-single-sign-on-saml.rst:93
 msgid ""
 "Enable *Auto join users with an organization's email address to this team*."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:92
+#: ../../../guides/set-up-single-sign-on-saml.rst:94
 msgid "Click :guilabel:`Save`"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:95
+#: ../../../guides/set-up-single-sign-on-saml.rst:97
 msgid "User management"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:98
+#: ../../../guides/set-up-single-sign-on-saml.rst:100
+msgid "Signing in with SAML"
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:102
+msgid ""
+"Once SAML is enabled for your organization, users can sign in using SAML by "
+"following these steps:"
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:104
+msgid "Go to `https://app.readthedocs.com/ <https://app.readthedocs.com/>`__."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:105
+msgid "Click on the :guilabel:`Single sign-on` tab."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:106
+msgid "Enter your company email address."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:107
+msgid ""
+"Click :guilabel:`Continue` to be redirected to your organization's identity "
+"provider to complete the sign-in process."
+msgstr ""
+
+#: ../../../guides/set-up-single-sign-on-saml.rst:110
 msgid "New users"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:100
+#: ../../../guides/set-up-single-sign-on-saml.rst:112
 msgid ""
 "After enabling the SAML integration, all users with an email domain matching "
 "the one in your SAML integration will be required to sign up using SAML. "
@@ -309,28 +341,28 @@ msgid ""
 "within the teams you have configured to auto-join users."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:105
+#: ../../../guides/set-up-single-sign-on-saml.rst:117
 msgid "Existing users"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:107
+#: ../../../guides/set-up-single-sign-on-saml.rst:119
 msgid ""
 "Existing users with email addresses from your configured domain will not be "
 "required to sign in using SAML, but they won't be automatically joined to "
 "your organization."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:110
+#: ../../../guides/set-up-single-sign-on-saml.rst:122
 msgid ""
 "If you want to enforce SAML for existing users, you have the following "
 "options:"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:112
+#: ../../../guides/set-up-single-sign-on-saml.rst:124
 msgid "Users can delete their accounts, and sign up again using SAML."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:113
+#: ../../../guides/set-up-single-sign-on-saml.rst:125
 msgid ""
 "Users can link their existing accounts to their SAML identity by following "
 "this link while logged in their Read the Docs account: ``https://app."
@@ -340,54 +372,54 @@ msgid ""
 "readthedocs.com/organizations/choose/organization_saml/>`__."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:118
+#: ../../../guides/set-up-single-sign-on-saml.rst:130
 msgid "Outside collaborators"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:120
+#: ../../../guides/set-up-single-sign-on-saml.rst:132
 msgid ""
 "You can still add outside collaborators that don't use SAML and manage their "
 "access. There are two ways to manage this access:"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:123
+#: ../../../guides/set-up-single-sign-on-saml.rst:135
 msgid ""
 "Using :doc:`teams </guides/manage-read-the-docs-teams>` to provide access "
 "for ongoing contribution."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:124
+#: ../../../guides/set-up-single-sign-on-saml.rst:136
 msgid ""
 "Using :doc:`sharing </commercial/sharing>` to provide short-term access "
 "requiring a login."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:127
+#: ../../../guides/set-up-single-sign-on-saml.rst:139
 msgid "Revoke user's access to all the projects"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:129
+#: ../../../guides/set-up-single-sign-on-saml.rst:141
 msgid ""
 "By disabling access to the SAML integration to a user, you revoke access to "
 "all the projects their linked Read the Docs user had access to, and disable "
 "login on Read the Docs completely for that user."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:135
+#: ../../../guides/set-up-single-sign-on-saml.rst:147
 msgid ""
 "If the user signed up to Read the Docs previously to enabling SAML on your "
 "organization, they may still have access to their account and projects if "
 "they were manually added to a team."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:138
-#: ../../../guides/set-up-single-sign-on-saml.rst:146
+#: ../../../guides/set-up-single-sign-on-saml.rst:150
+#: ../../../guides/set-up-single-sign-on-saml.rst:158
 msgid ""
 "To completely revoke access to a user, remove them from all the teams they "
 "are part of."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:142
+#: ../../../guides/set-up-single-sign-on-saml.rst:154
 msgid ""
 "If the user was already signed in to Read the Docs when their access was "
 "revoked, they may still have access to documentation pages until their "
@@ -395,18 +427,18 @@ msgid ""
 "pages."
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:150
+#: ../../../guides/set-up-single-sign-on-saml.rst:162
 msgid ":doc:`/guides/manage-read-the-docs-teams`"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:151
+#: ../../../guides/set-up-single-sign-on-saml.rst:163
 msgid "Additional user management options"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:152
+#: ../../../guides/set-up-single-sign-on-saml.rst:164
 msgid ":doc:`/commercial/single-sign-on`"
 msgstr ""
 
-#: ../../../guides/set-up-single-sign-on-saml.rst:153
+#: ../../../guides/set-up-single-sign-on-saml.rst:165
 msgid "Information about choosing a single sign-on approach"
 msgstr ""

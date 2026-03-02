@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,12 +54,12 @@ msgid "Search query (see :doc:`/server-side-search/syntax`)"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:21
-#: ../../../server-side-search/api.rst:190
+#: ../../../server-side-search/api.rst:195
 msgid "Jump to a specific page"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:22
-#: ../../../server-side-search/api.rst:191
+#: ../../../server-side-search/api.rst:196
 msgid "Limits the results per page, default is 50"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgid "Response JSON Object"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:26
-#: ../../../server-side-search/api.rst:195
+#: ../../../server-side-search/api.rst:200
 msgid "The type of the result, currently page is the only type."
 msgstr ""
 
@@ -81,29 +81,29 @@ msgid "The version object"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:29
-#: ../../../server-side-search/api.rst:199
+#: ../../../server-side-search/api.rst:204
 msgid "The title of the page"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:30
-#: ../../../server-side-search/api.rst:200
+#: ../../../server-side-search/api.rst:205
 msgid "Canonical domain of the resulting page"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:31
-#: ../../../server-side-search/api.rst:201
+#: ../../../server-side-search/api.rst:206
 msgid "Path to the resulting page"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:32
-#: ../../../server-side-search/api.rst:202
+#: ../../../server-side-search/api.rst:207
 msgid ""
 "An object containing a list of substrings with matching terms. Note that the "
 "text is HTML escaped with the matching terms inside a ``<span>`` tag."
 msgstr ""
 
 #: ../../../server-side-search/api.rst:34
-#: ../../../server-side-search/api.rst:204
+#: ../../../server-side-search/api.rst:209
 msgid ""
 "A list of block objects containing search results from the page. Currently, "
 "there is one type of block:  - section: A page section with a linkable "
@@ -111,26 +111,26 @@ msgid ""
 msgstr ""
 
 #: ../../../server-side-search/api.rst:36
-#: ../../../server-side-search/api.rst:206
+#: ../../../server-side-search/api.rst:211
 msgid ""
 "A list of block objects containing search results from the page. Currently, "
 "there is one type of block:"
 msgstr ""
 
 #: ../../../server-side-search/api.rst:39
-#: ../../../server-side-search/api.rst:209
+#: ../../../server-side-search/api.rst:214
 msgid "section: A page section with a linkable anchor (``id`` attribute)."
 msgstr ""
 
 #: ../../../server-side-search/api.rst:43
-#: ../../../server-side-search/api.rst:213
+#: ../../../server-side-search/api.rst:218
 msgid ""
 "Except for highlights, any other content is not HTML escaped, you shouldn't "
 "include it in your page without escaping it first."
 msgstr ""
 
 #: ../../../server-side-search/api.rst:46
-#: ../../../server-side-search/api.rst:216
+#: ../../../server-side-search/api.rst:221
 msgid "**Example request**:"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgid ""
 msgstr ""
 
 #: ../../../server-side-search/api.rst:64
-#: ../../../server-side-search/api.rst:236
+#: ../../../server-side-search/api.rst:241
 msgid "**Example response**:"
 msgstr ""
 
@@ -296,7 +296,17 @@ msgid ""
 "of the valid :doc:`sharing methods </commercial/sharing>`."
 msgstr ""
 
-#: ../../../server-side-search/api.rst:166
+#: ../../../server-side-search/api.rst:168
+msgid ":doc:`/api/v3`"
+msgstr ""
+
+#: ../../../server-side-search/api.rst:169
+msgid ""
+"You can create and revoke sharing methods programmatically from ``/api/v3/"
+"projects/<project_slug>/sharing/``."
+msgstr ""
+
+#: ../../../server-side-search/api.rst:171
 msgid ""
 "To be able to use the user's current session you need to use the API from "
 "the domain where your docs are being served (``<you-docs-domain>/_/api/v3/"
@@ -304,54 +314,54 @@ msgid ""
 "for the ``https://docs.readthedocs-hosted.com/`` project, for example."
 msgstr ""
 
-#: ../../../server-side-search/api.rst:172
+#: ../../../server-side-search/api.rst:177
 msgid "API v2 (deprecated)"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:176
+#: ../../../server-side-search/api.rst:181
 msgid ""
 "Please use our :ref:`server-side-search/api:api v3` instead, see :ref:"
 "`server-side-search/api:migrating from api v2`."
 msgstr ""
 
-#: ../../../server-side-search/api.rst:181
+#: ../../../server-side-search/api.rst:186
 msgid ""
 "Return a list of search results for a project, including results from its :"
 "doc:`/subprojects`. Results are divided into sections with highlights of the "
 "matching term."
 msgstr ""
 
-#: ../../../server-side-search/api.rst:187
+#: ../../../server-side-search/api.rst:192
 msgid "Search query"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:188
+#: ../../../server-side-search/api.rst:193
 msgid "Project slug"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:189
+#: ../../../server-side-search/api.rst:194
 msgid "Version slug"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:196
+#: ../../../server-side-search/api.rst:201
 msgid "The project slug"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:197
+#: ../../../server-side-search/api.rst:202
 msgid "Alias of the project if it's a subproject."
 msgstr ""
 
-#: ../../../server-side-search/api.rst:198
+#: ../../../server-side-search/api.rst:203
 msgid "The version slug"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:220
+#: ../../../server-side-search/api.rst:225
 msgid ""
 "$ curl \"https://app.readthedocs.org/api/v2/search/?"
 "project=docs&version=latest&q=server%20side%20search\""
 msgstr ""
 
-#: ../../../server-side-search/api.rst:224
+#: ../../../server-side-search/api.rst:229
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v2/search/'\n"
@@ -364,7 +374,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../server-side-search/api.rst:238
+#: ../../../server-side-search/api.rst:243
 msgid ""
 "{\n"
 "    \"count\": 41,\n"

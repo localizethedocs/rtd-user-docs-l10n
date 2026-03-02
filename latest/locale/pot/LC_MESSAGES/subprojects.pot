@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,27 +153,37 @@ msgid ""
 "plugin``."
 msgstr ""
 
-#: ../../../subprojects.rst:66
-msgid "Custom domain on subprojects"
+#: ../../../subprojects.rst:67
+msgid ":doc:`/url-path-prefixes`"
 msgstr ""
 
 #: ../../../subprojects.rst:68
+msgid ""
+"On |com_brand| Pro plans and higher, you can customize the ``/projects/`` "
+"prefix or remove it entirely."
+msgstr ""
+
+#: ../../../subprojects.rst:72
+msgid "Custom domain on subprojects"
+msgstr ""
+
+#: ../../../subprojects.rst:74
 msgid ""
 "Adding a custom domain to a subproject is not allowed, since your "
 "documentation will always be served from the domain of the parent project."
 msgstr ""
 
-#: ../../../subprojects.rst:73
+#: ../../../subprojects.rst:79
 msgid "Separate release cycles"
 msgstr ""
 
-#: ../../../subprojects.rst:75
+#: ../../../subprojects.rst:81
 msgid ""
 "By using subprojects, you can present the documentation of several projects "
 "even though they have separate release cycles."
 msgstr ""
 
-#: ../../../subprojects.rst:79
+#: ../../../subprojects.rst:85
 msgid ""
 "Your main project may have its own versions and releases, while all of its "
 "subprojects maintain their own individual versions and releases. We "
@@ -182,7 +192,7 @@ msgid ""
 "own release cycle."
 msgstr ""
 
-#: ../../../subprojects.rst:84
+#: ../../../subprojects.rst:90
 msgid ""
 "This is solved by having an individual :term:`flyout menu` active for the "
 "project that's viewed. When the user navigates to a subproject, they are "
@@ -190,11 +200,11 @@ msgid ""
 "downloadable-documentation`."
 msgstr ""
 
-#: ../../../subprojects.rst:89
+#: ../../../subprojects.rst:95
 msgid "Search"
 msgstr ""
 
-#: ../../../subprojects.rst:91
+#: ../../../subprojects.rst:97
 msgid ""
 "Search on the parent project will include results from its subprojects. If "
 "you search on the ``v1`` version of the parent project, results from the "
@@ -202,7 +212,7 @@ msgid ""
 "version for subprojects that don't have a ``v1`` version."
 msgstr ""
 
-#: ../../../subprojects.rst:96
+#: ../../../subprojects.rst:102
 msgid ""
 "This is currently the only way to share search results between projects, we "
 "do not yet support sharing search results between sibling subprojects or "
