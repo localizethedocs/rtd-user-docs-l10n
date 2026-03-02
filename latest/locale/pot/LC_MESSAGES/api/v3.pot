@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "user itself."
 msgstr ""
 
-#: ../../../api/v3.rst:30 ../../../api/v3.rst:84
+#: ../../../api/v3.rst:30 ../../../api/v3.rst:90
 msgid "|org_brand|"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgid ""
 "<https://app.readthedocs.org/accounts/tokens/>`__."
 msgstr ""
 
-#: ../../../api/v3.rst:37 ../../../api/v3.rst:90
+#: ../../../api/v3.rst:37 ../../../api/v3.rst:96
 msgid "|com_brand|"
 msgstr ""
 
@@ -94,11 +94,21 @@ msgid ""
 "requests to 60 per minute."
 msgstr ""
 
-#: ../../../api/v3.rst:56
+#: ../../../api/v3.rst:57
+msgid ""
+"Authenticating your API requests with a :ref:`token <api/v3:Token>` also "
+"bypasses most other rate limiting, including network-level blocks that may "
+"affect automated scripts accessing Read the Docs from cloud providers or CI "
+"environments. If your script is getting ``403 Forbidden`` responses, adding "
+"an ``Authorization: Token <your-access-token>`` header is the recommended "
+"solution."
+msgstr ""
+
+#: ../../../api/v3.rst:62
 msgid "Pagination"
 msgstr ""
 
-#: ../../../api/v3.rst:58
+#: ../../../api/v3.rst:64
 msgid ""
 "All endpoints that return a list of objects are paginated. By default, 10 "
 "objects are returned per page, but you can change this using the ``limit`` "
@@ -106,11 +116,11 @@ msgid ""
 "``previous`` attributes to navigate between pages."
 msgstr ""
 
-#: ../../../api/v3.rst:64
+#: ../../../api/v3.rst:70
 msgid "Resources"
 msgstr ""
 
-#: ../../../api/v3.rst:66
+#: ../../../api/v3.rst:72
 msgid ""
 "This section shows all the resources that are currently available in APIv3. "
 "There are some URL attributes that applies to all of these resources:"
@@ -120,7 +130,7 @@ msgstr ""
 msgid "?fields="
 msgstr ""
 
-#: ../../../api/v3.rst:71
+#: ../../../api/v3.rst:77
 msgid "Specify which fields are going to be returned in the response."
 msgstr ""
 
@@ -128,7 +138,7 @@ msgstr ""
 msgid "?omit="
 msgstr ""
 
-#: ../../../api/v3.rst:75
+#: ../../../api/v3.rst:81
 msgid "Specify which fields are going to be omitted from the response."
 msgstr ""
 
@@ -136,63 +146,64 @@ msgstr ""
 msgid "?expand="
 msgstr ""
 
-#: ../../../api/v3.rst:79
+#: ../../../api/v3.rst:85
 msgid ""
 "Some resources allow to expand/add extra fields on their responses (see "
 "`Project details <#project-details>`__ for example)."
 msgstr ""
 
-#: ../../../api/v3.rst:88
+#: ../../../api/v3.rst:94
 msgid ""
 "You can browse the full API by accessing its root URL: https://app."
 "readthedocs.org/api/v3/"
 msgstr ""
 
-#: ../../../api/v3.rst:94
+#: ../../../api/v3.rst:100
 msgid ""
 "You can browse the full API by accessing its root URL: https://app."
 "readthedocs.com/api/v3/"
 msgstr ""
 
-#: ../../../api/v3.rst:99
+#: ../../../api/v3.rst:105
 msgid ""
 "If you are using :doc:`Read the Docs for Business </commercial/index>` take "
 "into account that you will need to replace https://app.readthedocs.org/ by "
 "https://app.readthedocs.com/ in all the URLs used in the following examples."
 msgstr ""
 
-#: ../../../api/v3.rst:104
+#: ../../../api/v3.rst:110
 msgid "Projects"
 msgstr ""
 
-#: ../../../api/v3.rst:107
+#: ../../../api/v3.rst:113
 msgid "Projects list"
 msgstr ""
 
-#: ../../../api/v3.rst:111
+#: ../../../api/v3.rst:117
 msgid "Retrieve a list of all the projects for the current logged in user."
 msgstr ""
 
-#: ../../../api/v3.rst:113 ../../../api/v3.rst:221 ../../../api/v3.rst:346
-#: ../../../api/v3.rst:420 ../../../api/v3.rst:493 ../../../api/v3.rst:538
-#: ../../../api/v3.rst:581 ../../../api/v3.rst:649 ../../../api/v3.rst:712
-#: ../../../api/v3.rst:806 ../../../api/v3.rst:846 ../../../api/v3.rst:896
-#: ../../../api/v3.rst:934 ../../../api/v3.rst:971 ../../../api/v3.rst:1031
-#: ../../../api/v3.rst:1067 ../../../api/v3.rst:1248 ../../../api/v3.rst:1310
-#: ../../../api/v3.rst:1363 ../../../api/v3.rst:1478 ../../../api/v3.rst:1532
-#: ../../../api/v3.rst:1573 ../../../api/v3.rst:1628 ../../../api/v3.rst:1677
-#: ../../../api/v3.rst:1754 ../../../api/v3.rst:1815 ../../../api/v3.rst:1878
-#: ../../../api/v3.rst:2005
+#: ../../../api/v3.rst:119 ../../../api/v3.rst:227 ../../../api/v3.rst:353
+#: ../../../api/v3.rst:428 ../../../api/v3.rst:502 ../../../api/v3.rst:547
+#: ../../../api/v3.rst:590 ../../../api/v3.rst:658 ../../../api/v3.rst:721
+#: ../../../api/v3.rst:815 ../../../api/v3.rst:855 ../../../api/v3.rst:905
+#: ../../../api/v3.rst:943 ../../../api/v3.rst:980 ../../../api/v3.rst:1040
+#: ../../../api/v3.rst:1076 ../../../api/v3.rst:1257 ../../../api/v3.rst:1327
+#: ../../../api/v3.rst:1380 ../../../api/v3.rst:1495 ../../../api/v3.rst:1549
+#: ../../../api/v3.rst:1591 ../../../api/v3.rst:1637 ../../../api/v3.rst:1673
+#: ../../../api/v3.rst:1733 ../../../api/v3.rst:1780 ../../../api/v3.rst:1819
+#: ../../../api/v3.rst:1874 ../../../api/v3.rst:1923 ../../../api/v3.rst:2000
+#: ../../../api/v3.rst:2061 ../../../api/v3.rst:2124 ../../../api/v3.rst:2251
 msgid "**Example request**:"
 msgstr ""
 
-#: ../../../api/v3.rst:117
+#: ../../../api/v3.rst:123
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/"
 msgstr ""
 
-#: ../../../api/v3.rst:121
+#: ../../../api/v3.rst:127
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/'\n"
@@ -202,18 +213,19 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:130 ../../../api/v3.rst:238 ../../../api/v3.rst:394
-#: ../../../api/v3.rst:555 ../../../api/v3.rst:598 ../../../api/v3.rst:729
-#: ../../../api/v3.rst:823 ../../../api/v3.rst:865 ../../../api/v3.rst:913
-#: ../../../api/v3.rst:951 ../../../api/v3.rst:1013 ../../../api/v3.rst:1084
-#: ../../../api/v3.rst:1296 ../../../api/v3.rst:1352 ../../../api/v3.rst:1515
-#: ../../../api/v3.rst:1590 ../../../api/v3.rst:1645 ../../../api/v3.rst:1694
-#: ../../../api/v3.rst:1771 ../../../api/v3.rst:1832 ../../../api/v3.rst:1895
-#: ../../../api/v3.rst:2011
+#: ../../../api/v3.rst:136 ../../../api/v3.rst:244 ../../../api/v3.rst:402
+#: ../../../api/v3.rst:564 ../../../api/v3.rst:607 ../../../api/v3.rst:738
+#: ../../../api/v3.rst:832 ../../../api/v3.rst:874 ../../../api/v3.rst:922
+#: ../../../api/v3.rst:960 ../../../api/v3.rst:1022 ../../../api/v3.rst:1093
+#: ../../../api/v3.rst:1313 ../../../api/v3.rst:1369 ../../../api/v3.rst:1532
+#: ../../../api/v3.rst:1608 ../../../api/v3.rst:1654 ../../../api/v3.rst:1719
+#: ../../../api/v3.rst:1768 ../../../api/v3.rst:1836 ../../../api/v3.rst:1891
+#: ../../../api/v3.rst:1940 ../../../api/v3.rst:2017 ../../../api/v3.rst:2078
+#: ../../../api/v3.rst:2141 ../../../api/v3.rst:2257
 msgid "**Example response**:"
 msgstr ""
 
-#: ../../../api/v3.rst:132
+#: ../../../api/v3.rst:138
 msgid ""
 "{\n"
 "    \"count\": 25,\n"
@@ -279,53 +291,53 @@ msgstr ""
 msgid "Query Parameters"
 msgstr ""
 
-#: ../../../api/v3.rst:193
+#: ../../../api/v3.rst:199
 msgid "return projects with matching name"
 msgstr ""
 
-#: ../../../api/v3.rst:194
+#: ../../../api/v3.rst:200
 msgid "return projects with matching slug"
 msgstr ""
 
-#: ../../../api/v3.rst:195
+#: ../../../api/v3.rst:201
 msgid "language code as ``en``, ``es``, ``ru``, etc."
 msgstr ""
 
-#: ../../../api/v3.rst:196
+#: ../../../api/v3.rst:202
 msgid "programming language code as ``py``, ``js``, etc."
 msgstr ""
 
-#: ../../../api/v3.rst:198 ../../../api/v3.rst:1147
+#: ../../../api/v3.rst:204 ../../../api/v3.rst:1156
 msgid ""
 "The ``results`` in response is an array of project data, which is same as :"
 "http:get:`/api/v3/projects/(string:project_slug)/`."
 msgstr ""
 
-#: ../../../api/v3.rst:205 ../../../api/v3.rst:318 ../../../api/v3.rst:402
+#: ../../../api/v3.rst:211 ../../../api/v3.rst:325 ../../../api/v3.rst:410
 msgid ":doc:`Read the Docs for Business </commercial/index>`, also accepts"
 msgstr ""
 
-#: ../../../api/v3.rst:209
+#: ../../../api/v3.rst:215
 msgid ""
 "**expand** (*string*) -- Add additional fields in the response. Allowed "
 "values are: ``organization``."
 msgstr ""
 
-#: ../../../api/v3.rst:215
+#: ../../../api/v3.rst:221
 msgid "Project details"
 msgstr ""
 
-#: ../../../api/v3.rst:219
+#: ../../../api/v3.rst:225
 msgid "Retrieve details of a single project."
 msgstr ""
 
-#: ../../../api/v3.rst:225
+#: ../../../api/v3.rst:231
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/"
 msgstr ""
 
-#: ../../../api/v3.rst:229
+#: ../../../api/v3.rst:235
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/'\n"
@@ -335,7 +347,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:240
+#: ../../../api/v3.rst:246
 msgid ""
 "{\n"
 "    \"id\": 12345,\n"
@@ -387,6 +399,7 @@ msgid ""
 "    \"privacy_level\": \"public\",\n"
 "    \"external_builds_privacy_level\": \"public\",\n"
 "    \"versioning_scheme\": \"multiple_versions_with_translations\",\n"
+"    \"readthedocs_yaml_path\": null,\n"
 "    \"_links\": {\n"
 "        \"_self\": \"/api/v3/projects/pip/\",\n"
 "        \"versions\": \"/api/v3/projects/pip/versions/\",\n"
@@ -399,29 +412,29 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:302
+#: ../../../api/v3.rst:309
 msgid ""
 "Add additional fields in the response. Allowed values are: "
 "``active_versions``. Multiple fields can be passed separated by commas."
 msgstr ""
 
-#: ../../../api/v3.rst:308
+#: ../../../api/v3.rst:315
 msgid "``versioning_scheme`` can be one of the following values:"
 msgstr ""
 
-#: ../../../api/v3.rst:310
+#: ../../../api/v3.rst:317
 msgid "``multiple_versions_with_translations``"
 msgstr ""
 
-#: ../../../api/v3.rst:311
+#: ../../../api/v3.rst:318
 msgid "``multiple_versions_without_translations``"
 msgstr ""
 
-#: ../../../api/v3.rst:312
+#: ../../../api/v3.rst:319
 msgid "``single_version_without_translations``"
 msgstr ""
 
-#: ../../../api/v3.rst:322
+#: ../../../api/v3.rst:329
 msgid ""
 "**expand** (*string*) -- Add additional fields in the response. Allowed "
 "values are: ``organization``. We used to return a full organization object "
@@ -430,13 +443,13 @@ msgid ""
 "the organization endpoint with the slug."
 msgstr ""
 
-#: ../../../api/v3.rst:330
+#: ../../../api/v3.rst:337
 msgid ""
 "The ``single_version`` attribute is deprecated, use ``versioning_scheme`` "
 "instead."
 msgstr ""
 
-#: ../../../api/v3.rst:335
+#: ../../../api/v3.rst:342
 msgid ""
 "Previously, ``translation_of`` and ``subproject_of`` returned a full project "
 "object, due to privacy concerns, now they return only the slug of the "
@@ -444,15 +457,15 @@ msgid ""
 "endpoint with the slug."
 msgstr ""
 
-#: ../../../api/v3.rst:340
+#: ../../../api/v3.rst:347
 msgid "Project create"
 msgstr ""
 
-#: ../../../api/v3.rst:344
+#: ../../../api/v3.rst:351
 msgid "Import a project under authenticated user."
 msgstr ""
 
-#: ../../../api/v3.rst:350
+#: ../../../api/v3.rst:357
 msgid ""
 "$ curl \\\n"
 "  -X POST \\\n"
@@ -462,7 +475,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:358
+#: ../../../api/v3.rst:365
 msgid ""
 "import requests\n"
 "import json\n"
@@ -478,13 +491,13 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:373 ../../../api/v3.rst:447 ../../../api/v3.rst:676
-#: ../../../api/v3.rst:998 ../../../api/v3.rst:1275 ../../../api/v3.rst:1337
-#: ../../../api/v3.rst:1505
+#: ../../../api/v3.rst:380 ../../../api/v3.rst:455 ../../../api/v3.rst:685
+#: ../../../api/v3.rst:1007 ../../../api/v3.rst:1284 ../../../api/v3.rst:1354
+#: ../../../api/v3.rst:1522 ../../../api/v3.rst:1700 ../../../api/v3.rst:1760
 msgid "The content of ``body.json`` is like,"
 msgstr ""
 
-#: ../../../api/v3.rst:375
+#: ../../../api/v3.rst:382
 msgid ""
 "{\n"
 "    \"name\": \"Test Project\",\n"
@@ -497,6 +510,7 @@ msgid ""
 "    \"language\": \"es\",\n"
 "    \"privacy_level\": \"public\",\n"
 "    \"external_builds_privacy_level\": \"public\",\n"
+"    \"readthedocs_yaml_path\": \"docs/.readthedocs.yaml\",\n"
 "    \"tags\": [\n"
 "        \"automation\",\n"
 "        \"sphinx\"\n"
@@ -504,7 +518,7 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:396
+#: ../../../api/v3.rst:404
 msgid "`See Project details <#project-details>`__"
 msgstr ""
 
@@ -512,32 +526,32 @@ msgstr ""
 msgid "Request JSON Object"
 msgstr ""
 
-#: ../../../api/v3.rst:406
+#: ../../../api/v3.rst:414
 msgid ""
 "**organization** (*string*) -- required organization's slug under the "
 "project will be imported."
 msgstr ""
 
-#: ../../../api/v3.rst:407
+#: ../../../api/v3.rst:415
 msgid ""
 "**teams** (*string*) -- optional teams' slugs the project will belong to."
 msgstr ""
 
-#: ../../../api/v3.rst:411 ../../../api/v3.rst:481 ../../../api/v3.rst:690
+#: ../../../api/v3.rst:419 ../../../api/v3.rst:490 ../../../api/v3.rst:699
 msgid ""
 "Privacy levels are only available in :doc:`Read the Docs for Business </"
 "commercial/index>`."
 msgstr ""
 
-#: ../../../api/v3.rst:414
+#: ../../../api/v3.rst:422
 msgid "Project update"
 msgstr ""
 
-#: ../../../api/v3.rst:418
+#: ../../../api/v3.rst:426
 msgid "Update an existing project."
 msgstr ""
 
-#: ../../../api/v3.rst:424
+#: ../../../api/v3.rst:432
 msgid ""
 "$ curl \\\n"
 "  -X PATCH \\\n"
@@ -547,7 +561,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:432
+#: ../../../api/v3.rst:440
 msgid ""
 "import requests\n"
 "import json\n"
@@ -563,7 +577,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:449
+#: ../../../api/v3.rst:457
 msgid ""
 "{\n"
 "    \"name\": \"New name for the project\",\n"
@@ -583,13 +597,14 @@ msgid ""
 "    \"analytics_code\": \"UA000000\",\n"
 "    \"analytics_disabled\": false,\n"
 "    \"versioning_scheme\": \"multiple_versions_with_translations\",\n"
+"    \"readthedocs_yaml_path\": \"docs/.readthedocs.yaml\",\n"
 "    \"external_builds_enabled\": true,\n"
 "    \"privacy_level\": \"public\",\n"
 "    \"external_builds_privacy_level\": \"public\"\n"
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:476
+#: ../../../api/v3.rst:485
 msgid ""
 "Adding ``tags`` will replace existing tags with the new list, and if omitted "
 "won't change the tags."
@@ -599,19 +614,19 @@ msgstr ""
 msgid "Status Codes"
 msgstr ""
 
-#: ../../../api/v3.rst:483 ../../../api/v3.rst:686
+#: ../../../api/v3.rst:492 ../../../api/v3.rst:695
 msgid "Updated successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:487
+#: ../../../api/v3.rst:496
 msgid "Project versions sync"
 msgstr ""
 
-#: ../../../api/v3.rst:491
+#: ../../../api/v3.rst:500
 msgid "Trigger a background task to sync the versions of the project."
 msgstr ""
 
-#: ../../../api/v3.rst:497
+#: ../../../api/v3.rst:506
 msgid ""
 "$ curl \\\n"
 "  -X POST \\\n"
@@ -619,7 +634,7 @@ msgid ""
 "  https://app.readthedocs.org/api/v3/projects/pip/sync-versions/"
 msgstr ""
 
-#: ../../../api/v3.rst:504
+#: ../../../api/v3.rst:513
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/sync-versions/'\n"
@@ -632,44 +647,44 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:516
+#: ../../../api/v3.rst:525
 msgid "Task created successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:517
+#: ../../../api/v3.rst:526
 msgid "Bad request, task not created"
 msgstr ""
 
-#: ../../../api/v3.rst:520
+#: ../../../api/v3.rst:529
 msgid "Versions"
 msgstr ""
 
-#: ../../../api/v3.rst:522
+#: ../../../api/v3.rst:531
 msgid "Versions are different versions of the same project documentation."
 msgstr ""
 
-#: ../../../api/v3.rst:524
+#: ../../../api/v3.rst:533
 msgid ""
 "The versions for a given project can be viewed in a project's version page. "
 "For example, here is the `Pip project's version page`_. See :doc:`/versions` "
 "for more information."
 msgstr ""
 
-#: ../../../api/v3.rst:532
+#: ../../../api/v3.rst:541
 msgid "Versions listing"
 msgstr ""
 
-#: ../../../api/v3.rst:536
+#: ../../../api/v3.rst:545
 msgid "Retrieve a list of all versions for a project."
 msgstr ""
 
-#: ../../../api/v3.rst:542
+#: ../../../api/v3.rst:551
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/versions/"
 msgstr ""
 
-#: ../../../api/v3.rst:546
+#: ../../../api/v3.rst:555
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/'\n"
@@ -679,7 +694,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:557
+#: ../../../api/v3.rst:566
 msgid ""
 "{\n"
 "    \"count\": 25,\n"
@@ -689,45 +704,45 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:566
+#: ../../../api/v3.rst:575
 msgid "return only active versions"
 msgstr ""
 
-#: ../../../api/v3.rst:567
+#: ../../../api/v3.rst:576
 msgid "return only built versions"
 msgstr ""
 
-#: ../../../api/v3.rst:568
+#: ../../../api/v3.rst:577
 msgid "return versions with specific privacy level (``public`` or ``private``)"
 msgstr ""
 
-#: ../../../api/v3.rst:569
+#: ../../../api/v3.rst:578
 msgid "return versions with matching slug"
 msgstr ""
 
-#: ../../../api/v3.rst:570
+#: ../../../api/v3.rst:579
 msgid "return versions with specific type (``branch`` or ``tag``)"
 msgstr ""
 
-#: ../../../api/v3.rst:571
+#: ../../../api/v3.rst:580
 msgid "return versions with matching version name"
 msgstr ""
 
-#: ../../../api/v3.rst:575
+#: ../../../api/v3.rst:584
 msgid "Version detail"
 msgstr ""
 
-#: ../../../api/v3.rst:579
+#: ../../../api/v3.rst:588
 msgid "Retrieve details of a single version."
 msgstr ""
 
-#: ../../../api/v3.rst:585
+#: ../../../api/v3.rst:594
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/versions/stable/"
 msgstr ""
 
-#: ../../../api/v3.rst:589
+#: ../../../api/v3.rst:598
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/stable/'\n"
@@ -737,7 +752,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:600
+#: ../../../api/v3.rst:609
 msgid ""
 "{\n"
 "    \"id\": 71652437,\n"
@@ -779,35 +794,35 @@ msgstr ""
 msgid "Response JSON Object"
 msgstr ""
 
-#: ../../../api/v3.rst:633
+#: ../../../api/v3.rst:642
 msgid ""
 "the version slug where the ``stable`` version points to. ``null`` when it's "
 "not the stable version."
 msgstr ""
 
-#: ../../../api/v3.rst:635
+#: ../../../api/v3.rst:644
 msgid "the version has at least one successful build."
 msgstr ""
 
-#: ../../../api/v3.rst:638
+#: ../../../api/v3.rst:647
 msgid "Version update"
 msgstr ""
 
-#: ../../../api/v3.rst:642
+#: ../../../api/v3.rst:651
 msgid "Update a version."
 msgstr ""
 
-#: ../../../api/v3.rst:644
+#: ../../../api/v3.rst:653
 msgid ""
 "When a version is deactivated, its documentation is removed, and when it's "
 "activated, a new build is triggered."
 msgstr ""
 
-#: ../../../api/v3.rst:647
+#: ../../../api/v3.rst:656
 msgid "Updates to a version also invalidates its CDN cache."
 msgstr ""
 
-#: ../../../api/v3.rst:653
+#: ../../../api/v3.rst:662
 msgid ""
 "$ curl \\\n"
 "  -X PATCH \\\n"
@@ -817,7 +832,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:661
+#: ../../../api/v3.rst:670
 msgid ""
 "import requests\n"
 "import json\n"
@@ -833,7 +848,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:678
+#: ../../../api/v3.rst:687
 msgid ""
 "{\n"
 "    \"active\": true,\n"
@@ -842,38 +857,38 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:693
+#: ../../../api/v3.rst:702
 msgid "Builds"
 msgstr ""
 
-#: ../../../api/v3.rst:695
+#: ../../../api/v3.rst:704
 msgid ""
 "Builds are created by Read the Docs whenever a ``Project`` has its "
 "documentation built. Frequently this happens automatically via a web hook "
 "but can be triggered manually."
 msgstr ""
 
-#: ../../../api/v3.rst:698
+#: ../../../api/v3.rst:707
 msgid ""
 "Builds can be viewed in the build page for a project. For example, here is "
 "`Pip's build page`_. See :doc:`/builds` for more information."
 msgstr ""
 
-#: ../../../api/v3.rst:706
+#: ../../../api/v3.rst:715
 msgid "Build details"
 msgstr ""
 
-#: ../../../api/v3.rst:710
+#: ../../../api/v3.rst:719
 msgid "Retrieve details of a single build for a project."
 msgstr ""
 
-#: ../../../api/v3.rst:716
+#: ../../../api/v3.rst:725
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/builds/8592686/?expand=config"
 msgstr ""
 
-#: ../../../api/v3.rst:720
+#: ../../../api/v3.rst:729
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/builds/8592686/?"
@@ -884,7 +899,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:731
+#: ../../../api/v3.rst:740
 msgid ""
 "{\n"
 "    \"id\": 8592686,\n"
@@ -944,47 +959,47 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:789
+#: ../../../api/v3.rst:798
 msgid "The ISO-8601 datetime when the build was created."
 msgstr ""
 
-#: ../../../api/v3.rst:790
+#: ../../../api/v3.rst:799
 msgid "The ISO-8601 datetime when the build has finished."
 msgstr ""
 
-#: ../../../api/v3.rst:791
+#: ../../../api/v3.rst:800
 msgid "The length of the build in seconds."
 msgstr ""
 
-#: ../../../api/v3.rst:792
+#: ../../../api/v3.rst:801
 msgid ""
 "The state of the build (one of ``triggered``, ``building``, ``installing``, "
 "``cloning``, ``finished`` or ``cancelled``)"
 msgstr ""
 
-#: ../../../api/v3.rst:793
+#: ../../../api/v3.rst:802
 msgid "An error message if the build was unsuccessful"
 msgstr ""
 
-#: ../../../api/v3.rst:795
+#: ../../../api/v3.rst:804
 msgid "Add additional fields in the response. Allowed value is ``config``."
 msgstr ""
 
-#: ../../../api/v3.rst:800
+#: ../../../api/v3.rst:809
 msgid "Builds listing"
 msgstr ""
 
-#: ../../../api/v3.rst:804
+#: ../../../api/v3.rst:813
 msgid "Retrieve list of all the builds on this project."
 msgstr ""
 
-#: ../../../api/v3.rst:810
+#: ../../../api/v3.rst:819
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/builds/"
 msgstr ""
 
-#: ../../../api/v3.rst:814
+#: ../../../api/v3.rst:823
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/builds/'\n"
@@ -994,7 +1009,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:825
+#: ../../../api/v3.rst:834
 msgid ""
 "{\n"
 "    \"count\": 15,\n"
@@ -1004,23 +1019,23 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:834
+#: ../../../api/v3.rst:843
 msgid "commit hash to filter the builds returned by commit"
 msgstr ""
 
-#: ../../../api/v3.rst:835
+#: ../../../api/v3.rst:844
 msgid "filter the builds that are currently building/running"
 msgstr ""
 
-#: ../../../api/v3.rst:839
+#: ../../../api/v3.rst:848
 msgid "Build triggering"
 msgstr ""
 
-#: ../../../api/v3.rst:844
+#: ../../../api/v3.rst:853
 msgid "Trigger a new build for the ``version_slug`` version of this project."
 msgstr ""
 
-#: ../../../api/v3.rst:850
+#: ../../../api/v3.rst:859
 msgid ""
 "$ curl \\\n"
 "  -X POST \\\n"
@@ -1028,7 +1043,7 @@ msgid ""
 "projects/pip/versions/latest/builds/"
 msgstr ""
 
-#: ../../../api/v3.rst:856
+#: ../../../api/v3.rst:865
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/versions/latest/"
@@ -1039,7 +1054,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:867
+#: ../../../api/v3.rst:876
 msgid ""
 "{\n"
 "    \"build\": \"{BUILD}\",\n"
@@ -1048,15 +1063,15 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:875
+#: ../../../api/v3.rst:884
 msgid "the build was triggered"
 msgstr ""
 
-#: ../../../api/v3.rst:879
+#: ../../../api/v3.rst:888
 msgid "Subprojects"
 msgstr ""
 
-#: ../../../api/v3.rst:881
+#: ../../../api/v3.rst:890
 msgid ""
 "Projects can be configured in a nested manner, by configuring a project as a "
 "subproject of another project. This allows for documentation projects to "
@@ -1064,21 +1079,21 @@ msgid ""
 "maintained independently. See :doc:`/subprojects` for more information."
 msgstr ""
 
-#: ../../../api/v3.rst:889
+#: ../../../api/v3.rst:898
 msgid "Subproject details"
 msgstr ""
 
-#: ../../../api/v3.rst:894
+#: ../../../api/v3.rst:903
 msgid "Retrieve details of a subproject relationship."
 msgstr ""
 
-#: ../../../api/v3.rst:900
+#: ../../../api/v3.rst:909
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/subprojects/subproject-alias/"
 msgstr ""
 
-#: ../../../api/v3.rst:904
+#: ../../../api/v3.rst:913
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/"
@@ -1089,7 +1104,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:915
+#: ../../../api/v3.rst:924
 msgid ""
 "{\n"
 "    \"alias\": \"subproject-alias\",\n"
@@ -1100,21 +1115,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:927
+#: ../../../api/v3.rst:936
 msgid "Subprojects listing"
 msgstr ""
 
-#: ../../../api/v3.rst:932
+#: ../../../api/v3.rst:941
 msgid "Retrieve a list of all sub-projects for a project."
 msgstr ""
 
-#: ../../../api/v3.rst:938
+#: ../../../api/v3.rst:947
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/subprojects/"
 msgstr ""
 
-#: ../../../api/v3.rst:942
+#: ../../../api/v3.rst:951
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/'\n"
@@ -1124,7 +1139,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:953
+#: ../../../api/v3.rst:962
 msgid ""
 "{\n"
 "    \"count\": 25,\n"
@@ -1134,15 +1149,15 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:964
+#: ../../../api/v3.rst:973
 msgid "Subproject create"
 msgstr ""
 
-#: ../../../api/v3.rst:969
+#: ../../../api/v3.rst:978
 msgid "Create a subproject relationship between two projects."
 msgstr ""
 
-#: ../../../api/v3.rst:975
+#: ../../../api/v3.rst:984
 msgid ""
 "$ curl \\\n"
 "  -X POST \\\n"
@@ -1152,7 +1167,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:983
+#: ../../../api/v3.rst:992
 msgid ""
 "import requests\n"
 "import json\n"
@@ -1168,7 +1183,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1000
+#: ../../../api/v3.rst:1009
 msgid ""
 "{\n"
 "    \"child\": \"subproject-child-slug\",\n"
@@ -1176,40 +1191,40 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1009
+#: ../../../api/v3.rst:1018
 msgid ""
 "``child`` must be a project that you have access to. Or if you are using :"
 "doc:`/commercial/index`, additionally the project must be under the same "
 "organization as the parent project."
 msgstr ""
 
-#: ../../../api/v3.rst:1015
+#: ../../../api/v3.rst:1024
 msgid "`See Subproject details <#subproject-details>`_"
 msgstr ""
 
-#: ../../../api/v3.rst:1017
+#: ../../../api/v3.rst:1026
 msgid "slug of the child project in the relationship."
 msgstr ""
 
-#: ../../../api/v3.rst:1018
+#: ../../../api/v3.rst:1027
 msgid ""
 "optional slug alias to be used in the URL (e.g ``/projects/<alias>/en/latest/"
 "``). If not provided, child project's slug is used as alias."
 msgstr ""
 
-#: ../../../api/v3.rst:1021
+#: ../../../api/v3.rst:1030
 msgid "Subproject created successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:1025
+#: ../../../api/v3.rst:1034
 msgid "Subproject delete"
 msgstr ""
 
-#: ../../../api/v3.rst:1029
+#: ../../../api/v3.rst:1038
 msgid "Delete a subproject relationship."
 msgstr ""
 
-#: ../../../api/v3.rst:1035
+#: ../../../api/v3.rst:1044
 msgid ""
 "$ curl \\\n"
 "  -X DELETE \\\n"
@@ -1217,7 +1232,7 @@ msgid ""
 "projects/pip/subprojects/subproject-alias/"
 msgstr ""
 
-#: ../../../api/v3.rst:1041
+#: ../../../api/v3.rst:1050
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/subprojects/"
@@ -1228,35 +1243,35 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1050
+#: ../../../api/v3.rst:1059
 msgid "Subproject deleted successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:1054
+#: ../../../api/v3.rst:1063
 msgid "Translations"
 msgstr ""
 
-#: ../../../api/v3.rst:1056
+#: ../../../api/v3.rst:1065
 msgid ""
 "Translations are the same version of a Project in a different language. See :"
 "doc:`/localization` for more information."
 msgstr ""
 
-#: ../../../api/v3.rst:1060
+#: ../../../api/v3.rst:1069
 msgid "Translations listing"
 msgstr ""
 
-#: ../../../api/v3.rst:1065
+#: ../../../api/v3.rst:1074
 msgid "Retrieve a list of all translations for a project."
 msgstr ""
 
-#: ../../../api/v3.rst:1071
+#: ../../../api/v3.rst:1080
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/translations/"
 msgstr ""
 
-#: ../../../api/v3.rst:1075
+#: ../../../api/v3.rst:1084
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/translations/'\n"
@@ -1266,7 +1281,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1086
+#: ../../../api/v3.rst:1095
 msgid ""
 "{\n"
 "    \"count\": 25,\n"
@@ -1328,37 +1343,37 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1152
+#: ../../../api/v3.rst:1161
 msgid "Redirects"
 msgstr ""
 
-#: ../../../api/v3.rst:1154
+#: ../../../api/v3.rst:1163
 msgid ""
 "Redirects allow the author to redirect an old URL of the documentation to a "
 "new one. This is useful when pages are moved around in the structure of the "
 "documentation set. See :doc:`/user-defined-redirects` for more information."
 msgstr ""
 
-#: ../../../api/v3.rst:1160
+#: ../../../api/v3.rst:1169
 msgid "Redirect details"
 msgstr ""
 
-#: ../../../api/v3.rst:1164
+#: ../../../api/v3.rst:1173
 msgid "Retrieve details of a single redirect for a project."
 msgstr ""
 
-#: ../../../api/v3.rst:1166 ../../../api/v3.rst:1213 ../../../api/v3.rst:1402
-#: ../../../api/v3.rst:1443
+#: ../../../api/v3.rst:1175 ../../../api/v3.rst:1222 ../../../api/v3.rst:1419
+#: ../../../api/v3.rst:1460
 msgid "**Example request**"
 msgstr ""
 
-#: ../../../api/v3.rst:1170
+#: ../../../api/v3.rst:1179
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/redirects/1/"
 msgstr ""
 
-#: ../../../api/v3.rst:1174
+#: ../../../api/v3.rst:1183
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/1/'\n"
@@ -1368,12 +1383,12 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1183 ../../../api/v3.rst:1230 ../../../api/v3.rst:1419
-#: ../../../api/v3.rst:1460
+#: ../../../api/v3.rst:1192 ../../../api/v3.rst:1239 ../../../api/v3.rst:1436
+#: ../../../api/v3.rst:1477
 msgid "**Example response**"
 msgstr ""
 
-#: ../../../api/v3.rst:1185
+#: ../../../api/v3.rst:1194
 msgid ""
 "{\n"
 "    \"pk\": 1,\n"
@@ -1395,21 +1410,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1207
+#: ../../../api/v3.rst:1216
 msgid "Redirects listing"
 msgstr ""
 
-#: ../../../api/v3.rst:1211
+#: ../../../api/v3.rst:1220
 msgid "Retrieve list of all the redirects for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1217
+#: ../../../api/v3.rst:1226
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/redirects/"
 msgstr ""
 
-#: ../../../api/v3.rst:1221
+#: ../../../api/v3.rst:1230
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/'\n"
@@ -1419,7 +1434,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1232
+#: ../../../api/v3.rst:1241
 msgid ""
 "{\n"
 "    \"count\": 25,\n"
@@ -1429,15 +1444,15 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1242
+#: ../../../api/v3.rst:1251
 msgid "Redirect create"
 msgstr ""
 
-#: ../../../api/v3.rst:1246
+#: ../../../api/v3.rst:1255
 msgid "Create a redirect for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1252
+#: ../../../api/v3.rst:1261
 msgid ""
 "$ curl \\\n"
 "  -X POST \\\n"
@@ -1447,7 +1462,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:1260
+#: ../../../api/v3.rst:1269
 msgid ""
 "import requests\n"
 "import json\n"
@@ -1463,58 +1478,85 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1277
+#: ../../../api/v3.rst:1286
 msgid ""
 "{\n"
 "    \"from_url\": \"/docs/\",\n"
 "    \"to_url\": \"/documentation/\",\n"
 "    \"type\": \"page\",\n"
 "    \"position\": 0,\n"
+"    \"force\": false,\n"
+"    \"enabled\": true,\n"
+"    \"description\": \"Redirect old docs to new location\",\n"
+"    \"http_status\": 302\n"
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1288
+#: ../../../api/v3.rst:1301
 msgid ""
-"``type`` can be one of ``page``, ``exact``, ``clean_url_to_html`` and "
-"``html_to_clean_url``."
+"``type`` (required) can be one of ``page``, ``exact``, ``clean_url_to_html`` "
+"and ``html_to_clean_url``."
 msgstr ""
 
-#: ../../../api/v3.rst:1289
+#: ../../../api/v3.rst:1302
 msgid ""
 "Depending on the ``type`` of the redirect, some fields may not be needed:"
 msgstr ""
 
-#: ../../../api/v3.rst:1291
+#: ../../../api/v3.rst:1304
 msgid "``page`` and ``exact`` types require ``from_url`` and ``to_url``."
 msgstr ""
 
-#: ../../../api/v3.rst:1292
+#: ../../../api/v3.rst:1305
 msgid ""
 "``clean_url_to_html`` and ``html_to_clean_url`` types do not require "
 "``from_url`` and ``to_url``."
 msgstr ""
 
-#: ../../../api/v3.rst:1294
-msgid "Position starts at 0 and is used to order redirects."
-msgstr ""
-
-#: ../../../api/v3.rst:1298 ../../../api/v3.rst:1354
-msgid "`See Redirect details <#redirect-details>`_"
-msgstr ""
-
-#: ../../../api/v3.rst:1300
-msgid "redirect created successfully"
-msgstr ""
-
-#: ../../../api/v3.rst:1304
-msgid "Redirect update"
+#: ../../../api/v3.rst:1307
+msgid ""
+"``position`` (optional, default: ``0``) - Order of execution. Position "
+"starts at 0 and is used to order redirects."
 msgstr ""
 
 #: ../../../api/v3.rst:1308
+msgid ""
+"``force`` (optional, default: ``false``) - Apply the redirect even if the "
+"page exists."
+msgstr ""
+
+#: ../../../api/v3.rst:1309
+msgid ""
+"``enabled`` (optional, default: ``true``) - Enable or disable the redirect."
+msgstr ""
+
+#: ../../../api/v3.rst:1310
+msgid "``description`` (optional) - A description for the redirect."
+msgstr ""
+
+#: ../../../api/v3.rst:1311
+msgid ""
+"``http_status`` (optional, default: ``302``) - HTTP status code, can be "
+"``301`` (permanent) or ``302`` (temporary)."
+msgstr ""
+
+#: ../../../api/v3.rst:1315 ../../../api/v3.rst:1371
+msgid "`See Redirect details <#redirect-details>`_"
+msgstr ""
+
+#: ../../../api/v3.rst:1317
+msgid "redirect created successfully"
+msgstr ""
+
+#: ../../../api/v3.rst:1321
+msgid "Redirect update"
+msgstr ""
+
+#: ../../../api/v3.rst:1325
 msgid "Update a redirect for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1314
+#: ../../../api/v3.rst:1331
 msgid ""
 "$ curl \\\n"
 "  -X PUT \\\n"
@@ -1524,7 +1566,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:1322
+#: ../../../api/v3.rst:1339
 msgid ""
 "import requests\n"
 "import json\n"
@@ -1540,7 +1582,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1339
+#: ../../../api/v3.rst:1356
 msgid ""
 "{\n"
 "    \"from_url\": \"/docs/\",\n"
@@ -1549,21 +1591,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1349
+#: ../../../api/v3.rst:1366
 msgid ""
 "If the position of the redirect is changed, it will be inserted in the new "
 "position and the other redirects will be reordered."
 msgstr ""
 
-#: ../../../api/v3.rst:1357
+#: ../../../api/v3.rst:1374
 msgid "Redirect delete"
 msgstr ""
 
-#: ../../../api/v3.rst:1361
+#: ../../../api/v3.rst:1378
 msgid "Delete a redirect for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1367
+#: ../../../api/v3.rst:1384
 msgid ""
 "$ curl \\\n"
 "  -X DELETE \\\n"
@@ -1571,7 +1613,7 @@ msgid ""
 "projects/pip/redirects/1/"
 msgstr ""
 
-#: ../../../api/v3.rst:1373
+#: ../../../api/v3.rst:1390
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/redirects/1/'\n"
@@ -1581,15 +1623,15 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1382
+#: ../../../api/v3.rst:1399
 msgid "Redirect deleted successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:1386
+#: ../../../api/v3.rst:1403
 msgid "Environment variables"
 msgstr ""
 
-#: ../../../api/v3.rst:1388
+#: ../../../api/v3.rst:1405
 msgid ""
 "Environment variables are variables that you can define for your project. "
 "These variables are used in the build process when building your "
@@ -1599,21 +1641,21 @@ msgid ""
 "builds. See :doc:`/environment-variables`."
 msgstr ""
 
-#: ../../../api/v3.rst:1396
+#: ../../../api/v3.rst:1413
 msgid "Environment variable details"
 msgstr ""
 
-#: ../../../api/v3.rst:1400
+#: ../../../api/v3.rst:1417
 msgid "Retrieve details of a single environment variable for a project."
 msgstr ""
 
-#: ../../../api/v3.rst:1406
+#: ../../../api/v3.rst:1423
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/environmentvariables/1/"
 msgstr ""
 
-#: ../../../api/v3.rst:1410
+#: ../../../api/v3.rst:1427
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
@@ -1624,7 +1666,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1421
+#: ../../../api/v3.rst:1438
 msgid ""
 "{\n"
 "    \"_links\": {\n"
@@ -1642,21 +1684,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1437
+#: ../../../api/v3.rst:1454
 msgid "Environment variables listing"
 msgstr ""
 
-#: ../../../api/v3.rst:1441
+#: ../../../api/v3.rst:1458
 msgid "Retrieve list of all the environment variables for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1447
+#: ../../../api/v3.rst:1464
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/projects/pip/environmentvariables/"
 msgstr ""
 
-#: ../../../api/v3.rst:1451
+#: ../../../api/v3.rst:1468
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
@@ -1667,7 +1709,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1462
+#: ../../../api/v3.rst:1479
 msgid ""
 "{\n"
 "    \"count\": 15,\n"
@@ -1678,15 +1720,15 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1472
+#: ../../../api/v3.rst:1489
 msgid "Environment variable create"
 msgstr ""
 
-#: ../../../api/v3.rst:1476
+#: ../../../api/v3.rst:1493
 msgid "Create an environment variable for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1482
+#: ../../../api/v3.rst:1499
 msgid ""
 "$ curl \\\n"
 "  -X POST \\\n"
@@ -1696,7 +1738,7 @@ msgid ""
 "  -d @body.json"
 msgstr ""
 
-#: ../../../api/v3.rst:1490
+#: ../../../api/v3.rst:1507
 msgid ""
 "import requests\n"
 "import json\n"
@@ -1713,7 +1755,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1507
+#: ../../../api/v3.rst:1524
 msgid ""
 "{\n"
 "    \"name\": \"MYVAR\",\n"
@@ -1722,29 +1764,29 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1517
+#: ../../../api/v3.rst:1534
 msgid "`See Environment Variable details <#environmentvariable-details>`_"
 msgstr ""
 
-#: ../../../api/v3.rst:1519
+#: ../../../api/v3.rst:1536
 msgid "Environment variable created successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:1523
+#: ../../../api/v3.rst:1540
 msgid ""
 "The `public` field is optional. If set to `true`, the environment variable "
 "will be exposed in PR builds. Defaults to `false`."
 msgstr ""
 
-#: ../../../api/v3.rst:1526
+#: ../../../api/v3.rst:1543
 msgid "Environment variable delete"
 msgstr ""
 
-#: ../../../api/v3.rst:1530
+#: ../../../api/v3.rst:1547
 msgid "Delete an environment variable for this project."
 msgstr ""
 
-#: ../../../api/v3.rst:1536
+#: ../../../api/v3.rst:1553
 msgid ""
 "$ curl \\\n"
 "  -X DELETE \\\n"
@@ -1752,7 +1794,7 @@ msgid ""
 "projects/pip/environmentvariables/1/"
 msgstr ""
 
-#: ../../../api/v3.rst:1542
+#: ../../../api/v3.rst:1559
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
@@ -1767,19 +1809,263 @@ msgstr ""
 msgid "Request Headers"
 msgstr ""
 
-#: ../../../api/v3.rst:1551 ../../../api/v3.rst:1860 ../../../api/v3.rst:1989
+#: ../../../api/v3.rst:1568 ../../../api/v3.rst:2106 ../../../api/v3.rst:2235
 msgid "token to authenticate."
 msgstr ""
 
-#: ../../../api/v3.rst:1553
+#: ../../../api/v3.rst:1570
 msgid "Environment variable deleted successfully"
 msgstr ""
 
-#: ../../../api/v3.rst:1557
+#: ../../../api/v3.rst:1574
+msgid "Sharing methods"
+msgstr ""
+
+#: ../../../api/v3.rst:1576
+msgid ""
+"Sharing methods allow you to grant temporary access to private documentation "
+"by using a secret link, a password, or an HTTP header token. See :doc:`/"
+"commercial/sharing` for more information."
+msgstr ""
+
+#: ../../../api/v3.rst:1581
+msgid ""
+"The ``/api/v3/projects/<project_slug>/sharing/`` endpoint is only available "
+"in :doc:`Read the Docs for Business </commercial/index>`."
+msgstr ""
+
+#: ../../../api/v3.rst:1585
+msgid "Sharing method details"
+msgstr ""
+
+#: ../../../api/v3.rst:1589
+msgid "Retrieve details of a single sharing method for a project."
+msgstr ""
+
+#: ../../../api/v3.rst:1595
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
+"v3/projects/pypa-pip/sharing/1/"
+msgstr ""
+
+#: ../../../api/v3.rst:1599
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/projects/pypa-pip/sharing/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1610
+msgid ""
+"{\n"
+"    \"_links\": {\n"
+"        \"_self\": \"https://app.readthedocs.com/api/v3/projects/pypa-pip/"
+"sharing/1/\",\n"
+"        \"project\": \"https://app.readthedocs.com/api/v3/projects/pypa-pip/"
+"\"\n"
+"    },\n"
+"    \"access_type\": \"token\",\n"
+"    \"allow_all\": true,\n"
+"    \"description\": \"Support team access\",\n"
+"    \"expires\": \"2026-12-31\",\n"
+"    \"id\": 1,\n"
+"    \"last_used_at\": null,\n"
+"    \"project\": \"pypa-pip\",\n"
+"    \"token\": \"<generated-token>\",\n"
+"    \"url\": \"https://pypa-pip.readthedocs-hosted.com/_/sharing/<generated-"
+"token>?next=/en/latest/\",\n"
+"    \"versions\": []\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1631
+msgid "Sharing methods listing"
+msgstr ""
+
+#: ../../../api/v3.rst:1635
+msgid "Retrieve list of all sharing methods for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1641
+msgid ""
+"$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
+"v3/projects/pypa-pip/sharing/"
+msgstr ""
+
+#: ../../../api/v3.rst:1645
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/projects/pypa-pip/sharing/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.get(URL, headers=HEADERS)\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1656
+msgid ""
+"{\n"
+"    \"count\": 2,\n"
+"    \"next\": null,\n"
+"    \"previous\": null,\n"
+"    \"results\": [\"SHARING METHOD\"]\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1667
+msgid "Sharing method create"
+msgstr ""
+
+#: ../../../api/v3.rst:1671
+msgid "Create a sharing method for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1677
+msgid ""
+"$ curl \\\n"
+"  -X POST \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/v3/"
+"projects/pypa-pip/sharing/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:1685
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.com/api/v3/projects/pypa-pip/sharing/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1702
+msgid ""
+"{\n"
+"    \"description\": \"Support team access\",\n"
+"    \"access_type\": \"token\",\n"
+"    \"allow_all\": true,\n"
+"    \"expires\": \"2026-12-31\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1713
+msgid ""
+"``access_type`` can be ``token``, ``password``, or ``http_header_token``."
+msgstr ""
+
+#: ../../../api/v3.rst:1714
+msgid "``password`` is required only when ``access_type`` is ``password``."
+msgstr ""
+
+#: ../../../api/v3.rst:1715
+msgid "``allow_all`` defaults to ``true``."
+msgstr ""
+
+#: ../../../api/v3.rst:1716
+msgid ""
+"When ``allow_all`` is ``false``, ``versions`` must include at least one "
+"private active version slug."
+msgstr ""
+
+#: ../../../api/v3.rst:1717
+msgid "``expires`` defaults to 7 days from creation."
+msgstr ""
+
+#: ../../../api/v3.rst:1721 ../../../api/v3.rst:1770
+msgid "`See Sharing method details <#sharing-method-details>`_."
+msgstr ""
+
+#: ../../../api/v3.rst:1723
+msgid "Sharing method created successfully."
+msgstr ""
+
+#: ../../../api/v3.rst:1727
+msgid "Sharing method update"
+msgstr ""
+
+#: ../../../api/v3.rst:1731
+msgid "Update a sharing method for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1737
+msgid ""
+"$ curl \\\n"
+"  -X PATCH \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/v3/"
+"projects/pypa-pip/sharing/1/ \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d @body.json"
+msgstr ""
+
+#: ../../../api/v3.rst:1745
+msgid ""
+"import requests\n"
+"import json\n"
+"URL = 'https://app.readthedocs.com/api/v3/projects/pypa-pip/sharing/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"data = json.load(open('body.json', 'rb'))\n"
+"response = requests.patch(\n"
+"    URL,\n"
+"    json=data,\n"
+"    headers=HEADERS,\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../api/v3.rst:1762
+msgid ""
+"{\n"
+"    \"description\": \"Updated support team access\"\n"
+"}"
+msgstr ""
+
+#: ../../../api/v3.rst:1774
+msgid "Sharing method delete"
+msgstr ""
+
+#: ../../../api/v3.rst:1778
+msgid "Delete a sharing method for this project."
+msgstr ""
+
+#: ../../../api/v3.rst:1784
+msgid ""
+"$ curl \\\n"
+"  -X DELETE \\\n"
+"  -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/v3/"
+"projects/pypa-pip/sharing/1/"
+msgstr ""
+
+#: ../../../api/v3.rst:1790
+msgid ""
+"import requests\n"
+"URL = 'https://app.readthedocs.com/api/v3/projects/pypa-pip/sharing/1/'\n"
+"TOKEN = '<token>'\n"
+"HEADERS = {'Authorization': f'token {TOKEN}'}\n"
+"response = requests.delete(URL, headers=HEADERS)\n"
+"print(response.status_code)"
+msgstr ""
+
+#: ../../../api/v3.rst:1799
+msgid "Sharing method deleted successfully."
+msgstr ""
+
+#: ../../../api/v3.rst:1803
 msgid "Organizations"
 msgstr ""
 
-#: ../../../api/v3.rst:1561
+#: ../../../api/v3.rst:1807
 msgid ""
 "The ``/api/v3/organizations/`` endpoint is only available in :doc:`Read the "
 "Docs for Business </commercial/index>` currently. We plan to have "
@@ -1787,22 +2073,22 @@ msgid ""
 "this endpoint at the same time."
 msgstr ""
 
-#: ../../../api/v3.rst:1566
+#: ../../../api/v3.rst:1812
 msgid "Organizations list"
 msgstr ""
 
-#: ../../../api/v3.rst:1571
+#: ../../../api/v3.rst:1817
 msgid ""
 "Retrieve a list of all the organizations for the current logged in user."
 msgstr ""
 
-#: ../../../api/v3.rst:1577
+#: ../../../api/v3.rst:1823
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
 "v3/organizations/"
 msgstr ""
 
-#: ../../../api/v3.rst:1581
+#: ../../../api/v3.rst:1827
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.com/api/v3/organizations/'\n"
@@ -1812,7 +2098,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1592
+#: ../../../api/v3.rst:1838
 msgid ""
 "{\n"
 "    \"count\": 1,\n"
@@ -1843,21 +2129,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1622
+#: ../../../api/v3.rst:1868
 msgid "Organization details"
 msgstr ""
 
-#: ../../../api/v3.rst:1626
+#: ../../../api/v3.rst:1872
 msgid "Retrieve details of a single organization."
 msgstr ""
 
-#: ../../../api/v3.rst:1632
+#: ../../../api/v3.rst:1878
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
 "v3/organizations/pypa/"
 msgstr ""
 
-#: ../../../api/v3.rst:1636
+#: ../../../api/v3.rst:1882
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.com/api/v3/organizations/pypa/'\n"
@@ -1867,7 +2153,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1647
+#: ../../../api/v3.rst:1893
 msgid ""
 "{\n"
 "    \"_links\": {\n"
@@ -1892,21 +2178,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1671
+#: ../../../api/v3.rst:1917
 msgid "Organization projects list"
 msgstr ""
 
-#: ../../../api/v3.rst:1675
+#: ../../../api/v3.rst:1921
 msgid "Retrieve list of projects under an organization."
 msgstr ""
 
-#: ../../../api/v3.rst:1681
+#: ../../../api/v3.rst:1927
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
 "v3/organizations/pypa/projects/"
 msgstr ""
 
-#: ../../../api/v3.rst:1685
+#: ../../../api/v3.rst:1931
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.com/api/v3/organizations/pypa/projects/'\n"
@@ -1916,7 +2202,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1696
+#: ../../../api/v3.rst:1942
 msgid ""
 "{\n"
 "    \"count\": 1,\n"
@@ -1980,21 +2266,21 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1748
+#: ../../../api/v3.rst:1994
 msgid "Organization teams list"
 msgstr ""
 
-#: ../../../api/v3.rst:1752
+#: ../../../api/v3.rst:1998
 msgid "Retrieve list of teams under an organization."
 msgstr ""
 
-#: ../../../api/v3.rst:1758
+#: ../../../api/v3.rst:2004
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.com/api/"
 "v3/organizations/pypa/teams/"
 msgstr ""
 
-#: ../../../api/v3.rst:1762
+#: ../../../api/v3.rst:2008
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.com/api/v3/organizations/pypa/teams/'\n"
@@ -2004,7 +2290,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1773
+#: ../../../api/v3.rst:2019
 msgid ""
 "{\n"
 "   \"count\": 2,\n"
@@ -2029,35 +2315,35 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1797
+#: ../../../api/v3.rst:2043
 msgid "Add additional fields in the response. Allowed values are: ``members``."
 msgstr ""
 
-#: ../../../api/v3.rst:1801
+#: ../../../api/v3.rst:2047
 msgid "Remote organizations"
 msgstr ""
 
-#: ../../../api/v3.rst:1803
+#: ../../../api/v3.rst:2049
 msgid ""
 "Remote organizations are the VCS organizations connected via ``GitHub``, "
 "``GitLab`` and ``Bitbucket``."
 msgstr ""
 
-#: ../../../api/v3.rst:1808
+#: ../../../api/v3.rst:2054
 msgid "Remote organization listing"
 msgstr ""
 
-#: ../../../api/v3.rst:1813
+#: ../../../api/v3.rst:2059
 msgid "Retrieve a list of all Remote Organizations for the authenticated user."
 msgstr ""
 
-#: ../../../api/v3.rst:1819
+#: ../../../api/v3.rst:2065
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/remote/organizations/"
 msgstr ""
 
-#: ../../../api/v3.rst:1823
+#: ../../../api/v3.rst:2069
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/remote/organizations/'\n"
@@ -2067,7 +2353,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1834
+#: ../../../api/v3.rst:2080
 msgid ""
 "{\n"
 "    \"count\": 20,\n"
@@ -2089,45 +2375,45 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1855
+#: ../../../api/v3.rst:2101
 msgid "The ``results`` in response is an array of remote organizations data."
 msgstr ""
 
-#: ../../../api/v3.rst:1857
+#: ../../../api/v3.rst:2103
 msgid "return remote organizations with containing the name"
 msgstr ""
 
-#: ../../../api/v3.rst:1858
+#: ../../../api/v3.rst:2104
 msgid ""
 "return remote organizations for specific vcs provider (``github``, "
 "``gitlab`` or ``bitbucket``)"
 msgstr ""
 
-#: ../../../api/v3.rst:1864
+#: ../../../api/v3.rst:2110
 msgid "Remote repositories"
 msgstr ""
 
-#: ../../../api/v3.rst:1866
+#: ../../../api/v3.rst:2112
 msgid ""
 "Remote repositories are the importable repositories connected via "
 "``GitHub``, ``GitLab`` and ``Bitbucket``."
 msgstr ""
 
-#: ../../../api/v3.rst:1871
+#: ../../../api/v3.rst:2117
 msgid "Remote repository listing"
 msgstr ""
 
-#: ../../../api/v3.rst:1876
+#: ../../../api/v3.rst:2122
 msgid "Retrieve a list of all Remote Repositories for the authenticated user."
 msgstr ""
 
-#: ../../../api/v3.rst:1882
+#: ../../../api/v3.rst:2128
 msgid ""
 "$ curl -H \"Authorization: Token <token>\" https://app.readthedocs.org/api/"
 "v3/remote/repositories/?expand=remote_organization"
 msgstr ""
 
-#: ../../../api/v3.rst:1886
+#: ../../../api/v3.rst:2132
 msgid ""
 "import requests\n"
 "URL = 'https://app.readthedocs.org/api/v3/remote/repositories/?"
@@ -2138,7 +2424,7 @@ msgid ""
 "print(response.json())"
 msgstr ""
 
-#: ../../../api/v3.rst:1897
+#: ../../../api/v3.rst:2143
 msgid ""
 "{\n"
 "    \"count\": 20,\n"
@@ -2228,62 +2514,62 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:1979
+#: ../../../api/v3.rst:2225
 msgid "The ``results`` in response is an array of remote repositories data."
 msgstr ""
 
-#: ../../../api/v3.rst:1981
+#: ../../../api/v3.rst:2227
 msgid "return remote repositories containing the name"
 msgstr ""
 
-#: ../../../api/v3.rst:1982
+#: ../../../api/v3.rst:2228
 msgid ""
 "return remote repositories containing the full name (it includes the "
 "username/organization the project belongs to)"
 msgstr ""
 
-#: ../../../api/v3.rst:1983
+#: ../../../api/v3.rst:2229
 msgid ""
 "return remote repositories for specific vcs provider (``github``, ``gitlab`` "
 "or ``bitbucket``)"
 msgstr ""
 
-#: ../../../api/v3.rst:1984
+#: ../../../api/v3.rst:2230
 msgid ""
 "return remote repositories for specific remote organization (using remote "
 "organization ``slug``)"
 msgstr ""
 
-#: ../../../api/v3.rst:1985
+#: ../../../api/v3.rst:2231
 msgid ""
 "Add additional fields in the response. Allowed values are: "
 "``remote_organization``. Multiple fields can be passed separated by commas."
 msgstr ""
 
-#: ../../../api/v3.rst:1993
+#: ../../../api/v3.rst:2239
 msgid "Embed"
 msgstr ""
 
-#: ../../../api/v3.rst:1997
+#: ../../../api/v3.rst:2243
 msgid ""
 "Retrieve HTML-formatted content from documentation page or section. Read :"
 "doc:`/guides/embedding-content` to know more about how to use this endpoint."
 msgstr ""
 
-#: ../../../api/v3.rst:2002
+#: ../../../api/v3.rst:2248
 msgid ""
 "The content will be returned as is, without any sanitization or escaping. "
 "You should not include content from arbitrary projects, or projects you do "
 "not trust."
 msgstr ""
 
-#: ../../../api/v3.rst:2010
+#: ../../../api/v3.rst:2256
 msgid ""
 "curl https://app.readthedocs.org/api/v3/embed/?url=https://docs.readthedocs."
 "io/en/latest/features.html%23read-the-docs-features"
 msgstr ""
 
-#: ../../../api/v3.rst:2013
+#: ../../../api/v3.rst:2259
 msgid ""
 "{\n"
 "    \"url\": \"https://docs.readthedocs.io/en/latest/features.html#read-the-"
@@ -2295,55 +2581,55 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../api/v3.rst:2022
+#: ../../../api/v3.rst:2268
 msgid "URL of the document."
 msgstr ""
 
-#: ../../../api/v3.rst:2023
+#: ../../../api/v3.rst:2269
 msgid "fragmet part of the URL used to query the page."
 msgstr ""
 
-#: ../../../api/v3.rst:2024
+#: ../../../api/v3.rst:2270
 msgid "HTML content of the section."
 msgstr ""
 
-#: ../../../api/v3.rst:2025
+#: ../../../api/v3.rst:2271
 msgid "whether or not the page is hosted on Read the Docs or externally."
 msgstr ""
 
-#: ../../../api/v3.rst:2027
+#: ../../../api/v3.rst:2273
 msgid ""
 "full URL of the document (with optional fragment) to fetch content from."
 msgstr ""
 
-#: ../../../api/v3.rst:2028
+#: ../../../api/v3.rst:2274
 msgid ""
 "*optional* documentation tool key name used to generate the target "
 "documentation (currently, only ``sphinx`` is accepted)"
 msgstr ""
 
-#: ../../../api/v3.rst:2029
+#: ../../../api/v3.rst:2275
 msgid ""
 "*optional* documentation tool version used to generate the target "
 "documentation (e.g. ``4.2.0``)."
 msgstr ""
 
-#: ../../../api/v3.rst:2030
+#: ../../../api/v3.rst:2276
 msgid ""
 "*optional* CSS selector for the main content of the page (e.g. ``div#main``)."
 msgstr ""
 
-#: ../../../api/v3.rst:2034
+#: ../../../api/v3.rst:2280
 msgid ""
 "Passing ``?doctool=``, ``?doctoolversion=`` and ``?maincontent=`` may "
 "improve the response since the endpoint will know more about the exact "
 "structure of the HTML and can make better decisions."
 msgstr ""
 
-#: ../../../api/v3.rst:2038
+#: ../../../api/v3.rst:2284
 msgid "Additional APIs"
 msgstr ""
 
-#: ../../../api/v3.rst:2040
+#: ../../../api/v3.rst:2286
 msgid ":doc:`Server side search API </server-side-search/api>`."
 msgstr ""

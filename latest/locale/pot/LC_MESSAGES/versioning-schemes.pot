@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,101 +52,110 @@ msgstr ""
 msgid "General explanation of how versioning works on Read the Docs."
 msgstr ""
 
+#: ../../../versioning-schemes.rst:18
+msgid ":doc:`/url-path-prefixes`"
+msgstr ""
+
 #: ../../../versioning-schemes.rst:19
+msgid ""
+"Customize the URL structure of your documentation with custom path prefixes."
+msgstr ""
+
+#: ../../../versioning-schemes.rst:22
 msgid "Multiple versions with translations"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:21
+#: ../../../versioning-schemes.rst:24
 msgid ""
 "This is the default versioning scheme, it's the recommend one if your "
 "project has multiple versions, and has or plans to support translations."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:24 ../../../versioning-schemes.rst:37
-#: ../../../versioning-schemes.rst:56
+#: ../../../versioning-schemes.rst:27 ../../../versioning-schemes.rst:40
+#: ../../../versioning-schemes.rst:59
 msgid "The URLs of your documentation will look like:"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:26
+#: ../../../versioning-schemes.rst:29
 msgid "``/en/latest/``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:27
+#: ../../../versioning-schemes.rst:30
 msgid "``/en/1.5/``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:28
+#: ../../../versioning-schemes.rst:31
 msgid "``/es/latest/install.html``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:29
+#: ../../../versioning-schemes.rst:32
 msgid "``/es/1.5/contributing.html``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:32
+#: ../../../versioning-schemes.rst:35
 msgid "Multiple versions without translations"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:34
+#: ../../../versioning-schemes.rst:37
 msgid ""
 "Use this versioning scheme if you want to have multiple versions of your "
 "documentation, but don't want to have translations."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:39
+#: ../../../versioning-schemes.rst:42
 msgid "``/latest/``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:40
+#: ../../../versioning-schemes.rst:43
 msgid "``/1.5/install.html``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:44
+#: ../../../versioning-schemes.rst:47
 msgid "This means you can't have translations for your documentation."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:47
+#: ../../../versioning-schemes.rst:50
 msgid "Single version without translations"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:49
+#: ../../../versioning-schemes.rst:52
 msgid ""
 "Having a single version of a documentation project can be considered the "
 "better choice in cases where there should only always exist one unambiguous "
 "copy of your project. For example:"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:53
+#: ../../../versioning-schemes.rst:56
 msgid ""
 "A research project may wish to *only* expose readers to their latest list of "
 "publications and research data."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:54
+#: ../../../versioning-schemes.rst:57
 msgid ""
 "A :abbr:`SaaS (Software as a Service)` application might only ever have one "
 "version live."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:58
+#: ../../../versioning-schemes.rst:61
 msgid "``/``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:59
+#: ../../../versioning-schemes.rst:62
 msgid "``/install.html``"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:63
+#: ../../../versioning-schemes.rst:66
 msgid ""
 "This means you can't have translations or multiple versions for your "
 "documentation."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:66
+#: ../../../versioning-schemes.rst:69
 msgid "How to change the URL versioning scheme of your project"
 msgstr ""
 
-#: ../../../versioning-schemes.rst:68
+#: ../../../versioning-schemes.rst:71
 msgid ""
 "Changing the versioning scheme of your project will affect the URLs of your "
 "documentation, any existing links to your documentation will break. If you "
@@ -154,20 +163,20 @@ msgid ""
 "defined-redirects>`."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:72
+#: ../../../versioning-schemes.rst:75
 msgid "Go the :guilabel:`Admin` tab of your project."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:73
+#: ../../../versioning-schemes.rst:76
 msgid "Click on :guilabel:`Settings`."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:74
+#: ../../../versioning-schemes.rst:77
 msgid ""
 "Select the new versioning scheme in the :guilabel:`URL versioning scheme` "
 "dropdown."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:75
+#: ../../../versioning-schemes.rst:78
 msgid "Click on :guilabel:`Save`."
 msgstr ""

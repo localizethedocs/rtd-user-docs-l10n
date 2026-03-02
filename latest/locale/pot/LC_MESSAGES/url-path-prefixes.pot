@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 08:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../url-path-prefixes.rst:2
+msgid "URL path prefixes"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:4
+msgid ""
+"URL path prefixes allow you to customize the URL structure of your "
+"documentation, giving you more control over how your documentation is "
+"organized and presented."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:9
+msgid ""
+"This is a |com_brand| feature available on Pro and higher plans. Contact :"
+"doc:`Read the Docs support </support>` to enable custom URL path prefixes "
+"for your project."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:13
+msgid "What are URL path prefixes?"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:15
+msgid ""
+"By default, Read the Docs serves documentation from the following URL "
+"patterns:"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:21
+msgid "Project type"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:22
+msgid "Default URL pattern"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:23
+msgid "Multi-version with translations"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:24
+msgid "``/<language>/<version>/<filename>``"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:25
+msgid "Multi-version without translations"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:26
+msgid "``/<version>/<filename>``"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:27
+msgid "Single version without translations"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:28
+msgid "``/<filename>``"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:29
+msgid "Subproject (multi-version with translations)"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:30
+msgid "``/projects/<subproject-alias>/<language>/<version>/<filename>``"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:31
+msgid "Subproject (multi-version without translations)"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:32
+msgid "``/projects/<subproject-alias>/<version>/<filename>``"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:33
+msgid "Subproject (single version without translations)"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:34
+msgid "``/projects/<subproject-alias>/<filename>``"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:36
+msgid "URL path prefixes let you customize these URL patterns by:"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:38
+msgid "Adding a prefix to your project's documentation URLs"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:39
+msgid "Changing or removing the ``/projects/`` prefix used for subprojects"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:42
+msgid "Use cases"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:44
+msgid ""
+"Here are some common scenarios where custom URL path prefixes are useful:"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:46
+msgid "Proxy documentation behind your main website"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:47
+msgid ""
+"If you want to serve your documentation as part of your main website (for "
+"example, at ``https://example.com/docs/``), you can configure your web "
+"server to proxy requests to Read the Docs and use a custom prefix of ``/docs/"
+"`` to match. Your documentation would then be served from ``https://example."
+"com/docs/en/latest/`` instead of ``https://example.com/en/latest/``."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:54
+msgid "Remove or customize the ``/projects/`` prefix from subproject URLs"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:55
+msgid ""
+"By default, subprojects are served from URLs like ``https://docs.example.com/"
+"projects/plugin/en/latest/``. You can change this prefix to something "
+"shorter or remove it entirely, so your subproject is served from ``https://"
+"docs.example.com/plugin/en/latest/`` or ``https://docs.example.com/libs/"
+"plugin/en/latest/``."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:61
+msgid "Organize documentation with meaningful URL paths"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:62
+msgid ""
+"You can use prefixes to create a more meaningful URL structure. For example, "
+"you could use ``/api/`` for API documentation and ``/guides/`` for user "
+"guides."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:67
+msgid "Getting started"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:69
+msgid "To enable this feature for your project:"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:71
+msgid "Ensure you have a Pro plan or higher subscription."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:72
+msgid ""
+"Contact :doc:`Read the Docs support </support>` with your project name and "
+"desired URL structure."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:74
+msgid "Our support team will configure the custom prefixes for your project."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:78
+msgid ""
+"When planning your URL structure, consider how it will affect existing links "
+"to your documentation. You may need to set up :doc:`redirects </user-defined-"
+"redirects>` to ensure old URLs continue to work."
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:85
+msgid ":doc:`/subprojects`"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:86
+msgid "Learn how to set up subprojects and share a custom domain"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:88
+msgid ":doc:`/custom-domains`"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:89
+msgid "Configure a custom domain for your documentation"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:91
+msgid ":doc:`/versioning-schemes`"
+msgstr ""
+
+#: ../../../url-path-prefixes.rst:92
+msgid "Learn about different URL versioning schemes"
+msgstr ""
