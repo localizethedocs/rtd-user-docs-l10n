@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Search query syntax" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="server-side-search/syntax.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="When searching on Read the Docs with server side search, you can use some parameters in your query in order to search on given projects, versions, or to get more accurate results. Parameters: Parameters are in the form of name:value, they can appear anywhere in the query, and depending on the par..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="When searching on Read the Docs with server side search, you can use some parameters in your query in order to search on given projects, versions, or to get more accurate results. Parameters: Parameters are in the form of name:value, they can appear anywhere in the query, and depending on the par..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search query syntax &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/server-side-search/syntax.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a48b73ee"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Flyout menu" href="../flyout-menu.html" />
+    <link rel="prev" title="Server side search" href="index.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Server side search</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Search query syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#permissions">Permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#special-queries">Special queries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#exact-phrase-search">Exact phrase search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prefix-query">Prefix query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fuzziness">Fuzziness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#words-close-to-each-other">Words close to each other</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Search query syntax</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/server-side-search/syntax.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="search-query-syntax">
+<h1>Search query syntax<a class="headerlink" href="#search-query-syntax" title="Link to this heading"></a></h1>
+<p>When searching on Read the Docs with <a class="reference internal" href="index.html"><span class="doc">server side search</span></a>,
+you can use some parameters in your query
+in order to search on given projects, versions, or to get more accurate results.</p>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<p>Parameters are in the form of <code class="docutils literal notranslate"><span class="pre">name:value</span></code>,
+they can appear anywhere in the query,
+and depending on the parameter, you can use one or more of them.</p>
+<p>Any other text that isn’t a parameter will be part of the search query.
+If you don’t want your search term to be interpreted as a parameter,
+you can escape it like <code class="docutils literal notranslate"><span class="pre">project\:docs</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unknown parameters like <code class="docutils literal notranslate"><span class="pre">foo:bar</span></code> don’t require escaping.</p>
+</div>
+<p>The available parameters are:</p>
+<dl>
+<dt>project</dt><dd><p>Indicates the project and version to include results from
+(this doesn’t include subprojects or translations).
+If the version isn’t provided, the default version will be used.
+More than one parameter can be included.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">project:docs</span> <span class="pre">test</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">project:docs/latest</span> <span class="pre">test</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">project:docs/stable</span> <span class="pre">project:dev</span> <span class="pre">test</span></code></p></li>
+</ul>
+</dd>
+<dt>subprojects</dt><dd><p>Include results from the given project and its subprojects.
+If the version isn’t provided, the default version of all projects will be used.
+If a version is provided, all subprojects matching that version
+will be included, and if they don’t have a version with that name,
+we use their default version.
+More than one parameter can be included.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">subprojects:docs</span> <span class="pre">test</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">subprojects:docs/latest</span> <span class="pre">test</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">subprojects:docs/stable</span> <span class="pre">subprojects:dev</span> <span class="pre">test</span></code></p></li>
+</ul>
+</dd>
+<dt>user</dt><dd><p>Include results from projects the given user has access to.
+The only supported value is <code class="docutils literal notranslate"><span class="pre">&#64;me</span></code>,
+which is an alias for the current user.
+Only one parameter can be included.
+If duplicated, the last one will override the previous one.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">user:&#64;me</span> <span class="pre">test</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<section id="permissions">
+<h3>Permissions<a class="headerlink" href="#permissions" title="Link to this heading"></a></h3>
+<p>If the user doesn’t have permission over one version,
+or if the version doesn’t exist, we don’t include results from that version.</p>
+<p>The API will return all the projects that were used in the final search,
+with that information you can check which projects were used in the search.</p>
+</section>
+<section id="limitations">
+<h3>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h3>
+<p>In order to keep our search usable for everyone,
+you can search up to 100 projects at a time.
+If the resulting query includes more than 100 projects,
+they will be omitted from the final search.</p>
+<p>This syntax is only available when using our search API V3
+or when using the global search (<a class="reference external" href="https://app.readthedocs.org/search/">https://app.readthedocs.org/search/</a>).</p>
+<p>Searching multiple versions of the same project isn’t supported,
+the last version will override the previous one.</p>
+</section>
+</section>
+<section id="special-queries">
+<h2>Special queries<a class="headerlink" href="#special-queries" title="Link to this heading"></a></h2>
+<p>Read the Docs uses the <a class="reference external" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html#">Simple Query String</a> feature from <a class="reference external" href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a>.
+This means that as the search query becomes more complex,
+the results yielded become more specific.</p>
+<section id="exact-phrase-search">
+<h3>Exact phrase search<a class="headerlink" href="#exact-phrase-search" title="Link to this heading"></a></h3>
+<p>If a query is wrapped in <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (double quotes),
+then only those results where the phrase is exactly matched will be returned.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;custom</span> <span class="pre">css&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;adding</span> <span class="pre">a</span> <span class="pre">subproject&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;when</span> <span class="pre">a</span> <span class="pre">404</span> <span class="pre">is</span> <span class="pre">returned&quot;</span></code></p></li>
+</ul>
+</section>
+<section id="prefix-query">
+<h3>Prefix query<a class="headerlink" href="#prefix-query" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> (asterisk) at the end of any term signifies a prefix query.
+It returns the results containing the words with the specific prefix.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">test*</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">build*</span></code></p></li>
+</ul>
+</section>
+<section id="fuzziness">
+<h3>Fuzziness<a class="headerlink" href="#fuzziness" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">~N</span></code> (tilde followed by a number) after a word indicates edit distance (fuzziness).
+This type of query is helpful when the exact spelling of the keyword is unknown.
+It returns results that contain terms similar to the search term.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">doks~1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test~2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">getter~2</span></code></p></li>
+</ul>
+</section>
+<section id="words-close-to-each-other">
+<h3>Words close to each other<a class="headerlink" href="#words-close-to-each-other" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">~N</span></code> (tilde followed by a number) after a phrase can be used to match words that are near to each other.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;dashboard</span> <span class="pre">admin&quot;~2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;single</span> <span class="pre">documentation&quot;~1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;read</span> <span class="pre">the</span> <span class="pre">docs</span> <span class="pre">policy&quot;~5</span></code></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Server side search" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../flyout-menu.html" class="btn btn-neutral float-right" title="Flyout menu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

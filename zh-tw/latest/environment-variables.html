@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="環境變數概覽" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="environment-variables.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Read the Docs allows you to define your own environment variables to be used in the build process. It also defines a set of default environment variables with information about your build. These are useful for different purposes: Custom environment variables are useful for adding build secrets su..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Read the Docs allows you to define your own environment variables to be used in the build process. It also defines a set of default environment variables with information about your build. These are useful for different purposes: Custom environment variables are useful for adding build secrets su..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>環境變數概覽 &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/environment-variables.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=65c3111a"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=cbf116e0"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜尋" href="search.html" />
+    <link rel="next" title="環境變數參考" href="reference/environment-variables.html" />
+    <link rel="prev" title="建置失敗通知" href="build-notifications.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">環境變數概覽</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#environment-variables-and-build-process">Environment variables and build process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#patterns-of-using-environment-variables">Patterns of using environment variables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-multiple-projects-from-the-same-git-repo">Example: Multiple projects from the same Git repo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#alternatives-to-environment-variables">Alternatives to environment variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">環境變數概覽</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/environment-variables.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="environment-variable-overview">
+<span id="environment-variables"></span><h1>環境變數概覽<a class="headerlink" href="#environment-variable-overview" title="連結到這個標頭"></a></h1>
+<p>Read the Docs allows you to define your own environment variables to be used in the build process.
+It also defines a set of <a class="reference internal" href="reference/environment-variables.html"><span class="doc">default environment variables</span></a> with information about your build.
+These are useful for different purposes:</p>
+<ul class="simple">
+<li><p>Custom environment variables are useful for adding build secrets such as API tokens.</p></li>
+<li><p>Default environment variables are useful for varying your build specifically for Read the Docs or specific types of builds on Read the Docs.</p></li>
+</ul>
+<p>Custom environment variables are defined in the <a class="reference internal" href="glossary.html#term-dashboard"><span class="xref std std-term">dashboard</span></a> interface in <span class="menuselection">Admin ‣ Environment variables</span>.
+Environment variables are defined for a project's entire build process,
+<a class="reference internal" href="#custom-env-var-exceptions"><span class="std std-ref">with 2 important exceptions</span></a>.</p>
+<p>Aside from storing secrets,
+there are <a class="reference internal" href="#patterns-of-using-environment-variables"><span class="std std-ref">other patterns</span></a> that take advantage of environment variables,
+like reusing the same <em>monorepo</em> configuration in multiple documentation projects.
+In cases where the environment variable isn't a secret,
+like a build tool flag,
+you should also be aware of the <a class="reference internal" href="#alternatives-to-environment-variables"><span class="std std-ref">alternatives to environment variables</span></a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="guides/environment-variables.html"><span class="doc">How to use custom environment variables</span></a></dt><dd><p>A practical example of adding and accessing custom environment variables.</p>
+</dd>
+<dt><a class="reference internal" href="reference/environment-variables.html"><span class="doc">環境變數參考</span></a></dt><dd><p>Reference to all pre-defined environment variables for your build environments.</p>
+</dd>
+<dt><a class="reference internal" href="api/v3.html#environment-variables"><span class="std std-ref">Public API reference: Environment variables</span></a></dt><dd><p>Reference for managing custom environments via Read the Docs' API.</p>
+</dd>
+</dl>
+</div>
+<section id="environment-variables-and-build-process">
+<h2>Environment variables and build process<a class="headerlink" href="#environment-variables-and-build-process" title="連結到這個標頭"></a></h2>
+<p>When a <a class="reference internal" href="builds.html"><span class="doc">build process</span></a> is started,
+<a class="reference internal" href="reference/environment-variables.html"><span class="doc">pre-defined environment variables</span></a> and custom environment variables are added <em>at each step</em> of the build process.
+The two sets of environment variables are merged together during the build process and are exposed to all of the executed commands,
+with pre-defined variables taking precedence over custom environment variables.</p>
+<p id="custom-env-var-exceptions">There are two noteworthy exceptions for <em>custom environment variables</em>:</p>
+<dl class="simple">
+<dt>Build checkout step</dt><dd><p>Custom environment variables are <strong>not</strong> available during the checkout step of the <a class="reference internal" href="builds.html"><span class="doc">build process</span></a></p>
+</dd>
+<dt>Pull request builds</dt><dd><p>Custom environment variables that are not marked as <span class="guilabel">Public</span> will not be available in <a class="reference internal" href="pull-requests.html"><span class="doc">pull request builds</span></a></p>
+</dd>
+</dl>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="連結到這個標頭"></a></h2>
+<ul class="simple">
+<li><p>Individual environment variables are limited to 48 KB in size.</p></li>
+<li><p>The total size of all environment variables in a project is limited to 256 KB.</p></li>
+</ul>
+</section>
+<section id="patterns-of-using-environment-variables">
+<h2>Patterns of using environment variables<a class="headerlink" href="#patterns-of-using-environment-variables" title="連結到這個標頭"></a></h2>
+<p>Aside from storing secrets,
+environment variables are also useful if you need to make either your <a class="reference internal" href="config-file/v2.html"><span class="doc">.readthedocs.yaml</span></a> or the commands called in the <a class="reference internal" href="builds.html"><span class="doc">build process</span></a>
+behave depending on <a class="reference internal" href="reference/environment-variables.html"><span class="doc">pre-defined environment variables</span></a> or your own custom environment variables.</p>
+<section id="example-multiple-projects-from-the-same-git-repo">
+<h3>Example: Multiple projects from the same Git repo<a class="headerlink" href="#example-multiple-projects-from-the-same-git-repo" title="連結到這個標頭"></a></h3>
+<p>If you have the need to build multiple documentation websites from the same Git repository,
+you can use an environment variable to configure the behavior of your <a class="reference internal" href="build-customization.html"><span class="doc">build commands</span></a>
+or Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.</p>
+<p>An example of this is found in <em>the documentation project that you are looking at now</em>.
+Using the Sphinx extension <a class="reference external" href="https://sphinx-multiproject.readthedocs.io/">sphinx-multiproject</a>,
+the following configuration code decides whether to build the <em>user</em> or <em>developer</em> documentation.
+This is defined by the <code class="docutils literal notranslate"><span class="pre">PROJECT</span></code> environment variable:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Read the Docs' conf.py <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> is used to build 2 documentation projects.</span><a class="headerlink" href="#id3" title="連結到這個程式碼"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">multiproject.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_project</span>
+
+<span class="c1"># (...)</span>
+
+<span class="n">multiproject_projects</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;use_config_file&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;config&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;Read the Docs user documentation&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;dev&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;use_config_file&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;config&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;Read the Docs developer documentation&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+
+<span class="n">docset</span> <span class="o">=</span> <span class="n">get_project</span><span class="p">(</span><span class="n">multiproject_projects</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/conf.py">https://github.com/readthedocs/readthedocs.org/blob/main/docs/conf.py</a></p>
+</aside>
+</aside>
+</section>
+</section>
+<section id="alternatives-to-environment-variables">
+<h2>Alternatives to environment variables<a class="headerlink" href="#alternatives-to-environment-variables" title="連結到這個標頭"></a></h2>
+<p>In some scenarios, it's more feasible to define your build's environment variables using the <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> <a class="reference internal" href="config-file/index.html"><span class="doc">configuration file</span></a>.
+Using the <a class="reference internal" href="glossary.html#term-dashboard"><span class="xref std std-term">dashboard</span></a> for administering environment variables may not be the right fit if you already know that you want to manage environment variables <em>as code</em>.</p>
+<p>Consider the following scenario:</p>
+<ul>
+<li><p>The environment variable <strong>is not</strong> a secret.</p>
+<p><strong>and</strong></p>
+</li>
+<li><p>The environment variable is used just once for a custom command.</p></li>
+</ul>
+<p>In this case, you can define the environment variable <em>as code</em> using <a class="reference internal" href="build-customization.html"><span class="doc">Build process customization</span></a>.
+The following example shows how a non-secret single-purpose environment variable can also be used.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id4" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">post_build</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EXAMPLE_ENVIRONMENT_VARIABLE=foobar command --flag</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="build-notifications.html" class="btn btn-neutral float-left" title="建置失敗通知" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reference/environment-variables.html" class="btn btn-neutral float-right" title="環境變數參考" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

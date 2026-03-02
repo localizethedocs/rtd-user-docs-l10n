@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to embed content from your documentation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/embedding-content.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Read the Docs allows you to embed content from any of the projects we host and specific allowed external domains (currently, docs.python.org, docs.scipy.org, docs.sympy.org, numpy.org) This allows reuse of content across sites, making sure the content is always up to date. There are a number of u..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Read the Docs allows you to embed content from any of the projects we host and specific allowed external domains (currently, docs.python.org, docs.scipy.org, docs.sympy.org, numpy.org) This allows reuse of content across sites, making sure the content is always up to date. There are a number of u..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to embed content from your documentation &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/embedding-content.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Server side search" href="../server-side-search/index.html" />
+    <link rel="prev" title="Link previews" href="../link-previews.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to embed content from your documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contextualized-tooltips-on-documentation-pages">Contextualized tooltips on documentation pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inline-help-on-application-website">Inline help on application website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calling-the-embed-api-directly">Calling the Embed API directly</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to embed content from your documentation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/embedding-content.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-embed-content-from-your-documentation">
+<h1>How to embed content from your documentation<a class="headerlink" href="#how-to-embed-content-from-your-documentation" title="Link to this heading"></a></h1>
+<p>Read the Docs allows you to embed content from any of the projects we host and specific allowed external domains
+(currently, <code class="docutils literal notranslate"><span class="pre">docs.python.org</span></code>, <code class="docutils literal notranslate"><span class="pre">docs.scipy.org</span></code>, <code class="docutils literal notranslate"><span class="pre">docs.sympy.org</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.org</span></code>)
+This allows reuse of content across sites, making sure the content is always up to date.</p>
+<p>There are a number of use cases for embedding content,
+so we've built our integration in a way that enables users to build on top of it.
+This guide will show you some of our favorite integrations:</p>
+<nav class="contents local" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#contextualized-tooltips-on-documentation-pages" id="id2">Contextualized tooltips on documentation pages</a></p></li>
+<li><p><a class="reference internal" href="#inline-help-on-application-website" id="id3">Inline help on application website</a></p></li>
+<li><p><a class="reference internal" href="#calling-the-embed-api-directly" id="id4">Calling the Embed API directly</a></p></li>
+</ul>
+</nav>
+<section id="contextualized-tooltips-on-documentation-pages">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Contextualized tooltips on documentation pages</a><a class="headerlink" href="#contextualized-tooltips-on-documentation-pages" title="Link to this heading"></a></h2>
+<p>Tooltips on your own documentation are really useful to add more context to the current page the user is reading.
+You can embed any content that is available via an HTML id.</p>
+<p>We built an addon called <a class="reference internal" href="../link-previews.html"><span class="doc">Link previews</span></a> on top of our Embed API
+that you can enable from the addons settings of your project using the <a class="reference internal" href="../glossary.html#term-dashboard"><span class="xref std std-term">dashboard</span></a>.</p>
+</section>
+<section id="inline-help-on-application-website">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Inline help on application website</a><a class="headerlink" href="#inline-help-on-application-website" title="Link to this heading"></a></h2>
+<p>This allows us to keep the official documentation as the single source of truth,
+while having great inline help in our application website as well.
+On the &quot;Automation Rules&quot; admin page we could embed the content of our <a class="reference internal" href="../automation-rules.html"><span class="doc">Automation rules</span></a> documentation
+page and be sure it will be always up to date.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>We recommend you point at tagged releases instead of latest.
+Tags don't change over time, so you don't have to worry about the content you are embedding disappearing.</p>
+</div>
+<p>The following example will fetch the section &quot;Creating an automation rule&quot; in page <code class="docutils literal notranslate"><span class="pre">automation-rules.html</span></code>
+from our own docs and will populate the content of it into the <code class="docutils literal notranslate"><span class="pre">#help-container</span></code> div element.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s1">&#39;url&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://docs.readthedocs.io/en/latest/automation-rules.html%23creating-an-automation-rule&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">// &#39;doctool&#39;: &#39;sphinx&#39;,</span>
+<span class="w">  </span><span class="c1">// &#39;doctoolversion&#39;: &#39;4.2.0&#39;,</span>
+<span class="w">  </span><span class="c1">// &#39;maincontent&#39;: &#39;div#main&#39;,</span>
+<span class="p">};</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://app.readthedocs.org/api/v3/embed/?&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">$</span><span class="p">.</span><span class="nx">param</span><span class="p">(</span><span class="nx">params</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#help-container&#39;</span><span class="p">).</span><span class="nx">content</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="s1">&#39;content&#39;</span><span class="p">]);</span>
+<span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;help-container&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>You can modify this example to subscribe to <code class="docutils literal notranslate"><span class="pre">.onclick</span></code> Javascript event,
+and show a modal when the user clicks in a &quot;Help&quot; link.</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>Take into account that if the title changes, your <code class="docutils literal notranslate"><span class="pre">section</span></code> argument will break.
+To avoid that, you can manually define Sphinx references above the sections you don't want to break.
+For example,</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="c">.. in your .rst document file</span>
+
+<span class="hll"><span class="p">..</span> <span class="nt">_unbreakable-section-reference:</span>
+</span>
+<span class="gh">Creating an automation rule</span>
+<span class="gh">---------------------------</span>
+
+This is the text of the section.
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>.. in your .md document file
+
+<span class="hll">(unbreakable-section-reference)=
+</span><span class="gu">## Creating an automation rule</span>
+
+This is the text of the section.
+</pre></div>
+</div>
+</div></div>
+<p>To link to the section &quot;Creating an automation rule&quot; you can send <code class="docutils literal notranslate"><span class="pre">section=unbreakable-section-reference</span></code>.
+If you change the title it won't break the embedded content because the label for that title will still be <code class="docutils literal notranslate"><span class="pre">unbreakable-section-reference</span></code>.</p>
+<p>Please, take a look at the Sphinx <code class="xref py py-obj docutils literal notranslate"><span class="pre">:ref:</span></code> <a class="reference external" href="https://www.sphinx-doc.org/en/stable/usage/restructuredtext/roles.html#role-ref">role documentation</a> for more information about how to create references.</p>
+</div>
+</section>
+<section id="calling-the-embed-api-directly">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Calling the Embed API directly</a><a class="headerlink" href="#calling-the-embed-api-directly" title="Link to this heading"></a></h2>
+<p>Embed API lives under <code class="docutils literal notranslate"><span class="pre">https://app.readthedocs.org/api/v3/embed/</span></code> URL and accept the URL of the content you want to embed.
+Take a look at <a class="reference internal" href="../api/v3.html#embed"><span class="std std-ref">its own documentation</span></a> to find out more details.</p>
+<p>You can click on the following links and check a live response directly in the browser as examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://app.readthedocs.org/api/v3/embed/?url=https://docs.readthedocs.io/en/stable/features.html%23automatic-documentation-deployment">https://app.readthedocs.org/api/v3/embed/?url=https://docs.readthedocs.io/en/stable/features.html%23automatic-documentation-deployment</a></p></li>
+<li><p><a class="reference external" href="https://app.readthedocs.org/api/v3/embed/?url=https://sphinx-hoverxref.readthedocs.io/en/latest/configuration.html%23confval-hoverxref_role_types&amp;doctool=sphinx&amp;doctoolversion=4.2.0">https://app.readthedocs.org/api/v3/embed/?url=https://sphinx-hoverxref.readthedocs.io/en/latest/configuration.html%23confval-hoverxref_role_types&amp;doctool=sphinx&amp;doctoolversion=4.2.0</a></p></li>
+<li><p><a class="reference external" href="https://app.readthedocs.org/api/v3/embed/?url=https://docs.sympy.org/latest/tutorial/gotchas.html%23equals-signs">https://app.readthedocs.org/api/v3/embed/?url=https://docs.sympy.org/latest/tutorial/gotchas.html%23equals-signs</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>All relative links to pages contained in the remote content will continue to point at the remote page.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../link-previews.html" class="btn btn-neutral float-left" title="Link previews" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../server-side-search/index.html" class="btn btn-neutral float-right" title="Server side search" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

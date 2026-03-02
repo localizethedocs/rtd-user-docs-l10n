@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Pull request previews" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="pull-requests.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Your project can be configured to build and preview documentation for every new pull request. Previewing changes during review makes it easier to catch formatting and display issues before they go live. Features: Build on pull request events, We create and build a new version when a pull request ..." />
+<meta property="og:image" content="_images/github-build-status-reporting.gif" />
+<meta property="og:image:alt" content="GitHub build status reporting for pull requests." />
+<meta name="description" content="Your project can be configured to build and preview documentation for every new pull request. Previewing changes during review makes it easier to catch formatting and display issues before they go live. Features: Build on pull request events, We create and build a new version when a pull request ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pull request previews &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/pull-requests.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Build failure notifications" href="build-notifications.html" />
+    <link rel="prev" title="Git integration (GitHub, GitLab, Bitbucket)" href="reference/git-integration.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pull request previews</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security">Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Pull request previews</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/pull-requests.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pull-request-previews">
+<h1>Pull request previews<a class="headerlink" href="#pull-request-previews" title="Link to this heading"></a></h1>
+<p>Your project can be configured to build and preview documentation for every new
+pull request. Previewing changes during review makes it
+easier to catch formatting and display issues before they go live.</p>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h2>
+<dl>
+<dt>Build on pull request events</dt><dd><p>We create and build a new version when a pull request is opened,
+and rebuild it whenever a new commit is pushed.</p>
+</dd>
+<dt>Build status report</dt><dd><p>Your project's pull request build status will show as one of your pull
+request's checks. This status will update as the build is running, and will
+show a success or failure status when the build completes.</p>
+<figure class="align-center" id="id1" style="width: 80%">
+<img alt="GitHub build status reporting for pull requests." src="_images/github-build-status-reporting.gif" />
+<figcaption>
+<p><span class="caption-text">GitHub build status reporting</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</dd>
+<dt>Build overview with changed files</dt><dd><p>We create a comment on the pull request including a link to the preview of the documentation,
+and a list of the <a class="reference internal" href="visual-diff.html"><span class="doc">files that changed</span></a> between the current pull request and the latest version of the project's documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This feature is only available for projects connected to a <a class="reference internal" href="reference/git-integration.html#github-app"><span class="std std-ref">GitHub App</span></a>.</p>
+</div>
+</dd>
+<dt>Pull request notifications</dt><dd><p>A pull request notifications is shown at the top of preview pages,
+which let readers know they aren't viewing an active version of the project.</p>
+</dd>
+<dt><a class="reference internal" href="visual-diff.html"><span class="doc">Visual diff</span></a></dt><dd><p>Visual diff shows proposed changes by visually highlighting the differences between the current pull request and the latest version of the project's documentation.</p>
+<p>Press <code class="docutils literal notranslate"><span class="pre">d</span></code> to toggle between Visual diff and normal pull request preview.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="guides/pull-requests.html"><span class="doc">How to configure pull request builds</span></a></dt><dd><p>A guide to configuring pull request builds on Read the Docs.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="security">
+<h2>Security<a class="headerlink" href="#security" title="Link to this heading"></a></h2>
+<p>If pull request previews are enabled for your project,
+anyone who can open a pull request on your repository will be able to trigger a build of your documentation.
+For this reason, pull request previews are served from a different domain than your main documentation
+(<code class="docutils literal notranslate"><span class="pre">org.readthedocs.build</span></code> and <code class="docutils literal notranslate"><span class="pre">com.readthedocs.build</span></code>).</p>
+<p>Builds from pull requests have access to environment variables that are marked as <em>Public</em> only,
+if you have environment variables with private information, make sure they aren't marked as <em>Public</em>.
+See <a class="reference internal" href="environment-variables.html#environment-variables-and-build-process"><span class="std std-ref">Environment variables and build process</span></a> for more information.</p>
+<p>On Read the Docs for Business you can set pull request previews to be private or public,
+If you didn't import your project manually and your repository is public,
+the privacy level of pull request previews will be set to <em>Public</em>.
+Public pull request previews are available to anyone with the link to the preview,
+while private previews are only available to users with access to the Read the Docs project.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>If you set the privacy level of pull request previews to <em>Private</em>,
+make sure that only trusted users can open pull requests in your repository.</p>
+<p>Setting pull request previews to private on a public repository can allow a malicious user
+to access read-only APIs using the user's session that is reading the pull request preview.
+Similar to <a class="reference external" href="https://github.com/readthedocs/readthedocs.org/security/advisories/GHSA-pw32-ffxw-68rh">GHSA-pw32-ffxw-68rh</a>.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="reference/git-integration.html" class="btn btn-neutral float-left" title="Git integration (GitHub, GitLab, Bitbucket)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="build-notifications.html" class="btn btn-neutral float-right" title="Build failure notifications" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

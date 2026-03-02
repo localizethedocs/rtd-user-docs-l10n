@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to use Conda as your Python environment" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/conda.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Read the Docs supports Conda as an environment management tool, along with Virtualenv. Conda support is useful for people who depend on C libraries, and need them installed when building their documentation. This work was funded by Clinical Graphics – many thanks for their support of open source...." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Read the Docs supports Conda as an environment management tool, along with Virtualenv. Conda support is useful for people who depend on C libraries, and need them installed when building their documentation. This work was funded by Clinical Graphics – many thanks for their support of open source...." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use Conda as your Python environment &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/conda.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a48b73ee"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How-to guides: content, themes and SEO" href="content/index.html" />
+    <link rel="prev" title="How-to guides: upgrading and maintaining projects" href="maintenance/index.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reproducible-builds.html">Creating reproducible builds</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using Conda as your Python environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#activating-conda">Activating conda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-the-environment-yml">Creating the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#effective-use-of-channels">Effective use of channels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-builds-faster-with-mamba">Making builds faster with mamba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mixing-conda-and-pip-packages">Mixing conda and pip packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-your-project-sources">Compiling your project sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-installs">Custom Installs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="maintenance/index.html">How-to guides: upgrading and maintaining projects</a></li>
+      <li class="breadcrumb-item active">How to use Conda as your Python environment</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/conda.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-use-conda-as-your-python-environment">
+<h1>How to use Conda as your Python environment<a class="headerlink" href="#how-to-use-conda-as-your-python-environment" title="Link to this heading"></a></h1>
+<p>Read the Docs supports Conda as an environment management tool,
+along with Virtualenv.
+Conda support is useful for people who depend on C libraries,
+and need them installed when building their documentation.</p>
+<p>This work was funded by <a class="reference external" href="https://www.clinicalgraphics.com/">Clinical Graphics</a> – many thanks for their support of open source.</p>
+<section id="activating-conda">
+<h2>Activating conda<a class="headerlink" href="#activating-conda" title="Link to this heading"></a></h2>
+<p>Conda support is available using a <a class="reference internal" href="../config-file/index.html"><span class="doc">Configuration file overview</span></a>, see <a class="reference internal" href="../config-file/v2.html#conda"><span class="std std-ref">conda</span></a>.</p>
+<p>Our Docker images use Miniconda, a minimal conda installer.
+After specifying your project requirements using a conda <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file,
+Read the Docs will create the environment (using <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span></code>)
+and add the core dependencies needed to build the documentation.</p>
+</section>
+<section id="creating-the-environment-yml">
+<h2>Creating the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code><a class="headerlink" href="#creating-the-environment-yml" title="Link to this heading"></a></h2>
+<p>There are several ways of <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment">exporting a conda environment</a>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span></code> will produce a complete list of all the packages installed in the environment
+with their exact versions. This is the best option to ensure reproducibility,
+but can create problems if done from a different operative system than the target machine,
+in our case Ubuntu Linux.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span> <span class="pre">--from-history</span></code> will only include packages that were explicitly requested
+in the environment, excluding the transitive dependencies. This is the best option to maximize
+cross-platform compatibility, however it may include packages that are not needed to build your docs.</p></li>
+<li><p>And finally, you can also write it by hand. This allows you to pick exactly the packages needed to
+build your docs (which also results in faster builds) and overcomes some limitations in the conda
+exporting capabilities.</p></li>
+</ul>
+<p>For example, using the second method for an existing environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate rtd38
+(rtd38) $ conda env export --from-history | tee environment.yml
+name: rtd38
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - rasterio==1.2
+  - python=3.8
+  - pytorch-cpu=1.7
+prefix: /home/docs/.conda/envs/rtd38
+</pre></div>
+</div>
+<p>Read the Docs will override the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">prefix</span></code> of the environment when creating it,
+so they can have any value, or not be present at all.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Bear in mind that <code class="docutils literal notranslate"><span class="pre">rasterio==1.2</span></code> (double <code class="docutils literal notranslate"><span class="pre">==</span></code>) will install version <code class="docutils literal notranslate"><span class="pre">1.2.0</span></code>,
+whereas <code class="docutils literal notranslate"><span class="pre">python=3.8</span></code> (single <code class="docutils literal notranslate"><span class="pre">=</span></code>) will fetch the latest <code class="docutils literal notranslate"><span class="pre">3.8.*</span></code> version,
+which is <code class="docutils literal notranslate"><span class="pre">3.8.8</span></code> at the time of writing.</p>
+</div>
+</section>
+<section id="effective-use-of-channels">
+<h2>Effective use of channels<a class="headerlink" href="#effective-use-of-channels" title="Link to this heading"></a></h2>
+<p>Conda packages are usually hosted on <a class="reference external" href="https://anaconda.org/">https://anaconda.org/</a>, a registration-free artifact archive
+maintained by Anaconda Inc. Contrary to what happens with the Python Package Index,
+different users can potentially host the same package in the same repository,
+each of them using their own <em>channel</em>. Therefore, when installing a conda package,
+conda also needs to know which channels to use, and which ones take precedence.</p>
+<p>If not specified, conda will use <code class="docutils literal notranslate"><span class="pre">defaults</span></code>, the channel maintained by Anaconda Inc.
+and subject to <a class="reference external" href="https://www.anaconda.com/terms-of-service">Anaconda Terms of Service</a>. It contains well-tested versions of the most widely used
+packages. However, some packages are not available on the <code class="docutils literal notranslate"><span class="pre">defaults</span></code> channel,
+and even if they are, they might not be on their latest versions.</p>
+<p>As an alternative, there are channels maintained by the community that have a broader selection
+of packages and more up-to-date versions of them, the most popular one being <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>.</p>
+<p>To use the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel when specifying your project dependencies, include it in the list
+of <code class="docutils literal notranslate"><span class="pre">channels</span></code> in <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>, and conda will rank them in order of appearance.
+To maximize compatibility, we recommend putting <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> above <code class="docutils literal notranslate"><span class="pre">defaults</span></code>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rtd38</span>
+<span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.8</span>
+<span class="w">  </span><span class="c1"># Rest of the dependencies</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to opt out the <code class="docutils literal notranslate"><span class="pre">defaults</span></code> channel completely, replace it by <code class="docutils literal notranslate"><span class="pre">nodefaults</span></code>
+in the list of channels. See <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=nodefaults#creating-an-environment-file-manually">the relevant conda docs</a> for more information.</p>
+</div>
+</section>
+<section id="making-builds-faster-with-mamba">
+<h2>Making builds faster with mamba<a class="headerlink" href="#making-builds-faster-with-mamba" title="Link to this heading"></a></h2>
+<p>One important thing to note is that, when enabling the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel,
+the conda dependency solver requires a large amount of RAM and long solve times.
+This is <a class="reference external" href="https://www.anaconda.com/understanding-and-improving-condas-performance/">a known issue</a> due to the sheer amount of packages available in conda-forge.</p>
+<p>As an alternative, you can instruct Read the Docs to use <a class="reference external" href="https://github.com/mamba-org/mamba">mamba</a>,
+a drop-in replacement for conda that is much faster
+and reduces the memory consumption of the dependency solving process.</p>
+<p>To do that, add a <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> <a class="reference internal" href="../config-file/v2.html"><span class="doc">configuration file</span></a>
+with these contents:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-24.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;miniconda3-3.12-24.9&quot;</span>
+
+<span class="nt">conda</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">environment.yml</span>
+</pre></div>
+</div>
+</div>
+<p>You can read more about the <a class="reference internal" href="../config-file/v2.html#build-tools-python"><span class="std std-ref">build.tools.python</span></a> configuration
+in our documentation.</p>
+</section>
+<section id="mixing-conda-and-pip-packages">
+<h2>Mixing conda and pip packages<a class="headerlink" href="#mixing-conda-and-pip-packages" title="Link to this heading"></a></h2>
+<p>There are valid reasons to use pip inside a conda environment: some dependency
+might not be available yet as a conda package in any channel,
+or you might want to avoid precompiled binaries entirely.
+In either case, it is possible to specify the subset of packages
+that will be installed with pip in the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file. For example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rtd38</span>
+<span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rasterio==1.2</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.8</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytorch-cpu=1.7</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip&gt;=20.1</span><span class="w">  </span><span class="c1"># pip is needed as dependency</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pip</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black==20.8b1</span>
+</pre></div>
+</div>
+<p>The <a class="reference external" href="https://www.anaconda.com/blog/using-pip-in-a-conda-environment">conda developers recommend in their best practices</a> to install as many
+requirements as possible with conda, then use pip to minimize possible conflicts
+and interoperability issues.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Notice that <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span> <span class="pre">--from-history</span></code> does not include packages installed with pip,
+see <a class="reference external" href="https://github.com/conda/conda/issues/9628">this conda issue</a> for discussion.</p>
+</div>
+</section>
+<section id="compiling-your-project-sources">
+<h2>Compiling your project sources<a class="headerlink" href="#compiling-your-project-sources" title="Link to this heading"></a></h2>
+<p>If your project contains extension modules written in a compiled language (C, C++, FORTRAN)
+or server-side JavaScript, you might need special tools to build it from source
+that are not readily available on our Docker images,
+such as a suitable compiler, CMake, Node.js, and others.</p>
+<p>Luckily, conda is a language-agnostic package manager, and many of these development tools
+are already packaged on <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> or more specialized channels.</p>
+<p>For example, this conda environment contains the required dependencies to compile
+<a class="reference external" href="https://github.com/python-control/Slycot">Slycot</a> on Read the Docs:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slycot38</span>
+<span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.8</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmake</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">numpy</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">compilers</span>
+</pre></div>
+</div>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
+<p>If you have problems on the environment creation phase,
+either because the build runs out of memory or time
+or because some conflicts are found,
+you can try some of these mitigations:</p>
+<ul class="simple">
+<li><p>Reduce the number of channels in <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>, even leaving <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> only
+and opting out of the defaults adding <code class="docutils literal notranslate"><span class="pre">nodefaults</span></code>.</p></li>
+<li><p>Constrain the package versions as much as possible to reduce the solution space.</p></li>
+<li><p><a class="reference internal" href="#making-builds-faster-with-mamba"><span class="std std-ref">Use mamba</span></a>,
+an alternative package manager fully compatible with conda packages.</p></li>
+<li><p>And, if all else fails,
+<a class="reference internal" href="build-using-too-many-resources.html#requests-more-resources"><span class="std std-ref">request more resources</span></a>.</p></li>
+</ul>
+</section>
+<section id="custom-installs">
+<h2>Custom Installs<a class="headerlink" href="#custom-installs" title="Link to this heading"></a></h2>
+<p>If you are running a custom installation of Read the Docs,
+you will need the <code class="docutils literal notranslate"><span class="pre">conda</span></code> executable installed somewhere on your <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.
+Because of the way <code class="docutils literal notranslate"><span class="pre">conda</span></code> works,
+we can’t safely install it as a normal dependency into the normal Python virtualenv.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Installing conda into a virtualenv will override the <code class="docutils literal notranslate"><span class="pre">activate</span></code> script,
+making it so you can’t properly activate that virtualenv anymore.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="maintenance/index.html" class="btn btn-neutral float-left" title="How-to guides: upgrading and maintaining projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="content/index.html" class="btn btn-neutral float-right" title="How-to guides: content, themes and SEO" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

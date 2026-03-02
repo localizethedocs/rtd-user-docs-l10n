@@ -1,0 +1,628 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Git integration (GitHub, GitLab, Bitbucket)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="reference/git-integration.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Your Read the Docs account can be connected to your Git provider&#x27;s account. Connecting your account provides the following features: 🔑️ Easy login, Log in to Read the Docs with your GitHub, Bitbucket, or GitLab account.,, 🔁️ List your projects, Select a project to automatically import from a..." />
+<meta property="og:image" content="_images/screenshot-webhook.png" />
+<meta property="og:image:alt" content="Screenshot of the Dashboard view for the incoming webhook" />
+<meta name="description" content="Your Read the Docs account can be connected to your Git provider&#x27;s account. Connecting your account provides the following features: 🔑️ Easy login, Log in to Read the Docs with your GitHub, Bitbucket, or GitLab account.,, 🔁️ List your projects, Select a project to automatically import from a..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git integration (GitHub, GitLab, Bitbucket) &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/reference/git-integration.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Pull request previews" href="../pull-requests.html" />
+    <link rel="prev" title="Build process customization" href="../build-customization.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git integration (GitHub, GitLab, Bitbucket)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-automatic-configuration-works">How automatic configuration works</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#read-the-docs-incoming-webhook">Read the Docs incoming webhook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-does-the-connection-work">How does the connection work?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-provider-integrations">Git provider integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#permissions-for-connected-accounts">Permissions for connected accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-permission-troubleshooting">GitHub permission troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-app">GitHub App</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-project-from-a-repository">Adding a project from a repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect-a-repository-to-an-existing-project">Connect a repository to an existing project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manually-migrating-a-project">Manually migrating a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#revoking-access">Revoking access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#security">Security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Git integration (GitHub, GitLab, Bitbucket)</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/reference/git-integration.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="git-integration-github-gitlab-bitbucket">
+<h1>Git integration (GitHub, GitLab, Bitbucket)<a class="headerlink" href="#git-integration-github-gitlab-bitbucket" title="Link to this heading"></a></h1>
+<p>Your Read the Docs account can be connected to your Git provider's account.
+Connecting your account provides the following features:</p>
+<dl class="simple">
+<dt>🔑️ Easy login</dt><dd><p>Log in to Read the Docs with your GitHub, Bitbucket, or GitLab account.</p>
+</dd>
+<dt>🔁️ List your projects</dt><dd><p>Select a project to automatically import from all your Git repositories and organizations.
+See: <a class="reference internal" href="../intro/add-project.html"><span class="doc">Adding a documentation project</span></a>.</p>
+</dd>
+<dt>⚙️ Automatic configuration</dt><dd><p>Have your Git repository automatically configured with your Read the Docs <a class="reference internal" href="../glossary.html#term-webhook"><span class="xref std std-term">webhook</span></a>,
+which allows Read the Docs to build your docs on every change to your repository.</p>
+</dd>
+<dt>🚥️ Commit status</dt><dd><p>See your documentation build status as a commit status indicator on <a class="reference internal" href="../pull-requests.html"><span class="doc">pull request builds</span></a>.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../intro/add-project.html#manually-add-your-project"><span class="std std-ref">Manually add your project</span></a></dt><dd><p>Using a different provider? You can configure it manually.
+Read the Docs still supports other providers such as Gitea or GitHub Enterprise.</p>
+</dd>
+</dl>
+</div>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<dl>
+<dt>✅️ Signed up with your Git provider?</dt><dd><p>If you signed up or logged in to Read the Docs with your GitHub, Bitbucket, or GitLab
+credentials, you're all done. Your account is connected.</p>
+<p>The rest of this guide explains how the automatic configuration works.</p>
+</dd>
+<dt>⏩️️ Signed up with your email address?</dt><dd><p>If you have signed up to Read the Docs with your email address,
+you can add the connection to the Git provider afterward.
+You can also add a connection to an additional Git provider this way.</p>
+<p>Please follow <a class="reference internal" href="../guides/connecting-git-account.html"><span class="doc">How to connect your Read the Docs account to your Git provider</span></a> in this case.</p>
+</dd>
+</dl>
+<p>Once you have your account connected,
+you can follow the <a class="reference internal" href="../intro/add-project.html"><span class="doc">Adding a documentation project</span></a> guide to actually add your project to Read the Docs.</p>
+</section>
+<section id="how-automatic-configuration-works">
+<h2>How automatic configuration works<a class="headerlink" href="#how-automatic-configuration-works" title="Link to this heading"></a></h2>
+<p>When your Read the Docs account is connected to GitHub, Bitbucket, or GitLab and you <a class="reference internal" href="../intro/add-project.html"><span class="doc">add a new Read the Docs project</span></a>:</p>
+<ul class="simple">
+<li><p>Read the Docs automatically creates a Read the Docs Integration that matches your Git provider.</p></li>
+<li><p>Read the Docs creates an incoming webhook with your Git provider, which is automatically added to your Git repository's settings using the account connection.</p></li>
+</ul>
+<p>After project creation,
+you can continue to configure the project.
+All settings can be modified,
+including the ones that were automatically created.</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>A single Read the Docs account can connect to many different Git providers.
+This allows you to have a single login for all your various identities.</p>
+</div>
+</section>
+<section id="read-the-docs-incoming-webhook">
+<h2>Read the Docs incoming webhook<a class="headerlink" href="#read-the-docs-incoming-webhook" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When using our <a class="reference internal" href="#github-app"><span class="std std-ref">GitHub App</span></a>, Read the Docs subscribes to all required events.
+You don't need to create a webhook on your repository.</p>
+</div>
+<p>Accounts with GitHub, Bitbucket, and GitLab integration automatically have Read the Docs' incoming <a class="reference internal" href="../glossary.html#term-webhook"><span class="xref std std-term">webhook</span></a> configured on all Git repositories that are imported.
+Other setups can set up the webhook through <a class="reference internal" href="../guides/setup/git-repo-manual.html"><span class="doc">manual configuration</span></a>.</p>
+<p>When an incoming webhook notification is received,
+Read the Docs ensures that it matches an existing project.
+Once the webhook is validated,
+an action is taken based on the information inside of the webhook.</p>
+<p>Possible webhook action outcomes are:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../builds.html"><span class="doc">Builds</span></a> the latest commit.</p></li>
+<li><p>Synchronizes your versions based on the latest tag and branch data in Git.</p></li>
+<li><p>Creates a <a class="reference internal" href="../pull-requests.html"><span class="doc">pull request build</span></a>.</p></li>
+<li><p>Runs your <a class="reference internal" href="../automation-rules.html"><span class="doc">automation rules</span></a>.</p></li>
+</ul>
+<figure class="align-default" id="id2">
+<img alt="Screenshot of the Dashboard view for the incoming webhook" src="../_images/screenshot-webhook.png" />
+<figcaption>
+<p><span class="caption-text">All calls to the incoming webhook are logged.
+Each call can trigger builds and version synchronization.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>On Read the Docs for Business,
+Git integration makes it possible for us to synchronize your Git repository's access rights from your Git provider.
+That way, the same access rights are effective on Read the Docs and you don't have to configure access in two places.
+See more in our <a class="reference internal" href="../commercial/single-sign-on.html#sso-git-provider"><span class="std std-ref">Single sign-on with GitHub, Bitbucket, or GitLab</span></a>.</p>
+</section>
+<section id="how-does-the-connection-work">
+<h2>How does the connection work?<a class="headerlink" href="#how-does-the-connection-work" title="Link to this heading"></a></h2>
+<p>Read the Docs uses <a class="reference external" href="https://en.wikipedia.org/wiki/OAuth">OAuth</a> to connect to your account at GitHub, Bitbucket, or GitLab.
+You are asked to grant permissions for Read the Docs to perform a number of actions on your behalf.</p>
+<p>At the same time, we use this process for authentication (login)
+since we trust that GitHub, Bitbucket, or GitLab have verified your user account and email address.</p>
+<p>By granting Read the Docs the requested permissions,
+we are issued a secret OAuth token from your Git provider.
+Using the secret token,
+we can automatically configure repositories during <a class="reference internal" href="../intro/add-project.html"><span class="doc">project creation</span></a>.
+We also use the token to send back build statuses and preview URLs for <a class="reference internal" href="../pull-requests.html"><span class="doc">pull requests</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Access granted to Read the Docs can always be revoked.
+This is a function offered by all Git providers.</p>
+</div>
+</section>
+<section id="git-provider-integrations">
+<h2>Git provider integrations<a class="headerlink" href="#git-provider-integrations" title="Link to this heading"></a></h2>
+<p>If your project is using <a class="reference internal" href="../commercial/organizations.html"><span class="doc">Organizations</span></a> (Read the Docs for Business) or <a class="reference internal" href="../glossary.html#term-maintainer"><span class="xref std std-term">maintainers</span></a> (Read the Docs Community),
+then you need to be aware of <em>who</em> is setting up the integration for the project.</p>
+<p>The Read the Docs user who sets up the project through the automatic import should also have admin rights to the Git repository.</p>
+<p>A Git provider integration is active through the authentication of the user that creates the integration.
+If this user is removed,
+make sure to verify and potentially recreate all Git integrations for the project.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When using our <a class="reference internal" href="#github-app"><span class="std std-ref">GitHub App</span></a>,
+If the original user who connected the repository to Read the Docs loses access to the project or repository,
+the GitHub App will still have access to the repository, and the integrations will continue to work.</p>
+</div>
+</section>
+<section id="permissions-for-connected-accounts">
+<h2>Permissions for connected accounts<a class="headerlink" href="#permissions-for-connected-accounts" title="Link to this heading"></a></h2>
+<p>Read the Docs does not generally ask for <em>write</em> permission to your repository code
+(with one exception detailed below).
+However, we do need permissions for authorizing your account
+so that you can log in to Read the Docs with your connected account credentials.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">GitHub</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">GitHub App</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Bitbucket</button><button aria-controls="panel-0-0-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-3" name="0-3" role="tab" tabindex="-1">GitLab</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Read the Docs requests the following permissions (more precisely, <a class="reference external" href="https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/">OAuth scopes</a>)
+when connecting your Read the Docs account to GitHub.</p>
+<dl class="simple">
+<dt>Read access to your email address (<code class="docutils literal notranslate"><span class="pre">user:email</span></code>)</dt><dd><p>We ask for this so you can create a Read the Docs account and log in with your GitHub credentials.</p>
+</dd>
+<dt>Administering webhooks (<code class="docutils literal notranslate"><span class="pre">admin:repo_hook</span></code>)</dt><dd><p>We ask for this so we can create <a class="reference internal" href="../glossary.html#term-webhook"><span class="xref std std-term">webhooks</span></a> on your repositories when you import them into Read the Docs.
+This allows us to build the docs when you push new commits.</p>
+</dd>
+<dt>Read access to your organizations (<code class="docutils literal notranslate"><span class="pre">read:org</span></code>)</dt><dd><p>We ask for this so we know which organizations you have access to.
+This allows you to filter repositories by organization when importing repositories.</p>
+</dd>
+<dt>Repository status (<code class="docutils literal notranslate"><span class="pre">repo:status</span></code>)</dt><dd><p>Repository statuses allow Read the Docs to report the status
+(e.g. passed, failed, pending) of pull requests to GitHub.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p><a class="reference internal" href="../commercial/index.html"><span class="doc">Read the Docs for Business</span></a>
+asks for one additional permission (<code class="docutils literal notranslate"><span class="pre">repo</span></code>) to allow access to private repositories
+and to allow us to set up SSH keys to clone your private repositories.
+Unfortunately, this is the permission for read/write control of the repository
+but there isn't a more granular permission
+that only allows setting up SSH keys for read access.</p>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Read the Docs requests the following permissions when connecting your Read the Docs account to our <a class="reference internal" href="#github-app"><span class="std std-ref">GitHub App</span></a>.</p>
+<dl class="simple">
+<dt>Account email addresses (read only)</dt><dd><p>We ask for this so we can verify your email address and create a Read the Docs account.</p>
+</dd>
+</dl>
+<p>When installing the Read the Docs GitHub App in a repository, you will be asked to grant the following permissions:</p>
+<dl class="simple">
+<dt>Repository permissions</dt><dd><dl class="simple">
+<dt>Commit statuses (read and write)</dt><dd><p>This allows Read the Docs to report the status of the build to GitHub.</p>
+</dd>
+<dt>Contents (read only)</dt><dd><p>This allows Read the Docs to clone the repository and build the documentation.</p>
+</dd>
+<dt>Metadata (read only)</dt><dd><p>This allows Read the Docs to read the repository collaborators and the permissions they have on the repository.
+This is used to determine if the user can connect a repository to a Read the Docs project.</p>
+</dd>
+<dt>Pull requests (read and write)</dt><dd><p>This allows Read the Docs to subscribe to pull request events,
+and to create a comment on the pull request with information about the build.</p>
+</dd>
+<dt>Checks (read and write)</dt><dd><p>This allows Read the Docs to use the GitHub Checks API to report the status of the build.
+This isn't used yet, but we may use it in the future.</p>
+</dd>
+</dl>
+</dd>
+<dt>Organization permissions</dt><dd><dl class="simple">
+<dt>Members (read only)</dt><dd><p>This allows Read the Docs to read the organization members.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>We request permissions for:</p>
+<dl class="simple">
+<dt>Administering your repositories (<code class="docutils literal notranslate"><span class="pre">repository:admin</span></code>)</dt><dd><p>We ask for this so we can create <a class="reference internal" href="../glossary.html#term-webhook"><span class="xref std std-term">webhooks</span></a> on your repositories when you import them into Read the Docs.
+This allows us to build the docs when you push new commits.
+NB! This permission scope does <strong>not</strong> include any write access to code.</p>
+</dd>
+<dt>Reading your account information including your email address</dt><dd><p>We ask for this so you can create a Read the Docs account and log in with your Bitbucket credentials.</p>
+</dd>
+<dt>Read access to your team memberships</dt><dd><p>We ask for this so we know which organizations you have access to.
+This allows you to filter repositories by organization when importing repositories.</p>
+</dd>
+<dt>Read access to your repositories</dt><dd><p>We ask for this so we know which repositories you have access to.</p>
+</dd>
+</dl>
+<p>To read more about Bitbucket permissions, see <a class="reference external" href="https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/">official Bitbucket documentation on API scopes</a></p>
+</div><div aria-labelledby="tab-0-0-3" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-3" name="0-3" role="tabpanel" tabindex="0"><p>Like the others, we request permissions for:</p>
+<ul class="simple">
+<li><p>Reading your account information (<code class="docutils literal notranslate"><span class="pre">read_user</span></code>)</p></li>
+<li><p>API access (<code class="docutils literal notranslate"><span class="pre">api</span></code>) which is needed to create webhooks in GitLab</p></li>
+</ul>
+</div></div>
+</section>
+<section id="github-permission-troubleshooting">
+<span id="id1"></span><h2>GitHub permission troubleshooting<a class="headerlink" href="#github-permission-troubleshooting" title="Link to this heading"></a></h2>
+<p><strong>Repositories not in your list to import</strong>.</p>
+<p>Many organizations require approval for each OAuth application that is used,
+or you might have disabled it in the past for your personal account.
+This can happen at the personal or organization level,
+depending on where the project you are trying to access has permissions from.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Personal Account</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Organization Account</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><p>You need to make sure that you have granted access to the Read the Docs <a class="reference external" href="https://github.com/settings/applications">OAuth App</a> to your <strong>personal GitHub account</strong>.
+If you do not see Read the Docs in the <a class="reference external" href="https://github.com/settings/applications">OAuth App</a> settings, you might need to disconnect and reconnect the GitHub service.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>GitHub docs on <a class="reference external" href="https://docs.github.com/en/organizations/restricting-access-to-your-organizations-data/approving-oauth-apps-for-your-organization">requesting access to your personal OAuth</a> for step-by-step instructions.</p>
+</div>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><p>You need to make sure that you have granted access to the Read the Docs OAuth App to your <strong>organization GitHub account</strong>.
+If you don't see &quot;Read the Docs&quot; listed, then you might need to connect GitHub to your social accounts as noted above.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>GitHub doc on <a class="reference external" href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-your-membership-in-organizations/requesting-organization-approval-for-oauth-apps">requesting access to your organization OAuth</a> for step-by-step instructions.</p>
+</div>
+</div></div>
+</section>
+<section id="github-app">
+<h2>GitHub App<a class="headerlink" href="#github-app" title="Link to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Our GitHub App is currently in beta, see our <a class="reference external" href="https://about.readthedocs.com/blog/2025/06/announcing-our-github-app-beta/">blog post</a> for more information.</p>
+</div>
+<p>We are in the process of migrating our GitHub OAuth application to a <a class="reference external" href="https://docs.github.com/en/apps/overview">GitHub App</a>.
+We have two GitHub Apps, one for each of our platforms:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-community">Read the Docs Community</a></p></li>
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-business">Read the Docs Business</a></p></li>
+</ul>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h3>
+<p>When using GitHub, Read the Docs uses a GitHub App to interact with your repositories.
+This has the following benefits over using an OAuth application:</p>
+<ul class="simple">
+<li><p>More control over which repositories Read the Docs can access.
+You don't need to grant access to all your repositories in order to create an account or connect a project to a single repository.</p></li>
+<li><p>No need to create webhooks on your repositories.
+The GitHub App subscribes to all required events when you install it.</p></li>
+<li><p>No need to create a deploy key on your repository (Read the Docs for Business only).
+The GitHub App can clone your private repositories using a temporal token.</p></li>
+<li><p>If the original user who connected the repository to Read the Docs loses access to the project or repository,
+the GitHub App will still have access to the repository.</p></li>
+<li><p>You can revoke access to the GitHub App at any time from your GitHub settings.</p></li>
+<li><p>Never out of sync with changes on your repository.
+The GitHub App subscribes to all required events and will always keep your project up to date with your repository.</p></li>
+</ul>
+</section>
+<section id="adding-a-project-from-a-repository">
+<h3>Adding a project from a repository<a class="headerlink" href="#adding-a-project-from-a-repository" title="Link to this heading"></a></h3>
+<p>To add a project from a repository,
+you need to install the Read the Docs GitHub App and grant access to that repository.
+Use the links below to complete the installation and permissions,
+then create the project from your <strong>Read the Docs account</strong>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-community/installations/new/">Read the Docs Community</a></p></li>
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-business/installations/new/">Read the Docs Business</a></p></li>
+</ul>
+<p>Once you have installed the GitHub App, in Read the Docs, click on the <span class="guilabel">Projects</span> tab, and click on <span class="guilabel">Add project</span>,
+search for the repository you want to create a project for, and then follow the instructions from there.</p>
+</section>
+<section id="connect-a-repository-to-an-existing-project">
+<h3>Connect a repository to an existing project<a class="headerlink" href="#connect-a-repository-to-an-existing-project" title="Link to this heading"></a></h3>
+<p>In case you manually added a project on Read the Docs,
+or if you want to connect your project to a different repository,
+you need to install the Read the Docs GitHub App and grant access to the repository you want to connect.
+As with adding a project, complete installation and permissions via the links below,
+and select the repository from your <strong>project settings on Read the Docs</strong>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-community/installations/new/">Read the Docs Community</a></p></li>
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-business/installations/new/">Read the Docs Business</a></p></li>
+</ul>
+<p>Once you have installed the GitHub App, go to the <span class="guilabel">Settings</span> page of the project in Read the Docs,
+and select the repository you want to connect from the <span class="guilabel">Connected repository</span> dropdown.</p>
+</section>
+<section id="manually-migrating-a-project">
+<h3>Manually migrating a project<a class="headerlink" href="#manually-migrating-a-project" title="Link to this heading"></a></h3>
+<p>We recommend using the migration page to migrate your projects from the old OAuth application to the new GitHub App.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://app.readthedocs.com/accounts/migrate-to-github-app/">Read the Docs Community</a></p></li>
+<li><p><a class="reference external" href="https://app.readthedocs.com/accounts/migrate-to-github-app/">Read the Docs Business</a></p></li>
+</ul>
+<p>But in case you need to manually migrate a project,
+you can follow these steps:</p>
+<ul class="simple">
+<li><p>Go to the <span class="guilabel">Settings</span> page of your Read the Docs project,
+and click on the <span class="guilabel">Integrations</span> tab in Read the Docs, and delete all the integrations that are listed there.</p></li>
+<li><p>Go to the settings page of your GitHub repository,
+click on the GitHub <span class="guilabel">Webhooks</span> tab, and delete all the webhooks with URLs that start with:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://readthedocs.org/api/v2/webhook/&lt;your-project-slug&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">https://app.readthedocs.org/api/v2/webhook/&lt;your-project-slug&gt;</span></code> for Read the Docs Community.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://readthedocs.com/api/v2/webhook/&lt;your-project-slug&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">https://app.readthedocs.com/api/v2/webhook/&lt;your-project-slug&gt;</span></code> for Read the Docs Business.</p></li>
+</ul>
+</li>
+<li><p>For projects using Read the Docs Business,
+go to the settings page of your GitHub repository,
+click on the GitHub <span class="guilabel">Deploy keys</span> tab, and delete the deploy with a title matching the format <code class="docutils literal notranslate"><span class="pre">support&#64;readthedocs.com</span> <span class="pre">(&lt;your-project-slug&gt;)</span></code>.</p></li>
+<li><p><a class="reference internal" href="#connect-a-repository-to-an-existing-project"><span class="std std-ref">Connect the project to the repository</span></a>.</p></li>
+</ul>
+</section>
+<section id="revoking-access">
+<h3>Revoking access<a class="headerlink" href="#revoking-access" title="Link to this heading"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>If you revoke access to the GitHub App with any of the methods below,
+all projects linked to that repository will stop working,
+but the projects and its documentation will still be available.
+If you grant access to the repository again,
+you will need to <a class="reference internal" href="#connect-a-repository-to-an-existing-project"><span class="std std-ref">manually connect your project to the repository</span></a>.</p>
+</div>
+<p>You can revoke access to the Read the Docs GitHub App at any time from your GitHub settings.
+All revocation options happen from your <strong>account or organization settings</strong>; no action is required inside Read the Docs until you decide to reconnect a project.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-community/installations/new/">Read the Docs Community</a></p></li>
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-business/installations/new/">Read the Docs Business</a></p></li>
+</ul>
+<p>There are three ways to revoke access to the Read the Docs GitHub App:</p>
+<dl class="simple">
+<dt>Revoke access to one or more repositories:</dt><dd><p>Remove the repositories from the list of repositories that the GitHub App has access to.</p>
+</dd>
+<dt>Suspend the GitHub App:</dt><dd><p>This will suspend the GitHub App and revoke access to all repositories.
+The installation and configuration will still be available,
+and you can re-enable the GitHub App at any time.</p>
+</dd>
+<dt>Uninstall the GitHub App:</dt><dd><p>This will uninstall the GitHub App and revoke access to all repositories.
+The installation and configuration will be removed,
+and you will need to re-install the GitHub App and reconfigure it to use it again.</p>
+</dd>
+</dl>
+</section>
+<section id="security">
+<h3>Security<a class="headerlink" href="#security" title="Link to this heading"></a></h3>
+<p>When cloning private repositories (Read the Docs for Business only)
+Read the Docs creates an <a class="reference external" href="https://docs.github.com/en/rest/apps/apps?apiVersion=2022-11-28#create-an-installation-access-token-for-an-app">installation access token</a>,
+which has read access to the <a class="reference external" href="https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents">contents permission</a>,
+and it's scoped to the repository to be cloned.</p>
+<p>This token is valid for one hour and GitHub automatically grants read access to the <a class="reference external" href="https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-metadata">metadata permission</a>,
+which allows to query the repository collaborators, events, and other metadata.
+By default, Read the Docs doesn't show this token during the build,
+but the token is available during the whole build process.
+Make sure to not print it in your build logs,
+and that only trusted users are able to trigger builds on your project.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If your repository is public, Read the Docs will not create an installation access token.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The build log page is publicly accessible only if your project and version to build are marked as public.
+See more in <a class="reference internal" href="../commercial/privacy-level.html"><span class="doc">Privacy levels</span></a>.</p>
+</div>
+</section>
+<section id="troubleshooting">
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h3>
+<dl>
+<dt>Repository not found in the repository list</dt><dd><p>Make sure you have installed the corresponding GitHub App in your GitHub account or organization,
+and have granted access to the repository your project will be connected to.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-community/installations/new/">Read the Docs Community</a></p></li>
+<li><p><a class="reference external" href="https://github.com/apps/read-the-docs-business/installations/new/">Read the Docs Business</a></p></li>
+</ul>
+<p>If you still can't see the repository in the list,
+you may need to wait a couple of minutes and refresh the page,
+or click on the &quot;Refresh your repositories&quot; button on the project creation page.</p>
+</dd>
+<dt>Repository is in the list, but isn't usable</dt><dd><p>Make sure you have admin access to the repository you are trying to use for your project.
+If you are using Read the Docs Community, make sure your project is public,
+or use Read the Docs for Business to create projects from private repositories.</p>
+<p>If you still can't use the repository for your project,
+you may need to wait a couple of minutes and refresh the page,
+or click on the &quot;Refresh your repositories&quot; button on the project creation page.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../build-customization.html" class="btn btn-neutral float-left" title="Build process customization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../pull-requests.html" class="btn btn-neutral float-right" title="Pull request previews" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

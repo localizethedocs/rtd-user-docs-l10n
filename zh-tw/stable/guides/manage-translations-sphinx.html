@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to manage translations for Sphinx projects" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/manage-translations-sphinx.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This guide walks through the process needed to manage translations of your documentation. Once this work is done, you can setup your project under Read the Docs to build each language of your documentation by reading 在地化與國際化. 概覽: There are many different ways to manage documentation in multiple l..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="This guide walks through the process needed to manage translations of your documentation. Once this work is done, you can setup your project under Read the Docs to build each language of your documentation by reading 在地化與國際化. 概覽: There are many different ways to manage documentation in multiple l..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to manage translations for Sphinx projects &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/manage-translations-sphinx.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="How to support Unicode in Sphinx PDFs" href="pdf-non-ascii-languages.html" />
+    <link rel="prev" title="How to enable offline formats" href="enable-offline-formats.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="content/index.html">Content, themes and SEO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="technical-docs-seo-guide.html">Search engine optimization (SEO) for documentation projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traffic-analytics.html">Using traffic analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search-analytics.html">Using search analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enable-offline-formats.html">Enabling offline formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="embedding-content.html">Embedding content from your documentation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Managing translations for Sphinx projects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">概覽</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-translatable-files">Create translatable files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#translate-text-from-source-language">Translate text from source language</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#manually">Manually</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-transifex">Using Transifex</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#build-the-documentation-in-target-language">Build the documentation in target language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#update-sources-to-be-translated">Update sources to be translated</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-documentation-from-up-to-date-translation">Build documentation from up to date translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pdf-non-ascii-languages.html">Supporting Unicode in Sphinx PDFs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross-referencing-with-sphinx.html">Cross-referencing with Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intersphinx.html">Linking to other projects with Intersphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Using Jupyter notebooks in Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrate-rest-myst.html">從 rST 遷移到 MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-custom-css.html">Adding custom CSS or JavaScript to Sphinx documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit-source-links-sphinx.html">Adding &quot;Edit Source&quot; links on your Sphinx theme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="content/index.html">How-to guides: content, themes and SEO</a></li>
+      <li class="breadcrumb-item active">How to manage translations for Sphinx projects</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/manage-translations-sphinx.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-manage-translations-for-sphinx-projects">
+<h1>How to manage translations for Sphinx projects<a class="headerlink" href="#how-to-manage-translations-for-sphinx-projects" title="連結到這個標頭"></a></h1>
+<p>This guide walks through the process needed to manage translations of your documentation.
+Once this work is done, you can setup your project under Read the Docs to build each language of your documentation by reading <a class="reference internal" href="../localization.html"><span class="doc">在地化與國際化</span></a>.</p>
+<section id="overview">
+<h2>概覽<a class="headerlink" href="#overview" title="連結到這個標頭"></a></h2>
+<p>There are many different ways to manage documentation in multiple languages by using different tools or services.
+All of them have their pros and cons depending on the context of your project or organization.</p>
+<p>In this guide we will focus our efforts around two different methods: manual and using <a class="reference external" href="https://www.transifex.com/">Transifex</a>.</p>
+<p>In both methods, we need to follow these steps to translate our documentation:</p>
+<ol class="arabic simple">
+<li><p>Create translatable files (<code class="docutils literal notranslate"><span class="pre">.pot</span></code> and <code class="docutils literal notranslate"><span class="pre">.po</span></code> extensions) from source language</p></li>
+<li><p>Translate the text on those files from source language to target language</p></li>
+<li><p>Build the documentation in <em>target language</em> using the translated texts</p></li>
+</ol>
+<p>Besides these steps, once we have published our first translated version of our documentation,
+we will want to keep it updated from the source language. At that time, the workflow would be:</p>
+<ol class="arabic simple">
+<li><p>Update our translatable files from source language</p></li>
+<li><p>Translate only <em>new</em> and <em>modified</em> texts in source language into target language</p></li>
+<li><p>Build the documentation using the most up to date translations</p></li>
+</ol>
+</section>
+<section id="create-translatable-files">
+<h2>Create translatable files<a class="headerlink" href="#create-translatable-files" title="連結到這個標頭"></a></h2>
+<p>To generate these <code class="docutils literal notranslate"><span class="pre">.pot</span></code> files it's needed to run this command from your <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt1:before {
+  content: "$ ";
+}
+</style><span class="prompt1">sphinx-build<span class="w"> </span>-b<span class="w"> </span>gettext<span class="w"> </span>.<span class="w"> </span>_build/gettext</span>
+</pre></div></div><div class="admonition tip">
+<p class="admonition-title">小訣竅</p>
+<p>We recommend configuring Sphinx to use <a class="reference external" href="https://www.sphinx-doc.org/page/usage/configuration.html#confval-gettext_uuid">gettext_uuid</a> as <code class="docutils literal notranslate"><span class="pre">True</span></code>
+and also <a class="reference external" href="https://www.sphinx-doc.org/page/usage/configuration.html#confval-gettext_compact">gettext_compact</a> as <code class="docutils literal notranslate"><span class="pre">False</span></code> to generate <code class="docutils literal notranslate"><span class="pre">.pot</span></code> files.</p>
+</div>
+<p>This command will leave the generated files under <code class="docutils literal notranslate"><span class="pre">_build/gettext</span></code>.</p>
+</section>
+<section id="translate-text-from-source-language">
+<h2>Translate text from source language<a class="headerlink" href="#translate-text-from-source-language" title="連結到這個標頭"></a></h2>
+<section id="manually">
+<h3>Manually<a class="headerlink" href="#manually" title="連結到這個標頭"></a></h3>
+<p>We recommend using <a class="reference external" href="https://pypi.org/project/sphinx-intl/">sphinx-intl</a> tool for this workflow.</p>
+<p>First, you need to install it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">pip<span class="w"> </span>install<span class="w"> </span>sphinx-intl</span>
+</pre></div></div><p>As a second step, we want to create a directory with each translated file per target language
+(in this example we are using Spanish/Argentina and Portuguese/Brazil).
+This can be achieved with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">sphinx-intl<span class="w"> </span>update<span class="w"> </span>-p<span class="w"> </span>_build/gettext<span class="w"> </span>-l<span class="w"> </span>es_AR<span class="w"> </span>-l<span class="w"> </span>pt_BR</span>
+</pre></div></div><p>This command will create a directory structure similar to the following
+(with one <code class="docutils literal notranslate"><span class="pre">.po</span></code> file per <code class="docutils literal notranslate"><span class="pre">.rst</span></code> file in your documentation):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>locale
+├── es_AR
+│   └── LC_MESSAGES
+│       └── index.po
+└── pt_BR
+    └── LC_MESSAGES
+        └── index.po
+</pre></div>
+</div>
+<p>Now, you can just open those <code class="docutils literal notranslate"><span class="pre">.po</span></code> files with a text editor and translate them taking care of no breaking the reST notation.
+Example:</p>
+<div class="highlight-po notranslate"><div class="highlight"><pre><span></span><span class="c1"># b8f891b8443f4a45994c9c0a6bec14c3</span>
+<span class="kd">#: ../../index.rst:4</span>
+<span class="nv">msgid</span> <span class="s">&quot;&quot;</span>
+<span class="s">&quot;Read the Docs hosts documentation for the open source community.&quot;</span>
+<span class="s">&quot;It supports :ref:`Sphinx &lt;sphinx&gt;` docs written with reStructuredText.&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+<span class="s">&quot;FILL HERE BY TARGET LANGUAGE FILL HERE BY TARGET LANGUAGE FILL HERE &quot;</span>
+<span class="s">&quot;BY TARGET LANGUAGE :ref:`Sphinx &lt;sphinx&gt;` FILL HERE.&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="using-transifex">
+<h3>Using Transifex<a class="headerlink" href="#using-transifex" title="連結到這個標頭"></a></h3>
+<p><a class="reference external" href="https://www.transifex.com/">Transifex</a> is a platform that simplifies the manipulation of <code class="docutils literal notranslate"><span class="pre">.po</span></code> files and offers many useful features to make the translation process as smooth as possible.
+These features includes a great web based UI, <a class="reference external" href="https://docs.transifex.com/setup/translation-memory">Translation Memory</a>, collaborative translation, etc.</p>
+<p>You need to create an account in their service and a new project before start.</p>
+<p>After that, you need to install the <a class="reference external" href="https://docs.transifex.com/client/introduction">Transifex CLI</a> tool which will help you in the process to upload source files, update them and also download translated files.
+To do this, run this command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">curl<span class="w"> </span>-o-<span class="w"> </span>https://raw.githubusercontent.com/transifex/cli/master/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash</span>
+</pre></div></div><p>After installing it, you need to configure your account.
+For this, you need to create an API Token for your user to access this service through the command line.
+This can be done under your <a class="reference external" href="https://app.transifex.com/user/settings/api/">User's Settings</a>.</p>
+<p>With the token, you have two options: to export as <code class="docutils literal notranslate"><span class="pre">TX_TOKEN</span></code> environment variable or to store it in <code class="docutils literal notranslate"><span class="pre">~/.transifexrc</span></code>.</p>
+<p>You can export the token to an environment variable, using an <code class="docutils literal notranslate"><span class="pre">export</span></code> command, which activates it in your current command line session:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1"><span class="c1"># ``1/xxxx`` is the API token you generated</span></span>
+<span class="prompt1"><span class="nb">export</span><span class="w"> </span><span class="nv">TX_TOKEN</span><span class="o">=</span><span class="m">1</span>/xxxx</span>
+</pre></div></div><p>In order to store the token permanently, you can save it in a <code class="docutils literal notranslate"><span class="pre">~/.transifexrc</span></code> file. It should look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">transifex</span><span class="o">.</span><span class="n">com</span><span class="p">]</span>
+<span class="n">rest_hostname</span> <span class="o">=</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">rest</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">transifex</span><span class="o">.</span><span class="n">com</span>
+<span class="n">token</span>         <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">xxxx</span>
+</pre></div>
+</div>
+<p>Now, it is time to set the project's Transifex configuration and to map every <code class="docutils literal notranslate"><span class="pre">.pot</span></code> file you have created in the previous step to a resource under Transifex.
+To achieve this, you need to run this command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">sphinx-intl<span class="w"> </span>create-txconfig</span>
+<span class="prompt1">sphinx-intl<span class="w"> </span>update-txconfig-resources<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--pot-dir<span class="w"> </span>_build/gettext<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--locale-dir<span class="w"> </span>locale<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--transifex-organization-name<span class="w"> </span><span class="nv">$TRANSIFEX_ORGANIZATION</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--transifex-project-name<span class="w"> </span><span class="nv">$TRANSIFEX_PROJECT</span></span>
+</pre></div></div><p>This command will generate a file at <code class="docutils literal notranslate"><span class="pre">.tx/config</span></code> with all the information needed by the <code class="docutils literal notranslate"><span class="pre">tx</span></code> tool to keep your translation synchronized.</p>
+<p>Finally, you need to upload these files to Transifex platform so translators can start their work.
+To do this, you can run this command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">tx<span class="w"> </span>push<span class="w"> </span>--source</span>
+</pre></div></div><p>Now, you can go to your Transifex's project and check that there is one resource per <code class="docutils literal notranslate"><span class="pre">.rst</span></code> file of your documentation.
+After the source files are translated using Transifex, you can download all the translations for all the languages by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">tx<span class="w"> </span>pull<span class="w"> </span>--all</span>
+</pre></div></div><p>This command will leave the <code class="docutils literal notranslate"><span class="pre">.po</span></code> files needed for building the documentation in the target language under <code class="docutils literal notranslate"><span class="pre">locale/&lt;lang&gt;/LC_MESSAGES</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>It's important to use always the same method to translate the documentation and do not mix them.
+Otherwise, it's very easy to end up with inconsistent translations or losing already translated text.</p>
+</div>
+</section>
+</section>
+<section id="build-the-documentation-in-target-language">
+<h2>Build the documentation in target language<a class="headerlink" href="#build-the-documentation-in-target-language" title="連結到這個標頭"></a></h2>
+<p>Finally, to build our documentation in Spanish(Argentina) we need to tell Sphinx builder the target language with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>-D<span class="w"> </span><span class="nv">language</span><span class="o">=</span>es_AR<span class="w"> </span>.<span class="w"> </span>_build/html/es_AR</span>
+</pre></div></div><div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>There is no need to create a new <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> to redefine the <code class="docutils literal notranslate"><span class="pre">language</span></code> for the Spanish version of this documentation,
+but you need to set <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-locale_dirs">locale_dirs</a> to <code class="docutils literal notranslate"><span class="pre">[&quot;locale&quot;]</span></code> for Sphinx to find the translated content.</p>
+</div>
+<p>After running this command, the Spanish(Argentina) version of your documentation will be under <code class="docutils literal notranslate"><span class="pre">_build/html/es_AR</span></code>.</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="連結到這個標頭"></a></h2>
+<section id="update-sources-to-be-translated">
+<h3>Update sources to be translated<a class="headerlink" href="#update-sources-to-be-translated" title="連結到這個標頭"></a></h3>
+<p>Once you have done changes in your documentation, you may want to make these additions/modifications available for translators so they can update it:</p>
+<ol class="arabic">
+<li><p>建立 <code class="docutils literal notranslate"><span class="pre">.pot</span></code> 檔案：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">sphinx-build<span class="w"> </span>-b<span class="w"> </span>gettext<span class="w"> </span>.<span class="w"> </span>_build/gettext</span>
+</pre></div></div></li>
+<li><p>Push new files to Transifex</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">tx<span class="w"> </span>push<span class="w"> </span>--source</span>
+</pre></div></div></li>
+</ol>
+</section>
+<section id="build-documentation-from-up-to-date-translation">
+<h3>Build documentation from up to date translation<a class="headerlink" href="#build-documentation-from-up-to-date-translation" title="連結到這個標頭"></a></h3>
+<p>When translators have finished their job, you may want to update the documentation by pulling the changes from Transifex:</p>
+<ol class="arabic">
+<li><p>Pull up to date translations from Transifex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">tx<span class="w"> </span>pull<span class="w"> </span>--all</span>
+</pre></div></div></li>
+<li><p>Commit and push these changes to our repo</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">git<span class="w"> </span>add<span class="w"> </span>locale/</span>
+<span class="prompt1">git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update translations&quot;</span></span>
+<span class="prompt1">git<span class="w"> </span>push</span>
+</pre></div></div></li>
+</ol>
+<p>The last <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> will trigger a build per translation defined as part of your project under Read the Docs and make it immediately available.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="enable-offline-formats.html" class="btn btn-neutral float-left" title="How to enable offline formats" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pdf-non-ascii-languages.html" class="btn btn-neutral float-right" title="How to support Unicode in Sphinx PDFs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

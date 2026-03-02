@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to use a .readthedocs.yaml file in a sub-folder" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/setup/monorepo.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This guide shows how to configure a Read the Docs project to use a custom path for the.readthedocs.yaml build configuration. Monorepos that have multiple documentation projects in the same Git repository can benefit from this feature. By default, Read the Docs will use the.readthedocs.yaml at the..." />
+<meta property="og:image" content="_images/screenshot-howto-build-configuration-file.png" />
+<meta property="og:image:alt" content="Screenshot of where to find the :guilabel:`Build configuration file` setting." />
+<meta name="description" content="This guide shows how to configure a Read the Docs project to use a custom path for the.readthedocs.yaml build configuration. Monorepos that have multiple documentation projects in the same Git repository can benefit from this feature. By default, Read the Docs will use the.readthedocs.yaml at the..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use a .readthedocs.yaml file in a sub-folder &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/setup/monorepo.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../_static/translations.js?v=cbf116e0"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜尋" href="../../search.html" />
+    <link rel="next" title="How to use custom URL redirects in documentation projects" href="../redirects.html" />
+    <link rel="prev" title="How to hide a version and keep its documentation online" href="../hiding-a-version.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../../ltd-provenance.js"></script>
+<script type="text/javascript" src="../../ltd-current.js"></script>
+<script type="text/javascript" src="../../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">專案設定與組態</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../connecting-git-account.html">Connecting your Read the Docs account to your Git provider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-repo-manual.html">Configuring a Git repository manually</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../custom-domains.html">Managing custom domains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../subprojects.html">Managing subprojects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hiding-a-version.html">Hiding a version</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using a .readthedocs.yaml file in a sub-folder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#implementation-considerations">Implementation considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-an-additional-project-from-the-same-repository">Adding an additional project from the same repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-the-custom-build-configuration-file">Setting the custom build configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#next-steps">Next steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-tips">Other tips</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../redirects.html">Using custom URL redirects in documentation projects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">How-to guides: project setup and configuration</a></li>
+      <li class="breadcrumb-item active">How to use a .readthedocs.yaml file in a sub-folder</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/setup/monorepo.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-use-a-readthedocs-yaml-file-in-a-sub-folder">
+<h1>How to use a .readthedocs.yaml file in a sub-folder<a class="headerlink" href="#how-to-use-a-readthedocs-yaml-file-in-a-sub-folder" title="連結到這個標頭"></a></h1>
+<p>This guide shows how to configure a Read the Docs project to use a custom path for the <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> build configuration.
+<a class="reference external" href="https://en.wikipedia.org/wiki/Monorepo">Monorepos</a> that have multiple documentation projects in the same Git repository can benefit from this feature.</p>
+<p>By default,
+Read the Docs will use the <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> at the top level of your Git repository.
+But if a Git repository contains multiple documentation projects that need different build configurations,
+you will need to have a <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> file in multiple sub-folders.</p>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference external" href="https://sphinx-multiproject.readthedocs.io/en/latest/">sphinx-multiproject</a></dt><dd><p>If you are only using Sphinx projects and want to share the same build configuration,
+you can also use the <code class="docutils literal notranslate"><span class="pre">sphinx-multiproject</span></code> extension.</p>
+</dd>
+<dt><a class="reference internal" href="../environment-variables.html"><span class="doc">How to use custom environment variables</span></a></dt><dd><p>You might also be able to reuse the same configuration file across multiple projects,
+using only environment variables.
+This is possible if the configuration pattern is very similar and the documentation tool is the same.</p>
+</dd>
+</dl>
+</div>
+<section id="implementation-considerations">
+<h2>Implementation considerations<a class="headerlink" href="#implementation-considerations" title="連結到這個標頭"></a></h2>
+<p>This feature is currently <em>project-wide</em>.
+A custom build configuration file path is applied to all versions of your documentation.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Changing the configuration path will apply to all versions.
+Different versions of the project may not be able to build again if this path is changed.</p>
+</div>
+</section>
+<section id="adding-an-additional-project-from-the-same-repository">
+<h2>Adding an additional project from the same repository<a class="headerlink" href="#adding-an-additional-project-from-the-same-repository" title="連結到這個標頭"></a></h2>
+<p>Once you have added the first project from the <a class="reference internal" href="../../intro/add-project.html#automatically-add-your-project"><span class="std std-ref">Import Wizard</span></a>,
+you will need to repeat this process again to add the additional project from the same repository.</p>
+</section>
+<section id="setting-the-custom-build-configuration-file">
+<h2>Setting the custom build configuration file<a class="headerlink" href="#setting-the-custom-build-configuration-file" title="連結到這個標頭"></a></h2>
+<p>Once you have added a Git repository to a project that needs a custom configuration file path,
+navigate to <span class="menuselection">Admin ‣ Settings</span> and add the path to the <span class="guilabel">Build configuration file</span> field.</p>
+<img alt="Screenshot of where to find the :guilabel:`Build configuration file` setting." src="../../_images/screenshot-howto-build-configuration-file.png" />
+<p>After pressing <span class="guilabel">Save</span>,
+you need to ensure that relevant versions of your documentation are built again.</p>
+<div class="admonition tip">
+<p class="admonition-title">小訣竅</p>
+<p>Having multiple different build configuration files can be complex.
+We recommend setting up 1-2 projects in your Monorepo and getting them to build and publish successfully before adding additional projects to the equation.</p>
+</div>
+</section>
+<section id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="連結到這個標頭"></a></h2>
+<p>Once you have your monorepo pattern implemented and tested and it's ready to roll out to all your projects,
+you should also consider the Read the Docs project setup for these individual projects.</p>
+<p>Having individual projects gives you the full flexibility of the Read the Docs platform to make individual setups for each project.</p>
+<p>For each project, it's now possible to configure:</p>
+<ul class="simple">
+<li><p>Sets of maintainers (or <a class="reference internal" href="../../commercial/organizations.html"><span class="doc">organizations</span></a> on Read the Docs for Business)</p></li>
+<li><p><a class="reference internal" href="../custom-domains.html"><span class="doc">Custom redirect rules</span></a></p></li>
+<li><p><a class="reference internal" href="../custom-domains.html"><span class="doc">Custom domains</span></a></p></li>
+<li><p><a class="reference internal" href="../../automation-rules.html"><span class="doc">Automation rules</span></a></p></li>
+<li><p><a class="reference internal" href="../../traffic-analytics.html"><span class="doc">Traffic analytics</span></a></p></li>
+<li><p>Additional documentation tools with individual <a class="reference internal" href="../../build-customization.html"><span class="doc">build processes</span></a>:
+One project might use <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html" title="(於 Sphinx v9.1.0)"><span class="xref std std-doc">Sphinx</span></a>,
+while another project setup might use <a class="reference external" href="https://asciidoctor.org/">Asciidoctor</a>.</p></li>
+</ul>
+<p>...and much more. <em>All</em> settings for a Read the Docs project is available for each individual project.</p>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../subprojects.html"><span class="doc">Managing subprojects</span></a></dt><dd><p>More information on nesting one project inside another project.
+In this setup, it is still possible to use the same monorepo for each subproject.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="other-tips">
+<h2>Other tips<a class="headerlink" href="#other-tips" title="連結到這個標頭"></a></h2>
+<p>For a monorepo,
+it's not desirable to have changes in unrelated sub-folders trigger new builds.</p>
+<p>Therefore,
+you should consider setting up <a class="reference internal" href="../build/skip-build.html"><span class="doc">conditional build cancellation rules</span></a>.
+The configuration is added in each <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>,
+making it possible to write one conditional build rules per documentation project in the Monorepo 💯️</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../hiding-a-version.html" class="btn btn-neutral float-left" title="How to hide a version and keep its documentation online" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../redirects.html" class="btn btn-neutral float-right" title="How to use custom URL redirects in documentation projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

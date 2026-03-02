@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to manage versions automatically" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/automation-rules.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="In this guide, we show you how to define rules to automate creation of new versions on Read the Docs, using your Git repository’s version logic. Automating your versioning on Read the Docs means you only have to handle your versioning logic in Git. Adding a new automation rule: First you need to ..." />
+<meta property="og:image" content="_images/screenshot_automation_rules_add.png" />
+<meta property="og:image:alt" content="Screenshot of the &quot;Add Rule&quot; form" />
+<meta name="description" content="In this guide, we show you how to define rules to automate creation of new versions on Read the Docs, using your Git repository’s version logic. Automating your versioning on Read the Docs means you only have to handle your versioning logic in Git. Adding a new automation rule: First you need to ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to manage versions automatically &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/automation-rules.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a48b73ee"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How-to guides: upgrading and maintaining projects" href="maintenance/index.html" />
+    <link rel="prev" title="How to use custom environment variables" href="environment-variables.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="build/index.html">Build process</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="build/email-notifications.html">Setup email notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="build/webhooks.html">Setting up outgoing webhooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull-requests.html">Configuring pull request builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="environment-variables.html">Using custom environment variables</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Managing versions automatically</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-new-automation-rule">Adding a new automation rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ordering-your-rules">Ordering your rules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="build/index.html">How-to guides: build process</a></li>
+      <li class="breadcrumb-item active">How to manage versions automatically</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/automation-rules.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-manage-versions-automatically">
+<h1>How to manage versions automatically<a class="headerlink" href="#how-to-manage-versions-automatically" title="Link to this heading"></a></h1>
+<p>In this guide,
+we show you how to define rules to automate creation of new versions on Read the Docs,
+using your Git repository’s version logic.
+Automating your versioning on Read the Docs means you only have to handle your versioning logic in Git.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../versions.html"><span class="doc">Versions</span></a></dt><dd><p>Learn more about versioning of documentation in general.</p>
+</dd>
+<dt><a class="reference internal" href="../automation-rules.html"><span class="doc">Automation rules</span></a></dt><dd><p>Reference for all different rules and actions possible with automation.</p>
+</dd>
+</dl>
+</div>
+<section id="adding-a-new-automation-rule">
+<h2>Adding a new automation rule<a class="headerlink" href="#adding-a-new-automation-rule" title="Link to this heading"></a></h2>
+<p>First you need to go to the automation rule creation page:</p>
+<ol class="arabic simple">
+<li><p>Navigate to <span class="menuselection">Admin ‣ Automation Rules</span>.</p></li>
+<li><p>Click on <span class="guilabel">Add Rule</span> and you will see the following form.</p></li>
+</ol>
+<img alt="Screenshot of the &quot;Add Rule&quot; form" src="../_images/screenshot_automation_rules_add.png" />
+<p>In the <span class="guilabel">Automation Rule</span> form, you need to fill in 4 fields:</p>
+<ol class="arabic simple">
+<li><p>Enter a <span class="guilabel">Description</span> that you can refer to later.
+For example, entering “Create new stable version” is a good title,
+as it explains the intention of the rule.</p></li>
+<li><p>Choose a <span class="guilabel">Match</span>,
+which is the pattern you wish to detect in either a Git branch or tag.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../automation-rules.html#predefined-matches"><span class="std std-ref">Any version</span></a> matches all values.</p></li>
+<li><p><a class="reference internal" href="../automation-rules.html#predefined-matches"><span class="std std-ref">SemVer versions</span></a> matches only values that have the <a class="reference external" href="https://semver.org/">SemVer</a> format.</p></li>
+<li><p><a class="reference internal" href="../automation-rules.html#custom-matches"><span class="std std-ref">Custom match</span></a> matches your own pattern (entered below).
+If you choose this option,
+a field <span class="guilabel">Custom match</span> will automatically appear below the drop-down where you can add a regular expression in <a class="reference external" href="https://docs.python.org/3/library/re.html">Python regex format</a>.</p></li>
+</ul>
+</li>
+<li><p>Choose a <span class="guilabel">Version type</span>.
+You can choose between <em>Tag</em> or <em>Branch</em>,
+denoting <em>Git tag</em> or <em>Git branch</em>.</p></li>
+<li><p>Finally, choose the <span class="guilabel">Action</span>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../automation-rules.html#actions-for-versions"><span class="std std-ref">Activate version</span></a></p></li>
+<li><p><a class="reference internal" href="../automation-rules.html#actions-for-versions"><span class="std std-ref">Hide version</span></a></p></li>
+<li><p><a class="reference internal" href="../automation-rules.html#actions-for-versions"><span class="std std-ref">Set version as default</span></a></p></li>
+<li><p><a class="reference internal" href="../automation-rules.html#actions-for-versions"><span class="std std-ref">Delete version (on branch/tag deletion)</span></a></p></li>
+</ul>
+</li>
+</ol>
+<p>Now your rule is ready and you can press <span class="guilabel">Save</span>.
+The rule takes effect immediately when a new version is created,
+but does not apply to old versions.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<dl class="simple">
+<dt>Examples of common usage</dt><dd><p>See <a class="reference internal" href="../automation-rules.html#examples"><span class="std std-ref">the list of examples</span></a> for rules that are commonly used.</p>
+</dd>
+<dt>Want to test if your rule works?</dt><dd><p>If you are using Git in order to create new versions,
+create a Git tag or branch that matches the rule and check if your automation action is triggered.
+After the experiment,
+you can delete both from Git and Read the Docs.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="ordering-your-rules">
+<h2>Ordering your rules<a class="headerlink" href="#ordering-your-rules" title="Link to this heading"></a></h2>
+<p>The order your rules are listed in  <span class="menuselection">Admin ‣ Automation Rules</span> matters.
+Each action will be performed in that order,
+so earlier rules have a higher priority.</p>
+<p>You can change the order using the up and down arrow buttons.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>New rules are added at the start of the list
+(i.e. they have the highest priority).</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="environment-variables.html" class="btn btn-neutral float-left" title="How to use custom environment variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="maintenance/index.html" class="btn btn-neutral float-right" title="How-to guides: upgrading and maintaining projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

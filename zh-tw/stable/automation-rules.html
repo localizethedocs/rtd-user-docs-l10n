@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Automation rules" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="automation-rules.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Automation rules allow project maintainers to automate actions on new branches and tags in Git repositories. If you are familiar with GitOps, this might seem familiar. The goal of automation rules is to be able to control versioning through your Git repository and avoid duplicating these efforts ..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Automation rules allow project maintainers to automate actions on new branches and tags in Git repositories. If you are familiar with GitOps, this might seem familiar. The goal of automation rules is to be able to control versioning through your Git repository and avoid duplicating these efforts ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automation rules &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/automation-rules.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=65c3111a"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=cbf116e0"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜尋" href="search.html" />
+    <link rel="next" title="How to create reproducible builds" href="guides/reproducible-builds.html" />
+    <link rel="prev" title="Account authentication methods" href="intro/accounts.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Automation rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-automation-rules-work">How automation rules work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#matching-a-version-in-git">Matching a version in Git</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#predefined-matches">Predefined matches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-matches">Custom matches</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#actions-for-versions">Actions for versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#order">Order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#activate-all-new-tags">Activate all new tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activate-only-new-branches-that-belong-to-the-1-x-release">Activate only new branches that belong to the <code class="docutils literal notranslate"><span class="pre">1.x</span></code> release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-an-active-version-when-a-branch-is-deleted">Delete an active version when a branch is deleted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-as-default-new-tags-that-have-the-stable-or-release-suffix">Set as default new tags that have the <code class="docutils literal notranslate"><span class="pre">-stable</span></code> or <code class="docutils literal notranslate"><span class="pre">-release</span></code> suffix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activate-all-new-tags-and-branches-that-start-with-v-or-v">Activate all new tags and branches that start with <code class="docutils literal notranslate"><span class="pre">v</span></code> or <code class="docutils literal notranslate"><span class="pre">V</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activate-all-new-tags-that-don-t-contain-the-nightly-suffix">Activate all new tags that don't contain the <code class="docutils literal notranslate"><span class="pre">-nightly</span></code> suffix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Automation rules</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/automation-rules.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="automation-rules">
+<h1>Automation rules<a class="headerlink" href="#automation-rules" title="連結到這個標頭"></a></h1>
+<p>Automation rules allow project maintainers to automate actions on new branches and tags in Git repositories.
+If you are familiar with <a class="reference internal" href="glossary.html#term-GitOps"><span class="xref std std-term">GitOps</span></a>,
+this might seem familiar.
+The goal of automation rules is to be able to control versioning through your Git repository
+and avoid duplicating these efforts on Read the Docs.</p>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="guides/automation-rules.html"><span class="doc">如何自動管理版本</span></a></dt><dd><p>A practical guide to managing automated versioning of your documentation.</p>
+</dd>
+<dt><a class="reference internal" href="versions.html"><span class="doc">Versions</span></a></dt><dd><p>General explanation of how versioning works on Read the Docs</p>
+</dd>
+</dl>
+</div>
+<section id="how-automation-rules-work">
+<h2>How automation rules work<a class="headerlink" href="#how-automation-rules-work" title="連結到這個標頭"></a></h2>
+<p>When a new tag or branch is pushed to your repository,
+Read the Docs receives a webhook.
+We then create a new Read the Docs <em>version</em> that matches your new Git <em>tag or branch</em>.</p>
+<p>All automation rules are evaluated for this version,
+in the order they are listed.
+If the version <strong>matches</strong> the version type and the pattern in the rule,
+the specified <strong>action</strong> is performed on that version.</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>Versions can match multiple automation rules,
+and all matching actions will be performed on the version.</p>
+</div>
+</section>
+<section id="matching-a-version-in-git">
+<h2>Matching a version in Git<a class="headerlink" href="#matching-a-version-in-git" title="連結到這個標頭"></a></h2>
+<p>We have a couple predefined ways to match against versions that are created,
+and you can also define your own.</p>
+<section id="predefined-matches">
+<h3>Predefined matches<a class="headerlink" href="#predefined-matches" title="連結到這個標頭"></a></h3>
+<p>Automation rules support two predefined version matches:</p>
+<ul class="simple">
+<li><p><strong>Any version</strong>: All new versions will match the rule.</p></li>
+<li><p><strong>SemVer versions</strong>: All new versions that follow <a class="reference external" href="https://semver.org/">semantic versioning</a>
+(with or without a <code class="xref py py-obj docutils literal notranslate"><span class="pre">v</span></code> prefix) will match the rule.</p></li>
+</ul>
+</section>
+<section id="custom-matches">
+<h3>Custom matches<a class="headerlink" href="#custom-matches" title="連結到這個標頭"></a></h3>
+<p>If none of the above predefined matches meet your use case,
+you can use a <strong>Custom match</strong>.</p>
+<p>The custom match should be a valid <a class="reference external" href="https://docs.python.org/3/library/re.html">Python regular expression</a>.
+Each new version will be tested against this regular expression.</p>
+</section>
+</section>
+<section id="actions-for-versions">
+<h2>Actions for versions<a class="headerlink" href="#actions-for-versions" title="連結到這個標頭"></a></h2>
+<p>When an automation rule matches a new version,
+the specified action is performed on that version.
+Currently, the following actions are available:</p>
+<dl class="simple">
+<dt>Activate version</dt><dd><p>Activates and builds the version.</p>
+</dd>
+<dt>隱藏版本</dt><dd><p>Hides the version. If the version is not active, activates it and builds the version.
+See <a class="reference internal" href="versions.html#version-states"><span class="std std-ref">版本狀態</span></a>.</p>
+</dd>
+<dt>Make version public</dt><dd><p>Sets the version's privacy level to public.
+See <a class="reference internal" href="versions.html#version-states"><span class="std std-ref">版本狀態</span></a>.</p>
+</dd>
+<dt>Make version private</dt><dd><p>Sets the version's privacy level to private.
+See <a class="reference internal" href="versions.html#version-states"><span class="std std-ref">版本狀態</span></a>.</p>
+</dd>
+<dt>Set version as default</dt><dd><p>Sets the version as the <a class="reference internal" href="glossary.html#term-default-version"><span class="xref std std-term">default version</span></a>.
+It also activates and builds the version.
+See <a class="reference internal" href="user-defined-redirects.html#root-url-redirect"><span class="std std-ref">Root URL redirect at /</span></a>.</p>
+</dd>
+<dt>Delete version</dt><dd><p>When a branch or tag is deleted from your repository,
+Read the Docs will delete it <em>only if isn't active</em>.
+This action allows you to delete <em>active</em> versions when a branch or tag is deleted from your repository.</p>
+</dd>
+</dl>
+<p>There are a couple caveats to these rules that are useful:</p>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="glossary.html#term-default-version"><span class="xref std std-term">default version</span></a> isn't deleted even if it matches a rule.
+You can use the <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">version</span> <span class="pre">as</span> <span class="pre">default</span></code> action to change the default version
+before deleting the current one.</p></li>
+<li><p>If your versions follow <span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0440/"><strong>PEP 440</strong></a>,
+Read the Docs activates and builds the version if it's greater than the current stable version.
+The stable version is also automatically updated at the same time.
+See more in <a class="reference internal" href="versions.html"><span class="doc">Versions</span></a>.</p></li>
+</ul>
+</section>
+<section id="order">
+<h2>Order<a class="headerlink" href="#order" title="連結到這個標頭"></a></h2>
+<p>When a new Read the Docs version is created,
+all rules with a successful match will have their action triggered,
+in the order they appear on the <span class="guilabel">Automation Rules</span> page.</p>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="連結到這個標頭"></a></h2>
+<section id="activate-all-new-tags">
+<h3>Activate all new tags<a class="headerlink" href="#activate-all-new-tags" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>Match: <code class="docutils literal notranslate"><span class="pre">Any</span> <span class="pre">version</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Tag</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Activate</span> <span class="pre">version</span></code></p></li>
+</ul>
+</section>
+<section id="activate-only-new-branches-that-belong-to-the-1-x-release">
+<h3>Activate only new branches that belong to the <code class="docutils literal notranslate"><span class="pre">1.x</span></code> release<a class="headerlink" href="#activate-only-new-branches-that-belong-to-the-1-x-release" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>Custom match: <code class="docutils literal notranslate"><span class="pre">^1\.\d+$</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Branch</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Activate</span> <span class="pre">version</span></code></p></li>
+</ul>
+</section>
+<section id="delete-an-active-version-when-a-branch-is-deleted">
+<h3>Delete an active version when a branch is deleted<a class="headerlink" href="#delete-an-active-version-when-a-branch-is-deleted" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>Match: <code class="docutils literal notranslate"><span class="pre">Any</span> <span class="pre">version</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Branch</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">version</span></code></p></li>
+</ul>
+</section>
+<section id="set-as-default-new-tags-that-have-the-stable-or-release-suffix">
+<h3>Set as default new tags that have the <code class="docutils literal notranslate"><span class="pre">-stable</span></code> or <code class="docutils literal notranslate"><span class="pre">-release</span></code> suffix<a class="headerlink" href="#set-as-default-new-tags-that-have-the-stable-or-release-suffix" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>Custom match: <code class="docutils literal notranslate"><span class="pre">-(stable|release)$</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Tag</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">version</span> <span class="pre">as</span> <span class="pre">default</span></code></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>You can also create two rules:
+one to match <code class="docutils literal notranslate"><span class="pre">-stable</span></code> and other to match <code class="docutils literal notranslate"><span class="pre">-release</span></code>.</p>
+</div>
+</section>
+<section id="activate-all-new-tags-and-branches-that-start-with-v-or-v">
+<h3>Activate all new tags and branches that start with <code class="docutils literal notranslate"><span class="pre">v</span></code> or <code class="docutils literal notranslate"><span class="pre">V</span></code><a class="headerlink" href="#activate-all-new-tags-and-branches-that-start-with-v-or-v" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>Custom match: <code class="docutils literal notranslate"><span class="pre">^[vV]</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Tag</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Activate</span> <span class="pre">version</span></code></p></li>
+</ul>
+<ul class="simple">
+<li><p>Custom match: <code class="docutils literal notranslate"><span class="pre">^[vV]</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Branch</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Activate</span> <span class="pre">version</span></code></p></li>
+</ul>
+</section>
+<section id="activate-all-new-tags-that-don-t-contain-the-nightly-suffix">
+<h3>Activate all new tags that don't contain the <code class="docutils literal notranslate"><span class="pre">-nightly</span></code> suffix<a class="headerlink" href="#activate-all-new-tags-that-don-t-contain-the-nightly-suffix" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>Custom match: <code class="docutils literal notranslate"><span class="pre">.*(?&lt;!-nightly)$</span></code></p></li>
+<li><p>Version type: <code class="docutils literal notranslate"><span class="pre">Tag</span></code></p></li>
+<li><p>Action: <code class="docutils literal notranslate"><span class="pre">Activate</span> <span class="pre">version</span></code></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro/accounts.html" class="btn btn-neutral float-left" title="Account authentication methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="guides/reproducible-builds.html" class="btn btn-neutral float-right" title="How to create reproducible builds" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

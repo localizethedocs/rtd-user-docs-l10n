@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Configuration file overview" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="config-file/index.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="As part of the initial set up of a Read the Docs project, you need to create a configuration file called.readthedocs.yaml. The configuration file tells Read the Docs what specific settings to use for your project. This tutorial covers: Where to put your configuration file, Getting started with a ..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="As part of the initial set up of a Read the Docs project, you need to create a configuration file called.readthedocs.yaml. The configuration file tells Read the Docs what specific settings to use for your project. This tutorial covers: Where to put your configuration file, Getting started with a ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuration file overview &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/config-file/index.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Configuration file reference" href="v2.html" />
+    <link rel="prev" title="Example projects" href="../examples.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration file overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#where-to-put-your-configuration-file">Where to put your configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-a-template">Getting started with a template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-the-template">Editing the template</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#skip-file-header-and-comments">Skip: file header and comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjust-build-os">Adjust: <code class="docutils literal notranslate"><span class="pre">build.os</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjust-python-configuration">Adjust: Python configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjust-sphinx-and-mkdocs-version">Adjust: Sphinx and MkDocs version</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Configuration file overview</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/config-file/index.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuration-file-overview">
+<h1>Configuration file overview<a class="headerlink" href="#configuration-file-overview" title="Link to this heading"></a></h1>
+<p>As part of the initial set up of a Read the Docs project,
+you need to create a <strong>configuration file</strong> called <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>.
+The configuration file tells Read the Docs what specific settings to use for your project.</p>
+<p>This tutorial covers:</p>
+<nav class="contents local" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#where-to-put-your-configuration-file" id="id4">Where to put your configuration file</a></p></li>
+<li><p><a class="reference internal" href="#getting-started-with-a-template" id="id5">Getting started with a template</a></p></li>
+<li><p><a class="reference internal" href="#editing-the-template" id="id6">Editing the template</a></p></li>
+<li><p><a class="reference internal" href="#next-steps" id="id7">Next steps</a></p></li>
+</ul>
+</nav>
+<section id="where-to-put-your-configuration-file">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Where to put your configuration file</a><a class="headerlink" href="#where-to-put-your-configuration-file" title="Link to this heading"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> file should be placed in the top-most directory of your project's repository.
+When you have changed the configuration file,
+you need to commit and push the changes to your Git repository.
+Read the Docs will then automatically find and use the configuration to build your project.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The Read the Docs configuration file is a <a class="reference external" href="https://yaml.org/">YAML</a> file.
+YAML is a human-friendly data serialization language for all programming languages.
+To learn more about the structure of these files, see the <a class="reference external" href="https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml">YAML language overview</a>.</p>
+</div>
+</section>
+<section id="getting-started-with-a-template">
+<span id="howto-templates"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Getting started with a template</a><a class="headerlink" href="#getting-started-with-a-template" title="Link to this heading"></a></h2>
+<p>Here are some configuration file examples to help you get started.
+Pick an example based on the tool that your project is using,
+copy its contents to <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>,
+and add the file to your Git repository.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Sphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MkDocs</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>If your project uses Sphinx,
+we offer a special builder optimized for Sphinx projects.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Read the Docs configuration file for Sphinx projects</span>
+<span class="linenos"> 2</span><span class="c1"># See https://docs.readthedocs.io/en/stable/config-file/v2.html for details</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># Required</span>
+<span class="linenos"> 5</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="c1"># Set the OS, Python version and other tools you might need</span>
+<span class="linenos"> 8</span><span class="nt">build</span><span class="p">:</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="linenos">10</span><span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="linenos">11</span><span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+<span class="linenos">12</span><span class="w">    </span><span class="c1"># You can also specify other tool versions:</span>
+<span class="linenos">13</span><span class="w">    </span><span class="c1"># nodejs: &quot;20&quot;</span>
+<span class="linenos">14</span><span class="w">    </span><span class="c1"># rust: &quot;1.70&quot;</span>
+<span class="linenos">15</span><span class="w">    </span><span class="c1"># golang: &quot;1.20&quot;</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="c1"># Build documentation in the &quot;docs/&quot; directory with Sphinx</span>
+<span class="linenos">18</span><span class="nt">sphinx</span><span class="p">:</span>
+<span class="linenos">19</span><span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+<span class="linenos">20</span><span class="w">  </span><span class="c1"># You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs</span>
+<span class="linenos">21</span><span class="w">  </span><span class="c1"># builder: &quot;dirhtml&quot;</span>
+<span class="linenos">22</span><span class="w">  </span><span class="c1"># Fail on all warnings to avoid broken references</span>
+<span class="linenos">23</span><span class="w">  </span><span class="c1"># fail_on_warning: true</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="c1"># Optionally build your docs in additional formats such as PDF and ePub</span>
+<span class="linenos">26</span><span class="c1"># formats:</span>
+<span class="linenos">27</span><span class="c1">#   - pdf</span>
+<span class="linenos">28</span><span class="c1">#   - epub</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="c1"># Optional but recommended, declare the Python requirements required</span>
+<span class="linenos">31</span><span class="c1"># to build your documentation</span>
+<span class="linenos">32</span><span class="c1"># See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html</span>
+<span class="linenos">33</span><span class="c1"># python:</span>
+<span class="linenos">34</span><span class="c1">#   install:</span>
+<span class="linenos">35</span><span class="c1">#     - requirements: docs/requirements.txt</span>
+</pre></div>
+</div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>If your project uses MkDocs,
+we offer a special builder optimized for MkDocs projects.</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Read the Docs configuration file for MkDocs projects</span>
+<span class="linenos"> 2</span><span class="c1"># See https://docs.readthedocs.io/en/stable/config-file/v2.html for details</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># Required</span>
+<span class="linenos"> 5</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="c1"># Set the version of Python and other tools you might need</span>
+<span class="linenos"> 8</span><span class="nt">build</span><span class="p">:</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-22.04</span>
+<span class="linenos">10</span><span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="linenos">11</span><span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="nt">mkdocs</span><span class="p">:</span>
+<span class="linenos">14</span><span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="c1"># Optionally declare the Python requirements required to build your docs</span>
+<span class="linenos">17</span><span class="nt">python</span><span class="p">:</span>
+<span class="linenos">18</span><span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="linenos">19</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+</pre></div>
+</div>
+</div>
+</div></div>
+<p>You can find more information about these tools in our <a class="reference internal" href="../intro/doctools.html"><span class="doc">Popular documentation tools</span></a>.</p>
+</section>
+<section id="editing-the-template">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Editing the template</a><a class="headerlink" href="#editing-the-template" title="Link to this heading"></a></h2>
+<p>Now that you have a <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> file added to your Git repository,
+you should see Read the Docs trying to build your project with the configuration file.
+The configuration file probably needs some adjustments to accommodate exactly your project setup.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If you added the configuration file in a separate branch,
+you may have to activate a <a class="reference internal" href="../versions.html"><span class="doc">version</span></a> for that branch.</p>
+<p>If you have added the file in a pull request,
+you should enable <a class="reference internal" href="../guides/pull-requests.html"><span class="doc">pull request builds</span></a>.</p>
+</div>
+<section id="skip-file-header-and-comments">
+<h3>Skip: file header and comments<a class="headerlink" href="#skip-file-header-and-comments" title="Link to this heading"></a></h3>
+<p>There are some parts of the templates that you can leave in place:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">version</span></code> key</dt><dd><p>The version key tells the system how to read the rest of the configuration file.
+The current and only supported version is <strong>version 2</strong>.</p>
+</dd>
+<dt>Comments</dt><dd><p>We added comments that explain the configuration options and optional features.
+These lines begin with a <code class="docutils literal notranslate"><span class="pre">#</span></code>.</p>
+</dd>
+<dt>Commented out features</dt><dd><p>We use the <code class="docutils literal notranslate"><span class="pre">#</span></code> in front of some popular configuration options.
+They are there as examples,
+which you can choose to enable, delete or save for later.</p>
+</dd>
+</dl>
+</section>
+<section id="adjust-build-os">
+<h3>Adjust: <code class="docutils literal notranslate"><span class="pre">build.os</span></code><a class="headerlink" href="#adjust-build-os" title="Link to this heading"></a></h3>
+<p>In our examples,
+we are using Read the Docs' custom image based on the latest Ubuntu release.
+Package versions in these images will not change drastically,
+though will receive periodic security updates.</p>
+<p>You should pay attention to this field if your project needs to build on an older version of Ubuntu,
+or in the future when you need features from a newer Ubuntu.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="v2.html#build-os"><span class="std std-ref">build.os</span></a></dt><dd><p>Configuration file reference with all values possible for <code class="docutils literal notranslate"><span class="pre">build.os</span></code>.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="adjust-python-configuration">
+<h3>Adjust: Python configuration<a class="headerlink" href="#adjust-python-configuration" title="Link to this heading"></a></h3>
+<p>If you are using Python in your builds,
+you should define the Python version in <code class="docutils literal notranslate"><span class="pre">build.tools.python</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">python</span></code> key contains a list of sub-keys,
+specifying the requirements to install.</p>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">python.install.path</span></code> to install the project itself as a Python package using pip</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">python.install.requirements</span></code> to install packages from a requirements file</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">build.jobs</span></code> to install packages using Poetry or PDM</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="v2.html#build-tools-python"><span class="std std-ref">build.tools.python</span></a></dt><dd><p>Configuration file reference with all Python versions available for <code class="docutils literal notranslate"><span class="pre">build.tools.python</span></code>.</p>
+</dd>
+<dt><a class="reference internal" href="v2.html#python"><span class="std std-ref">python</span></a></dt><dd><p>Configuration file reference for configuring the Python environment activated by <code class="docutils literal notranslate"><span class="pre">build.tools.python</span></code>.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="adjust-sphinx-and-mkdocs-version">
+<h3>Adjust: Sphinx and MkDocs version<a class="headerlink" href="#adjust-sphinx-and-mkdocs-version" title="Link to this heading"></a></h3>
+<p>If you are using either the <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> or <code class="docutils literal notranslate"><span class="pre">mkdocs</span></code> builder,
+then Sphinx or MkDocs will be installed automatically in its latest version.</p>
+<p>But we recommend that you specify the version that your documentation project uses.
+The <code class="docutils literal notranslate"><span class="pre">requirements</span></code> key is a file path that points to a text (<code class="docutils literal notranslate"><span class="pre">.txt</span></code>) file
+that lists the Python packages you want Read the Docs to install.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../guides/reproducible-builds.html#use-a-requirements-file-for-python-dependencies"><span class="std std-ref">Use a requirements file for Python dependencies</span></a></dt><dd><p>This guide explains how to specify Python requirements,
+such as the version of Sphinx or MkDocs.</p>
+</dd>
+<dt><a class="reference internal" href="v2.html#sphinx"><span class="std std-ref">sphinx</span></a></dt><dd><p>Configuration file reference for configuring the Sphinx builder.</p>
+</dd>
+<dt><a class="reference internal" href="v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a></dt><dd><p>Configuration file reference for configuring the MkDocs builder.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+<section id="next-steps">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Next steps</a><a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
+<p>There are more configuration options that the ones mentioned in this guide.</p>
+<p>After you add a configuration file your Git repository,
+and you can see that Read the Docs is building your documentation using the file,
+you should have a look at the complete configuration file reference for options that might apply to your project.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="v2.html"><span class="doc">Configuration file reference</span></a>.</dt><dd><p>The complete list of all possible <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> settings,
+including the optional settings not covered in on this page.</p>
+</dd>
+<dt><a class="reference internal" href="../build-customization.html"><span class="doc">Build process customization</span></a></dt><dd><p>Are familiar with running a command line?
+Perhaps there are special commands that you know you want Read the Docs to run.
+Read this guide and learn more about how you add your own commands to <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../examples.html" class="btn btn-neutral float-left" title="Example projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="v2.html" class="btn btn-neutral float-right" title="Configuration file reference" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

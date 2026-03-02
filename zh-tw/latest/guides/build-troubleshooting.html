@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Troubleshooting build errors" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/build-troubleshooting.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This guide provides some common errors and resolutions encountered in the build process. Git errors: In the examples below, we use github.com, however error messages are similar for GitLab, Bitbucket etc. terminal prompts disabled: Resolution: This error can be quite misleading. It usually occurs..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="This guide provides some common errors and resolutions encountered in the build process. Git errors: In the examples below, we use github.com, however error messages are similar for GitLab, Bitbucket etc. terminal prompts disabled: Resolution: This error can be quite misleading. It usually occurs..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troubleshooting build errors &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/build-troubleshooting.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="Troubleshooting slow builds" href="build-using-too-many-resources.html" />
+    <link rel="prev" title="How-to guides: troubleshooting problems" href="troubleshooting/index.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Troubleshooting build errors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#git-errors">Git errors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#terminal-prompts-disabled">terminal prompts disabled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#error-pathspec">error: pathspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#permission-denied-publickey">Permission denied (publickey)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#error-repository-not-found">ERROR: Repository not found.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="build-using-too-many-resources.html">Troubleshooting slow builds</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="troubleshooting/index.html">How-to guides: troubleshooting problems</a></li>
+      <li class="breadcrumb-item active">Troubleshooting build errors</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/build-troubleshooting.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="troubleshooting-build-errors">
+<h1>Troubleshooting build errors<a class="headerlink" href="#troubleshooting-build-errors" title="連結到這個標頭"></a></h1>
+<div class="admonition tip">
+<p class="admonition-title">小訣竅</p>
+<p>Please help us keep this section updated and contribute your own error resolutions, performance improvements, etc.
+Send in your helpful comments or ideas 💡 to <a class="reference external" href="mailto:support&#37;&#52;&#48;readthedocs&#46;org">support<span>&#64;</span>readthedocs<span>&#46;</span>org</a>
+or contribute directly by clicking <span class="guilabel">Edit on GitHub</span> in the top right corner of this page.</p>
+</div>
+<p>This guide provides some common errors and resolutions encountered in the <a class="reference internal" href="../builds.html"><span class="doc">build process</span></a>.</p>
+<section id="git-errors">
+<h2>Git errors<a class="headerlink" href="#git-errors" title="連結到這個標頭"></a></h2>
+<p>In the examples below, we use <code class="docutils literal notranslate"><span class="pre">github.com</span></code>, however error messages are similar for GitLab, Bitbucket etc.</p>
+<section id="terminal-prompts-disabled">
+<h3>terminal prompts disabled<a class="headerlink" href="#terminal-prompts-disabled" title="連結到這個標頭"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>fatal: could not read Username for &#39;https://github.com&#39;: terminal prompts disabled
+</pre></div>
+</div>
+<p><strong>Resolution:</strong> This error can be quite misleading. It usually occurs when a repository could not be found because of a typo in the repository name or because the repository has been deleted. Verify your repository URL in <span class="guilabel">Admin &gt; Settings</span>.</p>
+<p>This error also occurs if you have changed a <code class="docutils literal notranslate"><span class="pre">public</span></code> repository to <code class="docutils literal notranslate"><span class="pre">private</span></code> and you are using <code class="docutils literal notranslate"><span class="pre">https://</span></code> in your git repository URL.</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>To use private repositories, you need a plan on <a class="reference external" href="https://app.readthedocs.com">Read the Docs for Business</a>.</p>
+</div>
+</section>
+<section id="error-pathspec">
+<h3>error: pathspec<a class="headerlink" href="#error-pathspec" title="連結到這個標頭"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>error: pathspec &#39;main&#39; did not match any file(s) known to git
+</pre></div>
+</div>
+<p><strong>Resolution:</strong> A specified branch does not exist in the git repository.
+This might be because the git repository was recently created (and has no commits nor branches) or because the default branch has changed name. If for instance, the default branch on GitHub changed from <code class="docutils literal notranslate"><span class="pre">master</span></code> to <code class="docutils literal notranslate"><span class="pre">main</span></code>, you need to visit <span class="guilabel">Admin &gt; Settings</span> to change the name of the default branch that Read the Docs expects to find when cloning the repository.</p>
+</section>
+<section id="permission-denied-publickey">
+<h3>Permission denied (publickey)<a class="headerlink" href="#permission-denied-publickey" title="連結到這個標頭"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>git@github.com: Permission denied (publickey).
+
+fatal: Could not read from remote repository.
+</pre></div>
+</div>
+<p><strong>Resolution:</strong> The git repository URL points to a repository, user account or organization that Read the Docs does not have credentials for. Verify that the public SSH key from your Read the Docs project is installed as a <em>deploy key</em> on your VCS (GitHub/GitLab/Bitbucket etc):</p>
+<ol class="arabic simple">
+<li><p>Navigate to <span class="guilabel">Admin &gt; SSH Keys</span></p></li>
+<li><p>Copy the contents of the public key.</p></li>
+<li><p>Ensure that the key exists as a deploy key at your Git provider. Here are direct links to access settings for verifying and changing deploy keys - customize the URLs for your Git provider and repository details:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;username&gt;/&lt;repo&gt;/settings/keys</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://gitlab.com/&lt;username&gt;/&lt;repo&gt;/-/settings/repository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://bitbucket.org/&lt;username&gt;/&lt;repo&gt;/admin/access-keys/</span></code></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="error-repository-not-found">
+<h3>ERROR: Repository not found.<a class="headerlink" href="#error-repository-not-found" title="連結到這個標頭"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>ERROR: Repository not found.
+fatal: Could not read from remote repository.
+</pre></div>
+</div>
+<p><strong>Resolution:</strong> This error usually occurs on private git repositories that no longer have the public SSH key from their Read the Docs project installed as a <em>deploy key</em>.</p>
+<ol class="arabic simple">
+<li><p>Navigate to <span class="guilabel">Admin &gt; SSH Keys</span></p></li>
+<li><p>Copy the contents of the public key.</p></li>
+<li><p>Ensure that the key exists as a deploy key at your Git provider. Here are direct links to access settings for verifying and changing deploy keys - customize the URLs for your VCS host and repository details:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;username&gt;/&lt;repo&gt;/settings/keys</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://gitlab.com/&lt;username&gt;/&lt;repo&gt;/-/settings/repository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://bitbucket.org/&lt;username&gt;/&lt;repo&gt;/admin/access-keys/</span></code></p></li>
+</ul>
+</li>
+</ol>
+<p>This error is rare for public repositories. If your repository is public and you see this error, it may be because you have specified a wrong domain or forgotten a component in the path.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="troubleshooting/index.html" class="btn btn-neutral float-left" title="How-to guides: troubleshooting problems" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="build-using-too-many-resources.html" class="btn btn-neutral float-right" title="Troubleshooting slow builds" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

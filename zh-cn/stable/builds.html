@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Build process overview" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="builds.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Once a project has been added and a build is triggered, Read the Docs executes a set of pre-defined jobs to build and upload documentation. This page explains in detail what happens behind the scenes, and includes an overview of how you can change this process. Understanding the build process: Un..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Once a project has been added and a build is triggered, Read the Docs executes a set of pre-defined jobs to build and upload documentation. This page explains in detail what happens behind the scenes, and includes an overview of how you can change this process. Understanding the build process: Un..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build process overview &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/builds.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/tabs.js?v=3030b3cb"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Build process customization" href="build-customization.html" />
+    <link rel="prev" title="How to create reproducible builds" href="guides/reproducible-builds.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Build process overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-the-build-process">Understanding the build process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cancelling-builds">Cancelling builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automatic-disabling-of-builds">Automatic disabling of builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-resources">Build resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Build process overview</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/builds.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="build-process-overview">
+<h1>Build process overview<a class="headerlink" href="#build-process-overview" title="Link to this heading"></a></h1>
+<p>Once a project has been added and a build is triggered,
+Read the Docs executes a set of <a class="reference internal" href="glossary.html#term-pre-defined-build-jobs"><span class="xref std std-term">pre-defined jobs</span></a> to build and upload documentation.
+This page explains in detail what happens behind the scenes,
+and includes an overview of how you can change this process.</p>
+<section id="understanding-the-build-process">
+<h2>Understanding the build process<a class="headerlink" href="#understanding-the-build-process" title="Link to this heading"></a></h2>
+<p>Understanding how your content is built helps with debugging any problems you might hit.
+It also gives you the knowledge to customize the build process.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>All the steps are run inside a Docker container, using the image defined in <a class="reference internal" href="config-file/v2.html#build-os"><span class="std std-ref">build.os</span></a>.
+The build has access to all <a class="reference internal" href="reference/environment-variables.html"><span class="doc">pre-defined environment variables</span></a> and <a class="reference internal" href="environment-variables.html"><span class="doc">custom environment variables</span></a>.</p>
+</div>
+<p>The build process includes the following jobs:</p>
+<dl class="field-list">
+<dt class="field-odd">checkout<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Checks out a project's code from the Git repository.
+On Read the Docs for Business,
+this environment includes the SSH deploy key that gives access to the repository.</p>
+</dd>
+<dt class="field-even">system_dependencies<span class="colon">:</span></dt>
+<dd class="field-even"><p>Installs operating system and runtime dependencies.
+This includes specific versions of a language (e.g. Python, Node.js, Go, Rust) and also <code class="docutils literal notranslate"><span class="pre">apt</span></code> packages.</p>
+<p><a class="reference internal" href="config-file/v2.html#build-tools"><span class="std std-ref">build.tools</span></a> can be used to define a language version,
+and <a class="reference internal" href="config-file/v2.html#build-apt-packages"><span class="std std-ref">build.apt_packages</span></a> to define <code class="docutils literal notranslate"><span class="pre">apt</span></code> packages.</p>
+</dd>
+<dt class="field-odd">create_environment<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Creates a Python environment to install all the dependencies in an isolated and reproducible way.
+Depending on what's defined by the project,
+a <a class="reference internal" href="glossary.html#term-virtualenv"><span class="xref std std-term">virtualenv</span></a> or a <a class="reference internal" href="config-file/v2.html#conda"><span class="std std-ref">conda environment</span></a> will be used.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This step is only executed if the <a class="reference internal" href="config-file/v2.html#sphinx"><span class="std std-ref">sphinx</span></a> or <a class="reference internal" href="config-file/v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a> keys are defined.</p>
+</div>
+</dd>
+<dt class="field-even">install<span class="colon">:</span></dt>
+<dd class="field-even"><p>Installs <a class="reference internal" href="build-default-versions.html"><span class="doc">default and project dependencies</span></a>.
+This includes any requirements you have configured in <a class="reference internal" href="config-file/v2.html#requirements-file"><span class="std std-ref">Requirements file</span></a>.</p>
+<p>If the project has extra Python requirements,
+<a class="reference internal" href="config-file/v2.html#python-install"><span class="std std-ref">python.install</span></a> can be used to specify them.</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>We strongly recommend <a class="reference internal" href="guides/reproducible-builds.html"><span class="doc">pinning all the versions</span></a> required to build the documentation to avoid unexpected build errors.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This step is only executed if the <a class="reference internal" href="config-file/v2.html#sphinx"><span class="std std-ref">sphinx</span></a> or <a class="reference internal" href="config-file/v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a> keys are defined.</p>
+</div>
+</dd>
+<dt class="field-odd">build<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Runs the main command to build the documentation for each of the formats declared (<a class="reference internal" href="config-file/v2.html#formats"><span class="std std-ref">formats</span></a>).
+It will use Sphinx (<a class="reference internal" href="config-file/v2.html#sphinx"><span class="std std-ref">sphinx</span></a>) or MkDocs (<a class="reference internal" href="config-file/v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a>) depending on the project.</p>
+</dd>
+<dt class="field-even">upload<span class="colon">:</span></dt>
+<dd class="field-even"><p>Once the build process finishes successfully,
+the resulting artifacts (HTML, PDF, etc.) are uploaded to our servers.
+Our <a class="reference internal" href="reference/cdn.html"><span class="doc">CDN</span></a> is then purged so your docs are <em>always up to date</em>.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>If you require additional build steps or customization,
+it's possible to run user-defined commands and <a class="reference internal" href="build-customization.html"><span class="doc">customize the build process</span></a>.</p>
+</div>
+</section>
+<section id="cancelling-builds">
+<h2>Cancelling builds<a class="headerlink" href="#cancelling-builds" title="Link to this heading"></a></h2>
+<p>There may be situations where you want to cancel a running build.
+Cancelling builds allows your team to speed up review times and also help us reduce server costs and our environmental footprint.</p>
+<p>A couple common reasons you might want to cancel builds are:</p>
+<ul class="simple">
+<li><p>the build has an external dependency that hasn't been updated</p></li>
+<li><p>there were no changes on the documentation files</p></li>
+</ul>
+<p>For these scenarios,
+Read the Docs supports three different mechanisms to cancel a running build:</p>
+<dl class="field-list">
+<dt class="field-odd">Manually<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Project administrators can go to the build detail page
+and click <span class="guilabel">Cancel build</span>.</p>
+</dd>
+<dt class="field-even">Automatically<span class="colon">:</span></dt>
+<dd class="field-even"><p>When Read the Docs detects a push to a version that is already building,
+it cancels the running build and starts a new build using the latest commit.</p>
+</dd>
+<dt class="field-odd">Programmatically<span class="colon">:</span></dt>
+<dd class="field-odd"><p>You can use user-defined commands on <code class="docutils literal notranslate"><span class="pre">build.jobs</span></code> or <code class="docutils literal notranslate"><span class="pre">build.commands</span></code> (see <a class="reference internal" href="build-customization.html"><span class="doc">Build process customization</span></a>)
+to check for your own cancellation condition and then return exit code <code class="docutils literal notranslate"><span class="pre">183</span></code> to cancel a build.
+You can exit with the code <code class="docutils literal notranslate"><span class="pre">0</span></code> to continue running the build.</p>
+<p>When this happens, Read the Docs will notify your <a class="reference internal" href="reference/git-integration.html"><span class="doc">Git provider</span></a> the build succeeded (✅),
+so the pull request doesn't have any failing checks.</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>Take a look at <a class="reference internal" href="build-customization.html#cancel-build-based-on-a-condition"><span class="std std-ref">Cancel build based on a condition</span></a> section for some examples.</p>
+</div>
+</dd>
+</dl>
+</section>
+<section id="automatic-disabling-of-builds">
+<h2>Automatic disabling of builds<a class="headerlink" href="#automatic-disabling-of-builds" title="Link to this heading"></a></h2>
+<p>To reduce resource consumption and improve build queue times for all users,
+Read the Docs will automatically disable builds for projects that have too many consecutive failed builds on their default version.</p>
+<p>When a project has <strong>25 consecutive failed builds</strong> on its default version,
+we will disable builds for the project.</p>
+<p>This helps ensure that projects with persistent build issues don't consume resources that could be used by active projects.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This only applies to the default version of a project.
+Builds on other versions (branches, tags, pull requests) are not counted towards this limit.</p>
+</div>
+<p>If your project has been disabled due to consecutive build failures, you'll need to re-enable from your project settings.
+Make sure to fix the underlying issue to avoid being disabled again.</p>
+</section>
+<section id="build-resources">
+<h2>Build resources<a class="headerlink" href="#build-resources" title="Link to this heading"></a></h2>
+<p>Every build has limited resources assigned to it.
+Our build limits are:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Read the Docs for Business</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Read the Docs Community</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>30 minutes build time (upgradable)</p></li>
+<li><p>7GB of memory (upgradable)</p></li>
+<li><p>Concurrent builds vary based on your pricing plan</p></li>
+</ul>
+<p>If you are having trouble with your documentation builds,
+you can reach our support at <a class="reference external" href="mailto:support&#37;&#52;&#48;readthedocs&#46;com">support<span>&#64;</span>readthedocs<span>&#46;</span>com</a>.</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>15 minutes build time</p></li>
+<li><p>7GB of memory</p></li>
+<li><p>2 concurrent builds</p></li>
+<li><p>5GB of disk storage (soft limit)</p></li>
+</ul>
+<p>We can increase build time on a per-project basis.
+Send an email to <a class="reference external" href="mailto:support&#37;&#52;&#48;readthedocs&#46;org">support<span>&#64;</span>readthedocs<span>&#46;</span>org</a> providing a good reason why your documentation needs more resources.</p>
+<p>If your business is hitting build limits hosting documentation on Read the Docs,
+please consider <a class="reference internal" href="commercial/index.html"><span class="doc">Read the Docs for Business</span></a>
+which has options for additional build resources.</p>
+</div></div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="guides/reproducible-builds.html" class="btn btn-neutral float-left" title="How to create reproducible builds" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="build-customization.html" class="btn btn-neutral float-right" title="Build process customization" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

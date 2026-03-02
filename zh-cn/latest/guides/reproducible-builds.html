@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to create reproducible builds" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/reproducible-builds.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Your documentation depends on a number of dependencies to be built. If your docs don&#x27;t have reproducible builds, an update in a dependency can break your builds when least expected, or make your docs look different from your local version. This guide will help you to keep your builds working..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Your documentation depends on a number of dependencies to be built. If your docs don&#x27;t have reproducible builds, an update in a dependency can break your builds when least expected, or make your docs look different from your local version. This guide will help you to keep your builds working..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to create reproducible builds &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/reproducible-builds.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Build process overview" href="../builds.html" />
+    <link rel="prev" title="Automation rules" href="../automation-rules.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to create reproducible builds</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#define-os-and-tool-versions-in-the-config-file">Define OS and tool versions in the config file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-a-requirements-file-for-python-dependencies">Use a requirements file for Python dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pin-your-transitive-dependencies">Pin your transitive dependencies</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to create reproducible builds</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/reproducible-builds.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-create-reproducible-builds">
+<h1>How to create reproducible builds<a class="headerlink" href="#how-to-create-reproducible-builds" title="Link to this heading"></a></h1>
+<p>Your documentation depends on a number of dependencies to be built.
+If your docs don't have <a class="reference internal" href="../glossary.html#term-reproducible"><span class="xref std std-term">reproducible</span></a> builds,
+an update in a dependency can break your builds when least expected,
+or make your docs look different from your local version.
+This guide will help you to keep your builds working over time,
+so that you can focus on content.</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#define-os-and-tool-versions-in-the-config-file" id="id6">Define OS and tool versions in the config file</a></p></li>
+<li><p><a class="reference internal" href="#use-a-requirements-file-for-python-dependencies" id="id7">Use a requirements file for Python dependencies</a></p></li>
+<li><p><a class="reference internal" href="#pin-your-transitive-dependencies" id="id8">Pin your transitive dependencies</a></p></li>
+</ul>
+</nav>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This page explains how to pin the versions that correctly build your project.
+The versions used in this page are just for illustrative purpose.
+They are not the latest nor the recommended versions.
+It is up to you to find those versions.</p>
+</div>
+<section id="define-os-and-tool-versions-in-the-config-file">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Define OS and tool versions in the config file</a><a class="headerlink" href="#define-os-and-tool-versions-in-the-config-file" title="Link to this heading"></a></h2>
+<p>We recommend defining the explicit version of the OS and tool versions used to build your documentation
+using the <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>.
+This file <em>provides you per version settings</em>,
+and <em>those settings live in your Git repository</em>.</p>
+<p>This allows you to validate changes using <a class="reference internal" href="../pull-requests.html"><span class="doc">pull requests</span></a>,
+and ensures that all your versions can be rebuilt from a reproducible configuration.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="c1"># Explicitly set the OS and Python versions</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="hll"><span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-24.04&quot;</span>
+</span><span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="hll"><span class="w">    </span><span class="nt">nodejs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;20&quot;</span>
+</span><span class="hll"><span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+</span></pre></div>
+</div>
+</div>
+</section>
+<section id="use-a-requirements-file-for-python-dependencies">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Use a requirements file for Python dependencies</a><a class="headerlink" href="#use-a-requirements-file-for-python-dependencies" title="Link to this heading"></a></h2>
+<p>We recommend using a Pip <a class="reference external" href="https://pip.pypa.io/en/stable/reference/requirements-file-format/#requirements-file-format" title="（在 pip v26.0）"><span class="xref std std-ref">requirements file</span></a> or Conda <a class="reference internal" href="../config-file/v2.html#conda-environment"><span class="std std-ref">environment file</span></a> to <a class="reference internal" href="../glossary.html#term-pinning"><span class="xref std std-term">pin</span></a> Python dependencies.
+This ensures that top-level dependencies and extensions don't change.</p>
+<p>A configuration file with explicit dependencies looks like this:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Explicitly set the version of Python and its requirements</span>
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">docs/requirements.txt</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Defining the exact version will make sure things don&#39;t break</span>
+<span class="n">sphinx</span><span class="o">==</span><span class="mf">5.3.0</span>
+<span class="n">sphinx_rtd_theme</span><span class="o">==</span><span class="mf">1.1.1</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">notfound</span><span class="o">-</span><span class="n">page</span><span class="o">==</span><span class="mf">1.0.2</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>Remember to update your docs' dependencies from time to time to get new improvements and fixes.
+It also makes it easy to manage in case a version reaches its end of support date.</p>
+</div>
+</section>
+<section id="pin-your-transitive-dependencies">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Pin your transitive dependencies</a><a class="headerlink" href="#pin-your-transitive-dependencies" title="Link to this heading"></a></h2>
+<p>Once you have <a class="reference internal" href="../glossary.html#term-pinning"><span class="xref std std-term">pinned</span></a> your own dependencies,
+the next things to worry about are the dependencies of your dependencies.
+These are called <em>transitive dependencies</em>,
+and they can upgrade without warning if you do not pin these packages as well.</p>
+<p>We recommend <a class="reference external" href="https://pip-tools.readthedocs.io/en/latest/">pip-tools</a> to help address this problem.
+It allows you to specify a <code class="docutils literal notranslate"><span class="pre">requirements.in</span></code> file with your top-level dependencies,
+and it generates a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file with the full set of transitive dependencies pinned.</p>
+<blockquote>
+<div><div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">docs/requirements.in</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">==</span><span class="mf">5.3.0</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">docs/requirements.txt</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># This file is autogenerated by pip-compile with Python 3.10</span>
+<span class="c1"># by the following command:</span>
+<span class="c1">#</span>
+<span class="c1">#    pip-compile docs.in</span>
+<span class="c1">#</span>
+<span class="l l-Scalar l-Scalar-Plain">alabaster==0.7.12</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">babel==2.11.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">certifi==2022.12.7</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via requests</span>
+<span class="l l-Scalar l-Scalar-Plain">charset-normalizer==2.1.1</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via requests</span>
+<span class="l l-Scalar l-Scalar-Plain">docutils==0.19</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">idna==3.4</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via requests</span>
+<span class="l l-Scalar l-Scalar-Plain">imagesize==1.4.1</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">jinja2==3.1.2</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">markupsafe==2.1.1</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via jinja2</span>
+<span class="l l-Scalar l-Scalar-Plain">packaging==22.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">pygments==2.13.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">pytz==2022.7</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via babel</span>
+<span class="l l-Scalar l-Scalar-Plain">requests==2.28.1</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">snowballstemmer==2.2.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinx==5.3.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via -r docs.in</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinxcontrib-applehelp==1.0.2</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinxcontrib-devhelp==1.0.2</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinxcontrib-htmlhelp==2.0.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinxcontrib-jsmath==1.0.1</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinxcontrib-qthelp==1.0.3</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">sphinxcontrib-serializinghtml==1.1.5</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via sphinx</span>
+<span class="l l-Scalar l-Scalar-Plain">urllib3==1.26.13</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain"># via requests</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../config-file/v2.html"><span class="doc">Configuration file reference</span></a></dt><dd><p>Configuration file reference</p>
+</dd>
+<dt><a class="reference internal" href="../builds.html"><span class="doc">Build process overview</span></a></dt><dd><p>Build process information</p>
+</dd>
+<dt><a class="reference internal" href="../build-customization.html"><span class="doc">Build process customization</span></a></dt><dd><p>Customizing builds to do more</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../automation-rules.html" class="btn btn-neutral float-left" title="Automation rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../builds.html" class="btn btn-neutral float-right" title="Build process overview" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

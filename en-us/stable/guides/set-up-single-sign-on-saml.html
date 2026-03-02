@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to set up single sign-on (SSO) with SAML" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/set-up-single-sign-on-saml.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This how-to guide will provide instructions on how to enable SSO using Okta as a SAML identity provider. If you want more information on this feature, please read Single sign-on (SSO) Prerequisites: Organization permissions: To change your Organization’s settings, you need to be an owner of that ..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="This how-to guide will provide instructions on how to enable SSO using Okta as a SAML identity provider. If you want more information on this feature, please read Single sign-on (SSO) Prerequisites: Organization permissions: To change your Organization’s settings, you need to be an owner of that ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to set up single sign-on (SSO) with SAML &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/set-up-single-sign-on-saml.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a48b73ee"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to manage Read the Docs teams" href="manage-read-the-docs-teams.html" />
+    <link rel="prev" title="How to setup single sign-on (SSO) with Google Workspace" href="setup-single-sign-on-google-email.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="access/index.html">Security and access</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup-single-sign-on-github-gitlab-bitbucket.html">Single sign-on (SSO) with GitHub, GitLab, or Bitbucket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-single-sign-on-google-email.html">Single sign-on (SSO) with Google Workspace</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Single sign-on (SSO) with SAML</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#organization-permissions">Organization permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-saml-application-in-okta">Create a SAML application in Okta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable-saml-on-your-read-the-docs-organization">Enable SAML on your Read the Docs organization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-a-team-for-users-to-join-automatically">Configure a team for users to join automatically</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#user-management">User management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#new-users">New users</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#existing-users">Existing users</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#outside-collaborators">Outside collaborators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revoke-user-s-access-to-all-the-projects">Revoke user’s access to all the projects</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manage-read-the-docs-teams.html">Managing Read the Docs teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-project-private-repository.html">Creating a project from a private repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="private-submodules.html">Using private Git submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="private-python-packages.html">Installing private python packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing-maintainers.html">Manage maintainers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="access/index.html">How-to guides: security and access</a></li>
+      <li class="breadcrumb-item active">How to set up single sign-on (SSO) with SAML</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/set-up-single-sign-on-saml.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-set-up-single-sign-on-sso-with-saml">
+<h1>How to set up single sign-on (SSO) with SAML<a class="headerlink" href="#how-to-set-up-single-sign-on-sso-with-saml" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature is only available on <a class="reference external" href="https://app.readthedocs.com/">Read the Docs for Business</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature is in beta, and will be available for <strong>Enterprise</strong> plans only.
+Contact <a class="reference internal" href="../support.html"><span class="doc">support</span></a> to enable this feature for your organization.</p>
+<p><strong>At the moment only Okta is supported as a SAML identity provider.</strong></p>
+</div>
+<p>This how-to guide will provide instructions on how to enable <abbr title="single sign-on">SSO</abbr> using Okta as a SAML identity provider.
+If you want more information on this feature, please read <a class="reference internal" href="../commercial/single-sign-on.html"><span class="doc">Single sign-on (SSO)</span></a></p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<section id="organization-permissions">
+<h3>Organization permissions<a class="headerlink" href="#organization-permissions" title="Link to this heading"></a></h3>
+<p>To change your <a class="reference internal" href="../commercial/organizations.html"><span class="doc">Organization’s</span></a> settings,
+you need to be an <em>owner</em> of that organization.</p>
+<p>You can validate your ownership of the Organization with these steps:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_detail/">organization management page</a>.</p></li>
+<li><p>Look at the <span class="guilabel">Owners</span> section on the right menu.</p></li>
+</ol>
+<p>If you’d like to modify this setting and are not an owner,
+you can ask an existing organization owner to take the actions listed.</p>
+</section>
+<section id="create-a-saml-application-in-okta">
+<h3>Create a SAML application in Okta<a class="headerlink" href="#create-a-saml-application-in-okta" title="Link to this heading"></a></h3>
+<p>In order to enable SSO with Okta, you need to create a new SAML application in your Okta account.</p>
+<ol class="arabic">
+<li><p>Log in to your Okta account.</p></li>
+<li><p>Click on <span class="guilabel">Applications</span>.</p></li>
+<li><p>Click on <span class="guilabel">Create App Integration</span>.</p></li>
+<li><p>Choose <span class="guilabel">SAML 2.0</span>, and click <span class="guilabel">Next</span>.</p></li>
+<li><p>Fill in the following fields with the information from <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_saml/">your SAML integration</a>:</p>
+<ul class="simple">
+<li><p><span class="guilabel">App name</span>: Read the Docs</p></li>
+<li><p><span class="guilabel">App logo</span>: Optionally you can use the <a class="reference external" href="https://brand-guidelines.readthedocs.org/_images/logo-wordmark-vertical-compact-dark.png">Read the Docs logo</a>.</p></li>
+<li><p><span class="guilabel">App visibility</span>: (optional)</p></li>
+<li><p><span class="guilabel">Single Sign On URL</span>: <code class="docutils literal notranslate"><span class="pre">https://app.readthedocs.com/accounts/saml/&lt;organization-slug&gt;/acs/</span></code> (replace <code class="docutils literal notranslate"><span class="pre">&lt;organization-slug&gt;</span></code> with your organization slug)</p></li>
+<li><p><span class="guilabel">Audience URI (SP Entity ID)</span>: <code class="docutils literal notranslate"><span class="pre">https://app.readthedocs.com/accounts/saml/&lt;organization-slug&gt;/metadata/</span></code> (replace <code class="docutils literal notranslate"><span class="pre">&lt;organization-slug&gt;</span></code> with your organization slug)</p></li>
+<li><p><span class="guilabel">Name ID format</span>: <code class="docutils literal notranslate"><span class="pre">EmailAddress</span></code></p></li>
+<li><p><span class="guilabel">Application username</span>: <code class="docutils literal notranslate"><span class="pre">Email</span></code></p></li>
+<li><p>Leave the rest of the fields as default.</p></li>
+</ul>
+</li>
+<li><p>Add the following “attribute statements” to be used when creating a new user:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user.id</p></td>
+<td><p>Basic</p></td>
+<td><p>user.id</p></td>
+</tr>
+<tr class="row-odd"><td><p>user.firstName</p></td>
+<td><p>Basic</p></td>
+<td><p>user.firstName</p></td>
+</tr>
+<tr class="row-even"><td><p>user.lastName</p></td>
+<td><p>Basic</p></td>
+<td><p>user.lastName</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Click <span class="guilabel">Next</span>.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">internal</span> <span class="pre">app</span> <span class="pre">that</span> <span class="pre">we</span> <span class="pre">have</span> <span class="pre">created</span></code>.</p></li>
+<li><p>Click <span class="guilabel">Finish</span>.</p></li>
+</ol>
+</section>
+<section id="enable-saml-on-your-read-the-docs-organization">
+<h3>Enable SAML on your Read the Docs organization<a class="headerlink" href="#enable-saml-on-your-read-the-docs-organization" title="Link to this heading"></a></h3>
+<p>Once you have created the SAML application in Okta, you need to enable SAML on Read the Docs.</p>
+<ol class="arabic simple">
+<li><p>Copy the Metadata URL from the Okta application you just created.</p>
+<ul class="simple">
+<li><p>On Okta, click on the <span class="guilabel">Applications</span>.</p></li>
+<li><p>Click on the Read the Docs application.</p></li>
+<li><p>Click on the <span class="guilabel">Sign On</span> tab.</p></li>
+<li><p>Copy the <span class="guilabel">Metadata URL</span>.</p></li>
+</ul>
+</li>
+<li><p>Go you your <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_saml/">organization’s SAML settings page</a>.</p></li>
+<li><p>Paste the Metadata URL in the <span class="guilabel">Metadata URL</span> field.</p></li>
+<li><p>Leave the domain field empty.</p></li>
+<li><p>Click <span class="guilabel">Save</span>.</p></li>
+</ol>
+<p>Attaching the email domain your organization uses to enforce SAML is currently done by the Read the Docs team,
+contact <a class="reference internal" href="../support.html"><span class="doc">support</span></a> using an account that’s an owner of the organization.</p>
+</section>
+<section id="configure-a-team-for-users-to-join-automatically">
+<h3>Configure a team for users to join automatically<a class="headerlink" href="#configure-a-team-for-users-to-join-automatically" title="Link to this heading"></a></h3>
+<p>After you have enabled SAML on your organization,
+a team named “SAML Users” will be created automatically,
+and all users that sign up with SAML will be automatically joined to this team.
+You can delete this team, or configure a different team or teams for users to join automatically.</p>
+<p>To configure a team for users to join automatically:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_team_list/">teams management page</a>.</p></li>
+<li><p>Click the <span class="guilabel">&lt;team name&gt;</span>.</p></li>
+<li><p>Click <span class="guilabel">Edit team</span></p></li>
+<li><p>Enable <em>Auto join users with an organization’s email address to this team</em>.</p></li>
+<li><p>Click <span class="guilabel">Save</span></p></li>
+</ol>
+</section>
+</section>
+<section id="user-management">
+<h2>User management<a class="headerlink" href="#user-management" title="Link to this heading"></a></h2>
+<section id="new-users">
+<h3>New users<a class="headerlink" href="#new-users" title="Link to this heading"></a></h3>
+<p>After enabling the SAML integration,
+all users with an email domain matching the one in your SAML integration will be required to sign up using SAML.
+After they sign up, they will be automatically joined to your organization within the teams you have configured to auto-join users.</p>
+</section>
+<section id="existing-users">
+<h3>Existing users<a class="headerlink" href="#existing-users" title="Link to this heading"></a></h3>
+<p>Existing users with email addresses from your configured domain will not be required to sign in using SAML,
+but they won’t be automatically joined to your organization.</p>
+<p>If you want to enforce SAML for existing users, you have the following options:</p>
+<ul class="simple">
+<li><p>Users can delete their accounts, and sign up again using SAML.</p></li>
+<li><p>Users can link their existing accounts to their SAML identity by following this link while logged in their Read the Docs account:
+<code class="docutils literal notranslate"><span class="pre">https://app.readthedocs.com/accounts/saml/&lt;organization-slug&gt;/login/?process=connect</span></code> (replace <code class="docutils literal notranslate"><span class="pre">&lt;organization-slug&gt;</span></code> with your organization slug).
+You can find this link in your <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_saml/">organization’s SAML settings page</a>.</p></li>
+</ul>
+</section>
+<section id="outside-collaborators">
+<h3>Outside collaborators<a class="headerlink" href="#outside-collaborators" title="Link to this heading"></a></h3>
+<p>You can still add outside collaborators that don’t use SAML and manage their access.
+There are two ways to manage this access:</p>
+<ul class="simple">
+<li><p>Using <a class="reference internal" href="manage-read-the-docs-teams.html"><span class="doc">teams</span></a> to provide access for ongoing contribution.</p></li>
+<li><p>Using <a class="reference internal" href="../commercial/sharing.html"><span class="doc">sharing</span></a> to provide short-term access requiring a login.</p></li>
+</ul>
+</section>
+<section id="revoke-user-s-access-to-all-the-projects">
+<h3>Revoke user’s access to all the projects<a class="headerlink" href="#revoke-user-s-access-to-all-the-projects" title="Link to this heading"></a></h3>
+<p>By disabling access to the SAML integration to a user,
+you revoke access to all the projects their linked Read the Docs user had access to,
+and disable login on Read the Docs completely for that user.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the user signed up to Read the Docs previously to enabling SAML on your organization,
+they may still have access to their account and projects if they were manually added to a team.</p>
+<p>To completely revoke access to a user, remove them from all the teams they are part of.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the user was already signed in to Read the Docs when their access was revoked,
+they may still have access to documentation pages until their session expires.
+This is three days for the dashboard and documentation pages.</p>
+<p>To completely revoke access to a user, remove them from all the teams they are part of.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="manage-read-the-docs-teams.html"><span class="doc">How to manage Read the Docs teams</span></a></dt><dd><p>Additional user management options</p>
+</dd>
+<dt><a class="reference internal" href="../commercial/single-sign-on.html"><span class="doc">Single sign-on (SSO)</span></a></dt><dd><p>Information about choosing a single sign-on approach</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="setup-single-sign-on-google-email.html" class="btn btn-neutral float-left" title="How to setup single sign-on (SSO) with Google Workspace" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="manage-read-the-docs-teams.html" class="btn btn-neutral float-right" title="How to manage Read the Docs teams" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

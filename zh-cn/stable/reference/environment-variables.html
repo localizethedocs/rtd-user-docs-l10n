@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Environment variable reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="reference/environment-variables.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="All build processes have the following environment variables automatically defined and available for each build step:" />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="All build processes have the following environment variables automatically defined and available for each build step:" />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Environment variable reference &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/reference/environment-variables.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Versions" href="../versions.html" />
+    <link rel="prev" title="Environment variable overview" href="../environment-variables.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Environment variable reference</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/reference/environment-variables.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="environment-variable-reference">
+<h1>Environment variable reference<a class="headerlink" href="#environment-variable-reference" title="Link to this heading"></a></h1>
+<p>All <a class="reference internal" href="../builds.html"><span class="doc">build processes</span></a> have the following environment variables automatically defined and available for each build step:</p>
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS">
+<span class="sig-name descname"><span class="pre">READTHEDOCS</span></span><a class="headerlink" href="#envvar-READTHEDOCS" title="Link to this definition"></a></dt>
+<dd><p>Whether the build is running inside Read the Docs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_PRODUCTION_DOMAIN">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_PRODUCTION_DOMAIN</span></span><a class="headerlink" href="#envvar-READTHEDOCS_PRODUCTION_DOMAIN" title="Link to this definition"></a></dt>
+<dd><p>Domain where Read the Docs application/dashboard and API are running.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">readthedocs.org</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">readthedocs.com</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">app.readthedocs.org</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">app.readthedocs.com</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">devthedocs.org</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">devthedocs.com</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_PROJECT">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_PROJECT</span></span><a class="headerlink" href="#envvar-READTHEDOCS_PROJECT" title="Link to this definition"></a></dt>
+<dd><p>The <a class="reference internal" href="../glossary.html#term-slug"><span class="xref std std-term">slug</span></a> of the project being built. For example, <code class="docutils literal notranslate"><span class="pre">my-example-project</span></code>.</p>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_LANGUAGE">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_LANGUAGE</span></span><a class="headerlink" href="#envvar-READTHEDOCS_LANGUAGE" title="Link to this definition"></a></dt>
+<dd><p>The locale name, or the identifier for the locale, for the project being built.
+This value comes from the project's configured language code,
+which is in lowercase and uses a dash as a separator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">en</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">it</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">de-at</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">es</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">pt-br</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_VERSION">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_VERSION</span></span><a class="headerlink" href="#envvar-READTHEDOCS_VERSION" title="Link to this definition"></a></dt>
+<dd><p>The <a class="reference internal" href="../glossary.html#term-slug"><span class="xref std std-term">slug</span></a> of the version being built, such as <code class="docutils literal notranslate"><span class="pre">latest</span></code>, <code class="docutils literal notranslate"><span class="pre">stable</span></code>,
+or a branch name like <code class="docutils literal notranslate"><span class="pre">feature-1234</span></code>. For <a class="reference internal" href="../pull-requests.html"><span class="doc">pull request builds</span></a>,
+the value will be the pull request number.</p>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_VERSION_NAME">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_VERSION_NAME</span></span><a class="headerlink" href="#envvar-READTHEDOCS_VERSION_NAME" title="Link to this definition"></a></dt>
+<dd><p>The verbose name of the version being built, such as <code class="docutils literal notranslate"><span class="pre">latest</span></code>, <code class="docutils literal notranslate"><span class="pre">stable</span></code>,
+or a branch name like <code class="docutils literal notranslate"><span class="pre">feature/1234</span></code>.</p>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_VERSION_TYPE">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_VERSION_TYPE</span></span><a class="headerlink" href="#envvar-READTHEDOCS_VERSION_TYPE" title="Link to this definition"></a></dt>
+<dd><p>The type of the version being built.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">branch</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">tag</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">external</span></code> (for <a class="reference internal" href="../pull-requests.html"><span class="doc">pull request builds</span></a>)</p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">unknown</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_VIRTUALENV_PATH">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_VIRTUALENV_PATH</span></span><a class="headerlink" href="#envvar-READTHEDOCS_VIRTUALENV_PATH" title="Link to this definition"></a></dt>
+<dd><p>Path for the <a class="reference internal" href="../builds.html"><span class="doc">virtualenv that was created for this build</span></a>.
+Only exists for builds using Virtualenv and not Conda.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">/home/docs/checkouts/readthedocs.org/user_builds/project/envs/version</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_OUTPUT">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_OUTPUT</span></span><a class="headerlink" href="#envvar-READTHEDOCS_OUTPUT" title="Link to this definition"></a></dt>
+<dd><p>Base path for well-known output directories. Files in these directories will automatically be found, uploaded, and published.</p>
+<p>You need to concatenate an output format to this variable.
+Currently valid formats are <code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">htmlzip</span></code>, and <code class="docutils literal notranslate"><span class="pre">epub</span></code>.
+(e.g. <code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/html/</span></code> or <code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/pdf/</span></code>)
+You also need to create the directory before moving outputs into the destination.
+You can create it with the following command <code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">-p</span> <span class="pre">$READTHEDOCS_OUTPUT/html/</span></code>.
+Note that only <code class="docutils literal notranslate"><span class="pre">html</span></code> supports multiple files,
+the other formats should have one and only one file to be uploaded.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../build-customization.html#where-to-put-files"><span class="std std-ref">Where to put files</span></a></dt><dd><p>Information about using custom commands to generate output that will automatically be published once your build succeeds.</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_CANONICAL_URL">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_CANONICAL_URL</span></span><a class="headerlink" href="#envvar-READTHEDOCS_CANONICAL_URL" title="Link to this definition"></a></dt>
+<dd><p>Canonical base URL for the version that is built.
+If the project has configured a <a class="reference internal" href="../custom-domains.html"><span class="doc">custom domain</span></a> (e.g. <code class="docutils literal notranslate"><span class="pre">docs.example.com</span></code>) it will be used in the resulting canonical URL.
+Otherwise, your project's <a class="reference internal" href="../custom-domains.html#default-subdomain"><span class="std std-ref">default subdomain</span></a> will be used.</p>
+<p>The path for the language and version is appended to the domain, so the final canonical base URLs can look like the following examples:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">https://docs.example.com/en/latest/</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">https://docs.readthedocs.io/ja/stable/</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">https://example--17.org.readthedocs.build/fr/17/</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_REPOSITORY_PATH">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_REPOSITORY_PATH</span></span><a class="headerlink" href="#envvar-READTHEDOCS_REPOSITORY_PATH" title="Link to this definition"></a></dt>
+<dd><p>Path where the repository was cloned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">/home/docs/checkouts/readthedocs.org/user_builds/test-builds/checkouts/latest</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_GIT_CLONE_URL">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_GIT_CLONE_URL</span></span><a class="headerlink" href="#envvar-READTHEDOCS_GIT_CLONE_URL" title="Link to this definition"></a></dt>
+<dd><p>URL for the remote source repository, from which the documentation is cloned.
+It could be HTTPS, SSH or any other URL scheme supported by Git.
+This is the same URL defined in your Project's <a class="reference internal" href="../glossary.html#term-dashboard"><span class="xref std std-term">dashboard</span></a> in <span class="menuselection">Admin ‣ Settings ‣ Repository URL</span>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">https://github.com/readthedocs/readthedocs.org</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">git&#64;github.com:readthedocs/readthedocs.org.git</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_GIT_IDENTIFIER">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_GIT_IDENTIFIER</span></span><a class="headerlink" href="#envvar-READTHEDOCS_GIT_IDENTIFIER" title="Link to this definition"></a></dt>
+<dd><p>Contains the Git identifier that was <em>checked out</em> from the remote repository URL.
+Possible values are either a branch or tag name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">v1.x</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bugfix/docs-typo</span></code></p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">feature/signup</span></code></p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">update-readme</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When building pull requests, this variable contains the numeric ID of the pull request,
+as we don't have access to the branch name.</p>
+</div>
+</dd></dl>
+
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-READTHEDOCS_GIT_COMMIT_HASH">
+<span class="sig-name descname"><span class="pre">READTHEDOCS_GIT_COMMIT_HASH</span></span><a class="headerlink" href="#envvar-READTHEDOCS_GIT_COMMIT_HASH" title="Link to this definition"></a></dt>
+<dd><p>Git commit hash identifier checked out from the repository URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">1f94e04b7f596c309b7efab4e7630ed78e85a1f1</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../environment-variables.html"><span class="doc">Environment variable overview</span></a></dt><dd><p>General information about how environment variables are used in the build process.</p>
+</dd>
+<dt><a class="reference internal" href="../guides/environment-variables.html"><span class="doc">How to use custom environment variables</span></a></dt><dd><p>Learn how to define your own custom environment variables, in addition to the pre-defined ones.</p>
+</dd>
+</dl>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../environment-variables.html" class="btn btn-neutral float-left" title="Environment variable overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../versions.html" class="btn btn-neutral float-right" title="Versions" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

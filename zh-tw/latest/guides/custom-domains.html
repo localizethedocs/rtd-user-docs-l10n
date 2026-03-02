@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to manage custom domains" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/custom-domains.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This guide describes how to host your documentation using your own domain name, such as docs.example.com. Contents: 增添自訂域名, Removing a custom domain, Strict Transport Security (HSTS) and other custom headers, Multiple documentation sites as sub-folders of a domain, Troubleshooting-&quot;Error 101..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="This guide describes how to host your documentation using your own domain name, such as docs.example.com. Contents: 增添自訂域名, Removing a custom domain, Strict Transport Security (HSTS) and other custom headers, Multiple documentation sites as sub-folders of a domain, Troubleshooting-&quot;Error 101..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to manage custom domains &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/custom-domains.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="Managing subprojects" href="subprojects.html" />
+    <link rel="prev" title="How to manually configure a Git repository integration" href="setup/git-repo-manual.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="setup/index.html">專案設定與組態</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="connecting-git-account.html">Connecting your Read the Docs account to your Git provider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup/git-repo-manual.html">Configuring a Git repository manually</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Managing custom domains</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-custom-domain">增添自訂域名</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removing-a-custom-domain">Removing a custom domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strict-transport-security-hsts-and-other-custom-headers">Strict Transport Security (HSTS) and other custom headers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-documentation-sites-as-sub-folders-of-a-domain">Multiple documentation sites as sub-folders of a domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#error-1014-cname-cross-user-banned-when-using-cloudflare">&quot;Error 1014: CNAME Cross-User Banned&quot; when using Cloudflare</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ssl-certificate-issue-delays">SSL certificate issue delays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#disallowed-dns-configurations">Disallowed DNS configurations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-validation-process-period-has-ended">The validation process period has ended</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#migrating-from-gitbook">Migrating from GitBook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="subprojects.html">Managing subprojects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hiding-a-version.html">Hiding a version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup/monorepo.html">Using a .readthedocs.yaml file in a sub-folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="redirects.html">Using custom URL redirects in documentation projects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="setup/index.html">How-to guides: project setup and configuration</a></li>
+      <li class="breadcrumb-item active">How to manage custom domains</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/custom-domains.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-manage-custom-domains">
+<h1>How to manage custom domains<a class="headerlink" href="#how-to-manage-custom-domains" title="連結到這個標頭"></a></h1>
+<p>This guide describes how to host your documentation using your own domain name, such as <code class="docutils literal notranslate"><span class="pre">docs.example.com</span></code>.</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#adding-a-custom-domain" id="id1">增添自訂域名</a></p></li>
+<li><p><a class="reference internal" href="#removing-a-custom-domain" id="id2">Removing a custom domain</a></p></li>
+<li><p><a class="reference internal" href="#strict-transport-security-hsts-and-other-custom-headers" id="id3">Strict Transport Security (HSTS) and other custom headers</a></p></li>
+<li><p><a class="reference internal" href="#multiple-documentation-sites-as-sub-folders-of-a-domain" id="id4">Multiple documentation sites as sub-folders of a domain</a></p></li>
+<li><p><a class="reference internal" href="#troubleshooting" id="id5">Troubleshooting</a></p>
+<ul>
+<li><p><a class="reference internal" href="#error-1014-cname-cross-user-banned-when-using-cloudflare" id="id6">&quot;Error 1014: CNAME Cross-User Banned&quot; when using Cloudflare</a></p></li>
+<li><p><a class="reference internal" href="#ssl-certificate-issue-delays" id="id7">SSL certificate issue delays</a></p></li>
+<li><p><a class="reference internal" href="#disallowed-dns-configurations" id="id8">Disallowed DNS configurations</a></p></li>
+<li><p><a class="reference internal" href="#the-validation-process-period-has-ended" id="id9">The validation process period has ended</a></p></li>
+<li><p><a class="reference internal" href="#migrating-from-gitbook" id="id10">Migrating from GitBook</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="adding-a-custom-domain">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">增添自訂域名</a><a class="headerlink" href="#adding-a-custom-domain" title="連結到這個標頭"></a></h2>
+<p>To setup your <a class="reference internal" href="../custom-domains.html"><span class="doc">custom domain</span></a>, follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Go the <span class="guilabel">Admin</span> tab of your project.</p></li>
+<li><p>Click on <span class="guilabel">Domains</span>.</p></li>
+<li><p>Enter the domain where you want to serve the documentation from (e.g. <code class="docutils literal notranslate"><span class="pre">docs.example.com</span></code>).</p></li>
+<li><p>Mark the <span class="guilabel">Canonical</span> option if you want use this domain
+as your <a class="reference internal" href="../canonical-urls.html"><span class="doc">canonical domain</span></a>.</p></li>
+<li><p>Click on <span class="guilabel">Add</span>.</p></li>
+<li><p>At the top of the next page you'll find the value of the DNS record that you need to point your domain to.
+For Read the Docs Community this is <code class="docutils literal notranslate"><span class="pre">readthedocs.io</span></code>, and for <a class="reference internal" href="../commercial/index.html"><span class="doc">Business hosting</span></a>
+the record is in the form of <code class="docutils literal notranslate"><span class="pre">&lt;hash&gt;.domains.readthedocs.com</span></code>.
+If you are using Cloudflare, make sure to disable the proxy status (orange cloud) for the CNAME record.</p></li>
+</ol>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>For a subdomain like <code class="docutils literal notranslate"><span class="pre">docs.example.com</span></code> add a CNAME record,
+and for a root domain like <code class="docutils literal notranslate"><span class="pre">example.com</span></code> use an ANAME or ALIAS record.</p>
+</div>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>If you delete a domain, make sure to also remove the DNS records for that domain.
+Otherwise, another user may add the same domain to their project and serve that content from your domain (domain hijacking).</p>
+</div>
+<p>We provide a validated SSL certificate for the domain,
+managed by <a class="reference external" href="https://www.cloudflare.com/">Cloudflare</a>.
+The SSL certificate issuance should happen within a few minutes,
+but might take up to one hour.
+See <a class="reference internal" href="#ssl-certificate-issue-delays">SSL certificate issue delays</a> for more troubleshooting options.</p>
+<p>To see if your DNS change has propagated, you can use a tool like <code class="docutils literal notranslate"><span class="pre">dig</span></code> to inspect your domain from your command line.
+As an example, our blog's DNS record looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt2:before {
+  content: " ";
+}
+</style><span class="prompt1">dig<span class="w"> </span>+short<span class="w"> </span>CNAME<span class="w"> </span>blog.readthedocs.com</span>
+<span class="prompt2"><span class="w"> </span>readthedocs.io.</span>
+</pre></div></div><div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>We don't support pointing subdomains or root domains to a project using A records.
+DNS A records require a static IP address and our IPs may change without notice.</p>
+</div>
+</section>
+<section id="removing-a-custom-domain">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Removing a custom domain</a><a class="headerlink" href="#removing-a-custom-domain" title="連結到這個標頭"></a></h2>
+<p>To remove a custom domain:</p>
+<ol class="arabic simple">
+<li><p>Go the <span class="guilabel">Admin</span> tab of your project.</p></li>
+<li><p>Click on <span class="guilabel">Domains</span>.</p></li>
+<li><p>Click the <span class="guilabel">Remove</span> button next to the domain.</p></li>
+<li><p>Click <span class="guilabel">Confirm</span> on the confirmation page.</p></li>
+<li><p>Remove the DNS record for the domain from your DNS provider.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Once a domain is removed,
+your previous documentation domain is no longer served by Read the Docs,
+and any request for it will return a 404 Not Found!</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>If you delete a domain, make sure to also remove the DNS records for that domain.
+Otherwise, another user may add the same domain to their project and serve that content from your domain (domain hijacking).</p>
+</div>
+</section>
+<section id="strict-transport-security-hsts-and-other-custom-headers">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Strict Transport Security (HSTS) and other custom headers</a><a class="headerlink" href="#strict-transport-security-hsts-and-other-custom-headers" title="連結到這個標頭"></a></h2>
+<p>By default, we do not return a <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security">Strict Transport Security header</a> (HSTS) for user custom domains.
+This is a conscious decision as it can be misconfigured in a not easily reversible way.
+For both Read the Docs Community and Read the Docs for Business, HSTS and other custom headers can be set upon request.</p>
+<p>We always return the HSTS header with a max-age of at least one year
+for our own domains including <code class="docutils literal notranslate"><span class="pre">*.readthedocs.io</span></code>, <code class="docutils literal notranslate"><span class="pre">*.readthedocs-hosted.com</span></code>, <code class="docutils literal notranslate"><span class="pre">readthedocs.org</span></code> and <code class="docutils literal notranslate"><span class="pre">readthedocs.com</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>Please contact <a class="reference internal" href="../support.html"><span class="doc">Site support</span></a> if you want to add a custom header to your domain.</p>
+</div>
+</section>
+<section id="multiple-documentation-sites-as-sub-folders-of-a-domain">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Multiple documentation sites as sub-folders of a domain</a><a class="headerlink" href="#multiple-documentation-sites-as-sub-folders-of-a-domain" title="連結到這個標頭"></a></h2>
+<p>You may host multiple documentation repositories as <strong>sub-folders of a single domain</strong>.
+For example, <code class="docutils literal notranslate"><span class="pre">docs.example.org/projects/repo1</span></code> and <code class="docutils literal notranslate"><span class="pre">docs.example.org/projects/repo2</span></code>.
+This is <a class="reference external" href="https://moz.com/blog/subdomains-vs-subfolders-rel-canonical-vs-301-how-to-structure-links-optimally-for-seo-whiteboard-friday">a way to boost the SEO of your website</a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../subprojects.html"><span class="doc">子專案</span></a></dt><dd><p>Further information about hosting multiple documentation repositories, using the <a class="reference internal" href="../glossary.html#term-subproject"><span class="xref std std-term">subproject</span></a> feature.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="troubleshooting">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="連結到這個標頭"></a></h2>
+<section id="error-1014-cname-cross-user-banned-when-using-cloudflare">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">&quot;Error 1014: CNAME Cross-User Banned&quot; when using Cloudflare</a><a class="headerlink" href="#error-1014-cname-cross-user-banned-when-using-cloudflare" title="連結到這個標頭"></a></h3>
+<p>Read the Docs uses Cloudflare to manage SSL certificates for custom domains,
+CDN caching, and other features that require the domain to be completely managed by our Cloudflare account.</p>
+<p>If you see an &quot;Error 1014: CNAME Cross-User Banned&quot; message,
+it means that the domain is already managed by another Cloudflare account.
+To fix this, you need to:</p>
+<ol class="arabic simple">
+<li><p>Log in your Cloudflare account (<a class="reference external" href="https://www.cloudflare.com/">https://www.cloudflare.com/</a>).</p></li>
+<li><p>Select your domain.</p></li>
+<li><p>Click on &quot;DNS&quot;.</p></li>
+<li><p>Find your CNAME record and click on &quot;Edit&quot;.</p></li>
+<li><p>Uncheck the &quot;Proxy status&quot; (orange cloud) option.</p></li>
+<li><p>Leave everything else unchanged.</p></li>
+<li><p>Click on save.</p></li>
+</ol>
+</section>
+<section id="ssl-certificate-issue-delays">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">SSL certificate issue delays</a><a class="headerlink" href="#ssl-certificate-issue-delays" title="連結到這個標頭"></a></h3>
+<p>The status of your domain validation and certificate can always be seen on the details page for your domain
+under <span class="guilabel">Admin</span> &gt; <span class="guilabel">Domains</span> &gt; <span class="guilabel">YOURDOMAIN.TLD (details)</span>.</p>
+<p>Domains are usually validated and a certificate issued within minutes.
+However, if you setup the domain in Read the Docs without provisioning the necessary DNS changes
+and then update DNS hours or days later,
+this can cause a delay in validating because there is an exponential back-off in validation.</p>
+<div class="admonition tip">
+<p class="admonition-title">小訣竅</p>
+<p>Loading the domain details in the Read the Docs dashboard and saving the domain again will force a revalidation.</p>
+</div>
+</section>
+<section id="disallowed-dns-configurations">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Disallowed DNS configurations</a><a class="headerlink" href="#disallowed-dns-configurations" title="連結到這個標頭"></a></h3>
+<p>In order to prevent some common cases of domain hijacking, we disallow some DNS configurations:</p>
+<ul class="simple">
+<li><p>CNAME records pointing to another CNAME record
+(<code class="docutils literal notranslate"><span class="pre">doc.example.com</span> <span class="pre">-&gt;</span> <span class="pre">docs.example.com</span> <span class="pre">-&gt;</span> <span class="pre">readthedocs.io</span></code>).</p></li>
+<li><p>CNAME records pointing to the APEX domain
+(<code class="docutils literal notranslate"><span class="pre">www.example.com</span> <span class="pre">-&gt;</span> <span class="pre">example.com</span> <span class="pre">-&gt;</span> <span class="pre">readthedocs.io</span></code>).</p></li>
+</ul>
+<p>This prevents attackers from taking over unused domains with CNAME records pointing to domains that are on Read the Docs.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Users shouldn't rely on these restrictions to prevent domain hijacking.
+We recommend regularly reviewing your DNS records,
+removing any that are no longer needed or that don't exist on Read the Docs,
+or registering all valid domains in your project.</p>
+</div>
+</section>
+<section id="the-validation-process-period-has-ended">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">The validation process period has ended</a><a class="headerlink" href="#the-validation-process-period-has-ended" title="連結到這個標頭"></a></h3>
+<p>After you add a new custom domain, you have 30 days to complete the configuration.
+Once that period has ended, we will stop trying to validate your domain.
+If you still want to complete the configuration,
+go to your domain and click on <span class="guilabel">Save</span> to restart the process.</p>
+</section>
+<section id="migrating-from-gitbook">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Migrating from GitBook</a><a class="headerlink" href="#migrating-from-gitbook" title="連結到這個標頭"></a></h3>
+<p>If your custom domain was previously used in GitBook, contact GitBook support (via live chat in their website)
+to remove the domain name from their DNS Zone in order for your domain name to work with Read the Docs,
+otherwise it will always redirect to GitBook.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="setup/git-repo-manual.html" class="btn btn-neutral float-left" title="How to manually configure a Git repository integration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="subprojects.html" class="btn btn-neutral float-right" title="Managing subprojects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
