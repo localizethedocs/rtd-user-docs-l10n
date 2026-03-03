@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 08:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/main-content-detection.rst:2
+msgid "Main content detection"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:4
+msgid ""
+"Read the Docs detects the main content area of HTML pages to focus on the "
+"documentation content itself, ignoring headers, footers, navigation, and "
+"other page elements."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:9
+msgid "Feature usage"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:11
+msgid "Different features use this detection in different ways:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:13
+msgid ""
+":doc:`/visual-diff`: Uses a documentation-tool specific heuristic first. If "
+"you configure a custom selector it overrides that heuristic."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:14
+msgid ""
+":doc:`/link-previews`: Uses the custom selector (if set) to scope links; "
+"otherwise falls back to heuristics here."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:15
+msgid ""
+":doc:`/server-side-search/index`: Always uses heuristics; it ignores any "
+"configured custom selector."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:18
+msgid "Detection logic"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:20
+msgid ""
+"The main content node is detected using the following logic, in order of "
+"priority:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:22
+msgid ""
+"**Elements with** ``role=\"main\"`` **attribute**: This ARIA role is used by "
+"many static site generators and themes to indicate the main content area."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:23
+msgid ""
+"**The** ``<main>`` **HTML tag**: The semantic HTML5 element for main content."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:24
+msgid ""
+"**Parent of the first** ``<h1>`` **tag**: If no explicit main content "
+"markers are found, the system assumes all sections are siblings under a "
+"common parent, and uses the parent of the first heading as the main content "
+"container."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:25
+msgid ""
+"**The** ``<body>`` **tag**: As a last resort, if none of the above are "
+"found, the entire body is used."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:29
+msgid ""
+"Following the ARIA_ conventions will also improve the accessibility of your "
+"site. See also https://webaim.org/techniques/semanticstructure/."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:35
+msgid "Improving detection"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:37
+msgid ""
+"If your documentation uses a non-standard structure, Read the Docs may not "
+"correctly identify the main content area."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:40
+msgid "To improve detection, consider:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:42
+msgid "Adding a ``role=\"main\"`` attribute to your main content container"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:43
+msgid "Using a ``<main>`` HTML tag in your theme"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:44
+msgid "Ensuring your main content has at least one ``<h1>`` heading"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:47
+msgid "Configuring a custom selector"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:49
+msgid ""
+"If the automatic detection does not work for your project, you can "
+"explicitly set the CSS selector for the main content node in your project "
+"settings:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:51
+msgid "Go to your project's :guilabel:`Settings`."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:52
+msgid "Click :guilabel:`Addons`."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:53
+msgid "Open :guilabel:`Advanced`"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:54
+msgid ""
+"Fill in the :guilabel:`CSS main content selector` field (for example: "
+"``div#main`` or ``.my-content``). Leave it blank to use automatic detection."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:55
+msgid "Save the settings."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:57
+msgid ""
+"When this selector is configured, it overrides the heuristic detection only "
+"for addons that honor it (currently Visual Diff and Link Previews). Choose a "
+"stable container whose structure does not change between builds to avoid "
+"spurious diffs or missed link previews. It will not affect search indexing "
+"unless we add support in the future."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:59
+msgid "Examples of good selectors:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:61
+msgid "``div#content`` (an id that wraps all page content)"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:62
+msgid "``div[role=\"main\"]`` (ARIA role usage)"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:66
+msgid ""
+"Avoid overly broad selectors like ``body`` or ones matching multiple nodes "
+"(e.g. a class applied to multiple elements)."
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:69
+msgid "Example structures"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:72
+msgid "Using role=\"main\" or <main> tag"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:74
+msgid ""
+"<html>\n"
+"   <head>\n"
+"      ...\n"
+"   </head>\n"
+"   <body>\n"
+"      <div>\n"
+"         This content isn't processed\n"
+"      </div>\n"
+"\n"
+"      <div role=\"main\">\n"
+"         All content inside the main node is processed\n"
+"      </div>\n"
+"\n"
+"      <footer>\n"
+"         This content isn't processed\n"
+"      </footer>\n"
+"   </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:97
+msgid "Inferring from first h1 tag"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:99
+msgid ""
+"If a main node isn't found, we try to infer the main node from the parent of "
+"the first section with a ``h1`` tag. Example:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:103
+msgid ""
+"<html>\n"
+"   <head>\n"
+"      ...\n"
+"   </head>\n"
+"   <body>\n"
+"      <div>\n"
+"         This content isn't processed\n"
+"      </div>\n"
+"\n"
+"      <div id=\"parent\">\n"
+"         <h1>First title</h1>\n"
+"         <p>\n"
+"            The parent of the h1 title will\n"
+"            be taken as the main node,\n"
+"            this is the div tag.\n"
+"         </p>\n"
+"\n"
+"         <h2>Second title</h2>\n"
+"         <p>More content</p>\n"
+"      </div>\n"
+"   </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:130
+msgid "Fallback to body tag"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:132
+msgid ""
+"If a section title isn't found, we default to the ``body`` tag. Example:"
+msgstr ""
+
+#: ../../../reference/main-content-detection.rst:135
+msgid ""
+"<html>\n"
+"   <head>\n"
+"      ...\n"
+"   </head>\n"
+"   <body>\n"
+"      <p>Content</p>\n"
+"   </body>\n"
+"</html>"
+msgstr ""
