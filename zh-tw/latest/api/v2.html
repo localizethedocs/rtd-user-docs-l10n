@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="API v2" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="api/v2.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="The Read the Docs API uses REST. JSON is returned by all API responses including errors and HTTP response status codes are to designate success and failure. Authentication and authorization: Requests to the Read the Docs public API are for public information only and do not require any authentica..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="The Read the Docs API uses REST. JSON is returned by all API responses including errors and HTTP response status codes are to designate success and failure. Authentication and authorization: Requests to the Read the Docs public API are for public information only and do not require any authentica..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API v2 &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/api/v2.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="Server side search API" href="../server-side-search/api.html" />
+    <link rel="prev" title="API v3" href="v3.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Public REST API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="v3.html">API v3</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">API v2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#authentication-and-authorization">Authentication and authorization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resources">資源</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#projects">專案</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#versions">版本</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#builds">Builds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#embed">Embed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#undocumented-resources-and-endpoints">Undocumented resources and endpoints</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../server-side-search/api.html">Server side search API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross-site-requests.html">Cross-site requests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Public REST API</a></li>
+      <li class="breadcrumb-item active">API v2</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/api/v2.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-v2">
+<h1>API v2<a class="headerlink" href="#api-v2" title="連結到這個標頭"></a></h1>
+<p>The Read the Docs API uses <abbr title="Representational State Transfer">REST</abbr>.
+JSON is returned by all API responses including errors
+and HTTP response status codes are to designate success and failure.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>API v2 is planned to be deprecated soon, though we have not yet set a time
+frame for deprecation yet. We will alert users with our plans when we do.</p>
+<p>For now, API v2 is still used by some legacy application operations still,
+but we highly recommend Read the Docs users use <a class="reference internal" href="v3.html"><span class="doc">API v3</span></a>
+instead.</p>
+<p>Some improvements in <a class="reference internal" href="v3.html"><span class="doc">API v3</span></a> are:</p>
+<ul class="simple">
+<li><p>Token based authentication</p></li>
+<li><p>Easier to use URLs which no longer use numerical ids</p></li>
+<li><p>More common user actions are exposed through the API</p></li>
+<li><p>Improved error reporting</p></li>
+</ul>
+<p>See its full documentation at <a class="reference internal" href="v3.html"><span class="doc">API v3</span></a>.</p>
+</div>
+<section id="authentication-and-authorization">
+<h2>Authentication and authorization<a class="headerlink" href="#authentication-and-authorization" title="連結到這個標頭"></a></h2>
+<p>Requests to the Read the Docs public API are for public information only
+and do not require any authentication.</p>
+</section>
+<section id="resources">
+<h2>資源<a class="headerlink" href="#resources" title="連結到這個標頭"></a></h2>
+<section id="projects">
+<h3>專案<a class="headerlink" href="#projects" title="連結到這個標頭"></a></h3>
+<p>Projects are the main building block of Read the Docs.
+Projects are built when there are changes to the code
+and the resulting documentation is hosted and served by Read the Docs.</p>
+<p>As an example, this documentation is part of the <a class="reference external" href="https://app.readthedocs.org/projects/docs/">Docs project</a>
+which has documentation at <a class="reference external" href="https://docs.readthedocs.io">https://docs.readthedocs.io</a>.</p>
+<p>You can always view your Read the Docs projects in your <a class="reference external" href="https://app.readthedocs.org/dashboard/">project dashboard</a>.</p>
+<section id="project-list">
+<h4>專案列表<a class="headerlink" href="#project-list" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-project-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/project/</span></span><a class="headerlink" href="#get--api-v2-project-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve a list of all Read the Docs projects.</p>
+<p><strong>Example request</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt1:before {
+  content: "$ ";
+}
+</style><span class="prompt1">curl<span class="w"> </span>https://app.readthedocs.org/api/v2/project/?slug<span class="o">=</span>pip</span>
+</pre></div></div><p><strong>Example response</strong>:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;count&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;next&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;previous&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;results&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">PROJECTS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>next</strong> (<em>string</em>) -- URI for next set of Projects.</p></li>
+<li><p><strong>previous</strong> (<em>string</em>) -- URI for previous set of Projects.</p></li>
+<li><p><strong>count</strong> (<em>integer</em>) -- Total number of Projects.</p></li>
+<li><p><strong>results</strong> (<em>array</em>) -- Array of <code class="docutils literal notranslate"><span class="pre">Project</span></code> objects.</p></li>
+</ul>
+</dd>
+<dt class="field-even">查詢參數<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>slug</strong> (<em>string</em>) -- Narrow the results by matching the exact project slug</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="project-details">
+<h4>Project details<a class="headerlink" href="#project-details" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-project-(int-id)-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/project/</span></span><span class="sig-paren">(</span><em class="property"><span class="pre">int:</span> </em><em class="sig-param"><span class="pre">id</span></em><span class="sig-paren">)</span><span class="sig-name descname"><span class="pre">/</span></span><a class="headerlink" href="#get--api-v2-project-(int-id)-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve details of a single project.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pip&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;slug&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;pip&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;programming_language&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;py&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;default_version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;default_branch&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;master&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;repo_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;repo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/pypa/pip&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pip Installs Packages.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;language&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;documentation_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;sphinx_htmldir&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;canonical_url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://pip.pypa.io/en/stable/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;users&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">USERS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>integer</em>) -- The ID of the project</p></li>
+<li><p><strong>name</strong> (<em>string</em>) -- The name of the project.</p></li>
+<li><p><strong>slug</strong> (<em>string</em>) -- The project slug (used in the URL).</p></li>
+<li><p><strong>programming_language</strong> (<em>string</em>) -- The programming language of the project (eg. &quot;py&quot;, &quot;js&quot;)</p></li>
+<li><p><strong>default_version</strong> (<em>string</em>) -- The default version of the project (eg. &quot;latest&quot;, &quot;stable&quot;, &quot;v3&quot;)</p></li>
+<li><p><strong>default_branch</strong> (<em>string</em>) -- The default version control branch</p></li>
+<li><p><strong>repo_type</strong> (<em>string</em>) -- Version control repository of the project</p></li>
+<li><p><strong>repo</strong> (<em>string</em>) -- The repository URL for the project</p></li>
+<li><p><strong>description</strong> (<em>string</em>) -- An RST description of the project</p></li>
+<li><p><strong>language</strong> (<em>string</em>) -- The language code of this project</p></li>
+<li><p><strong>documentation_type</strong> (<em>string</em>) -- An RST description of the project</p></li>
+<li><p><strong>canonical_url</strong> (<em>string</em>) -- The canonical URL of the default docs</p></li>
+<li><p><strong>users</strong> (<em>array</em>) -- Array of <code class="docutils literal notranslate"><span class="pre">User</span></code> IDs who are maintainers of the project.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> -- no error</p></li>
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a></span> -- There is no <code class="docutils literal notranslate"><span class="pre">Project</span></code> with this ID</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="project-versions">
+<h4>專案版本<a class="headerlink" href="#project-versions" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-project-(int-id)-active_versions-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/project/</span></span><span class="sig-paren">(</span><em class="property"><span class="pre">int:</span> </em><em class="sig-param"><span class="pre">id</span></em><span class="sig-paren">)</span><span class="sig-name descname"><span class="pre">/active_versions/</span></span><a class="headerlink" href="#get--api-v2-project-(int-id)-active_versions-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve a list of active versions (eg. &quot;latest&quot;, &quot;stable&quot;, &quot;v1.x&quot;) for a single project.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;versions&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">VERSION</span><span class="p">,</span><span class="w"> </span><span class="nx">VERSION</span><span class="p">,</span><span class="w"> </span><span class="p">...]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>versions</strong> (<em>array</em>) -- Version objects for the given <code class="docutils literal notranslate"><span class="pre">Project</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<p>See the <a class="reference internal" href="#api-version-detail"><span class="std std-ref">Version detail</span></a> call for the format of the <code class="docutils literal notranslate"><span class="pre">Version</span></code> object.</p>
+</dd></dl>
+
+</section>
+</section>
+<section id="versions">
+<h3>版本<a class="headerlink" href="#versions" title="連結到這個標頭"></a></h3>
+<p>Versions are different versions of the same project documentation</p>
+<p>The versions for a given project can be viewed in a project's version screen.
+For example, here is the <a class="reference external" href="https://app.readthedocs.org/projects/pip/versions/">Pip project's version screen</a>.</p>
+<section id="version-list">
+<h4>版本列表<a class="headerlink" href="#version-list" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-version-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/version/</span></span><a class="headerlink" href="#get--api-v2-version-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve a list of all Versions for all projects</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;count&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1000</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;previous&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;results&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">VERSIONS</span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;next&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://app.readthedocs.org/api/v2/version/?limit=10&amp;offset=10&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>next</strong> (<em>string</em>) -- URI for next set of Versions.</p></li>
+<li><p><strong>previous</strong> (<em>string</em>) -- URI for previous set of Versions.</p></li>
+<li><p><strong>count</strong> (<em>integer</em>) -- Total number of Versions.</p></li>
+<li><p><strong>results</strong> (<em>array</em>) -- Array of <code class="docutils literal notranslate"><span class="pre">Version</span></code> objects.</p></li>
+</ul>
+</dd>
+<dt class="field-even">查詢參數<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>project__slug</strong> (<em>string</em>) -- Narrow to the versions for a specific <code class="docutils literal notranslate"><span class="pre">Project</span></code></p></li>
+<li><p><strong>active</strong> (<em>boolean</em>) -- Pass <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code> to show only active or inactive versions.
+By default, the API returns all versions.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="version-detail">
+<span id="api-version-detail"></span><h4>Version detail<a class="headerlink" href="#version-detail" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-version-(int-id)-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/version/</span></span><span class="sig-paren">(</span><em class="property"><span class="pre">int:</span> </em><em class="sig-param"><span class="pre">id</span></em><span class="sig-paren">)</span><span class="sig-name descname"><span class="pre">/</span></span><a class="headerlink" href="#get--api-v2-version-(int-id)-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve details of a single version.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1437428</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;slug&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;verbose_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;built&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;active&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;tag&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;identifier&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;3a6b3995c141c0888af6591a59240ba5db7d9914&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;privacy_level&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;public&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;downloads&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;pdf&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;//readthedocs.org/projects/pip/downloads/pdf/stable/&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;htmlzip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;//readthedocs.org/projects/pip/downloads/htmlzip/stable/&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;epub&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;//readthedocs.org/projects/pip/downloads/epub/stable/&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;project&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">PROJECT</span><span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>integer</em>) -- The ID of the version</p></li>
+<li><p><strong>verbose_name</strong> (<em>string</em>) -- The name of the version.</p></li>
+<li><p><strong>slug</strong> (<em>string</em>) -- The version slug.</p></li>
+<li><p><strong>built</strong> (<em>string</em>) -- Whether this version has been built</p></li>
+<li><p><strong>active</strong> (<em>string</em>) -- Whether this version is still active</p></li>
+<li><p><strong>type</strong> (<em>string</em>) -- The type of this version (typically &quot;tag&quot; or &quot;branch&quot;)</p></li>
+<li><p><strong>identifier</strong> (<em>string</em>) -- A version control identifier for this version (eg. the commit hash of the tag)</p></li>
+<li><p><strong>downloads</strong> (<em>array</em>) -- URLs to downloads of this version's documentation</p></li>
+<li><p><strong>project</strong> (<em>object</em>) -- Details of the <code class="docutils literal notranslate"><span class="pre">Project</span></code> for this version.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> -- no error</p></li>
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a></span> -- There is no <code class="docutils literal notranslate"><span class="pre">Version</span></code> with this ID</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+<section id="builds">
+<h3>Builds<a class="headerlink" href="#builds" title="連結到這個標頭"></a></h3>
+<p>Builds are created by Read the Docs whenever a <code class="docutils literal notranslate"><span class="pre">Project</span></code> has its documentation built.
+Frequently this happens automatically via a web hook but can be triggered manually.</p>
+<p>Builds can be viewed in the build screen for a project.
+For example, here is <a class="reference external" href="https://app.readthedocs.org/projects/pip/builds/">Pip's build screen</a>.</p>
+<section id="build-list">
+<h4>Build list<a class="headerlink" href="#build-list" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-build-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/build/</span></span><a class="headerlink" href="#get--api-v2-build-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve details of builds ordered by most recent first</p>
+<p><strong>Example request</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">curl<span class="w"> </span>https://app.readthedocs.org/api/v2/build/?project__slug<span class="o">=</span>pip</span>
+</pre></div></div><p><strong>Example response</strong>:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;count&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;next&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;previous&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;results&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">BUILDS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>next</strong> (<em>string</em>) -- URI for next set of Builds.</p></li>
+<li><p><strong>previous</strong> (<em>string</em>) -- URI for previous set of Builds.</p></li>
+<li><p><strong>count</strong> (<em>integer</em>) -- Total number of Builds.</p></li>
+<li><p><strong>results</strong> (<em>array</em>) -- Array of <code class="docutils literal notranslate"><span class="pre">Build</span></code> objects.</p></li>
+</ul>
+</dd>
+<dt class="field-even">查詢參數<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>project__slug</strong> (<em>string</em>) -- Narrow to builds for a specific <code class="docutils literal notranslate"><span class="pre">Project</span></code></p></li>
+<li><p><strong>commit</strong> (<em>string</em>) -- Narrow to builds for a specific <code class="docutils literal notranslate"><span class="pre">commit</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="build-detail">
+<h4>Build detail<a class="headerlink" href="#build-detail" title="連結到這個標頭"></a></h4>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-build-(int-id)-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/build/</span></span><span class="sig-paren">(</span><em class="property"><span class="pre">int:</span> </em><em class="sig-param"><span class="pre">id</span></em><span class="sig-paren">)</span><span class="sig-name descname"><span class="pre">/</span></span><a class="headerlink" href="#get--api-v2-build-(int-id)-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve details of a single build.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">7367364</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2018-06-19T15:15:59.135894&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;length&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">59</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;html&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;state&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;finished&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;success&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;error&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;commit&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;6f808d743fd6f6907ad3e2e969c88a549e76db30&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;docs_url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://pip.pypa.io/en/latest/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;project&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">13</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;project_slug&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;pip&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">3681</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;version_slug&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;latest&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;start_time&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2018-06-19T20:16:00.951959&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;exit_code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">7367364</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git remote set-url origin git://github.com/pypa/pip.git&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;run_time&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;output&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">42852216</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;end_time&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2018-06-19T20:16:00.969170&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>integer</em>) -- The ID of the build</p></li>
+<li><p><strong>date</strong> (<em>string</em>) -- The ISO-8601 datetime of the build.</p></li>
+<li><p><strong>length</strong> (<em>integer</em>) -- The length of the build in seconds.</p></li>
+<li><p><strong>type</strong> (<em>string</em>) -- The type of the build (one of &quot;html&quot;, &quot;pdf&quot;, &quot;epub&quot;)</p></li>
+<li><p><strong>state</strong> (<em>string</em>) -- The state of the build (one of &quot;triggered&quot;, &quot;building&quot;, &quot;installing&quot;, &quot;cloning&quot;, or &quot;finished&quot;)</p></li>
+<li><p><strong>success</strong> (<em>boolean</em>) -- Whether the build was successful</p></li>
+<li><p><strong>error</strong> (<em>string</em>) -- An error message if the build was unsuccessful</p></li>
+<li><p><strong>commit</strong> (<em>string</em>) -- A version control identifier for this build (eg. the commit hash)</p></li>
+<li><p><strong>docs_url</strong> (<em>string</em>) -- The canonical URL of the build docs</p></li>
+<li><p><strong>project</strong> (<em>integer</em>) -- The ID of the project being built</p></li>
+<li><p><strong>project_slug</strong> (<em>string</em>) -- The slug for the project being built</p></li>
+<li><p><strong>version</strong> (<em>integer</em>) -- The ID of the version of the project being built</p></li>
+<li><p><strong>version_slug</strong> (<em>string</em>) -- The slug for the version of the project being built</p></li>
+<li><p><strong>commands</strong> (<em>array</em>) -- Array of commands for the build with details including output.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> -- no error</p></li>
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a></span> -- There is no <code class="docutils literal notranslate"><span class="pre">Build</span></code> with this ID</p></li>
+</ul>
+</dd>
+</dl>
+<p>Some fields primarily used for UI elements in Read the Docs are omitted.</p>
+</dd></dl>
+
+</section>
+</section>
+<section id="embed">
+<h3>Embed<a class="headerlink" href="#embed" title="連結到這個標頭"></a></h3>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v2-embed-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v2/embed/</span></span><a class="headerlink" href="#get--api-v2-embed-" title="連結到這個定義"></a></dt>
+<dd><p>Retrieve HTML-formatted content from documentation page or section.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>The content will be returned as is, without any sanitization or escaping.
+You should not include content from arbitrary projects, or projects you do not trust.</p>
+</div>
+<p><strong>Example request</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">curl<span class="w"> </span>https://app.readthedocs.org/api/v2/embed/?project<span class="o">=</span>docs<span class="p">&amp;</span><span class="nv">version</span><span class="o">=</span>latest<span class="p">&amp;</span><span class="nv">doc</span><span class="o">=</span>features<span class="p">&amp;</span><span class="nv">path</span><span class="o">=</span>features.html</span>
+</pre></div></div><p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1">curl<span class="w"> </span>https://app.readthedocs.org/api/v2/embed/?url<span class="o">=</span>https://docs.readthedocs.io/en/latest/features.html</span>
+</pre></div></div><p><strong>Example response</strong>:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;content&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;&lt;div class=\&quot;section\&quot; id=\&quot;read-the-docs-features\&quot;&gt;\n&lt;h1&gt;Read the Docs...&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;headers&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Read the Docs features&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Automatic Documentation Deployment&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#automatic-documentation-deployment&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Custom Domains &amp; White Labeling&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#custom-domains-white-labeling&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Versioned Documentation&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#versioned-documentation&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Downloadable Documentation&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#downloadable-documentation&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Full-Text Search&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#full-text-search&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Open Source and Customer Focused&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#open-source-and-customer-focused&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://docs.readthedocs.io/en/latest/features&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;meta&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;project&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;latest&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;doc&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;features&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;section&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;read the docs features&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Response JSON Object<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>content</strong> (<em>string</em>) -- HTML content of the section.</p></li>
+<li><p><strong>headers</strong> (<em>object</em>) -- section's headers in the document.</p></li>
+<li><p><strong>url</strong> (<em>string</em>) -- URL of the document.</p></li>
+<li><p><strong>meta</strong> (<em>object</em>) -- meta data of the requested section.</p></li>
+</ul>
+</dd>
+<dt class="field-even">查詢參數<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>project</strong> (<em>string</em>) -- Read the Docs project's slug.</p></li>
+<li><p><strong>doc</strong> (<em>string</em>) -- document to fetch content from.</p></li>
+<li><p><strong>version</strong> (<em>string</em>) -- <em>optional</em> Read the Docs version's slug (default: <code class="docutils literal notranslate"><span class="pre">latest</span></code>).</p></li>
+<li><p><strong>section</strong> (<em>string</em>) -- <em>optional</em> section within the document to fetch.</p></li>
+<li><p><strong>path</strong> (<em>string</em>) -- <em>optional</em> full path to the document including extension.</p></li>
+<li><p><strong>url</strong> (<em>string</em>) -- full URL of the document (and section) to fetch content from.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>You can call this endpoint by sending at least <code class="docutils literal notranslate"><span class="pre">project</span></code> and <code class="docutils literal notranslate"><span class="pre">doc</span></code> <em>or</em> <code class="docutils literal notranslate"><span class="pre">url</span></code> attribute.</p>
+</div>
+</dd></dl>
+
+</section>
+<section id="undocumented-resources-and-endpoints">
+<h3>Undocumented resources and endpoints<a class="headerlink" href="#undocumented-resources-and-endpoints" title="連結到這個標頭"></a></h3>
+<p>There are some undocumented endpoints in the API.
+These should not be used and could change at any time.
+These include:</p>
+<ul class="simple">
+<li><p>Endpoints for returning footer and version data to be injected into docs.
+(<code class="docutils literal notranslate"><span class="pre">/api/v2/footer_html</span></code>)</p></li>
+<li><p>Endpoints used for advertising (<code class="docutils literal notranslate"><span class="pre">/api/v2/sustainability/</span></code>)</p></li>
+<li><p>Any other endpoints not detailed above.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="v3.html" class="btn btn-neutral float-left" title="API v3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../server-side-search/api.html" class="btn btn-neutral float-right" title="Server side search API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

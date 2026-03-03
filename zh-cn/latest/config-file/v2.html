@@ -1,0 +1,1352 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Configuration file reference" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="config-file/v2.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Read the Docs supports configuring your documentation builds with a configuration file. This file is named.readthedocs.yaml and should be placed in the top level of your Git repository. The.readthedocs.yaml file can contain a number of settings that are not accessible through the Read the Docs we..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Read the Docs supports configuring your documentation builds with a configuration file. This file is named.readthedocs.yaml and should be placed in the top level of your Git repository. The.readthedocs.yaml file can contain a number of settings that are not accessible through the Read the Docs we..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuration file reference &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/config-file/v2.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Read the Docs Addons" href="../addons.html" />
+    <link rel="prev" title="Configuration file overview" href="index.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Configuration file overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration file reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#supported-settings">Supported settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version">version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#formats">formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python">python</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#python-install">python.install</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conda">conda</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#conda-environment">conda.environment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#build">build</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#build-os">build.os</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-tools">build.tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-tools-python">build.tools.python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-tools-nodejs">build.tools.nodejs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-tools-ruby">build.tools.ruby</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-tools-rust">build.tools.rust</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-tools-golang">build.tools.golang</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-apt-packages">build.apt_packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-jobs">build.jobs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-jobs-build">build.jobs.build</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-commands">build.commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx">sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx-builder">sphinx.builder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx-configuration">sphinx.configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx-fail-on-warning">sphinx.fail_on_warning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mkdocs">mkdocs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mkdocs-configuration">mkdocs.configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mkdocs-fail-on-warning">mkdocs.fail_on_warning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules-include">submodules.include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules-exclude">submodules.exclude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules-recursive">submodules.recursive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#search">search</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#search-ranking">search.ranking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#search-ignore">search.ignore</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#schema">Schema</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Configuration file reference</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/config-file/v2.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuration-file-reference">
+<h1>Configuration file reference<a class="headerlink" href="#configuration-file-reference" title="Link to this heading"></a></h1>
+<p>Read the Docs supports configuring your documentation builds with a configuration file.
+This file is named <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> and should be placed in the top level of your Git repository.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>  file can contain a number of settings that are not accessible through the Read the Docs website.</p>
+<p>Because the file is stored in Git,
+the configuration will apply to the exact version that is being built.
+<strong>This allows you to store different configurations for different versions of your documentation.</strong></p>
+<p>Below is an example YAML file which shows the most common configuration options:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Sphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MkDocs</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Read the Docs configuration file for Sphinx projects</span>
+<span class="linenos"> 2</span><span class="c1"># See https://docs.readthedocs.io/en/stable/config-file/v2.html for details</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># Required</span>
+<span class="linenos"> 5</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="c1"># Set the OS, Python version and other tools you might need</span>
+<span class="linenos"> 8</span><span class="nt">build</span><span class="p">:</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="linenos">10</span><span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="linenos">11</span><span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+<span class="linenos">12</span><span class="w">    </span><span class="c1"># You can also specify other tool versions:</span>
+<span class="linenos">13</span><span class="w">    </span><span class="c1"># nodejs: &quot;20&quot;</span>
+<span class="linenos">14</span><span class="w">    </span><span class="c1"># rust: &quot;1.70&quot;</span>
+<span class="linenos">15</span><span class="w">    </span><span class="c1"># golang: &quot;1.20&quot;</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="c1"># Build documentation in the &quot;docs/&quot; directory with Sphinx</span>
+<span class="linenos">18</span><span class="nt">sphinx</span><span class="p">:</span>
+<span class="linenos">19</span><span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+<span class="linenos">20</span><span class="w">  </span><span class="c1"># You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs</span>
+<span class="linenos">21</span><span class="w">  </span><span class="c1"># builder: &quot;dirhtml&quot;</span>
+<span class="linenos">22</span><span class="w">  </span><span class="c1"># Fail on all warnings to avoid broken references</span>
+<span class="linenos">23</span><span class="w">  </span><span class="c1"># fail_on_warning: true</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="c1"># Optionally build your docs in additional formats such as PDF and ePub</span>
+<span class="linenos">26</span><span class="c1"># formats:</span>
+<span class="linenos">27</span><span class="c1">#   - pdf</span>
+<span class="linenos">28</span><span class="c1">#   - epub</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="c1"># Optional but recommended, declare the Python requirements required</span>
+<span class="linenos">31</span><span class="c1"># to build your documentation</span>
+<span class="linenos">32</span><span class="c1"># See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html</span>
+<span class="linenos">33</span><span class="c1"># python:</span>
+<span class="linenos">34</span><span class="c1">#   install:</span>
+<span class="linenos">35</span><span class="c1">#     - requirements: docs/requirements.txt</span>
+</pre></div>
+</div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Read the Docs configuration file for MkDocs projects</span>
+<span class="linenos"> 2</span><span class="c1"># See https://docs.readthedocs.io/en/stable/config-file/v2.html for details</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="c1"># Required</span>
+<span class="linenos"> 5</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="c1"># Set the version of Python and other tools you might need</span>
+<span class="linenos"> 8</span><span class="nt">build</span><span class="p">:</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-22.04</span>
+<span class="linenos">10</span><span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="linenos">11</span><span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="nt">mkdocs</span><span class="p">:</span>
+<span class="linenos">14</span><span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="c1"># Optionally declare the Python requirements required to build your docs</span>
+<span class="linenos">17</span><span class="nt">python</span><span class="p">:</span>
+<span class="linenos">18</span><span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="linenos">19</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+</pre></div>
+</div>
+</div>
+</div></div>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><a class="reference internal" href="index.html"><span class="doc">Configuration file overview</span></a></dt><dd><p>Practical steps to add a configuration file to your documentation project.</p>
+</dd>
+</dl>
+</div>
+<section id="supported-settings">
+<h2>Supported settings<a class="headerlink" href="#supported-settings" title="Link to this heading"></a></h2>
+<p>Read the Docs validates every configuration file.
+Any configuration option that isn't supported will make the build fail.
+This is to avoid typos and provide feedback on invalid configurations.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>When using a v2 configuration file,
+the local settings from the web interface are ignored.</p>
+</div>
+<nav class="contents local" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#version" id="id5">version</a></p></li>
+<li><p><a class="reference internal" href="#formats" id="id6">formats</a></p></li>
+<li><p><a class="reference internal" href="#python" id="id7">python</a></p>
+<ul>
+<li><p><a class="reference internal" href="#python-install" id="id8">python.install</a></p>
+<ul>
+<li><p><a class="reference internal" href="#requirements-file" id="id9">Requirements file</a></p></li>
+<li><p><a class="reference internal" href="#packages" id="id10">Packages</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#conda" id="id11">conda</a></p>
+<ul>
+<li><p><a class="reference internal" href="#conda-environment" id="id12">conda.environment</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#build" id="id13">build</a></p>
+<ul>
+<li><p><a class="reference internal" href="#build-os" id="id14">build.os</a></p></li>
+<li><p><a class="reference internal" href="#build-tools" id="id15">build.tools</a></p></li>
+<li><p><a class="reference internal" href="#build-tools-python" id="id16">build.tools.python</a></p></li>
+<li><p><a class="reference internal" href="#build-tools-nodejs" id="id17">build.tools.nodejs</a></p></li>
+<li><p><a class="reference internal" href="#build-tools-ruby" id="id18">build.tools.ruby</a></p></li>
+<li><p><a class="reference internal" href="#build-tools-rust" id="id19">build.tools.rust</a></p></li>
+<li><p><a class="reference internal" href="#build-tools-golang" id="id20">build.tools.golang</a></p></li>
+<li><p><a class="reference internal" href="#build-apt-packages" id="id21">build.apt_packages</a></p></li>
+<li><p><a class="reference internal" href="#build-jobs" id="id22">build.jobs</a></p></li>
+<li><p><a class="reference internal" href="#build-jobs-build" id="id23">build.jobs.build</a></p></li>
+<li><p><a class="reference internal" href="#build-commands" id="id24">build.commands</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#sphinx" id="id25">sphinx</a></p>
+<ul>
+<li><p><a class="reference internal" href="#sphinx-builder" id="id26">sphinx.builder</a></p></li>
+<li><p><a class="reference internal" href="#sphinx-configuration" id="id27">sphinx.configuration</a></p></li>
+<li><p><a class="reference internal" href="#sphinx-fail-on-warning" id="id28">sphinx.fail_on_warning</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#mkdocs" id="id29">mkdocs</a></p>
+<ul>
+<li><p><a class="reference internal" href="#mkdocs-configuration" id="id30">mkdocs.configuration</a></p></li>
+<li><p><a class="reference internal" href="#mkdocs-fail-on-warning" id="id31">mkdocs.fail_on_warning</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#submodules" id="id32">submodules</a></p>
+<ul>
+<li><p><a class="reference internal" href="#submodules-include" id="id33">submodules.include</a></p></li>
+<li><p><a class="reference internal" href="#submodules-exclude" id="id34">submodules.exclude</a></p></li>
+<li><p><a class="reference internal" href="#submodules-recursive" id="id35">submodules.recursive</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#search" id="id36">search</a></p>
+<ul>
+<li><p><a class="reference internal" href="#search-ranking" id="id37">search.ranking</a></p></li>
+<li><p><a class="reference internal" href="#search-ignore" id="id38">search.ignore</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="version">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">version</a><a class="headerlink" href="#version" title="Link to this heading"></a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+</pre></div>
+</div>
+</section>
+<section id="formats">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">formats</a><a class="headerlink" href="#formats" title="Link to this heading"></a></h3>
+<p>Additional formats of the documentation to be built,
+apart from the default HTML.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">htmlzip</span></code>, <code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">epub</span></code>, <code class="docutils literal notranslate"><span class="pre">all</span></code></p>
+</dd>
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="c1"># Default</span>
+<span class="nt">formats</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="c1"># Build PDF &amp; ePub</span>
+<span class="nt">formats</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">epub</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pdf</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">all</span></code> keyword to indicate all formats.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="c1"># Build all formats</span>
+<span class="nt">formats</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>At the moment, only Sphinx supports additional formats.
+<code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">epub</span></code>, and <code class="docutils literal notranslate"><span class="pre">htmlzip</span></code> output is not yet supported when using MkDocs.</p>
+<p>With <a class="reference internal" href="../pull-requests.html"><span class="doc">builds from pull requests</span></a>, only HTML formats are generated. Other formats are resource intensive and will be built after merging.</p>
+</div>
+</section>
+<section id="python">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">python</a><a class="headerlink" href="#python" title="Link to this heading"></a></h3>
+<p>Configuration of the Python environment to be used.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip</span>
+<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="w">      </span><span class="nt">extra_requirements</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip</span>
+<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">another/package</span>
+</pre></div>
+</div>
+<section id="python-install">
+<h4><a class="toc-backref" href="#id8" role="doc-backlink">python.install</a><a class="headerlink" href="#python-install" title="Link to this heading"></a></h4>
+<p>Read the Docs uses <a class="reference external" href="https://pip.pypa.io/en/stable/" title="（在 pip v26.0）"><span class="xref std std-doc">pip</span></a> by  default to install your Python packages, however if you are using a <a class="reference internal" href="#conda"><span class="std std-ref">Conda</span></a> environment to manage your build, you'll need to use the Conda <code class="docutils literal notranslate"><span class="pre">environment</span></code> file instead.
+If you have a commercial plan you can also install <a class="reference internal" href="../guides/private-python-packages.html"><span class="doc">private dependencies</span></a>.</p>
+<p>List of installation methods of packages and requirements.
+You can have several of the following methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+<section id="requirements-file">
+<h5><a class="toc-backref" href="#id9" role="doc-backlink">Requirements file</a><a class="headerlink" href="#requirements-file" title="Link to this heading"></a></h5>
+<p>Install packages from a requirements file.</p>
+<p>The path to the requirements file, relative to the root of the project.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">requirements</span></code></p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+</dd>
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">requirements.txt</span>
+</pre></div>
+</div>
+</section>
+<section id="packages">
+<h5><a class="toc-backref" href="#id10" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Link to this heading"></a></h5>
+<p>Install the project using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code>.
+The use of <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code> is deprecated.</p>
+<p>The path to the package, relative to the root of the project.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+</dd>
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+<p>The installation method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">method</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">pip</span></code>, <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> (deprecated)</p>
+</dd>
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">pip</span></code></p>
+</dd>
+</dl>
+<p><a class="reference external" href="https://setuptools.readthedocs.io/en/latest/userguide/dependency_management.html#optional-dependencies">Extra requirements</a> section to install in addition to the <a class="reference external" href="https://setuptools.readthedocs.io/en/latest/userguide/dependency_management.html#declaring-required-dependency">package dependencies</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">extra_requirements</span></code></p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+<p>For example, to run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.[docs]</span></code>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip</span>
+<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="w">      </span><span class="nt">extra_requirements</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="conda">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">conda</a><a class="headerlink" href="#conda" title="Link to this heading"></a></h3>
+<p>Configuration for Conda support.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-24.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mambaforge-22.9&quot;</span>
+
+<span class="nt">conda</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">environment.yml</span>
+</pre></div>
+</div>
+<section id="conda-environment">
+<h4><a class="toc-backref" href="#id12" role="doc-backlink">conda.environment</a><a class="headerlink" href="#conda-environment" title="Link to this heading"></a></h4>
+<p>The path to the Conda <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">environment file</a>, relative to the root of the project.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+</dd>
+<dt class="field-even">Required<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When using Conda, it's required to specify <code class="docutils literal notranslate"><span class="pre">build.tools.python</span></code> to tell Read the Docs to use whether Conda or Mamba to create the environment.</p>
+</div>
+</section>
+</section>
+<section id="build">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">build</a><a class="headerlink" href="#build" title="Link to this heading"></a></h3>
+<p>Configuration for the documentation build process.
+This allows you to specify the base Read the Docs image
+used to build the documentation,
+and control the versions of several tools:
+Python, Node.js, Rust, and Go.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.13&quot;</span>
+<span class="w">    </span><span class="nt">nodejs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;22&quot;</span>
+<span class="w">    </span><span class="nt">rust</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1.82&quot;</span>
+<span class="w">    </span><span class="nt">golang</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1.23&quot;</span>
+</pre></div>
+</div>
+<section id="build-os">
+<h4><a class="toc-backref" href="#id14" role="doc-backlink">build.os</a><a class="headerlink" href="#build-os" title="Link to this heading"></a></h4>
+<p>The Docker image used for building the docs.
+Image names refer to the operating system Read the Docs uses to build them.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Arbitrary Docker images are not supported.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ubuntu-20.04</span></code>, <code class="docutils literal notranslate"><span class="pre">ubuntu-22.04</span></code>, <code class="docutils literal notranslate"><span class="pre">ubuntu-24.04</span></code>, <code class="docutils literal notranslate"><span class="pre">ubuntu-lts-latest</span></code></p>
+</dd>
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ubuntu-lts-latest</span></code> option refers to the latest Ubuntu LTS version of Ubuntu available on Read the Docs,
+which may not match the latest Ubuntu LTS officially released.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">ubuntu-lts-latest</span></code> may break your builds unexpectedly if your project isn't compatible with the newest Ubuntu LTS version when it's updated by Read the Docs.</p>
+</div>
+</section>
+<section id="build-tools">
+<h4><a class="toc-backref" href="#id15" role="doc-backlink">build.tools</a><a class="headerlink" href="#build-tools" title="Link to this heading"></a></h4>
+<p>Version specifiers for each tool. It must contain at least one tool.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">python</span></code>, <code class="docutils literal notranslate"><span class="pre">nodejs</span></code>, <code class="docutils literal notranslate"><span class="pre">ruby</span></code>, <code class="docutils literal notranslate"><span class="pre">rust</span></code>, <code class="docutils literal notranslate"><span class="pre">golang</span></code></p>
+</dd>
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Each tool has a <code class="docutils literal notranslate"><span class="pre">latest</span></code> option available, which refers to the latest version available on Read the Docs,
+which may not match the latest version officially released.
+Versions and the <code class="docutils literal notranslate"><span class="pre">latest</span></code> option are updated at least once every six months to keep up with the latest releases.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">latest</span></code> may break your builds unexpectedly if your project isn't compatible with the newest version of the tool when it's updated by Read the Docs.</p>
+</div>
+</section>
+<section id="build-tools-python">
+<h4><a class="toc-backref" href="#id16" role="doc-backlink">build.tools.python</a><a class="headerlink" href="#build-tools-python" title="Link to this heading"></a></h4>
+<p>Python version to use.
+You can use several interpreters and versions, from CPython, Miniconda, and Mamba.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If you use Miniconda3 or Mambaforge, you can select the Python version
+using the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file. See our <a class="reference internal" href="../guides/conda.html"><span class="doc">How to use Conda as your Python environment</span></a> guide
+for more information.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">2.7</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3</span></code> (alias for the latest 3.x version available on Read the Docs)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.6</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.7</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.8</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.9</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.10</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.11</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.12</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.13</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.14</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">miniconda3-4.7</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">miniconda3-3.12-24.1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">miniconda3-3.12-24.9</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">miniconda-latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mambaforge-4.10</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mambaforge-22.9</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mambaforge-23.11</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mambaforge-latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="build-tools-nodejs">
+<h4><a class="toc-backref" href="#id17" role="doc-backlink">build.tools.nodejs</a><a class="headerlink" href="#build-tools-nodejs" title="Link to this heading"></a></h4>
+<p>Node.js version to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">14</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">16</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">18</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">19</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">20</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">22</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">23</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">24</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="build-tools-ruby">
+<h4><a class="toc-backref" href="#id18" role="doc-backlink">build.tools.ruby</a><a class="headerlink" href="#build-tools-ruby" title="Link to this heading"></a></h4>
+<p>Ruby version to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">3.3</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.4</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="build-tools-rust">
+<h4><a class="toc-backref" href="#id19" role="doc-backlink">build.tools.rust</a><a class="headerlink" href="#build-tools-rust" title="Link to this heading"></a></h4>
+<p>Rust version to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1.55</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.61</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.64</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.70</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.75</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.78</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.82</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.86</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.91</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="build-tools-golang">
+<h4><a class="toc-backref" href="#id20" role="doc-backlink">build.tools.golang</a><a class="headerlink" href="#build-tools-golang" title="Link to this heading"></a></h4>
+<p>Go version to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1.17</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.18</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.19</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.20</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.21</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.22</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.23</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.24</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1.25</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latest</span></code> (alias for the latest version available on Read the Docs)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="build-apt-packages">
+<h4><a class="toc-backref" href="#id21" role="doc-backlink">build.apt_packages</a><a class="headerlink" href="#build-apt-packages" title="Link to this heading"></a></h4>
+<p>List of <a class="reference external" href="https://packages.ubuntu.com/">APT packages</a> to install.
+Our build servers run various Ubuntu LTS versions with the default set of package repositories installed.
+We don't currently support PPA's or other custom repositories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">apt_packages</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">libclang</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmake</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When possible avoid installing Python packages using apt (<code class="docutils literal notranslate"><span class="pre">python3-numpy</span></code> for example),
+<a class="reference internal" href="../guides/reproducible-builds.html"><span class="doc">use pip or conda instead</span></a>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Currently, it's not possible to use this option when using <a class="reference internal" href="#build-commands"><span class="std std-ref">build.commands</span></a>.</p>
+</div>
+</section>
+<section id="build-jobs">
+<h4><a class="toc-backref" href="#id22" role="doc-backlink">build.jobs</a><a class="headerlink" href="#build-jobs" title="Link to this heading"></a></h4>
+<p>Commands to be run before or after a Read the Docs <a class="reference internal" href="../glossary.html#term-pre-defined-build-jobs"><span class="xref std std-term">pre-defined build jobs</span></a>, or to override a specific job.
+This allows you to run custom commands at a particular moment in the build process.
+See <a class="reference internal" href="../build-customization.html"><span class="doc">Build process customization</span></a> for more details.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.13&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pre_create_environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Command run at &#39;pre_create_environment&#39; step&quot;</span>
+<span class="w">    </span><span class="nt">post_build</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Command run at &#39;post_build&#39; step&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo `date`</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Each build step consists of a list of commands to be executed.
+<code class="docutils literal notranslate"><span class="pre">build.os</span></code> and <code class="docutils literal notranslate"><span class="pre">build.tools</span></code> are also required to use <code class="docutils literal notranslate"><span class="pre">build.jobs</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If the <a class="reference internal" href="#sphinx"><span class="std std-ref">sphinx</span></a> or  <a class="reference internal" href="#mkdocs"><span class="std std-ref">mkdocs</span></a> keys are present in the configuration file,
+the default steps for each tool will be executed for the <code class="docutils literal notranslate"><span class="pre">create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">install</span></code>, and <code class="docutils literal notranslate"><span class="pre">build</span></code> steps.
+You can override any of these steps, but be aware that some steps may depend on others,
+for example, the default <code class="docutils literal notranslate"><span class="pre">install</span></code> and <code class="docutils literal notranslate"><span class="pre">build</span></code> steps depend on the <code class="docutils literal notranslate"><span class="pre">create_environment</span></code> step creating the Python virtual environment in a specific directory.</p>
+<p>If neither of the <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> or <code class="docutils literal notranslate"><span class="pre">mkdocs</span></code> keys are present in the configuration file,
+only the specified <code class="docutils literal notranslate"><span class="pre">build.tools</span></code> and <code class="docutils literal notranslate"><span class="pre">build.apt_packages</span></code> will be installed,
+you will in charge of generating the documentation in the <a class="reference internal" href="../build-customization.html#where-to-put-files"><span class="std std-ref">$READTHEDOCS_OUTPUT</span></a> directory.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+<dt class="field-even">Allowed keys<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">post_checkout</span></code>, <code class="docutils literal notranslate"><span class="pre">pre_system_dependencies</span></code>, <code class="docutils literal notranslate"><span class="pre">post_system_dependencies</span></code>,
+<code class="docutils literal notranslate"><span class="pre">pre_create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">post_create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">pre_install</span></code>, <code class="docutils literal notranslate"><span class="pre">post_install</span></code>,
+<code class="docutils literal notranslate"><span class="pre">pre_build</span></code>, <code class="docutils literal notranslate"><span class="pre">build</span></code>, <code class="docutils literal notranslate"><span class="pre">post_build</span></code></p>
+</dd>
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+</dd>
+</dl>
+</section>
+<section id="build-jobs-build">
+<h4><a class="toc-backref" href="#id23" role="doc-backlink">build.jobs.build</a><a class="headerlink" href="#build-jobs-build" title="Link to this heading"></a></h4>
+<p>Commands to override the default build process.
+When running builds from pull requests, only the <code class="docutils literal notranslate"><span class="pre">html</span></code> step will be executed.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">formats</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">pdf</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">epub</span><span class="p p-Indicator">]</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.13&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">create_environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Preparing environment&quot;</span>
+<span class="w">    </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Installing dependencies&quot;</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Building HTML&quot;</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p $READTHEDOCS_OUTPUT/html/</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Hello world!&quot; &gt; $READTHEDOCS_OUTPUT/html/index.html</span>
+<span class="w">      </span><span class="nt">pdf</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Building PDF&quot;</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p $READTHEDOCS_OUTPUT/pdf/</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Hello world!&quot; &gt; $READTHEDOCS_OUTPUT/pdf/index.pdf</span>
+<span class="w">      </span><span class="nt">epub</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Building ePub&quot;</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p $READTHEDOCS_OUTPUT/epub/</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Hello world!&quot; &gt; $READTHEDOCS_OUTPUT/epub/index.epub</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+<dt class="field-even">Allowed keys<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">epub</span></code>, <code class="docutils literal notranslate"><span class="pre">htmlzip</span></code></p>
+</dd>
+<dt class="field-odd">Required<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If any of the <code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">epub</span></code>, or <code class="docutils literal notranslate"><span class="pre">htmlzip</span></code> steps are overridden,
+they should be included in the <a class="reference internal" href="#formats"><span class="std std-ref">formats</span></a> list.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>For each format, you need to generate their output in the <a class="reference internal" href="../build-customization.html#where-to-put-files"><span class="std std-ref">$READTHEDOCS_OUTPUT</span></a> directory.</p>
+</div>
+</section>
+<section id="build-commands">
+<h4><a class="toc-backref" href="#id24" role="doc-backlink">build.commands</a><a class="headerlink" href="#build-commands" title="Link to this heading"></a></h4>
+<p>Specify a list of commands that Read the Docs will run on the build process.
+When <code class="docutils literal notranslate"><span class="pre">build.commands</span></code> is used, none of the <a class="reference internal" href="../glossary.html#term-pre-defined-build-jobs"><span class="xref std std-term">pre-defined build jobs</span></a> will be executed.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.13&quot;</span>
+<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pelican</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/</span>
+</pre></div>
+</div>
+<p>But we recommend using <a class="reference internal" href="#build-jobs"><span class="std std-ref">build.jobs</span></a> instead:</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pelican</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/</span>
+</pre></div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">build.jobs</span></code> offers the same functionality as <code class="docutils literal notranslate"><span class="pre">build.commands</span></code>,
+but in a more structured way that allows you to define different commands for each format,
+while also supporting installing system dependencies via <code class="docutils literal notranslate"><span class="pre">build.apt_packages</span></code>.
+See <a class="reference internal" href="../build-customization.html"><span class="doc">Build process customization</span></a> for more details.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p><code class="docutils literal notranslate"><span class="pre">build.os</span></code> and <code class="docutils literal notranslate"><span class="pre">build.tools</span></code> are also required when using <code class="docutils literal notranslate"><span class="pre">build.commands</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>All items in the <code class="docutils literal notranslate"><span class="pre">build.commands</span></code> array are executed in a clean shell environment, i.e. environment changes do not
+persist and the working directory always start from the git repo.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-even">Required<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="sphinx">
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">sphinx</a><a class="headerlink" href="#sphinx" title="Link to this heading"></a></h3>
+<p>Configuration for Sphinx documentation.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">builder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">html</span>
+<span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conf.py</span>
+<span class="w">  </span><span class="nt">fail_on_warning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If you want to pin Sphinx to a specific version,
+use a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file
+(see <a class="reference internal" href="#requirements-file"><span class="std std-ref">Requirements file</span></a> and  <a class="reference internal" href="#conda-environment"><span class="std std-ref">conda.environment</span></a>).
+If you are using a metadata file to describe code dependencies
+like <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>, <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, or similar,
+you can use the <code class="docutils literal notranslate"><span class="pre">extra_requirements</span></code> option
+(see <a class="reference internal" href="#packages"><span class="std std-ref">Packages</span></a>).
+This also allows you to override <a class="reference internal" href="../build-default-versions.html#external-dependencies"><span class="std std-ref">the default pinning done by Read the Docs
+if your project was created before October 2020</span></a>.</p>
+</div>
+<section id="sphinx-builder">
+<h4><a class="toc-backref" href="#id26" role="doc-backlink">sphinx.builder</a><a class="headerlink" href="#sphinx-builder" title="Link to this heading"></a></h4>
+<p>The builder type for the Sphinx documentation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">dirhtml</span></code>, <code class="docutils literal notranslate"><span class="pre">singlehtml</span></code></p>
+</dd>
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">html</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">htmldir</span></code> builder option was renamed to <code class="docutils literal notranslate"><span class="pre">dirhtml</span></code> to use the same name as sphinx.
+Configurations using the old name will continue working.</p>
+</div>
+</section>
+<section id="sphinx-configuration">
+<h4><a class="toc-backref" href="#id27" role="doc-backlink">sphinx.configuration</a><a class="headerlink" href="#sphinx-configuration" title="Link to this heading"></a></h4>
+<p>The path to the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file, relative to the root of the project.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+</dd>
+<dt class="field-even">Required<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+</section>
+<section id="sphinx-fail-on-warning">
+<h4><a class="toc-backref" href="#id28" role="doc-backlink">sphinx.fail_on_warning</a><a class="headerlink" href="#sphinx-fail-on-warning" title="Link to this heading"></a></h4>
+<p>Turn warnings into errors
+(<a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-W" title="（在 Sphinx v9.1.0）"><code class="xref std std-option docutils literal notranslate"><span class="pre">-W</span></code></a> and <a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-keep-going" title="（在 Sphinx v9.1.0）"><code class="xref std std-option docutils literal notranslate"><span class="pre">--keep-going</span></code></a> options).
+This means the build fails if there is a warning and exits with exit status 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="mkdocs">
+<h3><a class="toc-backref" href="#id29" role="doc-backlink">mkdocs</a><a class="headerlink" href="#mkdocs" title="Link to this heading"></a></h3>
+<p>Configuration for MkDocs documentation.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">mkdocs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span>
+<span class="w">  </span><span class="nt">fail_on_warning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If you want to pin MkDocs to a specific version,
+use a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file
+(see <a class="reference internal" href="#requirements-file"><span class="std std-ref">Requirements file</span></a> and  <a class="reference internal" href="#conda-environment"><span class="std std-ref">conda.environment</span></a>).
+If you are using a metadata file to describe code dependencies
+like <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>, <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, or similar,
+you can use the <code class="docutils literal notranslate"><span class="pre">extra_requirements</span></code> option
+(see <a class="reference internal" href="#packages"><span class="std std-ref">Packages</span></a>).
+This also allows you to override <a class="reference internal" href="../build-default-versions.html#external-dependencies"><span class="std std-ref">the default pinning done by Read the Docs
+if your project was created before March 2021</span></a>.</p>
+</div>
+<section id="mkdocs-configuration">
+<h4><a class="toc-backref" href="#id30" role="doc-backlink">mkdocs.configuration</a><a class="headerlink" href="#mkdocs-configuration" title="Link to this heading"></a></h4>
+<p>The path to the <code class="docutils literal notranslate"><span class="pre">mkdocs.yml</span></code> file, relative to the root of the project.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+</dd>
+<dt class="field-even">Required<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+</section>
+<section id="mkdocs-fail-on-warning">
+<h4><a class="toc-backref" href="#id31" role="doc-backlink">mkdocs.fail_on_warning</a><a class="headerlink" href="#mkdocs-fail-on-warning" title="Link to this heading"></a></h4>
+<p><a class="reference external" href="https://www.mkdocs.org/user-guide/configuration/#strict">Turn warnings into errors</a>.
+This means that the build stops at the first warning and exits with exit status 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="submodules">
+<h3><a class="toc-backref" href="#id32" role="doc-backlink">submodules</a><a class="headerlink" href="#submodules" title="Link to this heading"></a></h3>
+<p>VCS submodules configuration.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Only Git is supported at the moment.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>You can't use <code class="docutils literal notranslate"><span class="pre">include</span></code> and <code class="docutils literal notranslate"><span class="pre">exclude</span></code> settings for submodules at the same time.</p>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">submodules</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">include</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">one</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">two</span>
+<span class="w">  </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+<section id="submodules-include">
+<h4><a class="toc-backref" href="#id33" role="doc-backlink">submodules.include</a><a class="headerlink" href="#submodules-include" title="Link to this heading"></a></h4>
+<p>List of submodules to be included.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">all</span></code> keyword to include all submodules.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">submodules</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="submodules-exclude">
+<h4><a class="toc-backref" href="#id34" role="doc-backlink">submodules.exclude</a><a class="headerlink" href="#submodules-exclude" title="Link to this heading"></a></h4>
+<p>List of submodules to be excluded.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">all</span></code> keyword to exclude all submodules.
+This is the same as <code class="docutils literal notranslate"><span class="pre">include:</span> <span class="pre">[]</span></code>.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">submodules</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">exclude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="submodules-recursive">
+<h4><a class="toc-backref" href="#id35" role="doc-backlink">submodules.recursive</a><a class="headerlink" href="#submodules-recursive" title="Link to this heading"></a></h4>
+<p>Do a recursive clone of the submodules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This is ignored if there aren't submodules to clone.</p>
+</div>
+</section>
+</section>
+<section id="search">
+<h3><a class="toc-backref" href="#id36" role="doc-backlink">search</a><a class="headerlink" href="#search" title="Link to this heading"></a></h3>
+<p>Settings for more control over <a class="reference internal" href="../server-side-search/index.html"><span class="doc">Server side search</span></a>.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ranking</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">api/v1/*</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-1</span>
+<span class="w">    </span><span class="nt">api/v2/*</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="w">  </span><span class="nt">ignore</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404.html</span>
+</pre></div>
+</div>
+<section id="search-ranking">
+<h4><a class="toc-backref" href="#id37" role="doc-backlink">search.ranking</a><a class="headerlink" href="#search-ranking" title="Link to this heading"></a></h4>
+<p>Set a custom search rank over pages matching a pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">map</span></code> of patterns to ranks</p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+</dd>
+</dl>
+<p>Patterns are matched against the relative paths of the HTML files produced by the build,
+you should try to match <code class="docutils literal notranslate"><span class="pre">index.html</span></code>, not <code class="docutils literal notranslate"><span class="pre">docs/index.rst</span></code>, nor <code class="docutils literal notranslate"><span class="pre">/en/latest/index.html</span></code>.
+Patterns can include one or more of the following special characters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> matches everything, including slashes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">?</span></code> matches any single character.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[seq]</span></code> matches any character in <code class="docutils literal notranslate"><span class="pre">seq</span></code>.</p></li>
+</ul>
+<p>The rank can be an integer number between -10 and 10 (inclusive).
+Pages with a rank closer to -10 will appear further down the list of results,
+and pages with a rank closer to 10 will appear higher in the list of results.
+Note that 0 means <em>normal rank</em>, not <em>no rank</em>.</p>
+<p>If you are looking to completely ignore a page,
+check <a class="reference internal" href="#search-ignore"><span class="std std-ref">search.ignore</span></a>.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ranking</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># Match a single file</span>
+<span class="w">    </span><span class="nt">tutorial.html</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="w">    </span><span class="c1"># Match all files under the api/v1 directory</span>
+<span class="w">    </span><span class="nt">api/v1/*</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-5</span>
+
+<span class="w">    </span><span class="c1"># Match all files named guides.html,</span>
+<span class="w">    </span><span class="c1"># two patterns are needed to match both the root and nested files.</span>
+<span class="w">    </span><span class="s">&#39;guides.html&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+<span class="w">    </span><span class="s">&#39;*/guides.html&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The final rank will be the last pattern to match the page.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>Is better to decrease the rank of pages you want to deprecate,
+rather than increasing the rank of the other pages.</p>
+</div>
+</section>
+<section id="search-ignore">
+<h4><a class="toc-backref" href="#id38" role="doc-backlink">search.ignore</a><a class="headerlink" href="#search-ignore" title="Link to this heading"></a></h4>
+<p>List of paths to ignore and exclude from the search index.
+Paths matched will not be included in search results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">list</span></code> of patterns</p>
+</dd>
+<dt class="field-even">Default<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">['search.html',</span> <span class="pre">'search/index.html',</span> <span class="pre">'404.html',</span> <span class="pre">'404/index.html']</span></code></p>
+</dd>
+</dl>
+<p>Patterns are matched against the relative paths of the HTML files produced by the build,
+you should try to match <code class="docutils literal notranslate"><span class="pre">index.html</span></code>, not <code class="docutils literal notranslate"><span class="pre">docs/index.rst</span></code>, nor <code class="docutils literal notranslate"><span class="pre">/en/latest/index.html</span></code>.
+Patterns can include one or more of the following special characters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> matches everything (including slashes).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">?</span></code> matches any single character.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[seq]</span></code> matches any character in <code class="docutils literal notranslate"><span class="pre">seq</span></code>.</p></li>
+</ul>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">ignore</span><span class="p">:</span>
+<span class="w">     </span><span class="c1"># Ignore a single file in the root of the output directory</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404.html</span>
+
+<span class="w">     </span><span class="c1"># Ignore all files under the search/ directory</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search/*</span>
+
+<span class="w">     </span><span class="c1"># Ignore all files named ref.html,</span>
+<span class="w">     </span><span class="c1"># two patterns are needed to match both the root and nested files.</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;ref.html&#39;</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;*/ref.html&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">ignore</span><span class="p">:</span>
+<span class="w">     </span><span class="c1"># Custom files to ignore</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">file.html</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api/v1/*</span>
+
+<span class="w">     </span><span class="c1"># Defaults</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.html</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search/index.html</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404.html</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404/index.html</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Since Read the Docs fallbacks to the original search engine when no results are found,
+you may still see search results from ignored pages.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="schema">
+<h2>Schema<a class="headerlink" href="#schema" title="Link to this heading"></a></h2>
+<p>You can see the complete schema
+<a class="reference external" href="https://github.com/readthedocs/readthedocs.org/blob/main/readthedocs/rtd_tests/fixtures/spec/v2/schema.json">here</a>.
+This schema is available at <a class="reference external" href="https://www.schemastore.org/">Schema Store</a>, use it with your favorite editor for validation and autocompletion.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Configuration file overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../addons.html" class="btn btn-neutral float-right" title="Read the Docs Addons" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

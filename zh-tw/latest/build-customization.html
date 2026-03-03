@@ -1,0 +1,868 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Build process customization" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="build-customization.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Read the Docs has a well-defined build process that works for many projects. We also allow customization of builds in two ways: Customize our standard build process, Keep using the default commands for MkDocs or Sphinx, but extend or override the ones you need.,, Define a build process from scrat..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Read the Docs has a well-defined build process that works for many projects. We also allow customization of builds in two ways: Customize our standard build process, Keep using the default commands for MkDocs or Sphinx, but extend or override the ones you need.,, Define a build process from scrat..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build process customization &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/build-customization.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=65c3111a"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=cbf116e0"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜尋" href="search.html" />
+    <link rel="next" title="Git integration (GitHub, GitLab, Bitbucket)" href="reference/git-integration.html" />
+    <link rel="prev" title="Build process overview" href="builds.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build process overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Build process customization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#extend-or-override-the-build-process">Extend or override the build process</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#features-and-limitations">Features and limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-to-put-files">Where to put files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-support">Search support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alternative-syntax">Alternative syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#unshallow-git-clone">Unshallow git clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generate-documentation-from-annotated-sources-with-doxygen">Generate documentation from annotated sources with Doxygen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-mkdocs-extensions-with-extra-required-steps">Use MkDocs extensions with extra required steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#avoid-having-a-dirty-git-index">Avoid having a dirty Git index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#perform-a-check-for-broken-links">Perform a check for broken links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#support-git-lfs-large-file-storage">Support Git LFS (Large File Storage)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-node-js-dependencies">Install Node.js dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-dependencies-with-poetry">Install dependencies with Poetry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-dependencies-with-uv">Install dependencies with <code class="docutils literal notranslate"><span class="pre">uv</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-dependencies-from-dependency-groups">Install dependencies from Dependency Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-dependencies-with-pixi">Install dependencies with <code class="docutils literal notranslate"><span class="pre">pixi</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-conda-version">Update Conda version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-pelican">Using Pelican</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-docsify">Using Docsify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-asciidoc">Using Asciidoc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-pydoctor">Using pydoctor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generate-text-format-with-sphinx">Generate text format with Sphinx</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guides/setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Build process customization</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/build-customization.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="build-process-customization">
+<h1>Build process customization<a class="headerlink" href="#build-process-customization" title="連結到這個標頭"></a></h1>
+<p>Read the Docs has a <a class="reference internal" href="builds.html"><span class="doc">well-defined build process</span></a> that works for many projects.
+We also allow customization of builds in two ways:</p>
+<dl class="simple">
+<dt>Customize our standard build process</dt><dd><p>Keep using the default commands for MkDocs or Sphinx,
+but extend or override the ones you need.</p>
+</dd>
+<dt>Define a build process from scratch</dt><dd><p>This option gives you <em>full control</em> over your build.
+Read the Docs supports any tool that generates HTML.</p>
+</dd>
+</dl>
+<section id="extend-or-override-the-build-process">
+<h2>Extend or override the build process<a class="headerlink" href="#extend-or-override-the-build-process" title="連結到這個標頭"></a></h2>
+<p>In the normal build process, the pre-defined jobs <code class="docutils literal notranslate"><span class="pre">checkout</span></code>, <code class="docutils literal notranslate"><span class="pre">system_dependencies</span></code>,  and <code class="docutils literal notranslate"><span class="pre">upload</span></code> are executed.
+If you define a <a class="reference internal" href="config-file/v2.html#sphinx"><span class="std std-ref">sphinx</span></a> or <a class="reference internal" href="config-file/v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a> configuration,
+the <code class="docutils literal notranslate"><span class="pre">create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">install</span></code>, and <code class="docutils literal notranslate"><span class="pre">build</span></code> jobs will use the default commands for the selected tool.
+If no tool configuration is specified, these jobs won't execute anything by default.</p>
+<p>The jobs where users can customize our default build process are:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step</p></th>
+<th class="head"><p>Customizable jobs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Checkout</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">post_checkout</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>System dependencies</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pre_system_dependencies</span></code>, <code class="docutils literal notranslate"><span class="pre">post_system_dependencies</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Create environment</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pre_create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">post_create_environment</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Install</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pre_install</span></code>, <code class="docutils literal notranslate"><span class="pre">install</span></code>, <code class="docutils literal notranslate"><span class="pre">post_install</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Build</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pre_build</span></code>, <code class="docutils literal notranslate"><span class="pre">build</span></code>, <code class="docutils literal notranslate"><span class="pre">post_build</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Upload</p></td>
+<td><p>No customizable jobs currently</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>Any other pre-defined jobs (<code class="docutils literal notranslate"><span class="pre">checkout</span></code>, <code class="docutils literal notranslate"><span class="pre">system_dependencies</span></code>, <code class="docutils literal notranslate"><span class="pre">upload</span></code>) cannot be overridden or skipped.</p>
+</div>
+<p>These jobs are defined using the <a class="reference internal" href="config-file/v2.html"><span class="doc">configuration file</span></a> with the <a class="reference internal" href="config-file/v2.html#build-jobs"><span class="std std-ref">build.jobs</span></a> key.
+This example configuration defines commands to be executed <em>before</em> installing and <em>after</em> the build has finished,
+and also overrides the default build command for the <code class="docutils literal notranslate"><span class="pre">htmlzip</span></code> format, while keeping the default commands for the <code class="docutils literal notranslate"><span class="pre">html</span></code> and <code class="docutils literal notranslate"><span class="pre">pdf</span></code> formats:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id1" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">formats</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">htmlzip</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">pdf</span><span class="p p-Indicator">]</span>
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pre_install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash ./scripts/pre_install.sh</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># The default commands for generating the HTML and pdf formats will still run.</span>
+<span class="w">      </span><span class="nt">htmlzip</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Override default build command for htmlzip format&quot;</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p $READTHEDOCS_OUTPUT/htmlzip/</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Hello, world!&quot; &gt; $READTHEDOCS_OUTPUT/htmlzip/index.zip</span>
+<span class="w">    </span><span class="nt">post_build</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">curl -X POST \</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">-F &quot;project=${READTHEDOCS_PROJECT}&quot; \</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">-F &quot;version=${READTHEDOCS_VERSION}&quot; https://example.com/webhooks/readthedocs/</span>
+</pre></div>
+</div>
+</div>
+<section id="features-and-limitations">
+<h3>Features and limitations<a class="headerlink" href="#features-and-limitations" title="連結到這個標頭"></a></h3>
+<ul class="simple">
+<li><p>The current working directory is at the root of your project's cloned repository.</p></li>
+<li><p>Environment variables are expanded for each individual command (see <a class="reference internal" href="reference/environment-variables.html"><span class="doc">環境變數參考</span></a>).</p></li>
+<li><p>Each command is executed in a new shell process, so modifications done to the shell environment do not persist between commands.</p></li>
+<li><p>Any command returning non-zero exit code will cause the build to fail immediately
+(note there is a special exit code to <a class="reference external" href="cancel-build-based-on-a-condition">cancel the build</a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">build.os</span></code> and <code class="docutils literal notranslate"><span class="pre">build.tools</span></code> are required when using <code class="docutils literal notranslate"><span class="pre">build.jobs</span></code>.</p></li>
+<li><p>If the <a class="reference internal" href="config-file/v2.html#sphinx"><span class="std std-ref">sphinx</span></a> or <a class="reference internal" href="config-file/v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a> configuration is defined,
+the <code class="docutils literal notranslate"><span class="pre">create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">install</span></code>, and <code class="docutils literal notranslate"><span class="pre">build</span></code> jobs will use the default commands for the selected tool.</p></li>
+<li><p>If neither of the <a class="reference internal" href="config-file/v2.html#sphinx"><span class="std std-ref">sphinx</span></a> or <a class="reference internal" href="config-file/v2.html#mkdocs"><span class="std std-ref">mkdocs</span></a> configurations are defined,
+the <code class="docutils literal notranslate"><span class="pre">create_environment</span></code>, <code class="docutils literal notranslate"><span class="pre">install</span></code>, and <code class="docutils literal notranslate"><span class="pre">build</span></code> jobs will default to run nothing,
+giving you full control over the build process.</p></li>
+</ul>
+</section>
+<section id="where-to-put-files">
+<h3>Where to put files<a class="headerlink" href="#where-to-put-files" title="連結到這個標頭"></a></h3>
+<p>It is your responsibility to generate HTML and other formats of your documentation when overriding the steps from <a class="reference internal" href="config-file/v2.html#build-jobs-build"><span class="std std-ref">build.jobs.build</span></a>.
+The contents of the <code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/&lt;format&gt;/</span></code> directory will be hosted as part of your documentation.</p>
+<p>We store the base folder name <code class="docutils literal notranslate"><span class="pre">_readthedocs/</span></code> in the environment variable <code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT</span></code> and encourage that you use this to generate paths.</p>
+<p>Supported <a class="reference internal" href="downloadable-documentation.html#accessing-offline-formats"><span class="std std-ref">formats</span></a> are published if they exist in the following directories:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/html/</span></code> (required)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/htmlzip/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/pdf/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$READTHEDOCS_OUTPUT/epub/</span></code></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>Remember to create the folders before adding content to them.
+You can ensure that the output folder exists by adding the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir -p $READTHEDOCS_OUTPUT/html/</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="search-support">
+<h3>Search support<a class="headerlink" href="#search-support" title="連結到這個標頭"></a></h3>
+<p>Read the Docs will automatically index the content of all your HTML files,
+respecting the <a class="reference internal" href="config-file/v2.html#search"><span class="std std-ref">search</span></a> option.</p>
+<p>You can access the search from the Read the Docs <a class="reference internal" href="glossary.html#term-dashboard"><span class="xref std std-term">dashboard</span></a>,
+or by using the <a class="reference internal" href="server-side-search/api.html"><span class="doc">Server side search API</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>In order for Read the Docs to index your HTML files correctly,
+they should follow the conventions described at <a class="reference external" href="https://docs.readthedocs.com/dev/latest/search-integration.html" title="(於 Read the Docs developer documentation v15.15.0)"><span>Server side search integration</span></a>.</p>
+</div>
+</section>
+<section id="alternative-syntax">
+<h3>Alternative syntax<a class="headerlink" href="#alternative-syntax" title="連結到這個標頭"></a></h3>
+<p>Alternatively, you can use the <a class="reference internal" href="config-file/v2.html#build-commands"><span class="std std-ref">build.commands</span></a> key to completely override the build process.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id2" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pelican</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/</span>
+</pre></div>
+</div>
+</div>
+<p>But we recommend using <a class="reference internal" href="config-file/v2.html#build-jobs"><span class="std std-ref">build.jobs</span></a> instead:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id3" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pelican</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/</span>
+</pre></div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">build.jobs</span></code> offers the same functionality as <code class="docutils literal notranslate"><span class="pre">build.commands</span></code>,
+but in a more structured way that allows you to define different commands for each format,
+while also supporting installing system dependencies via <code class="docutils literal notranslate"><span class="pre">build.apt_packages</span></code>.</p>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="連結到這個標頭"></a></h2>
+<p>We've included some common examples where using <a class="reference internal" href="config-file/v2.html#build-jobs"><span class="std std-ref">build.jobs</span></a> will be useful.
+These examples may require some adaptation for each projects' use case,
+we recommend you use them as a starting point.</p>
+<section id="unshallow-git-clone">
+<h3>Unshallow git clone<a class="headerlink" href="#unshallow-git-clone" title="連結到這個標頭"></a></h3>
+<p>Read the Docs does not perform a full clone in the <code class="docutils literal notranslate"><span class="pre">checkout</span></code> job in order to reduce network data and speed up the build process.
+Instead, it performs a <a class="reference external" href="https://git-scm.com/docs/shallow">shallow clone</a> and only fetches the branch or tag that you are building documentation for.
+Because of this, extensions that depend on the full Git history will fail.
+To avoid this, it's possible to unshallow the <strong class="program">git clone</strong>:</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id4" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">post_checkout</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git fetch --unshallow || true</span>
+</pre></div>
+</div>
+</div>
+<p>If your build also relies on the contents of other branches, it may also be necessary to re-configure git to fetch these:</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id5" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">post_checkout</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git fetch --unshallow || true</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config remote.origin.fetch &#39;+refs/heads/*:refs/remotes/origin/*&#39; || true</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git fetch --all --tags || true</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="generate-documentation-from-annotated-sources-with-doxygen">
+<h3>Generate documentation from annotated sources with Doxygen<a class="headerlink" href="#generate-documentation-from-annotated-sources-with-doxygen" title="連結到這個標頭"></a></h3>
+<p>It's possible to run Doxygen as part of the build process to generate documentation from annotated sources:</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id6" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pre_build</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># Note that this HTML won&#39;t be automatically uploaded,</span>
+<span class="w">    </span><span class="c1"># unless your documentation build includes it somehow.</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">doxygen</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="use-mkdocs-extensions-with-extra-required-steps">
+<h3>Use MkDocs extensions with extra required steps<a class="headerlink" href="#use-mkdocs-extensions-with-extra-required-steps" title="連結到這個標頭"></a></h3>
+<p>There are some MkDocs extensions that require specific commands to be run to generate extra pages before performing the build.
+For example, <a class="reference external" href="http://niklasrosenstein.github.io/pydoc-markdown/">pydoc-markdown</a></p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id7" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">mkdocs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pre_build</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pydoc-markdown --build --site-dir &quot;$READTHEDOCS_OUTPUT/html&quot;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="avoid-having-a-dirty-git-index">
+<h3>Avoid having a dirty Git index<a class="headerlink" href="#avoid-having-a-dirty-git-index" title="連結到這個標頭"></a></h3>
+<p>Read the Docs needs to modify some files before performing the build to be able to integrate with some of its features.
+Because of this reason, it could happen the Git index gets dirty (it will detect modified files).
+In case this happens and the project is using any kind of extension that generates a version based on Git metadata (like <a class="reference external" href="https://github.com/pypa/setuptools_scm/">setuptools_scm</a>),
+this could cause an invalid version number to be generated.
+In that case, the Git index can be updated to ignore the files that Read the Docs has modified.</p>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id8" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pre_install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git update-index --assume-unchanged environment.yml docs/conf.py</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="perform-a-check-for-broken-links">
+<h3>Perform a check for broken links<a class="headerlink" href="#perform-a-check-for-broken-links" title="連結到這個標頭"></a></h3>
+<p>Sphinx comes with a <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/builders/index.html#sphinx.builders.linkcheck.CheckExternalLinksBuilder">linkcheck</a> builder that checks for broken external links included in the project's documentation.
+This helps ensure that all external links are still valid and readers aren't linked to non-existent pages.</p>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id9" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pre_build</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python -m sphinx -b linkcheck -D linkcheck_timeout=1 docs/ $READTHEDOCS_OUTPUT/linkcheck</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="support-git-lfs-large-file-storage">
+<h3>Support Git LFS (Large File Storage)<a class="headerlink" href="#support-git-lfs-large-file-storage" title="連結到這個標頭"></a></h3>
+<p>In case the repository contains large files that are tracked with Git LFS,
+there are some extra steps required to be able to download their content.
+It's possible to use <code class="docutils literal notranslate"><span class="pre">post_checkout</span></code> user-defined job for this.</p>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id10" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-20.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">post_checkout</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Download and uncompress the binary</span>
+<span class="w">      </span><span class="c1"># https://git-lfs.github.com/</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wget https://github.com/git-lfs/git-lfs/releases/download/v3.1.4/git-lfs-linux-amd64-v3.1.4.tar.gz</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tar xvfz git-lfs-linux-amd64-v3.1.4.tar.gz git-lfs</span>
+<span class="w">      </span><span class="c1"># Modify LFS config paths to point where git-lfs binary was downloaded</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config filter.lfs.process &quot;`pwd`/git-lfs filter-process&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config filter.lfs.smudge  &quot;`pwd`/git-lfs smudge -- %f&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git config filter.lfs.clean &quot;`pwd`/git-lfs clean -- %f&quot;</span>
+<span class="w">      </span><span class="c1"># Make LFS available in current repository</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./git-lfs install</span>
+<span class="w">      </span><span class="c1"># Download content from remote</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./git-lfs fetch</span>
+<span class="w">      </span><span class="c1"># Make local files to have the real content on them</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./git-lfs checkout</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="install-node-js-dependencies">
+<h3>Install Node.js dependencies<a class="headerlink" href="#install-node-js-dependencies" title="連結到這個標頭"></a></h3>
+<p>It's possible to install Node.js together with the required dependencies by using <a class="reference internal" href="glossary.html#term-user-defined-build-jobs"><span class="xref std std-term">user-defined build jobs</span></a>.
+To setup it, you need to define the version of Node.js to use and install the dependencies by using <code class="docutils literal notranslate"><span class="pre">build.jobs.post_install</span></code>:</p>
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id11" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.9&quot;</span>
+<span class="w">    </span><span class="nt">nodejs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;16&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">post_install</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Install dependencies defined in your ``package.json``</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm ci</span>
+<span class="w">      </span><span class="c1"># Install any other extra dependencies to build the docs</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm install -g jsdoc</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="install-dependencies-with-poetry">
+<h3>Install dependencies with Poetry<a class="headerlink" href="#install-dependencies-with-poetry" title="連結到這個標頭"></a></h3>
+<p>Projects managed with <a class="reference external" href="https://python-poetry.org/">Poetry</a>,
+can use the <code class="docutils literal notranslate"><span class="pre">post_create_environment</span></code> user-defined job to use Poetry for installing Python dependencies.
+Take a look at the following example:</p>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id12" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">post_install</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Install poetry</span>
+<span class="w">      </span><span class="c1"># https://python-poetry.org/docs/#installing-manually</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install poetry</span>
+<span class="w">      </span><span class="c1"># Install dependencies with &#39;docs&#39; dependency group</span>
+<span class="w">      </span><span class="c1"># https://python-poetry.org/docs/managing-dependencies/#dependency-groups</span>
+<span class="w">      </span><span class="c1"># VIRTUAL_ENV needs to be set manually for now.</span>
+<span class="w">      </span><span class="c1"># See https://github.com/readthedocs/readthedocs.org/pull/11152/</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --with docs</span>
+
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="install-dependencies-with-uv">
+<h3>Install dependencies with <code class="docutils literal notranslate"><span class="pre">uv</span></code><a class="headerlink" href="#install-dependencies-with-uv" title="連結到這個標頭"></a></h3>
+<p>Projects managed with <a class="reference external" href="https://github.com/astral-sh/uv/">uv</a> can install <code class="xref py py-obj docutils literal notranslate"><span class="pre">uv</span></code> with asdf,
+and then rely on it to set up the environment and install the python project and its dependencies.
+Read the Docs' own build steps expect it by setting the <code class="docutils literal notranslate"><span class="pre">UV_PROJECT_ENVIRONMENT</span></code> variable,
+usually reducing the time taken to install compared to pip.</p>
+<p>The following examples assumes a uv project as described in its
+<a class="reference external" href="https://docs.astral.sh/uv/concepts/projects/">projects concept</a>. As an introduction
+refer to its <a class="reference external" href="https://docs.astral.sh/uv/guides/projects/">Working on projects guide</a>.
+The <code class="docutils literal notranslate"><span class="pre">docs</span></code> dependency group which should is pulled in during the <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">sync</span></code> step (if additional
+extras are required they can be added with the <a class="reference external" href="https://docs.astral.sh/uv/concepts/projects/sync/#syncing-optional-dependencies">--extra attribute</a>).</p>
+<p>If a <code class="docutils literal notranslate"><span class="pre">uv.lock</span></code> file exists it is respected.</p>
+<div class="literal-block-wrapper docutils container" id="id13">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id13" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">   </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.13&quot;</span>
+<span class="w">   </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">pre_create_environment</span><span class="p">:</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asdf plugin add uv</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asdf install uv latest</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asdf global uv latest</span>
+<span class="w">      </span><span class="nt">create_environment</span><span class="p">:</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uv venv &quot;${READTHEDOCS_VIRTUALENV_PATH}&quot;</span>
+<span class="w">      </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UV_PROJECT_ENVIRONMENT=&quot;${READTHEDOCS_VIRTUALENV_PATH}&quot; uv sync --frozen --group docs</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="install-dependencies-from-dependency-groups">
+<h3>Install dependencies from Dependency Groups<a class="headerlink" href="#install-dependencies-from-dependency-groups" title="連結到這個標頭"></a></h3>
+<p>Python <a class="reference external" href="https://packaging.python.org/en/latest/specifications/dependency-groups/">Dependency Groups</a>
+are a way of storing lists of dependencies in your <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span></code> version 25.1+ as well as many other tools support Dependency Groups.
+This example uses <code class="docutils literal notranslate"><span class="pre">pip</span></code> and installs from a group named <code class="docutils literal notranslate"><span class="pre">docs</span></code>:</p>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id14" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">   </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.13&quot;</span>
+<span class="w">   </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">         </span><span class="c1"># Since the install step is overridden, pip is no longer updated automatically.</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install --upgrade pip</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install --group &#39;docs&#39;</span>
+</pre></div>
+</div>
+</div>
+<p>For more information on relevant <code class="docutils literal notranslate"><span class="pre">pip</span></code> usage, see the
+<a class="reference external" href="https://pip.pypa.io/en/stable/user_guide/#dependency-groups">pip user guide on Dependency Groups</a>.</p>
+</section>
+<section id="install-dependencies-with-pixi">
+<h3>Install dependencies with <code class="docutils literal notranslate"><span class="pre">pixi</span></code><a class="headerlink" href="#install-dependencies-with-pixi" title="連結到這個標頭"></a></h3>
+<p>Projects can use <a class="reference external" href="https://github.com/prefix-dev/pixi/">pixi</a>,
+to install Python dependencies, usually reducing the time taken to install compared to conda or pip.
+Take a look at the following example:</p>
+<div class="literal-block-wrapper docutils container" id="id15">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id15" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-24.04</span>
+<span class="w">   </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">       </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;latest&quot;</span>
+<span class="w">   </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">create_environment</span><span class="p">:</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asdf plugin add pixi</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asdf install pixi latest</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asdf global pixi latest</span>
+<span class="w">      </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">         </span><span class="c1"># assuming you have an environment called &quot;docs&quot;</span>
+<span class="w">         </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pixi install -e docs</span>
+<span class="w">      </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">         </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pixi run -e docs sphinx-build -T -b html docs $READTHEDOCS_OUTPUT/html</span>
+</pre></div>
+</div>
+</div>
+<p>MkDocs projects could use <code class="docutils literal notranslate"><span class="pre">NO_COLOR=1</span> <span class="pre">pixi</span> <span class="pre">run</span> <span class="pre">-e</span> <span class="pre">docs</span> <span class="pre">mkdocs</span> <span class="pre">build</span> <span class="pre">--strict</span> <span class="pre">--site-dir</span> <span class="pre">$READTHEDOCS_OUTPUT/html</span></code> instead.</p>
+</section>
+<section id="update-conda-version">
+<h3>Update Conda version<a class="headerlink" href="#update-conda-version" title="連結到這個標頭"></a></h3>
+<p>Projects using Conda may need to install the latest available version of Conda.
+This can be done by using the <code class="docutils literal notranslate"><span class="pre">pre_create_environment</span></code> user-defined job to update Conda
+before creating the environment.
+Take a look at the following example:</p>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id16" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="w"> </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">   </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">     </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;miniconda3-4.7&quot;</span>
+<span class="w">   </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">     </span><span class="nt">pre_create_environment</span><span class="p">:</span>
+<span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda update --yes --quiet --name=base --channel=defaults conda</span>
+
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+
+<span class="w w-Error"> </span><span class="nt">conda</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">environment.yml</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="using-pelican">
+<h3>Using Pelican<a class="headerlink" href="#using-pelican" title="連結到這個標頭"></a></h3>
+<p><a class="reference external" href="https://blog.getpelican.com/">Pelican</a> is a well-known static site generator that's commonly used for blogs and landing pages.
+If you are building your project with Pelican you could use a configuration file similar to the following:</p>
+<div class="literal-block-wrapper docutils container" id="id17">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id17" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.10&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pelican[markdown]</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="using-docsify">
+<h3>Using Docsify<a class="headerlink" href="#using-docsify" title="連結到這個標頭"></a></h3>
+<p><a class="reference external" href="https://docsify.js.org/">Docsify</a> generates documentation websites on the fly, without the need to build static HTML.
+These projects can be built using a configuration file like this:</p>
+<div class="literal-block-wrapper docutils container" id="id18">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id18" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir --parents $READTHEDOCS_OUTPUT/html/</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cp --recursive docs/* $READTHEDOCS_OUTPUT/html/</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="using-asciidoc">
+<h3>Using Asciidoc<a class="headerlink" href="#using-asciidoc" title="連結到這個標頭"></a></h3>
+<p><a class="reference external" href="https://asciidoctor.org/">Asciidoctor</a> is a fast processor for converting and generating documentation from AsciiDoc source.
+The Asciidoctor toolchain includes <a class="reference external" href="https://docs.asciidoctor.org/asciidoctor.js/latest/">Asciidoctor.js</a> which you can use with custom build commands.
+Here is an example configuration file:</p>
+<div class="literal-block-wrapper docutils container" id="id19">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id19" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">nodejs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;20&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm install -g asciidoctor</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asciidoctor -D $READTHEDOCS_OUTPUT/html index.asciidoc</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="using-pydoctor">
+<h3>Using pydoctor<a class="headerlink" href="#using-pydoctor" title="連結到這個標頭"></a></h3>
+<p><a class="reference external" href="https://github.com/twisted/pydoctor">Pydoctor</a> is an easy-to-use standalone API documentation tool for Python.
+Here is an example configuration file:</p>
+<div class="literal-block-wrapper docutils container" id="id20">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id20" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ubuntu-22.04&quot;</span>
+<span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pydoctor</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">          </span><span class="no">pydoctor \</span>
+<span class="w">            </span><span class="no">--project-version=${READTHEDOCS_GIT_IDENTIFIER} \</span>
+<span class="w">            </span><span class="no">--project-url=${READTHEDOCS_GIT_CLONE_URL%*.git} \</span>
+<span class="w">            </span><span class="no">--html-viewsource-base=${READTHEDOCS_GIT_CLONE_URL%*.git}/tree/${READTHEDOCS_GIT_COMMIT_HASH} \</span>
+<span class="w">            </span><span class="no">--html-base-url=${READTHEDOCS_CANONICAL_URL} \</span>
+<span class="w">            </span><span class="no">--html-output $READTHEDOCS_OUTPUT/html/ \</span>
+<span class="w">            </span><span class="no">./src/my_project</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="generate-text-format-with-sphinx">
+<h3>Generate text format with Sphinx<a class="headerlink" href="#generate-text-format-with-sphinx" title="連結到這個標頭"></a></h3>
+<p>There might be various reasons why would you want to generate your
+documentation in <code class="xref py py-obj docutils literal notranslate"><span class="pre">text</span></code> format (secondary to <code class="xref py py-obj docutils literal notranslate"><span class="pre">html</span></code>). One of such reasons
+would be generating LLM friendly documentation.</p>
+<p>See the following example for how to add generation of additional <code class="xref py py-obj docutils literal notranslate"><span class="pre">text</span></code>
+format to your existing documentation. Deviations from standard build
+configuration are highlighted/emphasized:</p>
+<div class="literal-block-wrapper docutils container" id="id21">
+<div class="code-block-caption"><span class="caption-text">.readthedocs.yaml</span><a class="headerlink" href="#id21" title="連結到這個程式碼"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">install</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+
+<span class="nt">build</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-22.04</span>
+<span class="w">  </span><span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">python</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.12&quot;</span>
+<span class="hll"><span class="w">  </span><span class="nt">jobs</span><span class="p">:</span>
+</span><span class="hll"><span class="w">    </span><span class="nt">post_build</span><span class="p">:</span>
+</span><span class="hll"><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p $READTHEDOCS_OUTPUT/html/</span>
+</span><span class="hll"><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx-build -n -b text docs $READTHEDOCS_OUTPUT/html/</span>
+</span></pre></div>
+</div>
+</div>
+<p>The generated <code class="docutils literal notranslate"><span class="pre">.txt</span></code> files will be placed in the <code class="xref py py-obj docutils literal notranslate"><span class="pre">html</span></code> directory, together
+with <code class="docutils literal notranslate"><span class="pre">.html</span></code> files.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="builds.html" class="btn btn-neutral float-left" title="Build process overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reference/git-integration.html" class="btn btn-neutral float-right" title="Git integration (GitHub, GitLab, Bitbucket)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

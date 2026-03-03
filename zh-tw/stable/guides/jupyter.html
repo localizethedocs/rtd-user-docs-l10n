@@ -1,0 +1,604 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to use Jupyter notebooks in Sphinx" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/jupyter.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Jupyter notebooks are a popular tool to describe computational narratives that mix code, prose, images, interactive components, and more. Embedding them in your Sphinx project allows using these rich documents as documentation, which can provide a great experience for tutorials, examples, and oth..." />
+<meta property="og:image" content="_images/example-notebook.png" />
+<meta property="og:image:alt" content="Example Jupyter notebook created on JupyterLab" />
+<meta name="description" content="Jupyter notebooks are a popular tool to describe computational narratives that mix code, prose, images, interactive components, and more. Embedding them in your Sphinx project allows using these rich documents as documentation, which can provide a great experience for tutorials, examples, and oth..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use Jupyter notebooks in Sphinx &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/jupyter.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="How to migrate from reStructuredText to MyST Markdown" href="migrate-rest-myst.html" />
+    <link rel="prev" title="How to link to other documentation projects with Intersphinx" href="intersphinx.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="content/index.html">Content, themes and SEO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="technical-docs-seo-guide.html">Search engine optimization (SEO) for documentation projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traffic-analytics.html">Using traffic analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search-analytics.html">Using search analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enable-offline-formats.html">Enabling offline formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="embedding-content.html">Embedding content from your documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage-translations-sphinx.html">Managing translations for Sphinx projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdf-non-ascii-languages.html">Supporting Unicode in Sphinx PDFs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross-referencing-with-sphinx.html">Cross-referencing with Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intersphinx.html">Linking to other projects with Intersphinx</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using Jupyter notebooks in Sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#including-classic-ipynb-notebooks-in-sphinx-documentation">Including classic <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebooks in Sphinx documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rendering-interactive-widgets">Rendering interactive widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-notebooks-in-other-formats">Using notebooks in other formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-galleries-of-examples-using-notebooks">Creating galleries of examples using notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">Background</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#existing-relevant-extensions">Existing relevant extensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alternative-notebook-formats">Alternative notebook formats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="migrate-rest-myst.html">從 rST 遷移到 MyST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-custom-css.html">Adding custom CSS or JavaScript to Sphinx documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit-source-links-sphinx.html">Adding &quot;Edit Source&quot; links on your Sphinx theme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="content/index.html">How-to guides: content, themes and SEO</a></li>
+      <li class="breadcrumb-item active">How to use Jupyter notebooks in Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/jupyter.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-use-jupyter-notebooks-in-sphinx">
+<h1>How to use Jupyter notebooks in Sphinx<a class="headerlink" href="#how-to-use-jupyter-notebooks-in-sphinx" title="連結到這個標頭"></a></h1>
+<p><a class="reference external" href="https://jupyter.org/">Jupyter</a> notebooks are a popular tool to describe computational narratives
+that mix code, prose, images, interactive components, and more.
+Embedding them in your Sphinx project allows using these rich documents as documentation,
+which can provide a great experience for tutorials, examples, and other types of technical content.
+There are a few extensions that allow integrating Jupyter and Sphinx,
+and this document will explain how to achieve some of the most commonly requested features.</p>
+<section id="including-classic-ipynb-notebooks-in-sphinx-documentation">
+<span id="ipynb-notebooks-sphinx"></span><h2>Including classic <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebooks in Sphinx documentation<a class="headerlink" href="#including-classic-ipynb-notebooks-in-sphinx-documentation" title="連結到這個標頭"></a></h2>
+<p>There are two main extensions that add support Jupyter notebooks as source files in Sphinx:
+<a class="reference external" href="https://nbsphinx.readthedocs.io/">nbsphinx</a> and <a class="reference external" href="https://myst-nb.readthedocs.io/">MyST-NB</a>. They have similar intent and basic functionality:
+both can read notebooks in <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> and additional formats supported by <a class="reference external" href="https://jupytext.readthedocs.io/">jupytext</a>,
+and are configured in a similar way
+(see <a class="reference internal" href="#nb-background"><span class="std std-ref">Existing relevant extensions</span></a> for more background on their differences).</p>
+<p>First of all, create a Jupyter notebook using the editor of your liking (for example, <a class="reference external" href="https://jupyterlab.readthedocs.io/">JupyterLab</a>).
+For example, <code class="docutils literal notranslate"><span class="pre">source/notebooks/Example</span> <span class="pre">1.ipynb</span></code>:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/example-notebook.png"><img alt="Example Jupyter notebook created on JupyterLab" src="../_images/example-notebook.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Example Jupyter notebook created on JupyterLab</span><a class="headerlink" href="#id1" title="連結到這個圖片"></a></p>
+</figcaption>
+</figure>
+<p>Next, you will need to enable one of the extensions, as follows:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">nbsphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MyST-NB</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id2" title="連結到這個程式碼"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;nbsphinx&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id3" title="連結到這個程式碼"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;myst_nb&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div></div>
+<p>Finally, you can include the notebook in any <em>toctree</em>.
+For example, add this to your root document:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:maxdepth:</span> 2
+   <span class="nc">:caption:</span> Contents:
+
+   notebooks/Example 1
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">```{toctree}</span>
+<span class="gu">---</span>
+maxdepth: 2
+<span class="gu">caption: Contents:</span>
+<span class="gu">---</span>
+notebooks/Example 1
+```
+</pre></div>
+</div>
+</div></div>
+<p>The notebook will render as any other HTML page in your documentation
+after doing <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/example-notebook-rendered.png"><img alt="Example Jupyter notebook rendered on HTML by nbsphinx" src="../_images/example-notebook-rendered.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Example Jupyter notebook rendered on HTML by nbsphinx</span><a class="headerlink" href="#id4" title="連結到這個圖片"></a></p>
+</figcaption>
+</figure>
+<p>To further customize the rendering process among other things,
+refer to the <a class="reference external" href="https://nbsphinx.readthedocs.io/">nbsphinx</a> or <a class="reference external" href="https://myst-nb.readthedocs.io/">MyST-NB</a> documentation.</p>
+</section>
+<section id="rendering-interactive-widgets">
+<h2>Rendering interactive widgets<a class="headerlink" href="#rendering-interactive-widgets" title="連結到這個標頭"></a></h2>
+<p>Widgets are eventful python objects that have a representation in the browser
+and that you can use to build interactive GUIs for your notebooks.
+Basic widgets using <a class="reference external" href="https://ipywidgets.readthedocs.io/">ipywidgets</a> include controls like sliders, textboxes, and buttons,
+and more complex widgets include interactive maps, like the ones provided by <a class="reference external" href="https://ipyleaflet.readthedocs.io/">ipyleaflet</a>.</p>
+<p>You can embed these interactive widgets on HTML Sphinx documentation.
+For this to work, it's necessary to <em>save the widget state</em>
+before generating the HTML documentation,
+otherwise the widget will appear as empty.
+Each editor has a different way of doing it:</p>
+<ul class="simple">
+<li><p>The classical Jupyter Notebook interface
+provides a &quot;Save Notebook Widget State&quot; action in the &quot;Widgets&quot; menu,
+<a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/embedding.html" title="(於 Jupyter Widgets v8.1)"><span class="xref std std-doc">as explained in the ipywidgets
+documentation</span></a>.
+You need to click it before exporting your notebook to HTML.</p></li>
+<li><p>JupyterLab provides a &quot;Save Widget State Automatically&quot; option in the &quot;Settings&quot; menu.
+You need to leave it checked so that widget state is automatically saved.</p></li>
+<li><p>In Visual Studio Code <a class="reference external" href="https://github.com/microsoft/vscode-jupyter/issues/4404">it's not possible to save the widget
+state</a>
+at the time of writing (June 2021).</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/jupyterlab-save-widget-state.png"><img alt="JupyterLab option to save the interactive widget state automatically" src="../_images/jupyterlab-save-widget-state.png" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">JupyterLab option to save the interactive widget state automatically</span><a class="headerlink" href="#id5" title="連結到這個圖片"></a></p>
+</figcaption>
+</figure>
+<p>For example, if you create a notebook with a simple
+<a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html#intslider">IntSlider</a>
+widget from ipywidgets and save the widget state,
+the slider will render correctly in Sphinx.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/widget-html.gif"><img alt="Interactive widget rendered in HTML by Sphinx" src="../_images/widget-html.gif" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Interactive widget rendered in HTML by Sphinx</span><a class="headerlink" href="#id6" title="連結到這個圖片"></a></p>
+</figcaption>
+</figure>
+<p>To see more elaborate examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ipyleaflet.readthedocs.io/">ipyleaflet</a> provides several widgets for interactive maps,
+and renders live versions of them <a class="reference external" href="https://ipyleaflet.readthedocs.io/en/latest/layers/velocity.html" title="(於 ipyleaflet)"><span class="xref std std-doc">in their documentation</span></a>.</p></li>
+<li><p><a class="reference external" href="https://docs.pyvista.org/">PyVista</a> is used for scientific 3D visualization
+with several interactive backends and <a class="reference external" href="https://docs.pyvista.org/index.html#maps-and-geoscience">examples in their
+documentation</a> as well.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Although widgets themselves can be embedded in HTML,
+<a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20Events.html" title="(於 Jupyter Widgets v8.1)"><span class="xref std std-doc">events</span></a>
+require a backend (kernel) to execute.
+Therefore, <code class="docutils literal notranslate"><span class="pre">&#64;interact</span></code>, <code class="docutils literal notranslate"><span class="pre">.observe</span></code>, and related functionalities relying on them
+will not work as expected.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>If your widgets need some additional JavaScript libraries,
+you can add them using <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_js_file()</span></code>.</p>
+</div>
+</section>
+<section id="using-notebooks-in-other-formats">
+<span id="other-formats"></span><h2>Using notebooks in other formats<a class="headerlink" href="#using-notebooks-in-other-formats" title="連結到這個標頭"></a></h2>
+<p>For example, this is how a simple notebook looks like in MyST Markdown format:</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">Example 3.md</span><a class="headerlink" href="#id7" title="連結到這個程式碼"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.10.3
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+# Plain-text notebook formats
+
+This is a example of a Jupyter notebook stored in MyST Markdown format.
+
+```{code-cell} ipython3
+import sys
+print(sys.version)
+```
+
+```{code-cell} ipython3
+from IPython.display import Image
+```
+
+```{code-cell} ipython3
+Image(&quot;http://sipi.usc.edu/database/preview/misc/4.2.03.png&quot;)
+```
+</pre></div>
+</div>
+</div>
+<p>To render this notebook in Sphinx
+you will need to add this to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-2-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-2-2-0" name="2-0" role="tab" tabindex="0">nbsphinx</button><button aria-controls="panel-2-2-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-2-2-1" name="2-1" role="tab" tabindex="-1">MyST-NB</button></div><div aria-labelledby="tab-2-2-0" class="sphinx-tabs-panel" id="panel-2-2-0" name="2-0" role="tabpanel" tabindex="0"><div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id8" title="連結到這個程式碼"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nbsphinx_custom_formats</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;.md&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;jupytext.reads&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;fmt&quot;</span><span class="p">:</span> <span class="s2">&quot;mystnb&quot;</span><span class="p">}],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div><div aria-labelledby="tab-2-2-1" class="sphinx-tabs-panel" hidden="true" id="panel-2-2-1" name="2-1" role="tabpanel" tabindex="0"><div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id9" title="連結到這個程式碼"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nb_custom_formats</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;.md&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;jupytext.reads&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;fmt&quot;</span><span class="p">:</span> <span class="s2">&quot;mystnb&quot;</span><span class="p">}],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div></div>
+<p>Notice that the Markdown format does not store the outputs of the computation.
+Sphinx will automatically execute notebooks without outputs,
+so in your HTML documentation they appear as complete.</p>
+</section>
+<section id="creating-galleries-of-examples-using-notebooks">
+<span id="notebook-galleries"></span><h2>Creating galleries of examples using notebooks<a class="headerlink" href="#creating-galleries-of-examples-using-notebooks" title="連結到這個標頭"></a></h2>
+<p><a class="reference external" href="https://nbsphinx.readthedocs.io/">nbsphinx</a> has support for <a class="reference external" href="https://nbsphinx.readthedocs.io/en/latest/subdir/gallery.html" title="(於 nbsphinx v0.9.8)"><span class="xref std std-doc">creating thumbnail galleries from a list of Jupyter
+notebooks</span></a>.</p>
+<p>There are two ways to create the gallery:</p>
+<ul class="simple">
+<li><p>From a reStructuredText source file, using the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">nbgallery::</span></code> directive,
+<a class="reference external" href="https://nbsphinx.readthedocs.io/en/latest/a-normal-rst-file.html#thumbnail-galleries" title="(於 nbsphinx v0.9.8)"><span class="xref std std-ref">as showcased in the
+documentation</span></a>.</p></li>
+<li><p>From a Jupyter notebook, adding a <code class="docutils literal notranslate"><span class="pre">&quot;nbsphinx-gallery&quot;</span></code> tag to the metadata of a cell.
+Each editor has a different way of modifying the cell metadata (see figure below).</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/jupyterlab-metadata.png"><img alt="Panel to modify cell metadata in JupyterLab" src="../_images/jupyterlab-metadata.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Panel to modify cell metadata in JupyterLab</span><a class="headerlink" href="#id10" title="連結到這個圖片"></a></p>
+</figcaption>
+</figure>
+<p>For example, this markup would create a thumbnail gallery:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-3-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-3-3-0" name="3-0" role="tab" tabindex="0">reStructuredText</button><button aria-controls="panel-3-3-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-3-3-1" name="3-1" role="tab" tabindex="-1">MyST (Markdown)</button></div><div aria-labelledby="tab-3-3-0" class="sphinx-tabs-panel" id="panel-3-3-0" name="3-0" role="tabpanel" tabindex="0"><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Thumbnails gallery</span>
+<span class="gh">==================</span>
+
+<span class="p">..</span> <span class="ow">nbgallery</span><span class="p">::</span>
+   notebooks/Example 1
+   notebooks/Example 2
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-3-1" class="sphinx-tabs-panel" hidden="true" id="panel-3-3-1" name="3-1" role="tabpanel" tabindex="0"><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># Thumbnails gallery</span>
+
+```{nbgallery}
+notebooks/Example 1
+notebooks/Example 2
+```
+</pre></div>
+</div>
+</div></div>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/thumbnail-gallery.png"><img alt="Simple thumbnail gallery created using nbsphinx" src="../_images/thumbnail-gallery.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Simple thumbnail gallery created using nbsphinx</span><a class="headerlink" href="#id11" title="連結到這個圖片"></a></p>
+</figcaption>
+</figure>
+<p>To see some examples of notebook galleries in the wild:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.poliastro.space/">poliastro</a> offers tools for interactive Astrodynamics in Python,
+and features <a class="reference external" href="https://docs.poliastro.space/en/stable/gallery.html" title="(於 poliastro v0.17)"><span class="xref std std-doc">several examples and how-to guides using notebooks</span></a>
+and displays them in an appealing thumbnail gallery.
+In addition, <a class="reference external" href="https://github.com/poliastro/poliastro/tree/0.15.x/docs/source/examples">poliastro uses unpaired MyST
+Notebooks</a>
+to reduce repository size and improve integration with git.</p></li>
+</ul>
+</section>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="連結到這個標頭"></a></h2>
+<section id="existing-relevant-extensions">
+<span id="nb-background"></span><h3>Existing relevant extensions<a class="headerlink" href="#existing-relevant-extensions" title="連結到這個標頭"></a></h3>
+<p>In the first part of this document
+we have seen that <a class="reference external" href="https://nbsphinx.readthedocs.io/">nbsphinx</a> and <a class="reference external" href="https://myst-nb.readthedocs.io/">MyST-NB</a> are similar.
+However, there are some differences between them:</p>
+<ul class="simple">
+<li><p>nsphinx uses <a class="reference external" href="https://pandoc.org/">pandoc</a>
+to convert the Markdown from Jupyter notebooks to reStructuredText
+and then to <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/doctree.html">docutils AST</a>,
+whereas MyST-NB uses <a class="reference external" href="https://myst-parser.readthedocs.io/">MyST-Parser</a>
+to directly convert the Markdown text to docutils AST.
+Therefore, nbsphinx assumes <a class="reference external" href="https://pandoc.org/MANUAL.html#pandocs-markdown">pandoc flavored Markdown</a>,
+whereas MyST-NB uses <a class="reference external" href="https://myst-parser.readthedocs.io/en/stable/index.html" title="(於 MyST Parser v5.0.0)"><span class="xref std std-doc">MyST flavored Markdown</span></a>.
+Both Markdown flavors are mostly equal,
+but they have some differences.</p></li>
+<li><p>nbsphinx executes each notebook during the parsing phase,
+whereas MyST-NB can execute all notebooks up front
+and cache them with <a class="reference external" href="https://jupyter-cache.readthedocs.io/">jupyter-cache</a>.
+This can result in shorter build times when notebooks are modified
+if using MyST-NB.</p></li>
+<li><p>nbsphinx provides functionality to create thumbnail galleries,
+whereas MyST-NB does not have such functionality at the moment
+(see <a class="reference internal" href="#notebook-galleries"><span class="std std-ref">Creating galleries of examples using notebooks</span></a> for more information about galleries).</p></li>
+<li><p>MyST-NB allows embedding Python objects coming from the notebook in the documentation
+(read <a class="reference external" href="https://myst-nb.readthedocs.io/en/stable/render/glue.html" title="(於 MyST-NB)"><span class="xref std std-doc">their &quot;glue&quot; documentation</span></a>
+for more information)
+and provides more sophisticated <a class="reference external" href="https://myst-nb.readthedocs.io/en/stable/computation/execute.html" title="(於 MyST-NB)"><span class="xref std std-doc">error reporting</span></a>
+than the one nbsphinx has.</p></li>
+<li><p>The visual appearance of code cells and their outputs is slightly different:
+nbsphinx renders the cell numbers by default,
+whereas MyST-NB doesn't.</p></li>
+</ul>
+<p>Deciding which one to use depends on your use case. As general recommendations:</p>
+<ul class="simple">
+<li><p>If you want to use <a class="reference internal" href="#other-formats"><span class="std std-ref">other notebook formats</span></a>
+or <a class="reference internal" href="#notebook-galleries"><span class="std std-ref">generate a thumbnail gallery from your notebooks</span></a>,
+nbsphinx is the right choice.</p></li>
+<li><p>If you want to leverage a more optimized execution workflow
+and a more streamlined parsing mechanism,
+as well as some of the unique MyST-NB functionalities,
+you should use MyST-NB.</p></li>
+</ul>
+</section>
+<section id="alternative-notebook-formats">
+<h3>Alternative notebook formats<a class="headerlink" href="#alternative-notebook-formats" title="連結到這個標頭"></a></h3>
+<p>Jupyter notebooks in <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> format
+(as described in the <a class="reference external" href="https://nbformat.readthedocs.io/">nbformat
+documentation</a>)
+are by far the most widely used for historical reasons.</p>
+<p>However, to compensate some of the disadvantages of the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> format
+(like cumbersome integration with version control systems),
+<a class="reference external" href="https://jupytext.readthedocs.io/">jupytext</a> offers <a class="reference external" href="https://jupytext.readthedocs.io/en/stable/formats-markdown.html" title="(於 Jupytext)"><span class="xref std std-doc">other formats</span></a>
+based on plain text rather than JSON.</p>
+<p>As a result, there are three modes of operation:</p>
+<ul class="simple">
+<li><p>Using classic <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebooks. It's the most straightforward option,
+since all the tooling is prepared to work with them,
+and does not require additional pieces of software.
+It is therefore simpler to manage, since there are fewer moving parts.
+However, it requires some care when working with Version Control Systems (like git),
+by doing one of these things:</p>
+<ul>
+<li><p>Clear outputs before commit.
+Minimizes conflicts, but might defeat the purpose of notebooks themselves,
+since the computation results are not stored.</p></li>
+<li><p>Use tools like <a class="reference external" href="https://nbdime.readthedocs.io/">nbdime</a> (open source)
+or <a class="reference external" href="https://www.reviewnb.com/">ReviewNB</a> (proprietary)
+to improve the review process.</p></li>
+<li><p>Use a different collaboration workflow that doesn't involve notebooks.</p></li>
+</ul>
+</li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebooks with <a class="reference external" href="https://jupytext.readthedocs.io/en/stable/formats-markdown.html" title="(於 Jupytext)"><span class="xref std std-doc">a text-based format</span></a>.
+These formats behave better under version control
+and they can also be edited with normal text editors
+that do not support cell-based JSON notebooks.
+However, text-based formats do not store the outputs of the cells,
+and this might not be what you want.</p></li>
+<li><p>Pairing <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebooks with a text-based format,
+and putting the text-based file in version control,
+as suggested in the <a class="reference external" href="https://jupytext.readthedocs.io/en/stable/paired-notebooks.html" title="(於 Jupytext)"><span class="xref std std-doc">jupytext documentation</span></a>.
+This solution has the best of both worlds.
+In some rare cases you might experience synchronization issues between both files.</p></li>
+</ul>
+<p>These approaches are not mutually exclusive,
+nor you have to use a single format for all your notebooks.
+For the examples in this document, we have used the <a class="reference external" href="https://jupytext.readthedocs.io/en/stable/formats-markdown.html" title="(於 Jupytext)"><span class="xref std std-doc">MyST Markdown
+format</span></a>.</p>
+<p>If you are using alternative formats for Jupyter notebooks,
+you can include them in your Sphinx documentation
+using either <a class="reference external" href="https://nbsphinx.readthedocs.io/">nbsphinx</a> or <a class="reference external" href="https://myst-nb.readthedocs.io/">MyST-NB</a>
+(see <a class="reference internal" href="#nb-background"><span class="std std-ref">Existing relevant extensions</span></a>
+for more information about the differences between them).</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intersphinx.html" class="btn btn-neutral float-left" title="How to link to other documentation projects with Intersphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="migrate-rest-myst.html" class="btn btn-neutral float-right" title="How to migrate from reStructuredText to MyST Markdown" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

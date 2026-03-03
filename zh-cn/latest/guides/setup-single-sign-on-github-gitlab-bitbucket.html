@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="How to setup single sign-on (SSO) with GitHub, GitLab, or Bitbucket" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/setup-single-sign-on-github-gitlab-bitbucket.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="This how-to guide will provide instructions on how to enable SSO with GitHub, GitLab, or Bitbucket. If you want more information on this feature, please read Single sign-on (SSO) Prerequisites: Organization permissions: To change your Organization&#x27;s settings, you need to be an owner of that ..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="This how-to guide will provide instructions on how to enable SSO with GitHub, GitLab, or Bitbucket. If you want more information on this feature, please read Single sign-on (SSO) Prerequisites: Organization permissions: To change your Organization&#x27;s settings, you need to be an owner of that ..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to setup single sign-on (SSO) with GitHub, GitLab, or Bitbucket &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/setup-single-sign-on-github-gitlab-bitbucket.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=15dc31ed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="How to setup single sign-on (SSO) with Google Workspace" href="setup-single-sign-on-google-email.html" />
+    <link rel="prev" title="How-to guides: security and access" href="access/index.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="access/index.html">Security and access</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Single sign-on (SSO) with GitHub, GitLab, or Bitbucket</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#organization-permissions">Organization permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-setup">User setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#enabling-sso">Enabling SSO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grant-access-to-read-private-documentation">Grant access to read private documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grant-access-to-administer-a-project">Grant access to administer a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grant-access-to-import-a-project">Grant access to import a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#revoke-access-to-a-project">Revoke access to a project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="setup-single-sign-on-google-email.html">Single sign-on (SSO) with Google Workspace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set-up-single-sign-on-saml.html">Single sign-on (SSO) with SAML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage-read-the-docs-teams.html">Managing Read the Docs teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-project-private-repository.html">Creating a project from a private repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="private-submodules.html">Using private Git submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="private-python-packages.html">Installing private python packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing-maintainers.html">Manage maintainers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="access/index.html">How-to guides: security and access</a></li>
+      <li class="breadcrumb-item active">How to setup single sign-on (SSO) with GitHub, GitLab, or Bitbucket</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/setup-single-sign-on-github-gitlab-bitbucket.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-setup-single-sign-on-sso-with-github-gitlab-or-bitbucket">
+<h1>How to setup single sign-on (SSO) with GitHub, GitLab, or Bitbucket<a class="headerlink" href="#how-to-setup-single-sign-on-sso-with-github-gitlab-or-bitbucket" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This feature is only available on <a class="reference external" href="https://app.readthedocs.com/">Read the Docs for Business</a>.</p>
+</div>
+<p>This how-to guide will provide instructions on how to enable <abbr title="single sign-on">SSO</abbr> with GitHub, GitLab, or Bitbucket.
+If you want more information on this feature,
+please read <a class="reference internal" href="../commercial/single-sign-on.html"><span class="doc">Single sign-on (SSO)</span></a></p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<section id="organization-permissions">
+<h3>Organization permissions<a class="headerlink" href="#organization-permissions" title="Link to this heading"></a></h3>
+<p>To change your <a class="reference internal" href="../commercial/organizations.html"><span class="doc">Organization's</span></a> settings,
+you need to be an <em>owner</em> of that organization.</p>
+<p>You can validate your ownership of the Organization with these steps:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_detail/">organization management page</a>.</p></li>
+<li><p>Look at the <span class="guilabel">Owners</span> section on the right menu.</p></li>
+</ol>
+<p>If you'd like to modify this setting and are not an owner,
+you can ask an existing organization owner to take the actions listed.</p>
+</section>
+<section id="user-setup">
+<h3>User setup<a class="headerlink" href="#user-setup" title="Link to this heading"></a></h3>
+<p>Users in your organization must have their GitHub, Bitbucket, or GitLab
+<a class="reference internal" href="connecting-git-account.html"><span class="doc">account connected</span></a>,
+otherwise they won't have access to any project on Read the Docs after performing this change.
+You can read more about <a class="reference external" href="https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization">granting permissions on GitHub</a> in their documentation.</p>
+</section>
+</section>
+<section id="enabling-sso">
+<h2>Enabling SSO<a class="headerlink" href="#enabling-sso" title="Link to this heading"></a></h2>
+<p>You can enable this feature in your organization by:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the <a class="reference external" href="https://app.readthedocs.com/organizations/choose/organization_sso/">authorization setting page</a>.</p></li>
+<li><p>Select <span class="guilabel">GitHub, GitLab or Bitbucket</span> on the <span class="guilabel">Provider</span> dropdown.</p></li>
+<li><p>Select <span class="guilabel">Save</span></p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Once you enable this option,
+your existing Read the Docs <a class="reference internal" href="manage-read-the-docs-teams.html"><span class="doc">teams</span></a> will not be used.
+While testing you can enable SSO and then disable it without any data loss.</p>
+</div>
+</section>
+<section id="grant-access-to-read-private-documentation">
+<h2>Grant access to read private documentation<a class="headerlink" href="#grant-access-to-read-private-documentation" title="Link to this heading"></a></h2>
+<p>By granting <strong>read</strong> permissions to a user in your git repository,
+you are giving the user access to read the documentation of the associated project on Read the Docs.
+By default, private git repositories are built as private documentation websites.
+Having <strong>read</strong> permissions to the git repository translates to having <strong>view</strong> permissions to a private documentation website.</p>
+</section>
+<section id="grant-access-to-administer-a-project">
+<h2>Grant access to administer a project<a class="headerlink" href="#grant-access-to-administer-a-project" title="Link to this heading"></a></h2>
+<p>By granting <strong>admin</strong> permission to a user in the git repository,
+you are giving the user access to read the documentation <em>and</em> to be an administrator of the associated project on Read the Docs.</p>
+</section>
+<section id="grant-access-to-import-a-project">
+<h2>Grant access to import a project<a class="headerlink" href="#grant-access-to-import-a-project" title="Link to this heading"></a></h2>
+<p>When SSO with a Git provider is enabled, only owners of the Read the Docs organization can import projects.</p>
+<p>To be able to import a project,
+a user must have:</p>
+<ol class="arabic simple">
+<li><p><strong>admin</strong> permissions in the associated Git repository.</p></li>
+<li><p>Ownership rights to the Read the Docs organization</p></li>
+</ol>
+</section>
+<section id="revoke-access-to-a-project">
+<h2>Revoke access to a project<a class="headerlink" href="#revoke-access-to-a-project" title="Link to this heading"></a></h2>
+<p>If a user should not have access to a project,
+you can revoke access to the git repository,
+and this will be automatically reflected in Read the Docs.</p>
+<p>The same process is followed in case you need to remove admin access,
+but still want that user to have access to read the documentation.
+Instead of revoking access completely,
+downgrade their permissions to <em>read only</em>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>To learn more about choosing a single sign-on approach,
+please read <a class="reference internal" href="../commercial/single-sign-on.html"><span class="doc">Single sign-on (SSO)</span></a>.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="access/index.html" class="btn btn-neutral float-left" title="How-to guides: security and access" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="setup-single-sign-on-google-email.html" class="btn btn-neutral float-right" title="How to setup single sign-on (SSO) with Google Workspace" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Read the Docs, Inc &amp; contributors。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
