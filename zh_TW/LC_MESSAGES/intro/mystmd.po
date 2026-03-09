@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 08:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/mystmd.rst:-1
+msgid "Learn how to host MyST Markdown documentation on Read the Docs."
+msgstr ""
+
+#: ../../../intro/mystmd.rst:2
+msgid "Deploying MyST Markdown on Read the Docs"
+msgstr ""
+
+#: ../../../intro/mystmd.rst:7
+msgid ""
+"`MyST Markdown`_ is a set of open-source, community-driven tools designed "
+"for scientific communication, including a powerful authoring framework that "
+"supports blogs, online books, scientific papers, reports and journal "
+"articles."
+msgstr ""
+
+#: ../../../intro/mystmd.rst:10
+msgid ""
+"Minimal configuration is required to build an existing MyST Markdown project "
+"on Read the Docs."
+msgstr ""
+
+#: ../../../intro/mystmd.rst:12
+msgid ".readthedocs.yaml"
+msgstr ".readthedocs.yaml"
+
+#: ../../../intro/mystmd.rst:12
+msgid ""
+" version: 2\n"
+"\n"
+" build:\n"
+"   os: ubuntu-lts-latest\n"
+"   tools:\n"
+"     nodejs: \"latest\"\n"
+"   jobs:\n"
+"     install:\n"
+"       # Install mystmd dependencies\n"
+"       - npm install -g mystmd\n"
+"     build:\n"
+"       html:\n"
+"         # Build the site\n"
+"         - cd docs/ && myst build --html\n"
+"       post_build:\n"
+"         # Copy generated files into Read the Docs directory\n"
+"         - mkdir --parents $READTHEDOCS_OUTPUT/html/\n"
+"         - cp --recursive docs/_build/html/* $READTHEDOCS_OUTPUT/html/"
+msgstr ""
+
+#: ../../../intro/mystmd.rst:37
+msgid "Getting started"
+msgstr "開始使用"
+
+#: ../../../intro/mystmd.rst:39
+msgid ""
+"If you have an existing MyST Markdown project you want to host on Read the "
+"Docs, check out our :doc:`/intro/add-project` guide."
+msgstr ""
+
+#: ../../../intro/mystmd.rst:40
+msgid ""
+"If you're new to MyST Markdown, check out the official `MyST quickstart "
+"guide`_."
+msgstr ""
+
+#: ../../../intro/mystmd.rst:45
+msgid "Example repository and demo"
+msgstr ""
+
+#: ../../../intro/mystmd.rst:47
+msgid "Example repository"
+msgstr "範例儲存庫"
+
+#: ../../../intro/mystmd.rst:48
+msgid "https://github.com/readthedocs/test-builds/tree/mystmd"
+msgstr ""
+
+#: ../../../intro/mystmd.rst:50
+msgid "Demo"
+msgstr ""
+
+#: ../../../intro/mystmd.rst:51
+msgid "https://test-builds.readthedocs.io/en/mystmd/"
+msgstr ""
+
+#: ../../../intro/mystmd.rst:54
+msgid "Further reading"
+msgstr "延伸閱讀"
+
+#: ../../../intro/mystmd.rst:56
+msgid "`MyST Markdown documentation`_"
+msgstr ""

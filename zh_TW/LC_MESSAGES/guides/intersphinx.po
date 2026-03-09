@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/intersphinx.rst:2
+msgid "How to link to other documentation projects with Intersphinx"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:4
+msgid ""
+"This section shows you how to maintain references to named sections of other "
+"external Sphinx projects."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:6
+msgid ""
+"You may be familiar with using the :ref:`:ref: role <sphinx:ref-role>` to :"
+"doc:`link to any location of your docs </guides/cross-referencing-with-"
+"sphinx>`. It helps you to keep all links within your docs up to date and "
+"warns you if a reference target moves or changes so you can ensure that your "
+"docs don't have broken cross-references."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:11
+msgid ""
+"Sometimes you may need to link to a specific section of another project's "
+"documentation. While you could just hyperlink directly, there is a better "
+"way. :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>` allows you to "
+"use all :ref:`cross-reference roles <sphinx:xref-syntax>` from Sphinx with "
+"objects in other projects. That is, you could use the ``:ref:`` role to link "
+"to sections of other documentation projects. Sphinx will ensure that your "
+"cross-references to the other project exist and will raise a warning if they "
+"are deleted or changed so you can keep your docs up to date."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:17
+msgid ""
+"If you are publishing several Sphinx projects together using Read the Docs' "
+"*subprojects* (see :doc:`/subprojects`), you should use Intersphinx to "
+"reference your subprojects from other projects."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:22
+msgid ""
+"You can also use Sphinx's ``linkcheck`` builder to check for broken links. "
+"By default it will also check the validity of ``#anchors`` in links."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:29
+msgid ""
+"See all the `options for the linkcheck builder <https://www.sphinx-doc.org/"
+"en/master/usage/configuration.html#options-for-the-linkcheck-builder>`__."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:32
+msgid "Using Intersphinx"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:34
+msgid ""
+"To use Intersphinx you need to add it to the list of extensions in your "
+"``conf.py`` file."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:36
+msgid ""
+"# conf.py file\n"
+"\n"
+"extensions = [\n"
+"    \"sphinx.ext.intersphinx\",\n"
+"]"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:44
+msgid ""
+"And use the ``intersphinx_mapping`` configuration to indicate the name and "
+"link of the projects you want to use."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:46
+msgid ""
+"# conf.py file\n"
+"\n"
+"intersphinx_mapping = {\n"
+"    \"sphinx\": (\"https://www.sphinx-doc.org/en/master/\", None),\n"
+"}\n"
+"\n"
+"# We recommend adding the following config value.\n"
+"# Sphinx defaults to automatically resolve *unresolved* labels using all "
+"your Intersphinx mappings.\n"
+"# This behavior has unintended side-effects, namely that documentations "
+"local references can\n"
+"# suddenly resolve to an external location.\n"
+"# See also:\n"
+"# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx."
+"html#confval-intersphinx_disabled_reftypes\n"
+"intersphinx_disabled_reftypes = [\"*\"]"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:64
+msgid ""
+"If you are using Read the Docs' subprojects, you also need to enable the "
+"Intersphinx extension on each of the subprojects. For each subproject, you "
+"need to add the main project and all the other subprojects to "
+"``intersphinx_mapping``."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:67
+msgid "Now you can use the ``sphinx`` name with a cross-reference role:"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:71
+msgid "reStructuredText"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:73
+msgid ""
+"- :ref:`sphinx:ref-role`\n"
+"- :ref:`:ref: role <sphinx:ref-role>`\n"
+"- :doc:`sphinx:usage/extensions/intersphinx`\n"
+"- :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:80
+msgid "MyST (Markdown)"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:82
+msgid ""
+"- {ref}`sphinx:ref-role`\n"
+"- {ref}`:ref: role <sphinx:ref-role>`\n"
+"- {doc}`sphinx:usage/extensions/intersphinx`\n"
+"- {doc}`Intersphinx <sphinx:usage/extensions/intersphinx>`"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:89
+msgid "Result:"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:91
+msgid ":ref:`sphinx:ref-role`"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:92
+msgid ":ref:`:ref: role <sphinx:ref-role>`"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:93
+msgid ":doc:`sphinx:usage/extensions/intersphinx`"
+msgstr ":doc:`sphinx:usage/extensions/intersphinx`"
+
+#: ../../../guides/intersphinx.rst:94
+msgid ":doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:98
+msgid ""
+"You can get the targets used in Intersphinx by inspecting the source file of "
+"the project or using `this utility <https://www.sphinx-doc.org/en/master/"
+"usage/extensions/intersphinx.html#showing-all-links-of-an-intersphinx-"
+"mapping-file>`__ provided by Intersphinx:"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:108
+msgid "Intersphinx in Read the Docs"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:110
+msgid ""
+"You can use Intersphinx to link to subprojects, translations, another "
+"version or any other project hosted in Read the Docs. For example:"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:113
+msgid ""
+"# conf.py file\n"
+"\n"
+"intersphinx_mapping = {\n"
+"    # Links to \"v2\" version of the \"docs\" project.\n"
+"    \"docs-v2\": (\"https://docs.readthedocs.io/en/v2\", None),\n"
+"    # Links to the French translation of the \"docs\" project.\n"
+"    \"docs-fr\": (\"https://docs.readthedocs.io/fr/latest\", None),\n"
+"    # Links to the \"apis\" subproject of the \"docs\" project.\n"
+"    \"sub-apis\": (\"https://docs.readthedocs.io/projects/apis/en/latest\", "
+"None),\n"
+"}"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:127
+msgid "Intersphinx with private projects"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:129
+msgid ""
+"If you are using :doc:`/commercial/index`, Intersphinx will not be able to "
+"fetch the inventory file from private docs."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:132
+msgid ""
+"Intersphinx supports `URLs with Basic Authorization <https://www.sphinx-doc."
+"org/en/master/usage/extensions/intersphinx.html#using-intersphinx-with-"
+"inventory-file-under-basic-authorization>`__, which Read the Docs supports :"
+"ref:`using a token <commercial/sharing:Basic Authorization>`. You need to "
+"generate a token for each project you want to use with Intersphinx."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:136
+msgid "Go the project you want to use with Intersphinx"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:137
+msgid "Click :guilabel:`Admin` > :guilabel:`Sharing`"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:138
+msgid "Select ``HTTP Header Token``"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:139
+msgid ""
+"Set an expiration date long enough to use the token when building your "
+"project"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:140
+msgid "Click on ``Share!``."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:142
+msgid "Now we can add the link to the private project with the token like:"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:144
+msgid ""
+"# conf.py file\n"
+"\n"
+"intersphinx_mapping = {\n"
+"    # Links to a private project named \"docs\"\n"
+"    \"docs\": (\n"
+"        \"https://<token-for-docs>:@readthedocs-docs.readthedocs-hosted.com/"
+"en/latest\",\n"
+"        None,\n"
+"    ),\n"
+"    # Links to the private French translation of the \"docs\" project\n"
+"    \"docs\": (\n"
+"        \"https://<token-for-fr-translation>:@readthedocs-docs.readthedocs-"
+"hosted.com/fr/latest\",\n"
+"        None,\n"
+"    ),\n"
+"    # Links to the private \"apis\" subproject of the \"docs\" project\n"
+"    \"docs\": (\n"
+"        \"https://<token-for-apis>:@readthedocs-docs.readthedocs-hosted.com/"
+"projects/apis/en/latest\",\n"
+"        None,\n"
+"    ),\n"
+"}"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:169
+msgid "Sphinx will strip the token from the URLs when generating the links."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:171
+msgid ""
+"You can use your tokens with environment variables, so you don't have to "
+"hard code them in your ``conf.py`` file. See :doc:`/environment-variables` "
+"to use environment variables inside Read the Docs."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:175
+msgid ""
+"For example, if you create an environment variable named ``RTD_TOKEN_DOCS`` "
+"with the token from the \"docs\" project. You can use it like this:"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:179
+msgid ""
+"# conf.py file\n"
+"\n"
+"import os\n"
+"\n"
+"RTD_TOKEN_DOCS = os.environ.get(\"RTD_TOKEN_DOCS\")\n"
+"\n"
+"intersphinx_mapping = {\n"
+"    # Links to a private project named \"docs\"\n"
+"    \"docs\": (\n"
+"        f\"https://{RTD_TOKEN_DOCS}:@readthedocs-docs.readthedocs-hosted.com/"
+"en/latest\",\n"
+"        None,\n"
+"    ),\n"
+"}"
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:197
+msgid ""
+"Another way of using Intersphinx with private projects is to download the "
+"inventory file and keep it in sync when the project changes. The inventory "
+"file is by default located at ``objects.inv``, for example ``https://"
+"readthedocs-docs.readthedocs-hosted.com/en/latest/objects.inv``."
+msgstr ""
+
+#: ../../../guides/intersphinx.rst:200
+msgid ""
+"# conf.py file\n"
+"\n"
+"intersphinx_mapping = {\n"
+"    # Links to a private project named \"docs\" using a local inventory "
+"file.\n"
+"    \"docs\": (\n"
+"        \"https://readthedocs-docs.readthedocs-hosted.com/en/latest\",\n"
+"        \"path/to/local/objects.inv\",\n"
+"    ),\n"
+"}"
+msgstr ""
