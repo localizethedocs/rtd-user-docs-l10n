@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-19 11:35:11 -0500",
-      "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
-      "title" : "Search: Disable search indexing for inactive projects (#12666)"
+      "date" : "2026-03-04 11:25:34 -0500",
+      "hash" : "047cc36686b6bd55b95ceb460829ba9bce1d4139",
+      "title" : "Remove global storage secrets from builders (#12827)"
     }
   },
   "type" : "branch",
