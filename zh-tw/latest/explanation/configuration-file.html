@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Why keep configuration files in Git" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="explanation/configuration-file.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Content and structure of documentation undergo big and small changes. And eventually, the configuration of a documentation project also changes. This means you need to be able to track these changes over time, and keep them up to date. In this article, we cover the major concepts of using a confi..." />
+<meta property="og:image" content="https://docs.readthedocs.io/en/latest/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Content and structure of documentation undergo big and small changes. And eventually, the configuration of a documentation project also changes. This means you need to be able to track these changes over time, and keep them up to date. In this article, we cover the major concepts of using a confi..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why keep configuration files in Git &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/explanation/configuration-file.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=65c3111a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/add-project.html">增添文件專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/doctools.html">熱門文件工具</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">範例專案</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案設定與組態</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull-requests.html">拉取請求預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-notifications.html">建置失敗通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment-variables.html">環境變數概覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/environment-variables.html">環境變數參考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">託管文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">子專案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">在地化與國際化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-domains.html">自訂域名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-notifications.html">文件通知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">閱讀文件</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloadable-documentation.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../link-previews.html">連結預覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server-side-search/syntax.html">搜尋查詢語法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyout-menu.html">飛出式選單</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">維護專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">狀態徽章</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/single-sign-on.html">單一登入（SSO）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/subscriptions.html">如何管理您的訂閱</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">操作指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/setup/index.html">專案設定與組態</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/management/index.html">帳號管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/best-practice/index.html">最佳實踐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">常見問題集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">關於 Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">開發者文件</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs 網站</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Why keep configuration files in Git</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/explanation/configuration-file.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="why-keep-configuration-files-in-git">
+<h1>Why keep configuration files in Git<a class="headerlink" href="#why-keep-configuration-files-in-git" title="連結到這個標頭"></a></h1>
+<p>Content and structure of documentation undergo big and small changes.
+And eventually, the configuration of a documentation project also changes.
+This means you need to be able to track these changes over time,
+and keep them up to date.</p>
+<p>In this article,
+we cover the major concepts of using a configuration file:</p>
+<dl class="simple">
+<dt>Versioning the configuration</dt><dd><p>A documentation project and its configuration file live together in a Git repository
+and are versioned together.</p>
+</dd>
+<dt>Configuration as code</dt><dd><p>Configuration uses the same workflow as your source code,
+including being reviewed and tested in a pull request.</p>
+</dd>
+<dt>Options that are not found in the configuration file</dt><dd><p>Not everything is suitable for version-specific configuration,
+like the Git repository where the configuration file is read after cloning.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../config-file/index.html"><span class="doc">Configuration file overview</span></a></dt><dd><p>Practical steps to add a configuration file to your documentation project.</p>
+</dd>
+<dt><a class="reference internal" href="../config-file/v2.html"><span class="doc">Configuration file reference</span></a></dt><dd><p>Reference for configuration file settings.</p>
+</dd>
+</dl>
+</div>
+<section id="why-version-your-project-s-configuration">
+<h2>Why version your project's configuration?<a class="headerlink" href="#why-version-your-project-s-configuration" title="連結到這個標頭"></a></h2>
+<p>Consider the following aspects of a documentation project:</p>
+<dl>
+<dt>Build environments change 📦️</dt><dd><p>You may depend on a number of packages but your method for installing them changes.
+What is installed, how it's installed and what installs can change,
+especially across multiple versions.</p>
+<p>You might change between Pip and Poetry.
+You might also jump between Python 2 and 3 or Python 3.8 and Python 3.10.</p>
+</dd>
+<dt>Documentation tools change ⚙️</dt><dd><p>Using Sphinx? Using MkDocs? Or some other tool?
+All these tools have their own configuration files and special ways to invoke them.
+In order to switch between how you are invoking the tool and setting up its environment,
+you will need external build configuration.</p>
+</dd>
+<dt>Comparing changes over time ⚖️</dt><dd><p>As your project changes, you will need to change your configuration.
+You might wonder how something was done in the past,
+and having it versioned means you can see each commit as it has changed.</p>
+</dd>
+</dl>
+<p>You can configure your Read the Docs project by adding a <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> file <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> to your Git repository.
+The configuration will apply to the exact version that is being built.
+This allows you to store different configurations for different versions of your documentation.</p>
+<p>The main advantages of using a configuration file over the web interface are:</p>
+<ul class="simple">
+<li><p>Settings are per version rather than per project.</p></li>
+<li><p>Settings live in your Git repository.</p></li>
+<li><p>They enable reproducible build environments over time.</p></li>
+<li><p>Some settings are only available using a configuration file</p></li>
+</ul>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Other variants of the configuration file name like <code class="docutils literal notranslate"><span class="pre">readthedocs.yaml</span></code>, <code class="docutils literal notranslate"><span class="pre">.readthedocs.yml</span></code>, etc. are deprecated.
+You may however, <a class="reference internal" href="../guides/setup/monorepo.html"><span class="doc">configure a custom sub-folder</span></a>.</p>
+</aside>
+</aside>
+</section>
+<section id="configuration-as-code">
+<h2>Configuration as Code<a class="headerlink" href="#configuration-as-code" title="連結到這個標頭"></a></h2>
+<p>&quot;Configuration as Code&quot; is a concept where the configuration or settings of software is maintained in a Git repository as <em>code</em>.
+Contrast this with the approach where configuration is managed inside the software's own UI,
+making it hard to track changes, and copy settings to other projects.</p>
+<p>Most users of Read the Docs will already be familiar with the concept since many popular tools already require you to store their configuration in your Git repository:</p>
+<ul class="simple">
+<li><p>Sphinx uses a <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.</p></li>
+<li><p>MkDocs uses a <code class="docutils literal notranslate"><span class="pre">mkdocs.yaml</span></code> file.</p></li>
+<li><p>Python projects often have a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code>.</p></li>
+</ul>
+<p>Because of its fragility and uniqueness,
+the alternative to &quot;Configuration as Code&quot; is also often referred to as snowflake ❄️ configuration.
+Such configurations are hard to copy between projects and also hard to introspect for people without authorization to access the configuration UI.</p>
+<p><em>Configuration as code</em> is considered by many to be the easier option.
+It might seem harder to have to write the configuration code from scratch,
+but in order to use Read the Docs,
+you can usually start with a template and adapt it.</p>
+<p>Read the Docs has chosen to offer as much configuration as possible through the usage of <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>.
+Our experience is that projects benefit from such a setup,
+and even when the benefits aren't obvious in the beginning of a project's lifecycle,
+they will emerge over time.</p>
+</section>
+<section id="what-s-not-covered-by-readthedocs-yaml">
+<h2>What's not covered by <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code>?<a class="headerlink" href="#what-s-not-covered-by-readthedocs-yaml" title="連結到這個標頭"></a></h2>
+<p>There are a number of things that aren't possible to cover in the configuration file,
+which still belong in your project's Dashboard.</p>
+<p>These configuration items are for instance:</p>
+<dl class="simple">
+<dt>Git settings</dt><dd><p>Since the configuration file is stored in Git,
+it doesn't make sense that it would configure the Git setup.</p>
+</dd>
+<dt>Domain-level settings</dt><dd><p>Since many settings apply to the domain a project is hosted on,
+they are configured for the project itself, and not a specific version.</p>
+</dd>
+</dl>
+<p>The goal over time is to have everything that can be managed in a version-specific YAML file configured that way.</p>
+<div class="admonition seealso">
+<p class="admonition-title">也參考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../guides/reproducible-builds.html"><span class="doc">How to create reproducible builds</span></a></dt><dd><p>In addition to storing your configuration in Git,
+we also recommend special practices for making your builds resilient to changes in your software dependencies.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
