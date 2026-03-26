@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-03-24 08:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,8 @@ msgstr ""
 #: ../../../traffic-analytics.rst:12
 msgid ""
 "To see a list of the top pages from the last month, go to the :guilabel:"
-"`Admin` tab of your project, and then click on :guilabel:`Traffic analytics`."
+"`Settings` tab of your project, and then click on :guilabel:`Traffic "
+"analytics` under :guilabel:`Maintaining`."
 msgstr ""
 
 #: ../../../traffic-analytics.rst:16 ../../../traffic-analytics.rst:21
