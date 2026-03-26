@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-19 11:35:11 -0500",
-        "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
-        "title" : "Search: Disable search indexing for inactive projects (#12666)"
+        "date" : "2026-03-23 10:23:09 +0100",
+        "hash" : "7d2b336dcd924c4ff3fc0e6924e6e4f4190cd8ad",
+        "title" : "Dependencies: all packages updated via pip-tools (#12862)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-19 11:35:11 -0500",
-        "hash" : "84154861c236a7573e2ccd3121e815eb12878510",
-        "title" : "Search: Disable search indexing for inactive projects (#12666)"
+        "date" : "2026-03-23 10:23:09 +0100",
+        "hash" : "7d2b336dcd924c4ff3fc0e6924e6e4f4190cd8ad",
+        "title" : "Dependencies: all packages updated via pip-tools (#12862)"
       }
     }
   },
