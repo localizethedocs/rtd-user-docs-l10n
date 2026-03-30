@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../../../reference/llms-txt.rst:47
 msgid "Sphinx"
-msgstr ""
+msgstr "Sphinx"
 
 #: ../../../reference/llms-txt.rst:49
 msgid ""
@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../../reference/llms-txt.rst:54
 msgid "MkDocs"
-msgstr ""
+msgstr "MkDocs"
 
 #: ../../../reference/llms-txt.rst:56
 msgid ""
