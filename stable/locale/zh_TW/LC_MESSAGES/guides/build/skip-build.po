@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../guides/build/skip-build.rst:11
 msgid "Table of contents"
-msgstr ""
+msgstr "目次表"
 
 #: ../../../guides/build/skip-build.rst:14
 msgid "How it works"
@@ -146,7 +146,7 @@ msgstr ""
 #: ../../../guides/build/skip-build.rst:121
 #: ../../../guides/build/skip-build.rst:143
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../guides/build/skip-build.rst:68
 msgid ""

@@ -161,7 +161,7 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:67
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../url-path-prefixes.rst:69
 msgid "To enable this feature for your project:"
@@ -190,7 +190,7 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:85
 msgid ":doc:`/subprojects`"
-msgstr ""
+msgstr ":doc:`/subprojects`"
 
 #: ../../../url-path-prefixes.rst:86
 msgid "Learn how to set up subprojects and share a custom domain"
@@ -198,7 +198,7 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:88
 msgid ":doc:`/custom-domains`"
-msgstr ""
+msgstr ":doc:`/custom-domains`"
 
 #: ../../../url-path-prefixes.rst:89
 msgid "Configure a custom domain for your documentation"
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:91
 msgid ":doc:`/versioning-schemes`"
-msgstr ""
+msgstr ":doc:`/versioning-schemes`"
 
 #: ../../../url-path-prefixes.rst:92
 msgid "Learn about different URL versioning schemes"

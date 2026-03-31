@@ -122,7 +122,7 @@ msgstr ""
 
 #: ../../../reference/agent-skills.rst:55
 msgid ":doc:`/config-file/index`"
-msgstr ""
+msgstr ":doc:`/config-file/index`"
 
 #: ../../../reference/agent-skills.rst:56
 msgid "Learn about the ``.readthedocs.yaml`` configuration file."
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../../reference/agent-skills.rst:58
 msgid ":doc:`/api/index`"
-msgstr ""
+msgstr ":doc:`/api/index`"
 
 #: ../../../reference/agent-skills.rst:59
 msgid "Read the Read the Docs API documentation."
