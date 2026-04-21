@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-04-21 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,91 +204,92 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:104
 msgid ""
-"Since pages redirects apply to all versions, ``From URL`` doesn't need to "
-"include the ``/<language>/<version>`` prefix (e.g. ``/en/latest``), but just "
-"the version-specific part of the URL. If you want to set redirects only for "
-"some languages or some versions, you should use :ref:`user-defined-redirects:"
-"exact redirects` with the fully-specified path."
-msgstr ""
-
-#: ../../../user-defined-redirects.rst:111
-msgid "Exact redirects"
+"Since page redirects apply to all versions of a project, ``From URL`` "
+"doesn't need to include the ``/<language>/<version>`` prefix (for example, "
+"``/en/latest``), only the path to the page. Page redirects don't apply to "
+"translations or subprojects, which need their own redirect rules. If you "
+"need a redirect for a specific language or version URL, use :ref:`user-"
+"defined-redirects:exact redirects` with the fully-specified path."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:113
+msgid "Exact redirects"
+msgstr ""
+
+#: ../../../user-defined-redirects.rst:115
 msgid ""
 "*Exact Redirects* take into account the full URL (including language and "
 "version), allowing you to create a redirect for a specific version or "
 "language of your documentation."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:117
+#: ../../../user-defined-redirects.rst:119
 msgid "Clean/HTML URLs redirects"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:119
+#: ../../../user-defined-redirects.rst:121
 msgid ""
 "If you decide to change the style of the URLs of your documentation, you can "
 "use *Clean URL to HTML* or *HTML to clean URL* redirects to redirect users "
 "to the new URL style."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:122
+#: ../../../user-defined-redirects.rst:124
 msgid ""
 "For example, if a previous page was at ``/en/latest/install.html``, and now "
 "is served at ``/en/latest/install/``, or vice versa, users will be "
 "redirected to the new URL."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:127
+#: ../../../user-defined-redirects.rst:129
 msgid "Limitations and observations"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:129
+#: ../../../user-defined-redirects.rst:131
 msgid ""
 "|org_brand| users are limited to 100 redirects per project, and |com_brand| "
 "users have a number of redirects limited by their plan."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:131
+#: ../../../user-defined-redirects.rst:133
 msgid ""
 "By default, redirects only apply on pages that don't exist. **Forced "
 "redirects** allow you to apply redirects on existing pages."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:133
+#: ../../../user-defined-redirects.rst:135
 msgid ""
 "Redirects aren't applied on :doc:`previews of pull requests </pull-"
 "requests>`. You should treat these domains as ephemeral and not rely on them "
 "for user-facing content."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:135
+#: ../../../user-defined-redirects.rst:137
 msgid ""
 "You can redirect to URLs outside Read the Docs, just include the protocol in "
 "``To URL``, e.g ``https://example.com``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:137
+#: ../../../user-defined-redirects.rst:139
 msgid ""
 "A wildcard can be used at the end of ``From URL`` (suffix wildcard) to "
 "redirect all pages matching a prefix. Prefix and infix wildcards are not "
 "supported."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:139
+#: ../../../user-defined-redirects.rst:141
 msgid ""
 "If a wildcard is used in ``From URL``, the part of the URL that matches the "
 "wildcard can be used in ``To URL`` with the ``:splat`` placeholder."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:141
+#: ../../../user-defined-redirects.rst:143
 msgid ""
 "Redirects without a wildcard match paths with or without a trailing slash, e."
 "g. ``/install`` matches ``/install`` and ``/install/``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:143
+#: ../../../user-defined-redirects.rst:145
 msgid ""
 "The order of redirects matters. If multiple redirects match the same URL, "
 "the first one will be applied. The order of redirects :ref:`can be changed "
@@ -296,157 +297,157 @@ msgid ""
 "redirects>`."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:147
+#: ../../../user-defined-redirects.rst:149
 msgid ""
 "If an infinite redirect is detected, a 404 error will be returned, and no "
 "other redirects will be applied."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:151
+#: ../../../user-defined-redirects.rst:153
 msgid "Examples"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:154
+#: ../../../user-defined-redirects.rst:156
 msgid "Redirecting a page"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:156
+#: ../../../user-defined-redirects.rst:158
 msgid ""
 "Say you move the ``example.html`` page into a subdirectory of examples: "
 "``examples/intro.html``. You can create a redirect with the following "
 "configuration::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:159
+#: ../../../user-defined-redirects.rst:161
 msgid ""
 "Type: Page Redirect\n"
 "From URL: /example.html\n"
 "To URL: /examples/intro.html"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:163
-#: ../../../user-defined-redirects.rst:192
-#: ../../../user-defined-redirects.rst:220
-#: ../../../user-defined-redirects.rst:250
-#: ../../../user-defined-redirects.rst:274
-#: ../../../user-defined-redirects.rst:295
-#: ../../../user-defined-redirects.rst:316
-#: ../../../user-defined-redirects.rst:332
+#: ../../../user-defined-redirects.rst:165
+#: ../../../user-defined-redirects.rst:194
+#: ../../../user-defined-redirects.rst:222
+#: ../../../user-defined-redirects.rst:252
+#: ../../../user-defined-redirects.rst:276
+#: ../../../user-defined-redirects.rst:297
+#: ../../../user-defined-redirects.rst:318
+#: ../../../user-defined-redirects.rst:334
 msgid "Users will now be redirected:"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:165
+#: ../../../user-defined-redirects.rst:167
 msgid ""
 "From ``https://docs.example.com/en/latest/example.html`` to ``https://docs."
 "example.com/en/latest/examples/intro.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:167
+#: ../../../user-defined-redirects.rst:169
 msgid ""
 "From ``https://docs.example.com/en/stable/example.html`` to ``https://docs."
 "example.com/en/stable/examples/intro.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:170
-#: ../../../user-defined-redirects.rst:199
-#: ../../../user-defined-redirects.rst:227
+#: ../../../user-defined-redirects.rst:172
+#: ../../../user-defined-redirects.rst:201
+#: ../../../user-defined-redirects.rst:229
 msgid ""
 "If you want this redirect to apply to a specific version of your "
 "documentation, you can create a redirect with the following configuration::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:173
+#: ../../../user-defined-redirects.rst:175
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /en/latest/example.html\n"
 "To URL: /en/latest/examples/intro.html"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:179
-#: ../../../user-defined-redirects.rst:208
-#: ../../../user-defined-redirects.rst:236
+#: ../../../user-defined-redirects.rst:181
+#: ../../../user-defined-redirects.rst:210
+#: ../../../user-defined-redirects.rst:238
 msgid "Use the desired version and language instead of ``latest`` and ``en``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:182
+#: ../../../user-defined-redirects.rst:184
 msgid "Redirecting a directory"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:184
+#: ../../../user-defined-redirects.rst:186
 msgid ""
 "Say you rename the ``/api/`` directory to ``/api/v1/``. Instead of creating "
 "a redirect for each page in the directory, you can use a wildcard to "
 "redirect all pages in that directory::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:188
+#: ../../../user-defined-redirects.rst:190
 msgid ""
 "Type: Page Redirect\n"
 "From URL: /api/*\n"
 "To URL: /api/v1/:splat"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:194
+#: ../../../user-defined-redirects.rst:196
 msgid ""
 "From ``https://docs.example.com/en/latest/api/`` to ``https://docs.example."
 "com/en/latest/api/v1/``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:196
+#: ../../../user-defined-redirects.rst:198
 msgid ""
 "From ``https://docs.example.com/en/latest/api/projects.html`` to ``https://"
 "docs.example.com/en/latest/api/v1/projects.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:202
+#: ../../../user-defined-redirects.rst:204
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /en/latest/api/*\n"
 "To URL: /en/latest/api/v1/:splat"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:211
+#: ../../../user-defined-redirects.rst:213
 msgid "Redirecting a directory to a single page"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:213
+#: ../../../user-defined-redirects.rst:215
 msgid ""
 "Say you put the contents of the ``/examples/`` directory into a single page "
 "at ``/examples.html``. You can use a wildcard to redirect all pages in that "
 "directory to the new page::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:216
+#: ../../../user-defined-redirects.rst:218
 msgid ""
 "Type: Page Redirect\n"
 "From URL: /examples/*\n"
 "To URL: /examples.html"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:222
+#: ../../../user-defined-redirects.rst:224
 msgid ""
 "From ``https://docs.example.com/en/latest/examples/`` to ``https://docs."
 "example.com/en/latest/examples.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:224
+#: ../../../user-defined-redirects.rst:226
 msgid ""
 "From ``https://docs.example.com/en/latest/examples/intro.html`` to ``https://"
 "docs.example.com/en/latest/examples.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:230
+#: ../../../user-defined-redirects.rst:232
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /en/latest/examples/*\n"
 "To URL: /en/latest/examples.html"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:239
+#: ../../../user-defined-redirects.rst:241
 msgid "Redirecting a page to the latest version"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:241
+#: ../../../user-defined-redirects.rst:243
 msgid ""
 "Say you want your users to always be redirected to the latest version of a "
 "page, your security policy (``/security.html``) for example. You can use a "
@@ -454,7 +455,7 @@ msgid ""
 "latest version::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:245
+#: ../../../user-defined-redirects.rst:247
 msgid ""
 "Type: Page Redirect\n"
 "From URL: /security.html\n"
@@ -462,30 +463,30 @@ msgid ""
 "Force Redirect: True"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:252
+#: ../../../user-defined-redirects.rst:254
 msgid ""
 "From ``https://docs.example.com/en/v1.0/security.html`` to ``https://docs."
 "example.com/en/latest/security.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:254
+#: ../../../user-defined-redirects.rst:256
 msgid ""
 "From ``https://docs.example.com/en/v2.5/security.html`` to ``https://docs."
 "example.com/en/latest/security.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:259
+#: ../../../user-defined-redirects.rst:261
 msgid ""
 "``To URL`` includes the domain, this is required, otherwise the redirect "
 "will be relative to the current version, resulting in a redirect to "
 "``https://docs.example.com/en/v1.0/en/latest/security.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:264
+#: ../../../user-defined-redirects.rst:266
 msgid "Redirecting an old version to a new one"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:266
+#: ../../../user-defined-redirects.rst:268
 msgid ""
 "Let's say that you want to redirect your readers of your version ``2.0`` of "
 "your documentation under ``/en/2.0/`` because it's deprecated, to the newest "
@@ -493,60 +494,60 @@ msgid ""
 "so::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:270
+#: ../../../user-defined-redirects.rst:272
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /en/2.0/*\n"
 "To URL: /en/3.0/:splat"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:276
+#: ../../../user-defined-redirects.rst:278
 msgid ""
 "From ``https://docs.example.com/en/2.0/dev/install.html`` to ``https://docs."
 "example.com/en/3.0/dev/install.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:281
+#: ../../../user-defined-redirects.rst:283
 msgid ""
 "For this redirect to work, your old version must be disabled, if the version "
 "is still active, you can use the ``Force Redirect`` option."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:285
+#: ../../../user-defined-redirects.rst:287
 msgid "Creating a shortlink"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:287
+#: ../../../user-defined-redirects.rst:289
 msgid ""
 "Say you want to redirect ``https://docs.example.com/security`` to ``https://"
 "docs.example.com/en/latest/security.html``, so it's easier to share the link "
 "to the page. You can create a redirect with the following configuration::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:291
+#: ../../../user-defined-redirects.rst:293
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /security\n"
 "To URL: /en/latest/security.html"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:297
+#: ../../../user-defined-redirects.rst:299
 msgid ""
 "From ``https://docs.example.com/security`` (no trailing slash) to ``https://"
 "docs.example.com/en/latest/security.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:299
+#: ../../../user-defined-redirects.rst:301
 msgid ""
 "From ``https://docs.example.com/security/`` (trailing slash) to ``https://"
 "docs.example.com/en/latest/security.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:303
+#: ../../../user-defined-redirects.rst:305
 msgid "Migrating your docs to Read the Docs"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:305
+#: ../../../user-defined-redirects.rst:307
 msgid ""
 "Say that you previously had your docs hosted at ``https://docs.example.com/"
 "dev/``, and choose to migrate to Read the Docs with support for multiple "
@@ -556,36 +557,36 @@ msgid ""
 "install.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:310
+#: ../../../user-defined-redirects.rst:312
 msgid ""
 "You can use an exact redirect with a wildcard to redirect all pages from the "
 "old URL structure to the new one::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:312
+#: ../../../user-defined-redirects.rst:314
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /dev/*\n"
 "To URL: /en/latest/:splat"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:318
+#: ../../../user-defined-redirects.rst:320
 msgid ""
 "From ``https://docs.example.com/dev/install.html`` to ``https://docs.example."
 "com/en/latest/install.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:322
+#: ../../../user-defined-redirects.rst:324
 msgid "Migrating your documentation to another domain"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:324
+#: ../../../user-defined-redirects.rst:326
 msgid ""
 "You can use an exact redirect with the force option to migrate your "
 "documentation to another domain, for example::"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:327
+#: ../../../user-defined-redirects.rst:329
 msgid ""
 "Type: Exact Redirect\n"
 "From URL: /*\n"
@@ -593,17 +594,17 @@ msgid ""
 "Force Redirect: True"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:334
+#: ../../../user-defined-redirects.rst:336
 msgid ""
 "From ``https://docs.example.com/en/latest/install.html`` to ``https://"
 "newdocs.example.com/en/latest/install.html``."
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:338
+#: ../../../user-defined-redirects.rst:340
 msgid "Changing your Sphinx builder from ``html`` to ``dirhtml``"
 msgstr ""
 
-#: ../../../user-defined-redirects.rst:340
+#: ../../../user-defined-redirects.rst:342
 msgid ""
 "When you change your Sphinx builder from ``html`` to ``dirhtml``, all your "
 "URLs will change from ``/page.html`` to ``/page/``. You can create a "
