@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-03-23 10:23:09 +0100",
-      "hash" : "7d2b336dcd924c4ff3fc0e6924e6e4f4190cd8ad",
-      "title" : "Dependencies: all packages updated via pip-tools (#12862)"
+      "date" : "2026-04-20 09:23:35 +0200",
+      "hash" : "773646fce5735c628ff338032b79ef101688a37e",
+      "title" : "Dependencies: all packages updated via pip-tools (#12954)"
     }
   },
   "type" : "branch",
