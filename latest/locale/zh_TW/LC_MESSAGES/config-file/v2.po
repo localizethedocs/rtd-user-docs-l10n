@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 09:27+0000\n"
+"POT-Creation-Date: 2026-04-20 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgid "Sphinx"
 msgstr ""
 
 #: ../../../config-file/v2.rst:26 ../../../config-file/v2.rst:33
-#: ../../../config-file/v2.rst:549
+#: ../../../config-file/v2.rst:642
 msgid ".readthedocs.yaml"
 msgstr ""
 
@@ -165,14 +165,14 @@ msgstr ""
 msgid "Required"
 msgstr ""
 
-#: ../../../config-file/v2.rst:64 ../../../config-file/v2.rst:273
-#: ../../../config-file/v2.rst:291 ../../../config-file/v2.rst:627
-#: ../../../config-file/v2.rst:669
+#: ../../../config-file/v2.rst:64 ../../../config-file/v2.rst:231
+#: ../../../config-file/v2.rst:366 ../../../config-file/v2.rst:384
+#: ../../../config-file/v2.rst:720 ../../../config-file/v2.rst:762
 msgid "``true``"
 msgstr ""
 
 #: ../../../config-file/v2.rst:66 ../../../config-file/v2.rst:82
-#: ../../../config-file/v2.rst:160
+#: ../../../config-file/v2.rst:168
 msgid "Example:"
 msgstr ""
 
@@ -194,10 +194,10 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: ../../../config-file/v2.rst:78 ../../../config-file/v2.rst:146
-#: ../../../config-file/v2.rst:195 ../../../config-file/v2.rst:413
-#: ../../../config-file/v2.rst:578 ../../../config-file/v2.rst:708
-#: ../../../config-file/v2.rst:727
+#: ../../../config-file/v2.rst:78 ../../../config-file/v2.rst:154
+#: ../../../config-file/v2.rst:203 ../../../config-file/v2.rst:506
+#: ../../../config-file/v2.rst:671 ../../../config-file/v2.rst:801
+#: ../../../config-file/v2.rst:820
 msgid "``list``"
 msgstr ""
 
@@ -213,10 +213,10 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: ../../../config-file/v2.rst:80 ../../../config-file/v2.rst:147
-#: ../../../config-file/v2.rst:196 ../../../config-file/v2.rst:414
-#: ../../../config-file/v2.rst:580 ../../../config-file/v2.rst:709
-#: ../../../config-file/v2.rst:728
+#: ../../../config-file/v2.rst:80 ../../../config-file/v2.rst:155
+#: ../../../config-file/v2.rst:204 ../../../config-file/v2.rst:507
+#: ../../../config-file/v2.rst:673 ../../../config-file/v2.rst:802
+#: ../../../config-file/v2.rst:821
 msgid "``[]``"
 msgstr ""
 
@@ -253,25 +253,27 @@ msgstr ""
 #: ../../../config-file/v2.rst:113
 msgid ""
 "At the moment, only Sphinx supports additional formats. ``pdf``, ``epub``, "
-"and ``htmlzip`` output is not yet supported when using MkDocs."
+"and ``htmlzip`` output is not yet supported when using MkDocs. However, you "
+"can use :ref:`build-customization:where to put files` with custom build "
+"commands to generate offline formats for any documentation framework."
 msgstr ""
 
-#: ../../../config-file/v2.rst:116
+#: ../../../config-file/v2.rst:117
 msgid ""
 "With :doc:`builds from pull requests </pull-requests>`, only HTML formats "
 "are generated. Other formats are resource intensive and will be built after "
 "merging."
 msgstr ""
 
-#: ../../../config-file/v2.rst:119
+#: ../../../config-file/v2.rst:120
 msgid "python"
 msgstr ""
 
-#: ../../../config-file/v2.rst:121
+#: ../../../config-file/v2.rst:122
 msgid "Configuration of the Python environment to be used."
 msgstr ""
 
-#: ../../../config-file/v2.rst:123
+#: ../../../config-file/v2.rst:124
 msgid ""
 "version: 2\n"
 "\n"
@@ -286,34 +288,41 @@ msgid ""
 "      path: another/package"
 msgstr ""
 
-#: ../../../config-file/v2.rst:138
+#: ../../../config-file/v2.rst:139
 msgid "python.install"
 msgstr ""
 
-#: ../../../config-file/v2.rst:140
+#: ../../../config-file/v2.rst:141
 msgid ""
-"Read the Docs uses :doc:`pip <pip:index>` by  default to install your Python "
-"packages, however if you are using a :ref:`Conda <config-file/v2:conda>` "
+"Read the Docs uses :doc:`pip <pip:index>` by default to install your Python "
+"packages. It also supports `uv <https://docs.astral.sh/uv/>`__ through "
+"``python.install``. If you are using a :ref:`Conda <config-file/v2:conda>` "
 "environment to manage your build, you'll need to use the Conda "
 "``environment`` file instead. If you have a commercial plan you can also "
 "install :doc:`private dependencies </guides/private-python-packages>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:143
+#: ../../../config-file/v2.rst:147
 msgid ""
 "List of installation methods of packages and requirements. You can have "
 "several of the following methods."
 msgstr ""
 
-#: ../../../config-file/v2.rst:150
+#: ../../../config-file/v2.rst:152
+msgid ""
+"When using ``method: uv``, currently only one entry is allowed under "
+"``python.install``."
+msgstr ""
+
+#: ../../../config-file/v2.rst:158
 msgid "Requirements file"
 msgstr ""
 
-#: ../../../config-file/v2.rst:152
+#: ../../../config-file/v2.rst:160
 msgid "Install packages from a requirements file."
 msgstr ""
 
-#: ../../../config-file/v2.rst:154
+#: ../../../config-file/v2.rst:162
 msgid "The path to the requirements file, relative to the root of the project."
 msgstr ""
 
@@ -321,25 +330,29 @@ msgstr ""
 msgid "Key"
 msgstr ""
 
-#: ../../../config-file/v2.rst:156
+#: ../../../config-file/v2.rst:164 ../../../config-file/v2.rst:255
 msgid "``requirements``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:157 ../../../config-file/v2.rst:179
-#: ../../../config-file/v2.rst:180 ../../../config-file/v2.rst:233
-#: ../../../config-file/v2.rst:626 ../../../config-file/v2.rst:668
+#: ../../../config-file/v2.rst:165 ../../../config-file/v2.rst:187
+#: ../../../config-file/v2.rst:188 ../../../config-file/v2.rst:235
+#: ../../../config-file/v2.rst:236 ../../../config-file/v2.rst:256
+#: ../../../config-file/v2.rst:326 ../../../config-file/v2.rst:719
+#: ../../../config-file/v2.rst:761
 msgid "``path``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:158 ../../../config-file/v2.rst:181
-#: ../../../config-file/v2.rst:234 ../../../config-file/v2.rst:478
-#: ../../../config-file/v2.rst:517 ../../../config-file/v2.rst:579
-#: ../../../config-file/v2.rst:637 ../../../config-file/v2.rst:678
-#: ../../../config-file/v2.rst:748
+#: ../../../config-file/v2.rst:166 ../../../config-file/v2.rst:189
+#: ../../../config-file/v2.rst:237 ../../../config-file/v2.rst:244
+#: ../../../config-file/v2.rst:251 ../../../config-file/v2.rst:257
+#: ../../../config-file/v2.rst:327 ../../../config-file/v2.rst:571
+#: ../../../config-file/v2.rst:610 ../../../config-file/v2.rst:672
+#: ../../../config-file/v2.rst:730 ../../../config-file/v2.rst:771
+#: ../../../config-file/v2.rst:841
 msgid "``false``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:162
+#: ../../../config-file/v2.rst:170
 msgid ""
 "version: 2\n"
 "\n"
@@ -349,51 +362,51 @@ msgid ""
 "    - requirements: requirements.txt"
 msgstr ""
 
-#: ../../../config-file/v2.rst:172
+#: ../../../config-file/v2.rst:180
 msgid "Packages"
 msgstr ""
 
-#: ../../../config-file/v2.rst:174
+#: ../../../config-file/v2.rst:182
 msgid ""
 "Install the project using ``pip install``. The use of ``python setup.py "
 "install`` is deprecated."
 msgstr ""
 
-#: ../../../config-file/v2.rst:177
+#: ../../../config-file/v2.rst:185
 msgid "The path to the package, relative to the root of the project."
 msgstr ""
 
-#: ../../../config-file/v2.rst:183
+#: ../../../config-file/v2.rst:191
 msgid "The installation method."
 msgstr ""
 
-#: ../../../config-file/v2.rst:185
+#: ../../../config-file/v2.rst:193
 msgid "``method``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:186
-msgid "``pip``, ``setuptools`` (deprecated)"
+#: ../../../config-file/v2.rst:194
+msgid "``pip``, ``setuptools`` (deprecated), ``uv``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:187
+#: ../../../config-file/v2.rst:195
 msgid "``pip``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:189
+#: ../../../config-file/v2.rst:197
 msgid ""
 "`Extra requirements`_ section to install in addition to the `package "
 "dependencies`_."
 msgstr ""
 
-#: ../../../config-file/v2.rst:194
+#: ../../../config-file/v2.rst:202
 msgid "``extra_requirements``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:198
+#: ../../../config-file/v2.rst:206
 msgid "For example, to run ``pip install .[docs]``:"
 msgstr ""
 
-#: ../../../config-file/v2.rst:200
+#: ../../../config-file/v2.rst:208
 msgid ""
 "version: 2\n"
 "\n"
@@ -405,15 +418,136 @@ msgid ""
 "        - docs"
 msgstr ""
 
-#: ../../../config-file/v2.rst:212
+#: ../../../config-file/v2.rst:220
+msgid "uv"
+msgstr ""
+
+#: ../../../config-file/v2.rst:222
+msgid "Install dependencies using `uv <https://docs.astral.sh/uv/>`__."
+msgstr ""
+
+#: ../../../config-file/v2.rst:224
+msgid "Set ``method: uv`` and choose one of the following commands:"
+msgstr ""
+
+#: ../../../config-file/v2.rst:226
+msgid ""
+"``command: sync`` to run ``uv sync`` using your ``pyproject.toml`` and, if "
+"present, ``uv.lock``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:227
+msgid ""
+"``command: pip`` to run ``uv pip install`` from a requirements file or a "
+"local path"
+msgstr ""
+
+#: ../../../config-file/v2.rst:229
+msgid "``command``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:230
+msgid "``sync``, ``pip``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:233
+msgid ""
+"Use ``path`` to point uv at a project that is not located at the repository "
+"root."
+msgstr ""
+
+#: ../../../config-file/v2.rst:239
+msgid ""
+"With ``command: sync``, you can select dependency groups from ``pyproject."
+"toml``. Use either a list of group names or ``all``."
+msgstr ""
+
+#: ../../../config-file/v2.rst:242
+msgid "``groups``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:243 ../../../config-file/v2.rst:250
+msgid "``list`` or ``all``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:246
+msgid ""
+"With either uv command, you can install optional dependencies. Use either a "
+"list of extras or ``all``."
+msgstr ""
+
+#: ../../../config-file/v2.rst:249
+msgid "``extras``"
+msgstr ""
+
+#: ../../../config-file/v2.rst:253
+msgid "With ``command: pip``, you can install from a requirements file."
+msgstr ""
+
+#: ../../../config-file/v2.rst:261
+msgid ""
+"``command: sync`` doesn't allow ``requirements``. ``command: pip`` requires "
+"either ``requirements`` or ``path``. ``groups`` is only supported with "
+"``command: sync``."
+msgstr ""
+
+#: ../../../config-file/v2.rst:265
+msgid "For example, to run ``uv sync --group docs``:"
+msgstr ""
+
+#: ../../../config-file/v2.rst:267
+msgid ""
+"version: 2\n"
+"\n"
+"python:\n"
+"   install:\n"
+"      - method: uv\n"
+"         command: sync\n"
+"         groups:\n"
+"            - docs"
+msgstr ""
+
+#: ../../../config-file/v2.rst:278
+msgid "For example, to run ``uv pip install -r docs/requirements.txt``:"
+msgstr ""
+
+#: ../../../config-file/v2.rst:280
+msgid ""
+"version: 2\n"
+"\n"
+"python:\n"
+"   install:\n"
+"      - method: uv\n"
+"         command: pip\n"
+"         requirements: docs/requirements.txt"
+msgstr ""
+
+#: ../../../config-file/v2.rst:290
+msgid "For example, to run ``uv pip install .[docs]``:"
+msgstr ""
+
+#: ../../../config-file/v2.rst:292
+msgid ""
+"version: 2\n"
+"\n"
+"python:\n"
+"   install:\n"
+"      - method: uv\n"
+"         command: pip\n"
+"         path: .\n"
+"         extras:\n"
+"            - docs"
+msgstr ""
+
+#: ../../../config-file/v2.rst:305
 msgid "conda"
 msgstr ""
 
-#: ../../../config-file/v2.rst:214
+#: ../../../config-file/v2.rst:307
 msgid "Configuration for Conda support."
 msgstr ""
 
-#: ../../../config-file/v2.rst:216
+#: ../../../config-file/v2.rst:309
 msgid ""
 "version: 2\n"
 "\n"
@@ -426,35 +560,35 @@ msgid ""
 "  environment: environment.yml"
 msgstr ""
 
-#: ../../../config-file/v2.rst:229
+#: ../../../config-file/v2.rst:322
 msgid "conda.environment"
 msgstr ""
 
-#: ../../../config-file/v2.rst:231
+#: ../../../config-file/v2.rst:324
 msgid ""
 "The path to the Conda `environment file <https://conda.io/projects/conda/en/"
 "latest/user-guide/tasks/manage-environments.html>`_, relative to the root of "
 "the project."
 msgstr ""
 
-#: ../../../config-file/v2.rst:238
+#: ../../../config-file/v2.rst:331
 msgid ""
 "When using Conda, it's required to specify ``build.tools.python`` to tell "
 "Read the Docs to use whether Conda or Mamba to create the environment."
 msgstr ""
 
-#: ../../../config-file/v2.rst:241
+#: ../../../config-file/v2.rst:334
 msgid "build"
 msgstr ""
 
-#: ../../../config-file/v2.rst:243
+#: ../../../config-file/v2.rst:336
 msgid ""
 "Configuration for the documentation build process. This allows you to "
 "specify the base Read the Docs image used to build the documentation, and "
 "control the versions of several tools: Python, Node.js, Rust, and Go."
 msgstr ""
 
-#: ../../../config-file/v2.rst:249
+#: ../../../config-file/v2.rst:342
 msgid ""
 "version: 2\n"
 "\n"
@@ -467,64 +601,65 @@ msgid ""
 "    golang: \"1.23\""
 msgstr ""
 
-#: ../../../config-file/v2.rst:262
+#: ../../../config-file/v2.rst:355
 msgid "build.os"
 msgstr ""
 
-#: ../../../config-file/v2.rst:264
+#: ../../../config-file/v2.rst:357
 msgid ""
 "The Docker image used for building the docs. Image names refer to the "
 "operating system Read the Docs uses to build them."
 msgstr ""
 
-#: ../../../config-file/v2.rst:269
+#: ../../../config-file/v2.rst:362
 msgid "Arbitrary Docker images are not supported."
 msgstr ""
 
-#: ../../../config-file/v2.rst:271 ../../../config-file/v2.rst:315
-#: ../../../config-file/v2.rst:345 ../../../config-file/v2.rst:362
-#: ../../../config-file/v2.rst:373 ../../../config-file/v2.rst:391
-#: ../../../config-file/v2.rst:613
+#: ../../../config-file/v2.rst:364 ../../../config-file/v2.rst:408
+#: ../../../config-file/v2.rst:438 ../../../config-file/v2.rst:455
+#: ../../../config-file/v2.rst:466 ../../../config-file/v2.rst:484
+#: ../../../config-file/v2.rst:706
 msgid "``string``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:272
+#: ../../../config-file/v2.rst:365
 msgid ""
-"``ubuntu-20.04``, ``ubuntu-22.04``, ``ubuntu-24.04``, ``ubuntu-lts-latest``"
+"``ubuntu-20.04`` (deprecated), ``ubuntu-22.04``, ``ubuntu-24.04``, "
+"``ubuntu-26.04``, ``ubuntu-lts-latest``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:277
+#: ../../../config-file/v2.rst:370
 msgid ""
 "The ``ubuntu-lts-latest`` option refers to the latest Ubuntu LTS version of "
 "Ubuntu available on Read the Docs, which may not match the latest Ubuntu LTS "
 "officially released."
 msgstr ""
 
-#: ../../../config-file/v2.rst:282
+#: ../../../config-file/v2.rst:375
 msgid ""
 "Using ``ubuntu-lts-latest`` may break your builds unexpectedly if your "
 "project isn't compatible with the newest Ubuntu LTS version when it's "
 "updated by Read the Docs."
 msgstr ""
 
-#: ../../../config-file/v2.rst:285
+#: ../../../config-file/v2.rst:378
 msgid "build.tools"
 msgstr ""
 
-#: ../../../config-file/v2.rst:287
+#: ../../../config-file/v2.rst:380
 msgid "Version specifiers for each tool. It must contain at least one tool."
 msgstr ""
 
-#: ../../../config-file/v2.rst:289 ../../../config-file/v2.rst:474
-#: ../../../config-file/v2.rst:515
+#: ../../../config-file/v2.rst:382 ../../../config-file/v2.rst:567
+#: ../../../config-file/v2.rst:608
 msgid "``dict``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:290
+#: ../../../config-file/v2.rst:383
 msgid "``python``, ``nodejs``, ``ruby``, ``rust``, ``golang``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:295
+#: ../../../config-file/v2.rst:388
 msgid ""
 "Each tool has a ``latest`` option available, which refers to the latest "
 "version available on Read the Docs, which may not match the latest version "
@@ -532,282 +667,282 @@ msgid ""
 "once every six months to keep up with the latest releases."
 msgstr ""
 
-#: ../../../config-file/v2.rst:301
+#: ../../../config-file/v2.rst:394
 msgid ""
 "Using ``latest`` may break your builds unexpectedly if your project isn't "
 "compatible with the newest version of the tool when it's updated by Read the "
 "Docs."
 msgstr ""
 
-#: ../../../config-file/v2.rst:304
+#: ../../../config-file/v2.rst:397
 msgid "build.tools.python"
 msgstr ""
 
-#: ../../../config-file/v2.rst:306
+#: ../../../config-file/v2.rst:399
 msgid ""
 "Python version to use. You can use several interpreters and versions, from "
 "CPython, Miniconda, and Mamba."
 msgstr ""
 
-#: ../../../config-file/v2.rst:311
+#: ../../../config-file/v2.rst:404
 msgid ""
 "If you use Miniconda3 or Mambaforge, you can select the Python version using "
 "the ``environment.yml`` file. See our :doc:`/guides/conda` guide for more "
 "information."
 msgstr ""
 
-#: ../../../config-file/v2.rst:317
+#: ../../../config-file/v2.rst:410
 msgid "``2.7``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:318
+#: ../../../config-file/v2.rst:411
 msgid "``3`` (alias for the latest 3.x version available on Read the Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:319
+#: ../../../config-file/v2.rst:412
 msgid "``3.6``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:320
+#: ../../../config-file/v2.rst:413
 msgid "``3.7``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:321
+#: ../../../config-file/v2.rst:414
 msgid "``3.8``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:322
+#: ../../../config-file/v2.rst:415
 msgid "``3.9``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:323
+#: ../../../config-file/v2.rst:416
 msgid "``3.10``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:324
+#: ../../../config-file/v2.rst:417
 msgid "``3.11``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:325
+#: ../../../config-file/v2.rst:418
 msgid "``3.12``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:326
+#: ../../../config-file/v2.rst:419
 msgid "``3.13``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:327
+#: ../../../config-file/v2.rst:420
 msgid "``3.14``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:328 ../../../config-file/v2.rst:355
-#: ../../../config-file/v2.rst:366 ../../../config-file/v2.rst:384
-#: ../../../config-file/v2.rst:402
+#: ../../../config-file/v2.rst:421 ../../../config-file/v2.rst:448
+#: ../../../config-file/v2.rst:459 ../../../config-file/v2.rst:477
+#: ../../../config-file/v2.rst:495
 msgid "``latest`` (alias for the latest version available on Read the Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:329
+#: ../../../config-file/v2.rst:422
 msgid "``miniconda3-4.7``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:330
+#: ../../../config-file/v2.rst:423
 msgid "``miniconda3-3.12-24.1``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:331
+#: ../../../config-file/v2.rst:424
 msgid "``miniconda3-3.12-24.9``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:332
+#: ../../../config-file/v2.rst:425
 msgid ""
 "``miniconda-latest`` (alias for the latest version available on Read the "
 "Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:333
+#: ../../../config-file/v2.rst:426
 msgid "``mambaforge-4.10`` (deprecated)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:334
+#: ../../../config-file/v2.rst:427
 msgid "``mambaforge-22.9`` (deprecated)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:335
+#: ../../../config-file/v2.rst:428
 msgid "``mambaforge-23.11`` (deprecated)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:336
+#: ../../../config-file/v2.rst:429
 msgid ""
 "``mambaforge-latest`` (deprecated - alias for the latest version available "
 "on Read the Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:337
+#: ../../../config-file/v2.rst:430
 msgid "``miniforge3-25.11``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:338
+#: ../../../config-file/v2.rst:431
 msgid ""
 "``miniforge3-latest`` (alias for the latest version available on Read the "
 "Docs)"
 msgstr ""
 
-#: ../../../config-file/v2.rst:341
+#: ../../../config-file/v2.rst:434
 msgid "build.tools.nodejs"
 msgstr ""
 
-#: ../../../config-file/v2.rst:343
+#: ../../../config-file/v2.rst:436
 msgid "Node.js version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:347
+#: ../../../config-file/v2.rst:440
 msgid "``14``"
 msgstr "``14``"
 
-#: ../../../config-file/v2.rst:348
+#: ../../../config-file/v2.rst:441
 msgid "``16``"
 msgstr "``16``"
 
-#: ../../../config-file/v2.rst:349
+#: ../../../config-file/v2.rst:442
 msgid "``18``"
 msgstr "``18``"
 
-#: ../../../config-file/v2.rst:350
+#: ../../../config-file/v2.rst:443
 msgid "``19``"
 msgstr "``19``"
 
-#: ../../../config-file/v2.rst:351
+#: ../../../config-file/v2.rst:444
 msgid "``20``"
 msgstr "``20``"
 
-#: ../../../config-file/v2.rst:352
+#: ../../../config-file/v2.rst:445
 msgid "``22``"
 msgstr "``22``"
 
-#: ../../../config-file/v2.rst:353
+#: ../../../config-file/v2.rst:446
 msgid "``23``"
 msgstr "``23``"
 
-#: ../../../config-file/v2.rst:354
+#: ../../../config-file/v2.rst:447
 msgid "``24``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:358
+#: ../../../config-file/v2.rst:451
 msgid "build.tools.ruby"
 msgstr "build.tools.ruby"
 
-#: ../../../config-file/v2.rst:360
+#: ../../../config-file/v2.rst:453
 msgid "Ruby version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:364
+#: ../../../config-file/v2.rst:457
 msgid "``3.3``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:365
+#: ../../../config-file/v2.rst:458
 msgid "``3.4``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:369
+#: ../../../config-file/v2.rst:462
 msgid "build.tools.rust"
 msgstr ""
 
-#: ../../../config-file/v2.rst:371
+#: ../../../config-file/v2.rst:464
 msgid "Rust version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:375
+#: ../../../config-file/v2.rst:468
 msgid "``1.55``"
 msgstr "``1.55``"
 
-#: ../../../config-file/v2.rst:376
+#: ../../../config-file/v2.rst:469
 msgid "``1.61``"
 msgstr "``1.61``"
 
-#: ../../../config-file/v2.rst:377
+#: ../../../config-file/v2.rst:470
 msgid "``1.64``"
 msgstr "``1.64``"
 
-#: ../../../config-file/v2.rst:378
+#: ../../../config-file/v2.rst:471
 msgid "``1.70``"
 msgstr "``1.70``"
 
-#: ../../../config-file/v2.rst:379
+#: ../../../config-file/v2.rst:472
 msgid "``1.75``"
 msgstr "``1.75``"
 
-#: ../../../config-file/v2.rst:380
+#: ../../../config-file/v2.rst:473
 msgid "``1.78``"
 msgstr "``1.78``"
 
-#: ../../../config-file/v2.rst:381
+#: ../../../config-file/v2.rst:474
 msgid "``1.82``"
 msgstr "``1.82``"
 
-#: ../../../config-file/v2.rst:382
+#: ../../../config-file/v2.rst:475
 msgid "``1.86``"
 msgstr "``1.86``"
 
-#: ../../../config-file/v2.rst:383
+#: ../../../config-file/v2.rst:476
 msgid "``1.91``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:387
+#: ../../../config-file/v2.rst:480
 msgid "build.tools.golang"
 msgstr "build.tools.golang"
 
-#: ../../../config-file/v2.rst:389
+#: ../../../config-file/v2.rst:482
 msgid "Go version to use."
 msgstr ""
 
-#: ../../../config-file/v2.rst:393
+#: ../../../config-file/v2.rst:486
 msgid "``1.17``"
 msgstr "``1.17``"
 
-#: ../../../config-file/v2.rst:394
+#: ../../../config-file/v2.rst:487
 msgid "``1.18``"
 msgstr "``1.18``"
 
-#: ../../../config-file/v2.rst:395
+#: ../../../config-file/v2.rst:488
 msgid "``1.19``"
 msgstr "``1.19``"
 
-#: ../../../config-file/v2.rst:396
+#: ../../../config-file/v2.rst:489
 msgid "``1.20``"
 msgstr "``1.20``"
 
-#: ../../../config-file/v2.rst:397
+#: ../../../config-file/v2.rst:490
 msgid "``1.21``"
 msgstr "``1.21``"
 
-#: ../../../config-file/v2.rst:398
+#: ../../../config-file/v2.rst:491
 msgid "``1.22``"
 msgstr "``1.22``"
 
-#: ../../../config-file/v2.rst:399
+#: ../../../config-file/v2.rst:492
 msgid "``1.23``"
 msgstr "``1.23``"
 
-#: ../../../config-file/v2.rst:400
+#: ../../../config-file/v2.rst:493
 msgid "``1.24``"
 msgstr "``1.24``"
 
-#: ../../../config-file/v2.rst:401
+#: ../../../config-file/v2.rst:494
 msgid "``1.25``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:405
+#: ../../../config-file/v2.rst:498
 msgid "build.apt_packages"
 msgstr "build.apt_packages"
 
-#: ../../../config-file/v2.rst:407
+#: ../../../config-file/v2.rst:500
 msgid ""
 "List of `APT packages`_ to install. Our build servers run various Ubuntu LTS "
 "versions with the default set of package repositories installed. We don't "
 "currently support PPA's or other custom repositories."
 msgstr ""
 
-#: ../../../config-file/v2.rst:416
+#: ../../../config-file/v2.rst:509
 msgid ""
 "version: 2\n"
 "\n"
@@ -817,23 +952,23 @@ msgid ""
 "    - cmake"
 msgstr ""
 
-#: ../../../config-file/v2.rst:427
+#: ../../../config-file/v2.rst:520
 msgid ""
 "When possible avoid installing Python packages using apt (``python3-numpy`` "
 "for example), :doc:`use pip or conda instead </guides/reproducible-builds>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:432
+#: ../../../config-file/v2.rst:525
 msgid ""
 "Currently, it's not possible to use this option when using :ref:`config-file/"
 "v2:build.commands`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:436
+#: ../../../config-file/v2.rst:529
 msgid "build.jobs"
 msgstr ""
 
-#: ../../../config-file/v2.rst:438
+#: ../../../config-file/v2.rst:531
 msgid ""
 "Commands to be run before or after a Read the Docs :term:`pre-defined build "
 "jobs`, or to override a specific job. This allows you to run custom commands "
@@ -841,7 +976,7 @@ msgid ""
 "for more details."
 msgstr ""
 
-#: ../../../config-file/v2.rst:443
+#: ../../../config-file/v2.rst:536
 msgid ""
 "version: 2\n"
 "\n"
@@ -857,13 +992,13 @@ msgid ""
 "      - echo `date`"
 msgstr ""
 
-#: ../../../config-file/v2.rst:460
+#: ../../../config-file/v2.rst:553
 msgid ""
 "Each build step consists of a list of commands to be executed. ``build.os`` "
 "and ``build.tools`` are also required to use ``build.jobs``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:465
+#: ../../../config-file/v2.rst:558
 msgid ""
 "If the :ref:`config-file/v2:sphinx` or  :ref:`config-file/v2:mkdocs` keys "
 "are present in the configuration file, the default steps for each tool will "
@@ -874,7 +1009,7 @@ msgid ""
 "environment in a specific directory."
 msgstr ""
 
-#: ../../../config-file/v2.rst:470
+#: ../../../config-file/v2.rst:563
 msgid ""
 "If neither of the ``sphinx`` or ``mkdocs`` keys are present in the "
 "configuration file, only the specified ``build.tools`` and ``build."
@@ -887,7 +1022,7 @@ msgstr ""
 msgid "Allowed keys"
 msgstr ""
 
-#: ../../../config-file/v2.rst:475
+#: ../../../config-file/v2.rst:568
 msgid ""
 "``post_checkout``, ``pre_system_dependencies``, "
 "``post_system_dependencies``, ``pre_create_environment``, "
@@ -895,22 +1030,22 @@ msgid ""
 "``post_install``, ``pre_build``, ``build``, ``post_build``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:479 ../../../config-file/v2.rst:518
-#: ../../../config-file/v2.rst:776
+#: ../../../config-file/v2.rst:572 ../../../config-file/v2.rst:611
+#: ../../../config-file/v2.rst:869
 msgid "``{}``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:482
+#: ../../../config-file/v2.rst:575
 msgid "build.jobs.build"
 msgstr ""
 
-#: ../../../config-file/v2.rst:484
+#: ../../../config-file/v2.rst:577
 msgid ""
 "Commands to override the default build process. When running builds from "
 "pull requests, only the ``html`` step will be executed."
 msgstr ""
 
-#: ../../../config-file/v2.rst:487
+#: ../../../config-file/v2.rst:580
 msgid ""
 "version: 2\n"
 "\n"
@@ -939,34 +1074,34 @@ msgid ""
 "        - echo \"Hello world!\" > $READTHEDOCS_OUTPUT/epub/index.epub"
 msgstr ""
 
-#: ../../../config-file/v2.rst:516
+#: ../../../config-file/v2.rst:609
 msgid "``html``, ``pdf``, ``epub``, ``htmlzip``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:522
+#: ../../../config-file/v2.rst:615
 msgid ""
 "If any of the ``pdf``, ``epub``, or ``htmlzip`` steps are overridden, they "
 "should be included in the :ref:`config-file/v2:formats` list."
 msgstr ""
 
-#: ../../../config-file/v2.rst:527
+#: ../../../config-file/v2.rst:620
 msgid ""
 "For each format, you need to generate their output in the :ref:"
 "`$READTHEDOCS_OUTPUT <build-customization:where to put files>` directory."
 msgstr ""
 
-#: ../../../config-file/v2.rst:530
+#: ../../../config-file/v2.rst:623
 msgid "build.commands"
 msgstr ""
 
-#: ../../../config-file/v2.rst:532
+#: ../../../config-file/v2.rst:625
 msgid ""
 "Specify a list of commands that Read the Docs will run on the build process. "
 "When ``build.commands`` is used, none of the :term:`pre-defined build jobs` "
 "will be executed."
 msgstr ""
 
-#: ../../../config-file/v2.rst:535
+#: ../../../config-file/v2.rst:628
 msgid ""
 "version: 2\n"
 "\n"
@@ -980,11 +1115,11 @@ msgid ""
 "html/ docs/"
 msgstr ""
 
-#: ../../../config-file/v2.rst:547
+#: ../../../config-file/v2.rst:640
 msgid "But we recommend using :ref:`config-file/v2:build.jobs` instead:"
 msgstr ""
 
-#: ../../../config-file/v2.rst:549
+#: ../../../config-file/v2.rst:642
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -1000,7 +1135,7 @@ msgid ""
 "$READTHEDOCS_OUTPUT/html/ docs/"
 msgstr ""
 
-#: ../../../config-file/v2.rst:564
+#: ../../../config-file/v2.rst:657
 msgid ""
 "``build.jobs`` offers the same functionality as ``build.commands``, but in a "
 "more structured way that allows you to define different commands for each "
@@ -1008,28 +1143,28 @@ msgid ""
 "apt_packages``. See :doc:`/build-customization` for more details."
 msgstr ""
 
-#: ../../../config-file/v2.rst:571
+#: ../../../config-file/v2.rst:664
 msgid ""
 "``build.os`` and ``build.tools`` are also required when using ``build."
 "commands``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:575
+#: ../../../config-file/v2.rst:668
 msgid ""
 "All items in the ``build.commands`` array are executed in a clean shell "
 "environment, i.e. environment changes do not persist and the working "
 "directory always start from the git repo."
 msgstr ""
 
-#: ../../../config-file/v2.rst:584
+#: ../../../config-file/v2.rst:677
 msgid "sphinx"
 msgstr ""
 
-#: ../../../config-file/v2.rst:586
+#: ../../../config-file/v2.rst:679
 msgid "Configuration for Sphinx documentation."
 msgstr ""
 
-#: ../../../config-file/v2.rst:588
+#: ../../../config-file/v2.rst:681
 msgid ""
 "version: 2\n"
 "\n"
@@ -1039,7 +1174,7 @@ msgid ""
 "  fail_on_warning: true"
 msgstr ""
 
-#: ../../../config-file/v2.rst:598
+#: ../../../config-file/v2.rst:691
 msgid ""
 "If you want to pin Sphinx to a specific version, use a ``requirements.txt`` "
 "or ``environment.yml`` file (see :ref:`config-file/v2:requirements file` "
@@ -1051,61 +1186,61 @@ msgid ""
 "2020 <build-default-versions:external dependencies>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:609
+#: ../../../config-file/v2.rst:702
 msgid "sphinx.builder"
 msgstr ""
 
-#: ../../../config-file/v2.rst:611
+#: ../../../config-file/v2.rst:704
 msgid "The builder type for the Sphinx documentation."
 msgstr ""
 
-#: ../../../config-file/v2.rst:614
+#: ../../../config-file/v2.rst:707
 msgid "``html``, ``dirhtml``, ``singlehtml``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:615
+#: ../../../config-file/v2.rst:708
 msgid "``html``"
 msgstr "``html``"
 
-#: ../../../config-file/v2.rst:618
+#: ../../../config-file/v2.rst:711
 msgid ""
 "The ``htmldir`` builder option was renamed to ``dirhtml`` to use the same "
 "name as sphinx. Configurations using the old name will continue working."
 msgstr ""
 
-#: ../../../config-file/v2.rst:622
+#: ../../../config-file/v2.rst:715
 msgid "sphinx.configuration"
 msgstr "sphinx.configuration"
 
-#: ../../../config-file/v2.rst:624
+#: ../../../config-file/v2.rst:717
 msgid "The path to the ``conf.py`` file, relative to the root of the project."
 msgstr ""
 
-#: ../../../config-file/v2.rst:630
+#: ../../../config-file/v2.rst:723
 msgid "sphinx.fail_on_warning"
 msgstr "sphinx.fail_on_warning"
 
-#: ../../../config-file/v2.rst:632
+#: ../../../config-file/v2.rst:725
 msgid ""
 "Turn warnings into errors (:option:`-W <sphinx:sphinx-build.-W>` and :option:"
 "`--keep-going <sphinx:sphinx-build.--keep-going>` options). This means the "
 "build fails if there is a warning and exits with exit status 1."
 msgstr ""
 
-#: ../../../config-file/v2.rst:636 ../../../config-file/v2.rst:677
-#: ../../../config-file/v2.rst:747
+#: ../../../config-file/v2.rst:729 ../../../config-file/v2.rst:770
+#: ../../../config-file/v2.rst:840
 msgid "``bool``"
 msgstr "``bool``"
 
-#: ../../../config-file/v2.rst:640
+#: ../../../config-file/v2.rst:733
 msgid "mkdocs"
 msgstr "mkdocs"
 
-#: ../../../config-file/v2.rst:642
+#: ../../../config-file/v2.rst:735
 msgid "Configuration for MkDocs documentation."
 msgstr ""
 
-#: ../../../config-file/v2.rst:644
+#: ../../../config-file/v2.rst:737
 msgid ""
 "version: 2\n"
 "\n"
@@ -1114,7 +1249,7 @@ msgid ""
 "  fail_on_warning: false"
 msgstr ""
 
-#: ../../../config-file/v2.rst:653
+#: ../../../config-file/v2.rst:746
 msgid ""
 "If you want to pin MkDocs to a specific version, use a ``requirements.txt`` "
 "or ``environment.yml`` file (see :ref:`config-file/v2:requirements file` "
@@ -1126,45 +1261,45 @@ msgid ""
 "<build-default-versions:external dependencies>`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:664
+#: ../../../config-file/v2.rst:757
 msgid "mkdocs.configuration"
 msgstr "mkdocs.configuration"
 
-#: ../../../config-file/v2.rst:666
+#: ../../../config-file/v2.rst:759
 msgid ""
 "The path to the ``mkdocs.yml`` file, relative to the root of the project."
 msgstr ""
 
-#: ../../../config-file/v2.rst:672
+#: ../../../config-file/v2.rst:765
 msgid "mkdocs.fail_on_warning"
 msgstr ""
 
-#: ../../../config-file/v2.rst:674
+#: ../../../config-file/v2.rst:767
 msgid ""
 "`Turn warnings into errors <https://www.mkdocs.org/user-guide/configuration/"
 "#strict>`__. This means that the build stops at the first warning and exits "
 "with exit status 1."
 msgstr ""
 
-#: ../../../config-file/v2.rst:681
+#: ../../../config-file/v2.rst:774
 msgid "submodules"
 msgstr ""
 
-#: ../../../config-file/v2.rst:683
+#: ../../../config-file/v2.rst:776
 msgid "VCS submodules configuration."
 msgstr ""
 
-#: ../../../config-file/v2.rst:687
+#: ../../../config-file/v2.rst:780
 msgid "Only Git is supported at the moment."
 msgstr ""
 
-#: ../../../config-file/v2.rst:691
+#: ../../../config-file/v2.rst:784
 msgid ""
 "You can't use ``include`` and ``exclude`` settings for submodules at the "
 "same time."
 msgstr ""
 
-#: ../../../config-file/v2.rst:693
+#: ../../../config-file/v2.rst:786
 msgid ""
 "version: 2\n"
 "\n"
@@ -1175,19 +1310,19 @@ msgid ""
 "  recursive: true"
 msgstr ""
 
-#: ../../../config-file/v2.rst:704
+#: ../../../config-file/v2.rst:797
 msgid "submodules.include"
 msgstr ""
 
-#: ../../../config-file/v2.rst:706
+#: ../../../config-file/v2.rst:799
 msgid "List of submodules to be included."
 msgstr ""
 
-#: ../../../config-file/v2.rst:713
+#: ../../../config-file/v2.rst:806
 msgid "You can use the ``all`` keyword to include all submodules."
 msgstr ""
 
-#: ../../../config-file/v2.rst:715
+#: ../../../config-file/v2.rst:808
 msgid ""
 "version: 2\n"
 "\n"
@@ -1195,21 +1330,21 @@ msgid ""
 "  include: all"
 msgstr ""
 
-#: ../../../config-file/v2.rst:723
+#: ../../../config-file/v2.rst:816
 msgid "submodules.exclude"
 msgstr ""
 
-#: ../../../config-file/v2.rst:725
+#: ../../../config-file/v2.rst:818
 msgid "List of submodules to be excluded."
 msgstr ""
 
-#: ../../../config-file/v2.rst:732
+#: ../../../config-file/v2.rst:825
 msgid ""
 "You can use the ``all`` keyword to exclude all submodules. This is the same "
 "as ``include: []``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:735
+#: ../../../config-file/v2.rst:828
 msgid ""
 "version: 2\n"
 "\n"
@@ -1217,27 +1352,27 @@ msgid ""
 "  exclude: all"
 msgstr ""
 
-#: ../../../config-file/v2.rst:743
+#: ../../../config-file/v2.rst:836
 msgid "submodules.recursive"
 msgstr ""
 
-#: ../../../config-file/v2.rst:745
+#: ../../../config-file/v2.rst:838
 msgid "Do a recursive clone of the submodules."
 msgstr ""
 
-#: ../../../config-file/v2.rst:752
+#: ../../../config-file/v2.rst:845
 msgid "This is ignored if there aren't submodules to clone."
 msgstr ""
 
-#: ../../../config-file/v2.rst:755
+#: ../../../config-file/v2.rst:848
 msgid "search"
 msgstr ""
 
-#: ../../../config-file/v2.rst:757
+#: ../../../config-file/v2.rst:850
 msgid "Settings for more control over :doc:`/server-side-search/index`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:759
+#: ../../../config-file/v2.rst:852
 msgid ""
 "version: 2\n"
 "\n"
@@ -1249,19 +1384,19 @@ msgid ""
 "    - 404.html"
 msgstr ""
 
-#: ../../../config-file/v2.rst:771
+#: ../../../config-file/v2.rst:864
 msgid "search.ranking"
 msgstr ""
 
-#: ../../../config-file/v2.rst:773
+#: ../../../config-file/v2.rst:866
 msgid "Set a custom search rank over pages matching a pattern."
 msgstr ""
 
-#: ../../../config-file/v2.rst:775
+#: ../../../config-file/v2.rst:868
 msgid "``map`` of patterns to ranks"
 msgstr ""
 
-#: ../../../config-file/v2.rst:778 ../../../config-file/v2.rst:829
+#: ../../../config-file/v2.rst:871 ../../../config-file/v2.rst:922
 msgid ""
 "Patterns are matched against the relative paths of the HTML files produced "
 "by the build, you should try to match ``index.html``, not ``docs/index."
@@ -1269,19 +1404,19 @@ msgid ""
 "the following special characters:"
 msgstr ""
 
-#: ../../../config-file/v2.rst:782
+#: ../../../config-file/v2.rst:875
 msgid "``*`` matches everything, including slashes."
 msgstr ""
 
-#: ../../../config-file/v2.rst:783 ../../../config-file/v2.rst:834
+#: ../../../config-file/v2.rst:876 ../../../config-file/v2.rst:927
 msgid "``?`` matches any single character."
 msgstr ""
 
-#: ../../../config-file/v2.rst:784 ../../../config-file/v2.rst:835
+#: ../../../config-file/v2.rst:877 ../../../config-file/v2.rst:928
 msgid "``[seq]`` matches any character in ``seq``."
 msgstr ""
 
-#: ../../../config-file/v2.rst:786
+#: ../../../config-file/v2.rst:879
 msgid ""
 "The rank can be an integer number between -10 and 10 (inclusive). Pages with "
 "a rank closer to -10 will appear further down the list of results, and pages "
@@ -1289,13 +1424,13 @@ msgid ""
 "that 0 means *normal rank*, not *no rank*."
 msgstr ""
 
-#: ../../../config-file/v2.rst:791
+#: ../../../config-file/v2.rst:884
 msgid ""
 "If you are looking to completely ignore a page, check :ref:`config-file/v2:"
 "search.ignore`."
 msgstr ""
 
-#: ../../../config-file/v2.rst:794
+#: ../../../config-file/v2.rst:887
 msgid ""
 "version: 2\n"
 "\n"
@@ -1313,39 +1448,39 @@ msgid ""
 "    '*/guides.html': 3"
 msgstr ""
 
-#: ../../../config-file/v2.rst:813
+#: ../../../config-file/v2.rst:906
 msgid "The final rank will be the last pattern to match the page."
 msgstr ""
 
-#: ../../../config-file/v2.rst:817
+#: ../../../config-file/v2.rst:910
 msgid ""
 "Is better to decrease the rank of pages you want to deprecate, rather than "
 "increasing the rank of the other pages."
 msgstr ""
 
-#: ../../../config-file/v2.rst:821
+#: ../../../config-file/v2.rst:914
 msgid "search.ignore"
 msgstr ""
 
-#: ../../../config-file/v2.rst:823
+#: ../../../config-file/v2.rst:916
 msgid ""
 "List of paths to ignore and exclude from the search index. Paths matched "
 "will not be included in search results."
 msgstr ""
 
-#: ../../../config-file/v2.rst:826
+#: ../../../config-file/v2.rst:919
 msgid "``list`` of patterns"
 msgstr ""
 
-#: ../../../config-file/v2.rst:827
+#: ../../../config-file/v2.rst:920
 msgid "``['search.html', 'search/index.html', '404.html', '404/index.html']``"
 msgstr ""
 
-#: ../../../config-file/v2.rst:833
+#: ../../../config-file/v2.rst:926
 msgid "``*`` matches everything (including slashes)."
 msgstr ""
 
-#: ../../../config-file/v2.rst:837
+#: ../../../config-file/v2.rst:930
 msgid ""
 "version: 2\n"
 "\n"
@@ -1363,7 +1498,7 @@ msgid ""
 "     - '*/ref.html'"
 msgstr ""
 
-#: ../../../config-file/v2.rst:854
+#: ../../../config-file/v2.rst:947
 msgid ""
 "version: 2\n"
 "\n"
@@ -1380,17 +1515,17 @@ msgid ""
 "     - 404/index.html"
 msgstr ""
 
-#: ../../../config-file/v2.rst:872
+#: ../../../config-file/v2.rst:965
 msgid ""
 "Since Read the Docs fallbacks to the original search engine when no results "
 "are found, you may still see search results from ignored pages."
 msgstr ""
 
-#: ../../../config-file/v2.rst:876
+#: ../../../config-file/v2.rst:969
 msgid "Schema"
 msgstr ""
 
-#: ../../../config-file/v2.rst:878
+#: ../../../config-file/v2.rst:971
 msgid ""
 "You can see the complete schema `here <https://github.com/readthedocs/"
 "readthedocs.org/blob/main/readthedocs/rtd_tests/fixtures/spec/v2/schema."

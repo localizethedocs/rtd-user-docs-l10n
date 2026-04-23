@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-04-20 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,22 +106,18 @@ msgid ""
 msgstr ""
 
 #: ../../../downloadable-documentation.rst:49
-msgid "`PDF`_"
-msgstr ""
-
-#: ../../../downloadable-documentation.rst:50
 msgid "`ePub`_"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:51
+#: ../../../downloadable-documentation.rst:50
 msgid "`Zipped HTML`_"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:58
+#: ../../../downloadable-documentation.rst:56
 msgid "Continue learning"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:60
+#: ../../../downloadable-documentation.rst:58
 msgid ""
 "Downloadable documentation formats are built by your documentation "
 "framework. They are then published by Read the Docs and included in your :"
@@ -129,22 +125,22 @@ msgid ""
 "each output is built and which formats are supported:"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:64
+#: ../../../downloadable-documentation.rst:62
 msgid "Sphinx"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:65
+#: ../../../downloadable-documentation.rst:63
 msgid ""
 "All output formats are built mostly lossless from the documentation source, "
 "meaning that your documentation source (reStructuredText or Markdown/MyST) "
 "is built from scratch for each output format."
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:68
+#: ../../../downloadable-documentation.rst:66
 msgid "MkDocs and Docsify + more"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:69
+#: ../../../downloadable-documentation.rst:67
 msgid ""
 "The common case for most documentation frameworks is that several "
 "alternative extensions exist supporting various output formats. Most of the "
@@ -152,7 +148,7 @@ msgid ""
 "through a conversion process."
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:72
+#: ../../../downloadable-documentation.rst:70
 msgid ""
 "Because Sphinx supports the generation of offline formats through an "
 "official process, we are also able to support it officially. Other "
@@ -161,20 +157,26 @@ msgid ""
 "aren't natively supported by Read the Docs, but support is coming soon.**"
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:81
+#: ../../../downloadable-documentation.rst:79
 msgid ""
 "Other pages in our documentation are relevant to this feature, and might be "
 "a useful next step."
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:84
+#: ../../../downloadable-documentation.rst:82
 msgid ""
 ":doc:`/guides/enable-offline-formats` - Guide to enabling and disabling this "
 "feature."
 msgstr ""
 
-#: ../../../downloadable-documentation.rst:85
+#: ../../../downloadable-documentation.rst:83
 msgid ""
 ":ref:`config-file/v2:formats` - Configuration file options for offline "
 "formats."
+msgstr ""
+
+#: ../../../downloadable-documentation.rst:84
+msgid ""
+":ref:`build-customization:where to put files` - Where to put offline format "
+"output when using custom build commands."
 msgstr ""
