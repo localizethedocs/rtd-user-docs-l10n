@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-04-21 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgid ":doc:`/guides/manage-read-the-docs-teams`"
 msgstr ":doc:`/guides/manage-read-the-docs-teams`"
 
 #: ../../../commercial/organizations.rst:13
-msgid "A step-by-step guide to managing teams."
+msgid "A step-by-step guide to managing organization owners and teams."
 msgstr ""
 
 #: ../../../commercial/organizations.rst:16

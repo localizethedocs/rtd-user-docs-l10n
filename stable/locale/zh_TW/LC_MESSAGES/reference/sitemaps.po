@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-04-21 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,15 +75,28 @@ msgstr ""
 
 #: ../../../reference/sitemaps.rst:29
 msgid ""
-"You can control the sitemap that is used via the ``robots.txt`` file. Our :"
-"doc:`/reference/robots` allows you to host a custom version of this file."
+"You can provide a custom ``sitemap.xml`` file with your docs build output. "
+"Read the Docs looks for this file in the **default version** of your "
+"project, because ``sitemap.xml`` is served from the root of your docs domain."
 msgstr ""
 
-#: ../../../reference/sitemaps.rst:32
-msgid "An example would look like::"
+#: ../../../reference/sitemaps.rst:33
+msgid ""
+"If this custom file exists, it is served as-is. If it does not exist, Read "
+"the Docs serves the generated sitemap instead."
 msgstr ""
 
-#: ../../../reference/sitemaps.rst:34
+#: ../../../reference/sitemaps.rst:36
+msgid ""
+"You can also point crawlers to a different sitemap URL via ``robots.txt``. "
+"See :doc:`/reference/robots` for details."
+msgstr ""
+
+#: ../../../reference/sitemaps.rst:39
+msgid "For example, in ``robots.txt``::"
+msgstr ""
+
+#: ../../../reference/sitemaps.rst:41
 msgid ""
 "User-agent: *\n"
 "Allow: /\n"

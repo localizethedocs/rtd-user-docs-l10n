@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-04-21 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,40 +272,47 @@ msgid ""
 msgstr ""
 
 #: ../../../config-file/index.rst:126
-msgid "Use ``build.jobs`` to install packages using Poetry or PDM"
+msgid ""
+"Use ``python.install.method: uv`` to install packages with ``uv sync`` or "
+"``uv pip``"
 msgstr ""
 
-#: ../../../config-file/index.rst:130
-msgid ":ref:`config-file/v2:build.tools.python`"
+#: ../../../config-file/index.rst:127
+msgid ""
+"Use ``build.jobs`` for Poetry, PDM, or advanced custom install workflows"
 msgstr ""
 
 #: ../../../config-file/index.rst:131
+msgid ":ref:`config-file/v2:build.tools.python`"
+msgstr ""
+
+#: ../../../config-file/index.rst:132
 msgid ""
 "Configuration file reference with all Python versions available for ``build."
 "tools.python``."
 msgstr ""
 
-#: ../../../config-file/index.rst:133
+#: ../../../config-file/index.rst:134
 msgid ":ref:`config-file/v2:python`"
 msgstr ""
 
-#: ../../../config-file/index.rst:134
+#: ../../../config-file/index.rst:135
 msgid ""
 "Configuration file reference for configuring the Python environment "
 "activated by ``build.tools.python``."
 msgstr ""
 
-#: ../../../config-file/index.rst:137
+#: ../../../config-file/index.rst:138
 msgid "Adjust: Sphinx and MkDocs version"
 msgstr ""
 
-#: ../../../config-file/index.rst:139
+#: ../../../config-file/index.rst:140
 msgid ""
 "If you are using either the ``sphinx`` or ``mkdocs`` builder, then Sphinx or "
 "MkDocs will be installed automatically in its latest version."
 msgstr ""
 
-#: ../../../config-file/index.rst:142
+#: ../../../config-file/index.rst:143
 msgid ""
 "But we recommend that you specify the version that your documentation "
 "project uses. The ``requirements`` key is a file path that points to a text "
@@ -313,44 +320,44 @@ msgid ""
 "install."
 msgstr ""
 
-#: ../../../config-file/index.rst:148
+#: ../../../config-file/index.rst:149
 msgid ""
 ":ref:`guides/reproducible-builds:Use a requirements file for Python "
 "dependencies`"
 msgstr ""
 
-#: ../../../config-file/index.rst:149
+#: ../../../config-file/index.rst:150
 msgid ""
 "This guide explains how to specify Python requirements, such as the version "
 "of Sphinx or MkDocs."
 msgstr ""
 
-#: ../../../config-file/index.rst:152
+#: ../../../config-file/index.rst:153
 msgid ":ref:`config-file/v2:sphinx`"
 msgstr ""
 
-#: ../../../config-file/index.rst:153
+#: ../../../config-file/index.rst:154
 msgid "Configuration file reference for configuring the Sphinx builder."
 msgstr ""
 
-#: ../../../config-file/index.rst:155
+#: ../../../config-file/index.rst:156
 msgid ":ref:`config-file/v2:mkdocs`"
 msgstr ""
 
-#: ../../../config-file/index.rst:156
+#: ../../../config-file/index.rst:157
 msgid "Configuration file reference for configuring the MkDocs builder."
 msgstr ""
 
-#: ../../../config-file/index.rst:159
+#: ../../../config-file/index.rst:160
 msgid "Next steps"
 msgstr ""
 
-#: ../../../config-file/index.rst:161
+#: ../../../config-file/index.rst:162
 msgid ""
 "There are more configuration options that the ones mentioned in this guide."
 msgstr ""
 
-#: ../../../config-file/index.rst:163
+#: ../../../config-file/index.rst:164
 msgid ""
 "After you add a configuration file your Git repository, and you can see that "
 "Read the Docs is building your documentation using the file, you should have "
@@ -358,21 +365,21 @@ msgid ""
 "apply to your project."
 msgstr ""
 
-#: ../../../config-file/index.rst:169
+#: ../../../config-file/index.rst:170
 msgid ":doc:`/config-file/v2`."
 msgstr ""
 
-#: ../../../config-file/index.rst:170
+#: ../../../config-file/index.rst:171
 msgid ""
 "The complete list of all possible ``.readthedocs.yaml`` settings, including "
 "the optional settings not covered in on this page."
 msgstr ""
 
-#: ../../../config-file/index.rst:173
+#: ../../../config-file/index.rst:174
 msgid ":doc:`/build-customization`"
 msgstr ":doc:`/build-customization`"
 
-#: ../../../config-file/index.rst:174
+#: ../../../config-file/index.rst:175
 msgid ""
 "Are familiar with running a command line? Perhaps there are special commands "
 "that you know you want Read the Docs to run. Read this guide and learn more "

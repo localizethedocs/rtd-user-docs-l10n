@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-24 08:48+0000\n"
+"POT-Creation-Date: 2026-04-21 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,11 +145,11 @@ msgstr ""
 #: ../../../build-customization.rst:285 ../../../build-customization.rst:309
 #: ../../../build-customization.rst:329 ../../../build-customization.rst:349
 #: ../../../build-customization.rst:381 ../../../build-customization.rst:405
-#: ../../../build-customization.rst:445 ../../../build-customization.rst:476
-#: ../../../build-customization.rst:502 ../../../build-customization.rst:534
-#: ../../../build-customization.rst:559 ../../../build-customization.rst:581
-#: ../../../build-customization.rst:600 ../../../build-customization.rst:621
-#: ../../../build-customization.rst:652
+#: ../../../build-customization.rst:440 ../../../build-customization.rst:472
+#: ../../../build-customization.rst:498 ../../../build-customization.rst:530
+#: ../../../build-customization.rst:555 ../../../build-customization.rst:577
+#: ../../../build-customization.rst:596 ../../../build-customization.rst:617
+#: ../../../build-customization.rst:648
 msgid ".readthedocs.yaml"
 msgstr ""
 
@@ -691,69 +691,63 @@ msgstr ""
 
 #: ../../../build-customization.rst:432
 msgid ""
-"Projects managed with `uv <https://github.com/astral-sh/uv/>`__ can install "
-"`uv` with asdf, and then rely on it to set up the environment and install "
-"the python project and its dependencies. Read the Docs' own build steps "
-"expect it by setting the ``UV_PROJECT_ENVIRONMENT`` variable, usually "
-"reducing the time taken to install compared to pip."
+"Read the Docs supports `uv <https://docs.astral.sh/uv/>`__ natively in "
+"``python.install``. Projects using uv can use the configuration methods "
+"referenced at :ref:`config-file/v2:python.install` instead of overriding "
+"``build.jobs``."
 msgstr ""
 
 #: ../../../build-customization.rst:437
 msgid ""
-"The following examples assumes a uv project as described in its `projects "
-"concept <https://docs.astral.sh/uv/concepts/projects/>`__. As an "
-"introduction refer to its `Working on projects guide <https://docs.astral.sh/"
-"uv/guides/projects/>`__. The ``docs`` dependency group which should is "
-"pulled in during the ``uv sync`` step (if additional extras are required "
-"they can be added with the `--extra attribute <https://docs.astral.sh/uv/"
-"concepts/projects/sync/#syncing-optional-dependencies>`__)."
+"The following example uses ``uv sync`` with a dependency group named "
+"``docs``. If a ``uv.lock`` file exists, it is respected."
 msgstr ""
 
-#: ../../../build-customization.rst:443
-msgid "If a ``uv.lock`` file exists it is respected."
-msgstr ""
-
-#: ../../../build-customization.rst:445
+#: ../../../build-customization.rst:440
 msgid ""
 "version: 2\n"
 "\n"
-"sphinx:\n"
-"   configuration: docs/conf.py\n"
-"\n"
 "build:\n"
-"   os: ubuntu-24.04\n"
-"   tools:\n"
-"      python: \"3.13\"\n"
-"   jobs:\n"
-"      pre_create_environment:\n"
-"         - asdf plugin add uv\n"
-"         - asdf install uv latest\n"
-"         - asdf global uv latest\n"
-"      create_environment:\n"
-"         - uv venv \"${READTHEDOCS_VIRTUALENV_PATH}\"\n"
-"      install:\n"
-"         - UV_PROJECT_ENVIRONMENT=\"${READTHEDOCS_VIRTUALENV_PATH}\" uv sync "
-"--frozen --group docs"
+"  os: ubuntu-24.04\n"
+"  tools:\n"
+"    python: \"3.13\"\n"
+"\n"
+"python:\n"
+"  install:\n"
+"    - method: uv\n"
+"      command: sync\n"
+"      groups:\n"
+"        - docs\n"
+"\n"
+"sphinx:\n"
+"    configuration: docs/conf.py"
 msgstr ""
 
-#: ../../../build-customization.rst:468
+#: ../../../build-customization.rst:460
+msgid ""
+"Use ``build.jobs`` only when you need an advanced uv workflow that isn't "
+"covered by ``python.install``, such as adding specific arguments to the "
+"``uv`` command."
+msgstr ""
+
+#: ../../../build-customization.rst:464
 msgid "Install dependencies from Dependency Groups"
 msgstr ""
 
-#: ../../../build-customization.rst:470
+#: ../../../build-customization.rst:466
 msgid ""
 "Python `Dependency Groups <https://packaging.python.org/en/latest/"
 "specifications/dependency-groups/>`_ are a way of storing lists of "
 "dependencies in your ``pyproject.toml``."
 msgstr ""
 
-#: ../../../build-customization.rst:473
+#: ../../../build-customization.rst:469
 msgid ""
 "``pip`` version 25.1+ as well as many other tools support Dependency Groups. "
 "This example uses ``pip`` and installs from a group named ``docs``:"
 msgstr ""
 
-#: ../../../build-customization.rst:476
+#: ../../../build-customization.rst:472
 msgid ""
 "version: 2\n"
 "\n"
@@ -769,25 +763,25 @@ msgid ""
 "         - pip install --group 'docs'"
 msgstr ""
 
-#: ../../../build-customization.rst:491
+#: ../../../build-customization.rst:487
 msgid ""
 "For more information on relevant ``pip`` usage, see the `pip user guide on "
 "Dependency Groups <https://pip.pypa.io/en/stable/user_guide/#dependency-"
 "groups>`_."
 msgstr ""
 
-#: ../../../build-customization.rst:495
+#: ../../../build-customization.rst:491
 msgid "Install dependencies with ``pixi``"
 msgstr ""
 
-#: ../../../build-customization.rst:497
+#: ../../../build-customization.rst:493
 msgid ""
 "Projects can use `pixi <https://github.com/prefix-dev/pixi/>`__, to install "
 "Python dependencies, usually reducing the time taken to install compared to "
 "conda or pip. Take a look at the following example:"
 msgstr ""
 
-#: ../../../build-customization.rst:502
+#: ../../../build-customization.rst:498
 msgid ""
 "version: 2\n"
 "\n"
@@ -809,17 +803,17 @@ msgid ""
 "$READTHEDOCS_OUTPUT/html"
 msgstr ""
 
-#: ../../../build-customization.rst:523
+#: ../../../build-customization.rst:519
 msgid ""
 "MkDocs projects could use ``NO_COLOR=1 pixi run -e docs mkdocs build --"
 "strict --site-dir $READTHEDOCS_OUTPUT/html`` instead."
 msgstr ""
 
-#: ../../../build-customization.rst:526
+#: ../../../build-customization.rst:522
 msgid "Update Conda version"
 msgstr ""
 
-#: ../../../build-customization.rst:528
+#: ../../../build-customization.rst:524
 msgid ""
 "Projects using Conda may need to install the latest available version of "
 "Conda. This can be done by using the ``pre_create_environment`` user-defined "
@@ -827,7 +821,7 @@ msgid ""
 "following example:"
 msgstr ""
 
-#: ../../../build-customization.rst:534
+#: ../../../build-customization.rst:530
 msgid ""
 " version: 2\n"
 "\n"
@@ -846,11 +840,11 @@ msgid ""
 "   environment: environment.yml"
 msgstr ""
 
-#: ../../../build-customization.rst:554
+#: ../../../build-customization.rst:550
 msgid "Using Pelican"
 msgstr ""
 
-#: ../../../build-customization.rst:556
+#: ../../../build-customization.rst:552
 msgid ""
 "`Pelican <https://blog.getpelican.com/>`__ is a well-known static site "
 "generator that's commonly used for blogs and landing pages. If you are "
@@ -858,7 +852,7 @@ msgid ""
 "similar to the following:"
 msgstr ""
 
-#: ../../../build-customization.rst:559
+#: ../../../build-customization.rst:555
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -874,18 +868,18 @@ msgid ""
 "$READTHEDOCS_OUTPUT/html/ docs/"
 msgstr ""
 
-#: ../../../build-customization.rst:576
+#: ../../../build-customization.rst:572
 msgid "Using Docsify"
 msgstr ""
 
-#: ../../../build-customization.rst:578
+#: ../../../build-customization.rst:574
 msgid ""
 "`Docsify <https://docsify.js.org/>`__ generates documentation websites on "
 "the fly, without the need to build static HTML. These projects can be built "
 "using a configuration file like this:"
 msgstr ""
 
-#: ../../../build-customization.rst:581
+#: ../../../build-customization.rst:577
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -897,11 +891,11 @@ msgid ""
 "        - cp --recursive docs/* $READTHEDOCS_OUTPUT/html/"
 msgstr ""
 
-#: ../../../build-customization.rst:594
+#: ../../../build-customization.rst:590
 msgid "Using Asciidoc"
 msgstr ""
 
-#: ../../../build-customization.rst:596
+#: ../../../build-customization.rst:592
 msgid ""
 "`Asciidoctor <https://asciidoctor.org/>`__ is a fast processor for "
 "converting and generating documentation from AsciiDoc source. The "
@@ -910,7 +904,7 @@ msgid ""
 "Here is an example configuration file:"
 msgstr ""
 
-#: ../../../build-customization.rst:600
+#: ../../../build-customization.rst:596
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -925,18 +919,18 @@ msgid ""
 "        - asciidoctor -D $READTHEDOCS_OUTPUT/html index.asciidoc"
 msgstr ""
 
-#: ../../../build-customization.rst:616
+#: ../../../build-customization.rst:612
 msgid "Using pydoctor"
 msgstr ""
 
-#: ../../../build-customization.rst:618
+#: ../../../build-customization.rst:614
 msgid ""
 "`Pydoctor <https://github.com/twisted/pydoctor>`_ is an easy-to-use "
 "standalone API documentation tool for Python. Here is an example "
 "configuration file:"
 msgstr ""
 
-#: ../../../build-customization.rst:621
+#: ../../../build-customization.rst:617
 msgid ""
 "version: 2\n"
 "build:\n"
@@ -957,25 +951,25 @@ msgid ""
 "            ./src/my_project"
 msgstr ""
 
-#: ../../../build-customization.rst:642
+#: ../../../build-customization.rst:638
 msgid "Generate text format with Sphinx"
 msgstr ""
 
-#: ../../../build-customization.rst:644
+#: ../../../build-customization.rst:640
 msgid ""
 "There might be various reasons why would you want to generate your "
 "documentation in `text` format (secondary to `html`). One of such reasons "
 "would be generating LLM friendly documentation."
 msgstr ""
 
-#: ../../../build-customization.rst:648
+#: ../../../build-customization.rst:644
 msgid ""
 "See the following example for how to add generation of additional `text` "
 "format to your existing documentation. Deviations from standard build "
 "configuration are highlighted/emphasized:"
 msgstr ""
 
-#: ../../../build-customization.rst:652
+#: ../../../build-customization.rst:648
 msgid ""
 "version: 2\n"
 "\n"
@@ -996,7 +990,7 @@ msgid ""
 "      - sphinx-build -n -b text docs $READTHEDOCS_OUTPUT/html/"
 msgstr ""
 
-#: ../../../build-customization.rst:674
+#: ../../../build-customization.rst:670
 msgid ""
 "The generated ``.txt`` files will be placed in the `html` directory, "
 "together with ``.html`` files."

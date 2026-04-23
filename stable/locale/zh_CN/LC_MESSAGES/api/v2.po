@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-04-21 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Retrieve a list of all Read the Docs projects."
 msgstr ""
 
-#: ../../../api/v2.rst:59 ../../../api/v2.rst:239 ../../../api/v2.rst:338
+#: ../../../api/v2.rst:59 ../../../api/v2.rst:239 ../../../api/v2.rst:342
 msgid "**Example request**:"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 msgid "curl https://app.readthedocs.org/api/v2/project/?slug=pip"
 msgstr ""
 
-#: ../../../api/v2.rst:65 ../../../api/v2.rst:245 ../../../api/v2.rst:350
+#: ../../../api/v2.rst:65 ../../../api/v2.rst:245
 msgid "**Example response**:"
 msgstr ""
 
@@ -581,141 +581,94 @@ msgid "Embed"
 msgstr ""
 
 #: ../../../api/v2.rst:331
-msgid "Retrieve HTML-formatted content from documentation page or section."
+msgid ""
+"The embed API v2 has been deprecated and is no longer available. Use :ref:"
+"`embed API v3 <api/v3:embed>` instead."
 msgstr ""
 
 #: ../../../api/v2.rst:335
+msgid "Retrieve HTML-formatted content from documentation page or section."
+msgstr ""
+
+#: ../../../api/v2.rst:339
 msgid ""
 "The content will be returned as is, without any sanitization or escaping. "
 "You should not include content from arbitrary projects, or projects you do "
 "not trust."
 msgstr ""
 
-#: ../../../api/v2.rst:343
-msgid ""
-"curl https://app.readthedocs.org/api/v2/embed/?"
-"project=docs&version=latest&doc=features&path=features.html"
-msgstr ""
-
-#: ../../../api/v2.rst:344
-msgid "or"
-msgstr ""
-
-#: ../../../api/v2.rst:349
+#: ../../../api/v2.rst:347
 msgid ""
 "curl https://app.readthedocs.org/api/v2/embed/?url=https://docs.readthedocs."
-"io/en/latest/features.html"
+"com/platform/stable/reference/features.html"
 msgstr ""
 
-#: ../../../api/v2.rst:352
-msgid ""
-"{\n"
-"    \"content\": [\n"
-"        \"<div class=\\\"section\\\" id=\\\"read-the-docs-features\\"
-"\">\\n<h1>Read the Docs...\"\n"
-"    ],\n"
-"    \"headers\": [\n"
-"        {\n"
-"            \"Read the Docs features\": \"#\"\n"
-"        },\n"
-"        {\n"
-"            \"Automatic Documentation Deployment\": \"#automatic-"
-"documentation-deployment\"\n"
-"        },\n"
-"        {\n"
-"            \"Custom Domains & White Labeling\": \"#custom-domains-white-"
-"labeling\"\n"
-"        },\n"
-"        {\n"
-"            \"Versioned Documentation\": \"#versioned-documentation\"\n"
-"        },\n"
-"        {\n"
-"            \"Downloadable Documentation\": \"#downloadable-documentation\"\n"
-"        },\n"
-"        {\n"
-"            \"Full-Text Search\": \"#full-text-search\"\n"
-"        },\n"
-"        {\n"
-"            \"Open Source and Customer Focused\": \"#open-source-and-"
-"customer-focused\"\n"
-"        }\n"
-"    ],\n"
-"    \"url\": \"https://docs.readthedocs.io/en/latest/features\",\n"
-"    \"meta\": {\n"
-"        \"project\": \"docs\",\n"
-"        \"version\": \"latest\",\n"
-"        \"doc\": \"features\",\n"
-"        \"section\": \"read the docs features\"\n"
-"    }\n"
-"}"
-msgstr ""
-
-#: ../../../api/v2.rst:390
+#: ../../../api/v2.rst:348
 msgid "HTML content of the section."
 msgstr ""
 
-#: ../../../api/v2.rst:391
+#: ../../../api/v2.rst:349
 msgid "section's headers in the document."
 msgstr ""
 
-#: ../../../api/v2.rst:392
+#: ../../../api/v2.rst:350
 msgid "URL of the document."
 msgstr ""
 
-#: ../../../api/v2.rst:393
+#: ../../../api/v2.rst:351
 msgid "meta data of the requested section."
 msgstr ""
 
-#: ../../../api/v2.rst:395
+#: ../../../api/v2.rst:353
 msgid "Read the Docs project's slug."
 msgstr ""
 
-#: ../../../api/v2.rst:396
+#: ../../../api/v2.rst:354
 msgid "document to fetch content from."
 msgstr ""
 
-#: ../../../api/v2.rst:398
+#: ../../../api/v2.rst:356
 msgid "*optional* Read the Docs version's slug (default: ``latest``)."
 msgstr ""
 
-#: ../../../api/v2.rst:399
+#: ../../../api/v2.rst:357
 msgid "*optional* section within the document to fetch."
 msgstr ""
 
-#: ../../../api/v2.rst:400
+#: ../../../api/v2.rst:358
 msgid "*optional* full path to the document including extension."
 msgstr ""
 
-#: ../../../api/v2.rst:402
+#: ../../../api/v2.rst:360
 msgid "full URL of the document (and section) to fetch content from."
 msgstr ""
 
-#: ../../../api/v2.rst:406
+#: ../../../api/v2.rst:364
 msgid ""
 "You can call this endpoint by sending at least ``project`` and ``doc`` *or* "
 "``url`` attribute."
 msgstr ""
 
-#: ../../../api/v2.rst:410
+#: ../../../api/v2.rst:368
 msgid "Undocumented resources and endpoints"
 msgstr ""
 
-#: ../../../api/v2.rst:412
+#: ../../../api/v2.rst:370
 msgid ""
 "There are some undocumented endpoints in the API. These should not be used "
 "and could change at any time. These include:"
 msgstr ""
 
-#: ../../../api/v2.rst:416
+#: ../../../api/v2.rst:374
 msgid ""
 "Endpoints for returning footer and version data to be injected into docs. "
 "(``/api/v2/footer_html``)"
 msgstr ""
 
-#: ../../../api/v2.rst:418
+#: ../../../api/v2.rst:376
 msgid "Endpoints used for advertising (``/api/v2/sustainability/``)"
 msgstr ""
 
-#: ../../../api/v2.rst:419
+#: ../../../api/v2.rst:377
 msgid "Any other endpoints not detailed above."
 msgstr ""
