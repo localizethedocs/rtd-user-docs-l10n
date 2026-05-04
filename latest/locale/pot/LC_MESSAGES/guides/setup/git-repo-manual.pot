@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-05-04 11:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,28 +359,42 @@ msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:174
 msgid ""
-"For example, the cURL command to build the ``dev`` branch, using the token "
-"``1234``, would be::"
+"For example, to build the ``dev`` branch of project ``example-project`` "
+"using the integration token ``1234``:"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:177
+#: ../../../guides/setup/git-repo-manual.rst:179
 msgid ""
-"curl -X POST -d \"branches=dev\" -d \"token=1234\" -d "
-"\"default_branch=main\"\n"
-"https://app.readthedocs.org/api/v2/webhook/example-project/1/"
+"$ curl \\\n"
+"    --data \"branches=dev&token=1234&default_branch=main\" \\\n"
+"    https://app.readthedocs.org/api/v2/webhook/example-project/1/"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:180
+#: ../../../guides/setup/git-repo-manual.rst:185
+msgid ""
+"import requests\n"
+"\n"
+"URL = \"https://app.readthedocs.org/api/v2/webhook/example-project/1/\"\n"
+"TOKEN = \"1234\"\n"
+"response = requests.post(\n"
+"    URL,\n"
+"    data={\"branches\": \"dev\", \"token\": TOKEN, \"default_branch\": "
+"\"main\"},\n"
+")\n"
+"print(response.json())"
+msgstr ""
+
+#: ../../../guides/setup/git-repo-manual.rst:197
 msgid ""
 "A command like the one above could be called from a cron job or from a `Git "
 "hook`_."
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:185
+#: ../../../guides/setup/git-repo-manual.rst:202
 msgid "Authentication"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:187
+#: ../../../guides/setup/git-repo-manual.rst:204
 msgid ""
 "This endpoint requires authentication. If authenticating with an integration "
 "token, a check will determine if the token is valid and matches the given "
@@ -389,15 +403,15 @@ msgid ""
 "project."
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:193
+#: ../../../guides/setup/git-repo-manual.rst:210
 msgid "Troubleshooting Git provider webhooks"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:196
+#: ../../../guides/setup/git-repo-manual.rst:213
 msgid "Debugging webhooks"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:198
+#: ../../../guides/setup/git-repo-manual.rst:215
 msgid ""
 "If you are experiencing problems with an existing webhook, you may be able "
 "to use the integration detail page to help debug the issue. Each project "
@@ -406,11 +420,11 @@ msgid ""
 "You'll find a list of these exchanges in any of the integration detail pages."
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:205
+#: ../../../guides/setup/git-repo-manual.rst:222
 msgid "Webhook activation failed. Make sure you have the necessary permissions"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:207
+#: ../../../guides/setup/git-repo-manual.rst:224
 msgid ""
 "If you find this error, make sure your user has permissions over the "
 "repository. In case of GitHub, check that you have granted access to the "
@@ -418,11 +432,11 @@ msgid ""
 "required for other supported providers."
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:217
+#: ../../../guides/setup/git-repo-manual.rst:234
 msgid "My project isn't automatically building"
 msgstr ""
 
-#: ../../../guides/setup/git-repo-manual.rst:219
+#: ../../../guides/setup/git-repo-manual.rst:236
 msgid ""
 "If your project isn't automatically building, you can check your integration "
 "on Read the Docs to see the payload sent to our servers. If there is no "
