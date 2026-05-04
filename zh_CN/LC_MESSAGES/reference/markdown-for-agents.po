@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/markdown-for-agents.rst:2
+msgid "Markdown for AI agents"
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:4
+msgid ""
+"Read the Docs serves a Markdown version of documentation pages to clients "
+"that request it, using HTTP content negotiation. Markdown is smaller and "
+"easier to parse than rendered HTML, which makes it a better format for AI "
+"agents and language models to consume."
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:9
+msgid ""
+"This feature is **enabled automatically** on all documentation domains "
+"hosted on Read the Docs, with no configuration required. Browsers continue "
+"to receive the regular HTML version of your documentation."
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:13
+msgid "A request with ``Accept: text/markdown`` returns a Markdown response:"
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:15
+msgid ""
+"$ curl -i https://docs.readthedocs.com/platform/stable/ -H \"Accept: text/"
+"markdown\"\n"
+"HTTP/2 200\n"
+"content-type: text/markdown; charset=utf-8\n"
+"vary: accept\n"
+"x-markdown-tokens: 1496\n"
+"content-signal: ai-train=yes, search=yes, ai-input=yes\n"
+"\n"
+"---\n"
+"description: Automate building, versioning, and hosting of your technical "
+"documentation continuously on Read the Docs.\n"
+"title: Read the Docs: documentation simplified\n"
+"---\n"
+"\n"
+"..."
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:31
+msgid ""
+"This feature is powered by `Cloudflare`_. See the `Cloudflare blog post on "
+"Markdown for agents`_ for more details about how the conversion works."
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:36
+msgid ":doc:`/reference/llms-txt`"
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:37
+msgid ""
+"Serve a custom ``llms.txt`` file to guide AI agents to the most relevant "
+"pages of your documentation."
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:39
+msgid ":doc:`/reference/agent-skills`"
+msgstr ""
+
+#: ../../../reference/markdown-for-agents.rst:40
+msgid ""
+"Use Read the Docs Agent Skills to help AI agents work with Read the Docs "
+"APIs and configuration."
+msgstr ""
