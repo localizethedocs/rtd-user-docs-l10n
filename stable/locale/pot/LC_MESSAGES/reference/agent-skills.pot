@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 09:33+0000\n"
+"POT-Creation-Date: 2026-05-05 10:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,4 +134,14 @@ msgstr ""
 
 #: ../../../reference/agent-skills.rst:59
 msgid "Read the Read the Docs API documentation."
+msgstr ""
+
+#: ../../../reference/agent-skills.rst:61
+msgid ":doc:`/reference/markdown-for-agents`"
+msgstr ""
+
+#: ../../../reference/agent-skills.rst:62
+msgid ""
+"Read the Docs serves a Markdown version of documentation pages to AI agents "
+"via content negotiation."
 msgstr ""

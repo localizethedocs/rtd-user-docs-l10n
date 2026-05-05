@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-24 08:48+0000\n"
+"POT-Creation-Date: 2026-05-05 10:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,36 +193,56 @@ msgid ""
 "example.html"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:92
+#: ../../../commercial/sharing.rst:91
+msgid ""
+"If you want to access a subproject, create the HTTP header token on the "
+"subproject itself and then request the subproject URL. For example, if "
+"``plugin`` is a subproject served under ``https://docs.example.com/projects/"
+"plugin/``, use:"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:100
+msgid ""
+"curl -H \"Authorization: Token $TOKEN\" https://docs.example.com/projects/"
+"plugin/en/latest/example.html"
+msgstr ""
+
+#: ../../../commercial/sharing.rst:101
+msgid ""
+"An HTTP header token created on the parent project does not grant access to "
+"its subprojects."
+msgstr ""
+
+#: ../../../commercial/sharing.rst:104
 msgid "Basic Authorization"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:94
+#: ../../../commercial/sharing.rst:106
 msgid ""
 "You can also use basic authorization, with the token as user and an empty "
 "password. For example:"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:100
+#: ../../../commercial/sharing.rst:112
 msgid ""
 "curl --url https://docs.example.com/en/latest/example.html --user '$TOKEN:'"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:102
+#: ../../../commercial/sharing.rst:114
 msgid "Typical sharing configurations"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:104
+#: ../../../commercial/sharing.rst:116
 msgid ""
 "There are a few common ways to architect sharing, with trade-offs between "
 "them, and you should choose the one that best fits your use case."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:109
+#: ../../../commercial/sharing.rst:121
 msgid "Bulk passwords"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:111
+#: ../../../commercial/sharing.rst:123
 msgid ""
 "If you want to limit access to a group of users, you can create a password "
 "for each user, and then share the password with them. This allows users to "
@@ -231,11 +251,11 @@ msgid ""
 "to generate a new password for them."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:120
+#: ../../../commercial/sharing.rst:132
 msgid "Authenticated redirect"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:122
+#: ../../../commercial/sharing.rst:134
 msgid ""
 "If you want to share documentation with a group of users, you need to "
 "authenticate those users against your own system first. The simplest way to "
@@ -243,7 +263,7 @@ msgid ""
 "redirects to the Read the Docs :ref:`commercial/sharing:secret link`."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:127
+#: ../../../commercial/sharing.rst:139
 msgid ""
 "This should require minimal customization, and will ensure that only "
 "authenticated users can access the documentation. The downside is that users "
@@ -251,11 +271,11 @@ msgid ""
 "have to go through your site first."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:133
+#: ../../../commercial/sharing.rst:145
 msgid "Authenticated proxy"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:135
+#: ../../../commercial/sharing.rst:147
 msgid ""
 "If you want a more transparent experience for your users, you can create a "
 "proxy that authenticates users against your system, and then proxies the "
@@ -263,23 +283,23 @@ msgid ""
 "users to access the documentation directly from a bookmark."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:141
+#: ../../../commercial/sharing.rst:153
 msgid ""
 "This approach would use a :ref:`commercial/sharing:HTTP Authorization "
 "Header` to authenticate users, and would be configured in your proxy server."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:145
+#: ../../../commercial/sharing.rst:157
 msgid "Proxy example"
 msgstr ""
 
-#: ../../../commercial/sharing.rst:147
+#: ../../../commercial/sharing.rst:159
 msgid ""
 "Below is an example of how to configure Nginx to proxy requests to Read the "
 "Docs while adding the token in the `Authorization` header."
 msgstr ""
 
-#: ../../../commercial/sharing.rst:149
+#: ../../../commercial/sharing.rst:161
 msgid ""
 "server {\n"
 "    listen 80;\n"

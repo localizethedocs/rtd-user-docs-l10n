@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 09:33+0000\n"
+"POT-Creation-Date: 2026-05-05 10:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -388,73 +388,87 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/build/skip-build.rst:208
-msgid "**Webhook notifications still trigger**"
+msgid "**No failure notifications are sent**"
 msgstr ""
 
 #: ../../../guides/build/skip-build.rst:209
 msgid ""
-"Even though the build is cancelled, webhook notifications (if configured) "
-"may still be sent with a cancelled status."
-msgstr ""
-
-#: ../../../guides/build/skip-build.rst:213
-msgid "Troubleshooting"
+"When a build is skipped via exit code ``183``, Read the Docs does not send "
+"``build:failed`` webhook notifications or failure emails for it. The build "
+"is treated as an intentional skip rather than a failure. Note that a ``build:"
+"triggered`` webhook may still have been delivered earlier, before the build "
+"command had a chance to exit with ``183``."
 msgstr ""
 
 #: ../../../guides/build/skip-build.rst:215
-msgid "**Build is not being skipped**"
+msgid "**Pull request status is reported as successful**"
 msgstr ""
 
 #: ../../../guides/build/skip-build.rst:216
+msgid ""
+"When a commit status is sent to your Git provider (for pull request builds), "
+"it is reported as successful so that the pull request is not blocked from "
+"merging."
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:221
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:223
+msgid "**Build is not being skipped**"
+msgstr ""
+
+#: ../../../guides/build/skip-build.rst:224
 msgid "Verify your condition logic is correct by testing it locally"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:217
+#: ../../../guides/build/skip-build.rst:225
 msgid "Check that the command is returning exit code 183 specifically"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:218
+#: ../../../guides/build/skip-build.rst:226
 msgid ""
 "Ensure you're using the correct :doc:`environment variables </reference/"
 "environment-variables>`"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:219
+#: ../../../guides/build/skip-build.rst:227
 msgid "Review the build logs to see if your condition is being evaluated"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:221
+#: ../../../guides/build/skip-build.rst:229
 msgid "**Builds are being skipped unexpectedly**"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:222
+#: ../../../guides/build/skip-build.rst:230
 msgid "Review your condition logic to ensure it's not too broad"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:223
+#: ../../../guides/build/skip-build.rst:231
 msgid "Check for syntax errors in your bash commands"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:224
+#: ../../../guides/build/skip-build.rst:232
 msgid "Verify that file paths and branch names are correct"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:225
+#: ../../../guides/build/skip-build.rst:233
 msgid "Test the condition in different scenarios (PRs, branches, tags)"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:227
+#: ../../../guides/build/skip-build.rst:235
 msgid "**Cannot access Git information**"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:228
+#: ../../../guides/build/skip-build.rst:236
 msgid ""
 "Some Git operations require a full clone. If you need Git history, you might "
 "need to `unshallow the clone <https://docs.readthedocs.io/en/stable/build-"
 "customization.html#unshallow-git-clone>`_"
 msgstr ""
 
-#: ../../../guides/build/skip-build.rst:230
+#: ../../../guides/build/skip-build.rst:238
 msgid ""
 "Ensure you're running your skip logic in ``post_checkout`` to have access to "
 "the repository"
