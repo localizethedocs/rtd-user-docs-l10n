@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-20 09:23:35 +0200",
-      "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-      "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+      "date" : "2026-05-09 01:23:30 +0800",
+      "hash" : "39abbde4080de51a4c8c55743b89262e10f47576",
+      "title" : "Docs: clarify config file paths are relative to repo root (#12889)"
     }
   },
   "type" : "branch",
