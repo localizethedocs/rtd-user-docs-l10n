@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:46+0000\n"
+"POT-Creation-Date: 2026-05-11 11:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,128 +72,150 @@ msgstr ""
 
 #: ../../../guides/setup/monorepo.rst:33
 msgid ""
+"All paths in the ``.readthedocs.yaml`` file are always relative to the "
+"**repository root**, regardless of where the configuration file is located."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:36
+msgid ""
+"For example, if your config file is at ``docs/.readthedocs.yaml`` and your "
+"requirements file is at ``docs/requirements.txt``, you should still use "
+"``docs/requirements.txt`` as the path in the config file, not ``requirements."
+"txt``."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:41
+msgid ""
+"The one exception is the Sphinx build command itself, which is executed from "
+"the directory containing your ``conf.py`` file. This only affects paths that "
+"Sphinx resolves internally (for example, inside your ``conf.py``), and does "
+"not change how paths in ``.readthedocs.yaml`` are interpreted."
+msgstr ""
+
+#: ../../../guides/setup/monorepo.rst:48
+msgid ""
 "Changing the configuration path will apply to all versions. Different "
 "versions of the project may not be able to build again if this path is "
 "changed."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:37
+#: ../../../guides/setup/monorepo.rst:52
 msgid "Adding an additional project from the same repository"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:39
+#: ../../../guides/setup/monorepo.rst:54
 msgid ""
 "Once you have added the first project from the :ref:`Import Wizard <intro/"
 "add-project:Automatically add your project>`, you will need to repeat this "
 "process again to add the additional project from the same repository."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:43
+#: ../../../guides/setup/monorepo.rst:58
 msgid "Setting the custom build configuration file"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:45
+#: ../../../guides/setup/monorepo.rst:60
 msgid ""
 "Once you have added a Git repository to a project that needs a custom "
 "configuration file path, navigate to :menuselection:`Admin --> Settings` and "
 "add the path to the :guilabel:`Build configuration file` field."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:48
+#: ../../../guides/setup/monorepo.rst:63
 msgid ""
 "Screenshot of where to find the :guilabel:`Build configuration file` setting."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:51
+#: ../../../guides/setup/monorepo.rst:66
 msgid ""
 "After pressing :guilabel:`Save`, you need to ensure that relevant versions "
 "of your documentation are built again."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:56
+#: ../../../guides/setup/monorepo.rst:71
 msgid ""
 "Having multiple different build configuration files can be complex. We "
 "recommend setting up 1-2 projects in your Monorepo and getting them to build "
 "and publish successfully before adding additional projects to the equation."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:60
+#: ../../../guides/setup/monorepo.rst:75
 msgid "Next steps"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:62
+#: ../../../guides/setup/monorepo.rst:77
 msgid ""
 "Once you have your monorepo pattern implemented and tested and it's ready to "
 "roll out to all your projects, you should also consider the Read the Docs "
 "project setup for these individual projects."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:65
+#: ../../../guides/setup/monorepo.rst:80
 msgid ""
 "Having individual projects gives you the full flexibility of the Read the "
 "Docs platform to make individual setups for each project."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:67
+#: ../../../guides/setup/monorepo.rst:82
 msgid "For each project, it's now possible to configure:"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:69
+#: ../../../guides/setup/monorepo.rst:84
 msgid ""
 "Sets of maintainers (or :doc:`organizations </commercial/organizations>` on |"
 "com_brand|)"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:70
+#: ../../../guides/setup/monorepo.rst:85
 msgid ":doc:`Custom redirect rules </guides/custom-domains>`"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:71
+#: ../../../guides/setup/monorepo.rst:86
 msgid ":doc:`Custom domains </guides/custom-domains>`"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:72
+#: ../../../guides/setup/monorepo.rst:87
 msgid ":doc:`Automation rules </automation-rules>`"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:73
+#: ../../../guides/setup/monorepo.rst:88
 msgid ":doc:`Traffic analytics </traffic-analytics>`"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:74
+#: ../../../guides/setup/monorepo.rst:89
 msgid ""
 "Additional documentation tools with individual :doc:`build processes </build-"
 "customization>`: One project might use :doc:`Sphinx <sphinx:index>`, while "
 "another project setup might use `Asciidoctor <https://asciidoctor.org/>`__."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:78
+#: ../../../guides/setup/monorepo.rst:93
 msgid ""
 "...and much more. *All* settings for a Read the Docs project is available "
 "for each individual project."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:82
+#: ../../../guides/setup/monorepo.rst:97
 msgid ":doc:`/guides/subprojects`"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:83
+#: ../../../guides/setup/monorepo.rst:98
 msgid ""
 "More information on nesting one project inside another project. In this "
 "setup, it is still possible to use the same monorepo for each subproject."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:87
+#: ../../../guides/setup/monorepo.rst:102
 msgid "Other tips"
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:89
+#: ../../../guides/setup/monorepo.rst:104
 msgid ""
 "For a monorepo, it's not desirable to have changes in unrelated sub-folders "
 "trigger new builds."
 msgstr ""
 
-#: ../../../guides/setup/monorepo.rst:92
+#: ../../../guides/setup/monorepo.rst:107
 msgid ""
 "Therefore, you should consider setting up :doc:`conditional build "
 "cancellation rules </guides/build/skip-build>`. The configuration is added "
