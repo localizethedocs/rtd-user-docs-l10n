@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-17 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/best-practice/links.rst:6
+msgid "Best practices for linking to your documentation"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:8
+msgid ""
+"Once you start to publish documentation, external sources will inevitably "
+"link to specific pages in your documentation."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:11
+msgid ""
+"Sources of incoming links vary greatly depending on the type of "
+"documentation project that is published. They can include everything from "
+"old emails to GitHub issues, wiki articles, software comments, PDF "
+"publications, or StackOverflow answers. Most of these incoming sources are "
+"not in your control."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:15
+msgid ""
+"Read the Docs makes it easier to create and manage incoming links by "
+"redirecting certain URLs automatically and giving you access to define your "
+"own redirects."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:18
+msgid ""
+"In this article, we explain how our built-in redirects work and what we "
+"consider \"best practice\" for managing incoming links."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:23
+msgid ":doc:`/versions`"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:24
+msgid ""
+"Read more about how to handle versioned documentation and URL structures."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:26
+msgid ":doc:`/user-defined-redirects`"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:27
+msgid ""
+"Overview of all the redirect features available on Read the Docs. Many of "
+"the redirect features are useful either for building external links or "
+"handling requests to old URLs."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:30
+msgid ":doc:`/guides/redirects`"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:31
+msgid ""
+"How to add a user-defined redirect, step-by-step. Useful if your content "
+"changes location!"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:36
+msgid "Best practice: \"permalink\" your pages"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:38
+msgid ""
+"You might be familiar with the concept of `permalinks`_ from blogging. The "
+"idea is that a blog post receives a unique link as soon as it's published "
+"and that the link does not change afterward. Incoming sources can reference "
+"the blog post even though the blog changes structure or the post title "
+"changes."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:42
+msgid ""
+"When creating an external link to a specific documentation page, chances are "
+"that the page is moved as the documentation changes over time."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:45
+msgid ""
+"How should a permalink look for a documentation project? Firstly, you should "
+"know that a *permalink* does not really exist in documentation but it is the "
+"result of careful actions to avoid breaking incoming links."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:48
+msgid ""
+"As a documentation owner, you most likely want users clicking on incoming "
+"links to see the latest version of the page."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:54
+msgid "Good practice ✅"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:56
+msgid ""
+"Use :ref:`page redirects <user-defined-redirects:Page redirects>` if you are "
+"linking to the page in the :term:`default version` of the default language. "
+"This allows links to continue working even if those defaults change."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:57
+msgid ""
+"If you move a page that likely has incoming references, :doc:`create a "
+"custom redirect rule </guides/redirects>`."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:58
+msgid ""
+"Links to other Sphinx projects should use :doc:`intersphinx </guides/"
+"intersphinx>`."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:59
+msgid "Use minimal filenames that don't require renaming often."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:60
+msgid ""
+"When possible, keep original file names rather than going for low-impact URL "
+"renaming. Renaming an article's title is great for the reader and great for "
+"SEO, but this does not have to involve the URL."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:64
+msgid ""
+"Establish your understanding of the *latest* and :term:`default version` of "
+"your documentation at the beginning. Changing their meaning is disruptive to "
+"incoming links."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:65
+msgid ""
+"Keep development versions :ref:`hidden <versions:Version states>` so people "
+"do not find them on search engines by mistake. This is the best way to "
+"ensure that nobody links to URLs that are intended for development purposes."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:67
+msgid ""
+"Use a :ref:`version warning notifications <versions:Version warning "
+"notifications>` to ensure the reader is aware in case they are reading an "
+"old (archived) version."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:71
+msgid "Using Sphinx?"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:72
+msgid ""
+"If you are using ``:ref:`` for :doc:`cross-referencing </guides/cross-"
+"referencing-with-sphinx>`, you may add as many reference labels to a "
+"headline as you need, keeping old reference labels. This will make "
+"refactoring documentation easier and avoid that external projects "
+"referencing your documentation through :doc:`intersphinx </guides/"
+"intersphinx>` break."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:77
+msgid "Questionable practice 🟡"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:79
+msgid ""
+"Avoid using specific versions in links unless users need that exact version. "
+"Versions get outdated."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:81
+msgid ""
+"Avoid using a public ``latest`` for development versions and do not make "
+"your *default version* a development branch. Publishing development branches "
+"can mean that users are reading instructions for unreleased software or "
+"draft documentation."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:86
+msgid "404 pages are also okay!"
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:87
+msgid ""
+"If documentation pages have been removed or moved, it can make the "
+"maintainer of the referring website aware that they need to update their "
+"link. Users will be aware that the documentation **project** still exists "
+"but has changed."
+msgstr ""
+
+#: ../../../guides/best-practice/links.rst:91
+msgid ""
+"The default Read the Docs 404 page is designed to be helpful, but you can "
+"also design your own, see :doc:`/reference/404-not-found`."
+msgstr ""
