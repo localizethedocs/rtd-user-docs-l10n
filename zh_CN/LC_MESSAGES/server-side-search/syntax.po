@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../server-side-search/syntax.rst:2
+msgid "Search query syntax"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:4
+msgid ""
+"When searching on Read the Docs with :doc:`server side search </server-side-"
+"search/index>`, you can use some parameters in your query in order to search "
+"on given projects, versions, or to get more accurate results."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:9
+msgid "Parameters"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:11
+msgid ""
+"Parameters are in the form of ``name:value``, they can appear anywhere in "
+"the query, and depending on the parameter, you can use one or more of them."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:15
+msgid ""
+"Any other text that isn't a parameter will be part of the search query. If "
+"you don't want your search term to be interpreted as a parameter, you can "
+"escape it like ``project\\:docs``."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:21
+msgid "Unknown parameters like ``foo:bar`` don't require escaping."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:23
+msgid "The available parameters are:"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:25
+msgid "project"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:26
+msgid ""
+"Indicates the project and version to include results from (this doesn’t "
+"include subprojects or translations). If the version isn’t provided, the "
+"default version will be used. More than one parameter can be included."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:31
+#: ../../../server-side-search/syntax.rst:45
+#: ../../../server-side-search/syntax.rst:58
+#: ../../../server-side-search/syntax.rst:101
+#: ../../../server-side-search/syntax.rst:113
+#: ../../../server-side-search/syntax.rst:125
+#: ../../../server-side-search/syntax.rst:136
+msgid "Examples:"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:33
+msgid "``project:docs test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:34
+msgid "``project:docs/latest test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:35
+msgid "``project:docs/stable project:dev test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:37
+msgid "subprojects"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:38
+msgid ""
+"Include results from the given project and its subprojects. If the version "
+"isn't provided, the default version of all projects will be used. If a "
+"version is provided, all subprojects matching that version will be included, "
+"and if they don't have a version with that name, we use their default "
+"version. More than one parameter can be included."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:47
+msgid "``subprojects:docs test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:48
+msgid "``subprojects:docs/latest test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:49
+msgid "``subprojects:docs/stable subprojects:dev test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:51
+msgid "user"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:52
+msgid ""
+"Include results from projects the given user has access to. The only "
+"supported value is ``@me``, which is an alias for the current user. Only one "
+"parameter can be included. If duplicated, the last one will override the "
+"previous one."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:60
+msgid "``user:@me test``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:63
+msgid "Permissions"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:65
+msgid ""
+"If the user doesn’t have permission over one version, or if the version "
+"doesn’t exist, we don’t include results from that version."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:68
+msgid ""
+"The API will return all the projects that were used in the final search, "
+"with that information you can check which projects were used in the search."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:72
+msgid "Limitations"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:74
+msgid ""
+"In order to keep our search usable for everyone, you can search up to 100 "
+"projects at a time. If the resulting query includes more than 100 projects, "
+"they will be omitted from the final search."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:79
+msgid ""
+"This syntax is only available when using our search API V3 or when using the "
+"global search (https://app.readthedocs.org/search/)."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:82
+msgid ""
+"Searching multiple versions of the same project isn't supported, the last "
+"version will override the previous one."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:86
+msgid "Special queries"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:88
+msgid ""
+"Read the Docs uses the `Simple Query String`_ feature from `Elasticsearch`_. "
+"This means that as the search query becomes more complex, the results "
+"yielded become more specific."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:96
+msgid "Exact phrase search"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:98
+msgid ""
+"If a query is wrapped in ``\"`` (double quotes), then only those results "
+"where the phrase is exactly matched will be returned."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:103
+msgid "``\"custom css\"``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:104
+msgid "``\"adding a subproject\"``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:105
+msgid "``\"when a 404 is returned\"``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:108
+msgid "Prefix query"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:110
+msgid ""
+"``*`` (asterisk) at the end of any term signifies a prefix query. It returns "
+"the results containing the words with the specific prefix."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:115
+msgid "``test*``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:116
+msgid "``build*``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:119
+msgid "Fuzziness"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:121
+msgid ""
+"``~N`` (tilde followed by a number) after a word indicates edit distance "
+"(fuzziness). This type of query is helpful when the exact spelling of the "
+"keyword is unknown. It returns results that contain terms similar to the "
+"search term."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:127
+msgid "``doks~1``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:128
+msgid "``test~2``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:129
+msgid "``getter~2``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:132
+msgid "Words close to each other"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:134
+msgid ""
+"``~N`` (tilde followed by a number) after a phrase can be used to match "
+"words that are near to each other."
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:138
+msgid "``\"dashboard admin\"~2``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:139
+msgid "``\"single documentation\"~1``"
+msgstr ""
+
+#: ../../../server-side-search/syntax.rst:140
+msgid "``\"read the docs policy\"~5``"
+msgstr ""
