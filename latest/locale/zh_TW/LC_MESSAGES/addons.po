@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../../addons.rst:29
 msgid ":doc:`Traffic analytics </traffic-analytics>`"
-msgstr ""
+msgstr ":doc:`流量分析 </traffic-analytics>`"
 
 #: ../../../addons.rst:30
 msgid "See what pages your users are reading"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: ../../../addons.rst:43
 msgid "Go to the new :term:`dashboard`."
-msgstr ""
+msgstr "前往新的\\ :term:`dashboard`。"
 
 #: ../../../addons.rst:44
 msgid "Click on a project name."
@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../../addons.rst:45
 msgid "Go to :guilabel:`Settings`."
-msgstr ""
+msgstr "前往\\ :guilabel:`Settings`。"
 
 #: ../../../addons.rst:46
 msgid "In the left bar, go to :guilabel:`Addons`."

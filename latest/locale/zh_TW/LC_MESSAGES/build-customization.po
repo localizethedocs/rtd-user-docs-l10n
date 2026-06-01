@@ -151,7 +151,7 @@ msgstr ""
 #: ../../../build-customization.rst:596 ../../../build-customization.rst:617
 #: ../../../build-customization.rst:648
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../build-customization.rst:52
 msgid ""

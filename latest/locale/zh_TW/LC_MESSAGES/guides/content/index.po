@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../guides/content/index.rst:55
 msgid "Using traffic analytics"
-msgstr ""
+msgstr "使用流量分析"
 
 #: ../../../guides/content/index.rst:55
 msgid "Using search analytics"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../guides/content/index.rst:55
 msgid "Enabling offline formats"
-msgstr ""
+msgstr "啟用離線格式"
 
 #: ../../../guides/content/index.rst:55
 msgid "Embedding content from your documentation"

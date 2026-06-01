@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../versions.rst:2
 msgid "Versions"
-msgstr ""
+msgstr "版本"
 
 #: ../../../versions.rst:4
 msgid ""
@@ -299,7 +299,7 @@ msgstr ""
 
 #: ../../../versions.rst:126
 msgid "Disabling versioning completely"
-msgstr ""
+msgstr "完全停用版本控制"
 
 #: ../../../versions.rst:128
 msgid ""

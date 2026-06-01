@@ -160,7 +160,7 @@ msgstr ""
 
 #: ../../../../../CHANGELOG.rst:35
 msgid "New Contributors"
-msgstr ""
+msgstr "新的貢獻者"
 
 #: ../../../../../CHANGELOG.rst:37
 msgid ""

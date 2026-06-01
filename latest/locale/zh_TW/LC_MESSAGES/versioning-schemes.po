@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../versioning-schemes.rst:15
 msgid ":doc:`/versions`"
-msgstr ""
+msgstr ":doc:`/versions`"
 
 #: ../../../versioning-schemes.rst:16
 msgid "General explanation of how versioning works on Read the Docs."
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../versioning-schemes.rst:18
 msgid ":doc:`/url-path-prefixes`"
-msgstr ""
+msgstr ":doc:`/url-path-prefixes`"
 
 #: ../../../versioning-schemes.rst:19
 msgid ""

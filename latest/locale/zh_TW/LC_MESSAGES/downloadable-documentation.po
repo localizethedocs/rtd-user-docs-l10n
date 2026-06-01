@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../downloadable-documentation.rst:2
 msgid "Offline formats (PDF, ePub, HTML)"
-msgstr ""
+msgstr "離線格式（PDF、ePub、HTML）"
 
 #: ../../../downloadable-documentation.rst:4
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../downloadable-documentation.rst:33
 msgid "Accessing offline formats"
-msgstr ""
+msgstr "存取離線格式"
 
 #: ../../../downloadable-documentation.rst:35
 msgid ""

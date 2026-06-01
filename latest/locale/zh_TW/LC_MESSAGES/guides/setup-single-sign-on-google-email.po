@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../shared/organization-permissions.rst:2
 msgid "Organization permissions"
-msgstr ""
+msgstr "組織權限"
 
 #: ../../../shared/organization-permissions.rst:4
 msgid ""
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:37
 msgid "Enabling SSO"
-msgstr ""
+msgstr "啟用 SSO"
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:39
 msgid ""

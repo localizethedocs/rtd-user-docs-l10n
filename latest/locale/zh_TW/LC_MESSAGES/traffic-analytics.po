@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../traffic-analytics.rst:2
 msgid "Traffic analytics"
-msgstr ""
+msgstr "流量分析"
 
 #: ../../../traffic-analytics.rst:4
 msgid ""
@@ -48,11 +48,11 @@ msgstr ""
 
 #: ../../../traffic-analytics.rst:24
 msgid "Enabling traffic analytics"
-msgstr ""
+msgstr "啟用流量分析"
 
 #: ../../../traffic-analytics.rst:26
 msgid "Go to the new :term:`dashboard`."
-msgstr ""
+msgstr "前往新的\\ :term:`dashboard`。"
 
 #: ../../../traffic-analytics.rst:27
 msgid "Click on a project name."
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../../traffic-analytics.rst:44
 msgid ":doc:`/search-analytics`"
-msgstr ""
+msgstr ":doc:`/search-analytics`"
 
 #: ../../../traffic-analytics.rst:45
 msgid "See what users are searching for in your documentation."

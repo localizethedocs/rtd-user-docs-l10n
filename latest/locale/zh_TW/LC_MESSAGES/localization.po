@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../../../localization.rst:80
 msgid "What is your source language?"
-msgstr ""
+msgstr "你的源文語言是什麼？"
 
 #: ../../../localization.rst:81
 msgid "When are your translated versions published?"

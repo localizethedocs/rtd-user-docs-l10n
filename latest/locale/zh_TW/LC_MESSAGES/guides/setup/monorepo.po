@@ -158,7 +158,7 @@ msgstr ""
 
 #: ../../../guides/setup/monorepo.rst:73
 msgid ":doc:`Traffic analytics </traffic-analytics>`"
-msgstr ""
+msgstr ":doc:`流量分析 </traffic-analytics>`"
 
 #: ../../../guides/setup/monorepo.rst:74
 msgid ""

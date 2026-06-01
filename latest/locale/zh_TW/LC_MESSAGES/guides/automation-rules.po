@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../guides/automation-rules.rst:11
 msgid ":doc:`/versions`"
-msgstr ""
+msgstr ":doc:`/versions`"
 
 #: ../../../guides/automation-rules.rst:12
 msgid "Learn more about versioning of documentation in general."
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../guides/automation-rules.rst:14
 msgid ":doc:`/automation-rules`"
-msgstr ""
+msgstr ":doc:`/automation-rules`"
 
 #: ../../../guides/automation-rules.rst:15
 msgid "Reference for all different rules and actions possible with automation."

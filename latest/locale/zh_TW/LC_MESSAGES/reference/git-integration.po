@@ -438,7 +438,7 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:203
 msgid "Organization permissions"
-msgstr ""
+msgstr "組織權限"
 
 #: ../../../reference/git-integration.rst:204
 msgid "Members (read only)"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:2
 msgid "How to enable offline formats"
-msgstr ""
+msgstr "如何啟用離線格式"
 
 #: ../../../guides/enable-offline-formats.rst:4
 msgid ""
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:10
 msgid "Enabling offline formats"
-msgstr ""
+msgstr "啟用離線格式"
 
 #: ../../../guides/enable-offline-formats.rst:12
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:31
 msgid "Deleting offline formats"
-msgstr ""
+msgstr "刪除離線格式"
 
 #: ../../../guides/enable-offline-formats.rst:33
 msgid ""

@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../../../reference/environment-variables.rst:133
 msgid ":doc:`/environment-variables`"
-msgstr ""
+msgstr ":doc:`/environment-variables`"
 
 #: ../../../reference/environment-variables.rst:134
 msgid ""

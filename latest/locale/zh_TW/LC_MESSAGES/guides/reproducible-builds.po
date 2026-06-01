@@ -64,7 +64,7 @@ msgstr ""
 #: ../../../guides/reproducible-builds.rst:33
 #: ../../../guides/reproducible-builds.rst:54
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../guides/reproducible-builds.rst:33
 msgid ""
@@ -210,7 +210,7 @@ msgstr ":doc:`/config-file/v2`"
 
 #: ../../../guides/reproducible-builds.rst:152
 msgid "Configuration file reference"
-msgstr ""
+msgstr "組態檔參考"
 
 #: ../../../guides/reproducible-builds.rst:153
 msgid ":doc:`/builds`"

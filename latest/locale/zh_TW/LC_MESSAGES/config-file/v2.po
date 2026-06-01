@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:2
 msgid "Configuration file reference"
-msgstr ""
+msgstr "組態檔參考"
 
 #: ../../../config-file/v2.rst:4
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 #: ../../../config-file/v2.rst:26 ../../../config-file/v2.rst:33
 #: ../../../config-file/v2.rst:642
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../config-file/v2.rst:26
 msgid ""
@@ -1162,7 +1162,7 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:679
 msgid "Configuration for Sphinx documentation."
-msgstr ""
+msgstr "Sphinx 文件的組態。"
 
 #: ../../../config-file/v2.rst:681
 msgid ""
@@ -1238,7 +1238,7 @@ msgstr "mkdocs"
 
 #: ../../../config-file/v2.rst:735
 msgid "Configuration for MkDocs documentation."
-msgstr ""
+msgstr "MkDocs 文件的組態。"
 
 #: ../../../config-file/v2.rst:737
 msgid ""

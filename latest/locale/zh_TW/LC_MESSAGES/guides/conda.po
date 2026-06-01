@@ -199,7 +199,7 @@ msgstr ""
 
 #: ../../../guides/conda.rst:116
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../guides/conda.rst:116
 msgid ""

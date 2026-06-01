@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../../../subprojects.rst:67
 msgid ":doc:`/url-path-prefixes`"
-msgstr ""
+msgstr ":doc:`/url-path-prefixes`"
 
 #: ../../../subprojects.rst:68
 msgid ""
