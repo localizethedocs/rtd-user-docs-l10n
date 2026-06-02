@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:2
 msgid "URL path prefixes"
-msgstr ""
+msgstr "網址路徑前綴"
 
 #: ../../../url-path-prefixes.rst:4
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:21
 msgid "Project type"
-msgstr ""
+msgstr "專案型別"
 
 #: ../../../url-path-prefixes.rst:22
 msgid "Default URL pattern"

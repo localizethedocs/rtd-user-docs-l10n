@@ -154,7 +154,7 @@ msgstr ""
 
 #: ../../../guides/intersphinx.rst:91
 msgid ":ref:`sphinx:ref-role`"
-msgstr ""
+msgstr ":ref:`sphinx:ref-role`"
 
 #: ../../../guides/intersphinx.rst:92
 msgid ":ref:`:ref: role <sphinx:ref-role>`"
@@ -166,7 +166,7 @@ msgstr ":doc:`sphinx:usage/extensions/intersphinx`"
 
 #: ../../../guides/intersphinx.rst:94
 msgid ":doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`"
-msgstr ""
+msgstr ":doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`"
 
 #: ../../../guides/intersphinx.rst:98
 msgid ""

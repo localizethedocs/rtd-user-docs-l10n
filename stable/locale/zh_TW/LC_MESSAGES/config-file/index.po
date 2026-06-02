@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../config-file/index.rst:2
 msgid "Configuration file overview"
-msgstr ""
+msgstr "組態檔概覽"
 
 #: ../../../config-file/index.rst:4
 msgid ""
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../config-file/index.rst:48 ../../../config-file/index.rst:59
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../config-file/index.rst:48
 msgid ""

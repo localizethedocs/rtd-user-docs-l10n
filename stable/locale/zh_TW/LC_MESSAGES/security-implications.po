@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../security-implications.rst:2
 msgid "Security considerations for documentation pages"
-msgstr ""
+msgstr "文件頁面的安全性考量"
 
 #: ../../../security-implications.rst:4
 msgid ""

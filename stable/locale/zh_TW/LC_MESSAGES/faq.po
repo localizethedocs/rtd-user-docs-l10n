@@ -524,7 +524,7 @@ msgstr ""
 
 #: ../../../faq.rst:337
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../faq.rst:337
 msgid ""

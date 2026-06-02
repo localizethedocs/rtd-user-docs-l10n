@@ -242,4 +242,4 @@ msgstr ""
 
 #: ../../../guides/pull-requests.rst:102
 msgid ":ref:`github-permission-troubleshooting`"
-msgstr ""
+msgstr ":ref:`github-permission-troubleshooting`"

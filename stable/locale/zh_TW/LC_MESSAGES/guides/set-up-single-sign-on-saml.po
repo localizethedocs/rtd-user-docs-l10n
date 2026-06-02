@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../shared/organization-permissions.rst:2
 msgid "Organization permissions"
-msgstr ""
+msgstr "組織權限"
 
 #: ../../../shared/organization-permissions.rst:4
 msgid ""

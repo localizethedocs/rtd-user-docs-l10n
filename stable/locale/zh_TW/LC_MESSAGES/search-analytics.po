@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../search-analytics.rst:67
 msgid ":doc:`/traffic-analytics`"
-msgstr ""
+msgstr ":doc:`/traffic-analytics`"
 
 #: ../../../search-analytics.rst:68
 msgid "See how users are using your documentation."

@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../continuous-deployment.rst:61
 msgid ":doc:`/automation-rules`"
-msgstr ""
+msgstr ":doc:`/automation-rules`"
 
 #: ../../../continuous-deployment.rst:63
 msgid ":doc:`/flyout-menu`"

@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../guides/environment-variables.rst:9
 msgid ":doc:`/environment-variables`"
-msgstr ""
+msgstr ":doc:`/environment-variables`"
 
 #: ../../../guides/environment-variables.rst:10
 msgid ""
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../../guides/environment-variables.rst:68
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../guides/environment-variables.rst:68
 msgid ""

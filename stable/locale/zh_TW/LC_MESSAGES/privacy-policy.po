@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:7
 msgid "Effective date: **February 21, 2023**"
-msgstr ""
+msgstr "有效日期：**2023 年 2 月 21 日**"
 
 #: ../../../privacy-policy.rst:9
 msgid ""
@@ -255,7 +255,7 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:129
 msgid "How we share the information we collect"
-msgstr ""
+msgstr "我們如何分享我們收集的資訊"
 
 #: ../../../privacy-policy.rst:131
 msgid ""

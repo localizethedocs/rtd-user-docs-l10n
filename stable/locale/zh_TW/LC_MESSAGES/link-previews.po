@@ -53,7 +53,7 @@ msgstr "啟用連結預覽"
 
 #: ../../../link-previews.rst:21
 msgid "Go to the new :term:`dashboard`."
-msgstr ""
+msgstr "前往新的\\ :term:`dashboard`。"
 
 #: ../../../link-previews.rst:22
 msgid "Click on a project name."

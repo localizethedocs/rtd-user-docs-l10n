@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../guides/private-submodules.rst:2
 msgid "How to use private Git submodules"
-msgstr ""
+msgstr "如何使用私有的 Git 子模組"
 
 #: ../../../guides/private-submodules.rst:6
 msgid "This guide is for :doc:`/commercial/index`."

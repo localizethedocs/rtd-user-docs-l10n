@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../explanation/configuration-file.rst:20
 msgid "Configuration as code"
-msgstr ""
+msgstr "組態即程式碼"
 
 #: ../../../explanation/configuration-file.rst:21
 msgid ""
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../../explanation/configuration-file.rst:76
 msgid "Configuration as Code"
-msgstr ""
+msgstr "組態即程式碼"
 
 #: ../../../explanation/configuration-file.rst:78
 msgid ""

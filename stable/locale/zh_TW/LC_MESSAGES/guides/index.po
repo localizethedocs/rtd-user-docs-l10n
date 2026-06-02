@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../guides/index.rst:10
 msgid "Upgrading and maintaining projects"
-msgstr ""
+msgstr "升級與維護專案"
 
 #: ../../../guides/index.rst:10
 msgid "Content, themes and SEO"

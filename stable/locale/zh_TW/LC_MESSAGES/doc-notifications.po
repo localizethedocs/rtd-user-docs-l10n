@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../doc-notifications.rst:22
 msgid "Go to the :term:`dashboard`."
-msgstr ""
+msgstr "前往\\ :term:`dashboard`。"
 
 #: ../../../doc-notifications.rst:23
 msgid "Click on a project name."
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../doc-notifications.rst:24
 msgid "Go to :guilabel:`Settings`."
-msgstr ""
+msgstr "前往\\ :guilabel:`Settings`。"
 
 #: ../../../doc-notifications.rst:25
 msgid "In the left bar, go to :guilabel:`Addons`."

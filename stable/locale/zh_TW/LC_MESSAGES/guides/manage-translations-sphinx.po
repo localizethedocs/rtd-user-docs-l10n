@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:30
 msgid "Create translatable files"
-msgstr ""
+msgstr "建立可翻譯檔案"
 
 #: ../../../guides/manage-translations-sphinx.rst:32
 msgid ""
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:38
 msgid "sphinx-build -b gettext . _build/gettext"
-msgstr ""
+msgstr "sphinx-build -b gettext . _build/gettext"
 
 #: ../../../guides/manage-translations-sphinx.rst:41
 msgid ""
@@ -159,6 +159,13 @@ msgid ""
 "    └── LC_MESSAGES\n"
 "        └── index.po"
 msgstr ""
+"locale\n"
+"├── es_AR\n"
+"│   └── LC_MESSAGES\n"
+"│       └── index.po\n"
+"└── pt_BR\n"
+"    └── LC_MESSAGES\n"
+"        └── index.po"
 
 #: ../../../guides/manage-translations-sphinx.rst:90
 msgid ""
@@ -180,7 +187,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:106
 msgid "Using Transifex"
-msgstr ""
+msgstr "使用 Transifex"
 
 #: ../../../guides/manage-translations-sphinx.rst:108
 msgid ""
@@ -208,6 +215,8 @@ msgid ""
 "curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | "
 "bash"
 msgstr ""
+"curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | "
+"bash"
 
 #: ../../../guides/manage-translations-sphinx.rst:125
 msgid ""
@@ -246,6 +255,9 @@ msgid ""
 "rest_hostname = https://rest.api.transifex.com\n"
 "token         = 1/xxxx"
 msgstr ""
+"[https://www.transifex.com]\n"
+"rest_hostname = https://rest.api.transifex.com\n"
+"token         = 1/xxxx"
 
 #: ../../../guides/manage-translations-sphinx.rst:150
 msgid ""
@@ -263,6 +275,12 @@ msgid ""
 "    --transifex-organization-name $TRANSIFEX_ORGANIZATION \\\n"
 "    --transifex-project-name $TRANSIFEX_PROJECT"
 msgstr ""
+"sphinx-intl create-txconfig\n"
+"sphinx-intl update-txconfig-resources \\\n"
+"    --pot-dir _build/gettext \\\n"
+"    --locale-dir locale \\\n"
+"    --transifex-organization-name $TRANSIFEX_ORGANIZATION \\\n"
+"    --transifex-project-name $TRANSIFEX_PROJECT"
 
 #: ../../../guides/manage-translations-sphinx.rst:163
 msgid ""
@@ -278,7 +296,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:177
 msgid "tx push --source"
-msgstr ""
+msgstr "tx push --source"
 
 #: ../../../guides/manage-translations-sphinx.rst:178
 msgid ""
@@ -317,7 +335,7 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:202
 msgid "sphinx-build -b html -D language=es_AR . _build/html/es_AR"
-msgstr ""
+msgstr "sphinx-build -b html -D language=es_AR . _build/html/es_AR"
 
 #: ../../../guides/manage-translations-sphinx.rst:205
 msgid ""

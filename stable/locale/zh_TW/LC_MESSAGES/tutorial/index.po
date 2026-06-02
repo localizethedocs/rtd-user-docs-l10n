@@ -479,7 +479,7 @@ msgstr ""
 #: ../../../tutorial/index.rst:252 ../../../tutorial/index.rst:325
 #: ../../../tutorial/index.rst:358 ../../../tutorial/index.rst:383
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../tutorial/index.rst:252
 msgid ""
@@ -854,7 +854,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:526
 msgid "Understanding traffic analytics"
-msgstr ""
+msgstr "理解流量分析"
 
 #: ../../../tutorial/index.rst:528
 msgid ""

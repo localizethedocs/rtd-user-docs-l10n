@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../../../environment-variables.rst:131
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../environment-variables.rst:131
 msgid ""

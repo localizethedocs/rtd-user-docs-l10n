@@ -75,6 +75,8 @@ msgid ""
 "latex_engine = \"platex\"\n"
 "latex_use_xindy = False"
 msgstr ""
+"latex_engine = \"platex\"\n"
+"latex_use_xindy = False"
 
 #: ../../../guides/pdf-non-ascii-languages.rst:46
 msgid ""

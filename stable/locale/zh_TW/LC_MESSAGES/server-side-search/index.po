@@ -186,7 +186,7 @@ msgstr ""
 
 #: ../../../server-side-search/index.rst:93
 msgid "Go to the :term:`dashboard`."
-msgstr ""
+msgstr "前往\\ :term:`dashboard`。"
 
 #: ../../../server-side-search/index.rst:94
 msgid "Click on a project name."
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../../../server-side-search/index.rst:95
 msgid "Go to :guilabel:`Settings`."
-msgstr ""
+msgstr "前往\\ :guilabel:`Settings`。"
 
 #: ../../../server-side-search/index.rst:96
 msgid "In the left bar, go to :guilabel:`Search`."
