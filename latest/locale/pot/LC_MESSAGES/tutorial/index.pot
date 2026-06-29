@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 09:27+0000\n"
+"POT-Creation-Date: 2026-06-29 13:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr ""
 #: ../../../tutorial/index.rst:8
 msgid ""
 "Find out the `differences between Read the Docs Community and Read the Docs "
-"for Business <https://about.readthedocs.com/pricing/#/community>`_."
+"Business <https://about.readthedocs.com/pricing/#/community>`_."
 msgstr ""
 
 #: ../../../tutorial/index.rst:10

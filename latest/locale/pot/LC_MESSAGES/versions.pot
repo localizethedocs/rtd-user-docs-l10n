@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 09:27+0000\n"
+"POT-Creation-Date: 2026-06-29 13:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,90 +76,91 @@ msgstr ""
 #: ../../../versions.rst:30
 msgid ""
 "If you have at least one tag, tags will take preference over branches when "
-"selecting the stable version."
+"selecting the stable version. The comparison uses the tag or branch name "
+"from your Git repository, not the version slug shown in URLs."
 msgstr ""
 
-#: ../../../versions.rst:33
+#: ../../../versions.rst:35
 msgid ""
 "When you have :doc:`/reference/git-integration` configured for your "
 "repository, we will automatically build each version when you push a commit."
 msgstr ""
 
-#: ../../../versions.rst:37
+#: ../../../versions.rst:39
 msgid "Version states"
 msgstr ""
 
-#: ../../../versions.rst:39
+#: ../../../versions.rst:41
 msgid ""
 "Each version of your documentation has a state that changes the visibility "
 "of it to other users."
 msgstr ""
 
-#: ../../../versions.rst:41
+#: ../../../versions.rst:43
 msgid "**Active** or **Inactive**"
 msgstr ""
 
-#: ../../../versions.rst:42
+#: ../../../versions.rst:44
 msgid ""
 "**Active** docs are visible, and builds can be triggered for the "
 "documentation."
 msgstr ""
 
-#: ../../../versions.rst:43
+#: ../../../versions.rst:45
 msgid ""
 "**Inactive** versions *have their documentation content deleted* and builds "
 "cannot be triggered."
 msgstr ""
 
-#: ../../../versions.rst:45
+#: ../../../versions.rst:47
 msgid "**Hidden** or **Not hidden**"
 msgstr ""
 
-#: ../../../versions.rst:46
+#: ../../../versions.rst:48
 msgid ""
 "**Not hidden** docs are listed on the :term:`flyout menu` on the docs site "
 "and are shown in search results."
 msgstr ""
 
-#: ../../../versions.rst:48
+#: ../../../versions.rst:50
 msgid ""
 "**Hidden** docs are not listed on the :term:`flyout menu` on the docs site "
 "and are not shown in search results."
 msgstr ""
 
-#: ../../../versions.rst:51
+#: ../../../versions.rst:53
 msgid ""
 "Hiding a version doesn't make it private, any user with a link to its docs "
 "can still see it. This is useful when:"
 msgstr ""
 
-#: ../../../versions.rst:55
+#: ../../../versions.rst:57
 msgid "You no longer support a version, but you don't want to remove its docs."
 msgstr ""
 
-#: ../../../versions.rst:56
+#: ../../../versions.rst:58
 msgid ""
 "You have a work in progress version and don't want to publish its docs just "
 "yet."
 msgstr ""
 
-#: ../../../versions.rst:58
+#: ../../../versions.rst:60
 msgid ""
 "Hidden versions are listed as ``Disallow: /path/to/version/`` in the "
 "default :doc:`/reference/robots` created by Read the Docs."
 msgstr ""
 
-#: ../../../versions.rst:61
+#: ../../../versions.rst:63
 msgid "**Public** or **Private** (only available on :doc:`/commercial/index`)"
 msgstr ""
 
-#: ../../../versions.rst:62
+#: ../../../versions.rst:64
 msgid ""
 "**Public** versions are visible to everyone, and are browsable by "
 "unauthenticated users."
 msgstr ""
 
-#: ../../../versions.rst:63
+#: ../../../versions.rst:65
 msgid ""
 "**Private** versions are available only to people who have permissions to "
 "see them. They will return a `404 Not Found` when visited by people without "
@@ -167,71 +168,71 @@ msgid ""
 "commercial/sharing`."
 msgstr ""
 
-#: ../../../versions.rst:67
+#: ../../../versions.rst:69
 msgid ""
 "If you want unauthenticated people to be able to view the build page of your "
 "public versions, you'll need to the set the :doc:`privacy level of your "
 "project </commercial/privacy-level>` to public."
 msgstr ""
 
-#: ../../../versions.rst:71
+#: ../../../versions.rst:73
 msgid "Version syncing"
 msgstr ""
 
-#: ../../../versions.rst:73
+#: ../../../versions.rst:75
 msgid "Versions are automatically synced when the following events happen:"
 msgstr ""
 
-#: ../../../versions.rst:75
+#: ../../../versions.rst:77
 msgid ""
 "A commit is pushed to your Git repository and you have a :doc:`Git "
 "integration </reference/git-integration>` configured."
 msgstr ""
 
-#: ../../../versions.rst:76
+#: ../../../versions.rst:78
 msgid "A build for any of your version is triggered."
 msgstr ""
 
-#: ../../../versions.rst:78
+#: ../../../versions.rst:80
 msgid ""
 "If you find that your versions are out of date, triggering a build is the "
 "best approach to ensuring they are synced again."
 msgstr ""
 
-#: ../../../versions.rst:82
+#: ../../../versions.rst:84
 msgid "Managing your versions"
 msgstr ""
 
-#: ../../../versions.rst:84
+#: ../../../versions.rst:86
 msgid ""
 "When you activate a version, a :doc:`build </builds>` will be triggered to "
 "automatically deploy your documentation."
 msgstr ""
 
-#: ../../../versions.rst:87
+#: ../../../versions.rst:89
 msgid ""
 "When you deactivate a version, all of the artifacts of your version will be "
 "deleted and a ``404 Not Found`` page will be served for it."
 msgstr ""
 
-#: ../../../versions.rst:90
+#: ../../../versions.rst:92
 msgid ""
 "You can change the state for each version of your documentation in the :"
 "guilabel:`Versions` tab of your project."
 msgstr ""
 
-#: ../../../versions.rst:93
+#: ../../../versions.rst:95
 msgid "Version URL identifier (slug)"
 msgstr ""
 
-#: ../../../versions.rst:95
+#: ../../../versions.rst:97
 msgid ""
 "Each version of your project has a unique URL identifier (slug). This "
 "identifier is used to reference the version in your documentation, :term:"
 "`dashboard`, and :doc:`API </api/index>`."
 msgstr ""
 
-#: ../../../versions.rst:98
+#: ../../../versions.rst:100
 msgid ""
 "A version slug is automatically generated from the name of the branch or tag "
 "in your repository, some special characters like spaces and ``/`` are "
@@ -239,14 +240,14 @@ msgid ""
 "slug collides with another one, a suffix is added (``_a``, ``_b``, etc.)."
 msgstr ""
 
-#: ../../../versions.rst:102
+#: ../../../versions.rst:104
 msgid ""
 "You can change the slug of a version in :ref:`the versions tab of your "
 "project <versions:Managing your versions>`, but you should take the "
 "following into account:"
 msgstr ""
 
-#: ../../../versions.rst:105 ../../../versions.rst:122
+#: ../../../versions.rst:107 ../../../versions.rst:124
 msgid ""
 "Changing the slug of an active version will result on its previous "
 "documentation being deleted, and a new build being triggered. Be careful "
@@ -254,14 +255,14 @@ msgid ""
 "anymore."
 msgstr ""
 
-#: ../../../versions.rst:107
+#: ../../../versions.rst:109
 msgid ""
 "Any URL referencing your version with the old slug will return a ``404 Not "
 "Found`` page. You can use :ref:`an exact redirect <user-defined-redirects:"
 "Redirecting an old version to a new one>` to redirect users to the new URL,"
 msgstr ""
 
-#: ../../../versions.rst:109
+#: ../../../versions.rst:111
 msgid ""
 "You may still see the original name of the version in some places, as "
 "changing the slug only affects the URL used in your documentation and how "
@@ -270,7 +271,7 @@ msgid ""
 "readthedocs.org/issues/11979>`__."
 msgstr ""
 
-#: ../../../versions.rst:112
+#: ../../../versions.rst:114
 msgid ""
 "Sorting of versions in the version selector is done based on the slug, "
 "changing the slug of a version may change the order in which they are shown "
@@ -279,87 +280,87 @@ msgid ""
 "issues/11979>`__."
 msgstr ""
 
-#: ../../../versions.rst:115
+#: ../../../versions.rst:117
 msgid ""
 "You can't change the slug of versions that are managed by Read the Docs, "
 "like ``latest`` and ``stable``."
 msgstr ""
 
-#: ../../../versions.rst:116
+#: ../../../versions.rst:118
 msgid "Slugs must be unique for each version of your project."
 msgstr ""
 
-#: ../../../versions.rst:117
+#: ../../../versions.rst:119
 msgid ""
 "The slug can contain lowercase letters, numbers, dashes (``-``), underscores "
 "(``_``) and dots (``.``). If you try to use a slug that contains any other "
 "character, you'll get an error message with a suggestion of a valid slug."
 msgstr ""
 
-#: ../../../versions.rst:126
+#: ../../../versions.rst:128
 msgid "Disabling versioning completely"
 msgstr ""
 
-#: ../../../versions.rst:128
+#: ../../../versions.rst:130
 msgid ""
 "You can :doc:`configure a single version project </versioning-schemes>`, and "
 "the version will be hidden from the URL."
 msgstr ""
 
-#: ../../../versions.rst:132
+#: ../../../versions.rst:134
 msgid "Version warning notifications"
 msgstr ""
 
-#: ../../../versions.rst:134
+#: ../../../versions.rst:136
 msgid ""
 "As part of :doc:`addons`, Read the Docs displays notifications in the "
 "following situations:"
 msgstr ""
 
-#: ../../../versions.rst:136
+#: ../../../versions.rst:138
 msgid "Non-stable notification"
 msgstr ""
 
-#: ../../../versions.rst:137
+#: ../../../versions.rst:139
 msgid ""
 "A notification on all non-stable versions is shown to clearly communicate to "
 "readers they may be reading an outdated version of the documentation."
 msgstr ""
 
-#: ../../../versions.rst:139
+#: ../../../versions.rst:141
 msgid ""
 "Specifically, when a version is being shown that is not the ``stable`` "
 "version, and there is a ``stable`` version available."
 msgstr ""
 
-#: ../../../versions.rst:142
+#: ../../../versions.rst:144
 msgid "Latest version notification"
 msgstr ""
 
-#: ../../../versions.rst:143
+#: ../../../versions.rst:145
 msgid ""
 "A notification shown on the latest version tells readers they are reading "
 "the latest/development version of the documentation that may include "
 "features not yet deployed."
 msgstr ""
 
-#: ../../../versions.rst:145
+#: ../../../versions.rst:147
 msgid ""
 "Specifically, when the ``latest`` version is being shown, and there's also "
 "an active ``stable`` version that is not hidden."
 msgstr ""
 
-#: ../../../versions.rst:147
+#: ../../../versions.rst:149
 msgid ""
 "Each of these notifications can be configured by project admins in :ref:"
 "`addons:Configuring Read the Docs Addons`."
 msgstr ""
 
-#: ../../../versions.rst:150
+#: ../../../versions.rst:152
 msgid "Redirects on root URLs"
 msgstr ""
 
-#: ../../../versions.rst:152
+#: ../../../versions.rst:154
 msgid ""
 "When a user hits the root URL for your documentation, for example ``https://"
 "pip.readthedocs.io/``, they will be redirected to the **Default version**. "
@@ -367,31 +368,31 @@ msgid ""
 "to your **stable** version."
 msgstr ""
 
-#: ../../../versions.rst:159
+#: ../../../versions.rst:161
 msgid "Versioning workflows"
 msgstr ""
 
-#: ../../../versions.rst:161
+#: ../../../versions.rst:163
 msgid ""
 "Read the Docs makes certain assumptions about your documentation version "
 "defaults, all of which can be reconfigured if necessary:"
 msgstr ""
 
-#: ../../../versions.rst:164
+#: ../../../versions.rst:166
 msgid ""
 "The ``latest`` version points to the most up to date development code. If "
 "you develop on a branch that is different than the default for your version "
 "control system, set the **Default Branch** to the branch you use."
 msgstr ""
 
-#: ../../../versions.rst:168
+#: ../../../versions.rst:170
 msgid ""
 "**Tags** are semantic versioning compatible (according to  `PEP 440`_) "
 "snapshots of your documentation. The most recent semantic tag maps to the "
 "``stable`` version."
 msgstr ""
 
-#: ../../../versions.rst:171
+#: ../../../versions.rst:173
 msgid ""
 "Semantic versioning allows \"normal\" version numbers like ``1.4.2``, as "
 "well as pre-releases like this: ``2.0a1``. The ``stable`` version of your "
@@ -399,7 +400,7 @@ msgid ""
 "``v1.4.2`` or ``v2.0a1`` is also allowed."
 msgstr ""
 
-#: ../../../versions.rst:175
+#: ../../../versions.rst:177
 msgid ""
 "Branches are assumed to be **long-lived branches**, This is most useful for "
 "**release branches**, which are maintained over time for a specific release. "
