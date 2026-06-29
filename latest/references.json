@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-20 09:23:35 +0200",
-      "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-      "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+      "date" : "2026-06-29 12:05:49 +0200",
+      "hash" : "78eb0a87507b153b7597efd8083b8288f313b298",
+      "title" : "Build: don't sync or install dev dependencies when using `uv run` (#13154)"
     }
   },
   "type" : "branch",

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-06-29 13:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,8 +166,8 @@ msgstr ""
 
 #: ../../../api/v3.rst:105
 msgid ""
-"If you are using :doc:`Read the Docs for Business </commercial/index>` take "
-"into account that you will need to replace https://app.readthedocs.org/ by "
+"If you are using :doc:`Read the Docs Business </commercial/index>` take into "
+"account that you will need to replace https://app.readthedocs.org/ by "
 "https://app.readthedocs.com/ in all the URLs used in the following examples."
 msgstr ""
 
@@ -314,7 +314,7 @@ msgid ""
 msgstr ""
 
 #: ../../../api/v3.rst:211 ../../../api/v3.rst:325 ../../../api/v3.rst:410
-msgid ":doc:`Read the Docs for Business </commercial/index>`, also accepts"
+msgid ":doc:`Read the Docs Business </commercial/index>`, also accepts"
 msgstr ""
 
 #: ../../../api/v3.rst:215
@@ -539,7 +539,7 @@ msgstr ""
 
 #: ../../../api/v3.rst:419 ../../../api/v3.rst:490 ../../../api/v3.rst:699
 msgid ""
-"Privacy levels are only available in :doc:`Read the Docs for Business </"
+"Privacy levels are only available in :doc:`Read the Docs Business </"
 "commercial/index>`."
 msgstr ""
 
@@ -1831,7 +1831,7 @@ msgstr ""
 #: ../../../api/v3.rst:1581
 msgid ""
 "The ``/api/v3/projects/<project_slug>/sharing/`` endpoint is only available "
-"in :doc:`Read the Docs for Business </commercial/index>`."
+"in :doc:`Read the Docs Business </commercial/index>`."
 msgstr ""
 
 #: ../../../api/v3.rst:1585
@@ -2068,9 +2068,9 @@ msgstr ""
 #: ../../../api/v3.rst:1807
 msgid ""
 "The ``/api/v3/organizations/`` endpoint is only available in :doc:`Read the "
-"Docs for Business </commercial/index>` currently. We plan to have "
-"organizations on |org_brand| in a near future and we will add support for "
-"this endpoint at the same time."
+"Docs Business </commercial/index>` currently. We plan to have organizations "
+"on |org_brand| in a near future and we will add support for this endpoint at "
+"the same time."
 msgstr ""
 
 #: ../../../api/v3.rst:1812
