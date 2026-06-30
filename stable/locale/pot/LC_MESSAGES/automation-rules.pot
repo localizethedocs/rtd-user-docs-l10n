@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-06-30 10:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,271 +24,512 @@ msgstr ""
 #: ../../../automation-rules.rst:4
 msgid ""
 "Automation rules allow project maintainers to automate actions on new "
-"branches and tags in Git repositories. If you are familiar with :term:"
-"`GitOps`, this might seem familiar. The goal of automation rules is to be "
-"able to control versioning through your Git repository and avoid duplicating "
-"these efforts on Read the Docs."
-msgstr ""
-
-#: ../../../automation-rules.rst:12
-msgid ":doc:`/guides/automation-rules`"
+"branches, tags, and pull requests in Git repositories. If you are familiar "
+"with :term:`GitOps`, this might seem familiar. The goal of automation rules "
+"is to be able to control versioning and builds through your Git repository "
+"and avoid duplicating these efforts on Read the Docs."
 msgstr ""
 
 #: ../../../automation-rules.rst:13
+msgid ":doc:`/guides/automation-rules`"
+msgstr ""
+
+#: ../../../automation-rules.rst:14
 msgid ""
 "A practical guide to managing automated versioning of your documentation."
 msgstr ""
 
-#: ../../../automation-rules.rst:15
+#: ../../../automation-rules.rst:16
 msgid ":doc:`/versions`"
 msgstr ""
 
-#: ../../../automation-rules.rst:16
+#: ../../../automation-rules.rst:17
 msgid "General explanation of how versioning works on Read the Docs"
 msgstr ""
 
-#: ../../../automation-rules.rst:19
+#: ../../../automation-rules.rst:20
 msgid "How automation rules work"
 msgstr ""
 
-#: ../../../automation-rules.rst:21
+#: ../../../automation-rules.rst:22
 msgid ""
-"When a new tag or branch is pushed to your repository, Read the Docs "
-"receives a webhook. We then create a new Read the Docs *version* that "
-"matches your new Git *tag or branch*."
+"When a new tag or branch is pushed to your repository, or a pull request is "
+"opened or updated, Read the Docs receives a webhook from your Git provider. "
+"Read the Docs then creates (or updates) a *version* that matches your Git "
+"*tag, branch, or pull request*."
 msgstr ""
 
-#: ../../../automation-rules.rst:25
+#: ../../../automation-rules.rst:27
 msgid ""
-"All automation rules are evaluated for this version, in the order they are "
-"listed. If the version **matches** the version type and the pattern in the "
-"rule, the specified **action** is performed on that version."
+"All enabled automation rules are evaluated for that version, in the order "
+"they are listed. A rule has three groups of conditions, which are checked in "
+"order:"
 msgstr ""
 
-#: ../../../automation-rules.rst:34
+#: ../../../automation-rules.rst:31
 msgid ""
-"Versions can match multiple automation rules, and all matching actions will "
-"be performed on the version."
+"The version **type** must be one of the version types selected in the rule "
+"(tag, branch, or pull request)."
 msgstr ""
 
-#: ../../../automation-rules.rst:38
-msgid "Matching a version in Git"
+#: ../../../automation-rules.rst:32
+msgid "The version **name** must match the version pattern in the rule."
+msgstr ""
+
+#: ../../../automation-rules.rst:33
+msgid ""
+"If any **webhook filter** is configured, the data from the webhook event "
+"(changed files, commit message, or pull request labels) must also match."
+msgstr ""
+
+#: ../../../automation-rules.rst:36
+msgid ""
+"If all the configured conditions match, the rule's **action** is performed "
+"on the version."
 msgstr ""
 
 #: ../../../automation-rules.rst:40
 msgid ""
-"We have a couple predefined ways to match against versions that are created, "
-"and you can also define your own."
-msgstr ""
-
-#: ../../../automation-rules.rst:44
-msgid "Predefined matches"
+"Versions can match multiple automation rules, and all matching version "
+"actions will be performed on the version. For build actions, only the first "
+"matching rule per version triggers a build, to avoid triggering multiple "
+"builds for the same change."
 msgstr ""
 
 #: ../../../automation-rules.rst:46
-msgid "Automation rules support two predefined version matches:"
+msgid "Matching the version type"
 msgstr ""
 
 #: ../../../automation-rules.rst:48
+msgid "Each rule applies to one or more version types:"
+msgstr ""
+
+#: ../../../automation-rules.rst:50
+msgid "**Tag** — Git tags pushed to the repository."
+msgstr ""
+
+#: ../../../automation-rules.rst:51
+msgid "**Branch** — Git branches pushed to the repository."
+msgstr ""
+
+#: ../../../automation-rules.rst:52
+msgid "**Pull request** — pull/merge requests opened against the repository."
+msgstr ""
+
+#: ../../../automation-rules.rst:54
+msgid "You can select any combination of types in a single rule."
+msgstr ""
+
+#: ../../../automation-rules.rst:57
+msgid "Matching the version name"
+msgstr ""
+
+#: ../../../automation-rules.rst:59
+msgid ""
+"We have a couple predefined ways to match against the name of versions that "
+"are created, and you can also define your own."
+msgstr ""
+
+#: ../../../automation-rules.rst:63
+msgid "Predefined matches"
+msgstr ""
+
+#: ../../../automation-rules.rst:65
+msgid "Automation rules support two predefined version name matches:"
+msgstr ""
+
+#: ../../../automation-rules.rst:67
 msgid "**Any version**: All new versions will match the rule."
 msgstr ""
 
-#: ../../../automation-rules.rst:49
+#: ../../../automation-rules.rst:68
 msgid ""
 "**SemVer versions**: All new versions that follow `semantic versioning "
-"<https://semver.org/>`__ (with or without a `v` prefix) will match the rule."
+"<https://semver.org/>`__ (with or without a ``v`` prefix) will match the "
+"rule."
 msgstr ""
 
-#: ../../../automation-rules.rst:53
+#: ../../../automation-rules.rst:72
 msgid "Custom matches"
 msgstr ""
 
-#: ../../../automation-rules.rst:55
+#: ../../../automation-rules.rst:74
 msgid ""
 "If none of the above predefined matches meet your use case, you can use a "
 "**Custom match**."
 msgstr ""
 
-#: ../../../automation-rules.rst:58
+#: ../../../automation-rules.rst:77
 msgid ""
 "The custom match should be a valid `Python regular expression <https://docs."
-"python.org/3/library/re.html>`__. Each new version will be tested against "
-"this regular expression."
+"python.org/3/library/re.html>`__. Each new version's name will be tested "
+"against this regular expression."
 msgstr ""
 
-#: ../../../automation-rules.rst:62
-msgid "Actions for versions"
+#: ../../../automation-rules.rst:81
+msgid "Webhook filters"
 msgstr ""
 
-#: ../../../automation-rules.rst:64
+#: ../../../automation-rules.rst:83
 msgid ""
-"When an automation rule matches a new version, the specified action is "
-"performed on that version. Currently, the following actions are available:"
+"In addition to matching the version, a rule can filter on the contents of "
+"the webhook event that triggered it. Webhook filters are useful to **avoid "
+"running an action when nothing relevant has changed**, for example to skip "
+"builds when only non-documentation files were modified, or when the commit "
+"message indicates the change should be ignored."
 msgstr ""
 
-#: ../../../automation-rules.rst:68
+#: ../../../automation-rules.rst:89
+msgid "The following filters are available:"
+msgstr ""
+
+#: ../../../automation-rules.rst:91
+msgid "Changed files"
+msgstr ""
+
+#: ../../../automation-rules.rst:92
+msgid ""
+"Match against the list of files modified, added, or deleted in the push or "
+"pull request. Patterns can include one or more of the following special "
+"characters:"
+msgstr ""
+
+#: ../../../automation-rules.rst:95
+msgid "``*`` matches everything, including slashes."
+msgstr ""
+
+#: ../../../automation-rules.rst:96
+msgid "``?`` matches any single character."
+msgstr ""
+
+#: ../../../automation-rules.rst:97
+msgid "``[seq]`` matches any character in ``seq``."
+msgstr ""
+
+#: ../../../automation-rules.rst:99
+msgid ""
+"Example patterns: - ``docs/*`` matches any file under the ``docs/`` "
+"directory. - ``*.md`` matches any Markdown file. - ``.readthedocs.yaml`` "
+"matches the configuration file in the root of the repository."
+msgstr ""
+
+#: ../../../automation-rules.rst:104
+msgid ""
+"You can specify multiple patterns, one per line. The filter matches if "
+"**any** of the changed files matches **any** pattern."
+msgstr ""
+
+#: ../../../automation-rules.rst:107
+msgid "Commit message"
+msgstr ""
+
+#: ../../../automation-rules.rst:108
+msgid ""
+"Match against the commit message of the push event, or the head commit of "
+"the pull request, using a regular expression."
+msgstr ""
+
+#: ../../../automation-rules.rst:112
+msgid "Pull request labels"
+msgstr ""
+
+#: ../../../automation-rules.rst:113
+msgid ""
+"Match against the labels of the pull request, using a regular expression. "
+"This filter is only relevant for pull request events."
+msgstr ""
+
+#: ../../../automation-rules.rst:117
+msgid ""
+"When more than one filter is configured, **all** of them must match for the "
+"rule to fire."
+msgstr ""
+
+#: ../../../automation-rules.rst:121
+msgid ""
+"Webhook filters are only available for projects connected through the :doc:"
+"`GitHub App integration </reference/git-integration>`. Rules that don't use "
+"webhook filters keep working with every Git provider."
+msgstr ""
+
+#: ../../../automation-rules.rst:127
+msgid ""
+"Regular expressions are evaluated using the Python `re <https://docs.python."
+"org/3/library/re.html>`__ module."
+msgstr ""
+
+#: ../../../automation-rules.rst:131
+msgid "Actions"
+msgstr ""
+
+#: ../../../automation-rules.rst:133
+msgid ""
+"When an automation rule matches, the specified action is performed on the "
+"version. Actions are split into two groups: actions that operate on the "
+"version itself, and actions that trigger a build."
+msgstr ""
+
+#: ../../../automation-rules.rst:139
+msgid "Version actions"
+msgstr ""
+
+#: ../../../automation-rules.rst:141
 msgid "Activate version"
 msgstr ""
 
-#: ../../../automation-rules.rst:69
+#: ../../../automation-rules.rst:142
 msgid "Activates and builds the version."
 msgstr ""
 
-#: ../../../automation-rules.rst:71
+#: ../../../automation-rules.rst:144
 msgid "Hide version"
 msgstr ""
 
-#: ../../../automation-rules.rst:72
+#: ../../../automation-rules.rst:145
 msgid ""
 "Hides the version. If the version is not active, activates it and builds the "
 "version. See :ref:`versions:Version states`."
 msgstr ""
 
-#: ../../../automation-rules.rst:75
+#: ../../../automation-rules.rst:148
 msgid "Make version public"
 msgstr ""
 
-#: ../../../automation-rules.rst:76
+#: ../../../automation-rules.rst:149
 msgid ""
 "Sets the version's privacy level to public. See :ref:`versions:Version "
 "states`."
 msgstr ""
 
-#: ../../../automation-rules.rst:79
+#: ../../../automation-rules.rst:152
 msgid "Make version private"
 msgstr ""
 
-#: ../../../automation-rules.rst:80
+#: ../../../automation-rules.rst:153
 msgid ""
 "Sets the version's privacy level to private. See :ref:`versions:Version "
 "states`."
 msgstr ""
 
-#: ../../../automation-rules.rst:83
+#: ../../../automation-rules.rst:156
 msgid "Set version as default"
 msgstr ""
 
-#: ../../../automation-rules.rst:84
+#: ../../../automation-rules.rst:157
 msgid ""
 "Sets the version as the :term:`default version`. It also activates and "
 "builds the version. See :ref:`root_url_redirect`."
 msgstr ""
 
-#: ../../../automation-rules.rst:88
+#: ../../../automation-rules.rst:161
 msgid "Delete version"
 msgstr ""
 
-#: ../../../automation-rules.rst:89
+#: ../../../automation-rules.rst:162
 msgid ""
 "When a branch or tag is deleted from your repository, Read the Docs will "
 "delete it *only if isn't active*. This action allows you to delete *active* "
 "versions when a branch or tag is deleted from your repository."
 msgstr ""
 
-#: ../../../automation-rules.rst:93
-msgid "There are a couple caveats to these rules that are useful:"
+#: ../../../automation-rules.rst:166
+msgid "There are a couple caveats to these actions that are useful:"
 msgstr ""
 
-#: ../../../automation-rules.rst:95
+#: ../../../automation-rules.rst:168
 msgid ""
 "The :term:`default version` isn't deleted even if it matches a rule. You can "
 "use the ``Set version as default`` action to change the default version "
 "before deleting the current one."
 msgstr ""
 
-#: ../../../automation-rules.rst:98
+#: ../../../automation-rules.rst:171
 msgid ""
 "If your versions follow :pep:`440`, Read the Docs activates and builds the "
 "version if it's greater than the current stable version. The stable version "
 "is also automatically updated at the same time. See more in :doc:`versions`."
 msgstr ""
 
-#: ../../../automation-rules.rst:104
+#: ../../../automation-rules.rst:177
+msgid "Build actions"
+msgstr ""
+
+#: ../../../automation-rules.rst:179
+msgid "Trigger build for version"
+msgstr ""
+
+#: ../../../automation-rules.rst:180
+msgid "Trigger a build for the version when the rule matches."
+msgstr ""
+
+#: ../../../automation-rules.rst:182
+msgid ""
+"Build actions are designed to be used together with :ref:`webhook filters "
+"<automation-rules:Webhook filters>`, so that builds are only triggered when "
+"something relevant has changed."
+msgstr ""
+
+#: ../../../automation-rules.rst:187
+msgid ""
+"When a project has at least one enabled rule with the **Trigger build for "
+"version** action, builds are **gated** by those rules: if no build rule "
+"matches the incoming webhook event, no build is triggered. If you don't have "
+"any build rule configured, builds keep being triggered for every push and "
+"pull request as usual."
+msgstr ""
+
+#: ../../../automation-rules.rst:193
+msgid "Enabling and disabling rules"
+msgstr ""
+
+#: ../../../automation-rules.rst:195
+msgid ""
+"Each rule has an **Enabled** toggle. Disabling a rule keeps its "
+"configuration around but stops it from being evaluated, which is useful when "
+"you want to temporarily turn off an automation without losing its "
+"configuration."
+msgstr ""
+
+#: ../../../automation-rules.rst:200
 msgid "Order"
 msgstr ""
 
-#: ../../../automation-rules.rst:106
+#: ../../../automation-rules.rst:202
 msgid ""
 "When a new Read the Docs version is created, all rules with a successful "
 "match will have their action triggered, in the order they appear on the :"
 "guilabel:`Automation Rules` page."
 msgstr ""
 
-#: ../../../automation-rules.rst:111
+#: ../../../automation-rules.rst:207
 msgid "Examples"
 msgstr ""
 
-#: ../../../automation-rules.rst:114
+#: ../../../automation-rules.rst:210
 msgid "Activate all new tags"
 msgstr ""
 
-#: ../../../automation-rules.rst:116 ../../../automation-rules.rst:130
+#: ../../../automation-rules.rst:212 ../../../automation-rules.rst:226
+#: ../../../automation-rules.rst:261 ../../../automation-rules.rst:279
+#: ../../../automation-rules.rst:287
 msgid "Match: ``Any version``"
 msgstr ""
 
-#: ../../../automation-rules.rst:117 ../../../automation-rules.rst:138
-#: ../../../automation-rules.rst:150 ../../../automation-rules.rst:166
+#: ../../../automation-rules.rst:213 ../../../automation-rules.rst:234
+#: ../../../automation-rules.rst:255
 msgid "Version type: ``Tag``"
 msgstr ""
 
-#: ../../../automation-rules.rst:118 ../../../automation-rules.rst:125
-#: ../../../automation-rules.rst:151 ../../../automation-rules.rst:157
-#: ../../../automation-rules.rst:167
+#: ../../../automation-rules.rst:214 ../../../automation-rules.rst:221
+#: ../../../automation-rules.rst:247 ../../../automation-rules.rst:256
 msgid "Action: ``Activate version``"
 msgstr ""
 
-#: ../../../automation-rules.rst:121
+#: ../../../automation-rules.rst:217
 msgid "Activate only new branches that belong to the ``1.x`` release"
 msgstr ""
 
-#: ../../../automation-rules.rst:123
+#: ../../../automation-rules.rst:219
 msgid "Custom match: ``^1\\.\\d+$``"
 msgstr ""
 
-#: ../../../automation-rules.rst:124 ../../../automation-rules.rst:131
-#: ../../../automation-rules.rst:156
+#: ../../../automation-rules.rst:220 ../../../automation-rules.rst:227
 msgid "Version type: ``Branch``"
 msgstr ""
 
-#: ../../../automation-rules.rst:128
+#: ../../../automation-rules.rst:224
 msgid "Delete an active version when a branch is deleted"
 msgstr ""
 
-#: ../../../automation-rules.rst:132
+#: ../../../automation-rules.rst:228
 msgid "Action: ``Delete version``"
 msgstr ""
 
-#: ../../../automation-rules.rst:135
+#: ../../../automation-rules.rst:231
 msgid ""
 "Set as default new tags that have the ``-stable`` or ``-release`` suffix"
 msgstr ""
 
-#: ../../../automation-rules.rst:137
+#: ../../../automation-rules.rst:233
 msgid "Custom match: ``-(stable|release)$``"
 msgstr ""
 
-#: ../../../automation-rules.rst:139
+#: ../../../automation-rules.rst:235
 msgid "Action: ``Set version as default``"
 msgstr ""
 
-#: ../../../automation-rules.rst:143
+#: ../../../automation-rules.rst:239
 msgid ""
 "You can also create two rules: one to match ``-stable`` and other to match "
 "``-release``."
 msgstr ""
 
-#: ../../../automation-rules.rst:147
+#: ../../../automation-rules.rst:243
 msgid "Activate all new tags and branches that start with ``v`` or ``V``"
 msgstr ""
 
-#: ../../../automation-rules.rst:149 ../../../automation-rules.rst:155
+#: ../../../automation-rules.rst:245
 msgid "Custom match: ``^[vV]``"
 msgstr ""
 
-#: ../../../automation-rules.rst:160
+#: ../../../automation-rules.rst:246
+msgid "Version types: ``Tag``, ``Branch``"
+msgstr ""
+
+#: ../../../automation-rules.rst:250
 msgid "Activate all new tags that don't contain the ``-nightly`` suffix"
 msgstr ""
 
-#: ../../../automation-rules.rst:165
+#: ../../../automation-rules.rst:254
 msgid "Custom match: ``.*(?<!-nightly)$``"
+msgstr ""
+
+#: ../../../automation-rules.rst:259
+msgid "Only build when documentation files change"
+msgstr ""
+
+#: ../../../automation-rules.rst:262 ../../../automation-rules.rst:280
+msgid "Version types: ``Tag``, ``Branch``, ``Pull request``"
+msgstr ""
+
+#: ../../../automation-rules.rst:263
+msgid "Changed files:"
+msgstr ""
+
+#: ../../../automation-rules.rst:265
+msgid ""
+"docs/*\n"
+".readthedocs.yaml\n"
+"requirements/docs.txt"
+msgstr ""
+
+#: ../../../automation-rules.rst:271 ../../../automation-rules.rst:282
+#: ../../../automation-rules.rst:290
+msgid "Action: ``Trigger build for version``"
+msgstr ""
+
+#: ../../../automation-rules.rst:274
+msgid "Skip builds for commits with ``[skip ci]`` in the message"
+msgstr ""
+
+#: ../../../automation-rules.rst:276
+msgid ""
+"Configure a single rule that triggers a build only when the commit message "
+"does *not* contain ``[skip ci]``:"
+msgstr ""
+
+#: ../../../automation-rules.rst:281
+msgid "Commit message: ``^(?!.*\\[skip ci\\]).*``"
+msgstr ""
+
+#: ../../../automation-rules.rst:285
+msgid "Only build pull requests labeled with ``documentation``"
+msgstr ""
+
+#: ../../../automation-rules.rst:288
+msgid "Version type: ``Pull request``"
+msgstr ""
+
+#: ../../../automation-rules.rst:289
+msgid "Pull request labels: ``^documentation$``"
 msgstr ""

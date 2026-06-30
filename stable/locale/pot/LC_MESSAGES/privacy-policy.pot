@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-06-30 10:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid ""
 msgstr ""
 
 #: ../../../privacy-policy.rst:37
-msgid "readthedocs.com (\"Read the Docs for Business\")"
+msgid "readthedocs.com (\"Read the Docs Business\")"
 msgstr ""
 
 #: ../../../privacy-policy.rst:38
@@ -237,10 +237,10 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:120
 msgid ""
-"Read the Docs for Business may host `private projects <https://about."
-"readthedocs.com/terms-of-service/#private-projects>`_ which we treat as "
-"confidential and we only access them for support reasons, with your consent, "
-"or if required to for security reasons"
+"Read the Docs Business may host `private projects <https://about.readthedocs."
+"com/terms-of-service/#private-projects>`_ which we treat as confidential and "
+"we only access them for support reasons, with your consent, or if required "
+"to for security reasons"
 msgstr ""
 
 #: ../../../privacy-policy.rst:123
@@ -428,9 +428,8 @@ msgstr ""
 #: ../../../privacy-policy.rst:243
 msgid ""
 "Our DNT policy applies without reservation to Read the Docs Community and "
-"Read the Docs for Business. A best effort is made to apply this to "
-"Documentation Sites, but we do not have complete control over the contents "
-"of these sites."
+"Read the Docs Business. A best effort is made to apply this to Documentation "
+"Sites, but we do not have complete control over the contents of these sites."
 msgstr ""
 
 #: ../../../privacy-policy.rst:248
@@ -639,8 +638,8 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:386
 msgid ""
-"Our web server logs for Read the Docs Community, Read the Docs for Business, "
-"and Documentation Sites are deleted after 10 days barring legal obligations."
+"Our web server logs for Read the Docs Community, Read the Docs Business, and "
+"Documentation Sites are deleted after 10 days barring legal obligations."
 msgstr ""
 
 #: ../../../privacy-policy.rst:392
