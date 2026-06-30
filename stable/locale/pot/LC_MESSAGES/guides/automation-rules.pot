@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-06-30 10:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,21 +112,21 @@ msgid "Finally, choose the :guilabel:`Action`:"
 msgstr ""
 
 #: ../../../guides/automation-rules.rst:49
-msgid ":ref:`Activate version <automation-rules:Actions for versions>`"
+msgid ":ref:`Activate version <automation-rules:Version actions>`"
 msgstr ""
 
 #: ../../../guides/automation-rules.rst:50
-msgid ":ref:`Hide version <automation-rules:Actions for versions>`"
+msgid ":ref:`Hide version <automation-rules:Version actions>`"
 msgstr ""
 
 #: ../../../guides/automation-rules.rst:51
-msgid ":ref:`Set version as default <automation-rules:Actions for versions>`"
+msgid ":ref:`Set version as default <automation-rules:Version actions>`"
 msgstr ""
 
 #: ../../../guides/automation-rules.rst:52
 msgid ""
-":ref:`Delete version (on branch/tag deletion) <automation-rules:Actions for "
-"versions>`"
+":ref:`Delete version (on branch/tag deletion) <automation-rules:Version "
+"actions>`"
 msgstr ""
 
 #: ../../../guides/automation-rules.rst:55

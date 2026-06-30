@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-06-30 10:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,18 +148,26 @@ msgid "Read this before asking for help: How to get support and where."
 msgstr ""
 
 #: ../../../about/index.rst:56
-msgid "⏩ :doc:`/glossary`"
+msgid "⏩ :doc:`/automated-access`"
 msgstr ""
 
 #: ../../../about/index.rst:57
+msgid "Policies for automated access, scraping, and agents."
+msgstr ""
+
+#: ../../../about/index.rst:59
+msgid "⏩ :doc:`/glossary`"
+msgstr ""
+
+#: ../../../about/index.rst:60
 msgid "A useful index of terms used in our docs"
 msgstr ""
 
-#: ../../../about/index.rst:61
+#: ../../../about/index.rst:64
 msgid "`Our website <https://about.readthedocs.com>`__"
 msgstr ""
 
-#: ../../../about/index.rst:62
+#: ../../../about/index.rst:65
 msgid ""
 "Our primary website has general-purpose information about Read the Docs like "
 "pricing and feature overviews."

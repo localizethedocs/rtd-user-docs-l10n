@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 09:33+0000\n"
+"POT-Creation-Date: 2026-06-30 10:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,69 +87,65 @@ msgid "The ``llms.txt`` file will only be served if:"
 msgstr ""
 
 #: ../../../reference/llms-txt.rst:34
-msgid "Your default version is **public**"
-msgstr ""
-
-#: ../../../reference/llms-txt.rst:35
 msgid "Your default version is **active**"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:36
+#: ../../../reference/llms-txt.rst:35
 msgid "Your default version has been **built**"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:37
+#: ../../../reference/llms-txt.rst:36
 msgid "The ``llms.txt`` file exists in your build output"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:40
+#: ../../../reference/llms-txt.rst:39
 msgid "Tool integration"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:42
+#: ../../../reference/llms-txt.rst:41
 msgid ""
 "Documentation tools will have different ways of generating a ``llms.txt`` "
 "file. We have examples for some of the most popular tools below."
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:47
+#: ../../../reference/llms-txt.rst:46
 msgid "Sphinx"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:49
+#: ../../../reference/llms-txt.rst:48
 msgid ""
 "Sphinx uses the `html_extra_path`_ configuration value to add static files "
 "to its final HTML output. You need to create a ``llms.txt`` file and put it "
 "under the path defined in ``html_extra_path``."
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:52
+#: ../../../reference/llms-txt.rst:51
 msgid ""
 "You can also use the `sphinx-llm`_ extension to automatically generate an "
 "``llms.txt`` file from your documentation."
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:54
+#: ../../../reference/llms-txt.rst:53
 msgid "MkDocs"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:56
+#: ../../../reference/llms-txt.rst:55
 msgid ""
 "MkDocs needs the ``llms.txt`` to be at the directory defined by the "
 "`docs_dir`_ configuration value."
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:58
+#: ../../../reference/llms-txt.rst:57
 msgid ""
 "You can also use the `mkdocs-llmstxt`_ plugin to automatically generate an "
 "``llms.txt`` file from your documentation."
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:61
+#: ../../../reference/llms-txt.rst:60
 msgid "Alternative: Using redirects"
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:63
+#: ../../../reference/llms-txt.rst:62
 msgid ""
 "If you want to serve your ``llms.txt`` file from a versioned path (like ``/"
 "en/latest/llms.txt``), you can create an :doc:`exact redirect </guides/"
@@ -157,6 +153,16 @@ msgid ""
 "more control over which version serves the file."
 msgstr ""
 
-#: ../../../reference/llms-txt.rst:75
+#: ../../../reference/llms-txt.rst:74
 msgid ":doc:`/guides/redirects`"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:76
+msgid ":doc:`/reference/markdown-for-agents`"
+msgstr ""
+
+#: ../../../reference/llms-txt.rst:77
+msgid ""
+"Read the Docs also serves a Markdown version of your documentation pages to "
+"AI agents that request it, via content negotiation."
 msgstr ""
