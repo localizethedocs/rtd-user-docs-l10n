@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../advertising/index.rst:33
+msgid "Advertising at Read the Docs"
+msgstr ""
+
+#: ../../../advertising/index.rst:-1
+msgid ""
+"Read the Docs is a large open source project funded by ethical advertising "
+"which respects user privacy and doesn't track people."
+msgstr ""
+
+#: ../../../advertising/index.rst:2
+msgid "Advertising"
+msgstr ""
+
+#: ../../../advertising/index.rst:8
+msgid ""
+"Advertising is the single largest source of funding for Read the Docs. It "
+"allows us to:"
+msgstr ""
+
+#: ../../../advertising/index.rst:13
+msgid "Serve over **35 million pages** of documentation per month"
+msgstr ""
+
+#: ../../../advertising/index.rst:14
+msgid "Serve over **40 TB** of documentation per month"
+msgstr ""
+
+#: ../../../advertising/index.rst:15
+msgid ""
+"Host over **80,000 open source projects** and support over **100,000 users**"
+msgstr ""
+
+#: ../../../advertising/index.rst:16
+msgid "Pay a :doc:`small team </team>` of dedicated full-time staff"
+msgstr ""
+
+#: ../../../advertising/index.rst:18
+msgid ""
+"Many advertising models involve tracking users around the internet, selling "
+"their data, and privacy intrusion in general. Instead of doing that, we "
+"built an :doc:`Ethical Advertising <ethical-advertising>` model that "
+"respects user privacy."
+msgstr ""
+
+#: ../../../advertising/index.rst:23
+msgid ""
+"We recognize that advertising is not for everyone. You may :ref:`opt out of "
+"paid advertising <advertising/ethical-advertising:Opting Out>` although you "
+"will still see :ref:`community ads <advertising/ethical-advertising:"
+"Community Ads>`. `Gold members`_ may also remove advertising from their "
+"projects for all visitors."
+msgstr ""
+
+#: ../../../advertising/index.rst:28
+msgid ""
+"For businesses looking to remove advertising, please consider :doc:`Read the "
+"Docs for Business </commercial/index>`."
+msgstr ""

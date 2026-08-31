@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../explanation/configuration-file.rst:6
+msgid "Why keep configuration files in Git"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:8
+msgid ""
+"Content and structure of documentation undergo big and small changes. And "
+"eventually, the configuration of a documentation project also changes. This "
+"means you need to be able to track these changes over time, and keep them up "
+"to date."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:13
+msgid ""
+"In this article, we cover the major concepts of using a configuration file:"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:16
+msgid "Versioning the configuration"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:17
+msgid ""
+"A documentation project and its configuration file live together in a Git "
+"repository and are versioned together."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:20
+msgid "Configuration as code"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:21
+msgid ""
+"Configuration uses the same workflow as your source code, including being "
+"reviewed and tested in a pull request."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:24
+msgid "Options that are not found in the configuration file"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:25
+msgid ""
+"Not everything is suitable for version-specific configuration, like the Git "
+"repository where the configuration file is read after cloning."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:30
+msgid ":doc:`/config-file/index`"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:31
+msgid ""
+"Practical steps to add a configuration file to your documentation project."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:33
+msgid ":doc:`/config-file/v2`"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:34
+msgid "Reference for configuration file settings."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:38
+msgid "Why version your project's configuration?"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:40
+msgid "Consider the following aspects of a documentation project:"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:42
+msgid "Build environments change 📦️"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:43
+msgid ""
+"You may depend on a number of packages but your method for installing them "
+"changes. What is installed, how it's installed and what installs can change, "
+"especially across multiple versions."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:47
+msgid ""
+"You might change between Pip and Poetry. You might also jump between Python "
+"2 and 3 or Python 3.8 and Python 3.10."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:50
+msgid "Documentation tools change ⚙️"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:51
+msgid ""
+"Using Sphinx? Using MkDocs? Or some other tool? All these tools have their "
+"own configuration files and special ways to invoke them. In order to switch "
+"between how you are invoking the tool and setting up its environment, you "
+"will need external build configuration."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:56
+msgid "Comparing changes over time ⚖️"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:57
+msgid ""
+"As your project changes, you will need to change your configuration. You "
+"might wonder how something was done in the past, and having it versioned "
+"means you can see each commit as it has changed."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:61
+msgid ""
+"You can configure your Read the Docs project by adding a ``.readthedocs."
+"yaml`` file [1]_ to your Git repository. The configuration will apply to the "
+"exact version that is being built. This allows you to store different "
+"configurations for different versions of your documentation."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:65
+msgid ""
+"The main advantages of using a configuration file over the web interface are:"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:67
+msgid "Settings are per version rather than per project."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:68
+msgid "Settings live in your Git repository."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:69
+msgid "They enable reproducible build environments over time."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:70
+msgid "Some settings are only available using a configuration file"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:72
+msgid ""
+"Other variants of the configuration file name like ``readthedocs.yaml``, ``."
+"readthedocs.yml``, etc. are deprecated. You may however, :doc:`configure a "
+"custom sub-folder </guides/setup/monorepo>`."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:76
+msgid "Configuration as Code"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:78
+msgid ""
+"\"Configuration as Code\" is a concept where the configuration or settings "
+"of software is maintained in a Git repository as *code*. Contrast this with "
+"the approach where configuration is managed inside the software's own UI, "
+"making it hard to track changes, and copy settings to other projects."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:82
+msgid ""
+"Most users of Read the Docs will already be familiar with the concept since "
+"many popular tools already require you to store their configuration in your "
+"Git repository:"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:84
+msgid "Sphinx uses a ``conf.py`` file."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:85
+msgid "MkDocs uses a ``mkdocs.yaml`` file."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:86
+msgid ""
+"Python projects often have a ``requirements.txt`` or ``environment.yaml``."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:88
+msgid ""
+"Because of its fragility and uniqueness, the alternative to \"Configuration "
+"as Code\" is also often referred to as snowflake ❄️ configuration. Such "
+"configurations are hard to copy between projects and also hard to introspect "
+"for people without authorization to access the configuration UI."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:92
+msgid ""
+"*Configuration as code* is considered by many to be the easier option. It "
+"might seem harder to have to write the configuration code from scratch, but "
+"in order to use Read the Docs, you can usually start with a template and "
+"adapt it."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:97
+msgid ""
+"Read the Docs has chosen to offer as much configuration as possible through "
+"the usage of ``.readthedocs.yaml``. Our experience is that projects benefit "
+"from such a setup, and even when the benefits aren't obvious in the "
+"beginning of a project's lifecycle, they will emerge over time."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:103
+msgid "What's not covered by ``.readthedocs.yaml``?"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:105
+msgid ""
+"There are a number of things that aren't possible to cover in the "
+"configuration file, which still belong in your project's Dashboard."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:108
+msgid "These configuration items are for instance:"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:110
+msgid "Git settings"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:111
+msgid ""
+"Since the configuration file is stored in Git, it doesn't make sense that it "
+"would configure the Git setup."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:114
+msgid "Domain-level settings"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:115
+msgid ""
+"Since many settings apply to the domain a project is hosted on, they are "
+"configured for the project itself, and not a specific version."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:118
+msgid ""
+"The goal over time is to have everything that can be managed in a version-"
+"specific YAML file configured that way."
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:122
+msgid ":doc:`/guides/reproducible-builds`"
+msgstr ""
+
+#: ../../../explanation/configuration-file.rst:123
+msgid ""
+"In addition to storing your configuration in Git, we also recommend special "
+"practices for making your builds resilient to changes in your software "
+"dependencies."
+msgstr ""
