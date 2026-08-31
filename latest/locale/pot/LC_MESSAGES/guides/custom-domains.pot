@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-08-31 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgstr ""
 
 #: ../../../guides/custom-domains.rst:12
 msgid ""
-"To setup your :doc:`custom domain </custom-domains>`, follow these steps:"
+"To set up your :doc:`custom domain </custom-domains>`, follow these steps:"
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:14 ../../../guides/custom-domains.rst:62
-msgid "Go the :guilabel:`Admin` tab of your project."
+msgid "Go to the :guilabel:`Admin` tab of your project."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:15 ../../../guides/custom-domains.rst:63
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../../guides/custom-domains.rst:17
 msgid ""
-"Mark the :guilabel:`Canonical` option if you want use this domain as your :"
-"doc:`canonical domain </canonical-urls>`."
+"Mark the :guilabel:`Canonical` option if you want to use this domain as "
+"your :doc:`canonical domain </canonical-urls>`."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:19
