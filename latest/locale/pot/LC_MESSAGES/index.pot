@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-08-31 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,8 +218,8 @@ msgstr ""
 msgid ":doc:`/pull-requests`"
 msgstr ""
 
-#: ../../../index.rst:197 ../../../index.rst:253
-msgid "Setup pull request builds and enjoy previews of each commit."
+#: ../../../index.rst:197
+msgid "Preview your documentation on every pull request."
 msgstr ""
 
 #: ../../../index.rst:202
@@ -328,6 +328,10 @@ msgstr ""
 
 #: ../../../index.rst:252
 msgid ":doc:`/guides/pull-requests`"
+msgstr ""
+
+#: ../../../index.rst:253
+msgid "Configure pull request builds for your project."
 msgstr ""
 
 #: ../../../index.rst:255
