@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 09:33+0000\n"
+"POT-Creation-Date: 2026-09-01 13:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -175,8 +175,8 @@ msgstr ""
 
 #: ../../../config-file/index.rst:78
 msgid ""
-"If you have added the file in a pull request, you should enable :doc:`pull "
-"request builds </guides/pull-requests>`."
+"If you have added the file in a pull request, make sure :doc:`pull request "
+"builds </guides/pull-requests>` are enabled."
 msgstr ""
 
 #: ../../../config-file/index.rst:82

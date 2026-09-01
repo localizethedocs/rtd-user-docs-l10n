@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-09-01 13:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,11 +181,22 @@ msgid ""
 "this video:"
 msgstr ""
 
+#: ../../../science.rst:75
+msgid ""
+"<video controls height=\"300\" preload=\"auto\">\n"
+"  <source\n"
+"    src=\"https://anti-pattern-sphinx-video-downloader.readthedocs.io/"
+"_static/videos/enable-pull-request-builders.mp4\"\n"
+"    type=\"video/mp4\"\n"
+"  >\n"
+"</video>"
+msgstr ""
+
 #: ../../../science.rst:0
 msgid "💬 Collaboration and community"
 msgstr ""
 
-#: ../../../science.rst:84
+#: ../../../science.rst:89
 msgid ""
 "Science and academia have a big kinship with software developers: We ❤️ "
 "community. Our solutions and projects become better when we foster "
@@ -195,17 +206,17 @@ msgid ""
 "the tools are available for your community to forge qualified contributions."
 msgstr ""
 
-#: ../../../science.rst:86
+#: ../../../science.rst:91
 msgid "Your readers can become your co-authors!"
 msgstr ""
 
-#: ../../../science.rst:88
+#: ../../../science.rst:93
 msgid ""
 "Discuss changes via pull request and track all changes in your project's "
 "version history."
 msgstr ""
 
-#: ../../../science.rst:90
+#: ../../../science.rst:95
 msgid ""
 "Using git does not mean that anyone can go and change your code and your "
 "published project. The full ownership and permission handling remains in "
@@ -217,47 +228,47 @@ msgstr ""
 msgid "🔎 Full search and analytics"
 msgstr ""
 
-#: ../../../science.rst:94
+#: ../../../science.rst:99
 msgid ""
 "Read the Docs comes with a number of features bundled in that you would have "
 "to configure if you were hosting documentation elsewhere."
 msgstr ""
 
-#: ../../../science.rst:96
+#: ../../../science.rst:101
 msgid "Super-fast text search"
 msgstr ""
 
-#: ../../../science.rst:97
+#: ../../../science.rst:102
 msgid ""
 "Your documentation is automatically indexed and gets its own search function."
 msgstr ""
 
-#: ../../../science.rst:99
+#: ../../../science.rst:104
 msgid "Traffic statistics"
 msgstr ""
 
-#: ../../../science.rst:100
+#: ../../../science.rst:105
 msgid ""
 "Have full access to your traffic data and have quick access to see which of "
 "your pages are most popular."
 msgstr ""
 
-#: ../../../science.rst:102
+#: ../../../science.rst:107
 msgid "Search analytics"
 msgstr ""
 
-#: ../../../science.rst:103
+#: ../../../science.rst:108
 msgid ""
 "What are people searching for and do they get hits? From each search query "
 "in your documentation, we collect a neat little statistic that can help to "
 "improve the discoverability and relevance of your documentation."
 msgstr ""
 
-#: ../../../science.rst:105
+#: ../../../science.rst:110
 msgid "SEO - Don't reinvent search engine optimization"
 msgstr ""
 
-#: ../../../science.rst:106
+#: ../../../science.rst:111
 msgid ""
 "Use built-in SEO best-practices from Sphinx, its themes and Read the Docs "
 "hosting. This can give you a good ranking on search engines as a direct "
@@ -268,23 +279,23 @@ msgstr ""
 msgid "🌱 Grow your own solutions"
 msgstr ""
 
-#: ../../../science.rst:110
+#: ../../../science.rst:115
 msgid ""
 "The eco-system is open source and makes it accessible for anyone with Python "
 "skills to build their own extensions."
 msgstr ""
 
-#: ../../../science.rst:112
+#: ../../../science.rst:117
 msgid ""
 "We want science communities to use Read the Docs and to be part of the "
 "documentation community 💞"
 msgstr ""
 
-#: ../../../science.rst:115
+#: ../../../science.rst:120
 msgid "Getting started: Jupyter Book"
 msgstr ""
 
-#: ../../../science.rst:117
+#: ../../../science.rst:122
 msgid ""
 ":external+jupyterbook:doc:`Jupyter Book <intro>` on Read the Docs brings you "
 "the rich experience of computed `Jupyter <https://jupyter.org/>`__ documents "
@@ -294,60 +305,60 @@ msgid ""
 "ecosystem."
 msgstr ""
 
-#: ../../../science.rst:119
+#: ../../../science.rst:124
 msgid ""
 "Here are some popular activities that are well-supported by Jupyter Book:"
 msgstr ""
 
-#: ../../../science.rst:121
+#: ../../../science.rst:126
 msgid "Publications and books"
 msgstr ""
 
-#: ../../../science.rst:122
+#: ../../../science.rst:127
 msgid "Course and research websites"
 msgstr ""
 
-#: ../../../science.rst:123
+#: ../../../science.rst:128
 msgid "Interactive classroom activities"
 msgstr ""
 
-#: ../../../science.rst:124
+#: ../../../science.rst:129
 msgid "Data science software documentation"
 msgstr ""
 
-#: ../../../science.rst:127
+#: ../../../science.rst:132
 msgid ""
 ":doc:`Visit the gallery of solutions built with Jupyter Book » "
 "<executablebook:gallery>`"
 msgstr ""
 
-#: ../../../science.rst:131
+#: ../../../science.rst:136
 msgid "Ready to get started?"
 msgstr ""
 
-#: ../../../science.rst:135
+#: ../../../science.rst:140
 msgid ""
 "All new to this? Take the official :external+jupyterbook:doc:`Jupyter Book "
 "Tutorial » <start/your-first-book>`"
 msgstr ""
 
-#: ../../../science.rst:136
+#: ../../../science.rst:141
 msgid ""
 "Curious for practical code? See the list of :doc:`example projects » </"
 "examples>`"
 msgstr ""
 
-#: ../../../science.rst:137
+#: ../../../science.rst:142
 msgid ""
 "Familiar with Sphinx? Read :doc:`How to use Jupyter notebooks in Sphinx » </"
 "guides/jupyter>`"
 msgstr ""
 
-#: ../../../science.rst:141
+#: ../../../science.rst:146
 msgid "Examples and users"
 msgstr ""
 
-#: ../../../science.rst:146
+#: ../../../science.rst:151
 msgid ""
 "Read the Docs community for science is already big and keeps growing. The :"
 "external+jupyter:doc:`Jupyter Project <index>` itself and `the many sub-"
@@ -355,14 +366,14 @@ msgid ""
 "documentation>`__ are built and published with Read the Docs."
 msgstr ""
 
-#: ../../../science.rst:152
+#: ../../../science.rst:157
 msgid "Jupyter Project Documentation"
 msgstr ""
 
-#: ../../../science.rst:156
+#: ../../../science.rst:161
 msgid "Chainladder - Property and Casualty Loss Reserving in Python"
 msgstr ""
 
-#: ../../../science.rst:160
+#: ../../../science.rst:165
 msgid "Feature-engine - A Python library for Feature Engineering and Selection"
 msgstr ""
