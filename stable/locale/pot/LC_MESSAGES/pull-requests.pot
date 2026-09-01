@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 09:33+0000\n"
+"POT-Creation-Date: 2026-09-01 13:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,49 +23,56 @@ msgstr ""
 
 #: ../../../pull-requests.rst:4
 msgid ""
-"Your project can be configured to build and preview documentation for every "
-"new pull request. Previewing changes during review makes it easier to catch "
-"formatting and display issues before they go live."
+"Read the Docs builds your documentation for every new pull request. "
+"Previewing changes during review makes it easier to catch formatting and "
+"display issues before they go live."
 msgstr ""
 
-#: ../../../pull-requests.rst:9
-msgid "Features"
+#: ../../../pull-requests.rst:7
+msgid ""
+"Pull request previews are enabled by default on new projects. You can "
+"configure them from a project under :guilabel:`Settings` → :guilabel:`Pull "
+"request builds`."
 msgstr ""
 
 #: ../../../pull-requests.rst:11
+msgid "Features"
+msgstr ""
+
+#: ../../../pull-requests.rst:13
 msgid "Build on pull request events"
 msgstr ""
 
-#: ../../../pull-requests.rst:12
+#: ../../../pull-requests.rst:14
 msgid ""
 "We create and build a new version when a pull request is opened, and rebuild "
 "it whenever a new commit is pushed."
 msgstr ""
 
-#: ../../../pull-requests.rst:15
+#: ../../../pull-requests.rst:17
 msgid "Build status report"
 msgstr ""
 
-#: ../../../pull-requests.rst:16
+#: ../../../pull-requests.rst:18
 msgid ""
 "Your project's pull request build status will show as one of your pull "
 "request's checks. This status will update as the build is running, and will "
 "show a success or failure status when the build completes."
 msgstr ""
 
-#: ../../../pull-requests.rst:20
+#: ../../../pull-requests.rst:22
 msgid "GitHub build status reporting for pull requests."
 msgstr ""
 
-#: ../../../pull-requests.rst:25
+#: ../../../pull-requests.rst:27
 msgid "GitHub build status reporting"
 msgstr ""
 
-#: ../../../pull-requests.rst:27
+#: ../../../pull-requests.rst:29
 msgid "Build overview with changed files"
 msgstr ""
 
-#: ../../../pull-requests.rst:28
+#: ../../../pull-requests.rst:30
 msgid ""
 "We create a comment on the pull request including a link to the preview of "
 "the documentation, and a list of the :doc:`files that changed </visual-"
@@ -73,17 +80,17 @@ msgid ""
 "project's documentation."
 msgstr ""
 
-#: ../../../pull-requests.rst:33
+#: ../../../pull-requests.rst:35
 msgid ""
 "This feature is only available for projects connected to a :ref:`reference/"
 "git-integration:GitHub App`."
 msgstr ""
 
-#: ../../../pull-requests.rst:35
+#: ../../../pull-requests.rst:37
 msgid "Pull request notifications"
 msgstr ""
 
-#: ../../../pull-requests.rst:36
+#: ../../../pull-requests.rst:38
 msgid ""
 "A pull request notification can be shown at the top of preview pages, which "
 "let readers know they aren't viewing an active version of the project. New "
@@ -91,35 +98,35 @@ msgid ""
 "guilabel:`Settings` → :guilabel:`Addons` → :guilabel:`Notifications`."
 msgstr ""
 
-#: ../../../pull-requests.rst:41
+#: ../../../pull-requests.rst:43
 msgid ":doc:`Visual diff </visual-diff>`"
 msgstr ""
 
-#: ../../../pull-requests.rst:42
+#: ../../../pull-requests.rst:44
 msgid ""
 "Visual diff shows proposed changes by visually highlighting the differences "
 "between the current pull request and the latest version of the project's "
 "documentation."
 msgstr ""
 
-#: ../../../pull-requests.rst:44
+#: ../../../pull-requests.rst:46
 msgid ""
 "Press ``d`` to toggle between Visual diff and normal pull request preview."
 msgstr ""
 
-#: ../../../pull-requests.rst:48
+#: ../../../pull-requests.rst:50
 msgid ":doc:`/guides/pull-requests`"
 msgstr ""
 
-#: ../../../pull-requests.rst:49
+#: ../../../pull-requests.rst:51
 msgid "A guide to configuring pull request builds on Read the Docs."
 msgstr ""
 
-#: ../../../pull-requests.rst:52
+#: ../../../pull-requests.rst:54
 msgid "Security"
 msgstr ""
 
-#: ../../../pull-requests.rst:54
+#: ../../../pull-requests.rst:56
 msgid ""
 "If pull request previews are enabled for your project, anyone who can open a "
 "pull request on your repository will be able to trigger a build of your "
@@ -128,7 +135,7 @@ msgid ""
 "``com.readthedocs.build``)."
 msgstr ""
 
-#: ../../../pull-requests.rst:59
+#: ../../../pull-requests.rst:61
 msgid ""
 "Builds from pull requests have access to environment variables that are "
 "marked as *Public* only, if you have environment variables with private "
@@ -136,7 +143,7 @@ msgid ""
 "variables:Environment variables and build process` for more information."
 msgstr ""
 
-#: ../../../pull-requests.rst:63
+#: ../../../pull-requests.rst:65
 msgid ""
 "On |com_brand| you can set pull request previews to be private or public, If "
 "you didn't import your project manually and your repository is public, the "
@@ -146,13 +153,13 @@ msgid ""
 "Docs project."
 msgstr ""
 
-#: ../../../pull-requests.rst:71
+#: ../../../pull-requests.rst:73
 msgid ""
 "If you set the privacy level of pull request previews to *Private*, make "
 "sure that only trusted users can open pull requests in your repository."
 msgstr ""
 
-#: ../../../pull-requests.rst:74
+#: ../../../pull-requests.rst:76
 msgid ""
 "Setting pull request previews to private on a public repository can allow a "
 "malicious user to access read-only APIs using the user's session that is "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-09-01 13:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,39 +34,46 @@ msgid ""
 msgstr ""
 
 #: ../../../commercial/index.rst:13
+msgid ""
+"During the trial period, your documentation is served with a ``noindex`` "
+"robots directive, so search engines won't index it. Subscribe to a paid plan "
+"to make your documentation indexable."
+msgstr ""
+
+#: ../../../commercial/index.rst:20
 msgid "`Read the Docs features <https://about.readthedocs.com/features/>`__"
 msgstr ""
 
-#: ../../../commercial/index.rst:14
+#: ../../../commercial/index.rst:21
 msgid ""
 "A high-level overview of platform features, and the `pricing page <https://"
 "about.readthedocs.com/pricing/>`__ has a feature breakdown by subscription "
 "level."
 msgstr ""
 
-#: ../../../commercial/index.rst:18
+#: ../../../commercial/index.rst:25
 msgid "Commercial documentation solutions"
 msgstr ""
 
-#: ../../../commercial/index.rst:20
+#: ../../../commercial/index.rst:27
 msgid ""
 "In addition to providing the same features as |org_brand|, commercial "
 "subscriptions to Read the Docs add additional features and run on separate "
 "infrastructure."
 msgstr ""
 
-#: ../../../commercial/index.rst:23
+#: ../../../commercial/index.rst:30
 msgid ""
 "The following list is a high-level overview of the areas covered by |"
 "com_brand|. If you want a full feature breakdown, please refer to our "
 "`pricing page <https://about.readthedocs.com/pricing/>`__."
 msgstr ""
 
-#: ../../../commercial/index.rst:26
+#: ../../../commercial/index.rst:33
 msgid "Private repositories and private documentation"
 msgstr ""
 
-#: ../../../commercial/index.rst:27
+#: ../../../commercial/index.rst:34
 msgid ""
 "The largest difference between the community solution and our commercial "
 "offering is the ability to connect to private repositories, to restrict "
@@ -74,42 +81,42 @@ msgid ""
 "private hyperlinks."
 msgstr ""
 
-#: ../../../commercial/index.rst:32
+#: ../../../commercial/index.rst:39
 msgid "Priority support"
 msgstr ""
 
-#: ../../../commercial/index.rst:33
+#: ../../../commercial/index.rst:40
 msgid ""
 "We have a dedicated support team that responds to support requests during "
 "business hours."
 msgstr ""
 
-#: ../../../commercial/index.rst:35
+#: ../../../commercial/index.rst:42
 msgid "Advertising-free"
 msgstr ""
 
-#: ../../../commercial/index.rst:36
+#: ../../../commercial/index.rst:43
 msgid "All commercially hosted documentation is always ad-free."
 msgstr ""
 
-#: ../../../commercial/index.rst:38
+#: ../../../commercial/index.rst:45
 msgid "Business features"
 msgstr ""
 
-#: ../../../commercial/index.rst:39
+#: ../../../commercial/index.rst:46
 msgid ""
 "Enjoy additional functionality specifically for larger organizations such as "
 "team management, single sign-on, and audit logging."
 msgstr ""
 
-#: ../../../commercial/index.rst:44
+#: ../../../commercial/index.rst:51
 msgid ":doc:`/commercial/organizations`"
 msgstr ""
 
-#: ../../../commercial/index.rst:45
+#: ../../../commercial/index.rst:52
 msgid ":doc:`/commercial/single-sign-on`"
 msgstr ""
 
-#: ../../../commercial/index.rst:46
+#: ../../../commercial/index.rst:53
 msgid ":doc:`/security-log`"
 msgstr ""
