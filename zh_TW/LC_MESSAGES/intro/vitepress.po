@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-01 08:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/vitepress.rst:-1
+msgid "Learn how to host VitePress documentation on Read the Docs."
+msgstr ""
+
+#: ../../../intro/vitepress.rst:3
+msgid "Deploying VitePress on Read the Docs"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:8
+msgid ""
+"`VitePress`_ is a static site generator with a focus on performance and "
+"simplicity."
+msgstr ""
+
+#: ../../../intro/vitepress.rst:10
+msgid ""
+"Minimal configuration is required to build an existing VitePress project on "
+"Read the Docs."
+msgstr ""
+
+#: ../../../intro/vitepress.rst:12
+msgid ".readthedocs.yaml"
+msgstr ".readthedocs.yaml"
+
+#: ../../../intro/vitepress.rst:12
+msgid ""
+" version: 2\n"
+"\n"
+" build:\n"
+"     os: ubuntu-lts-latest\n"
+"     tools:\n"
+"         nodejs: \"latest\"\n"
+"     jobs:\n"
+"         install:\n"
+"             - npm install vitepress\n"
+"         build:\n"
+"             html:\n"
+"                 # The site was created by running `vitepress init`\n"
+"                 # and following the official guide\n"
+"                 # https://vitepress.dev/guide/getting-started\n"
+"                 - vitepress build docs\n"
+"                 - mkdir -p $READTHEDOCS_OUTPUT/\n"
+"                 - mv docs/.vitepress/dist $READTHEDOCS_OUTPUT/html"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:36
+msgid "Getting started"
+msgstr "開始使用"
+
+#: ../../../intro/vitepress.rst:38
+msgid ""
+"If you have an existing VitePress project you want to host on Read the Docs, "
+"check out our :doc:`/intro/add-project` guide."
+msgstr ""
+
+#: ../../../intro/vitepress.rst:39
+msgid ""
+"If you're new to VitePress, check out the official `Getting started with "
+"VitePress`_ guide."
+msgstr ""
+
+#: ../../../intro/vitepress.rst:44
+msgid "Using the proper base path"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:46
+msgid ""
+"To ensure that your VitePress site works correctly on Read the Docs, you "
+"need to set the ``base`` option in your VitePress configuration to the "
+"correct base path:"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:49
+msgid ".vitepress/config.js"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:49
+msgid ""
+" import { defineConfig } from 'vitepress'\n"
+"\n"
+" // https://vitepress.dev/reference/site-config\n"
+" export default defineConfig({\n"
+"     // Use Canonical URL, but only the path and with no trailing /\n"
+"     // End result is like: `/en/latest`\n"
+"     base: process.env.READTHEDOCS_CANONICAL_URL\n"
+"     ? new URL(process.env.READTHEDOCS_CANONICAL_URL).pathname.replace(/\\/"
+"$/, \"\")\n"
+"     : \"\",\n"
+"\n"
+" title: \"My Awesome Project\",\n"
+" description: \"A VitePress Site\",\n"
+" })"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:67
+msgid "Example repository and demo"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:69
+msgid "Production example from DbToolsBundle"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:70
+msgid "https://dbtoolsbundle.readthedocs.io/en/stable/"
+msgstr "https://dbtoolsbundle.readthedocs.io/en/stable/"
+
+#: ../../../intro/vitepress.rst:72
+msgid "Example repository"
+msgstr "範例儲存庫"
+
+#: ../../../intro/vitepress.rst:73
+msgid "https://github.com/readthedocs/test-builds/tree/vitepress"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:75
+msgid "Demo"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:76
+msgid "https://test-builds.readthedocs.io/en/vitepress/"
+msgstr ""
+
+#: ../../../intro/vitepress.rst:79
+msgid "Further reading"
+msgstr "延伸閱讀"
+
+#: ../../../intro/vitepress.rst:81
+msgid "`VitePress documentation`_"
+msgstr ""

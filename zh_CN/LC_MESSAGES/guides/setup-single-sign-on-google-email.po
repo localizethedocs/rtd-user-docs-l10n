@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:2
+msgid "How to setup single sign-on (SSO) with Google Workspace"
+msgstr ""
+
+#: ../../../shared/admonition-rtd-business.rst:2
+msgid ""
+"This feature is only available on `Read the Docs for Business <https://app."
+"readthedocs.com/>`_."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:6
+msgid ""
+"This how-to guide will provide instructions on how to enable :abbr:`SSO "
+"(single sign-on)` with Google Workspace. If you want more information on "
+"this feature, please read :doc:`/commercial/single-sign-on`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:11
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:2
+msgid "Organization permissions"
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:4
+msgid ""
+"To change your :doc:`Organization's </commercial/organizations>` settings, "
+"you need to be an *owner* of that organization."
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:7
+msgid "You can validate your ownership of the Organization with these steps:"
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:9
+msgid ""
+"Navigate to the `organization management page <https://app.readthedocs.com/"
+"organizations/choose/organization_detail/>`__."
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:10
+msgid "Look at the :guilabel:`Owners` section on the right menu."
+msgstr ""
+
+#: ../../../shared/organization-permissions.rst:12
+msgid ""
+"If you'd like to modify this setting and are not an owner, you can ask an "
+"existing organization owner to take the actions listed."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:16
+msgid "Connect your Google account to Read the Docs"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:18
+msgid ""
+"In order to enable the Google Workspace integration, you need to connect "
+"your Google account to Read the Docs."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:21
+msgid ""
+"The domain attached to your Google account will be used to match users that "
+"sign up with a Google account to your organization."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:24
+msgid "User setup"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:26
+msgid ""
+"Using this setup, all users who have access to the configured Google "
+"Workspace will automatically join to your organization when they sign up "
+"with their Google account. Existing users will not be automatically joined "
+"to the organization."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:30
+msgid ""
+"You can still add outside collaborators and manage their access. There are "
+"two ways to manage this access:"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:33
+msgid ""
+"Using :doc:`teams </guides/manage-read-the-docs-teams>` to provide access "
+"for ongoing contribution."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:34
+msgid ""
+"Using :doc:`sharing </commercial/sharing>` to provide short-term access "
+"requiring a login."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:37
+msgid "Enabling SSO"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:39
+msgid ""
+"By default, users that sign up with a Google account do not have any "
+"permissions over any project. However, you can define which teams users "
+"matching your company's domain email address will auto-join when they sign "
+"up."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:42
+msgid ""
+"Navigate to the `authorization setting page <https://app.readthedocs.com/"
+"organizations/choose/organization_sso/>`__."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:43
+msgid "Select **Google** in the :guilabel:`Provider` drop-down."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:44
+msgid "Press :guilabel:`Save`."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:46
+msgid ""
+"After enabling SSO with Google Workspace, all users with email addresses "
+"from your configured Google Workspace domain will be required to signup "
+"using their Google account."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:51
+msgid ""
+"Existing users with email addresses from your configured Google Workspace "
+"domain will not be required to link their Google account, but they won't be "
+"automatically joined to your organization."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:55
+msgid "Configure team for all users to join"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:57
+msgid ""
+"You can mark one or many teams that users are automatically joined when they "
+"sign up with a matching email address. Configure this option by:"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:60
+msgid ""
+"Navigate to the `teams management page <https://app.readthedocs.com/"
+"organizations/choose/organization_team_list/>`__."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:61
+msgid "Click the :guilabel:`<team name>`."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:62
+msgid "Click :guilabel:`Edit team`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:63
+msgid ""
+"Enable *Auto join users with an organization's email address to this team*."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:64
+msgid "Click :guilabel:`Save`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:66
+msgid ""
+"With this enabled, all users that sign up with their ``employee@company."
+"com`` email will automatically join this team. These teams can have either "
+"*read-only* or *admin* permissions over a set of projects."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:71
+msgid "Revoke user's access to all the projects"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:73
+msgid ""
+"By disabling the Google Workspace account with email ``employee@company."
+"com``, you revoke access to all the projects the linked Read the Docs user "
+"had access to, and disable login on Read the Docs completely for that user."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:79
+msgid ""
+"If the user signed up to Read the Docs previously to enabling SSO with "
+"Google Workspace on your organization, they may still have access to their "
+"account and projects if they were manually added to a team."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:82
+#: ../../../guides/setup-single-sign-on-google-email.rst:90
+msgid ""
+"To completely revoke access to a user, remove them from all the teams they "
+"are part of."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:86
+msgid ""
+"If the user was already signed in to Read the Docs when their access was "
+"revoked, they may still have access to documentation pages until their "
+"session expires. This is three days for the dashboard and documentation "
+"pages."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:94
+msgid ":doc:`/guides/manage-read-the-docs-teams`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:95
+msgid "Additional user management options"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:96
+msgid ":doc:`/commercial/single-sign-on`"
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-google-email.rst:97
+msgid "Information about choosing a single sign-on approach"
+msgstr ""
