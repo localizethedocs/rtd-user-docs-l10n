@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build-using-too-many-resources.rst:2
+msgid "Troubleshooting slow builds"
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:4
+msgid ""
+"This page contains a list of the most common issues that are slowing down "
+"builds."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:6
+msgid ""
+"In case you are waiting a long time for your builds to finish or your builds "
+"are terminated by exceeding general resource limits, this troubleshooting "
+"guide will help you resolve some of the most common issues causing slow "
+"builds. Even if you are not facing any immediate performance issues, it's "
+"always good to be familiar with the most common ones."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:12
+msgid ""
+"Build resources on Read the Docs are limited to make sure that users don't "
+"overwhelm our build systems. The current build limits can be found on our :"
+"ref:`Build resources reference <builds:Build resources>`."
+msgstr ""
+
+#: ../../../shared/contribute-to-troubleshooting.rst:3
+msgid ""
+"Please help us keep this section updated and contribute your own error "
+"resolutions, performance improvements, etc. Send in your helpful comments or "
+"ideas 💡 to support@readthedocs.org or contribute directly by clicking :"
+"guilabel:`Edit on GitHub` in the top right corner of this page."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:18
+msgid "Reduce formats you're building"
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:20
+msgid ""
+"You can change the formats of docs that you're building with our :doc:`/"
+"config-file/index`, see :ref:`config-file/v2:formats`."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:23
+msgid ""
+"In particular, the ``htmlzip`` takes up a decent amount of memory and time, "
+"so disabling that format might solve your problem."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:27
+msgid "Reduce documentation build dependencies"
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:29
+msgid ""
+"A lot of projects reuse their requirements file for their documentation "
+"builds. If there are extra packages that you don't need for building docs, "
+"you can create a custom requirements file just for documentation. This "
+"should speed up your documentation builds, as well as reduce your memory "
+"footprint."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:36
+msgid "Use mamba instead of conda"
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:38
+msgid ""
+"If you need conda packages to build your documentation, you can :ref:`use "
+"mamba as a drop-in replacement to conda <guides/conda:Making builds faster "
+"with mamba>`, which requires less memory and is noticeably faster."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:43
+msgid "Document Python modules API statically"
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:45
+msgid ""
+"If you are installing a lot of Python dependencies just to document your "
+"Python modules API using ``sphinx.ext.autodoc``, you can give a try to "
+"`sphinx-autoapi`_ Sphinx's extension instead which should produce the exact "
+"same output but running statically. This could drastically reduce the memory "
+"and bandwidth required to build your docs."
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:52
+msgid "Requests more resources"
+msgstr ""
+
+#: ../../../guides/build-using-too-many-resources.rst:54
+msgid ""
+"If you still have problems building your documentation, we can increase "
+"build limits on a per-project basis, sending an email to support@readthedocs."
+"org providing a good reason why your documentation needs more resources."
+msgstr ""
