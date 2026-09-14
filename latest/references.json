@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-20 09:23:35 +0200",
-      "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-      "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+      "date" : "2026-09-14 07:32:25 -0700",
+      "hash" : "49e370eaec872e6ff5fe92ffbabef40c0fbb266e",
+      "title" : "Proxito: drop the fallback template for disabled organizations (#13305)"
     }
   },
   "type" : "branch",
