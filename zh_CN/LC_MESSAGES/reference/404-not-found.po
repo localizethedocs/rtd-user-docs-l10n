@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../reference/404-not-found.rst:2
+msgid "``404 Not Found`` pages"
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:4
+msgid ""
+"If you want your project to use a custom or branded ``404 Not Found`` page, "
+"you can put a ``404.html`` or ``404/index.html`` at the top level of your "
+"project's HTML output."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:8
+msgid "How it works"
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:10
+msgid ""
+"When our servers return a ``404 Not Found`` error, we check if there is a "
+"``404.html`` or ``404/index.html`` in the root of your project's output."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:13
+msgid "The following locations are checked, in order:"
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:15
+msgid ""
+"``/404.html`` or ``404/index.html`` in the *current* documentation version."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:16
+msgid ""
+"``/404.html`` or ``404/index.html`` in the *default* documentation version."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:19
+msgid "Tool integration"
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:21
+msgid ""
+"Documentation tools will have different ways of generating a ``404.html`` or "
+"``404/index.html`` file. We have examples for some of the most popular tools "
+"below."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:26
+msgid "Sphinx"
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:28
+msgid ""
+"We recommend the `sphinx-notfound-page`_ extension, which Read the Docs "
+"maintains. It automatically creates a ``404.html`` page for your "
+"documentation, matching the theme of your project. See its documentation_ "
+"for how to install and customize it."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:34
+msgid ""
+"If you want to create a custom ``404.html``, Sphinx uses the "
+"`html_extra_path`_ option to add static files to the output. You need to "
+"create a ``404.html`` file and put it under the path defined in "
+"``html_extra_path``."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:38
+msgid ""
+"If you are using the ``DirHTML`` builder, no further steps are required. "
+"Sphinx will automatically apply the ``<page-name>/index.html`` folder "
+"structure to your 404 page: ``404/index.html``. Read the Docs also detects "
+"404 pages named this way."
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:44
+msgid "MkDocs"
+msgstr ""
+
+#: ../../../reference/404-not-found.rst:46
+msgid ""
+"MkDocs automatically generates a ``404.html`` which Read the Docs will use. "
+"However, assets will not be loaded correctly unless you define the "
+"`site_url`_ configuration value as your site's :doc:`canonical base URL </"
+"canonical-urls>`."
+msgstr ""

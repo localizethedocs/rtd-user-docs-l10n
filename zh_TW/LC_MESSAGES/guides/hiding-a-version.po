@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/hiding-a-version.rst:2
+msgid "How to hide a version and keep its documentation online"
+msgstr ""
+
+#: ../../../guides/hiding-a-version.rst:4
+msgid ""
+"If you manage a project with a lot of versions, the version (flyout) menu of "
+"your docs can be easily overwhelmed and hard to navigate."
+msgstr ""
+
+#: ../../../guides/hiding-a-version.rst:10
+msgid "Overwhelmed flyout menu"
+msgstr ""
+
+#: ../../../guides/hiding-a-version.rst:12
+msgid ""
+"You can deactivate the version to remove its docs, but removing its docs "
+"isn't always an option. To not list a version in the flyout menu while "
+"keeping its docs online, you can mark it as hidden. Go to the :guilabel:"
+"`Versions` tab of your project, click on :guilabel:`Edit` and mark the "
+"``Hidden`` option."
+msgstr ""
+
+#: ../../../guides/hiding-a-version.rst:17
+msgid ""
+"Users that have a link to your old version will still be able to see your "
+"docs. And new users can see all your versions (including hidden versions) in "
+"the versions tab of your project at ``https://app.readthedocs.org/projects/"
+"<your-project>/versions/``"
+msgstr ""
+
+#: ../../../guides/hiding-a-version.rst:20
+msgid ""
+"Check the docs about :ref:`versions' states <versions:Version States>` for "
+"more information."
+msgstr ""
