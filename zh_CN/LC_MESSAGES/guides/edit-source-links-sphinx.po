@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/edit-source-links-sphinx.rst:2
+msgid "Adding \"Edit Source\" links on your Sphinx theme"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:4
+msgid ""
+"You can use define some Sphinx variables in the ``html_context`` to tell "
+"Read the Docs Sphinx theme to display \"Edit Source\" links on each page."
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:7
+msgid "More information can be found on `Sphinx documentation`_."
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:13
+msgid "GitHub"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:15
+msgid ""
+"If you want to integrate GitHub, these are the required variables to put "
+"into your ``conf.py``::"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:18
+msgid ""
+"html_context = {\n"
+"    \"display_github\": True, # Integrate GitHub\n"
+"    \"github_user\": \"MyUserName\", # Username\n"
+"    \"github_repo\": \"MyDoc\", # Repo name\n"
+"    \"github_version\": \"master\", # Version\n"
+"    \"conf_py_path\": \"/source/\", # Path in the checkout to the docs root\n"
+"}"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:26
+#: ../../../guides/edit-source-links-sphinx.rst:48
+#: ../../../guides/edit-source-links-sphinx.rst:70
+msgid "They can be used like this::"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:28
+msgid ""
+"{% if display_github %}\n"
+"    <li><a href=\"https://github.com/{{ github_user }}/{{ github_repo }}\n"
+"    /blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst\">\n"
+"    Show on GitHub</a></li>\n"
+"{% endif %}"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:35
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:37
+msgid ""
+"If you want to integrate Bitbucket, these are the required variables to put "
+"into your ``conf.py``::"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:40
+msgid ""
+"html_context = {\n"
+"    \"display_bitbucket\": True, # Integrate Bitbucket\n"
+"    \"bitbucket_user\": \"MyUserName\", # Username\n"
+"    \"bitbucket_repo\": \"MyDoc\", # Repo name\n"
+"    \"bitbucket_version\": \"master\", # Version\n"
+"    \"conf_py_path\": \"/source/\", # Path in the checkout to the docs root\n"
+"}"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:50
+msgid ""
+"{% if display_bitbucket %}\n"
+"    <a href=\"https://bitbucket.org/{{ bitbucket_user }}/"
+"{{ bitbucket_repo }}\n"
+"    /src/{{ bitbucket_version}}{{ conf_py_path }}{{ pagename }}.rst'\"\n"
+"    class=\"icon icon-bitbucket\"> Edit on Bitbucket</a>\n"
+"{% endif %}"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:57
+msgid "Gitlab"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:59
+msgid ""
+"If you want to integrate Gitlab, these are the required variables to put "
+"into your ``conf.py``::"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:62
+msgid ""
+"html_context = {\n"
+"    \"display_gitlab\": True, # Integrate Gitlab\n"
+"    \"gitlab_user\": \"MyUserName\", # Username\n"
+"    \"gitlab_repo\": \"MyDoc\", # Repo name\n"
+"    \"gitlab_version\": \"master\", # Version\n"
+"    \"conf_py_path\": \"/source/\", # Path in the checkout to the docs root\n"
+"}"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:72
+msgid ""
+"{% if display_gitlab %}\n"
+"    <a href=\"https://{{ gitlab_host|default(\"gitlab.com\") }}/\n"
+"    {{ gitlab_user }}/{{ gitlab_repo }}/blob/{{ gitlab_version }}\n"
+"    {{ conf_py_path }}{{ pagename }}{{ suffix }}\" class=\"fa fa-gitlab\">\n"
+"    Edit on GitLab</a>\n"
+"{% endif %}"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:80
+msgid "Additional variables"
+msgstr ""
+
+#: ../../../guides/edit-source-links-sphinx.rst:82
+msgid ""
+"``'pagename'`` - Sphinx variable representing the name of the page you're on."
+msgstr ""
