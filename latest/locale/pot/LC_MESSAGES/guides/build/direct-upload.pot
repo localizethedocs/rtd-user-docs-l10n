@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 15:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build/direct-upload.rst:2
+msgid "Direct upload"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:4
+msgid ""
+"Direct upload lets you build your documentation anywhere, for example in "
+"GitHub Actions or in any other continuous integration service, and upload "
+"the resulting files to Read the Docs for hosting. This guide shows how to "
+"build your documentation in your own pipeline and upload it."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:9
+msgid ""
+"Documentation uploaded this way keeps all the hosting features you already "
+"know: :doc:`versions </versions>`, :doc:`pull request previews </pull-"
+"requests>`, :doc:`server side search </server-side-search/index>`, :doc:"
+"`Addons </addons>`, :doc:`custom domains </custom-domains>` and :doc:"
+"`downloadable formats </offline-formats>`, among others."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:15
+msgid "Direct upload is useful when:"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:17
+msgid ""
+"Your documentation tool is not supported by the Read the Docs build process."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:18
+msgid ""
+"Your build needs tools, secrets or resources that are only available in your "
+"own environment."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:19
+msgid ""
+"You already build the documentation in your continuous integration pipeline "
+"and want to reuse the result."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:23
+msgid ""
+"**Direct upload is currently a beta testing feature.** It has to be enabled "
+"on your project, and we ask that you give us feedback on it. :doc:`Contact "
+"support </support>` to enable it on your project."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:27
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:29
+msgid ""
+"A project on Read the Docs, with direct upload enabled by our support team."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:30
+msgid ""
+"An :ref:`API token <api/v3:Token>` belonging to a user with admin access to "
+"the project. Store it as a secret in your continuous integration service."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:35
+msgid ""
+"We are working on project-scoped tokens, which give access to a single "
+"project instead of everything the user can access. They will be released "
+"soon, and we recommend switching to them once available."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:40
+msgid "Uploading from GitHub Actions"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:42
+msgid ""
+"Use the `upload action <https://github.com/readthedocs/upload-action>`__ "
+"after the step that builds your documentation:"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:45
+msgid ".github/workflows/docs.yaml"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:45
+msgid ""
+"name: Docs\n"
+"\n"
+"on:\n"
+"  push:\n"
+"    branches: [main]\n"
+"    tags: [\"v*\"]\n"
+"  pull_request:\n"
+"\n"
+"jobs:\n"
+"  docs:\n"
+"    runs-on: ubuntu-latest\n"
+"    # Pull requests from forks don't have access to secrets.\n"
+"    # Do not use ``pull_request_target`` to work around this because it "
+"would run\n"
+"    # the pull request's code with access to your token.\n"
+"    if: github.event.pull_request.head.repo.full_name == github.repository\n"
+"    steps:\n"
+"      - uses: actions/checkout@v5\n"
+"\n"
+"      # Build your documentation using the tool you are already using\n"
+"      #\n"
+"      # Building with Sphinx as example:\n"
+"      #\n"
+"      # - uses: actions/setup-python@v6\n"
+"      #   with:\n"
+"      #     python-version: \"3.14\"\n"
+"      # - run: pip install -r docs/requirements.txt\n"
+"      # - run: sphinx-build -b html docs/ _build/html\n"
+"\n"
+"      - uses: readthedocs/upload-action@v1\n"
+"        with:\n"
+"          token: ${{ secrets.READTHEDOCS_TOKEN }}\n"
+"          project-slug: <your-project-slug>\n"
+"          html: _build/html"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:82
+msgid ""
+"The workflow reads the API token from a secret named ``READTHEDOCS_TOKEN``. "
+"Add it to your repository under :menuselection:`Settings --> Secrets and "
+"variables --> Actions`, or follow `GitHub's guide on using secrets <https://"
+"docs.github.com/en/actions/security-for-github-actions/security-guides/using-"
+"secrets-in-github-actions>`__."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:86
+msgid ""
+"The upload action detects the branch, tag or pull request from the workflow "
+"event, so a push to ``main`` updates the ``main`` version, a new tag creates "
+"a new version, and a pull request creates a :doc:`pull request preview </"
+"pull-requests>`."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:93
+msgid "Uploading from any other environment"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:95
+msgid ""
+"The upload action is a thin wrapper around the `readthedocs-upload <https://"
+"pypi.org/project/readthedocs-upload/>`__ package, a command line client that "
+"you can run from any continuous integration service or from your own "
+"computer. It requires Python 3.10 or newer and reads the token from the "
+"``READTHEDOCS_TOKEN`` environment variable:"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:99
+msgid ""
+"$ export READTHEDOCS_TOKEN=<token>\n"
+"$ uvx --from readthedocs-upload readthedocs upload --project-slug <your-"
+"project-slug> --html _build/html"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:104
+msgid ""
+"You can also install it with ``pip install readthedocs-upload``, which makes "
+"the ``readthedocs`` command available."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:107
+msgid ""
+"Outside GitHub Actions, the client infers the version from the local Git "
+"checkout. On other continuous integration services, pass the version "
+"explicitly:"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:110
+msgid ""
+"$ readthedocs upload \\\n"
+"    --project-slug <your-project-slug> \\\n"
+"    --html _build/html \\\n"
+"    --version-name <branch, tag or pull request number> \\\n"
+"    --version-type <branch, tag or external> \\\n"
+"    --commit <full commit hash>"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:119
+msgid "Run ``readthedocs upload --help`` to see all the options."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:122
+msgid "Uploading offline formats"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:124
+msgid ""
+"PDF, ePub and zipped HTML files are optional, and each one points to a "
+"single file. They are shown in the :term:`flyout menu` like any other :doc:"
+"`downloadable format </offline-formats>`:"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:129
+msgid ""
+"- uses: readthedocs/upload-action@v1\n"
+"  with:\n"
+"    token: ${{ secrets.READTHEDOCS_TOKEN }}\n"
+"    project-slug: <your-project-slug>\n"
+"    html: _build/html\n"
+"    pdf: _build/latex/documentation.pdf\n"
+"    epub: _build/epub/documentation.epub"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:139
+msgid ""
+"$ readthedocs upload \\\n"
+"    --project-slug <your-project-slug> \\\n"
+"    --html _build/html \\\n"
+"    --pdf _build/latex/documentation.pdf \\\n"
+"    --epub _build/epub/documentation.epub"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:148
+msgid "Limits"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:150
+msgid "The uploaded archive can be up to 1 GB."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:151
+msgid "The upload has to complete within 30 minutes of starting it."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:152
+msgid "A project can have at most 50 uploads in progress at the same time."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:156
+msgid ":doc:`/builds`"
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:157
+msgid ""
+"How Read the Docs builds documentation when you don't use direct upload."
+msgstr ""

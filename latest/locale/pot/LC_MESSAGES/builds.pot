@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:46+0000\n"
+"POT-Creation-Date: 2026-09-21 15:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,46 +145,96 @@ msgid ""
 msgstr ""
 
 #: ../../../builds.rst:75
+msgid ":doc:`/build-customization`"
+msgstr ""
+
+#: ../../../builds.rst:76
 msgid ""
-"If you require additional build steps or customization, it's possible to run "
-"user-defined commands and :doc:`customize the build process </build-"
-"customization>`."
+"Run user-defined commands if you require additional build steps or "
+"customization."
+msgstr ""
+
+#: ../../../builds.rst:78
+msgid ":doc:`/guides/build/direct-upload`"
 msgstr ""
 
 #: ../../../builds.rst:79
-msgid "Cancelling builds"
+msgid ""
+"Build the documentation in your own continuous integration pipeline and "
+"upload the result to Read the Docs."
 msgstr ""
 
-#: ../../../builds.rst:81
-msgid ""
-"There may be situations where you want to cancel a running build. Cancelling "
-"builds allows your team to speed up review times and also help us reduce "
-"server costs and our environmental footprint."
+#: ../../../builds.rst:82
+msgid "Skipping builds"
 msgstr ""
 
 #: ../../../builds.rst:84
+msgid ""
+"A *skipped* build is a build that is never triggered. Using :doc:`automation "
+"rules </automation-rules>` with webhook filters, you can tell Read the Docs "
+"to only trigger builds when something relevant has changed, for example when "
+"files under ``docs/`` were modified, or when the commit message doesn't "
+"contain ``[skip ci]``."
+msgstr ""
+
+#: ../../../builds.rst:90
+msgid ""
+"Skipped builds don't appear in your build history and don't consume build "
+"time. This is the recommended way to avoid unnecessary builds."
+msgstr ""
+
+#: ../../../builds.rst:95
+msgid ":ref:`automation-rules:Webhook filters`"
+msgstr ""
+
+#: ../../../builds.rst:96
+msgid "Filter builds by changed files, commit message, or pull request labels."
+msgstr ""
+
+#: ../../../builds.rst:98
+msgid ":doc:`/guides/build/skip-or-cancel-builds`"
+msgstr ""
+
+#: ../../../builds.rst:99
+msgid "Examples of skipping and cancelling builds based on conditions."
+msgstr ""
+
+#: ../../../builds.rst:102
+msgid "Cancelling builds"
+msgstr ""
+
+#: ../../../builds.rst:104
+msgid ""
+"A *cancelled* build is a build that was triggered as usual, but was stopped "
+"before it finished. Cancelled builds appear in your build history with the "
+"*Cancelled* state. Cancelling builds allows your team to speed up review "
+"times and also help us reduce server costs and our environmental footprint."
+msgstr ""
+
+#: ../../../builds.rst:109
 msgid "A couple common reasons you might want to cancel builds are:"
 msgstr ""
 
-#: ../../../builds.rst:86
+#: ../../../builds.rst:111
 msgid "the build has an external dependency that hasn't been updated"
 msgstr ""
 
-#: ../../../builds.rst:87
-msgid "there were no changes on the documentation files"
+#: ../../../builds.rst:112
+msgid ""
+"your Git provider doesn't support webhook filters, and you want to stop "
+"builds when there were no changes on the documentation files"
 msgstr ""
 
-#: ../../../builds.rst:89
+#: ../../../builds.rst:115
 msgid ""
-"For these scenarios, Read the Docs supports three different mechanisms to "
-"cancel a running build:"
+"Read the Docs supports three different mechanisms to cancel a running build:"
 msgstr ""
 
 #: ../../../builds.rst:0
 msgid "Manually"
 msgstr ""
 
-#: ../../../builds.rst:94
+#: ../../../builds.rst:119
 msgid ""
 "Project administrators can go to the build detail page and click :guilabel:"
 "`Cancel build`."
@@ -194,7 +244,7 @@ msgstr ""
 msgid "Automatically"
 msgstr ""
 
-#: ../../../builds.rst:99
+#: ../../../builds.rst:124
 msgid ""
 "When Read the Docs detects a push to a version that is already building, it "
 "cancels the running build and starts a new build using the latest commit."
@@ -204,7 +254,7 @@ msgstr ""
 msgid "Programmatically"
 msgstr ""
 
-#: ../../../builds.rst:104
+#: ../../../builds.rst:129
 msgid ""
 "You can use user-defined commands on ``build.jobs`` or ``build.commands`` "
 "(see :doc:`build-customization`) to check for your own cancellation "
@@ -212,113 +262,115 @@ msgid ""
 "with the code ``0`` to continue running the build."
 msgstr ""
 
-#: ../../../builds.rst:108
+#: ../../../builds.rst:133
 msgid ""
 "When this happens, Read the Docs will notify your :doc:`Git provider </"
 "reference/git-integration>` the build succeeded (✅), so the pull request "
 "doesn't have any failing checks."
 msgstr ""
 
-#: ../../../builds.rst:113
-msgid "Take a look at :doc:`/guides/build/skip-build` page for some examples."
+#: ../../../builds.rst:138
+msgid ""
+"Take a look at the :doc:`/guides/build/skip-or-cancel-builds` page for some "
+"examples."
 msgstr ""
 
-#: ../../../builds.rst:116
+#: ../../../builds.rst:141
 msgid "Automatic disabling of builds"
 msgstr ""
 
-#: ../../../builds.rst:118
+#: ../../../builds.rst:143
 msgid ""
 "To reduce resource consumption and improve build queue times for all users, "
 "Read the Docs will automatically disable builds for projects that have too "
 "many consecutive failed builds on their default version."
 msgstr ""
 
-#: ../../../builds.rst:121
+#: ../../../builds.rst:146
 msgid ""
 "When a project has **25 consecutive failed builds** on its default version, "
 "we will disable builds for the project."
 msgstr ""
 
-#: ../../../builds.rst:124
+#: ../../../builds.rst:149
 msgid ""
 "This helps ensure that projects with persistent build issues don't consume "
 "resources that could be used by active projects."
 msgstr ""
 
-#: ../../../builds.rst:128
+#: ../../../builds.rst:153
 msgid ""
 "This only applies to the default version of a project. Builds on other "
 "versions (branches, tags, pull requests) are not counted towards this limit."
 msgstr ""
 
-#: ../../../builds.rst:131
+#: ../../../builds.rst:156
 msgid ""
 "If your project has been disabled due to consecutive build failures, you'll "
 "need to re-enable from your project settings. Make sure to fix the "
 "underlying issue to avoid being disabled again."
 msgstr ""
 
-#: ../../../builds.rst:135
+#: ../../../builds.rst:160
 msgid "Build resources"
 msgstr ""
 
-#: ../../../builds.rst:137
+#: ../../../builds.rst:162
 msgid "Every build has limited resources assigned to it. Our build limits are:"
 msgstr ""
 
-#: ../../../builds.rst:142
+#: ../../../builds.rst:167
 msgid "|com_brand|"
 msgstr ""
 
-#: ../../../builds.rst:144
+#: ../../../builds.rst:169
 msgid "30 minutes build time (upgradable)"
 msgstr ""
 
-#: ../../../builds.rst:145
+#: ../../../builds.rst:170
 msgid "7GB of memory (upgradable)"
 msgstr ""
 
-#: ../../../builds.rst:146
+#: ../../../builds.rst:171
 msgid "Concurrent builds vary based on your pricing plan"
 msgstr ""
 
-#: ../../../builds.rst:148
+#: ../../../builds.rst:173
 msgid ""
 "If you are having trouble with your documentation builds, you can reach our "
 "support at support@readthedocs.com."
 msgstr ""
 
-#: ../../../builds.rst:151
+#: ../../../builds.rst:176
 msgid "|org_brand|"
 msgstr ""
 
-#: ../../../builds.rst:153
+#: ../../../builds.rst:178
 msgid "15 minutes build time"
 msgstr ""
 
-#: ../../../builds.rst:154
+#: ../../../builds.rst:179
 msgid "7GB of memory"
 msgstr ""
 
-#: ../../../builds.rst:155
+#: ../../../builds.rst:180
 msgid "2 concurrent builds"
 msgstr ""
 
-#: ../../../builds.rst:156
+#: ../../../builds.rst:181
 msgid "5GB of disk storage (soft limit)"
 msgstr ""
 
-#: ../../../builds.rst:158
+#: ../../../builds.rst:183
 msgid ""
 "We can increase build time on a per-project basis. Send an email to "
 "support@readthedocs.org providing a good reason why your documentation needs "
 "more resources."
 msgstr ""
 
-#: ../../../builds.rst:161
+#: ../../../builds.rst:186
 msgid ""
 "If your business is hitting build limits hosting documentation on Read the "
-"Docs, please consider :doc:`Read the Docs for Business </commercial/index>` "
+"Docs, please consider :doc:`Read the Docs Business </commercial/index>` "
 "which has options for additional build resources."
 msgstr ""
