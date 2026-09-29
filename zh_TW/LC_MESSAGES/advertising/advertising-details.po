@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../advertising/advertising-details.rst:2
+msgid "Advertising details"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:7
+msgid ""
+"Read the Docs largely funds our operations and development through "
+"advertising. However, we aren't willing to compromise our values, document "
+"authors, or site visitors simply to make a bit more money. That's why we "
+"created our :doc:`ethical advertising <ethical-advertising>` initiative."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:13
+msgid ""
+"We get a lot of inquiries about our approach to advertising which range from "
+"questions about our practices to requests to partner. The goal of this "
+"document is to shed light on the advertising industry, exactly what we do "
+"for advertising, and how what we do is different. If you have questions or "
+"comments, `send us an email <mailto:ads@readthedocs.org>`_ or `open an issue "
+"on GitHub <https://github.com/readthedocs/readthedocs.org/issues>`_."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:23
+msgid "Other ad networks' targeting"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:25
+msgid ""
+"Some ad networks build a database of user data in order to predict the types "
+"of ads that are likely to be clicked. In the advertising industry, this is "
+"called *behavioral targeting*. This can include data such as:"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:30
+msgid "sites a user has visited"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:31
+msgid "a user's search history"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:32
+msgid "ads, pages, or stories a user has clicked on in the past"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:33
+msgid "demographic information such as age, gender, or income level"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:35
+msgid ""
+"Typically, getting a user's page visit history is accomplished by the use of "
+"trackers (sometimes called beacons or pixels). For example, if a site uses a "
+"tracker from an ad network and a user visits that site, the site can now "
+"target future advertising to that user -- a known past visitor -- with that "
+"network. This is called *retargeting*."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:41
+msgid ""
+"Other ad predictions are made by grouping similar users together based on "
+"user data using machine learning. Frequently this involves an advertiser "
+"uploading personal data on users (often past customers of the advertiser) to "
+"an ad network and telling the network to target similar users. The idea is "
+"that two users with similar demographic information and similar interests "
+"would like the same products. In ad tech, this is known as *lookalike "
+"audiences* or *similar audiences*."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:50
+msgid ""
+"Understandably, many people have concerns about these targeting techniques. "
+"The modern advertising industry has built enormous value by centralizing "
+"massive amounts of data on as many people as possible."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:56
+msgid "Our targeting details"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:58
+msgid ""
+"**Read the Docs doesn't use the above techniques**. Instead, we target based "
+"solely upon:"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:61
+msgid "Details of the page where the advertisement is shown including:"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:63
+msgid ""
+"The name, keywords, or programming language associated with the project "
+"being viewed"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:64
+msgid "Content of the page (eg. H1, title, theme, etc.)"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:65
+msgid "Whether the page is being viewed from a mobile device"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:67
+msgid "General geography"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:69
+msgid ""
+"We allow advertisers to target ads to a list of countries or to exclude "
+"countries from their advertising. For ads targeting the USA, we also support "
+"targeting by state or by metro area (DMA specifically)."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:72
+msgid "We geolocate a user's IP address to a country when a request is made."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:76
+msgid "Where ads are shown"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:78
+msgid "We can place ads in:"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:80
+msgid "the sidebar navigation"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:81
+msgid "the footer of the page"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:82
+msgid "on search result pages"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:83
+msgid "a small footer fixed to the bottom of the viewport"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:84
+msgid "on 404 pages (rare)"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:86
+msgid "We never show more than 1 ad on a page."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:89
+msgid "Do Not Track Policy"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:91
+msgid ""
+"Read the Docs supports Do Not Track (DNT) and respects users' tracking "
+"preferences. For more details, see the :ref:`Do Not Track section <privacy-"
+"policy:Do Not Track>` of our privacy policy."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:97
+msgid "Ad serving infrastructure"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:99
+msgid ""
+"Our `entire ad server <https://github.com/readthedocs/ethical-ad-server>`_ "
+"is open source, so you can inspect how we're doing things. We believe "
+"strongly in open source, and we practice what we preach."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:105
+msgid "Analytics"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:107
+msgid ""
+"Analytics are a sensitive enough issue that they require their own section."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:109
+msgid ""
+"Google Analytics is a contentious issue inside Read the Docs and in our "
+"community. Some users are very sensitive and privacy conscious to usage of "
+"GA. Some authors want their own analytics on their docs to see the usage "
+"their docs get. The developers at Read the Docs understand that different "
+"users have different priorities and we try to respect the different "
+"viewpoints as much as possible while also accomplishing our own goals."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:117
+msgid "Why we use analytics"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:119
+msgid ""
+"Advertisers ask us questions that are easily answered with an analytics "
+"solution like \"how many users do you have in Switzerland browsing Python "
+"docs?\". We need to be able to easily get this data. We also use data from "
+"GA for some development decisions such as what browsers to support (or not) "
+"or how much usage a particular page or feature gets."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:125
+msgid "Alternatives"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:127
+msgid ""
+"We are always exploring our options with respect to analytics. There are "
+"alternatives but none of them are without downsides. Some alternatives are:"
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:131
+msgid ""
+"Run a different cloud analytics solution from a provider other than Google "
+"(eg. Parse.ly, Matomo Cloud, Adobe Analytics). We priced a couple of these "
+"out based on our load and they are very expensive. They also just substitute "
+"one problem of data sharing with another."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:135
+msgid ""
+"Send data to GA (or another cloud analytics provider) on the server side and "
+"strip or anonymize personal data such as IPs before sending them. This would "
+"be a complex solution and involve additional infrastructure, but it would "
+"have many advantages. It would result in a loss of data on \"sessions\" and "
+"new vs. returning visitors which are of limited value to us."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:140
+msgid ""
+"Run a local JavaScript based analytics solution (eg. Matomo community). This "
+"involves additional infrastructure that needs to be always up. Frequently "
+"there are very large databases associated with this. Many of these solutions "
+"aren't built to handle Read the Docs' load."
+msgstr ""
+
+#: ../../../advertising/advertising-details.rst:144
+msgid ""
+"Run a local analytics solution based on web server log parsing. This has the "
+"same infrastructure problems as above while also not capturing all the data "
+"we want (without additional engineering) like the programming language of "
+"the docs being shown or whether the docs are built with Sphinx or something "
+"else."
+msgstr ""
