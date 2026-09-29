@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-09-29 14:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,11 +89,17 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:50
-msgid ":doc:`/downloadable-documentation` - Overview of this feature."
+msgid ":doc:`/offline-formats` - Overview of this feature."
 msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:51
 msgid ""
 ":ref:`config-file/v2:formats` - Configuration file options for offline "
 "formats."
+msgstr ""
+
+#: ../../../guides/enable-offline-formats.rst:52
+msgid ""
+":ref:`build-customization:where to put files` - Where to put offline format "
+"output when using custom build commands."
 msgstr ""
