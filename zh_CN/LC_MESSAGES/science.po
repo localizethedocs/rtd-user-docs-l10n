@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-17 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../science.rst:2
+msgid "Documentation in scientific and academic publishing"
+msgstr ""
+
+#: ../../../science.rst:4
+msgid ""
+"On this page, we explore some of the many tools and practices that "
+"*software* documentation and *academic* writing share. If you are working "
+"within the field of science or academia, this page can be used as an "
+"introduction."
+msgstr ""
+
+#: ../../../science.rst:23
+msgid ""
+"Documentation and technical writing are broad fields. Their tools and "
+"practices have grown relevant to most scientific activities. This includes "
+"building publications, books, educational resources, interactive data "
+"science, resources for data journalism and full-scale websites for research "
+"projects and courses."
+msgstr ""
+
+#: ../../../science.rst:27
+msgid ""
+"Here's a brief overview of some :doc:`features </reference/features>` that "
+"people in science and academic writing love about Read the Docs:"
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "🪄 Easy to use"
+msgstr ""
+
+#: ../../../science.rst:32
+msgid ""
+"Documentation code doesn't have to be written by a programmer. In fact, "
+"documentation coding languages are designed and developed so you don't have "
+"to be a programmer, and there are many writing aids that makes it easy to "
+"abstract from code and focus on content."
+msgstr ""
+
+#: ../../../science.rst:34
+msgid "Getting started is also made easy:"
+msgstr ""
+
+#: ../../../science.rst:36
+msgid ""
+"All new to this? Take the official :external+jupyterbook:doc:`Jupyter Book "
+"Tutorial <start/your-first-book>`"
+msgstr ""
+
+#: ../../../science.rst:37
+msgid "Curious for practical code? See :doc:`/examples`"
+msgstr ""
+
+#: ../../../science.rst:38
+msgid "Familiar with Sphinx? See :doc:`/guides/jupyter`"
+msgstr ""
+
+#: ../../../science.rst:0
+msgid ""
+"🔋 Batteries included: Graphs, computations, formulas, maps, diagrams and "
+"more"
+msgstr ""
+
+#: ../../../science.rst:42
+msgid ""
+"Take full advantage of getting all the richness of :external+jupyter:doc:"
+"`Jupyter Notebook <index>` combined with Sphinx and the giant ecosystem of "
+"extensions for both of these."
+msgstr ""
+
+#: ../../../science.rst:44
+msgid "Here are some examples:"
+msgstr ""
+
+#: ../../../science.rst:46
+msgid ""
+"Use symbols familiar from math and physics, build advanced proofs. See also: "
+"`sphinx-proof <https://sphinx-proof.readthedocs.io/en/latest/syntax.html>`__"
+msgstr ""
+
+#: ../../../science.rst:47
+msgid ""
+"Present results with plots, graphs, images and let users interact directly "
+"with your datasets and algorithms. See also: `Matplotlib <https://matplotlib."
+"org/stable/tutorials/introductory/usage.html>`__, `Interactive Data "
+"Visualizations <https://jupyterbook.org/en/stable/interactive/interactive."
+"html>`__"
+msgstr ""
+
+#: ../../../science.rst:48
+msgid ""
+"Graphs, tables etc. are computed when the latest version of your project is "
+"built and published as a stand-alone website. All code examples on your "
+"website are validated each time you build."
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "📚 Bibliographies and external links"
+msgstr ""
+
+#: ../../../science.rst:52
+msgid ""
+"Maintain bibliography databases directly as code and have external links "
+"automatically verified."
+msgstr ""
+
+#: ../../../science.rst:54
+msgid ""
+"Using extensions for Sphinx such as the popular `sphinxcontrib-bibtex "
+"<https://sphinxcontrib-bibtex.readthedocs.io/>`__ extension, you can "
+"maintain your bibliography with Sphinx directly or refer to entries ``.bib`` "
+"files, as well as generating entire Bibliography sections from those files."
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "📜 Modern themes and classic PDF outputs"
+msgstr ""
+
+#: ../../../science.rst:61
+msgid ""
+"Use the latest state-of-the-art themes for web and have PDFs and e-book "
+"formats automatically generated."
+msgstr ""
+
+#: ../../../science.rst:63
+msgid ""
+"New themes are improving every day, and when you write documentation based "
+"on Jupyter Book and Sphinx, you will separate your contents and semantics "
+"from your presentation logic. This way, you can keep up with the latest "
+"theme updates or try new themes."
+msgstr ""
+
+#: ../../../science.rst:65
+msgid ""
+"Another example of the benefits from separating content and presentation "
+"logic: Your documentation also transforms into printable books and eBooks."
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "📐 Widgets, widgets and more widgets"
+msgstr ""
+
+#: ../../../science.rst:69
+msgid ""
+"Design your science project's layout and components with widgets from a rich "
+"eco-system of open-source extensions built for many purposes. Special "
+"widgets help users display and interact with graphs, maps and more. :"
+"external+jupyterbook:doc:`Several <content/components>` `extensions <https://"
+"sphinx-gallery.github.io/>`__ are built and invented by the science "
+"community."
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "⚙️ Automatic builds"
+msgstr ""
+
+#: ../../../science.rst:73
+msgid ""
+"Build and publish your project for every change made through Git (GitHub, "
+"GitLab, Bitbucket etc). Preview changes via pull requests. Receive "
+"notifications when something is wrong. How does this work? Have a look at "
+"this video:"
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "💬 Collaboration and community"
+msgstr ""
+
+#: ../../../science.rst:84
+msgid ""
+"Science and academia have a big kinship with software developers: We ❤️ "
+"community. Our solutions and projects become better when we foster "
+"inclusivity and active participation. Read the Docs features easy access for "
+"readers to suggest changes via your git platform (GitHub, GitLab, Bitbucket "
+"etc.). But not just any unqualified feedback. Instead, the *code* and all "
+"the tools are available for your community to forge qualified contributions."
+msgstr ""
+
+#: ../../../science.rst:86
+msgid "Your readers can become your co-authors!"
+msgstr ""
+
+#: ../../../science.rst:88
+msgid ""
+"Discuss changes via pull request and track all changes in your project's "
+"version history."
+msgstr ""
+
+#: ../../../science.rst:90
+msgid ""
+"Using git does not mean that anyone can go and change your code and your "
+"published project. The full ownership and permission handling remains in "
+"your hands. Project and organization owners on your git platform govern what "
+"is released and who has access to approve and build changes."
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "🔎 Full search and analytics"
+msgstr ""
+
+#: ../../../science.rst:94
+msgid ""
+"Read the Docs comes with a number of features bundled in that you would have "
+"to configure if you were hosting documentation elsewhere."
+msgstr ""
+
+#: ../../../science.rst:96
+msgid "Super-fast text search"
+msgstr ""
+
+#: ../../../science.rst:97
+msgid ""
+"Your documentation is automatically indexed and gets its own search function."
+msgstr ""
+
+#: ../../../science.rst:99
+msgid "Traffic statistics"
+msgstr ""
+
+#: ../../../science.rst:100
+msgid ""
+"Have full access to your traffic data and have quick access to see which of "
+"your pages are most popular."
+msgstr ""
+
+#: ../../../science.rst:102
+msgid "Search analytics"
+msgstr ""
+
+#: ../../../science.rst:103
+msgid ""
+"What are people searching for and do they get hits? From each search query "
+"in your documentation, we collect a neat little statistic that can help to "
+"improve the discoverability and relevance of your documentation."
+msgstr ""
+
+#: ../../../science.rst:105
+msgid "SEO - Don't reinvent search engine optimization"
+msgstr ""
+
+#: ../../../science.rst:106
+msgid ""
+"Use built-in SEO best-practices from Sphinx, its themes and Read the Docs "
+"hosting. This can give you a good ranking on search engines as a direct "
+"outcome of simply writing and publishing your documentation project."
+msgstr ""
+
+#: ../../../science.rst:0
+msgid "🌱 Grow your own solutions"
+msgstr ""
+
+#: ../../../science.rst:110
+msgid ""
+"The eco-system is open source and makes it accessible for anyone with Python "
+"skills to build their own extensions."
+msgstr ""
+
+#: ../../../science.rst:112
+msgid ""
+"We want science communities to use Read the Docs and to be part of the "
+"documentation community 💞"
+msgstr ""
+
+#: ../../../science.rst:115
+msgid "Getting started: Jupyter Book"
+msgstr ""
+
+#: ../../../science.rst:117
+msgid ""
+":external+jupyterbook:doc:`Jupyter Book <intro>` on Read the Docs brings you "
+"the rich experience of computed `Jupyter <https://jupyter.org/>`__ documents "
+"built together with a modern documentation tool. The results are beautiful "
+"and automatically deployed websites, built with Sphinx and :doc:`Executable "
+"Book <executablebook:index>` + all the extensions available in this "
+"ecosystem."
+msgstr ""
+
+#: ../../../science.rst:119
+msgid ""
+"Here are some popular activities that are well-supported by Jupyter Book:"
+msgstr ""
+
+#: ../../../science.rst:121
+msgid "Publications and books"
+msgstr ""
+
+#: ../../../science.rst:122
+msgid "Course and research websites"
+msgstr ""
+
+#: ../../../science.rst:123
+msgid "Interactive classroom activities"
+msgstr ""
+
+#: ../../../science.rst:124
+msgid "Data science software documentation"
+msgstr ""
+
+#: ../../../science.rst:127
+msgid ""
+":doc:`Visit the gallery of solutions built with Jupyter Book » "
+"<executablebook:gallery>`"
+msgstr ""
+
+#: ../../../science.rst:131
+msgid "Ready to get started?"
+msgstr ""
+
+#: ../../../science.rst:135
+msgid ""
+"All new to this? Take the official :external+jupyterbook:doc:`Jupyter Book "
+"Tutorial » <start/your-first-book>`"
+msgstr ""
+
+#: ../../../science.rst:136
+msgid ""
+"Curious for practical code? See the list of :doc:`example projects » </"
+"examples>`"
+msgstr ""
+
+#: ../../../science.rst:137
+msgid ""
+"Familiar with Sphinx? Read :doc:`How to use Jupyter notebooks in Sphinx » </"
+"guides/jupyter>`"
+msgstr ""
+
+#: ../../../science.rst:141
+msgid "Examples and users"
+msgstr ""
+
+#: ../../../science.rst:146
+msgid ""
+"Read the Docs community for science is already big and keeps growing. The :"
+"external+jupyter:doc:`Jupyter Project <index>` itself and `the many sub-"
+"projects of Jupyter <https://docs.jupyter.org/en/latest/#sub-project-"
+"documentation>`__ are built and published with Read the Docs."
+msgstr ""
+
+#: ../../../science.rst:152
+msgid "Jupyter Project Documentation"
+msgstr ""
+
+#: ../../../science.rst:156
+msgid "Chainladder - Property and Casualty Loss Reserving in Python"
+msgstr ""
+
+#: ../../../science.rst:160
+msgid "Feature-engine - A Python library for Feature Engineering and Selection"
+msgstr ""
