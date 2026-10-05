@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-20 09:23:35 +0200",
-      "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-      "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+      "date" : "2026-10-05 17:43:03 +0200",
+      "hash" : "aac3843b455dd983b46246a65b0524ed3a2f8ff3",
+      "title" : "Tests: fix tests on corporate for direct upload (#13368)"
     }
   },
   "type" : "branch",
