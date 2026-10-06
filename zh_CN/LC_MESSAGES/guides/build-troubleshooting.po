@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/build-troubleshooting.rst:2
+msgid "Troubleshooting build errors"
+msgstr ""
+
+#: ../../../shared/contribute-to-troubleshooting.rst:3
+msgid ""
+"Please help us keep this section updated and contribute your own error "
+"resolutions, performance improvements, etc. Send in your helpful comments or "
+"ideas 💡 to support@readthedocs.org or contribute directly by clicking :"
+"guilabel:`Edit on GitHub` in the top right corner of this page."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:6
+msgid ""
+"This guide provides some common errors and resolutions encountered in the :"
+"doc:`build process </builds>`."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:9
+msgid "Git errors"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:11
+msgid ""
+"In the examples below, we use ``github.com``, however error messages are "
+"similar for GitLab, Bitbucket etc."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:15
+msgid "terminal prompts disabled"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:17
+msgid ""
+"fatal: could not read Username for 'https://github.com': terminal prompts "
+"disabled"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:21
+msgid ""
+"**Resolution:** This error can be quite misleading. It usually occurs when a "
+"repository could not be found because of a typo in the repository name or "
+"because the repository has been deleted. Verify your repository URL in :"
+"guilabel:`Admin > Settings`."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:23
+msgid ""
+"This error also occurs if you have changed a ``public`` repository to "
+"``private`` and you are using ``https://`` in your git repository URL."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:27
+msgid ""
+"To use private repositories, you need a plan on `Read the Docs for Business "
+"<https://app.readthedocs.com>`__."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:31
+msgid "error: pathspec"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:33
+msgid "error: pathspec 'main' did not match any file(s) known to git"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:37
+msgid ""
+"**Resolution:** A specified branch does not exist in the git repository. "
+"This might be because the git repository was recently created (and has no "
+"commits nor branches) or because the default branch has changed name. If for "
+"instance, the default branch on GitHub changed from ``master`` to ``main``, "
+"you need to visit :guilabel:`Admin > Settings` to change the name of the "
+"default branch that Read the Docs expects to find when cloning the "
+"repository."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:42
+msgid "Permission denied (publickey)"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:44
+msgid ""
+"git@github.com: Permission denied (publickey).\n"
+"\n"
+"fatal: Could not read from remote repository."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:50
+msgid ""
+"**Resolution:** The git repository URL points to a repository, user account "
+"or organization that Read the Docs does not have credentials for. Verify "
+"that the public SSH key from your Read the Docs project is installed as a "
+"*deploy key* on your VCS (GitHub/GitLab/Bitbucket etc):"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:54
+#: ../../../guides/build-troubleshooting.rst:73
+msgid "Navigate to :guilabel:`Admin > SSH Keys`"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:55
+#: ../../../guides/build-troubleshooting.rst:74
+msgid "Copy the contents of the public key."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:56
+msgid ""
+"Ensure that the key exists as a deploy key at your Git provider. Here are "
+"direct links to access settings for verifying and changing deploy keys - "
+"customize the URLs for your Git provider and repository details:"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:58
+#: ../../../guides/build-troubleshooting.rst:77
+msgid "``https://github.com/<username>/<repo>/settings/keys``"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:59
+#: ../../../guides/build-troubleshooting.rst:78
+msgid "``https://gitlab.com/<username>/<repo>/-/settings/repository``"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:60
+#: ../../../guides/build-troubleshooting.rst:79
+msgid "``https://bitbucket.org/<username>/<repo>/admin/access-keys/``"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:64
+msgid "ERROR: Repository not found."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:66
+msgid ""
+"ERROR: Repository not found.\n"
+"fatal: Could not read from remote repository."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:71
+msgid ""
+"**Resolution:** This error usually occurs on private git repositories that "
+"no longer have the public SSH key from their Read the Docs project installed "
+"as a *deploy key*."
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:75
+msgid ""
+"Ensure that the key exists as a deploy key at your Git provider. Here are "
+"direct links to access settings for verifying and changing deploy keys - "
+"customize the URLs for your VCS host and repository details:"
+msgstr ""
+
+#: ../../../guides/build-troubleshooting.rst:81
+msgid ""
+"This error is rare for public repositories. If your repository is public and "
+"you see this error, it may be because you have specified a wrong domain or "
+"forgotten a component in the path."
+msgstr ""
