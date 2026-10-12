@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-20 09:23:35 +0200",
-      "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-      "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+      "date" : "2026-10-08 17:27:29 +0200",
+      "hash" : "01c933ef544963a3ad7100b9ad7d4e91b0d5177d",
+      "title" : "Storage: log rclone's stderr when a command fails (#13416)"
     }
   },
   "type" : "branch",
