@@ -332,7 +332,7 @@ The goal of this project is to translate the Read the Docs User Documentation in
 
 <h2 id="preview-translations"><a href="#table-of-contents">預覽翻譯</a></h2>
 
-You can preview translations in <a href="https://projects.localizethedocs.org/rtd-user-docs-l10n">GitHub Pages</a>:
+您可以在 <a href="https://projects.localizethedocs.org/rtd-user-docs-l10n">GitHub Pages</a> 中預覽翻譯：
 
 <div align="center">
 <table>
