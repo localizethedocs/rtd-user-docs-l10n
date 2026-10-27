@@ -139,8 +139,8 @@ msgid ""
 "deployment of infrastructure. In terms of documentation, GitOps is "
 "applicable for Read the Docs, as the configuration for building "
 "documentation is stored in ``.readthedocs.yaml``, and rules for publication "
-"of documentation can be :doc:`automated </automation-rules>`. Similar to :"
-"term:`Docs as Code`."
+"of documentation can be :doc:`automated </automation-rules>`. Similar "
+"to :term:`Docs as Code`."
 msgstr ""
 
 #: ../../../glossary.rst:59
@@ -156,8 +156,8 @@ msgstr ""
 
 #: ../../../glossary.rst:64
 msgid ""
-"The *maintainer* role does not exist on |com_brand|, which instead provides :"
-"doc:`/commercial/organizations`."
+"The *maintainer* role does not exist on |com_brand|, which instead "
+"provides :doc:`/commercial/organizations`."
 msgstr ""
 
 #: ../../../glossary.rst:65
@@ -269,9 +269,9 @@ msgstr ""
 #: ../../../glossary.rst:115
 msgid ""
 "Home URL of your documentation without the ``/<lang>`` and ``/<version>`` "
-"segments. For projects without custom domains, the one ending in ``."
-"readthedocs.io/`` (for example, ``https://docs.readthedocs.io`` as opposed "
-"to ``https://docs.readthedocs.io/en/latest``)."
+"segments. For projects without custom domains, the one ending in "
+"``.readthedocs.io/`` (for example, ``https://docs.readthedocs.io`` as "
+"opposed to ``https://docs.readthedocs.io/en/latest``)."
 msgstr ""
 
 #: ../../../glossary.rst:118

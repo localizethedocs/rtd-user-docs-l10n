@@ -173,8 +173,8 @@ msgstr ""
 #: ../../../examples.rst:75
 msgid ""
 "is added to the above list by **opening a PR** targeting `examples.rst "
-"<https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/examples."
-"rst>`_ file from our documentation."
+"<https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/"
+"examples.rst>`_ file from our documentation."
 msgstr ""
 
 #: ../../../examples.rst:78

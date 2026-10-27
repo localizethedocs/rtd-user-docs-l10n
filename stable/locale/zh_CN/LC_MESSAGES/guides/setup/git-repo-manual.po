@@ -64,8 +64,9 @@ msgstr ""
 #: ../../../guides/setup/git-repo-manual.rst:41
 msgid ""
 "For **Payload URL**, use the URL of the integration on your **Read the Docs "
-"project**, found on the project's :guilabel:`Admin` > :guilabel:"
-"`Integrations` page. You may need to prepend *https://* to the URL."
+"project**, found on the project's :guilabel:`Admin` "
+"> :guilabel:`Integrations` page. You may need to prepend *https://* to the "
+"URL."
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:44
@@ -154,8 +155,8 @@ msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:69
 msgid ""
-"For **URL**, use the URL of the integration on Read the Docs, found on the :"
-"guilabel:`Admin` > :guilabel:`Integrations`  page"
+"For **URL**, use the URL of the integration on Read the Docs, found on "
+"the :guilabel:`Admin` > :guilabel:`Integrations`  page"
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:71
@@ -209,8 +210,8 @@ msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:95
 msgid ""
-"For **URL**, use the URL of the integration on Read the Docs, found on the :"
-"guilabel:`Admin` > :guilabel:`Integrations` page"
+"For **URL**, use the URL of the integration on Read the Docs, found on "
+"the :guilabel:`Admin` > :guilabel:`Integrations` page"
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:97
@@ -263,8 +264,8 @@ msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:125
 msgid ""
-"`GitLab <https://docs.gitlab.com/ee/user/project/integrations/webhooks."
-"html#validate-payloads-by-using-a-secret-token>`__"
+"`GitLab <https://docs.gitlab.com/ee/user/project/integrations/"
+"webhooks.html#validate-payloads-by-using-a-secret-token>`__"
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:126
@@ -279,16 +280,16 @@ msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:132
 msgid ""
-"To manually set up an integration, go to :guilabel:`Admin` > :guilabel:"
-"`Integrations` >  :guilabel:`Add integration` dashboard page and select the "
-"integration type you'd like to add."
+"To manually set up an integration, go to :guilabel:`Admin` "
+"> :guilabel:`Integrations` >  :guilabel:`Add integration` dashboard page and "
+"select the integration type you'd like to add."
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:135
 msgid ""
-"As an example, the URL pattern looks like this: ``https://app.readthedocs."
-"org/api/v2/webhook/<project-name>/<id>/*``. Use this URL when setting up a "
-"new integration with your provider."
+"As an example, the URL pattern looks like this: ``https://"
+"app.readthedocs.org/api/v2/webhook/<project-name>/<id>/*``. Use this URL "
+"when setting up a new integration with your provider."
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:141
@@ -300,8 +301,8 @@ msgid ""
 "For repositories that are not hosted with a supported provider, we also "
 "offer a generic API endpoint for triggering project builds. Similar to "
 "webhook integrations, this integration has a specific URL, which can be "
-"found on the project's **Integrations** dashboard page (:guilabel:`Admin` > :"
-"guilabel:`Integrations`)."
+"found on the project's **Integrations** dashboard page (:guilabel:`Admin` "
+"> :guilabel:`Integrations`)."
 msgstr ""
 
 #: ../../../guides/setup/git-repo-manual.rst:148

@@ -86,8 +86,8 @@ msgstr ""
 
 #: ../../../flyout-menu.rst:36
 msgid ""
-"In your dashboard, you can configure flyout menu options in :guilabel:"
-"`Settings > Addons > Flyout Menu`."
+"In your dashboard, you can configure flyout menu options "
+"in :guilabel:`Settings > Addons > Flyout Menu`."
 msgstr ""
 
 #: ../../../flyout-menu.rst:39

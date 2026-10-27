@@ -66,9 +66,9 @@ msgstr ""
 msgid ""
 "We recognize that advertising is not for everyone. You may :ref:`opt out of "
 "paid advertising <advertising/ethical-advertising:Opting Out>` although you "
-"will still see :ref:`community ads <advertising/ethical-advertising:"
-"Community Ads>`. `Gold members`_ may also remove advertising from their "
-"projects for all visitors."
+"will still see :ref:`community ads <advertising/ethical-"
+"advertising:Community Ads>`. `Gold members`_ may also remove advertising "
+"from their projects for all visitors."
 msgstr ""
 
 #: ../../../advertising/index.rst:28

@@ -288,8 +288,8 @@ msgstr ""
 
 #: ../../../config-file/index.rst:132
 msgid ""
-"Configuration file reference with all Python versions available for ``build."
-"tools.python``."
+"Configuration file reference with all Python versions available for "
+"``build.tools.python``."
 msgstr ""
 
 #: ../../../config-file/index.rst:134

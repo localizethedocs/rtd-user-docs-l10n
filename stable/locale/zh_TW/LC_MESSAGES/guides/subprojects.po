@@ -90,8 +90,8 @@ msgstr ""
 #: ../../../guides/subprojects.rst:38
 msgid ""
 "If you would like the subproject to use a different name in the URL "
-"structure of your built documentation, you can alter that subproject :"
-"guilabel:`Alias` field -- otherwise leave this blank."
+"structure of your built documentation, you can alter that "
+"subproject :guilabel:`Alias` field -- otherwise leave this blank."
 msgstr ""
 
 #: ../../../guides/subprojects.rst:41

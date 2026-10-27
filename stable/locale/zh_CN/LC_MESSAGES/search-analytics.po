@@ -48,8 +48,8 @@ msgstr ""
 #: ../../../search-analytics.rst:17
 msgid ""
 "To see a list of the top queries and an overview from the last month, go to "
-"the :guilabel:`Admin` tab of your project, and then click on :guilabel:"
-"`Search Analytics`."
+"the :guilabel:`Admin` tab of your project, and then click "
+"on :guilabel:`Search Analytics`."
 msgstr ""
 
 #: ../../../search-analytics.rst:21

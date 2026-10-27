@@ -184,10 +184,10 @@ msgstr ""
 
 #: ../../../guides/pull-requests.rst:77
 msgid ""
-"To re-sync your project's webhook, go to your project's admin dashboard, :"
-"guilabel:`Integrations`, and then select the webhook integration for your "
-"provider. Follow the directions to re-sync the webhook, or create a new "
-"webhook integration."
+"To re-sync your project's webhook, go to your project's admin "
+"dashboard, :guilabel:`Integrations`, and then select the webhook integration "
+"for your provider. Follow the directions to re-sync the webhook, or create a "
+"new webhook integration."
 msgstr ""
 
 #: ../../../guides/pull-requests.rst:82

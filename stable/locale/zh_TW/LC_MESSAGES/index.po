@@ -136,8 +136,8 @@ msgstr "每個版本的文件"
 #: ../../../index.rst:147
 msgid ""
 "Read the Docs can host multiple versions of your docs. Keep your 1.0 and 2.0 "
-"documentation online, pulled directly from Git. Start hosting all your :doc:"
-"`versions </versions>`."
+"documentation online, pulled directly from Git. Start hosting all "
+"your :doc:`versions </versions>`."
 msgstr ""
 
 #: ../../../index.rst:152

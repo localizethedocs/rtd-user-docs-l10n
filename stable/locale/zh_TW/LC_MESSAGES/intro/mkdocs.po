@@ -137,8 +137,9 @@ msgstr ""
 
 #: ../../../intro/mkdocs.rst:72
 msgid ""
-"Set your MkDocs `site URL`_ to your Read the Docs canonical URL using a :doc:"
-"`Read the Docs environment variable </reference/environment-variables>`:"
+"Set your MkDocs `site URL`_ to your Read the Docs canonical URL using "
+"a :doc:`Read the Docs environment variable </reference/environment-"
+"variables>`:"
 msgstr ""
 
 #: ../../../intro/mkdocs.rst:75
@@ -264,8 +265,8 @@ msgid ""
 "    if (currentVersions !== null) {\n"
 "      currentVersions.remove();\n"
 "    }\n"
-"    document.querySelector(\".md-header__topic\")."
-"insertAdjacentHTML(\"beforeend\", versioning);\n"
+"    document.querySelector(\".md-"
+"header__topic\").insertAdjacentHTML(\"beforeend\", versioning);\n"
 "});"
 msgstr ""
 

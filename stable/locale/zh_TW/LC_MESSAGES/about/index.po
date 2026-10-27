@@ -54,10 +54,10 @@ msgstr ""
 
 #: ../../../about/index.rst:18
 msgid ""
-"All of the source code for Read the Docs is open source. You are welcome to :"
-"doc:`contribute <rtd-dev:contribute>` the features you want or run your own "
-"instance. We should note that we generally only support our hosted versions "
-"as a matter of :doc:`our philosophy </open-source-philosophy>`."
+"All of the source code for Read the Docs is open source. You are welcome "
+"to :doc:`contribute <rtd-dev:contribute>` the features you want or run your "
+"own instance. We should note that we generally only support our hosted "
+"versions as a matter of :doc:`our philosophy </open-source-philosophy>`."
 msgstr ""
 
 #: ../../../about/index.rst:22

@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:15
 msgid ""
-"Have your Git repository automatically configured with your Read the Docs :"
-"term:`webhook`, which allows Read the Docs to build your docs on every "
+"Have your Git repository automatically configured with your Read the "
+"Docs :term:`webhook`, which allows Read the Docs to build your docs on every "
 "change to your repository."
 msgstr ""
 
@@ -62,8 +62,8 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:19
 msgid ""
-"See your documentation build status as a commit status indicator on :doc:"
-"`pull request builds </pull-requests>`."
+"See your documentation build status as a commit status indicator "
+"on :doc:`pull request builds </pull-requests>`."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:23
@@ -121,8 +121,8 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:49
 msgid ""
-"When your Read the Docs account is connected to |git_providers_or| and you :"
-"doc:`add a new Read the Docs project </intro/add-project>`:"
+"When your Read the Docs account is connected to |git_providers_or| and "
+"you :doc:`add a new Read the Docs project </intro/add-project>`:"
 msgstr ""
 
 #: ../../../reference/git-integration.rst:51
@@ -566,9 +566,9 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:277
 msgid ""
-"Our GitHub App is currently in beta, see our `blog post <https://about."
-"readthedocs.com/blog/2025/06/announcing-our-github-app-beta/>`__ for more "
-"information."
+"Our GitHub App is currently in beta, see our `blog post <https://"
+"about.readthedocs.com/blog/2025/06/announcing-our-github-app-beta/>`__ for "
+"more information."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:279
@@ -670,9 +670,9 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:314
 msgid ""
-"Once you have installed the GitHub App, in Read the Docs, click on the :"
-"guilabel:`Projects` tab, and click on :guilabel:`Add project`, search for "
-"the repository you want to create a project for, and then follow the "
+"Once you have installed the GitHub App, in Read the Docs, click on "
+"the :guilabel:`Projects` tab, and click on :guilabel:`Add project`, search "
+"for the repository you want to create a project for, and then follow the "
 "instructions from there."
 msgstr ""
 
@@ -734,9 +734,9 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:345
 msgid ""
-"Go to the settings page of your GitHub repository, click on the GitHub :"
-"guilabel:`Webhooks` tab, and delete all the webhooks with URLs that start "
-"with:"
+"Go to the settings page of your GitHub repository, click on the "
+"GitHub :guilabel:`Webhooks` tab, and delete all the webhooks with URLs that "
+"start with:"
 msgstr ""
 
 #: ../../../reference/git-integration.rst:348
@@ -763,8 +763,8 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:354
 msgid ""
-":ref:`Connect the project to the repository <reference/git-integration:"
-"Connect a repository to an existing project>`."
+":ref:`Connect the project to the repository <reference/git-"
+"integration:Connect a repository to an existing project>`."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:357

@@ -42,10 +42,10 @@ msgstr ""
 
 #: ../../../builds.rst:17
 msgid ""
-"All the steps are run inside a Docker container, using the image defined in :"
-"ref:`config-file/v2:build.os`. The build has access to all :doc:`pre-defined "
-"environment variables </reference/environment-variables>` and :doc:`custom "
-"environment variables </environment-variables>`."
+"All the steps are run inside a Docker container, using the image defined "
+"in :ref:`config-file/v2:build.os`. The build has access to all :doc:`pre-"
+"defined environment variables </reference/environment-variables>` "
+"and :doc:`custom environment variables </environment-variables>`."
 msgstr ""
 
 #: ../../../builds.rst:20
@@ -86,15 +86,15 @@ msgstr ""
 #: ../../../builds.rst:38
 msgid ""
 "Creates a Python environment to install all the dependencies in an isolated "
-"and reproducible way. Depending on what's defined by the project, a :term:"
-"`virtualenv` or a :ref:`conda environment <config-file/v2:conda>` will be "
-"used."
+"and reproducible way. Depending on what's defined by the project, "
+"a :term:`virtualenv` or a :ref:`conda environment <config-file/v2:conda>` "
+"will be used."
 msgstr ""
 
 #: ../../../builds.rst:44 ../../../builds.rst:60
 msgid ""
-"This step is only executed if the :ref:`config-file/v2:sphinx` or :ref:"
-"`config-file/v2:mkdocs` keys are defined."
+"This step is only executed if the :ref:`config-file/v2:sphinx` "
+"or :ref:`config-file/v2:mkdocs` keys are defined."
 msgstr ""
 
 #: ../../../builds.rst:0
@@ -104,14 +104,14 @@ msgstr ""
 #: ../../../builds.rst:48
 msgid ""
 "Installs :doc:`default and project dependencies </build-default-versions>`. "
-"This includes any requirements you have configured in :ref:`config-file/v2:"
-"requirements file`."
+"This includes any requirements you have configured in :ref:`config-file/"
+"v2:requirements file`."
 msgstr ""
 
 #: ../../../builds.rst:51
 msgid ""
-"If the project has extra Python requirements, :ref:`config-file/v2:python."
-"install` can be used to specify them."
+"If the project has extra Python requirements, :ref:`config-file/"
+"v2:python.install` can be used to specify them."
 msgstr ""
 
 #: ../../../builds.rst:56
@@ -186,8 +186,8 @@ msgstr ""
 
 #: ../../../builds.rst:94
 msgid ""
-"Project administrators can go to the build detail page and click :guilabel:"
-"`Cancel build`."
+"Project administrators can go to the build detail page and "
+"click :guilabel:`Cancel build`."
 msgstr ""
 
 #: ../../../builds.rst:0

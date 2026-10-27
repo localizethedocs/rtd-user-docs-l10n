@@ -142,9 +142,9 @@ msgstr ""
 #: ../../../visual-diff.rst:66
 msgid ""
 "Patterns are matched against the relative paths of the HTML files produced "
-"by the build, you should try to match ``index.html``, not ``docs/index."
-"rst``, nor ``/en/latest/index.html``. Patterns can include one or more of "
-"the following special characters:"
+"by the build, you should try to match ``index.html``, not ``docs/"
+"index.rst``, nor ``/en/latest/index.html``. Patterns can include one or more "
+"of the following special characters:"
 msgstr ""
 
 #: ../../../visual-diff.rst:70
@@ -197,9 +197,9 @@ msgstr ""
 #: ../../../visual-diff.rst:97
 msgid ""
 "If the heuristic root element picked by Visual Diff is wrong for your "
-"project theme, set the :guilabel:`CSS main content selector` under :guilabel:"
-"`Settings > Addons`. Visual Diff honors this override; other features like "
-"Server Side Search do not."
+"project theme, set the :guilabel:`CSS main content selector` "
+"under :guilabel:`Settings > Addons`. Visual Diff honors this override; other "
+"features like Server Side Search do not."
 msgstr ""
 
 #: ../../../visual-diff.rst:100

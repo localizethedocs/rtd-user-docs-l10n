@@ -82,9 +82,9 @@ msgstr ""
 
 #: ../../../science.rst:42
 msgid ""
-"Take full advantage of getting all the richness of :external+jupyter:doc:"
-"`Jupyter Notebook <index>` combined with Sphinx and the giant ecosystem of "
-"extensions for both of these."
+"Take full advantage of getting all the richness "
+"of :external+jupyter:doc:`Jupyter Notebook <index>` combined with Sphinx and "
+"the giant ecosystem of extensions for both of these."
 msgstr ""
 
 #: ../../../science.rst:44
@@ -100,10 +100,10 @@ msgstr ""
 #: ../../../science.rst:47
 msgid ""
 "Present results with plots, graphs, images and let users interact directly "
-"with your datasets and algorithms. See also: `Matplotlib <https://matplotlib."
-"org/stable/tutorials/introductory/usage.html>`__, `Interactive Data "
-"Visualizations <https://jupyterbook.org/en/stable/interactive/interactive."
-"html>`__"
+"with your datasets and algorithms. See also: `Matplotlib <https://"
+"matplotlib.org/stable/tutorials/introductory/usage.html>`__, `Interactive "
+"Data Visualizations <https://jupyterbook.org/en/stable/interactive/"
+"interactive.html>`__"
 msgstr ""
 
 #: ../../../science.rst:48
@@ -163,9 +163,9 @@ msgstr ""
 msgid ""
 "Design your science project's layout and components with widgets from a rich "
 "eco-system of open-source extensions built for many purposes. Special "
-"widgets help users display and interact with graphs, maps and more. :"
-"external+jupyterbook:doc:`Several <content/components>` `extensions <https://"
-"sphinx-gallery.github.io/>`__ are built and invented by the science "
+"widgets help users display and interact with graphs, maps and "
+"more. :external+jupyterbook:doc:`Several <content/components>` `extensions "
+"<https://sphinx-gallery.github.io/>`__ are built and invented by the science "
 "community."
 msgstr ""
 
@@ -349,8 +349,8 @@ msgstr ""
 
 #: ../../../science.rst:146
 msgid ""
-"Read the Docs community for science is already big and keeps growing. The :"
-"external+jupyter:doc:`Jupyter Project <index>` itself and `the many sub-"
+"Read the Docs community for science is already big and keeps growing. "
+"The :external+jupyter:doc:`Jupyter Project <index>` itself and `the many sub-"
 "projects of Jupyter <https://docs.jupyter.org/en/latest/#sub-project-"
 "documentation>`__ are built and published with Read the Docs."
 msgstr ""

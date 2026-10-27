@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../guides/conda.rst:16
 msgid ""
-"Conda support is available using a :doc:`../config-file/index`, see :ref:"
-"`config-file/v2:conda`."
+"Conda support is available using a :doc:`../config-file/index`, "
+"see :ref:`config-file/v2:conda`."
 msgstr ""
 
 #: ../../../guides/conda.rst:18
@@ -112,8 +112,8 @@ msgstr ""
 #: ../../../guides/conda.rst:58
 msgid ""
 "Bear in mind that ``rasterio==1.2`` (double ``==``) will install version "
-"``1.2.0``, whereas ``python=3.8`` (single ``=``) will fetch the latest ``3.8."
-"*`` version, which is ``3.8.8`` at the time of writing."
+"``1.2.0``, whereas ``python=3.8`` (single ``=``) will fetch the latest "
+"``3.8.*`` version, which is ``3.8.8`` at the time of writing."
 msgstr ""
 
 #: ../../../guides/conda.rst:66

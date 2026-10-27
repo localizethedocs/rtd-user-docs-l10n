@@ -54,11 +54,11 @@ msgstr ""
 #: ../../../build-customization.rst:18
 msgid ""
 "In the normal build process, the pre-defined jobs ``checkout``, "
-"``system_dependencies``,  and ``upload`` are executed. If you define a :ref:"
-"`config-file/v2:sphinx` or :ref:`config-file/v2:mkdocs` configuration, the "
-"``create_environment``, ``install``, and ``build`` jobs will use the default "
-"commands for the selected tool. If no tool configuration is specified, these "
-"jobs won't execute anything by default."
+"``system_dependencies``,  and ``upload`` are executed. If you define "
+"a :ref:`config-file/v2:sphinx` or :ref:`config-file/v2:mkdocs` "
+"configuration, the ``create_environment``, ``install``, and ``build`` jobs "
+"will use the default commands for the selected tool. If no tool "
+"configuration is specified, these jobs won't execute anything by default."
 msgstr ""
 
 #: ../../../build-customization.rst:23
@@ -226,10 +226,10 @@ msgstr ""
 
 #: ../../../build-customization.rst:91
 msgid ""
-"If neither of the :ref:`config-file/v2:sphinx` or :ref:`config-file/v2:"
-"mkdocs` configurations are defined, the ``create_environment``, ``install``, "
-"and ``build`` jobs will default to run nothing, giving you full control over "
-"the build process."
+"If neither of the :ref:`config-file/v2:sphinx` or :ref:`config-file/"
+"v2:mkdocs` configurations are defined, the ``create_environment``, "
+"``install``, and ``build`` jobs will default to run nothing, giving you full "
+"control over the build process."
 msgstr ""
 
 #: ../../../build-customization.rst:96
@@ -239,9 +239,9 @@ msgstr ""
 #: ../../../build-customization.rst:98
 msgid ""
 "It is your responsibility to generate HTML and other formats of your "
-"documentation when overriding the steps from :ref:`config-file/v2:build.jobs."
-"build`. The contents of the ``$READTHEDOCS_OUTPUT/<format>/`` directory will "
-"be hosted as part of your documentation."
+"documentation when overriding the steps from :ref:`config-file/"
+"v2:build.jobs.build`. The contents of the ``$READTHEDOCS_OUTPUT/<format>/`` "
+"directory will be hosted as part of your documentation."
 msgstr ""
 
 #: ../../../build-customization.rst:101
@@ -351,8 +351,8 @@ msgstr ""
 msgid ""
 "``build.jobs`` offers the same functionality as ``build.commands``, but in a "
 "more structured way that allows you to define different commands for each "
-"format, while also supporting installing system dependencies via ``build."
-"apt_packages``."
+"format, while also supporting installing system dependencies via "
+"``build.apt_packages``."
 msgstr ""
 
 #: ../../../build-customization.rst:172
@@ -369,9 +369,9 @@ msgstr ""
 
 #: ../../../build-customization.rst:178
 msgid ""
-"To enable this feature, go to your project's :term:`dashboard` and update :"
-"menuselection:`Settings --> Custom Git checkout commands`. Enter one command "
-"per line."
+"To enable this feature, go to your project's :term:`dashboard` and "
+"update :menuselection:`Settings --> Custom Git checkout commands`. Enter one "
+"command per line."
 msgstr ""
 
 #: ../../../build-customization.rst:184
@@ -390,16 +390,17 @@ msgstr ""
 
 #: ../../../build-customization.rst:193
 msgid ""
-"In case you want to clone submodules, you can use the :ref:`config-file/v2:"
-"submodules` config key for that."
+"In case you want to clone submodules, you can use the :ref:`config-file/"
+"v2:submodules` config key for that."
 msgstr ""
 
 #: ../../../build-customization.rst:196
 msgid ""
 "Commands are executed in order, in the repository working directory. You can "
 "use :doc:`pre-defined environment variables </reference/environment-"
-"variables>` such as :envvar:`READTHEDOCS_GIT_CLONE_URL`, :envvar:"
-"`READTHEDOCS_GIT_IDENTIFIER`, and :envvar:`READTHEDOCS_REPOSITORY_PATH`."
+"variables>` such "
+"as :envvar:`READTHEDOCS_GIT_CLONE_URL`, :envvar:`READTHEDOCS_GIT_IDENTIFIER`, "
+"and :envvar:`READTHEDOCS_REPOSITORY_PATH`."
 msgstr ""
 
 #: ../../../build-customization.rst:201
@@ -429,9 +430,9 @@ msgstr ""
 
 #: ../../../build-customization.rst:218
 msgid ""
-"We've included some common examples where using :ref:`config-file/v2:build."
-"jobs` will be useful. These examples may require some adaptation for each "
-"projects' use case, we recommend you use them as a starting point."
+"We've included some common examples where using :ref:`config-file/"
+"v2:build.jobs` will be useful. These examples may require some adaptation "
+"for each projects' use case, we recommend you use them as a starting point."
 msgstr ""
 
 #: ../../../build-customization.rst:223
@@ -630,8 +631,8 @@ msgstr ""
 msgid ""
 "It's possible to install Node.js together with the required dependencies by "
 "using :term:`user-defined build jobs`. To setup it, you need to define the "
-"version of Node.js to use and install the dependencies by using ``build.jobs."
-"post_install``:"
+"version of Node.js to use and install the dependencies by using "
+"``build.jobs.post_install``:"
 msgstr ""
 
 #: ../../../build-customization.rst:381
@@ -944,8 +945,8 @@ msgid ""
 "          pydoctor \\\n"
 "            --project-version=${READTHEDOCS_GIT_IDENTIFIER} \\\n"
 "            --project-url=${READTHEDOCS_GIT_CLONE_URL%*.git} \\\n"
-"            --html-viewsource-base=${READTHEDOCS_GIT_CLONE_URL%*.git}/tree/"
-"${READTHEDOCS_GIT_COMMIT_HASH} \\\n"
+"            --html-viewsource-base=${READTHEDOCS_GIT_CLONE_URL%*.git}/tree/$"
+"{READTHEDOCS_GIT_COMMIT_HASH} \\\n"
 "            --html-base-url=${READTHEDOCS_CANONICAL_URL} \\\n"
 "            --html-output $READTHEDOCS_OUTPUT/html/ \\\n"
 "            ./src/my_project"

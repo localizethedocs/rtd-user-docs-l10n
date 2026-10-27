@@ -148,9 +148,9 @@ msgstr ""
 #: ../../../subprojects.rst:61
 msgid ""
 "When you add a subproject, the subproject will not be directly available "
-"anymore from its own domain. For instance, ``example-project-plugin."
-"readthedocs.io/`` will redirect to ``example-project.readthedocs.io/projects/"
-"plugin``."
+"anymore from its own domain. For instance, ``example-project-"
+"plugin.readthedocs.io/`` will redirect to ``example-project.readthedocs.io/"
+"projects/plugin``."
 msgstr ""
 
 #: ../../../subprojects.rst:67

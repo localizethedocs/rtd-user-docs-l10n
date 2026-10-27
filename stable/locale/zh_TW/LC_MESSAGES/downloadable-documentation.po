@@ -85,8 +85,8 @@ msgstr "存取離線格式"
 
 #: ../../../downloadable-documentation.rst:35
 msgid ""
-"You can download offline formats in the :guilabel:`Project dashboard` > :"
-"guilabel:`Downloads`:"
+"You can download offline formats in the :guilabel:`Project dashboard` "
+"> :guilabel:`Downloads`:"
 msgstr ""
 
 #: ../../../downloadable-documentation.rst:40
@@ -120,9 +120,9 @@ msgstr ""
 #: ../../../downloadable-documentation.rst:58
 msgid ""
 "Downloadable documentation formats are built by your documentation "
-"framework. They are then published by Read the Docs and included in your :"
-"term:`Flyout menu`. Therefore, it's your framework that decides exactly how "
-"each output is built and which formats are supported:"
+"framework. They are then published by Read the Docs and included in "
+"your :term:`Flyout menu`. Therefore, it's your framework that decides "
+"exactly how each output is built and which formats are supported:"
 msgstr ""
 
 #: ../../../downloadable-documentation.rst:62

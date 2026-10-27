@@ -178,9 +178,10 @@ msgstr ""
 #: ../../../reference/environment-variables.rst:85
 msgid ""
 "Canonical base URL for the version that is built. If the project has "
-"configured a :doc:`custom domain </custom-domains>` (e.g. ``docs.example."
-"com``) it will be used in the resulting canonical URL. Otherwise, your "
-"project's :ref:`default subdomain <default-subdomain>` will be used."
+"configured a :doc:`custom domain </custom-domains>` (e.g. "
+"``docs.example.com``) it will be used in the resulting canonical URL. "
+"Otherwise, your project's :ref:`default subdomain <default-subdomain>` will "
+"be used."
 msgstr ""
 
 #: ../../../reference/environment-variables.rst:89
@@ -215,8 +216,8 @@ msgstr ""
 msgid ""
 "URL for the remote source repository, from which the documentation is "
 "cloned. It could be HTTPS, SSH or any other URL scheme supported by Git. "
-"This is the same URL defined in your Project's :term:`dashboard` in :"
-"menuselection:`Admin --> Settings --> Repository URL`."
+"This is the same URL defined in your Project's :term:`dashboard` "
+"in :menuselection:`Admin --> Settings --> Repository URL`."
 msgstr ""
 
 #: ../../../reference/environment-variables.rst:107

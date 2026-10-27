@@ -37,9 +37,9 @@ msgstr ""
 
 #: ../../../traffic-analytics.rst:12
 msgid ""
-"To see a list of the top pages from the last month, go to the :guilabel:"
-"`Settings` tab of your project, and then click on :guilabel:`Traffic "
-"analytics` under :guilabel:`Maintaining`."
+"To see a list of the top pages from the last month, go to "
+"the :guilabel:`Settings` tab of your project, and then click "
+"on :guilabel:`Traffic analytics` under :guilabel:`Maintaining`."
 msgstr ""
 
 #: ../../../traffic-analytics.rst:16 ../../../traffic-analytics.rst:21

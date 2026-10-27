@@ -154,14 +154,14 @@ msgstr ""
 
 #: ../../../api/v3.rst:94
 msgid ""
-"You can browse the full API by accessing its root URL: https://app."
-"readthedocs.org/api/v3/"
+"You can browse the full API by accessing its root URL: https://"
+"app.readthedocs.org/api/v3/"
 msgstr ""
 
 #: ../../../api/v3.rst:100
 msgid ""
-"You can browse the full API by accessing its root URL: https://app."
-"readthedocs.com/api/v3/"
+"You can browse the full API by accessing its root URL: https://"
+"app.readthedocs.com/api/v3/"
 msgstr ""
 
 #: ../../../api/v3.rst:105
@@ -375,8 +375,8 @@ msgstr ""
 
 #: ../../../api/v3.rst:204 ../../../api/v3.rst:1156
 msgid ""
-"The ``results`` in response is an array of project data, which is same as :"
-"http:get:`/api/v3/projects/(string:project_slug)/`."
+"The ``results`` in response is an array of project data, which is same "
+"as :http:get:`/api/v3/projects/(string:project_slug)/`."
 msgstr ""
 
 #: ../../../api/v3.rst:211 ../../../api/v3.rst:325 ../../../api/v3.rst:410
@@ -1006,8 +1006,8 @@ msgid ""
 "            \"version\": 3,\n"
 "            \"install\": [\n"
 "                {\n"
-"                    \"requirements\": \".../stable/tools/docs-requirements."
-"txt\"\n"
+"                    \"requirements\": \".../stable/tools/docs-"
+"requirements.txt\"\n"
 "                }\n"
 "            ],\n"
 "        },\n"
@@ -1273,9 +1273,9 @@ msgstr ""
 
 #: ../../../api/v3.rst:1018
 msgid ""
-"``child`` must be a project that you have access to. Or if you are using :"
-"doc:`/commercial/index`, additionally the project must be under the same "
-"organization as the parent project."
+"``child`` must be a project that you have access to. Or if you are "
+"using :doc:`/commercial/index`, additionally the project must be under the "
+"same organization as the parent project."
 msgstr ""
 
 #: ../../../api/v3.rst:1024
@@ -1333,8 +1333,8 @@ msgstr "翻譯"
 
 #: ../../../api/v3.rst:1065
 msgid ""
-"Translations are the same version of a Project in a different language. See :"
-"doc:`/localization` for more information."
+"Translations are the same version of a Project in a different language. "
+"See :doc:`/localization` for more information."
 msgstr ""
 
 #: ../../../api/v3.rst:1069
@@ -1796,8 +1796,8 @@ msgstr ""
 #: ../../../api/v3.rst:1427
 msgid ""
 "import requests\n"
-"URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
-"environmentvariables/1/'\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/environmentvariables/"
+"1/'\n"
 "TOKEN = '<token>'\n"
 "HEADERS = {'Authorization': f'token {TOKEN}'}\n"
 "response = requests.get(URL, headers=HEADERS)\n"
@@ -1937,8 +1937,8 @@ msgstr ""
 #: ../../../api/v3.rst:1559
 msgid ""
 "import requests\n"
-"URL = 'https://app.readthedocs.org/api/v3/projects/pip/"
-"environmentvariables/1/'\n"
+"URL = 'https://app.readthedocs.org/api/v3/projects/pip/environmentvariables/"
+"1/'\n"
 "TOKEN = '<token>'\n"
 "HEADERS = {'Authorization': f'token {TOKEN}'}\n"
 "response = requests.delete(URL, headers=HEADERS)\n"
@@ -2607,8 +2607,8 @@ msgid ""
 "    \"results\": [\n"
 "        {\n"
 "            \"remote_organization\": {\n"
-"                \"avatar_url\": \"https://avatars.githubusercontent.com/"
-"u/12345?v=4\",\n"
+"                \"avatar_url\": \"https://avatars.githubusercontent.com/u/"
+"12345?v=4\",\n"
 "                \"created\": \"2019-04-29T10:00:00Z\",\n"
 "                \"modified\": \"2019-04-29T12:00:00Z\",\n"
 "                \"name\": \"Organization Name\",\n"
@@ -2725,8 +2725,9 @@ msgstr ""
 
 #: ../../../api/v3.rst:2243
 msgid ""
-"Retrieve HTML-formatted content from documentation page or section. Read :"
-"doc:`/guides/embedding-content` to know more about how to use this endpoint."
+"Retrieve HTML-formatted content from documentation page or section. "
+"Read :doc:`/guides/embedding-content` to know more about how to use this "
+"endpoint."
 msgstr ""
 
 #: ../../../api/v3.rst:2248
@@ -2738,8 +2739,9 @@ msgstr ""
 
 #: ../../../api/v3.rst:2256
 msgid ""
-"curl https://app.readthedocs.org/api/v3/embed/?url=https://docs.readthedocs."
-"com/platform/stable/reference/features.html%23feature-reference"
+"curl https://app.readthedocs.org/api/v3/embed/?url=https://"
+"docs.readthedocs.com/platform/stable/reference/features.html%23feature-"
+"reference"
 msgstr ""
 
 #: ../../../api/v3.rst:2259

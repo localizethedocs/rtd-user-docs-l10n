@@ -80,8 +80,8 @@ msgstr ""
 #: ../../../server-side-search/index.rst:29
 msgid ""
 "Set a custom rank per page, allowing you to deprecate content, and always "
-"show relevant content to your users first. See :ref:`config-file/v2:search."
-"ranking`."
+"show relevant content to your users first. See :ref:`config-file/"
+"v2:search.ranking`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:33
@@ -98,8 +98,8 @@ msgstr ""
 #: ../../../server-side-search/index.rst:38
 msgid ""
 "You can also specify what projects you want to search using the ``project:"
-"{name}`` syntax, for example: `\"project:docs project:dev search\"`_. See :"
-"doc:`/server-side-search/syntax`."
+"{name}`` syntax, for example: `\"project:docs project:dev search\"`_. "
+"See :doc:`/server-side-search/syntax`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:43
@@ -108,8 +108,8 @@ msgstr ""
 
 #: ../../../server-side-search/index.rst:44
 msgid ""
-"We support a full range of search queries. You can see some examples at :ref:"
-"`server-side-search/syntax:special queries`."
+"We support a full range of search queries. You can see some examples "
+"at :ref:`server-side-search/syntax:special queries`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:47
@@ -203,9 +203,10 @@ msgstr ""
 #: ../../../server-side-search/index.rst:98
 msgid ""
 "From there you can toggle :guilabel:`Enable search modal`, which controls "
-"whether the Read the Docs search modal is shown in your documentation, and :"
-"guilabel:`Show subprojects filter in search modal`, which controls whether "
-"readers can filter search results by :doc:`subproject </subprojects>`."
+"whether the Read the Docs search modal is shown in your documentation, "
+"and :guilabel:`Show subprojects filter in search modal`, which controls "
+"whether readers can filter search results by :doc:`subproject </"
+"subprojects>`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:104

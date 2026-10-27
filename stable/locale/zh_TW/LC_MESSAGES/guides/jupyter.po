@@ -197,9 +197,9 @@ msgstr ""
 #: ../../../guides/jupyter.rst:133
 msgid ""
 "For example, if you create a notebook with a simple `IntSlider <https://"
-"ipywidgets.readthedocs.io/en/stable/examples/Widget%20List."
-"html#intslider>`__ widget from ipywidgets and save the widget state, the "
-"slider will render correctly in Sphinx."
+"ipywidgets.readthedocs.io/en/stable/examples/"
+"Widget%20List.html#intslider>`__ widget from ipywidgets and save the widget "
+"state, the slider will render correctly in Sphinx."
 msgstr ""
 
 #: ../../../guides/jupyter.rst:138 ../../../guides/jupyter.rst:143
@@ -288,8 +288,8 @@ msgstr ""
 
 #: ../../../guides/jupyter.rst:206
 msgid ""
-"To render this notebook in Sphinx you will need to add this to your ``conf."
-"py``:"
+"To render this notebook in Sphinx you will need to add this to your "
+"``conf.py``:"
 msgstr ""
 
 #: ../../../guides/jupyter.rst:213
@@ -407,10 +407,10 @@ msgid ""
 "Jupyter notebooks to reStructuredText and then to `docutils AST <https://"
 "docutils.sourceforge.io/docs/ref/doctree.html>`_, whereas MyST-NB uses `MyST-"
 "Parser`_ to directly convert the Markdown text to docutils AST. Therefore, "
-"nbsphinx assumes `pandoc flavored Markdown <https://pandoc.org/MANUAL."
-"html#pandocs-markdown>`_, whereas MyST-NB uses :doc:`MyST flavored Markdown "
-"<myst-parser:index>`. Both Markdown flavors are mostly equal, but they have "
-"some differences."
+"nbsphinx assumes `pandoc flavored Markdown <https://pandoc.org/"
+"MANUAL.html#pandocs-markdown>`_, whereas MyST-NB uses :doc:`MyST flavored "
+"Markdown <myst-parser:index>`. Both Markdown flavors are mostly equal, but "
+"they have some differences."
 msgstr ""
 
 #: ../../../guides/jupyter.rst:319
@@ -450,9 +450,9 @@ msgstr ""
 
 #: ../../../guides/jupyter.rst:343
 msgid ""
-"If you want to use :ref:`other notebook formats <other-formats>` or :ref:"
-"`generate a thumbnail gallery from your notebooks <notebook-galleries>`, "
-"nbsphinx is the right choice."
+"If you want to use :ref:`other notebook formats <other-formats>` "
+"or :ref:`generate a thumbnail gallery from your notebooks <notebook-"
+"galleries>`, nbsphinx is the right choice."
 msgstr ""
 
 #: ../../../guides/jupyter.rst:346
@@ -514,11 +514,11 @@ msgstr ""
 
 #: ../../../guides/jupyter.rst:381
 msgid ""
-"Replace ``.ipynb`` notebooks with :doc:`a text-based format <jupytext:"
-"formats-markdown>`. These formats behave better under version control and "
-"they can also be edited with normal text editors that do not support cell-"
-"based JSON notebooks. However, text-based formats do not store the outputs "
-"of the cells, and this might not be what you want."
+"Replace ``.ipynb`` notebooks with :doc:`a text-based format "
+"<jupytext:formats-markdown>`. These formats behave better under version "
+"control and they can also be edited with normal text editors that do not "
+"support cell-based JSON notebooks. However, text-based formats do not store "
+"the outputs of the cells, and this might not be what you want."
 msgstr ""
 
 #: ../../../guides/jupyter.rst:387

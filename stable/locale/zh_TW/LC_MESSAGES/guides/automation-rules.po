@@ -96,9 +96,9 @@ msgstr ""
 #: ../../../guides/automation-rules.rst:39
 msgid ""
 ":ref:`Custom match <automation-rules:Custom matches>` matches your own "
-"pattern (entered below). If you choose this option, a field :guilabel:"
-"`Custom match` will automatically appear below the drop-down where you can "
-"add a regular expression in `Python regex format`_."
+"pattern (entered below). If you choose this option, a "
+"field :guilabel:`Custom match` will automatically appear below the drop-down "
+"where you can add a regular expression in `Python regex format`_."
 msgstr ""
 
 #: ../../../guides/automation-rules.rst:43

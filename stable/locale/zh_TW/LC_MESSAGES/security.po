@@ -62,9 +62,9 @@ msgstr ""
 #: ../../../security.rst:33
 msgid ""
 "If you believe you've discovered a security issue at Read the Docs, please "
-"contact us at **security@readthedocs.org** (optionally using our :ref:"
-"`security:PGP key`). We request that you please not publicly disclose the "
-"issue until it has been addressed by us."
+"contact us at **security@readthedocs.org** (optionally using "
+"our :ref:`security:PGP key`). We request that you please not publicly "
+"disclose the issue until it has been addressed by us."
 msgstr ""
 
 #: ../../../security.rst:37
@@ -121,8 +121,8 @@ msgstr ""
 
 #: ../../../security.rst:63
 msgid ""
-"You can see all past reports at https://github.com/readthedocs/readthedocs."
-"org/security/advisories."
+"You can see all past reports at https://github.com/readthedocs/"
+"readthedocs.org/security/advisories."
 msgstr ""
 
 #: ../../../security.rst:66
@@ -137,9 +137,9 @@ msgstr ""
 
 #: ../../../security.rst:71
 msgid ""
-"This issue was found by `Cyber Smart Defence <https://www.cybersmartdefence."
-"com/>`_ who reported it as part of a security audit to a firm running a "
-"local installation of Read the Docs."
+"This issue was found by `Cyber Smart Defence <https://"
+"www.cybersmartdefence.com/>`_ who reported it as part of a security audit to "
+"a firm running a local installation of Read the Docs."
 msgstr ""
 
 #: ../../../security.rst:77

@@ -87,8 +87,8 @@ msgstr "拉取請求通知"
 msgid ""
 "A pull request notification can be shown at the top of preview pages, which "
 "let readers know they aren't viewing an active version of the project. New "
-"projects have this notification disabled by default; enable it from :"
-"guilabel:`Settings` → :guilabel:`Addons` → :guilabel:`Notifications`."
+"projects have this notification disabled by default; enable it "
+"from :guilabel:`Settings` → :guilabel:`Addons` → :guilabel:`Notifications`."
 msgstr ""
 
 #: ../../../pull-requests.rst:41

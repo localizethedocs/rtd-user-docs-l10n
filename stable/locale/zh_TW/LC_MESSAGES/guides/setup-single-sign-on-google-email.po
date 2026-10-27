@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../shared/admonition-rtd-business.rst:2
 msgid ""
-"This feature is only available on `Read the Docs for Business <https://app."
-"readthedocs.com/>`_."
+"This feature is only available on `Read the Docs for Business <https://"
+"app.readthedocs.com/>`_."
 msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:6
@@ -189,9 +189,10 @@ msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:66
 msgid ""
-"With this enabled, all users that sign up with their ``employee@company."
-"com`` email will automatically join this team. These teams can have either "
-"*read-only* or *admin* permissions over a set of projects."
+"With this enabled, all users that sign up with their "
+"``employee@company.com`` email will automatically join this team. These "
+"teams can have either *read-only* or *admin* permissions over a set of "
+"projects."
 msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:71
@@ -200,9 +201,10 @@ msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:73
 msgid ""
-"By disabling the Google Workspace account with email ``employee@company."
-"com``, you revoke access to all the projects the linked Read the Docs user "
-"had access to, and disable login on Read the Docs completely for that user."
+"By disabling the Google Workspace account with email "
+"``employee@company.com``, you revoke access to all the projects the linked "
+"Read the Docs user had access to, and disable login on Read the Docs "
+"completely for that user."
 msgstr ""
 
 #: ../../../guides/setup-single-sign-on-google-email.rst:79

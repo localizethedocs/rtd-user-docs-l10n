@@ -45,9 +45,9 @@ msgstr ""
 
 #: ../../../guides/private-submodules.rst:19
 msgid ""
-"Make sure you are using ``SSH`` URLs for your submodules (``git@github.com:"
-"readthedocs/readthedocs.org.git`` for example) in your ``.gitmodules`` file, "
-"not ``http`` URLs."
+"Make sure you are using ``SSH`` URLs for your submodules "
+"(``git@github.com:readthedocs/readthedocs.org.git`` for example) in your "
+"``.gitmodules`` file, not ``http`` URLs."
 msgstr ""
 
 #: ../../../guides/private-submodules.rst:26
@@ -61,9 +61,9 @@ msgstr ""
 #: ../../../guides/private-submodules.rst:31
 msgid ""
 "Since GitHub doesn't allow you to reuse a deploy key across different "
-"repositories, you'll need to use `machine users <https://developer.github."
-"com/v3/guides/managing-deploy-keys/#machine-users>`__ to give read access to "
-"several repositories using only one SSH key."
+"repositories, you'll need to use `machine users <https://"
+"developer.github.com/v3/guides/managing-deploy-keys/#machine-users>`__ to "
+"give read access to several repositories using only one SSH key."
 msgstr ""
 
 #: ../../../guides/private-submodules.rst:35

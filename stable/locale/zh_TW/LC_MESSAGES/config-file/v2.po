@@ -456,8 +456,8 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:238
 msgid ""
-"With ``command: sync``, you can select dependency groups from ``pyproject."
-"toml``. Use either a list of group names or ``all``."
+"With ``command: sync``, you can select dependency groups from "
+"``pyproject.toml``. Use either a list of group names or ``all``."
 msgstr ""
 
 #: ../../../config-file/v2.rst:241
@@ -1010,10 +1010,10 @@ msgstr ""
 #: ../../../config-file/v2.rst:562
 msgid ""
 "If neither of the ``sphinx`` or ``mkdocs`` keys are present in the "
-"configuration file, only the specified ``build.tools`` and ``build."
-"apt_packages`` will be installed, you will in charge of generating the "
-"documentation in the :ref:`$READTHEDOCS_OUTPUT <build-customization:where to "
-"put files>` directory."
+"configuration file, only the specified ``build.tools`` and "
+"``build.apt_packages`` will be installed, you will in charge of generating "
+"the documentation in the :ref:`$READTHEDOCS_OUTPUT <build-"
+"customization:where to put files>` directory."
 msgstr ""
 
 #: ../../../config-file/v2.rst:0
@@ -1084,8 +1084,9 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:619
 msgid ""
-"For each format, you need to generate their output in the :ref:"
-"`$READTHEDOCS_OUTPUT <build-customization:where to put files>` directory."
+"For each format, you need to generate their output in "
+"the :ref:`$READTHEDOCS_OUTPUT <build-customization:where to put files>` "
+"directory."
 msgstr ""
 
 #: ../../../config-file/v2.rst:622
@@ -1137,14 +1138,14 @@ msgstr ""
 msgid ""
 "``build.jobs`` offers the same functionality as ``build.commands``, but in a "
 "more structured way that allows you to define different commands for each "
-"format, while also supporting installing system dependencies via ``build."
-"apt_packages``. See :doc:`/build-customization` for more details."
+"format, while also supporting installing system dependencies via "
+"``build.apt_packages``. See :doc:`/build-customization` for more details."
 msgstr ""
 
 #: ../../../config-file/v2.rst:663
 msgid ""
-"``build.os`` and ``build.tools`` are also required when using ``build."
-"commands``."
+"``build.os`` and ``build.tools`` are also required when using "
+"``build.commands``."
 msgstr ""
 
 #: ../../../config-file/v2.rst:667
@@ -1220,9 +1221,9 @@ msgstr "sphinx.fail_on_warning"
 
 #: ../../../config-file/v2.rst:724
 msgid ""
-"Turn warnings into errors (:option:`-W <sphinx:sphinx-build.-W>` and :option:"
-"`--keep-going <sphinx:sphinx-build.--keep-going>` options). This means the "
-"build fails if there is a warning and exits with exit status 1."
+"Turn warnings into errors (:option:`-W <sphinx:sphinx-build.-W>` "
+"and :option:`--keep-going <sphinx:sphinx-build.--keep-going>` options). This "
+"means the build fails if there is a warning and exits with exit status 1."
 msgstr ""
 
 #: ../../../config-file/v2.rst:728 ../../../config-file/v2.rst:769
@@ -1397,9 +1398,9 @@ msgstr ""
 #: ../../../config-file/v2.rst:870 ../../../config-file/v2.rst:921
 msgid ""
 "Patterns are matched against the relative paths of the HTML files produced "
-"by the build, you should try to match ``index.html``, not ``docs/index."
-"rst``, nor ``/en/latest/index.html``. Patterns can include one or more of "
-"the following special characters:"
+"by the build, you should try to match ``index.html``, not ``docs/"
+"index.rst``, nor ``/en/latest/index.html``. Patterns can include one or more "
+"of the following special characters:"
 msgstr ""
 
 #: ../../../config-file/v2.rst:874
@@ -1424,8 +1425,8 @@ msgstr ""
 
 #: ../../../config-file/v2.rst:883
 msgid ""
-"If you are looking to completely ignore a page, check :ref:`config-file/v2:"
-"search.ignore`."
+"If you are looking to completely ignore a page, check :ref:`config-file/"
+"v2:search.ignore`."
 msgstr ""
 
 #: ../../../config-file/v2.rst:886
@@ -1526,7 +1527,7 @@ msgstr ""
 #: ../../../config-file/v2.rst:970
 msgid ""
 "You can see the complete schema `here <https://github.com/readthedocs/"
-"readthedocs.org/blob/main/readthedocs/rtd_tests/fixtures/spec/v2/schema."
-"json>`_. This schema is available at `Schema Store`_, use it with your "
-"favorite editor for validation and autocompletion."
+"readthedocs.org/blob/main/readthedocs/rtd_tests/fixtures/spec/v2/"
+"schema.json>`_. This schema is available at `Schema Store`_, use it with "
+"your favorite editor for validation and autocompletion."
 msgstr ""

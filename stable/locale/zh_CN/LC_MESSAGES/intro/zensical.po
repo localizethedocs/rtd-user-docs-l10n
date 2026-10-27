@@ -104,8 +104,9 @@ msgstr ""
 
 #: ../../../intro/zensical.rst:59
 msgid ""
-"Set your Zensical `site URL`_ to your Read the Docs canonical URL using a :"
-"doc:`Read the Docs environment variable </reference/environment-variables>`:"
+"Set your Zensical `site URL`_ to your Read the Docs canonical URL using "
+"a :doc:`Read the Docs environment variable </reference/environment-"
+"variables>`:"
 msgstr ""
 
 #: ../../../intro/zensical.rst:62

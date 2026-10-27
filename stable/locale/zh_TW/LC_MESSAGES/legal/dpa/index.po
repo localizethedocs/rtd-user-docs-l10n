@@ -30,8 +30,8 @@ msgstr ""
 
 #: ../../../legal/dpa/index.rst:12
 msgid ""
-"`Review the Read the Docs Data Processing Addendum <https://readthedocs."
-"eversign.com/embedded/fa9e5a24917c4440a1770251102a044e>`_"
+"`Review the Read the Docs Data Processing Addendum <https://"
+"readthedocs.eversign.com/embedded/fa9e5a24917c4440a1770251102a044e>`_"
 msgstr ""
 
 #: ../../../legal/dpa/index.rst:15

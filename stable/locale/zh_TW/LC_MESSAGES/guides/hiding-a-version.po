@@ -35,9 +35,9 @@ msgstr ""
 msgid ""
 "You can deactivate the version to remove its docs, but removing its docs "
 "isn't always an option. To not list a version in the flyout menu while "
-"keeping its docs online, you can mark it as hidden. Go to the :guilabel:"
-"`Versions` tab of your project, click on :guilabel:`Edit` and mark the "
-"``Hidden`` option."
+"keeping its docs online, you can mark it as hidden. Go to "
+"the :guilabel:`Versions` tab of your project, click on :guilabel:`Edit` and "
+"mark the ``Hidden`` option."
 msgstr ""
 
 #: ../../../guides/hiding-a-version.rst:17

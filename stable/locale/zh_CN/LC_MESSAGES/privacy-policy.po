@@ -237,10 +237,10 @@ msgstr ""
 
 #: ../../../privacy-policy.rst:120
 msgid ""
-"Read the Docs for Business may host `private projects <https://about."
-"readthedocs.com/terms-of-service/#private-projects>`_ which we treat as "
-"confidential and we only access them for support reasons, with your consent, "
-"or if required to for security reasons"
+"Read the Docs for Business may host `private projects <https://"
+"about.readthedocs.com/terms-of-service/#private-projects>`_ which we treat "
+"as confidential and we only access them for support reasons, with your "
+"consent, or if required to for security reasons"
 msgstr ""
 
 #: ../../../privacy-policy.rst:123

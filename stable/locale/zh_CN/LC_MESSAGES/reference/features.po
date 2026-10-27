@@ -56,8 +56,8 @@ msgstr ""
 msgid ""
 "We support multiple versions and translations, integrated nicely into the "
 "URL of your documentation. This is served at ``/en/latest/`` by default. If "
-"you have only one version, or don't need translations, you can change the :"
-"doc:`versioning scheme </versioning-schemes>` of your project."
+"you have only one version, or don't need translations, you can change "
+"the :doc:`versioning scheme </versioning-schemes>` of your project."
 msgstr ""
 
 #: ../../../reference/features.rst:27

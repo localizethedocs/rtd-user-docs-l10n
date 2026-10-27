@@ -25,14 +25,14 @@ msgstr ""
 msgid ""
 "Please help us keep this section updated and contribute your own error "
 "resolutions, performance improvements, etc. Send in your helpful comments or "
-"ideas 💡 to support@readthedocs.org or contribute directly by clicking :"
-"guilabel:`Edit on GitHub` in the top right corner of this page."
+"ideas 💡 to support@readthedocs.org or contribute directly by "
+"clicking :guilabel:`Edit on GitHub` in the top right corner of this page."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:6
 msgid ""
-"This guide provides some common errors and resolutions encountered in the :"
-"doc:`build process </builds>`."
+"This guide provides some common errors and resolutions encountered in "
+"the :doc:`build process </builds>`."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:9
@@ -59,8 +59,8 @@ msgstr ""
 msgid ""
 "**Resolution:** This error can be quite misleading. It usually occurs when a "
 "repository could not be found because of a typo in the repository name or "
-"because the repository has been deleted. Verify your repository URL in :"
-"guilabel:`Admin > Settings`."
+"because the repository has been deleted. Verify your repository URL "
+"in :guilabel:`Admin > Settings`."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:23

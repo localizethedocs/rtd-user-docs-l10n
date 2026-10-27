@@ -92,8 +92,8 @@ msgstr ""
 #: ../../../guides/adding-custom-css.rst:58
 msgid ""
 "If your replacement stylesheet exists at ``_static/css/yourtheme.css``, you "
-"can replace your theme's CSS file by setting ``html_style`` in your ``conf."
-"py``::"
+"can replace your theme's CSS file by setting ``html_style`` in your "
+"``conf.py``::"
 msgstr ""
 
 #: ../../../guides/adding-custom-css.rst:61
@@ -106,8 +106,8 @@ msgstr ""
 #: ../../../guides/adding-custom-css.rst:65
 msgid ""
 "If you only need to override a few styles on the theme, you can include the "
-"theme's normal CSS using the CSS `@import rule <https://developer.mozilla."
-"org/en-US/docs/Web/CSS/@import>`_ ."
+"theme's normal CSS using the CSS `@import rule <https://"
+"developer.mozilla.org/en-US/docs/Web/CSS/@import>`_ ."
 msgstr ""
 
 #: ../../../guides/adding-custom-css.rst:69

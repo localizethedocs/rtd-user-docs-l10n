@@ -52,8 +52,8 @@ msgstr ""
 msgid ""
 "Type the name of the repository you want to add and click on it. If you are "
 "using our :ref:`reference/git-integration:GitHub App`, make sure you have "
-"installed the :ref:`Read the Docs GitHub App <reference/git-integration:"
-"Troubleshooting>` in your repository."
+"installed the :ref:`Read the Docs GitHub App <reference/git-"
+"integration:Troubleshooting>` in your repository."
 msgstr ""
 
 #: ../../../intro/add-project.rst:21 ../../../intro/add-project.rst:39
@@ -124,8 +124,8 @@ msgstr ""
 msgid ""
 "Once your documentation project is created, a build will be triggered. It "
 "will automatically fetch the code from your repository and build the "
-"documentation. You can see the logs for the build process from your :term:"
-"`dashboard`."
+"documentation. You can see the logs for the build process from "
+"your :term:`dashboard`."
 msgstr ""
 
 #: ../../../intro/add-project.rst:61
@@ -155,6 +155,6 @@ msgstr ""
 
 #: ../../../intro/add-project.rst:70
 msgid ""
-"If you have any trouble, don't hesitate to reach out to us. The :doc:"
-"`support </support>` page has more information on getting in touch."
+"If you have any trouble, don't hesitate to reach out to us. "
+"The :doc:`support </support>` page has more information on getting in touch."
 msgstr ""

@@ -257,6 +257,6 @@ msgstr ""
 #: ../../../unofficial-projects.rst:120
 msgid ""
 "This policy is inspired by our :doc:`abandoned-projects`. The Python Package "
-"Index (PyPI) policy for claiming abandoned packages (`PEP-0541 <https://www."
-"python.org/dev/peps/pep-0541>`_) heavily influenced this policy."
+"Index (PyPI) policy for claiming abandoned packages (`PEP-0541 <https://"
+"www.python.org/dev/peps/pep-0541>`_) heavily influenced this policy."
 msgstr ""

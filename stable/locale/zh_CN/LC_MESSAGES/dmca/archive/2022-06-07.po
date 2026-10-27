@@ -119,8 +119,8 @@ msgstr ""
 
 #: ../../../dmca/archive/2022-06-07.rst:35
 msgid ""
-"Please confirm that you have read our Takedown Policy: https://docs."
-"readthedocs.io/en/latest/dmca/index.html"
+"Please confirm that you have read our Takedown Policy: https://"
+"docs.readthedocs.io/en/latest/dmca/index.html"
 msgstr ""
 
 #: ../../../dmca/archive/2022-06-07.rst:38

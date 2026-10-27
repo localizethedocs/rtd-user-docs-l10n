@@ -236,8 +236,8 @@ msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:140
 msgid ""
-"In order to store the token permanently, you can save it in a ``~/."
-"transifexrc`` file. It should look like this:"
+"In order to store the token permanently, you can save it in a "
+"``~/.transifexrc`` file. It should look like this:"
 msgstr ""
 
 #: ../../../guides/manage-translations-sphinx.rst:143

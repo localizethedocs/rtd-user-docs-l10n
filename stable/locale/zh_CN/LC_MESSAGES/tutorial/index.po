@@ -70,8 +70,8 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:23
 msgid ""
-"Click the green :guilabel:`Use this template` button, then click :guilabel:"
-"`Create a new Repository`. On the new page:"
+"Click the green :guilabel:`Use this template` button, then "
+"click :guilabel:`Create a new Repository`. On the new page:"
 msgstr ""
 
 #: ../../../tutorial/index.rst:25
@@ -162,9 +162,9 @@ msgstr ""
 #: ../../../tutorial/index.rst:61
 msgid ""
 "To create a Read the Docs account: navigate to the `Sign Up page <https://"
-"app.readthedocs.org/accounts/signup/>`_ and choose the option :guilabel:"
-"`Sign up with GitHub`. On the authorization page, click the green :guilabel:"
-"`Authorize readthedocs` button."
+"app.readthedocs.org/accounts/signup/>`_ and choose the "
+"option :guilabel:`Sign up with GitHub`. On the authorization page, click the "
+"green :guilabel:`Authorize readthedocs` button."
 msgstr ""
 
 #: ../../../tutorial/index.rst:66 ../../../tutorial/index.rst:71
@@ -174,9 +174,9 @@ msgstr ""
 #: ../../../tutorial/index.rst:75
 msgid ""
 "Read the Docs needs elevated permissions to perform certain operations that "
-"ensure that the workflow is as smooth as possible, like installing :term:"
-"`webhooks <webhook>`. If you want to learn more, check out :ref:`reference/"
-"git-integration:permissions for connected accounts`."
+"ensure that the workflow is as smooth as possible, like "
+"installing :term:`webhooks <webhook>`. If you want to learn more, check "
+"out :ref:`reference/git-integration:permissions for connected accounts`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:81
@@ -218,8 +218,8 @@ msgstr ""
 #: ../../../tutorial/index.rst:100
 msgid ""
 "Click the |:heavy_plus_sign:| button to the right of your ``rtd-tutorial`` "
-"project. If the list of repositories is empty, click the |:"
-"arrows_counterclockwise:| button."
+"project. If the list of repositories is empty, click the "
+"|:arrows_counterclockwise:| button."
 msgstr ""
 
 #: ../../../tutorial/index.rst:102 ../../../tutorial/index.rst:107
@@ -261,8 +261,8 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:122
 msgid ""
-"Then click the :guilabel:`Next` button to create the project and open the :"
-"term:`project home`."
+"Then click the :guilabel:`Next` button to create the project and open "
+"the :term:`project home`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:124
@@ -289,8 +289,8 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:140
 msgid ""
-"Click the :guilabel:`Your documentation is building` link on the :term:"
-"`project home`."
+"Click the :guilabel:`Your documentation is building` link on "
+"the :term:`project home`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:142
@@ -369,8 +369,8 @@ msgstr ""
 #: ../../../tutorial/index.rst:187
 msgid ""
 "To get a notification if the build fails, click the :guilabel:`Email "
-"Notifications` link on the left, add your email address, and click the :"
-"guilabel:`Add` button."
+"Notifications` link on the left, add your email address, and click "
+"the :guilabel:`Add` button."
 msgstr ""
 
 #: ../../../tutorial/index.rst:190
@@ -400,8 +400,8 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:201
 msgid ""
-"Navigate to your GitHub repository, locating the file ``docs/source/index."
-"rst``, and clicking on the |:pencil2:| icon on the top-right with the "
+"Navigate to your GitHub repository, locating the file ``docs/source/"
+"index.rst``, and clicking on the |:pencil2:| icon on the top-right with the "
 "tooltip \"Edit this file\" to open a web editor (more information `on their "
 "documentation`__)."
 msgstr ""
@@ -459,10 +459,10 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:240
 msgid ""
-"Build process configuration settings are in ``.readthedocs.yaml`` :doc:"
-"`configuration file </config-file/v2>`, in your Git repository, which means "
-"it can be different for every version or branch of your project (more on "
-"`versioning <#versioning-documentation>`_)."
+"Build process configuration settings are in "
+"``.readthedocs.yaml`` :doc:`configuration file </config-file/v2>`, in your "
+"Git repository, which means it can be different for every version or branch "
+"of your project (more on `versioning <#versioning-documentation>`_)."
 msgstr ""
 
 #: ../../../tutorial/index.rst:248
@@ -500,8 +500,8 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:270
 msgid ""
-"The :doc:`purpose of each key </config-file/v2>` in the ``.readthedocs."
-"yaml`` configuration file is:"
+"The :doc:`purpose of each key </config-file/v2>` in the "
+"``.readthedocs.yaml`` configuration file is:"
 msgstr ""
 
 #: ../../../tutorial/index.rst:272
@@ -520,8 +520,9 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:276
 msgid ""
-"Required, specifies the Docker image used to build the documentation. :ref:"
-"`states the name of the base image <config-file/v2:build.os>`."
+"Required, specifies the Docker image used to build the "
+"documentation. :ref:`states the name of the base image <config-file/"
+"v2:build.os>`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:279
@@ -590,9 +591,9 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:323
 msgid ""
-"To fail on warnings to your Read the Docs project, edit the ``.readthedocs."
-"yaml`` file in your project, add the three lines of ``sphinx`` configuration "
-"below, and commit the file:"
+"To fail on warnings to your Read the Docs project, edit the "
+"``.readthedocs.yaml`` file in your project, add the three lines of "
+"``sphinx`` configuration below, and commit the file:"
 msgstr ""
 
 #: ../../../tutorial/index.rst:325
@@ -630,15 +631,16 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:351
 msgid ""
-"The reason :py:mod:`sphinx:sphinx.ext.autosummary` and :py:mod:`sphinx:"
-"sphinx.ext.autodoc` fail to import the :ref:`tutorial/index:making build "
-"warnings more visible`, is because the ``lumache`` module is not installed."
+"The reason :py:mod:`sphinx:sphinx.ext.autosummary` "
+"and :py:mod:`sphinx:sphinx.ext.autodoc` fail to import the :ref:`tutorial/"
+"index:making build warnings more visible`, is because the ``lumache`` module "
+"is not installed."
 msgstr ""
 
 #: ../../../tutorial/index.rst:353
 msgid ""
-"You will need to specify those installation requirements in ``.readthedocs."
-"yaml``."
+"You will need to specify those installation requirements in "
+"``.readthedocs.yaml``."
 msgstr ""
 
 #: ../../../tutorial/index.rst:355
@@ -694,8 +696,8 @@ msgstr ""
 #: ../../../tutorial/index.rst:395
 msgid ""
 "After this change, PDF and EPUB downloads will be available both from the "
-"\"Downloads\" section of the :term:`project home`, as well as the :term:"
-"`flyout menu`."
+"\"Downloads\" section of the :term:`project home`, as well as "
+"the :term:`flyout menu`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:399 ../../../tutorial/index.rst:403
@@ -736,9 +738,9 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:422
 msgid ""
-"Navigate to your GitHub repository, click the branch selector, type ``1.0."
-"x``, and click \"Create branch: 1.0.x from 'main'\" (more information `in "
-"the GitHub documentation`__)."
+"Navigate to your GitHub repository, click the branch selector, type "
+"``1.0.x``, and click \"Create branch: 1.0.x from 'main'\" (more information "
+"`in the GitHub documentation`__)."
 msgstr ""
 
 #: ../../../tutorial/index.rst:424
@@ -763,8 +765,8 @@ msgstr ""
 #: ../../../tutorial/index.rst:439
 msgid ""
 "When you created your branch, Read the Docs created a new special version "
-"called ``stable`` pointing to it. When it's built it will be listed in the :"
-"term:`flyout menu`."
+"called ``stable`` pointing to it. When it's built it will be listed in "
+"the :term:`flyout menu`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:443
@@ -780,9 +782,9 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:450
 msgid ""
-"In the :guilabel:`⚙ Admin` menu of your project home, go to the :guilabel:"
-"`Settings` link, choose ``stable`` in the \"Default version*\" dropdown, and "
-"hit :guilabel:`Save` at the bottom."
+"In the :guilabel:`⚙ Admin` menu of your project home, go to "
+"the :guilabel:`Settings` link, choose ``stable`` in the \"Default version*\" "
+"dropdown, and hit :guilabel:`Save` at the bottom."
 msgstr ""
 
 #: ../../../tutorial/index.rst:453
@@ -977,8 +979,8 @@ msgstr ""
 #: ../../../tutorial/index.rst:598
 msgid ""
 "Learn about other supported documentation generators in the :doc:`Sphinx "
-"tutorial <sphinx:tutorial/index>` or the `MkDocs User Guide <https://www."
-"mkdocs.org/user-guide/>`_."
+"tutorial <sphinx:tutorial/index>` or the `MkDocs User Guide <https://"
+"www.mkdocs.org/user-guide/>`_."
 msgstr ""
 
 #: ../../../tutorial/index.rst:599
@@ -991,15 +993,15 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:601
 msgid ""
-"Learn about private project support and other enterprise features in :doc:"
-"`our commercial service guide </commercial/index>`."
+"Learn about private project support and other enterprise features "
+"in :doc:`our commercial service guide </commercial/index>`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:603
 msgid ""
-"Join a global community of fellow `documentarians <writethedocs:"
-"documentarians>` in `Write the Docs <https://www.writethedocs.org/>`_ and :"
-"doc:`its Slack workspace <writethedocs:slack>`."
+"Join a global community of fellow `documentarians "
+"<writethedocs:documentarians>` in `Write the Docs <https://"
+"www.writethedocs.org/>`_ and :doc:`its Slack workspace <writethedocs:slack>`."
 msgstr ""
 
 #: ../../../tutorial/index.rst:605

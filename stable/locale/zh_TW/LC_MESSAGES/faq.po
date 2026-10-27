@@ -84,10 +84,11 @@ msgstr ""
 #: ../../../faq.rst:52
 msgid ""
 "This happens because the build system does not have the dependencies for "
-"building your project, such as C libraries needed by some Python packages (e."
-"g. ``libevent`` or ``mysql``). For libraries that cannot be :ref:`installed "
-"via apt <config-file/v2:build.apt_packages>` in the builder there is another "
-"way to successfully build the documentation despite missing dependencies."
+"building your project, such as C libraries needed by some Python packages "
+"(e.g. ``libevent`` or ``mysql``). For libraries that cannot "
+"be :ref:`installed via apt <config-file/v2:build.apt_packages>` in the "
+"builder there is another way to successfully build the documentation despite "
+"missing dependencies."
 msgstr ""
 
 #: ../../../faq.rst:58
@@ -236,8 +237,9 @@ msgstr ""
 #: ../../../faq.rst:141
 msgid ""
 "When Read the Docs builds your project, it sets the :envvar:`READTHEDOCS` "
-"environment variable to the string ``'True'``. So within your Sphinx :file:"
-"`conf.py` file, you can vary the behavior based on this. For example:"
+"environment variable to the string ``'True'``. So within your "
+"Sphinx :file:`conf.py` file, you can vary the behavior based on this. For "
+"example:"
 msgstr ""
 
 #: ../../../faq.rst:145
@@ -281,8 +283,8 @@ msgstr ""
 
 #: ../../../faq.rst:178
 msgid ""
-"Yes. See :ref:`Opting out of advertising <advertising/ethical-advertising:"
-"Opting Out>`."
+"Yes. See :ref:`Opting out of advertising <advertising/ethical-"
+"advertising:Opting Out>`."
 msgstr ""
 
 #: ../../../faq.rst:182
@@ -301,8 +303,8 @@ msgid ""
 "The main reason for this is that all existing URLs to the content will "
 "break. You can delete and re-create the project with the proper name to get "
 "a new slug, but you really shouldn't do this if you have existing inbound "
-"links, as it `breaks the internet <http://www.w3.org/Provider/Style/URI."
-"html>`_."
+"links, as it `breaks the internet <http://www.w3.org/Provider/Style/"
+"URI.html>`_."
 msgstr ""
 
 #: ../../../faq.rst:193
@@ -367,8 +369,8 @@ msgstr ""
 
 #: ../../../faq.rst:226
 msgid ""
-"Read the Docs supports multiple languages. See the section on :doc:"
-"`localization`."
+"Read the Docs supports multiple languages. See the section "
+"on :doc:`localization`."
 msgstr ""
 
 #: ../../../faq.rst:232
@@ -387,9 +389,9 @@ msgstr ""
 
 #: ../../../faq.rst:245
 msgid ""
-"Read the `sphinx-rtd-theme documentation <https://sphinx-rtd-theme."
-"readthedocs.io/en/stable/installing.html>`_ for instructions to enable it in "
-"your Sphinx project."
+"Read the `sphinx-rtd-theme documentation <https://sphinx-rtd-"
+"theme.readthedocs.io/en/stable/installing.html>`_ for instructions to enable "
+"it in your Sphinx project."
 msgstr ""
 
 #: ../../../faq.rst:250
@@ -400,8 +402,8 @@ msgstr ""
 msgid ""
 "Image scaling in ``docutils`` depends on ``Pillow``. If you notice that "
 "image scaling is not working properly on your Sphinx project, you may need "
-"to add ``Pillow`` to your requirements to fix this issue. Read more about :"
-"doc:`guides/reproducible-builds` to define your dependencies in a "
+"to add ``Pillow`` to your requirements to fix this issue. Read more "
+"about :doc:`guides/reproducible-builds` to define your dependencies in a "
 "``requirements.txt`` file."
 msgstr ""
 
@@ -417,8 +419,9 @@ msgstr ""
 #: ../../../faq.rst:263
 msgid ""
 "Yes. The most convenient way to access a Python package for example via "
-"`Sphinx's autoapi`_ in your documentation is to use the ``python.install."
-"method: pip`` (:ref:`config-file/v2:python.install`) configuration key."
+"`Sphinx's autoapi`_ in your documentation is to use the "
+"``python.install.method: pip`` (:ref:`config-file/v2:python.install`) "
+"configuration key."
 msgstr ""
 
 #: ../../../faq.rst:267
@@ -438,8 +441,8 @@ msgid ""
 "and difficult for humans to read. In response, many projects have adopted "
 "customized docstring styles that are simultaneously informative and legible. "
 "The `NumPy <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-"
-"standard>`__ and `Google <https://google.github.io/styleguide/pyguide."
-"html#38-comments-and-docstrings>`__ styles are two popular docstring "
+"standard>`__ and `Google <https://google.github.io/styleguide/"
+"pyguide.html#38-comments-and-docstrings>`__ styles are two popular docstring "
 "formats.  Fortunately, the default Read the Docs theme handles both formats "
 "just fine, provided your ``conf.py`` specifies an appropriate Sphinx "
 "extension that knows how to convert your customized docstrings.  Two such "

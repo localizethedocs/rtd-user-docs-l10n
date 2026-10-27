@@ -24,8 +24,8 @@ msgstr ""
 #: ../../../build-default-versions.rst:13
 msgid ""
 "Read the Docs supports any documentation tool to build your documentation. "
-"However, we provide pre-defined builders for `Sphinx <https://www.sphinx-doc."
-"org/>`__ and `MkDocs <https://www.mkdocs.org/>`__."
+"However, we provide pre-defined builders for `Sphinx <https://www.sphinx-"
+"doc.org/>`__ and `MkDocs <https://www.mkdocs.org/>`__."
 msgstr ""
 
 #: ../../../build-default-versions.rst:17
@@ -35,8 +35,9 @@ msgid ""
 "make it more difficult for new projects to use new versions. For this "
 "reason, we are now installing just the minimal required dependencies using "
 "their latest version by default. You can see the full list of historical "
-"dependencies and advice for migrating in our `blog post <https://blog."
-"readthedocs.com/defaulting-latest-build-tools/>`__ announcing this change."
+"dependencies and advice for migrating in our `blog post <https://"
+"blog.readthedocs.com/defaulting-latest-build-tools/>`__ announcing this "
+"change."
 msgstr ""
 
 #: ../../../build-default-versions.rst:24

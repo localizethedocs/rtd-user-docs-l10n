@@ -598,8 +598,8 @@ msgstr ""
 
 #: ../../../api/v2.rst:331
 msgid ""
-"The embed API v2 has been deprecated and is no longer available. Use :ref:"
-"`embed API v3 <api/v3:embed>` instead."
+"The embed API v2 has been deprecated and is no longer available. "
+"Use :ref:`embed API v3 <api/v3:embed>` instead."
 msgstr ""
 
 #: ../../../api/v2.rst:335
@@ -615,8 +615,8 @@ msgstr ""
 
 #: ../../../api/v2.rst:347
 msgid ""
-"curl https://app.readthedocs.org/api/v2/embed/?url=https://docs.readthedocs."
-"com/platform/stable/reference/features.html"
+"curl https://app.readthedocs.org/api/v2/embed/?url=https://"
+"docs.readthedocs.com/platform/stable/reference/features.html"
 msgstr ""
 
 #: ../../../api/v2.rst:348

@@ -105,8 +105,9 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:60
 msgid ""
-"Set your `html_baseurl`_ to your Read the Docs canonical URL using a :doc:"
-"`Read the Docs environment variable </reference/environment-variables>`:"
+"Set your `html_baseurl`_ to your Read the Docs canonical URL using "
+"a :doc:`Read the Docs environment variable </reference/environment-"
+"variables>`:"
 msgstr ""
 
 #: ../../../intro/sphinx.rst:63 ../../../intro/sphinx.rst:92
@@ -123,9 +124,9 @@ msgstr "組態 Read the Docs 搜尋"
 
 #: ../../../intro/sphinx.rst:73
 msgid ""
-"If you're using the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme."
-"readthedocs.io/en/stable/>`__, :doc:`Server side search </server-side-search/"
-"index>` already works out of the box."
+"If you're using the `Read the Docs Sphinx Theme <https://sphinx-rtd-"
+"theme.readthedocs.io/en/stable/>`__, :doc:`Server side search </server-side-"
+"search/index>` already works out of the box."
 msgstr ""
 
 #: ../../../intro/sphinx.rst:76
@@ -148,8 +149,8 @@ msgid ""
 "docs\" input from the topnav.\n"
 "// NOTE: The selector of the search input may need to be adjusted based on "
 "your theme.\n"
-"document.querySelector(\"[role='search'] input\")."
-"addEventListener(\"focusin\", () => {\n"
+"document.querySelector(\"[role='search'] "
+"input\").addEventListener(\"focusin\", () => {\n"
 "   const event = new CustomEvent(\"readthedocs-search-show\");\n"
 "   document.dispatchEvent(event);\n"
 "});"
@@ -181,15 +182,15 @@ msgstr ""
 
 #: ../../../intro/sphinx.rst:104
 msgid ""
-"If you're using the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme."
-"readthedocs.io/en/stable/>`__, the :ref:`flyout-menu:Addons flyout menu` is "
-"already fully integrated into the theme. Use the theme options "
+"If you're using the `Read the Docs Sphinx Theme <https://sphinx-rtd-"
+"theme.readthedocs.io/en/stable/>`__, the :ref:`flyout-menu:Addons flyout "
+"menu` is already fully integrated into the theme. Use the theme options "
 "`flyout_display <https://sphinx-rtd-theme.readthedocs.io/en/stable/"
 "configuring.html#confval-flyout_display>`__, `version_selector <https://"
 "sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html#confval-"
-"version_selector>`__, `language_selector <https://sphinx-rtd-theme."
-"readthedocs.io/en/stable/configuring.html#confval-language_selector>`__ to "
-"configure it."
+"version_selector>`__, `language_selector <https://sphinx-rtd-"
+"theme.readthedocs.io/en/stable/configuring.html#confval-"
+"language_selector>`__ to configure it."
 msgstr ""
 
 #: ../../../intro/sphinx.rst:106
