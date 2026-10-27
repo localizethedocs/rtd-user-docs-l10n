@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-10-27 13:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,8 +68,8 @@ msgstr ""
 #: ../../../advertising/ethical-advertising.rst:33
 msgid ""
 "We're a community, and we value your feedback. If you ever want to reach out "
-"about this effort, feel free to `shoot us an email <mailto:rev@readthedocs."
-"org>`_."
+"about this effort, feel free to `shoot us an email "
+"<mailto:rev@readthedocs.org>`_."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:38
@@ -188,16 +188,16 @@ msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:109
 msgid ""
-"Eric Holscher, one of our co-founders `talks a bit more <https://www."
-"ericholscher.com/blog/2016/aug/31/funding-oss-marketing-money/>`_ about "
+"Eric Holscher, one of our co-founders `talks a bit more <https://"
+"www.ericholscher.com/blog/2016/aug/31/funding-oss-marketing-money/>`_ about "
 "funding open source this way on his blog."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:112
 msgid ""
 "After proving our ad model as a way to fund open source and building our ad "
-"serving infrastructure, we launched the `EthicalAds network <https://www."
-"ethicalads.io?ref=rtd-docs>`_ to help other projects be sustainable."
+"serving infrastructure, we launched the `EthicalAds network <https://"
+"www.ethicalads.io?ref=rtd-docs>`_ to help other projects be sustainable."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:119
@@ -212,16 +212,16 @@ msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:124
 msgid ""
-"**If you're a developer**, `talk to your marketing folks <https://www."
-"ericholscher.com/blog/2016/aug/31/funding-oss-marketing-money/>`_ about "
+"**If you're a developer**, `talk to your marketing folks <https://"
+"www.ericholscher.com/blog/2016/aug/31/funding-oss-marketing-money/>`_ about "
 "using advertising that respects your privacy."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:126
 msgid ""
 "**If you're a marketer**, vote with your dollars and support us in building "
-"the ad model we want to exist. `Get more information <https://www.ethicalads."
-"io/advertisers/?ref=rtd-docs>`_ on what we offer."
+"the ad model we want to exist. `Get more information <https://"
+"www.ethicalads.io/advertisers/?ref=rtd-docs>`_ on what we offer."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:132
@@ -299,8 +299,8 @@ msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:169
 msgid ""
-"You will still see :ref:`community ads <advertising/ethical-advertising:"
-"Community Ads>` for open source projects and conferences."
+"You will still see :ref:`community ads <advertising/ethical-"
+"advertising:Community Ads>` for open source projects and conferences."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:172
@@ -324,9 +324,9 @@ msgstr ""
 #: ../../../advertising/ethical-advertising.rst:179
 msgid ""
 "If you are part of a company that uses Read the Docs to host documentation "
-"for a commercial product, we offer :doc:`Read the Docs for Business </"
-"commercial/index>` that offers a completely ad-free experience, additional "
-"build resources, and other great features like CDN support and private "
+"for a commercial product, we offer :doc:`Read the Docs Business </commercial/"
+"index>` that offers a completely ad-free experience, additional build "
+"resources, and other great features like CDN support and private "
 "documentation."
 msgstr ""
 
