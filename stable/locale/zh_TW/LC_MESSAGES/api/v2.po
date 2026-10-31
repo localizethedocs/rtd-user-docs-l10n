@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 09:33+0000\n"
+"POT-Creation-Date: 2026-10-27 13:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgstr ""
 #: ../../../api/v2.rst:44
 msgid ""
 "As an example, this documentation is part of the `Docs project`_ which has "
-"documentation at https://docs.readthedocs.io."
+"documentation at https://docs.readthedocs.com/platform/stable/."
 msgstr ""
 
 #: ../../../api/v2.rst:47

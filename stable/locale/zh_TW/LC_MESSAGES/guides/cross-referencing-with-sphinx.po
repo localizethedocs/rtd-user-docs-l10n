@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-10-27 13:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -574,8 +574,8 @@ msgstr ""
 
 #: ../../../guides/cross-referencing-with-sphinx.rst:388
 msgid ""
-"python -m sphinx.ext.intersphinx https://docs.readthedocs.io/en/stable/"
-"objects.inv"
+"python -m sphinx.ext.intersphinx https://docs.readthedocs.com/platform/"
+"stable/objects.inv"
 msgstr ""
 
 #: ../../../guides/cross-referencing-with-sphinx.rst:390
