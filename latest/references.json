@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-20 09:23:35 +0200",
-        "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-        "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+        "date" : "2026-10-26 13:01:39 +0100",
+        "hash" : "9af61db775efca367133aca048584a60f7a5e669",
+        "title" : "Version: show duplicated version slug when renaming (#13438)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-20 09:23:35 +0200",
-        "hash" : "773646fce5735c628ff338032b79ef101688a37e",
-        "title" : "Dependencies: all packages updated via pip-tools (#12954)"
+        "date" : "2026-10-26 13:01:39 +0100",
+        "hash" : "9af61db775efca367133aca048584a60f7a5e669",
+        "title" : "Version: show duplicated version slug when renaming (#13438)"
       }
     }
   },

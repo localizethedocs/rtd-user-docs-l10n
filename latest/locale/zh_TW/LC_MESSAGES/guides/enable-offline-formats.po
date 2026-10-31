@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-10-26 15:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,8 +74,8 @@ msgstr ""
 #: ../../../guides/enable-offline-formats.rst:36
 msgid ""
 "This means that if you wish to remove downloadable content for a given "
-"version, you can do so by removing the matching :ref:`config-file/v2:"
-"formats` key from your config file."
+"version, you can do so by removing the matching :ref:`config-file/"
+"v2:formats` key from your config file."
 msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:42
@@ -89,7 +89,7 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:50
-msgid ":doc:`/downloadable-documentation` - Overview of this feature."
+msgid ":doc:`/offline-formats` - Overview of this feature."
 msgstr ""
 
 #: ../../../guides/enable-offline-formats.rst:51

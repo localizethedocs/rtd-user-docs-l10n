@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-10-26 15:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../shared/admonition-rtd-business.rst:2
 msgid ""
-"This feature is only available on `Read the Docs for Business <https://app."
-"readthedocs.com/>`_."
+"This feature is only available on `Read the Docs Business <https://"
+"app.readthedocs.com/>`_."
 msgstr ""
 
 #: ../../../commercial/organizations.rst:6
@@ -71,8 +71,8 @@ msgstr ""
 
 #: ../../../commercial/organizations.rst:28
 msgid ""
-"Owners, Members, and Teams behave differently if you are using :ref:"
-"`sso_git_provider`."
+"Owners, Members, and Teams behave differently if you are "
+"using :ref:`sso_git_provider`."
 msgstr ""
 
 #: ../../../commercial/organizations.rst:32

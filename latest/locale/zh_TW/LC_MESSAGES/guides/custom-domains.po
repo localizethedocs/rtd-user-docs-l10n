@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-10-26 15:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgstr "增添自訂域名"
 
 #: ../../../guides/custom-domains.rst:12
 msgid ""
-"To setup your :doc:`custom domain </custom-domains>`, follow these steps:"
+"To set up your :doc:`custom domain </custom-domains>`, follow these steps:"
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:14 ../../../guides/custom-domains.rst:62
-msgid "Go the :guilabel:`Admin` tab of your project."
+msgid "Go to the :guilabel:`Admin` tab of your project."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:15 ../../../guides/custom-domains.rst:63
@@ -50,14 +50,14 @@ msgstr ""
 
 #: ../../../guides/custom-domains.rst:16
 msgid ""
-"Enter the domain where you want to serve the documentation from (e.g. ``docs."
-"example.com``)."
+"Enter the domain where you want to serve the documentation from (e.g. "
+"``docs.example.com``)."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:17
 msgid ""
-"Mark the :guilabel:`Canonical` option if you want use this domain as your :"
-"doc:`canonical domain </canonical-urls>`."
+"Mark the :guilabel:`Canonical` option if you want to use this domain as "
+"your :doc:`canonical domain </canonical-urls>`."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:19
@@ -68,9 +68,9 @@ msgstr ""
 msgid ""
 "At the top of the next page you'll find the value of the DNS record that you "
 "need to point your domain to. For |org_brand| this is ``readthedocs.io``, "
-"and for :doc:`/commercial/index` the record is in the form of ``<hash>."
-"domains.readthedocs.com``. If you are using Cloudflare, make sure to disable "
-"the proxy status (orange cloud) for the CNAME record."
+"and for :doc:`/commercial/index` the record is in the form of "
+"``<hash>.domains.readthedocs.com``. If you are using Cloudflare, make sure "
+"to disable the proxy status (orange cloud) for the CNAME record."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:27
@@ -174,8 +174,8 @@ msgstr ""
 #: ../../../guides/custom-domains.rst:98
 msgid ""
 "You may host multiple documentation repositories as **sub-folders of a "
-"single domain**. For example, ``docs.example.org/projects/repo1`` and ``docs."
-"example.org/projects/repo2``. This is `a way to boost the SEO of your "
+"single domain**. For example, ``docs.example.org/projects/repo1`` and "
+"``docs.example.org/projects/repo2``. This is `a way to boost the SEO of your "
 "website <https://moz.com/blog/subdomains-vs-subfolders-rel-canonical-vs-301-"
 "how-to-structure-links-optimally-for-seo-whiteboard-friday>`_."
 msgstr ""
@@ -247,8 +247,8 @@ msgstr ""
 #: ../../../guides/custom-domains.rst:132
 msgid ""
 "The status of your domain validation and certificate can always be seen on "
-"the details page for your domain under :guilabel:`Admin` > :guilabel:"
-"`Domains` > :guilabel:`YOURDOMAIN.TLD (details)`."
+"the details page for your domain under :guilabel:`Admin` "
+"> :guilabel:`Domains` > :guilabel:`YOURDOMAIN.TLD (details)`."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:135
@@ -278,14 +278,14 @@ msgstr ""
 
 #: ../../../guides/custom-domains.rst:149
 msgid ""
-"CNAME records pointing to another CNAME record (``doc.example.com -> docs."
-"example.com -> readthedocs.io``)."
+"CNAME records pointing to another CNAME record (``doc.example.com -> "
+"docs.example.com -> readthedocs.io``)."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:151
 msgid ""
-"CNAME records pointing to the APEX domain (``www.example.com -> example.com -"
-"> readthedocs.io``)."
+"CNAME records pointing to the APEX domain (``www.example.com -> example.com "
+"-> readthedocs.io``)."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:154

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-10-26 15:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,8 @@ msgstr "⏩️ :doc:`/versions`"
 msgid ""
 "We support multiple versions and translations, integrated nicely into the "
 "URL of your documentation. This is served at ``/en/latest/`` by default. If "
-"you have only one version, or don't need translations, you can change the :"
-"doc:`versioning scheme </versioning-schemes>` of your project."
+"you have only one version, or don't need translations, you can change "
+"the :doc:`versioning scheme </versioning-schemes>` of your project."
 msgstr ""
 
 #: ../../../reference/features.rst:27
@@ -115,7 +115,7 @@ msgstr "⏩️ :doc:`/commercial/sharing`"
 #: ../../../reference/features.rst:45
 msgid ""
 "It is possible to host private and password-protected documentation on Read "
-"the Docs for Business."
+"the Docs Business."
 msgstr ""
 
 #: ../../../reference/features.rst:47
