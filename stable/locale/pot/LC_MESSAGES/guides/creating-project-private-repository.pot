@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-10-27 13:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../shared/admonition-rtd-business.rst:2
 msgid ""
-"This feature is only available on `Read the Docs for Business <https://app."
-"readthedocs.com/>`_."
+"This feature is only available on `Read the Docs Business <https://"
+"app.readthedocs.com/>`_."
 msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:6
@@ -137,8 +137,8 @@ msgstr ""
 #: ../../../guides/creating-project-private-repository.rst:68
 msgid ""
 "In the :guilabel:`Repository URL` field, provide the repository's SSH or Git "
-"URL. This URL usually starts with ``git@...``, for example ``git@github.com:"
-"readthedocs/readthedocs.org.git``."
+"URL. This URL usually starts with ``git@...``, for example "
+"``git@github.com:readthedocs/readthedocs.org.git``."
 msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:70
@@ -192,8 +192,8 @@ msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:97
 msgid ""
-"For GitHub, you can use `deploy keys with read only access <https://docs."
-"github.com/en/developers/overview/managing-deploy-keys#deploy-keys>`__."
+"For GitHub, you can use `deploy keys with read only access <https://"
+"docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys>`__."
 msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:100
@@ -230,8 +230,8 @@ msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:109
 msgid ""
-"For GitLab, you can use `deploy keys with read only access <https://docs."
-"gitlab.com/ee/user/project/deploy_keys/index.html>`__."
+"For GitLab, you can use `deploy keys with read only access <https://"
+"docs.gitlab.com/ee/user/project/deploy_keys/index.html>`__."
 msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:111
@@ -282,8 +282,8 @@ msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:131
 msgid ""
-"For Azure DevOps, you can use `SSH key authentication <https://docs."
-"microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?"
+"For Azure DevOps, you can use `SSH key authentication <https://"
+"docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?"
 "view=azure-devops>`__."
 msgstr ""
 
@@ -336,7 +336,7 @@ msgstr ""
 
 #: ../../../guides/creating-project-private-repository.rst:152
 msgid ""
-"This step is the same for public repositories, follow the directions for :"
-"doc:`manually configuring a Git repository integration </guides/setup/git-"
-"repo-manual>`."
+"This step is the same for public repositories, follow the directions "
+"for :doc:`manually configuring a Git repository integration </guides/setup/"
+"git-repo-manual>`."
 msgstr ""
