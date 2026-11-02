@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-26 13:01:39 +0100",
-      "hash" : "9af61db775efca367133aca048584a60f7a5e669",
-      "title" : "Version: show duplicated version slug when renaming (#13438)"
+      "date" : "2026-10-29 16:35:34 -0500",
+      "hash" : "f343b74e8cbe292a2d3b8f0ed415fd9cbe1aa57a",
+      "title" : "Settings: Migrate to BigAutoField as default primary key (#13450)"
     }
   },
   "type" : "branch",
