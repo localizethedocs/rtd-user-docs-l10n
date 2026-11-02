@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-02 18:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,7 +247,7 @@ msgid ""
 "v3:Version update>`, but you should take the following into account:"
 msgstr ""
 
-#: ../../../versions.rst:108 ../../../versions.rst:125
+#: ../../../versions.rst:108 ../../../versions.rst:126
 msgid ""
 "Changing the slug of an active version will result on its previous "
 "documentation being deleted, and a new build being triggered. Be careful "
@@ -260,10 +260,12 @@ msgid ""
 "Any URL referencing your version with the old slug will return a ``404 Not "
 "Found`` page. You can use :ref:`an exact redirect <user-defined-"
 "redirects:Redirecting an old version to a new one>` to redirect users to the "
-"new URL,"
+"new URL. After changing the slug of an active version, the :term:`dashboard` "
+"shows a notification with a link to create that redirect, with the form "
+"already filled in."
 msgstr ""
 
-#: ../../../versions.rst:112
+#: ../../../versions.rst:113
 msgid ""
 "You may still see the original name of the version in some places, as "
 "changing the slug only affects the URL used in your documentation and how "
@@ -272,7 +274,7 @@ msgid ""
 "readthedocs.org/issues/11979>`__."
 msgstr ""
 
-#: ../../../versions.rst:115
+#: ../../../versions.rst:116
 msgid ""
 "Sorting of versions in the version selector is done based on the slug, "
 "changing the slug of a version may change the order in which they are shown "
@@ -281,87 +283,87 @@ msgid ""
 "11979>`__."
 msgstr ""
 
-#: ../../../versions.rst:118
+#: ../../../versions.rst:119
 msgid ""
 "You can't change the slug of versions that are managed by Read the Docs, "
 "like ``latest`` and ``stable``."
 msgstr ""
 
-#: ../../../versions.rst:119
+#: ../../../versions.rst:120
 msgid "Slugs must be unique for each version of your project."
 msgstr ""
 
-#: ../../../versions.rst:120
+#: ../../../versions.rst:121
 msgid ""
 "The slug can contain lowercase letters, numbers, dashes (``-``), underscores "
 "(``_``) and dots (``.``). If you try to use a slug that contains any other "
 "character, you'll get an error message with a suggestion of a valid slug."
 msgstr ""
 
-#: ../../../versions.rst:129
+#: ../../../versions.rst:130
 msgid "Disabling versioning completely"
 msgstr ""
 
-#: ../../../versions.rst:131
+#: ../../../versions.rst:132
 msgid ""
 "You can :doc:`configure a single version project </versioning-schemes>`, and "
 "the version will be hidden from the URL."
 msgstr ""
 
-#: ../../../versions.rst:135
+#: ../../../versions.rst:136
 msgid "Version warning notifications"
 msgstr ""
 
-#: ../../../versions.rst:137
+#: ../../../versions.rst:138
 msgid ""
 "As part of :doc:`addons`, Read the Docs displays notifications in the "
 "following situations:"
 msgstr ""
 
-#: ../../../versions.rst:139
+#: ../../../versions.rst:140
 msgid "Non-stable notification"
 msgstr ""
 
-#: ../../../versions.rst:140
+#: ../../../versions.rst:141
 msgid ""
 "A notification on all non-stable versions is shown to clearly communicate to "
 "readers they may be reading an outdated version of the documentation."
 msgstr ""
 
-#: ../../../versions.rst:142
+#: ../../../versions.rst:143
 msgid ""
 "Specifically, when a version is being shown that is not the ``stable`` "
 "version, and there is a ``stable`` version available."
 msgstr ""
 
-#: ../../../versions.rst:145
+#: ../../../versions.rst:146
 msgid "Latest version notification"
 msgstr ""
 
-#: ../../../versions.rst:146
+#: ../../../versions.rst:147
 msgid ""
 "A notification shown on the latest version tells readers they are reading "
 "the latest/development version of the documentation that may include "
 "features not yet deployed."
 msgstr ""
 
-#: ../../../versions.rst:148
+#: ../../../versions.rst:149
 msgid ""
 "Specifically, when the ``latest`` version is being shown, and there's also "
 "an active ``stable`` version that is not hidden."
 msgstr ""
 
-#: ../../../versions.rst:150
+#: ../../../versions.rst:151
 msgid ""
 "Each of these notifications can be configured by project admins "
 "in :ref:`addons:Configuring Read the Docs Addons`."
 msgstr ""
 
-#: ../../../versions.rst:153
+#: ../../../versions.rst:154
 msgid "Redirects on root URLs"
 msgstr ""
 
-#: ../../../versions.rst:155
+#: ../../../versions.rst:156
 msgid ""
 "When a user hits the root URL for your documentation, for example ``https://"
 "pip.readthedocs.io/``, they will be redirected to the **Default version**. "
@@ -369,31 +371,31 @@ msgid ""
 "to your **stable** version."
 msgstr ""
 
-#: ../../../versions.rst:162
+#: ../../../versions.rst:163
 msgid "Versioning workflows"
 msgstr ""
 
-#: ../../../versions.rst:164
+#: ../../../versions.rst:165
 msgid ""
 "Read the Docs makes certain assumptions about your documentation version "
 "defaults, all of which can be reconfigured if necessary:"
 msgstr ""
 
-#: ../../../versions.rst:167
+#: ../../../versions.rst:168
 msgid ""
 "The ``latest`` version points to the most up to date development code. If "
 "you develop on a branch that is different than the default for your version "
 "control system, set the **Default Branch** to the branch you use."
 msgstr ""
 
-#: ../../../versions.rst:171
+#: ../../../versions.rst:172
 msgid ""
 "**Tags** are semantic versioning compatible (according to  `PEP 440`_) "
 "snapshots of your documentation. The most recent semantic tag maps to the "
 "``stable`` version."
 msgstr ""
 
-#: ../../../versions.rst:174
+#: ../../../versions.rst:175
 msgid ""
 "Semantic versioning allows \"normal\" version numbers like ``1.4.2``, as "
 "well as pre-releases like this: ``2.0a1``. The ``stable`` version of your "
@@ -401,7 +403,7 @@ msgid ""
 "``v1.4.2`` or ``v2.0a1`` is also allowed."
 msgstr ""
 
-#: ../../../versions.rst:178
+#: ../../../versions.rst:179
 msgid ""
 "Branches are assumed to be **long-lived branches**, This is most useful for "
 "**release branches**, which are maintained over time for a specific release. "
