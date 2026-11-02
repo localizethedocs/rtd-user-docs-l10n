@@ -51,9 +51,9 @@ msgstr ""
 
 #: ../../../guides/deprecating-content.rst:22
 msgid ""
-"If you have multiple versions of your project, it makes sense to have its :"
-"doc:`documentation versioned </versions>` as well. For example, if you have "
-"the following versions and want to deprecate v1."
+"If you have multiple versions of your project, it makes sense to have "
+"its :doc:`documentation versioned </versions>` as well. For example, if you "
+"have the following versions and want to deprecate v1."
 msgstr ""
 
 #: ../../../guides/deprecating-content.rst:26
@@ -71,17 +71,17 @@ msgstr ""
 #: ../../../guides/deprecating-content.rst:30
 msgid ""
 "For cases like this you can *hide* a version. Hidden versions won't be "
-"listed in the versions menu of your docs, and they will be listed in a :doc:"
-"`robots.txt file </reference/robots>` to stop search engines of showing "
-"results for that version."
+"listed in the versions menu of your docs, and they will be listed in "
+"a :doc:`robots.txt file </reference/robots>` to stop search engines of "
+"showing results for that version."
 msgstr ""
 
 #: ../../../guides/deprecating-content.rst:35
 msgid ""
 "Users can still see all versions in the dashboard of your project. To hide a "
-"version go to your project and click on :guilabel:`Versions` > :guilabel:"
-"`Edit`, and mark the :guilabel:`Hidden` option. Check :ref:`versions:Version "
-"States` for more information."
+"version go to your project and click on :guilabel:`Versions` "
+"> :guilabel:`Edit`, and mark the :guilabel:`Hidden` option. "
+"Check :ref:`versions:Version States` for more information."
 msgstr ""
 
 #: ../../../guides/deprecating-content.rst:41
@@ -115,9 +115,9 @@ msgstr ""
 msgid ""
 "A simple way is just adding a warning at the top of the page, this will warn "
 "users visiting that page, but it won't stop users from being redirected to "
-"that page from search results. You can add an entry of that page in a :doc:"
-"`custom robots.txt </reference/robots>` file to avoid search engines of "
-"showing those results. For example::"
+"that page from search results. You can add an entry of that page in "
+"a :doc:`custom robots.txt </reference/robots>` file to avoid search engines "
+"of showing those results. For example::"
 msgstr ""
 
 #: ../../../guides/deprecating-content.rst:63
@@ -177,6 +177,6 @@ msgid ""
 "To solve that problem you can create a redirect to a page with a similar "
 "feature/content, like redirecting to the docs of the v2 of your API when "
 "your users visit the deleted docs from v1, this is a :ref:`page redirect "
-"<user-defined-redirects:page redirects>` from ``/api/v1.html`` to ``/api/v2."
-"html``. See :doc:`/user-defined-redirects`."
+"<user-defined-redirects:page redirects>` from ``/api/v1.html`` to ``/api/"
+"v2.html``. See :doc:`/user-defined-redirects`."
 msgstr ""

@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../commercial/subscriptions.rst:4
 msgid ""
-"We want to make it easy to manage your billing information. All :doc:"
-"`organization owners </commercial/subscriptions>` can manage the "
+"We want to make it easy to manage your billing information. "
+"All :doc:`organization owners </commercial/subscriptions>` can manage the "
 "subscription for that organization. It's easy to achieve a number of common "
 "tasks in this dashboard:"
 msgstr ""

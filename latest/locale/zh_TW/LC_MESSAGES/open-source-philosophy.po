@@ -58,8 +58,8 @@ msgstr ""
 
 #: ../../../open-source-philosophy.rst:25
 msgid ""
-"Bug fixes in the code base, as it applies to running it on https://app."
-"readthedocs.org"
+"Bug fixes in the code base, as it applies to running it on https://"
+"app.readthedocs.org"
 msgstr ""
 
 #: ../../../open-source-philosophy.rst:28

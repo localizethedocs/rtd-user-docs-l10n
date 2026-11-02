@@ -61,8 +61,8 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:23
 msgid ""
-"Redirects are configured in the project dashboard, go to :menuselection:"
-"`Admin > Redirects`."
+"Redirects are configured in the project dashboard, go "
+"to :menuselection:`Admin > Redirects`."
 msgstr ""
 
 #: ../../../guides/redirects.rst:26
@@ -71,9 +71,9 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:29
 msgid ""
-"After clicking :guilabel:`Add Redirect`, you need to select a :guilabel:"
-"`Redirect Type`. This is where things get a bit more complicated you need to "
-"fill in specific information according to that choice."
+"After clicking :guilabel:`Add Redirect`, you need to select "
+"a :guilabel:`Redirect Type`. This is where things get a bit more complicated "
+"you need to fill in specific information according to that choice."
 msgstr ""
 
 #: ../../../guides/redirects.rst:34
@@ -208,8 +208,8 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:109
 msgid ""
-"When editing a rule, you can change its :guilabel:`Redirect Type` and its :"
-"guilabel:`From URL` or :guilabel:`To URL`."
+"When editing a rule, you can change its :guilabel:`Redirect Type` and "
+"its :guilabel:`From URL` or :guilabel:`To URL`."
 msgstr ""
 
 #: ../../../guides/redirects.rst:113

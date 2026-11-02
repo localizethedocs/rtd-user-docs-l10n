@@ -37,8 +37,8 @@ msgstr ""
 
 #: ../../../guides/migrate-rest-myst.md:12
 msgid ""
-"The most powerful of such extensions is {doc}`MyST-Parser <myst-parser:"
-"index>`, which implements a CommonMark-compliant, extensible Markdown "
+"The most powerful of such extensions is {doc}`MyST-Parser <myst-"
+"parser:index>`, which implements a CommonMark-compliant, extensible Markdown "
 "dialect with support for the Sphinx roles and directives that make it so "
 "useful."
 msgstr ""

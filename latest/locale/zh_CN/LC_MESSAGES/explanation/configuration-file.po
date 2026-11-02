@@ -131,10 +131,10 @@ msgstr ""
 
 #: ../../../explanation/configuration-file.rst:61
 msgid ""
-"You can configure your Read the Docs project by adding a ``.readthedocs."
-"yaml`` file [1]_ to your Git repository. The configuration will apply to the "
-"exact version that is being built. This allows you to store different "
-"configurations for different versions of your documentation."
+"You can configure your Read the Docs project by adding a "
+"``.readthedocs.yaml`` file [1]_ to your Git repository. The configuration "
+"will apply to the exact version that is being built. This allows you to "
+"store different configurations for different versions of your documentation."
 msgstr ""
 
 #: ../../../explanation/configuration-file.rst:65
@@ -160,9 +160,9 @@ msgstr ""
 
 #: ../../../explanation/configuration-file.rst:72
 msgid ""
-"Other variants of the configuration file name like ``readthedocs.yaml``, ``."
-"readthedocs.yml``, etc. are deprecated. You may however, :doc:`configure a "
-"custom sub-folder </guides/setup/monorepo>`."
+"Other variants of the configuration file name like ``readthedocs.yaml``, "
+"``.readthedocs.yml``, etc. are deprecated. You may however, :doc:`configure "
+"a custom sub-folder </guides/setup/monorepo>`."
 msgstr ""
 
 #: ../../../explanation/configuration-file.rst:76

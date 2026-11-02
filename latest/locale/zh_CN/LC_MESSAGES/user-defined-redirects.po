@@ -85,8 +85,8 @@ msgstr ""
 msgid ""
 "This section explains the redirects that are automatically active for all "
 "projects and how they are useful. Built-in redirects are especially useful "
-"for creating and sharing incoming links, which is discussed in depth in :doc:"
-"`/guides/best-practice/links`."
+"for creating and sharing incoming links, which is discussed in depth "
+"in :doc:`/guides/best-practice/links`."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:37
@@ -142,8 +142,8 @@ msgstr ""
 msgid ""
 "You cannot use the root redirect to reference specific pages. ``/`` *only* "
 "redirects to the default version, whereas ``/some/page.html`` will *not* "
-"redirect to ``/en/latest/some/page.html``. Instead, use :ref:"
-"`page_redirects`."
+"redirect to ``/en/latest/some/page.html``. Instead, "
+"use :ref:`page_redirects`."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:70
@@ -285,8 +285,8 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:143
 msgid ""
-"Redirects without a wildcard match paths with or without a trailing slash, e."
-"g. ``/install`` matches ``/install`` and ``/install/``."
+"Redirects without a wildcard match paths with or without a trailing slash, "
+"e.g. ``/install`` matches ``/install`` and ``/install/``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:145
@@ -338,14 +338,14 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:167
 msgid ""
-"From ``https://docs.example.com/en/latest/example.html`` to ``https://docs."
-"example.com/en/latest/examples/intro.html``."
+"From ``https://docs.example.com/en/latest/example.html`` to ``https://"
+"docs.example.com/en/latest/examples/intro.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:169
 msgid ""
-"From ``https://docs.example.com/en/stable/example.html`` to ``https://docs."
-"example.com/en/stable/examples/intro.html``."
+"From ``https://docs.example.com/en/stable/example.html`` to ``https://"
+"docs.example.com/en/stable/examples/intro.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:172
@@ -389,8 +389,8 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:196
 msgid ""
-"From ``https://docs.example.com/en/latest/api/`` to ``https://docs.example."
-"com/en/latest/api/v1/``."
+"From ``https://docs.example.com/en/latest/api/`` to ``https://"
+"docs.example.com/en/latest/api/v1/``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:198
@@ -426,8 +426,8 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:224
 msgid ""
-"From ``https://docs.example.com/en/latest/examples/`` to ``https://docs."
-"example.com/en/latest/examples.html``."
+"From ``https://docs.example.com/en/latest/examples/`` to ``https://"
+"docs.example.com/en/latest/examples.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:226
@@ -465,14 +465,14 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:254
 msgid ""
-"From ``https://docs.example.com/en/v1.0/security.html`` to ``https://docs."
-"example.com/en/latest/security.html``."
+"From ``https://docs.example.com/en/v1.0/security.html`` to ``https://"
+"docs.example.com/en/latest/security.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:256
 msgid ""
-"From ``https://docs.example.com/en/v2.5/security.html`` to ``https://docs."
-"example.com/en/latest/security.html``."
+"From ``https://docs.example.com/en/v2.5/security.html`` to ``https://"
+"docs.example.com/en/latest/security.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:261
@@ -503,8 +503,8 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:278
 msgid ""
-"From ``https://docs.example.com/en/2.0/dev/install.html`` to ``https://docs."
-"example.com/en/3.0/dev/install.html``."
+"From ``https://docs.example.com/en/2.0/dev/install.html`` to ``https://"
+"docs.example.com/en/3.0/dev/install.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:283
@@ -572,8 +572,8 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:320
 msgid ""
-"From ``https://docs.example.com/dev/install.html`` to ``https://docs.example."
-"com/en/latest/install.html``."
+"From ``https://docs.example.com/dev/install.html`` to ``https://"
+"docs.example.com/en/latest/install.html``."
 msgstr ""
 
 #: ../../../user-defined-redirects.rst:324

@@ -68,6 +68,3 @@ msgid ""
 "An introduction to how pre-defined and user-defined environment variables "
 "work and how to use them."
 msgstr ""
-
-#~ msgid "⏩️ :doc:`/downloadable-documentation`"
-#~ msgstr "⏩️ :doc:`/downloadable-documentation`"

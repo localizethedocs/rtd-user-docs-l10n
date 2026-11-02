@@ -30,9 +30,9 @@ msgstr ""
 
 #: ../../../url-path-prefixes.rst:9
 msgid ""
-"This is a |com_brand| feature available on Pro and higher plans. Contact :"
-"doc:`Read the Docs support </support>` to enable custom URL path prefixes "
-"for your project."
+"This is a |com_brand| feature available on Pro and higher plans. "
+"Contact :doc:`Read the Docs support </support>` to enable custom URL path "
+"prefixes for your project."
 msgstr ""
 
 #: ../../../url-path-prefixes.rst:13
@@ -131,8 +131,8 @@ msgid ""
 "If you want to serve your documentation as part of your main website (for "
 "example, at ``https://example.com/docs/``), you can configure your web "
 "server to proxy requests to Read the Docs and use a custom prefix of ``/docs/"
-"`` to match. Your documentation would then be served from ``https://example."
-"com/docs/en/latest/`` instead of ``https://example.com/en/latest/``."
+"`` to match. Your documentation would then be served from ``https://"
+"example.com/docs/en/latest/`` instead of ``https://example.com/en/latest/``."
 msgstr ""
 
 #: ../../../url-path-prefixes.rst:54

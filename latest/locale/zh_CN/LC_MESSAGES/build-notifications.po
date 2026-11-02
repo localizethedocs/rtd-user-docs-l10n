@@ -60,8 +60,8 @@ msgstr ""
 
 #: ../../../build-notifications.rst:22
 msgid ""
-"We don't trigger email notifications or build status webhooks on :doc:"
-"`builds from pull requests </pull-requests>`."
+"We don't trigger email notifications or build status webhooks "
+"on :doc:`builds from pull requests </pull-requests>`."
 msgstr ""
 
 #: ../../../build-notifications.rst:25

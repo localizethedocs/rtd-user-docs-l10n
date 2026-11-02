@@ -82,8 +82,8 @@ msgstr ""
 
 #: ../../../guides/setup/index.rst:14
 msgid ""
-"Hosting your documentation using your own domain name, such as ``docs."
-"example.com``."
+"Hosting your documentation using your own domain name, such as "
+"``docs.example.com``."
 msgstr ""
 
 #: ../../../guides/setup/index.rst:16

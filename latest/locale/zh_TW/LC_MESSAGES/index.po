@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.rst:4
 msgid "Tutorial"
-msgstr ""
+msgstr "教學課程"
 
 #: ../../../index.rst:4
 msgid "Getting started"
@@ -384,9 +384,3 @@ msgstr ":doc:`/about/index`"
 #: ../../../index.rst:274
 msgid "Learn more about Read the Docs and our company."
 msgstr ""
-
-#~ msgid "Setup pull request builds and enjoy previews of each commit."
-#~ msgstr "設定提取請求建置，並享受每次提交的預覽功能。"
-
-#~ msgid ":doc:`/guides/cross-referencing-with-sphinx`"
-#~ msgstr ":doc:`/guides/cross-referencing-with-sphinx`"

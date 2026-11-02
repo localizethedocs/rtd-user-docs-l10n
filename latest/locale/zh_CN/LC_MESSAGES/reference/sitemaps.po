@@ -24,9 +24,9 @@ msgstr ""
 #: ../../../reference/sitemaps.rst:4
 msgid ""
 "`Sitemaps <https://www.sitemaps.org/>`__ allow you to inform search engines "
-"about URLs that are available for crawling. This makes your content more :"
-"term:`discoverable <discoverability>`, and improves your :doc:`Search Engine "
-"Optimization (SEO) </guides/technical-docs-seo-guide>`."
+"about URLs that are available for crawling. This makes your content "
+"more :term:`discoverable <discoverability>`, and improves your :doc:`Search "
+"Engine Optimization (SEO) </guides/technical-docs-seo-guide>`."
 msgstr ""
 
 #: ../../../reference/sitemaps.rst:9

@@ -42,8 +42,8 @@ msgstr ""
 #: ../../../reference/robots.rst:11
 msgid ""
 "Read the Docs automatically generates one for you with a configuration that "
-"works for most projects. By default, the automatically created ``robots."
-"txt``:"
+"works for most projects. By default, the automatically created "
+"``robots.txt``:"
 msgstr ""
 
 #: ../../../reference/robots.rst:14

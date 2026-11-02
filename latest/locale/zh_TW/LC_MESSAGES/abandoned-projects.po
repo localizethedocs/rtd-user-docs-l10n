@@ -23,14 +23,14 @@ msgstr ""
 
 #: ../../../abandoned-projects.rst:4
 msgid ""
-"This policy describes the process by which a Read the Docs project :term:"
-"`slug` may be changed."
+"This policy describes the process by which a Read the Docs "
+"project :term:`slug` may be changed."
 msgstr ""
 
 #: ../../../abandoned-projects.rst:6
 msgid ""
-"If you want to de-list a project's fork from search results, please see :doc:"
-"`/unofficial-projects`."
+"If you want to de-list a project's fork from search results, please "
+"see :doc:`/unofficial-projects`."
 msgstr ""
 
 #: ../../../abandoned-projects.rst:9

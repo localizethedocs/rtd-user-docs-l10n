@@ -119,8 +119,8 @@ msgstr ""
 
 #: ../../../advertising/ad-blocking.rst:76
 msgid ""
-"Of those, `a little over 50% allow acceptable ads <https://blog.readthedocs."
-"com/ad-blocker-update/>`_"
+"Of those, `a little over 50% allow acceptable ads <https://"
+"blog.readthedocs.com/ad-blocker-update/>`_"
 msgstr ""
 
 #: ../../../advertising/ad-blocking.rst:77

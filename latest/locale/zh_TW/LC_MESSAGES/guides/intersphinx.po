@@ -29,8 +29,8 @@ msgstr ""
 
 #: ../../../guides/intersphinx.rst:6
 msgid ""
-"You may be familiar with using the :ref:`:ref: role <sphinx:ref-role>` to :"
-"doc:`link to any location of your docs </guides/cross-referencing-with-"
+"You may be familiar with using the :ref:`:ref: role <sphinx:ref-role>` "
+"to :doc:`link to any location of your docs </guides/cross-referencing-with-"
 "sphinx>`. It helps you to keep all links within your docs up to date and "
 "warns you if a reference target moves or changes so you can ensure that your "
 "docs don't have broken cross-references."
@@ -107,8 +107,8 @@ msgid ""
 "local references can\n"
 "# suddenly resolve to an external location.\n"
 "# See also:\n"
-"# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx."
-"html#confval-intersphinx_disabled_reftypes\n"
+"# https://www.sphinx-doc.org/en/master/usage/extensions/"
+"intersphinx.html#confval-intersphinx_disabled_reftypes\n"
 "intersphinx_disabled_reftypes = [\"*\"]"
 msgstr ""
 
@@ -213,11 +213,11 @@ msgstr ""
 
 #: ../../../guides/intersphinx.rst:132
 msgid ""
-"Intersphinx supports `URLs with Basic Authorization <https://www.sphinx-doc."
-"org/en/master/usage/extensions/intersphinx.html#using-intersphinx-with-"
-"inventory-file-under-basic-authorization>`__, which Read the Docs supports :"
-"ref:`using a token <commercial/sharing:Basic Authorization>`. You need to "
-"generate a token for each project you want to use with Intersphinx."
+"Intersphinx supports `URLs with Basic Authorization <https://www.sphinx-"
+"doc.org/en/master/usage/extensions/intersphinx.html#using-intersphinx-with-"
+"inventory-file-under-basic-authorization>`__, which Read the Docs "
+"supports :ref:`using a token <commercial/sharing:Basic Authorization>`. You "
+"need to generate a token for each project you want to use with Intersphinx."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:136

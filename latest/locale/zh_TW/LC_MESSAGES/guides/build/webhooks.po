@@ -50,8 +50,8 @@ msgstr ""
 
 #: ../../../guides/build/webhooks.rst:20
 msgid ""
-":doc:`Builds for pull requests </pull-requests>` do not trigger outgoing :"
-"term:`webhooks <webhook>`."
+":doc:`Builds for pull requests </pull-requests>` do not trigger "
+"outgoing :term:`webhooks <webhook>`."
 msgstr ""
 
 #: ../../../guides/build/webhooks.rst:23
@@ -110,8 +110,8 @@ msgid ""
 "    \"commit\": \"2552bb609ca46865dc36401dee0b1865a0aee52d\",\n"
 "    \"build\": \"15173336\",\n"
 "    \"start_date\": \"2021-11-03T16:23:14\",\n"
-"    \"build_url\": \"https://app.readthedocs.org/projects/docs/"
-"builds/15173336/\",\n"
+"    \"build_url\": \"https://app.readthedocs.org/projects/docs/builds/"
+"15173336/\",\n"
 "    \"docs_url\": \"https://docs.readthedocs.io/en/latest/\"\n"
 "}"
 msgstr ""
@@ -155,8 +155,8 @@ msgstr ""
 
 #: ../../../guides/build/webhooks.rst:81
 msgid ""
-"Event that triggered the webhook, one of ``build:triggered``, ``build:"
-"failed``, or ``build:passed``."
+"Event that triggered the webhook, one of ``build:triggered``, "
+"``build:failed``, or ``build:passed``."
 msgstr ""
 
 #: ../../../guides/build/webhooks.rst:83
@@ -293,8 +293,8 @@ msgid ""
 "            },\n"
 "            {\n"
 "              \"type\": \"mrkdwn\",\n"
-"              \"text\": \"*Version*: {{ version.name }} ({{ build."
-"commit }})\"\n"
+"              \"text\": \"*Version*: {{ version.name }} ({{ build.commit }})"
+"\"\n"
 "            },\n"
 "            {\n"
 "              \"type\": \"mrkdwn\",\n"

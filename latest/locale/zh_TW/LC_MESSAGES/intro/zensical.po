@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../../intro/zensical.rst:44
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../intro/zensical.rst:46
 msgid ""
@@ -162,9 +162,3 @@ msgstr ""
 #: ../../../intro/zensical.rst:108
 msgid "Configuring Addons, like the version flyout menu."
 msgstr ""
-
-#~ msgid "Example repository"
-#~ msgstr "範例儲存庫"
-
-#~ msgid "Further reading"
-#~ msgstr "延伸閱讀"
