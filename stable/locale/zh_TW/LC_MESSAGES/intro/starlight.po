@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../intro/starlight.rst:16
 msgid ".readthedocs.yaml"
-msgstr ""
+msgstr ".readthedocs.yaml"
 
 #: ../../../intro/starlight.rst:16
 msgid ""
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../intro/starlight.rst:42
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../intro/starlight.rst:44
 msgid ""
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../../intro/starlight.rst:84
 msgid "Example repository"
-msgstr ""
+msgstr "範例儲存庫"
 
 #: ../../../intro/starlight.rst:85
 msgid "https://github.com/readthedocs/test-builds/tree/starlight"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../../../intro/starlight.rst:91
 msgid "Further reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../intro/starlight.rst:93
 msgid "`Starlight documentation`_"

@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../../guides/build/direct-upload.rst:164
 msgid "Versions"
-msgstr ""
+msgstr "版本"
 
 #: ../../../guides/build/direct-upload.rst:166
 msgid ""
@@ -390,7 +390,7 @@ msgstr ""
 
 #: ../../../guides/build/direct-upload.rst:234
 msgid ":doc:`/builds`"
-msgstr ""
+msgstr ":doc:`/builds`"
 
 #: ../../../guides/build/direct-upload.rst:235
 msgid ""

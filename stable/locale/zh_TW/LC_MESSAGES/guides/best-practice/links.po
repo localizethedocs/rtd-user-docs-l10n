@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../guides/best-practice/links.rst:26
 msgid ":doc:`/user-defined-redirects`"
-msgstr ""
+msgstr ":doc:`/user-defined-redirects`"
 
 #: ../../../guides/best-practice/links.rst:27
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../guides/best-practice/links.rst:30
 msgid ":doc:`/guides/redirects`"
-msgstr ""
+msgstr ":doc:`/guides/redirects`"
 
 #: ../../../guides/best-practice/links.rst:31
 msgid ""

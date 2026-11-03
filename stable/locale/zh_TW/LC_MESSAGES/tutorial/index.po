@@ -415,7 +415,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:215
 msgid "docs/source/index.rst"
-msgstr ""
+msgstr "docs/source/index.rst"
 
 #: ../../../tutorial/index.rst:215
 msgid "Lumache hosts its documentation on Read the Docs."
@@ -466,7 +466,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:249
 msgid "Using different Python versions"
-msgstr ""
+msgstr "使用不同的 Python 版本"
 
 #: ../../../tutorial/index.rst:251
 msgid ""
@@ -505,7 +505,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:273
 msgid "``version``"
-msgstr ""
+msgstr "``version``"
 
 #: ../../../tutorial/index.rst:274
 msgid ""
@@ -515,7 +515,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:276
 msgid "``build.os``"
-msgstr ""
+msgstr "``build.os``"
 
 #: ../../../tutorial/index.rst:277
 msgid ""
@@ -526,7 +526,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:280
 msgid "``build.tools.python``"
-msgstr ""
+msgstr "``build.tools.python``"
 
 #: ../../../tutorial/index.rst:281
 msgid ""
@@ -535,7 +535,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:283
 msgid "``python.install.requirements``"
-msgstr ""
+msgstr "``python.install.requirements``"
 
 #: ../../../tutorial/index.rst:284
 msgid ""
@@ -947,7 +947,7 @@ msgstr ""
 
 #: ../../../tutorial/index.rst:588
 msgid "Built its HTML documentation."
-msgstr ""
+msgstr "建置它的 HTML 文件。"
 
 #: ../../../tutorial/index.rst:589
 msgid "Customized the build process."

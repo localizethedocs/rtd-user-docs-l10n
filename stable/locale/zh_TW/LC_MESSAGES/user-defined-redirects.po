@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:2
 msgid "Redirects"
-msgstr ""
+msgstr "重新導向"
 
 #: ../../../user-defined-redirects.rst:4
 msgid ""
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:20
 msgid ":doc:`/guides/redirects`"
-msgstr ""
+msgstr ":doc:`/guides/redirects`"
 
 #: ../../../user-defined-redirects.rst:21
 msgid "This guide shows you how to add redirects with practical examples."
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../user-defined-redirects.rst:22
 msgid ":doc:`/guides/best-practice/links`"
-msgstr ""
+msgstr ":doc:`/guides/best-practice/links`"
 
 #: ../../../user-defined-redirects.rst:23
 msgid "Information and tips about creating and handling external references."

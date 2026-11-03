@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../guides/deprecating-content.rst:16
 msgid ":doc:`/guides/best-practice/links`"
-msgstr ""
+msgstr ":doc:`/guides/best-practice/links`"
 
 #: ../../../guides/deprecating-content.rst:17
 msgid ""

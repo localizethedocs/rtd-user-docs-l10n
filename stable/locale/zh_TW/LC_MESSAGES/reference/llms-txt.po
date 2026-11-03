@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../../../reference/llms-txt.rst:74
 msgid ":doc:`/guides/redirects`"
-msgstr ""
+msgstr ":doc:`/guides/redirects`"
 
 #: ../../../reference/llms-txt.rst:76
 msgid ":doc:`/reference/markdown-for-agents`"

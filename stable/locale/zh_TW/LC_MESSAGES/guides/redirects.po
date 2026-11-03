@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:12
 msgid ":doc:`/guides/best-practice/links`"
-msgstr ""
+msgstr ":doc:`/guides/best-practice/links`"
 
 #: ../../../guides/redirects.rst:13
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:16
 msgid ":doc:`/user-defined-redirects`"
-msgstr ""
+msgstr ":doc:`/user-defined-redirects`"
 
 #: ../../../guides/redirects.rst:17
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../offline-formats.rst:2
 msgid "Offline formats (PDF, ePub, HTML)"
-msgstr ""
+msgstr "離線格式（PDF、ePub、HTML）"
 
 #: ../../../offline-formats.rst:4
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../offline-formats.rst:33
 msgid "Accessing offline formats"
-msgstr ""
+msgstr "存取離線格式"
 
 #: ../../../offline-formats.rst:35
 msgid ""
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../../offline-formats.rst:62
 msgid "Sphinx"
-msgstr ""
+msgstr "Sphinx"
 
 #: ../../../offline-formats.rst:63
 msgid ""

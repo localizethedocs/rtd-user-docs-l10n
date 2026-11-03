@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../../builds.rst:75
 msgid ":doc:`/build-customization`"
-msgstr ""
+msgstr ":doc:`/build-customization`"
 
 #: ../../../builds.rst:76
 msgid ""

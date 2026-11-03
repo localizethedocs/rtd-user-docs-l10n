@@ -1498,7 +1498,7 @@ msgstr ""
 
 #: ../../../api/v3.rst:1172
 msgid "Redirects"
-msgstr ""
+msgstr "重新導向"
 
 #: ../../../api/v3.rst:1174
 msgid ""

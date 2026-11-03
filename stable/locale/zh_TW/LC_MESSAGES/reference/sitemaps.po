@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../reference/sitemaps.rst:2
 msgid "Sitemap support"
-msgstr ""
+msgstr "網站地圖支援"
 
 #: ../../../reference/sitemaps.rst:4
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../reference/sitemaps.rst:27
 msgid "Custom ``sitemap.xml``"
-msgstr ""
+msgstr "自訂 ``sitemap.xml``"
 
 #: ../../../reference/sitemaps.rst:29
 msgid ""

@@ -75,6 +75,3 @@ msgstr "⏩️ :doc:`/explanation/configuration-file`"
 msgid ""
 "Some background on our configuration file and versioning configuration files."
 msgstr ""
-
-#~ msgid "⏩️ :doc:`/downloadable-documentation`"
-#~ msgstr "⏩️ :doc:`/downloadable-documentation`"
