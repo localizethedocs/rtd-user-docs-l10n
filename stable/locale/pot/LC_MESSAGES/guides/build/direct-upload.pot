@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-27 13:52+0000\n"
+"POT-Creation-Date: 2026-11-10 16:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -76,32 +77,58 @@ msgstr ""
 
 #: ../../../guides/build/direct-upload.rst:30
 msgid ""
-"An :ref:`API token <api/v3:Token>` belonging to a user with admin access to "
-"the project. Store it as a secret in your continuous integration service."
+"An API token for your project. Store it as a secret in your continuous "
+"integration service."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:33
+msgid "To create an API token for your project:"
 msgstr ""
 
 #: ../../../guides/build/direct-upload.rst:35
-msgid ""
-"We are working on project-scoped tokens, which give access to a single "
-"project instead of everything the user can access. They will be released "
-"soon, and we recommend switching to them once available."
+msgid "Go to the :guilabel:`Settings` of your project."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:40
+#: ../../../guides/build/direct-upload.rst:36
+msgid "Click on :guilabel:`API tokens`."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:37
+msgid "Click on :guilabel:`Add API token`."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:38
+msgid ""
+"Choose a name, the :guilabel:`Upload documentation` permission, and when the "
+"token expires."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:39
+msgid "Copy the token. It's only shown once."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:41
+msgid ""
+"A project API token only gives access to your project. You can also use your "
+"personal :ref:`API token <api/v3:Token>`, but it gives access to everything "
+"your user has access to."
+msgstr ""
+
+#: ../../../guides/build/direct-upload.rst:46
 msgid "Uploading from GitHub Actions"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:42
+#: ../../../guides/build/direct-upload.rst:48
 msgid ""
 "Use the `upload action <https://github.com/readthedocs/upload-action>`__ "
 "after the step that builds your documentation:"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:45
+#: ../../../guides/build/direct-upload.rst:51
 msgid ".github/workflows/docs.yaml"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:45
+#: ../../../guides/build/direct-upload.rst:51
 msgid ""
 "name: Docs\n"
 "\n"
@@ -147,7 +174,7 @@ msgid ""
 "          html: _build/html"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:87
+#: ../../../guides/build/direct-upload.rst:93
 msgid ""
 "The workflow reads the API token from a secret named ``READTHEDOCS_TOKEN``. "
 "Add it to your repository under :menuselection:`Settings --> Secrets and "
@@ -156,7 +183,7 @@ msgid ""
 "secrets-in-github-actions>`__."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:91
+#: ../../../guides/build/direct-upload.rst:97
 msgid ""
 "The upload action detects the branch, tag or pull request from the workflow "
 "event, so a push to ``main`` updates the ``main`` version, a new tag creates "
@@ -165,14 +192,14 @@ msgid ""
 "uploaded versions behave."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:97
+#: ../../../guides/build/direct-upload.rst:103
 msgid ""
 "The ``paths`` filters make the workflow run only when the documentation or "
 "its dependencies change. Adjust them to match your repository layout, or "
 "remove them to upload on every push and pull request."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:101
+#: ../../../guides/build/direct-upload.rst:107
 msgid ""
 "The example pins the third-party actions to a commit hash, as GitHub "
 "recommends. Do the same for the upload action by replacing ``@v1`` with the "
@@ -180,11 +207,11 @@ msgid ""
 "github.com/readthedocs/upload-action#versioning>`__."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:107
+#: ../../../guides/build/direct-upload.rst:113
 msgid "Uploading from any other environment"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:109
+#: ../../../guides/build/direct-upload.rst:115
 msgid ""
 "The upload action is a thin wrapper around the `readthedocs-upload <https://"
 "pypi.org/project/readthedocs-upload/>`__ package, a command line client that "
@@ -193,7 +220,7 @@ msgid ""
 "``READTHEDOCS_TOKEN`` environment variable:"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:113
+#: ../../../guides/build/direct-upload.rst:119
 msgid ""
 "$ export READTHEDOCS_TOKEN=<token>\n"
 "$ uvx --from readthedocs-upload readthedocs upload \\\n"
@@ -201,20 +228,20 @@ msgid ""
 "    --html _build/html"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:120
+#: ../../../guides/build/direct-upload.rst:126
 msgid ""
 "You can also install it with ``pip install readthedocs-upload``, which makes "
 "the ``readthedocs`` command available."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:123
+#: ../../../guides/build/direct-upload.rst:129
 msgid ""
 "Outside GitHub Actions, the client infers the version from the local Git "
 "checkout. On other continuous integration services, pass the version "
 "explicitly:"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:126
+#: ../../../guides/build/direct-upload.rst:132
 msgid ""
 "$ readthedocs upload \\\n"
 "    --project-slug <your-project-slug> \\\n"
@@ -224,22 +251,22 @@ msgid ""
 "    --commit <full commit hash>"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:135
+#: ../../../guides/build/direct-upload.rst:141
 msgid "Run ``readthedocs upload --help`` to see all the options."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:138
+#: ../../../guides/build/direct-upload.rst:144
 msgid "Uploading offline formats"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:140
+#: ../../../guides/build/direct-upload.rst:146
 msgid ""
 "PDF, ePub and zipped HTML files are optional, and each one points to a "
 "single file. They are shown in the :term:`flyout menu` like any "
 "other :doc:`downloadable format </offline-formats>`:"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:145
+#: ../../../guides/build/direct-upload.rst:151
 msgid ""
 "- uses: readthedocs/upload-action@v1\n"
 "  with:\n"
@@ -250,7 +277,7 @@ msgid ""
 "    epub: _build/epub/documentation.epub"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:155
+#: ../../../guides/build/direct-upload.rst:161
 msgid ""
 "$ readthedocs upload \\\n"
 "    --project-slug <your-project-slug> \\\n"
@@ -259,21 +286,21 @@ msgid ""
 "    --epub _build/epub/documentation.epub"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:164
+#: ../../../guides/build/direct-upload.rst:170
 msgid "Versions"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:166
+#: ../../../guides/build/direct-upload.rst:172
 msgid ""
 "Uploaded versions behave differently depending on whether the project is "
 "built by Read the Docs or not."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:169
+#: ../../../guides/build/direct-upload.rst:175
 msgid "Projects that only use direct upload"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:171
+#: ../../../guides/build/direct-upload.rst:177
 msgid ""
 "On a project that only uses direct upload, every version comes from an "
 "upload, and the name you upload is the version you get: uploading ``main`` "
@@ -282,29 +309,29 @@ msgid ""
 "``latest`` and ``stable`` aliases."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:176
+#: ../../../guides/build/direct-upload.rst:182
 msgid "Default version"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:177
+#: ../../../guides/build/direct-upload.rst:183
 msgid ""
 "The first branch or tag you upload becomes the :term:`default version`, so "
 "the root of your documentation works right away. Pull request previews never "
 "become the default."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:181
+#: ../../../guides/build/direct-upload.rst:187
 msgid "``latest`` and ``stable``"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:182
+#: ../../../guides/build/direct-upload.rst:188
 msgid ""
 "If you want these names, upload them from your pipeline. For example, to "
 "publish ``stable`` from every tag in addition to the tag itself, add a "
 "second upload step that only runs on tags:"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:186
+#: ../../../guides/build/direct-upload.rst:192
 msgid ""
 "- uses: readthedocs/upload-action@v1\n"
 "  if: startsWith(github.ref, 'refs/tags/')\n"
@@ -315,21 +342,21 @@ msgid ""
 "    version-name: stable"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:196
+#: ../../../guides/build/direct-upload.rst:202
 msgid "Deactivating a version"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:197
+#: ../../../guides/build/direct-upload.rst:203
 msgid ""
 "Deactivating an uploaded version deletes it, together with its "
 "documentation. Upload it again to publish it again."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:200
+#: ../../../guides/build/direct-upload.rst:206
 msgid "Automation rules"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:201
+#: ../../../guides/build/direct-upload.rst:207
 msgid ""
 ":doc:`Automation rules </automation-rules>` do not run on projects that only "
 "use direct upload. Hide, activate or set the default version from the "
@@ -338,24 +365,24 @@ msgid ""
 "rules as usual."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:207
+#: ../../../guides/build/direct-upload.rst:213
 msgid "Projects built by Read the Docs"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:209
+#: ../../../guides/build/direct-upload.rst:215
 msgid ""
 "On a project that Read the Docs builds from your repository, you can upload "
 "any single version while the rest of the project keeps being built as before."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:212
+#: ../../../guides/build/direct-upload.rst:218
 msgid ""
 "The version doesn't need to exist before the first upload. A branch, tag or "
 "pull request that Read the Docs doesn't know yet is created by the upload. "
 "Uploading the branch that ``latest`` tracks updates ``latest`` version."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:216
+#: ../../../guides/build/direct-upload.rst:222
 msgid ""
 "Once a version has been uploaded, Read the Docs stops building it. Pushes to "
 "the branch, new commits on the pull request and manual builds don't trigger "
@@ -363,7 +390,7 @@ msgid ""
 "upload as well."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:220
+#: ../../../guides/build/direct-upload.rst:226
 msgid ""
 "To have Read the Docs build an uploaded version again, "
 "uncheck :guilabel:`Uploaded` in the version settings. The uploaded files are "
@@ -371,27 +398,27 @@ msgid ""
 "build succeeds."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:226
+#: ../../../guides/build/direct-upload.rst:232
 msgid "Limits"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:228
+#: ../../../guides/build/direct-upload.rst:234
 msgid "The uploaded archive can be up to 1 GB."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:229
+#: ../../../guides/build/direct-upload.rst:235
 msgid "The upload has to complete within 30 minutes of starting it."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:230
+#: ../../../guides/build/direct-upload.rst:236
 msgid "A project can have at most 50 uploads in progress at the same time."
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:234
+#: ../../../guides/build/direct-upload.rst:240
 msgid ":doc:`/builds`"
 msgstr ""
 
-#: ../../../guides/build/direct-upload.rst:235
+#: ../../../guides/build/direct-upload.rst:241
 msgid ""
 "How Read the Docs builds documentation when you don't use direct upload."
 msgstr ""
