@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Direct upload" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="guides/build/direct-upload.html" />
+<meta property="og:site_name" content="Read the Docs Documentation" />
+<meta property="og:description" content="Direct upload lets you build your documentation anywhere, for example in GitHub Actions or in any other continuous integration service, and upload the resulting files to Read the Docs for hosting. This guide shows how to build your documentation in your own pipeline and upload it. Documentation u..." />
+<meta property="og:image" content="https://docs.readthedocs.com/platform/stable/_static/img/logo-opengraph.png" />
+<meta property="og:image:alt" content="Read the Docs Documentation" />
+<meta name="description" content="Direct upload lets you build your documentation anywhere, for example in GitHub Actions or in any other continuous integration service, and upload the resulting files to Read the Docs for hosting. This guide shows how to build your documentation in your own pipeline and upload it. Documentation u..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Direct upload &mdash; Read the Docs user documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=ca6f9a36" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx_prompt_css.css?v=351d85e3" />
+
+  
+    <link rel="canonical" href="https://projects.localizethedocs.org/rtd-user-docs-l10n/guides/build/direct-upload.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=32c62063"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../../_static/tabs.js?v=3030b3cb"></script>
+      <script src="../../_static/js/expand_tabs.js?v=1e151f68"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Git integration (GitHub, GitLab, Bitbucket)" href="../../reference/git-integration.html" />
+    <link rel="prev" title="Build process customization" href="../../build-customization.html" />
+
+   
+
+  
+
+<script type="text/javascript" src="../../ltd-provenance.js"></script>
+<script type="text/javascript" src="../../ltd-current.js"></script>
+<script type="text/javascript" src="../../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../../ltd-flyout.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/add-project.html">Adding a documentation project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/doctools.html">Popular documentation tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Example projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project setup and configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../config-file/index.html">Configuration file overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../config-file/v2.html">Configuration file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons.html">Read the Docs Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/accounts.html">Account authentication methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../automation-rules.html">Automation rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible-builds.html">How to create reproducible builds</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build process</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../builds.html">Build process overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-customization.html">Build process customization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Direct upload</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-from-github-actions">Uploading from GitHub Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-from-any-other-environment">Uploading from any other environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-offline-formats">Uploading offline formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versions">Versions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#projects-that-only-use-direct-upload">Projects that only use direct upload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#projects-built-by-read-the-docs">Projects built by Read the Docs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#limits">Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/git-integration.html">Git integration (GitHub, GitLab, Bitbucket)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pull-requests.html">Pull request previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-notifications.html">Build failure notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../environment-variables.html">Environment variable overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/environment-variables.html">Environment variable reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hosting documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Localization and Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../versioning-schemes.html">URL versioning schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../custom-domains.html">Custom domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../url-path-prefixes.html">URL path prefixes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doc-notifications.html">Documentation notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../canonical-urls.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/cdn.html">Content Delivery Network (CDN) and caching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/sitemaps.html">Sitemap support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/404-not-found.html"><code class="docutils literal notranslate"><span class="pre">404</span> <span class="pre">Not</span> <span class="pre">Found</span></code> pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/robots.html"><code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/llms-txt.html"><code class="docutils literal notranslate"><span class="pre">llms.txt</span></code> support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/markdown-for-agents.html">Markdown for AI agents</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reading documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../offline-formats.html">Offline formats (PDF, ePub, HTML)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../visual-diff.html">Visual diff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../link-previews.html">Link previews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embedding-content.html">How to embed content from your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../server-side-search/index.html">Server side search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../server-side-search/syntax.html">Search query syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../flyout-menu.html">Flyout menu</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Maintaining projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-defined-redirects.html">Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../traffic-analytics.html">Traffic analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../search-analytics.html">Search analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security-log.html">Security logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../badges.html">Status badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../explanation/documentation-structure.html">How to structure your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best-practice/links.html">Best practices for linking to your documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security-implications.html">Security considerations for documentation pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/main-content-detection.html">Main content detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/agent-skills.html">AI agent skills</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../custom-script.html">Custom script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Business features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/index.html">Business hosting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/organizations.html">Organizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/single-sign-on.html">Single sign-on (SSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/sharing.html">Sharing private documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/subscriptions.html">How to manage your subscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../commercial/privacy-level.html">Privacy levels</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How-to guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup/index.html">Project setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../maintenance/index.html">Upgrading and maintaining projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../content/index.html">Content, themes and SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access/index.html">Security and access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best-practice/index.html">Best practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/index.html">Troubleshooting problems</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">Public REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://dev.readthedocs.io">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://about.readthedocs.com">Read the Docs website</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Read the Docs user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  
+  </ul>
+  <div class="info admonition rst-footer-buttons">
+    <div class="wy-btn-group">
+      <a class="btn btn-link" href="https://about.readthedocs.com/">Learn more about Read the Docs</a>
+      <a class="btn btn-info btn-mini float-right" href="https://about.readthedocs.com/#signup">Sign up</a>
+    </div>
+  </div>
+  <ul class="wy-breadcrumbs">
+  
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Direct upload</li>
+
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/guides/build/direct-upload.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="direct-upload">
+<h1>Direct upload<a class="headerlink" href="#direct-upload" title="Link to this heading"></a></h1>
+<p>Direct upload lets you build your documentation anywhere,
+for example in GitHub Actions or in any other continuous integration service,
+and upload the resulting files to Read the Docs for hosting.
+This guide shows how to build your documentation in your own pipeline and upload it.</p>
+<p>Documentation uploaded this way keeps all the hosting features you already know:
+<a class="reference internal" href="../../versions.html"><span class="doc">versions</span></a>, <a class="reference internal" href="../../pull-requests.html"><span class="doc">pull request previews</span></a>,
+<a class="reference internal" href="../../server-side-search/index.html"><span class="doc">server side search</span></a>, <a class="reference internal" href="../../addons.html"><span class="doc">Addons</span></a>,
+<a class="reference internal" href="../../custom-domains.html"><span class="doc">custom domains</span></a> and <a class="reference internal" href="../../offline-formats.html"><span class="doc">downloadable formats</span></a>,
+among others.</p>
+<p>Direct upload is useful when:</p>
+<ul class="simple">
+<li><p>Your documentation tool is not supported by the Read the Docs build process.</p></li>
+<li><p>Your build needs tools, secrets or resources that are only available in your own environment.</p></li>
+<li><p>You already build the documentation in your continuous integration pipeline and want to reuse the result.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Direct upload is currently a beta testing feature.</strong> It has to be enabled on your project, and we ask that you give us feedback on it.
+<a class="reference internal" href="../../support.html"><span class="doc">Contact support</span></a> to enable it on your project.</p>
+</div>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>A project on Read the Docs, with direct upload enabled by our support team.</p></li>
+<li><p>An <a class="reference internal" href="../../api/v3.html#token"><span class="std std-ref">API token</span></a> belonging to a user with admin access to the project.
+Store it as a secret in your continuous integration service.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are working on project-scoped tokens,
+which give access to a single project instead of everything the user can access.
+They will be released soon, and we recommend switching to them once available.</p>
+</div>
+</section>
+<section id="uploading-from-github-actions">
+<h2>Uploading from GitHub Actions<a class="headerlink" href="#uploading-from-github-actions" title="Link to this heading"></a></h2>
+<p>Use the <a class="reference external" href="https://github.com/readthedocs/upload-action">upload action</a>
+after the step that builds your documentation:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">.github/workflows/docs.yaml</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Docs</span>
+
+<span class="c1"># Adapt these triggers to the branches, tags and paths you want to publish.</span>
+<span class="nt">on</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"v*"</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"docs/**"</span>
+<span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"docs/**"</span>
+
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">docs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">    </span><span class="c1"># Pull requests from forks don't have access to secrets.</span>
+<span class="w">    </span><span class="c1"># Do not use ``pull_request_target`` to work around this because it would run</span>
+<span class="w">    </span><span class="c1"># the pull request's code with access to your token.</span>
+<span class="w">    </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1</span><span class="w">  </span><span class="c1"># v7.0.1</span>
+
+<span class="w">      </span><span class="c1"># Build your documentation using the tool you are already using</span>
+<span class="w">      </span><span class="c1">#</span>
+<span class="w">      </span><span class="c1"># Building with Sphinx as example:</span>
+<span class="w">      </span><span class="c1">#</span>
+<span class="w">      </span><span class="c1"># - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0</span>
+<span class="w">      </span><span class="c1">#   with:</span>
+<span class="w">      </span><span class="c1">#     python-version: "3.14"</span>
+<span class="w">      </span><span class="c1"># - run: pip install -r docs/requirements.txt</span>
+<span class="w">      </span><span class="c1"># - run: sphinx-build -b html docs/ _build/html</span>
+
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">readthedocs/upload-action@v1</span>
+<span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.READTHEDOCS_TOKEN }}</span>
+<span class="w">          </span><span class="nt">project-slug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;your-project-slug&gt;</span>
+<span class="w">          </span><span class="nt">html</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_build/html</span>
+</pre></div>
+</div>
+</div>
+<p>The workflow reads the API token from a secret named <code class="docutils literal notranslate"><span class="pre">READTHEDOCS_TOKEN</span></code>.
+Add it to your repository under <span class="menuselection">Settings ‣ Secrets and variables ‣ Actions</span>,
+or follow <a class="reference external" href="https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions">GitHub’s guide on using secrets</a>.</p>
+<p>The upload action detects the branch, tag or pull request from the workflow event,
+so a push to <code class="docutils literal notranslate"><span class="pre">main</span></code> updates the <code class="docutils literal notranslate"><span class="pre">main</span></code> version,
+a new tag creates a new version,
+and a pull request creates a <a class="reference internal" href="../../pull-requests.html"><span class="doc">pull request preview</span></a>.
+See <a class="reference internal" href="#versions"><span class="std std-ref">Versions</span></a> for how uploaded versions behave.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">paths</span></code> filters make the workflow run only when the documentation or its dependencies change.
+Adjust them to match your repository layout,
+or remove them to upload on every push and pull request.</p>
+<p>The example pins the third-party actions to a commit hash, as GitHub recommends.
+Do the same for the upload action by replacing <code class="docutils literal notranslate"><span class="pre">&#64;v1</span></code> with the full commit hash of a release,
+as described in the <a class="reference external" href="https://github.com/readthedocs/upload-action#versioning">action’s README</a>.</p>
+</section>
+<section id="uploading-from-any-other-environment">
+<h2>Uploading from any other environment<a class="headerlink" href="#uploading-from-any-other-environment" title="Link to this heading"></a></h2>
+<p>The upload action is a thin wrapper around the <a class="reference external" href="https://pypi.org/project/readthedocs-upload/">readthedocs-upload</a> package,
+a command line client that you can run from any continuous integration service or from your own computer.
+It requires Python 3.10 or newer and reads the token from the <code class="docutils literal notranslate"><span class="pre">READTHEDOCS_TOKEN</span></code> environment variable:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">export</span><span class="w"> </span><span class="nv">READTHEDOCS_TOKEN</span><span class="o">=</span>&lt;token&gt;
+<span class="gp">$ </span>uvx<span class="w"> </span>--from<span class="w"> </span>readthedocs-upload<span class="w"> </span>readthedocs<span class="w"> </span>upload<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--project-slug<span class="w"> </span>&lt;your-project-slug&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--html<span class="w"> </span>_build/html
+</pre></div>
+</div>
+<p>You can also install it with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">readthedocs-upload</span></code>,
+which makes the <code class="docutils literal notranslate"><span class="pre">readthedocs</span></code> command available.</p>
+<p>Outside GitHub Actions, the client infers the version from the local Git checkout.
+On other continuous integration services, pass the version explicitly:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>readthedocs<span class="w"> </span>upload<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--project-slug<span class="w"> </span>&lt;your-project-slug&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--html<span class="w"> </span>_build/html<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--version-name<span class="w"> </span>&lt;branch,<span class="w"> </span>tag<span class="w"> </span>or<span class="w"> </span>pull<span class="w"> </span>request<span class="w"> </span>number&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--version-type<span class="w"> </span>&lt;branch,<span class="w"> </span>tag<span class="w"> </span>or<span class="w"> </span>external&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--commit<span class="w"> </span>&lt;full<span class="w"> </span>commit<span class="w"> </span>hash&gt;
+</pre></div>
+</div>
+<p>Run <code class="docutils literal notranslate"><span class="pre">readthedocs</span> <span class="pre">upload</span> <span class="pre">--help</span></code> to see all the options.</p>
+</section>
+<section id="uploading-offline-formats">
+<h2>Uploading offline formats<a class="headerlink" href="#uploading-offline-formats" title="Link to this heading"></a></h2>
+<p>PDF, ePub and zipped HTML files are optional, and each one points to a single file.
+They are shown in the <a class="reference internal" href="../../glossary.html#term-flyout-menu"><span class="xref std std-term">flyout menu</span></a> like any other <a class="reference internal" href="../../offline-formats.html"><span class="doc">downloadable format</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-R2l0SHViIEFjdGlvbnM=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R2l0SHViIEFjdGlvbnM=" name="R2l0SHViIEFjdGlvbnM=" role="tab" tabindex="0">GitHub Actions</button><button aria-controls="panel-0-Q29tbWFuZCBsaW5l" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-Q29tbWFuZCBsaW5l" name="Q29tbWFuZCBsaW5l" role="tab" tabindex="-1">Command line</button></div><div aria-labelledby="tab-0-R2l0SHViIEFjdGlvbnM=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R2l0SHViIEFjdGlvbnM=" name="R2l0SHViIEFjdGlvbnM=" role="tabpanel" tabindex="0"><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">readthedocs/upload-action@v1</span>
+<span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.READTHEDOCS_TOKEN }}</span>
+<span class="w">    </span><span class="nt">project-slug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;your-project-slug&gt;</span>
+<span class="w">    </span><span class="nt">html</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_build/html</span>
+<span class="w">    </span><span class="nt">pdf</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_build/latex/documentation.pdf</span>
+<span class="w">    </span><span class="nt">epub</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_build/epub/documentation.epub</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Q29tbWFuZCBsaW5l" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-Q29tbWFuZCBsaW5l" name="Q29tbWFuZCBsaW5l" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>readthedocs<span class="w"> </span>upload<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--project-slug<span class="w"> </span>&lt;your-project-slug&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--html<span class="w"> </span>_build/html<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--pdf<span class="w"> </span>_build/latex/documentation.pdf<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--epub<span class="w"> </span>_build/epub/documentation.epub
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="versions">
+<h2>Versions<a class="headerlink" href="#versions" title="Link to this heading"></a></h2>
+<p>Uploaded versions behave differently depending on whether the project is built by Read the Docs or not.</p>
+<section id="projects-that-only-use-direct-upload">
+<h3>Projects that only use direct upload<a class="headerlink" href="#projects-that-only-use-direct-upload" title="Link to this heading"></a></h3>
+<p>On a project that only uses direct upload, every version comes from an upload,
+and the name you upload is the version you get:
+uploading <code class="docutils literal notranslate"><span class="pre">main</span></code> publishes <code class="docutils literal notranslate"><span class="pre">main</span></code>, uploading <code class="docutils literal notranslate"><span class="pre">v1.0</span></code> publishes <code class="docutils literal notranslate"><span class="pre">v1.0</span></code>.
+Read the Docs does not create versions from your repository, and it does not create the <code class="docutils literal notranslate"><span class="pre">latest</span></code> and <code class="docutils literal notranslate"><span class="pre">stable</span></code> aliases.</p>
+<dl>
+<dt>Default version</dt><dd><p>The first branch or tag you upload becomes the <a class="reference internal" href="../../glossary.html#term-default-version"><span class="xref std std-term">default version</span></a>,
+so the root of your documentation works right away.
+Pull request previews never become the default.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">latest</span></code> and <code class="docutils literal notranslate"><span class="pre">stable</span></code></dt><dd><p>If you want these names, upload them from your pipeline.
+For example, to publish <code class="docutils literal notranslate"><span class="pre">stable</span></code> from every tag in addition to the tag itself,
+add a second upload step that only runs on tags:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">readthedocs/upload-action@v1</span>
+<span class="w">  </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">startsWith(github.ref, 'refs/tags/')</span>
+<span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.READTHEDOCS_TOKEN }}</span>
+<span class="w">    </span><span class="nt">project-slug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;your-project-slug&gt;</span>
+<span class="w">    </span><span class="nt">html</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_build/html</span>
+<span class="w">    </span><span class="nt">version-name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stable</span>
+</pre></div>
+</div>
+</dd>
+<dt>Deactivating a version</dt><dd><p>Deactivating an uploaded version deletes it, together with its documentation.
+Upload it again to publish it again.</p>
+</dd>
+<dt>Automation rules</dt><dd><p><a class="reference internal" href="../../automation-rules.html"><span class="doc">Automation rules</span></a> do not run on projects that only use direct upload.
+Hide, activate or set the default version from the project settings,
+or from your pipeline through the <a class="reference internal" href="../../api/v3.html"><span class="doc">API</span></a>.
+On a project built by Read the Docs, uploading a version runs the automation rules as usual.</p>
+</dd>
+</dl>
+</section>
+<section id="projects-built-by-read-the-docs">
+<h3>Projects built by Read the Docs<a class="headerlink" href="#projects-built-by-read-the-docs" title="Link to this heading"></a></h3>
+<p>On a project that Read the Docs builds from your repository, you can upload any single version
+while the rest of the project keeps being built as before.</p>
+<p>The version doesn’t need to exist before the first upload.
+A branch, tag or pull request that Read the Docs doesn’t know yet is created by the upload.
+Uploading the branch that <code class="docutils literal notranslate"><span class="pre">latest</span></code> tracks updates <code class="docutils literal notranslate"><span class="pre">latest</span></code> version.</p>
+<p>Once a version has been uploaded, Read the Docs stops building it.
+Pushes to the branch, new commits on the pull request and manual builds don’t trigger anything for that version,
+so every later update has to come through an upload as well.</p>
+<p>To have Read the Docs build an uploaded version again,
+uncheck <span class="guilabel">Uploaded</span> in the version settings.
+The uploaded files are removed, a build is triggered,
+and the version is available again when that build succeeds.</p>
+</section>
+</section>
+<section id="limits">
+<h2>Limits<a class="headerlink" href="#limits" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>The uploaded archive can be up to 1 GB.</p></li>
+<li><p>The upload has to complete within 30 minutes of starting it.</p></li>
+<li><p>A project can have at most 50 uploads in progress at the same time.</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../../builds.html"><span class="doc">Build process overview</span></a></dt><dd><p>How Read the Docs builds documentation when you don’t use direct upload.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../build-customization.html" class="btn btn-neutral float-left" title="Build process customization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../reference/git-integration.html" class="btn btn-neutral float-right" title="Git integration (GitHub, GitLab, Bitbucket)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Read the Docs, Inc &amp; contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
