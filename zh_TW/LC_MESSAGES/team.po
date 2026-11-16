@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../team.rst:2
+msgid "Read the Docs team"
+msgstr "Read the Docs 團隊"
+
+#: ../../../team.rst:4
+msgid ""
+"readthedocs.org is the largest open source documentation hosting service. "
+"Today we:"
+msgstr ""
+
+#: ../../../team.rst:7
+msgid "Serve over **55 million pages** of documentation a month"
+msgstr ""
+
+#: ../../../team.rst:8
+msgid "Serve over **40 TB** of documentation a month"
+msgstr ""
+
+#: ../../../team.rst:9
+msgid ""
+"Host over **80,000 open source projects** and support over **100,000 users**"
+msgstr ""
+
+#: ../../../team.rst:11
+msgid ""
+"Read the Docs is provided as a free service to the open source community, "
+"and we hope to maintain a reliable and stable hosting platform for years to "
+"come."
+msgstr ""
+
+#: ../../../team.rst:16
+msgid "`Our website: Who we are <https://about.readthedocs.com/company/>`__"
+msgstr ""
+
+#: ../../../team.rst:17
+msgid "More information about the staff and contributors of Read the Docs."
+msgstr ""
+
+#: ../../../team.rst:20
+msgid "Teams"
+msgstr ""
+
+#: ../../../team.rst:22
+msgid ""
+"The **Backend Team** folks develop the Django code that powers the backend "
+"of the project."
+msgstr ""
+
+#: ../../../team.rst:23
+msgid ""
+"The members of the **Frontend Team** care about UX, CSS, HTML, and "
+"JavaScript, and they maintain the project UI as well as the Sphinx theme."
+msgstr ""
+
+#: ../../../team.rst:25
+msgid ""
+"As part of operating the site, members of the **Operations Team** maintain a "
+"24/7 on-call rotation. This means that folks have to be available and have "
+"their phone in service."
+msgstr ""
+
+#: ../../../team.rst:27
+msgid ""
+"The members of the **Advocacy Team** spread the word about all the work we "
+"do, and seek to understand the users priorities and feedback."
+msgstr ""
+
+#: ../../../team.rst:29
+msgid ""
+"The **Support Team** helps our thousands of users using the service, "
+"addressing tasks like resetting passwords, enable experimental features, or "
+"troubleshooting build errors."
+msgstr ""
+
+#: ../../../team.rst:34
+msgid ""
+"**Please don't email us personally for support on Read the Docs.** You can "
+"`use our support form <https://app.readthedocs.org/support/>`_ for any "
+"issues you may have."
+msgstr ""

@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Read the Docs, Inc & contributors
+# This file is distributed under the same license as the Read the Docs user documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read the Docs user documentation latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro/zensical.rst:-1
+msgid "Learn how to host Zensical sites on Read the Docs."
+msgstr ""
+
+#: ../../../intro/zensical.rst:2
+msgid "Deploying Zensical on Read the Docs"
+msgstr ""
+
+#: ../../../intro/zensical.rst:7
+msgid ""
+"Zensical_ is a static site generator for project documentation, built by the "
+"creators of Material for MkDocs."
+msgstr ""
+
+#: ../../../intro/zensical.rst:10
+msgid ""
+"Read the Docs builds your Zensical site on every push, previews your pull "
+"requests, and hosts every version of your documentation."
+msgstr ""
+
+#: ../../../intro/zensical.rst:14
+msgid ""
+"Minimal configuration is required to build an existing Zensical project on "
+"Read the Docs:"
+msgstr ""
+
+#: ../../../intro/zensical.rst:16
+msgid ".readthedocs.yaml"
+msgstr ".readthedocs.yaml"
+
+#: ../../../intro/zensical.rst:16
+msgid ""
+" version: 2\n"
+"\n"
+" build:\n"
+"   os: ubuntu-26.04\n"
+"   tools:\n"
+"     python: latest\n"
+"   jobs:\n"
+"     # For reproducible builds, install with uv:\n"
+"     # https://docs.readthedocs.com/platform/stable/build-"
+"customization.html#install-dependencies-with-uv\n"
+"     install:\n"
+"       - pip install zensical\n"
+"     build:\n"
+"       html:\n"
+"         - zensical build\n"
+"     post_build:\n"
+"       # Copy the built site into the directory Read the Docs publishes.\n"
+"       - mkdir -p $READTHEDOCS_OUTPUT/html/\n"
+"       - cp --recursive site/* $READTHEDOCS_OUTPUT/html/"
+msgstr ""
+
+#: ../../../intro/zensical.rst:38
+msgid "For a complete example, see our `Zensical example repository`_."
+msgstr ""
+
+#: ../../../intro/zensical.rst:44
+msgid "Getting started"
+msgstr "開始使用"
+
+#: ../../../intro/zensical.rst:46
+msgid ""
+"Add your project to publish your documentation. If you're new to Zensical, "
+"see the official `Get started with Zensical`_ guide."
+msgstr ""
+
+#: ../../../intro/zensical.rst:55
+msgid "Add a project on Community"
+msgstr ""
+
+#: ../../../intro/zensical.rst:63
+msgid "Add a project on Business"
+msgstr ""
+
+#: ../../../intro/zensical.rst:70
+msgid "Production examples"
+msgstr ""
+
+#: ../../../intro/zensical.rst:72
+msgid "Projects using Zensical on Read the Docs:"
+msgstr ""
+
+#: ../../../intro/zensical.rst:74
+msgid "DDEV"
+msgstr ""
+
+#: ../../../intro/zensical.rst:75
+msgid "https://docs.ddev.com/en/stable/"
+msgstr ""
+
+#: ../../../intro/zensical.rst:77
+msgid "PDM"
+msgstr ""
+
+#: ../../../intro/zensical.rst:78
+msgid "https://pdm-project.org/en/latest/"
+msgstr ""
+
+#: ../../../intro/zensical.rst:80
+msgid "cmd2"
+msgstr ""
+
+#: ../../../intro/zensical.rst:81
+msgid "https://cmd2.readthedocs.io/en/stable/"
+msgstr ""
+
+#: ../../../intro/zensical.rst:84
+msgid "Set the canonical URL"
+msgstr ""
+
+#: ../../../intro/zensical.rst:86
+msgid ""
+"A :doc:`canonical URL </canonical-urls>` allows you to specify the preferred "
+"version of a web page to prevent duplicated content."
+msgstr ""
+
+#: ../../../intro/zensical.rst:89
+msgid "Set your Zensical `site URL`_ to your Read the Docs canonical URL:"
+msgstr ""
+
+#: ../../../intro/zensical.rst:91
+msgid "zensical.toml"
+msgstr ""
+
+#: ../../../intro/zensical.rst:91
+msgid ""
+"[project]\n"
+"site_url = \"https://<slug>.readthedocs.io/\""
+msgstr ""
+
+#: ../../../intro/zensical.rst:99
+msgid ""
+"Zensical doesn't support variable interpolation in its configuration file, "
+"so you need to set the value explicitly instead of using "
+"the :envvar:`READTHEDOCS_CANONICAL_URL` environment variable."
+msgstr ""
+
+#: ../../../intro/zensical.rst:107
+msgid ":doc:`/addons`"
+msgstr ""
+
+#: ../../../intro/zensical.rst:108
+msgid "Configuring Addons, like the version flyout menu."
+msgstr ""
