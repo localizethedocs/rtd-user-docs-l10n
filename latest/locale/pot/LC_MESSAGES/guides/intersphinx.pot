@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgstr ""
 
 #: ../../../guides/intersphinx.rst:6
 msgid ""
-"You may be familiar with using the :ref:`:ref: role <sphinx:ref-role>` to :"
-"doc:`link to any location of your docs </guides/cross-referencing-with-"
+"You may be familiar with using the :ref:`:ref: role <sphinx:ref-role>` "
+"to :doc:`link to any location of your docs </guides/cross-referencing-with-"
 "sphinx>`. It helps you to keep all links within your docs up to date and "
 "warns you if a reference target moves or changes so you can ensure that your "
 "docs don't have broken cross-references."
@@ -107,8 +107,8 @@ msgid ""
 "local references can\n"
 "# suddenly resolve to an external location.\n"
 "# See also:\n"
-"# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx."
-"html#confval-intersphinx_disabled_reftypes\n"
+"# https://www.sphinx-doc.org/en/master/usage/extensions/"
+"intersphinx.html#confval-intersphinx_disabled_reftypes\n"
 "intersphinx_disabled_reftypes = [\"*\"]"
 msgstr ""
 
@@ -213,33 +213,35 @@ msgstr ""
 
 #: ../../../guides/intersphinx.rst:132
 msgid ""
-"Intersphinx supports `URLs with Basic Authorization <https://www.sphinx-doc."
-"org/en/master/usage/extensions/intersphinx.html#using-intersphinx-with-"
-"inventory-file-under-basic-authorization>`__, which Read the Docs supports :"
-"ref:`using a token <commercial/sharing:Basic Authorization>`. You need to "
-"generate a token for each project you want to use with Intersphinx."
+"Intersphinx supports `URLs with Basic Authorization <https://www.sphinx-"
+"doc.org/en/master/usage/extensions/intersphinx.html#using-intersphinx-with-"
+"inventory-file-under-basic-authorization>`__, which Read the Docs "
+"supports :ref:`using a token <commercial/sharing:Basic Authorization>`. You "
+"need to generate a token for each project you want to use with Intersphinx."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:136
-msgid "Go the project you want to use with Intersphinx"
+msgid ""
+"Go to :menuselection:`Settings --> Sharing` of the project you want to use "
+"with Intersphinx."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:137
-msgid "Click :guilabel:`Admin` > :guilabel:`Sharing`"
+msgid "Click on :guilabel:`Add share`."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:138
-msgid "Select ``HTTP Header Token``"
+msgid "Select :guilabel:`HTTP header token` as the :guilabel:`Access type`."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:139
 msgid ""
-"Set an expiration date long enough to use the token when building your "
-"project"
+"Set an :guilabel:`Expires` date long enough to use the token when building "
+"your project."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:140
-msgid "Click on ``Share!``."
+msgid "Click on :guilabel:`Save`."
 msgstr ""
 
 #: ../../../guides/intersphinx.rst:142

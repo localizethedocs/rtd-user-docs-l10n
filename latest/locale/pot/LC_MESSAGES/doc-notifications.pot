@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,21 +64,10 @@ msgid "To manage notifications for your project:"
 msgstr ""
 
 #: ../../../doc-notifications.rst:22
-msgid "Go to the :term:`dashboard`."
+msgid ""
+"Go to your project's :menuselection:`Settings --> Addons --> Notifications`."
 msgstr ""
 
 #: ../../../doc-notifications.rst:23
-msgid "Click on a project name."
-msgstr ""
-
-#: ../../../doc-notifications.rst:24
-msgid "Go to :guilabel:`Settings`."
-msgstr ""
-
-#: ../../../doc-notifications.rst:25
-msgid "In the left bar, go to :guilabel:`Addons`."
-msgstr ""
-
-#: ../../../doc-notifications.rst:26
-msgid "Configure each Addon in the :guilabel:`Notifications` section."
+msgid "Configure each notification."
 msgstr ""

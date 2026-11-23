@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,35 +40,31 @@ msgstr ""
 msgid "Show diff menu in preview"
 msgstr ""
 
-#: ../../../visual-diff.rst:15 ../../../visual-diff.rst:40
+#: ../../../visual-diff.rst:15 ../../../visual-diff.rst:39
 msgid "To enable or disable this feature for your project:"
 msgstr ""
 
-#: ../../../visual-diff.rst:17 ../../../visual-diff.rst:42
-#: ../../../visual-diff.rst:61
-msgid "Go to the :guilabel:`Settings` tab of your project."
+#: ../../../visual-diff.rst:17
+msgid ""
+"Go to your project's :menuselection:`Settings --> Addons --> Visual diff`."
 msgstr ""
 
 #: ../../../visual-diff.rst:18
-msgid "Click on :guilabel:`Addons`, and click on :guilabel:`Visual diff`."
+msgid "Check or uncheck the :guilabel:`Visual diff enabled` option."
 msgstr ""
 
-#: ../../../visual-diff.rst:19
-msgid "Check or uncheck the :guilabel:`Enable visual diff` option."
-msgstr ""
-
-#: ../../../visual-diff.rst:20 ../../../visual-diff.rst:64
+#: ../../../visual-diff.rst:19 ../../../visual-diff.rst:61
 msgid "Click on :guilabel:`Save`."
 msgstr ""
 
-#: ../../../visual-diff.rst:22
+#: ../../../visual-diff.rst:21
 msgid ""
 "When enabled, a new UI element appears at the top right of the page showing "
 "a dropdown selector containing all the files that have changed in that pull "
 "request build."
 msgstr ""
 
-#: ../../../visual-diff.rst:27
+#: ../../../visual-diff.rst:26
 msgid ""
 "You can select any of those files from the dropdown to jump directly into "
 "that page. Once there, you can toggle Visual Diff on and off by pressing "
@@ -76,52 +72,52 @@ msgid ""
 "key if you have hotkeys enabled."
 msgstr ""
 
-#: ../../../visual-diff.rst:30
+#: ../../../visual-diff.rst:29
 msgid ""
 "Visual diff shows all the sections that have changed, highlighting their "
 "differences with red/green background colors. You can jump between each of "
 "these chunks by clicking on the up/down arrows."
 msgstr ""
 
-#: ../../../visual-diff.rst:34
+#: ../../../visual-diff.rst:33
 msgid "Show build overview in pull requests"
 msgstr ""
 
-#: ../../../visual-diff.rst:38
+#: ../../../visual-diff.rst:37
 msgid ""
 "This feature is only available for projects connected to a :ref:`reference/"
 "git-integration:GitHub App`."
 msgstr ""
 
-#: ../../../visual-diff.rst:43
-msgid "Click on :guilabel:`Pull request builds`."
+#: ../../../visual-diff.rst:41
+msgid "Go to your project's :menuselection:`Settings --> Pull request builds`."
 msgstr ""
 
-#: ../../../visual-diff.rst:44
+#: ../../../visual-diff.rst:42
 msgid ""
 "Check or uncheck the :guilabel:`Show build overview in a comment` option."
 msgstr ""
 
-#: ../../../visual-diff.rst:45
+#: ../../../visual-diff.rst:43
 msgid "Click on :guilabel:`Update`."
 msgstr ""
 
-#: ../../../visual-diff.rst:47
+#: ../../../visual-diff.rst:45
 msgid ""
 "When enabled, a comment is added to the pull request when changes are "
 "detected between the pull request and the latest version of the "
 "documentation."
 msgstr ""
 
-#: ../../../visual-diff.rst:52
+#: ../../../visual-diff.rst:50
 msgid "General settings"
 msgstr ""
 
-#: ../../../visual-diff.rst:55
+#: ../../../visual-diff.rst:53
 msgid "Ignored files"
 msgstr ""
 
-#: ../../../visual-diff.rst:57
+#: ../../../visual-diff.rst:55
 msgid ""
 "You can configure a list of files or patterns to be ignored when listing the "
 "files that changed in the pull request. This is useful when you have files "
@@ -129,17 +125,18 @@ msgid ""
 "content changes in those files."
 msgstr ""
 
-#: ../../../visual-diff.rst:62
-msgid "Click on :guilabel:`Addons`, and click on :guilabel:`File tree diff`."
+#: ../../../visual-diff.rst:59
+msgid ""
+"Go to your project's :menuselection:`Settings --> Addons --> File tree diff`."
 msgstr ""
 
-#: ../../../visual-diff.rst:63
+#: ../../../visual-diff.rst:60
 msgid ""
 "In the :guilabel:`Ignored files` field, add one or more patterns to ignore, "
 "one per line."
 msgstr ""
 
-#: ../../../visual-diff.rst:66
+#: ../../../visual-diff.rst:63
 msgid ""
 "Patterns are matched against the relative paths of the HTML files produced "
 "by the build, you should try to match ``index.html``, not ``docs/"
@@ -147,23 +144,23 @@ msgid ""
 "of the following special characters:"
 msgstr ""
 
-#: ../../../visual-diff.rst:70
+#: ../../../visual-diff.rst:67
 msgid "``*`` matches everything, including slashes."
 msgstr ""
 
-#: ../../../visual-diff.rst:71
+#: ../../../visual-diff.rst:68
 msgid "``?`` matches any single character."
 msgstr ""
 
-#: ../../../visual-diff.rst:72
+#: ../../../visual-diff.rst:69
 msgid "``[seq]`` matches any character in ``seq``."
 msgstr ""
 
-#: ../../../visual-diff.rst:75
+#: ../../../visual-diff.rst:72
 msgid "Base version"
 msgstr ""
 
-#: ../../../visual-diff.rst:77
+#: ../../../visual-diff.rst:74
 msgid ""
 "The base version is the version of the documentation that is used to compare "
 "against the pull request. By default, this is the ``latest`` version of the "
@@ -171,11 +168,11 @@ msgid ""
 "the default branch of your repository."
 msgstr ""
 
-#: ../../../visual-diff.rst:83
+#: ../../../visual-diff.rst:80
 msgid "This option can be changed by contacting :doc:`/support`."
 msgstr ""
 
-#: ../../../visual-diff.rst:85
+#: ../../../visual-diff.rst:82
 msgid ""
 "When the first successful build of a pull request runs, Read the Docs takes "
 "a snapshot of the base version's current file manifest and pins it as the "
@@ -186,11 +183,11 @@ msgid ""
 "request is open."
 msgstr ""
 
-#: ../../../visual-diff.rst:95
+#: ../../../visual-diff.rst:92
 msgid "How main content is detected"
 msgstr ""
 
-#: ../../../visual-diff.rst:97
+#: ../../../visual-diff.rst:94
 msgid ""
 "The visual diff compares the \"main content\" of HTML pages, ignoring "
 "headers, footers, navigation, and other page elements that aren't part of "
@@ -199,29 +196,29 @@ msgid ""
 "in the footer."
 msgstr ""
 
-#: ../../../visual-diff.rst:101
+#: ../../../visual-diff.rst:98
 msgid ""
 "For details on how the main content area is detected, see :ref:`reference/"
 "main-content-detection:detection logic`."
 msgstr ""
 
-#: ../../../visual-diff.rst:106
+#: ../../../visual-diff.rst:103
 msgid ""
 "If the heuristic root element picked by Visual Diff is wrong for your "
-"project theme, set the :guilabel:`CSS main content selector` "
-"under :guilabel:`Settings > Addons`. Visual Diff honors this override; other "
-"features like Server Side Search do not."
+"project theme, set the :guilabel:`CSS main content selector` in your "
+"project's :menuselection:`Settings --> Addons --> Advanced`. Visual Diff "
+"honors this override; other features like Server Side Search do not."
 msgstr ""
 
-#: ../../../visual-diff.rst:109
+#: ../../../visual-diff.rst:106
 msgid "Limitations and known issues"
 msgstr ""
 
-#: ../../../visual-diff.rst:111
+#: ../../../visual-diff.rst:108
 msgid "The diff considers HTML files only."
 msgstr ""
 
-#: ../../../visual-diff.rst:112
+#: ../../../visual-diff.rst:109
 msgid ""
 "The diff is done between the files from the latest successful build of the "
 "pull request and the default base version (latest by default). A snapshot of "
@@ -232,7 +229,7 @@ msgid ""
 "until this is addressed in a future update."
 msgstr ""
 
-#: ../../../visual-diff.rst:115
+#: ../../../visual-diff.rst:112
 msgid ""
 "Invisible changes. Some sections may be highlighted as changed, even when "
 "they haven't actually visually changed. This can happen when the underlying "
@@ -240,14 +237,14 @@ msgid ""
 "URL is updated."
 msgstr ""
 
-#: ../../../visual-diff.rst:117
+#: ../../../visual-diff.rst:114
 msgid ""
 "Tables may be shown to have changes when they have not actually changed. "
 "This is due to subtle variations in how HTML tables are rendered, and will "
 "be fixed in a future version."
 msgstr ""
 
-#: ../../../visual-diff.rst:119
+#: ../../../visual-diff.rst:116
 msgid ""
 "The background of diff chunks may be incorrect when we are unable to detect "
 "the correct main parent element for the chunk."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -369,9 +369,9 @@ msgstr ""
 
 #: ../../../build-customization.rst:178
 msgid ""
-"To enable this feature, go to your project's :term:`dashboard` and "
-"update :menuselection:`Settings --> Custom Git checkout commands`. Enter one "
-"command per line."
+"To enable this feature, go to your project's :menuselection:`Settings` and "
+"update the :guilabel:`Git checkout command` field. Enter one command per "
+"line."
 msgstr ""
 
 #: ../../../build-customization.rst:184

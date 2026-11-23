@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,42 +286,42 @@ msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:166
 msgid ""
-"Go to the drop down user menu in the top right of the Read the Docs "
-"dashboard and clicking :guilabel:`Settings` (https://app.readthedocs.org/"
-"accounts/edit/)."
+"Go to :menuselection:`<Username dropdown> --> Settings --> Advertising`."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:167
-msgid ""
-"On the :guilabel:`Advertising` tab, you can deselect **See paid "
-"advertising**."
+msgid "Uncheck :guilabel:`See paid advertising`."
 msgstr ""
 
-#: ../../../advertising/ethical-advertising.rst:169
+#: ../../../advertising/ethical-advertising.rst:168
+msgid "Click :guilabel:`Update advertisement preference`."
+msgstr ""
+
+#: ../../../advertising/ethical-advertising.rst:170
 msgid ""
 "You will still see :ref:`community ads <advertising/ethical-"
 "advertising:Community Ads>` for open source projects and conferences."
 msgstr ""
 
-#: ../../../advertising/ethical-advertising.rst:172
+#: ../../../advertising/ethical-advertising.rst:173
 msgid ""
 "Project owners can also opt out of paid advertisements for their projects. "
 "You can change these options:"
 msgstr ""
 
-#: ../../../advertising/ethical-advertising.rst:175
-msgid "Go to your **project** page (`/projects/<slug>/`)"
-msgstr ""
-
 #: ../../../advertising/ethical-advertising.rst:176
-msgid "Go to :guilabel:`Admin` > :guilabel:`Advertising`"
+msgid "Go to your project's :menuselection:`Settings --> Advertising`."
 msgstr ""
 
 #: ../../../advertising/ethical-advertising.rst:177
-msgid "Change your advertising settings"
+msgid "Change your advertising settings."
 msgstr ""
 
-#: ../../../advertising/ethical-advertising.rst:179
+#: ../../../advertising/ethical-advertising.rst:178
+msgid "Click :guilabel:`Update advertising preference`."
+msgstr ""
+
+#: ../../../advertising/ethical-advertising.rst:180
 msgid ""
 "If you are part of a company that uses Read the Docs to host documentation "
 "for a commercial product, we offer :doc:`Read the Docs Business </commercial/"
@@ -330,7 +330,7 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../../../advertising/ethical-advertising.rst:183
+#: ../../../advertising/ethical-advertising.rst:184
 msgid ""
 "If you would like to completely remove advertising from your open source "
 "project, but our commercial plans don't seem like the right fit, please `get "

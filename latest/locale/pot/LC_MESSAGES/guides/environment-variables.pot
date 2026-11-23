@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,9 +39,9 @@ msgstr ""
 
 #: ../../../guides/environment-variables.rst:12
 msgid ""
-"Go to your project's :menuselection:`Admin --> Environment Variables` and "
-"click on :guilabel:`Add Environment Variable`. You will then see the form "
-"for adding an environment variable:"
+"Go to your project's :menuselection:`Settings --> Environment variables` and "
+"click on :guilabel:`Add variable`. You will then see the form for adding an "
+"environment variable:"
 msgstr ""
 
 #: ../../../guides/environment-variables.rst:15
@@ -76,8 +76,9 @@ msgstr ""
 
 #: ../../../guides/environment-variables.rst:30
 msgid ""
-"Finally, click on :guilabel:`Save`. Your custom environment variable is "
-"immediately active for all future builds and you are ready to start using it."
+"Finally, click on :guilabel:`Add variable`. Your custom environment variable "
+"is immediately active for all future builds and you are ready to start using "
+"it."
 msgstr ""
 
 #: ../../../guides/environment-variables.rst:34

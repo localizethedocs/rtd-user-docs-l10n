@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -695,9 +695,10 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:333
 msgid ""
-"Once you have installed the GitHub App, go to the :guilabel:`Settings` page "
-"of the project in Read the Docs, and select the repository you want to "
-"connect from the :guilabel:`Connected repository` dropdown."
+"Once you have installed the GitHub App, go to your "
+"project's :menuselection:`Settings` in Read the Docs, and select the "
+"repository you want to connect from the :guilabel:`Connected repository` "
+"dropdown."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:337
@@ -730,9 +731,8 @@ msgstr ""
 
 #: ../../../reference/git-integration.rst:347
 msgid ""
-"Go to the :guilabel:`Settings` page of your Read the Docs project, and click "
-"on the :guilabel:`Integrations` tab in Read the Docs, and delete all the "
-"integrations that are listed there."
+"Go to your Read the Docs project's :menuselection:`Settings --> "
+"Integrations`, and delete all the integrations that are listed there."
 msgstr ""
 
 #: ../../../reference/git-integration.rst:349

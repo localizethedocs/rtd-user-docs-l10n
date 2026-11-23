@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,144 +60,147 @@ msgid "You must be an owner of the organization to add another owner."
 msgstr ""
 
 #: ../../../guides/manage-read-the-docs-teams.rst:25
-#: ../../../guides/manage-read-the-docs-teams.rst:42
-#: ../../../guides/manage-read-the-docs-teams.rst:64
-#: ../../../guides/manage-read-the-docs-teams.rst:77
+#: ../../../guides/manage-read-the-docs-teams.rst:41
+#: ../../../guides/manage-read-the-docs-teams.rst:62
+#: ../../../guides/manage-read-the-docs-teams.rst:75
 msgid "Follow these steps:"
 msgstr ""
 
 #: ../../../guides/manage-read-the-docs-teams.rst:27
-#: ../../../guides/manage-read-the-docs-teams.rst:44
+#: ../../../guides/manage-read-the-docs-teams.rst:43
 msgid ""
 "Navigate to the `organization management page <https://app.readthedocs.com/"
 "organizations/choose/organization_detail/>`__."
 msgstr ""
 
 #: ../../../guides/manage-read-the-docs-teams.rst:28
-#: ../../../guides/manage-read-the-docs-teams.rst:45
+#: ../../../guides/manage-read-the-docs-teams.rst:44
 msgid "Select your organization from the list."
 msgstr ""
 
 #: ../../../guides/manage-read-the-docs-teams.rst:29
-#: ../../../guides/manage-read-the-docs-teams.rst:46
-msgid "Click on :guilabel:`Settings`."
+#: ../../../guides/manage-read-the-docs-teams.rst:45
+msgid "Go to :menuselection:`Settings --> Owners`."
 msgstr ""
 
 #: ../../../guides/manage-read-the-docs-teams.rst:30
-#: ../../../guides/manage-read-the-docs-teams.rst:47
-msgid "In the sidebar, click on :guilabel:`Owners`."
-msgstr ""
-
-#: ../../../guides/manage-read-the-docs-teams.rst:31
-#: ../../../guides/manage-read-the-docs-teams.rst:33
+#: ../../../guides/manage-read-the-docs-teams.rst:32
 msgid "Click :guilabel:`Invite owner`."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:32
+#: ../../../guides/manage-read-the-docs-teams.rst:31
 msgid "Enter the user's Read the Docs username or email address."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:35
+#: ../../../guides/manage-read-the-docs-teams.rst:34
 msgid ""
 "The user will receive an invitation and must accept it to become an owner."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:38
+#: ../../../guides/manage-read-the-docs-teams.rst:37
 msgid "Removing an owner from an organization"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:40
+#: ../../../guides/manage-read-the-docs-teams.rst:39
 msgid "To revoke administrative access from an organization owner:"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:48
-msgid "Click :guilabel:`Remove` next to the owner you want to remove."
+#: ../../../guides/manage-read-the-docs-teams.rst:46
+msgid "Click :guilabel:`Remove owner` next to the owner you want to remove."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:52
+#: ../../../guides/manage-read-the-docs-teams.rst:50
 msgid ""
 "You cannot remove the last owner from an organization. There must always be "
 "at least one owner."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:56
+#: ../../../guides/manage-read-the-docs-teams.rst:54
 msgid "Managing team members"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:59
+#: ../../../guides/manage-read-the-docs-teams.rst:57
 msgid "Adding a user to a team"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:61
+#: ../../../guides/manage-read-the-docs-teams.rst:59
 msgid ""
 "Adding a user to a team gives them all the permissions available to that "
 "team, whether it's *read-only* or *admin*."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:66
-#: ../../../guides/manage-read-the-docs-teams.rst:79
+#: ../../../guides/manage-read-the-docs-teams.rst:64
+#: ../../../guides/manage-read-the-docs-teams.rst:77
 msgid ""
 "Navigate to the `teams management page <https://app.readthedocs.com/"
 "organizations/choose/organization_team_list/>`__."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:67
+#: ../../../guides/manage-read-the-docs-teams.rst:65
 msgid "Click on a :guilabel:`<team name>`."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:68
+#: ../../../guides/manage-read-the-docs-teams.rst:66
 msgid "Click :guilabel:`Invite Member`."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:69
+#: ../../../guides/manage-read-the-docs-teams.rst:67
 msgid "Input the user's Read the Docs username or email address."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:70
+#: ../../../guides/manage-read-the-docs-teams.rst:68
 msgid "Click :guilabel:`Add member`."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:73
+#: ../../../guides/manage-read-the-docs-teams.rst:71
 msgid "Removing a user from a team"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:75
+#: ../../../guides/manage-read-the-docs-teams.rst:73
 msgid ""
 "Removing a user from a team removes all permissions that team gave them."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:80
+#: ../../../guides/manage-read-the-docs-teams.rst:78
 msgid "Click on :guilabel:`<team name>`."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:81
+#: ../../../guides/manage-read-the-docs-teams.rst:79
 msgid "Click :guilabel:`Remove` next to the user."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:85
+#: ../../../guides/manage-read-the-docs-teams.rst:83
 msgid "Granting access to import a project"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:87
+#: ../../../guides/manage-read-the-docs-teams.rst:85
 msgid ""
-"Make the user a member of any team with *admin* permissions, they will be "
-"granted access to import a project on that team."
+"Organization owners can import projects on any team. To let another user "
+"import projects, make them a member of any team with *admin* permissions, "
+"they will be granted access to import a project on that team."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:91
+#: ../../../guides/manage-read-the-docs-teams.rst:90
+msgid ""
+"If your organization uses :ref:`single sign-on with a Git provider "
+"<sso_git_provider>`, teams aren't used, and only organization owners can "
+"import projects."
+msgstr ""
+
+#: ../../../guides/manage-read-the-docs-teams.rst:94
 msgid "Automating team management"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:93
+#: ../../../guides/manage-read-the-docs-teams.rst:96
 msgid ""
 "You can manage teams more easily using our :doc:`single sign-on </commercial/"
 "single-sign-on>` features."
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:97
+#: ../../../guides/manage-read-the-docs-teams.rst:100
 msgid ":doc:`/commercial/organizations`"
 msgstr ""
 
-#: ../../../guides/manage-read-the-docs-teams.rst:98
+#: ../../../guides/manage-read-the-docs-teams.rst:101
 msgid "General information about the *organizations* feature."
 msgstr ""

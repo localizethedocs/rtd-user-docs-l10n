@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,11 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:14 ../../../guides/custom-domains.rst:62
-msgid "Go to the :guilabel:`Admin` tab of your project."
+msgid "Go to your project's :menuselection:`Settings --> Domains`."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:15 ../../../guides/custom-domains.rst:63
-msgid "Click on :guilabel:`Domains`."
+#: ../../../guides/custom-domains.rst:15 ../../../guides/custom-domains.rst:19
+msgid "Click on :guilabel:`Add domain`."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:16
@@ -58,10 +58,6 @@ msgstr ""
 msgid ""
 "Mark the :guilabel:`Canonical` option if you want to use this domain as "
 "your :doc:`canonical domain </canonical-urls>`."
-msgstr ""
-
-#: ../../../guides/custom-domains.rst:19
-msgid "Click on :guilabel:`Add`."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:20
@@ -79,7 +75,7 @@ msgid ""
 "domain like ``example.com`` use an ANAME or ALIAS record."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:32 ../../../guides/custom-domains.rst:76
+#: ../../../guides/custom-domains.rst:32 ../../../guides/custom-domains.rst:75
 msgid ""
 "If you delete a domain, make sure to also remove the DNS records for that "
 "domain. Otherwise, another user may add the same domain to their project and "
@@ -124,29 +120,29 @@ msgstr ""
 msgid "To remove a custom domain:"
 msgstr ""
 
+#: ../../../guides/custom-domains.rst:63
+msgid "Click the :guilabel:`Remove domain` button next to the domain."
+msgstr ""
+
 #: ../../../guides/custom-domains.rst:64
-msgid "Click the :guilabel:`Remove` button next to the domain."
+msgid "Click :guilabel:`Remove domain` in the confirmation dialog."
 msgstr ""
 
 #: ../../../guides/custom-domains.rst:65
-msgid "Click :guilabel:`Confirm` on the confirmation page."
-msgstr ""
-
-#: ../../../guides/custom-domains.rst:66
 msgid "Remove the DNS record for the domain from your DNS provider."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:70
+#: ../../../guides/custom-domains.rst:69
 msgid ""
 "Once a domain is removed, your previous documentation domain is no longer "
 "served by Read the Docs, and any request for it will return a 404 Not Found!"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:80
+#: ../../../guides/custom-domains.rst:79
 msgid "Strict Transport Security (HSTS) and other custom headers"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:82
+#: ../../../guides/custom-domains.rst:81
 msgid ""
 "By default, we do not return a `Strict Transport Security header`_ (HSTS) "
 "for user custom domains. This is a conscious decision as it can be "
@@ -154,24 +150,24 @@ msgid ""
 "com_brand|, HSTS and other custom headers can be set upon request."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:86
+#: ../../../guides/custom-domains.rst:85
 msgid ""
 "We always return the HSTS header with a max-age of at least one year for our "
 "own domains including ``*.readthedocs.io``, ``*.readthedocs-hosted.com``, "
 "``readthedocs.org`` and ``readthedocs.com``."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:91
+#: ../../../guides/custom-domains.rst:90
 msgid ""
 "Please contact :doc:`/support` if you want to add a custom header to your "
 "domain."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:96
+#: ../../../guides/custom-domains.rst:95
 msgid "Multiple documentation sites as sub-folders of a domain"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:98
+#: ../../../guides/custom-domains.rst:97
 msgid ""
 "You may host multiple documentation repositories as **sub-folders of a "
 "single domain**. For example, ``docs.example.org/projects/repo1`` and "
@@ -180,78 +176,78 @@ msgid ""
 "how-to-structure-links-optimally-for-seo-whiteboard-friday>`_."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:104
+#: ../../../guides/custom-domains.rst:103
 msgid ":doc:`/subprojects`"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:105
+#: ../../../guides/custom-domains.rst:104
 msgid ""
 "Further information about hosting multiple documentation repositories, using "
 "the :term:`subproject` feature."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:109
+#: ../../../guides/custom-domains.rst:108
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:112
+#: ../../../guides/custom-domains.rst:111
 msgid "\"Error 1014: CNAME Cross-User Banned\" when using Cloudflare"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:114
+#: ../../../guides/custom-domains.rst:113
 msgid ""
 "Read the Docs uses Cloudflare to manage SSL certificates for custom domains, "
 "CDN caching, and other features that require the domain to be completely "
 "managed by our Cloudflare account."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:117
+#: ../../../guides/custom-domains.rst:116
 msgid ""
 "If you see an \"Error 1014: CNAME Cross-User Banned\" message, it means that "
 "the domain is already managed by another Cloudflare account. To fix this, "
 "you need to:"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:121
+#: ../../../guides/custom-domains.rst:120
 msgid "Log in your Cloudflare account (https://www.cloudflare.com/)."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:122
+#: ../../../guides/custom-domains.rst:121
 msgid "Select your domain."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:123
+#: ../../../guides/custom-domains.rst:122
 msgid "Click on \"DNS\"."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:124
+#: ../../../guides/custom-domains.rst:123
 msgid "Find your CNAME record and click on \"Edit\"."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:125
+#: ../../../guides/custom-domains.rst:124
 msgid "Uncheck the \"Proxy status\" (orange cloud) option."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:126
+#: ../../../guides/custom-domains.rst:125
 msgid "Leave everything else unchanged."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:127
+#: ../../../guides/custom-domains.rst:126
 msgid "Click on save."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:130
+#: ../../../guides/custom-domains.rst:129
 msgid "SSL certificate issue delays"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:132
+#: ../../../guides/custom-domains.rst:131
 msgid ""
 "The status of your domain validation and certificate can always be seen on "
-"the details page for your domain under :guilabel:`Admin` "
-"> :guilabel:`Domains` > :guilabel:`YOURDOMAIN.TLD (details)`."
+"the details page for your domain. Go to your "
+"project's :menuselection:`Settings --> Domains` and click on your domain."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:135
+#: ../../../guides/custom-domains.rst:134
 msgid ""
 "Domains are usually validated and a certificate issued within minutes. "
 "However, if you setup the domain in Read the Docs without provisioning the "
@@ -260,41 +256,41 @@ msgid ""
 "validation."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:142
+#: ../../../guides/custom-domains.rst:141
 msgid ""
 "Loading the domain details in the Read the Docs dashboard and saving the "
 "domain again will force a revalidation."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:145
+#: ../../../guides/custom-domains.rst:144
 msgid "Disallowed DNS configurations"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:147
+#: ../../../guides/custom-domains.rst:146
 msgid ""
 "In order to prevent some common cases of domain hijacking, we disallow some "
 "DNS configurations:"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:149
+#: ../../../guides/custom-domains.rst:148
 msgid ""
 "CNAME records pointing to another CNAME record (``doc.example.com -> "
 "docs.example.com -> readthedocs.io``)."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:151
+#: ../../../guides/custom-domains.rst:150
 msgid ""
 "CNAME records pointing to the APEX domain (``www.example.com -> example.com "
 "-> readthedocs.io``)."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:154
+#: ../../../guides/custom-domains.rst:153
 msgid ""
 "This prevents attackers from taking over unused domains with CNAME records "
 "pointing to domains that are on Read the Docs."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:158
+#: ../../../guides/custom-domains.rst:157
 msgid ""
 "Users shouldn't rely on these restrictions to prevent domain hijacking. We "
 "recommend regularly reviewing your DNS records, removing any that are no "
@@ -302,11 +298,11 @@ msgid ""
 "domains in your project."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:164
+#: ../../../guides/custom-domains.rst:163
 msgid "The validation process period has ended"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:166
+#: ../../../guides/custom-domains.rst:165
 msgid ""
 "After you add a new custom domain, you have 30 days to complete the "
 "configuration. Once that period has ended, we will stop trying to validate "
@@ -314,11 +310,11 @@ msgid ""
 "domain and click on :guilabel:`Save` to restart the process."
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:172
+#: ../../../guides/custom-domains.rst:171
 msgid "Migrating from GitBook"
 msgstr ""
 
-#: ../../../guides/custom-domains.rst:174
+#: ../../../guides/custom-domains.rst:173
 msgid ""
 "If your custom domain was previously used in GitBook, contact GitBook "
 "support (via live chat in their website) to remove the domain name from "

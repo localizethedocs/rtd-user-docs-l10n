@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-26 13:01:39 +0100",
-      "hash" : "9af61db775efca367133aca048584a60f7a5e669",
-      "title" : "Version: show duplicated version slug when renaming (#13438)"
+      "date" : "2026-11-23 19:15:11 +0100",
+      "hash" : "c3e232f528853bc5905c2008f622b65bcc4c2cf8",
+      "title" : "Docs: update screenshots to the new dashboard (#13535)"
     }
   },
   "type" : "branch",

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,13 +117,14 @@ msgstr ""
 #: ../../../guides/setup/monorepo.rst:60
 msgid ""
 "Once you have added a Git repository to a project that needs a custom "
-"configuration file path, navigate to :menuselection:`Admin --> Settings` and "
-"add the path to the :guilabel:`Build configuration file` field."
+"configuration file path, go to your project's :menuselection:`Settings` and "
+"add the path to the :guilabel:`Path for .readthedocs.yaml` field."
 msgstr ""
 
 #: ../../../guides/setup/monorepo.rst:63
 msgid ""
-"Screenshot of where to find the :guilabel:`Build configuration file` setting."
+"Screenshot of where to find the :guilabel:`Path for .readthedocs.yaml` "
+"setting."
 msgstr ""
 
 #: ../../../guides/setup/monorepo.rst:66

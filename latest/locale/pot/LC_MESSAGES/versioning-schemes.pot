@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,19 +164,15 @@ msgid ""
 msgstr ""
 
 #: ../../../versioning-schemes.rst:75
-msgid "Go to the :guilabel:`Admin` tab of your project."
+msgid "Go to your project's :menuselection:`Settings`."
 msgstr ""
 
 #: ../../../versioning-schemes.rst:76
-msgid "Click on :guilabel:`Settings`."
-msgstr ""
-
-#: ../../../versioning-schemes.rst:77
 msgid ""
 "Select the new versioning scheme in the :guilabel:`URL versioning scheme` "
 "dropdown."
 msgstr ""
 
-#: ../../../versioning-schemes.rst:78
+#: ../../../versioning-schemes.rst:77
 msgid "Click on :guilabel:`Save`."
 msgstr ""

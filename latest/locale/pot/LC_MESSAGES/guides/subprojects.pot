@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../../guides/subprojects.rst:18
 msgid ""
-"Go to :menuselection:`Settings --> Subprojects` for the project that will "
-"act as your **parent project**."
+"Go to :menuselection:`Settings --> Subprojects` of the project that will act "
+"as your **parent project**."
 msgstr ""
 
 #: ../../../guides/subprojects.rst:20
@@ -90,8 +90,8 @@ msgstr ""
 #: ../../../guides/subprojects.rst:38
 msgid ""
 "If you would like the subproject to use a different name in the URL "
-"structure of your built documentation, you can alter that subproject :"
-"guilabel:`Alias` field -- otherwise leave this blank."
+"structure of your built documentation, you can alter that "
+"subproject :guilabel:`Alias` field -- otherwise leave this blank."
 msgstr ""
 
 #: ../../../guides/subprojects.rst:41

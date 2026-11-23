@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,96 +48,95 @@ msgstr ""
 #: ../../../search-analytics.rst:17
 msgid ""
 "To see a list of the top queries and an overview from the last month, go to "
-"the :guilabel:`Admin` tab of your project, and then click on :guilabel:"
-"`Search Analytics`."
+"your project's :menuselection:`Settings --> Search analytics`."
 msgstr ""
 
-#: ../../../search-analytics.rst:21
+#: ../../../search-analytics.rst:20
 msgid "Search analytics demo"
 msgstr ""
 
-#: ../../../search-analytics.rst:26
+#: ../../../search-analytics.rst:25
 msgid "How the search analytics page looks."
 msgstr ""
 
-#: ../../../search-analytics.rst:28
+#: ../../../search-analytics.rst:27
 msgid ""
-"In **Top queries in the past 30 days**, you see all the latest searches "
-"ordered by their popularity. The list itself is often longer than what meets "
-"the eye, Scroll downwards on the list itself to see more results."
+"The list of top queries shows the latest searches ordered by their "
+"popularity. Use the :guilabel:`Results` filter to show only queries with or "
+"without results."
 msgstr ""
 
-#: ../../../search-analytics.rst:34
+#: ../../../search-analytics.rst:31
 msgid "Understanding your analytics"
 msgstr ""
 
-#: ../../../search-analytics.rst:36
+#: ../../../search-analytics.rst:33
 msgid ""
-"In **Top queries in the past 30 days**, you can see the most popular terms "
-"that users have searched for. Next to the search query, the number of actual "
+"In the list of top queries, you can see the most popular terms that users "
+"have searched for. Next to the search query, the number of actual "
 "**results** for that query is shown. The number of times the query has been "
-"used in a search is displayed as the **searches** number."
+"used in a search is displayed as the **queries** number."
 msgstr ""
 
-#: ../../../search-analytics.rst:40
+#: ../../../search-analytics.rst:37
 msgid ""
 "If you see a search term that doesn't have any results, you could apply that "
 "term in documentation articles or create new ones. This is a great way to "
 "understand missing gaps in your documentation."
 msgstr ""
 
-#: ../../../search-analytics.rst:44
+#: ../../../search-analytics.rst:41
 msgid ""
 "If a search term is often used but the documentation article exists, it can "
 "also indicate that it's hard to navigate to the article."
 msgstr ""
 
-#: ../../../search-analytics.rst:47
+#: ../../../search-analytics.rst:44
 msgid ""
 "Repeat the search yourself and inspect the results to see if they are "
 "relevant. You can add keywords to various pages that you want to show up for "
 "searches on that page."
 msgstr ""
 
-#: ../../../search-analytics.rst:50
+#: ../../../search-analytics.rst:47
 msgid ""
-"In **Daily search totals**, you can see trends that might match special "
-"events in your project's publicity. If you wish to analyze these numbers in "
-"details, click :guilabel:`Download all data` to get a CSV formatted file "
-"with all available search analytics."
+"In **Overview**, you can see the daily search totals for the last month, and "
+"trends that might match special events in your project's publicity. If you "
+"wish to analyze these numbers in details, click :guilabel:`Download search "
+"data` to get a CSV formatted file with all available search analytics."
 msgstr ""
 
-#: ../../../search-analytics.rst:55
+#: ../../../search-analytics.rst:53
 msgid "Data storage"
 msgstr ""
 
-#: ../../../search-analytics.rst:57
+#: ../../../search-analytics.rst:55
 msgid ""
 "The duration of analytics data stored depends on which site you're using:"
 msgstr ""
 
-#: ../../../search-analytics.rst:59
+#: ../../../search-analytics.rst:57
 msgid "On |org_brand|, the last 90 days are stored."
 msgstr ""
 
-#: ../../../search-analytics.rst:60
+#: ../../../search-analytics.rst:58
 msgid ""
 "On |com_brand|, storage duration starts at 30 days and increases with plan "
 "level."
 msgstr ""
 
-#: ../../../search-analytics.rst:64
+#: ../../../search-analytics.rst:62
 msgid "`Our plan pricing <https://about.readthedocs.com/pricing/>`_"
 msgstr ""
 
-#: ../../../search-analytics.rst:65
+#: ../../../search-analytics.rst:63
 msgid "Compare our plan pricing and analytics storage duration."
 msgstr ""
 
-#: ../../../search-analytics.rst:67
+#: ../../../search-analytics.rst:65
 msgid ":doc:`/traffic-analytics`"
 msgstr ""
 
-#: ../../../search-analytics.rst:68
+#: ../../../search-analytics.rst:66
 msgid "See how users are using your documentation."
 msgstr ""

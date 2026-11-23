@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,19 +61,19 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:23
 msgid ""
-"Redirects are configured in the project dashboard, go to :menuselection:"
-"`Admin > Redirects`."
+"Redirects are configured in the project dashboard, go to your "
+"project's :menuselection:`Settings --> Redirects`."
 msgstr ""
 
 #: ../../../guides/redirects.rst:26
-msgid "Screenshot of the Redirect admin page"
+msgid "Screenshot of the Redirects settings page"
 msgstr ""
 
 #: ../../../guides/redirects.rst:29
 msgid ""
-"After clicking :guilabel:`Add Redirect`, you need to select a :guilabel:"
-"`Redirect Type`. This is where things get a bit more complicated you need to "
-"fill in specific information according to that choice."
+"After clicking :guilabel:`Add redirect`, you need to select "
+"a :guilabel:`Redirect Type`. This is where things get a bit more complicated "
+"you need to fill in specific information according to that choice."
 msgstr ""
 
 #: ../../../guides/redirects.rst:34
@@ -83,12 +83,12 @@ msgstr ""
 #: ../../../guides/redirects.rst:36
 msgid ""
 "There are different types of redirect rules targeting different needs. For "
-"each choice in :guilabel:`Redirect Type`, you can mark the choice in order "
-"to experiment and **preview** the final rule generated."
+"each choice in :guilabel:`Redirect Type`, the form shows a **preview** of "
+"the final rule generated as you fill in the fields."
 msgstr ""
 
 #: ../../../guides/redirects.rst:40
-msgid "Screenshot of the Redirect \"Add Redirect\" form"
+msgid "Screenshot of the \"Add redirect\" form with the redirect preview"
 msgstr ""
 
 #: ../../../guides/redirects.rst:43
@@ -162,9 +162,9 @@ msgstr ""
 msgid ""
 "By default, redirects are followed only if the requested page doesn't exist "
 "(*404 File Not Found* error). If you need to apply a redirect for files that "
-"exist, you can have a :guilabel:`Apply even if the page exists` option "
-"visible. **This option is only available on some plan levels**. Please ask "
-"support to enable it for you."
+"exist, you can have a :guilabel:`Force redirect` option visible. **This "
+"option is only available on some plan levels**. Please ask support to enable "
+"it for you."
 msgstr ""
 
 #: ../../../guides/redirects.rst:85
@@ -202,14 +202,14 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:106
 msgid ""
-"You can always revisit :menuselection:`Admin > Redirects`. in order to "
-"delete a rule or edit it."
+"You can always revisit your project's :menuselection:`Settings --> "
+"Redirects` in order to delete a rule or edit it."
 msgstr ""
 
 #: ../../../guides/redirects.rst:109
 msgid ""
-"When editing a rule, you can change its :guilabel:`Redirect Type` and its :"
-"guilabel:`From URL` or :guilabel:`To URL`."
+"When editing a rule, you can change its :guilabel:`Redirect Type` and "
+"its :guilabel:`From URL` or :guilabel:`To URL`."
 msgstr ""
 
 #: ../../../guides/redirects.rst:113
@@ -224,8 +224,9 @@ msgstr ""
 
 #: ../../../guides/redirects.rst:119
 msgid ""
-"You can change the order of the redirect from the :menuselection:`Admin > "
-"Redirects` page, by using the up and down arrow buttons."
+"You can change the order of the redirect from your "
+"project's :menuselection:`Settings --> Redirects`, by using the up and down "
+"arrow buttons."
 msgstr ""
 
 #: ../../../guides/redirects.rst:122

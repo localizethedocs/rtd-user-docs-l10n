@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,9 +45,9 @@ msgstr ""
 
 #: ../../../guides/private-submodules.rst:19
 msgid ""
-"Make sure you are using ``SSH`` URLs for your submodules (``git@github.com:"
-"readthedocs/readthedocs.org.git`` for example) in your ``.gitmodules`` file, "
-"not ``http`` URLs."
+"Make sure you are using ``SSH`` URLs for your submodules "
+"(``git@github.com:readthedocs/readthedocs.org.git`` for example) in your "
+"``.gitmodules`` file, not ``http`` URLs."
 msgstr ""
 
 #: ../../../guides/private-submodules.rst:26
@@ -61,9 +61,9 @@ msgstr ""
 #: ../../../guides/private-submodules.rst:31
 msgid ""
 "Since GitHub doesn't allow you to reuse a deploy key across different "
-"repositories, you'll need to use `machine users <https://developer.github."
-"com/v3/guides/managing-deploy-keys/#machine-users>`__ to give read access to "
-"several repositories using only one SSH key."
+"repositories, you'll need to use `machine users <https://"
+"developer.github.com/v3/guides/managing-deploy-keys/#machine-users>`__ to "
+"give read access to several repositories using only one SSH key."
 msgstr ""
 
 #: ../../../guides/private-submodules.rst:35
@@ -79,80 +79,73 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/private-submodules.rst:42
-msgid "Go to your project on GitHub"
+msgid ""
+"Go to :menuselection:`Settings --> Deploy keys` of your repository on GitHub"
 msgstr ""
 
 #: ../../../guides/private-submodules.rst:43
-msgid "Click on :guilabel:`Settings`"
-msgstr ""
-
-#: ../../../guides/private-submodules.rst:44
-msgid "Click on :guilabel:`Deploy Keys`"
-msgstr ""
-
-#: ../../../guides/private-submodules.rst:45
 msgid "Delete the key added by ``Read the Docs Commercial (readthedocs.com)``"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:47
+#: ../../../guides/private-submodules.rst:45
 msgid ""
 "Create a GitHub user and give it read only permissions to all the necessary "
 "repositories. You can do this by adding the account as:"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:50
+#: ../../../guides/private-submodules.rst:48
 msgid ""
 "A `collaborator <https://help.github.com/en/github/setting-up-and-managing-"
 "your-github-user-account/inviting-collaborators-to-a-personal-repository>`__"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:51
+#: ../../../guides/private-submodules.rst:49
 msgid ""
 "An `outside collaborator <https://help.github.com/en/github/setting-up-and-"
 "managing-organizations-and-teams/adding-outside-collaborators-to-"
 "repositories-in-your-organization>`__"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:52
+#: ../../../guides/private-submodules.rst:50
 msgid ""
 "A `team in an organization <https://help.github.com/en/github/setting-up-and-"
 "managing-organizations-and-teams/adding-organization-members-to-a-team>`__"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:54
+#: ../../../guides/private-submodules.rst:52
 msgid ""
 "Attach the public SSH key from your project on Read the Docs to the GitHub "
 "user you just created"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:56
+#: ../../../guides/private-submodules.rst:54
 msgid "Go to the user's settings"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:57
+#: ../../../guides/private-submodules.rst:55
 msgid "Click on :guilabel:`SSH and GPG keys`"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:58
+#: ../../../guides/private-submodules.rst:56
 msgid "Click on :guilabel:`New SSH key`"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:59
+#: ../../../guides/private-submodules.rst:57
 msgid ""
 "Put a descriptive title and paste the :ref:`public SSH key from your Read "
 "the Docs project <guides/creating-project-private-repository:Configuring "
 "your repository>`"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:61
+#: ../../../guides/private-submodules.rst:59
 msgid "Click on :guilabel:`Add SSH key`"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:64
+#: ../../../guides/private-submodules.rst:62
 msgid "Azure DevOps"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:66
+#: ../../../guides/private-submodules.rst:64
 msgid ""
 "Azure DevOps does not have per-repository SSH keys, but keys can be added to "
 "a user instead. As long as this user has access to your main repository and "
@@ -160,23 +153,23 @@ msgid ""
 "same key."
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:72
+#: ../../../guides/private-submodules.rst:70
 msgid ""
 ":ref:`Allow access to your Azure DevOps repository with an SSH key <guides/"
 "creating-project-private-repository:Configuring your repository>`."
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:75
+#: ../../../guides/private-submodules.rst:73
 msgid "Others"
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:77
+#: ../../../guides/private-submodules.rst:75
 msgid ""
 "GitLab and Bitbucket allow you to reuse the same SSH key across different "
 "repositories. Since Read the Docs already added the public SSH key on your "
 "main repository, you only need to add it to each submodule repository."
 msgstr ""
 
-#: ../../../guides/private-submodules.rst:83
+#: ../../../guides/private-submodules.rst:81
 msgid ":doc:`/guides/creating-project-private-repository`"
 msgstr ""

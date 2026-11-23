@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 09:27+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,67 +37,58 @@ msgstr ""
 
 #: ../../../traffic-analytics.rst:12
 msgid ""
-"To see a list of the top pages from the last month, go to the :guilabel:"
-"`Settings` tab of your project, and then click on :guilabel:`Traffic "
-"analytics` under :guilabel:`Maintaining`."
+"To see a list of the top pages from the last month, go to your "
+"project's :menuselection:`Settings --> Traffic analytics`."
 msgstr ""
 
-#: ../../../traffic-analytics.rst:16 ../../../traffic-analytics.rst:21
+#: ../../../traffic-analytics.rst:15 ../../../traffic-analytics.rst:20
 msgid "Traffic analytics demo"
 msgstr ""
 
-#: ../../../traffic-analytics.rst:24
+#: ../../../traffic-analytics.rst:23
 msgid "Enabling traffic analytics"
 msgstr ""
 
-#: ../../../traffic-analytics.rst:26
-msgid "Go to the new :term:`dashboard`."
-msgstr ""
-
-#: ../../../traffic-analytics.rst:27
-msgid "Click on a project name."
-msgstr ""
-
-#: ../../../traffic-analytics.rst:28
+#: ../../../traffic-analytics.rst:25
 msgid ""
-"Go to :guilabel:`Settings`, then in the left bar, go to :guilabel:`Addons`."
+"Go to your project's :menuselection:`Settings --> Addons --> Analytics`."
+msgstr ""
+
+#: ../../../traffic-analytics.rst:26
+msgid "Check :guilabel:`Analytics enabled`."
 msgstr ""
 
 #: ../../../traffic-analytics.rst:29
-msgid "Go to :guilabel:`Analytics` and check :guilabel:`Analytics enabled`."
-msgstr ""
-
-#: ../../../traffic-analytics.rst:32
 msgid "Data storage"
 msgstr ""
 
-#: ../../../traffic-analytics.rst:34
+#: ../../../traffic-analytics.rst:31
 msgid ""
 "The duration of analytics data stored depends on which site you're using:"
 msgstr ""
 
-#: ../../../traffic-analytics.rst:36
+#: ../../../traffic-analytics.rst:33
 msgid "On |org_brand|, the last 90 days are stored."
 msgstr ""
 
-#: ../../../traffic-analytics.rst:37
+#: ../../../traffic-analytics.rst:34
 msgid ""
 "On |com_brand|, storage duration starts at 30 days and increases with plan "
 "level."
 msgstr ""
 
-#: ../../../traffic-analytics.rst:41
+#: ../../../traffic-analytics.rst:38
 msgid "`Our plan pricing <https://about.readthedocs.com/pricing/>`_"
 msgstr ""
 
-#: ../../../traffic-analytics.rst:42
+#: ../../../traffic-analytics.rst:39
 msgid "Compare our plan pricing and analytics storage duration."
 msgstr ""
 
-#: ../../../traffic-analytics.rst:44
+#: ../../../traffic-analytics.rst:41
 msgid ":doc:`/search-analytics`"
 msgstr ""
 
-#: ../../../traffic-analytics.rst:45
+#: ../../../traffic-analytics.rst:42
 msgid "See what users are searching for in your documentation."
 msgstr ""

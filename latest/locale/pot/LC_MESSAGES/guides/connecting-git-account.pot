@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-17 08:41+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,9 +48,8 @@ msgstr ""
 
 #: ../../../guides/connecting-git-account.rst:21
 msgid ""
-"To connect your Read the Docs account with a Git provider, go to the main "
-"login menu: :guilabel:`<Username dropdown>` > :guilabel:`Settings` > :"
-"guilabel:`Connected Services`."
+"To connect your Read the Docs account with a Git provider, go "
+"to :menuselection:`<Username dropdown> --> Settings --> Connected services`."
 msgstr ""
 
 #: ../../../guides/connecting-git-account.rst:24
