@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 08:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,56 +45,51 @@ msgid "Adding a maintainer gives them admin access to your project."
 msgstr ""
 
 #: ../../../guides/managing-maintainers.rst:19
-#: ../../../guides/managing-maintainers.rst:32
+#: ../../../guides/managing-maintainers.rst:31
 msgid "Follow these steps:"
 msgstr ""
 
 #: ../../../guides/managing-maintainers.rst:21
-#: ../../../guides/managing-maintainers.rst:34
-msgid "Navigate to the :guilabel:`Settings` tab of your project."
+#: ../../../guides/managing-maintainers.rst:33
+msgid "Go to your project's :menuselection:`Settings --> Maintainers`."
 msgstr ""
 
 #: ../../../guides/managing-maintainers.rst:22
-#: ../../../guides/managing-maintainers.rst:35
-msgid "Under :guilabel:`Setup`, click on the :guilabel:`Maintainers` tab."
-msgstr ""
-
-#: ../../../guides/managing-maintainers.rst:23
 msgid "Click the :guilabel:`Add maintainer` button."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:24
+#: ../../../guides/managing-maintainers.rst:23
 msgid "Fill out the form with the new maintainer's username or email address."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:25
+#: ../../../guides/managing-maintainers.rst:24
 msgid "Click :guilabel:`Invite`."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:28
+#: ../../../guides/managing-maintainers.rst:27
 msgid "Removing a maintainer"
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:30
+#: ../../../guides/managing-maintainers.rst:29
 msgid "Removing a maintainer revokes their admin access to your project."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:36
+#: ../../../guides/managing-maintainers.rst:34
 msgid "Find the maintainer you want to remove in the list."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:37
+#: ../../../guides/managing-maintainers.rst:35
 msgid "Click the :guilabel:`Remove` button next to their name."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:38
+#: ../../../guides/managing-maintainers.rst:36
 msgid "Confirm the removal in the dialog that appears."
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:42
+#: ../../../guides/managing-maintainers.rst:40
 msgid ":doc:`/guides/manage-read-the-docs-teams`"
 msgstr ""
 
-#: ../../../guides/managing-maintainers.rst:43
+#: ../../../guides/managing-maintainers.rst:41
 msgid "Learn how to manage teams within an organization on |com_brand|."
 msgstr ""

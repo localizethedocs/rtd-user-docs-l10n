@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,8 @@ msgstr ""
 msgid ""
 "**Resolution:** This error can be quite misleading. It usually occurs when a "
 "repository could not be found because of a typo in the repository name or "
-"because the repository has been deleted. Verify your repository URL "
-"in :guilabel:`Admin > Settings`."
+"because the repository has been deleted. Verify the :guilabel:`Repository "
+"URL` in your project's :menuselection:`Settings`."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:23
@@ -89,9 +89,9 @@ msgid ""
 "This might be because the git repository was recently created (and has no "
 "commits nor branches) or because the default branch has changed name. If for "
 "instance, the default branch on GitHub changed from ``master`` to ``main``, "
-"you need to visit :guilabel:`Admin > Settings` to change the name of the "
-"default branch that Read the Docs expects to find when cloning the "
-"repository."
+"you need to update the :guilabel:`Default branch` in your "
+"project's :menuselection:`Settings`. This is the branch that Read the Docs "
+"expects to find when cloning the repository."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:42
@@ -115,12 +115,14 @@ msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:54
 #: ../../../guides/build-troubleshooting.rst:73
-msgid "Navigate to :guilabel:`Admin > SSH Keys`"
+msgid "Go to your project's :menuselection:`Settings --> SSH keys`."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:55
 #: ../../../guides/build-troubleshooting.rst:74
-msgid "Copy the contents of the public key."
+msgid ""
+"Click on the fingerprint of the SSH key and copy the contents of "
+"the :guilabel:`Public SSH key` field."
 msgstr ""
 
 #: ../../../guides/build-troubleshooting.rst:56

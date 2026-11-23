@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 10:23+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,8 @@ msgstr ""
 #: ../../../server-side-search/index.rst:29
 msgid ""
 "Set a custom rank per page, allowing you to deprecate content, and always "
-"show relevant content to your users first. See :ref:`config-file/v2:search."
-"ranking`."
+"show relevant content to your users first. See :ref:`config-file/"
+"v2:search.ranking`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:33
@@ -98,8 +98,8 @@ msgstr ""
 #: ../../../server-side-search/index.rst:38
 msgid ""
 "You can also specify what projects you want to search using the ``project:"
-"{name}`` syntax, for example: `\"project:docs project:dev search\"`_. See :"
-"doc:`/server-side-search/syntax`."
+"{name}`` syntax, for example: `\"project:docs project:dev search\"`_. "
+"See :doc:`/server-side-search/syntax`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:43
@@ -108,8 +108,8 @@ msgstr ""
 
 #: ../../../server-side-search/index.rst:44
 msgid ""
-"We support a full range of search queries. You can see some examples at :ref:"
-"`server-side-search/syntax:special queries`."
+"We support a full range of search queries. You can see some examples "
+"at :ref:`server-side-search/syntax:special queries`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:47
@@ -121,7 +121,7 @@ msgid ""
 "Tweak search results according to your needs using a :ref:`configuration "
 "file <config-file/v2:search>`. You can also enable or disable the search "
 "modal, and toggle the subprojects filter shown inside it, from your "
-"project's :guilabel:`Settings`, in the left bar, under :guilabel:`Search`."
+"project's :menuselection:`Settings --> Search`."
 msgstr ""
 
 #: ../../../server-side-search/index.rst:54
@@ -185,34 +185,19 @@ msgid ""
 msgstr ""
 
 #: ../../../server-side-search/index.rst:93
-msgid "Go to the :term:`dashboard`."
-msgstr ""
-
-#: ../../../server-side-search/index.rst:94
-msgid "Click on a project name."
-msgstr ""
-
-#: ../../../server-side-search/index.rst:95
-msgid "Go to :guilabel:`Settings`."
-msgstr ""
-
-#: ../../../server-side-search/index.rst:96
-msgid "In the left bar, go to :guilabel:`Search`."
-msgstr ""
-
-#: ../../../server-side-search/index.rst:98
 msgid ""
-"From there you can toggle :guilabel:`Enable search modal`, which controls "
-"whether the Read the Docs search modal is shown in your documentation, and :"
-"guilabel:`Show subprojects filter in search modal`, which controls whether "
-"readers can filter search results by :doc:`subproject </subprojects>`."
+"Go to your project's :menuselection:`Settings --> Search`. From there you "
+"can toggle :guilabel:`Enable search modal`, which controls whether the Read "
+"the Docs search modal is shown in your documentation, and :guilabel:`Show "
+"subprojects filter in search modal`, which controls whether readers can "
+"filter search results by :doc:`subproject </subprojects>`."
 msgstr ""
 
-#: ../../../server-side-search/index.rst:104
+#: ../../../server-side-search/index.rst:100
 msgid "How main content is detected"
 msgstr ""
 
-#: ../../../server-side-search/index.rst:106
+#: ../../../server-side-search/index.rst:102
 msgid ""
 "Server Side Search indexes the \"main content\" of HTML pages, ignoring "
 "headers, footers, navigation, and other page elements that aren't part of "
@@ -220,7 +205,7 @@ msgid ""
 "repeated elements like nav menus from polluting relevance."
 msgstr ""
 
-#: ../../../server-side-search/index.rst:110
+#: ../../../server-side-search/index.rst:106
 msgid ""
 "For details on how the main content area is detected, see :ref:`reference/"
 "main-content-detection:detection logic`."

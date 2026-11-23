@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,9 +51,9 @@ msgstr ""
 
 #: ../../../commercial/privacy-level.rst:18
 msgid ""
-"You can set the project privacy level in your :term:`dashboard` by "
-"navigating to :menuselection:`Admin --> Settings` and "
-"changing :guilabel:`Privacy level` to `Public`."
+"You can set the project privacy level in your "
+"project's :menuselection:`Settings` by changing :guilabel:`Privacy level` to "
+"`Public`."
 msgstr ""
 
 #: ../../../commercial/privacy-level.rst:21
@@ -88,9 +88,10 @@ msgstr ""
 
 #: ../../../commercial/privacy-level.rst:36
 msgid ""
-"You can set the privacy level for each version in your :term:`dashboard` by "
-"navigating to :menuselection:`Versions --> $version ... Drop down --> "
-"Configure version` and changing :guilabel:`Privacy level` to `Public`."
+"You can set the privacy level for each version in your "
+"project's :menuselection:`Versions` tab: open the dot menu for the version, "
+"select :guilabel:`Configure version`, and change :guilabel:`Privacy Level` "
+"to `Public`."
 msgstr ""
 
 #: ../../../commercial/privacy-level.rst:39

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,24 +158,32 @@ msgstr ""
 msgid "Ownership rights to the Read the Docs organization"
 msgstr ""
 
-#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:65
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:64
+msgid ""
+"Projects must be imported from a repository in a connected Git provider "
+"account, since access to the project is granted from the permissions in that "
+"repository. You can't manually configure a project when SSO with a Git "
+"provider is enabled."
+msgstr ""
+
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:69
 msgid "Revoke access to a project"
 msgstr ""
 
-#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:67
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:71
 msgid ""
 "If a user should not have access to a project, you can revoke access to the "
 "git repository, and this will be automatically reflected in Read the Docs."
 msgstr ""
 
-#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:71
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:75
 msgid ""
 "The same process is followed in case you need to remove admin access, but "
 "still want that user to have access to read the documentation. Instead of "
 "revoking access completely, downgrade their permissions to *read only*."
 msgstr ""
 
-#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:77
+#: ../../../guides/setup-single-sign-on-github-gitlab-bitbucket.rst:81
 msgid ""
 "To learn more about choosing a single sign-on approach, please read :doc:`/"
 "commercial/single-sign-on`."

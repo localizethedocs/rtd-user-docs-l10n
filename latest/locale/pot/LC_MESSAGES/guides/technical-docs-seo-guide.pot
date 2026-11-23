@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,15 +312,15 @@ msgstr ""
 #: ../../../guides/technical-docs-seo-guide.rst:215
 msgid ""
 "Read the Docs supports :doc:`setting the canonical URL </canonical-urls>` if "
-"you are using a :doc:`custom domain </custom-domains>` "
-"under :guilabel:`Admin` > :guilabel:`Domains` in the Read the Docs dashboard."
+"you are using a :doc:`custom domain </custom-domains>` in your "
+"project's :menuselection:`Settings --> Domains`."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:224
+#: ../../../guides/technical-docs-seo-guide.rst:223
 msgid "Use a robots.txt file ✅️"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:226
+#: ../../../guides/technical-docs-seo-guide.rst:225
 msgid ""
 "A ``robots.txt`` file is readable by crawlers and lives at the root of your "
 "site (eg. https://docs.readthedocs.com/robots.txt). It tells search engines "
@@ -331,24 +331,24 @@ msgid ""
 ">` while keeping those docs online in case people need them."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:234
+#: ../../../guides/technical-docs-seo-guide.rst:233
 msgid ""
 "By default, Read the Docs serves a ``robots.txt`` for you. To customize this "
 "file, you can create a ``robots.txt`` file that is written to your "
 "documentation root on your default branch/version."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:238
+#: ../../../guides/technical-docs-seo-guide.rst:237
 msgid ""
 "See the `Google's documentation on robots.txt <https://support.google.com/"
 "webmasters/answer/6062608>`_ for additional details."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:244
+#: ../../../guides/technical-docs-seo-guide.rst:243
 msgid "Use a sitemap.xml file ✅️"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:246
+#: ../../../guides/technical-docs-seo-guide.rst:245
 msgid ""
 "A sitemap is a file readable by crawlers that contains a list of pages and "
 "other files on your site and some metadata or relationships about them (eg. "
@@ -357,7 +357,7 @@ msgid ""
 "language versions of a page."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:252
+#: ../../../guides/technical-docs-seo-guide.rst:251
 msgid ""
 "Read the Docs generates a sitemap for you that contains the last time your "
 "documentation was updated as well as links to active versions, subprojects, "
@@ -365,30 +365,30 @@ msgid ""
 "on :doc:`sitemaps </reference/sitemaps>`."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:256
+#: ../../../guides/technical-docs-seo-guide.rst:255
 msgid ""
 "See the `Google docs on building a sitemap <https://support.google.com/"
 "webmasters/answer/183668>`_."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:260
+#: ../../../guides/technical-docs-seo-guide.rst:259
 msgid "Use meta tags ✅️"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:262
+#: ../../../guides/technical-docs-seo-guide.rst:261
 msgid ""
 "Using a meta description allows you to customize how your pages look in "
 "search engine result pages."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:265
+#: ../../../guides/technical-docs-seo-guide.rst:264
 msgid ""
 "Typically search engines will use the first few sentences of a page if no "
 "meta description is provided. In Sphinx, you can customize your meta "
 "description using the following RestructuredText:"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:268
+#: ../../../guides/technical-docs-seo-guide.rst:267
 msgid ""
 ".. meta::\n"
 "    :description lang=en:\n"
@@ -398,54 +398,54 @@ msgid ""
 "additional functionality."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:280
+#: ../../../guides/technical-docs-seo-guide.rst:279
 msgid "Google search engine results showing a customized meta description"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:282
+#: ../../../guides/technical-docs-seo-guide.rst:281
 msgid ""
 "Moz.com, an authority on search engine optimization, makes the following "
 "suggestions for meta descriptions:"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:285
+#: ../../../guides/technical-docs-seo-guide.rst:284
 msgid ""
 "Your meta description should have the most relevant content of the page. A "
 "searcher should know whether they've found the right page from the "
 "description."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:287
+#: ../../../guides/technical-docs-seo-guide.rst:286
 msgid ""
 "The meta description should be between 150-300 characters and it may be "
 "truncated down to around 150 characters in some situations."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:289
+#: ../../../guides/technical-docs-seo-guide.rst:288
 msgid "Meta descriptions are used for display but not for ranking."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:291
+#: ../../../guides/technical-docs-seo-guide.rst:290
 msgid ""
 "Search engines don't always use your customized meta description if they "
 "think a snippet from the page is a better description."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:295
+#: ../../../guides/technical-docs-seo-guide.rst:294
 msgid "Measure, iterate, & improve"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:297
+#: ../../../guides/technical-docs-seo-guide.rst:296
 msgid ""
 "Search engines (and soon, Read the Docs itself) can provide useful data that "
 "you can use to improve your docs' ranking on search engines."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:302
+#: ../../../guides/technical-docs-seo-guide.rst:301
 msgid "Search engine feedback"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:304
+#: ../../../guides/technical-docs-seo-guide.rst:303
 msgid ""
 "`Google Search Console <https://search.google.com/search-console>`_ and "
 "`Bing Webmaster Tools <https://www.bing.com/webmaster/help/webmaster-"
@@ -454,7 +454,7 @@ msgid ""
 "feedback these provide include:"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:310
+#: ../../../guides/technical-docs-seo-guide.rst:309
 msgid ""
 "Google and Bing will show pages that were previously indexed that now give a "
 "404 (or more rarely a 500 or other status code). These will remain in the "
@@ -462,22 +462,22 @@ msgid ""
 "opportunity to create a :ref:`redirect <seo_redirects>`."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:314
+#: ../../../guides/technical-docs-seo-guide.rst:313
 msgid "These tools will show any crawl issues with your documentation."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:315
+#: ../../../guides/technical-docs-seo-guide.rst:314
 msgid ""
 "Search Console and Webmaster Tools will highlight security issues found or "
 "if Google or Bing took action against your site because they believe it is "
 "spammy."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:320
+#: ../../../guides/technical-docs-seo-guide.rst:319
 msgid "Analytics tools"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:322
+#: ../../../guides/technical-docs-seo-guide.rst:321
 msgid ""
 "A tool like Google Analytics, along with our :doc:`integrated Read the Docs "
 "analytics </traffic-analytics>`, can give you feedback about the search "
@@ -485,7 +485,7 @@ msgid ""
 "other useful data."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:327
+#: ../../../guides/technical-docs-seo-guide.rst:326
 msgid ""
 "Search term feedback can be used to help you optimize content for certain "
 "keywords or for related keywords. For Sphinx documentation, or other "
@@ -493,40 +493,40 @@ msgid ""
 "can also tell you the terms people search for within your site."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:331
+#: ../../../guides/technical-docs-seo-guide.rst:330
 msgid ""
 "Knowing your popular pages can help you prioritize where to spend your SEO "
 "efforts. Optimizing your already popular pages can have a significant impact."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:336
+#: ../../../guides/technical-docs-seo-guide.rst:335
 msgid "External resources"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:338
+#: ../../../guides/technical-docs-seo-guide.rst:337
 msgid ""
 "Here are a few additional resources to help you learn more about SEO and "
 "rank better with search engines."
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:341
+#: ../../../guides/technical-docs-seo-guide.rst:340
 msgid ""
 "`Moz's beginners guide to SEO <https://moz.com/beginners-guide-to-seo>`_"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:342
+#: ../../../guides/technical-docs-seo-guide.rst:341
 msgid ""
 "`Google's Webmaster Guidelines <https://support.google.com/webmasters/answer/"
 "35769>`_"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:343
+#: ../../../guides/technical-docs-seo-guide.rst:342
 msgid ""
 "`Bing's Webmaster Guidelines <https://www.bing.com/webmaster/help/webmaster-"
 "guidelines-30fba23a>`_"
 msgstr ""
 
-#: ../../../guides/technical-docs-seo-guide.rst:344
+#: ../../../guides/technical-docs-seo-guide.rst:343
 msgid ""
 "`Google's SEO Starter Guide <https://support.google.com/webmasters/answer/"
 "7451184>`_"

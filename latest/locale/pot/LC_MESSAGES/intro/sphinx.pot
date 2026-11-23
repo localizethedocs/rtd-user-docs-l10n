@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,7 +199,8 @@ msgstr ""
 #: ../../../intro/sphinx.rst:108
 msgid ""
 "In either case, you can configure the flyout menu sorting and display "
-"options in :guilabel:`Settings`, under :guilabel:`Addons`."
+"options in your project's :menuselection:`Settings --> Addons --> Flyout "
+"menu`."
 msgstr ""
 
 #: ../../../intro/sphinx.rst:111

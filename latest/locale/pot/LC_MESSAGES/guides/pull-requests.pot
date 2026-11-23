@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,42 +38,38 @@ msgstr ""
 msgid "To enable or disable pull request builds:"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:12 ../../../guides/pull-requests.rst:61
-msgid "Go to your project dashboard"
+#: ../../../guides/pull-requests.rst:12 ../../../guides/pull-requests.rst:60
+msgid "Go to your project's :menuselection:`Settings --> Pull request builds`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:13 ../../../guides/pull-requests.rst:62
-msgid "Go to :guilabel:`Settings`, then :guilabel:`Pull request builds`"
-msgstr ""
-
-#: ../../../guides/pull-requests.rst:14
+#: ../../../guides/pull-requests.rst:13
 msgid ""
 "Enable or disable the :guilabel:`Build pull requests for this project` option"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:15 ../../../guides/pull-requests.rst:64
+#: ../../../guides/pull-requests.rst:14 ../../../guides/pull-requests.rst:62
 msgid "Click on :guilabel:`Update`"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:19
+#: ../../../guides/pull-requests.rst:18
 msgid ""
 "Pull requests opened before enabling pull request builds will not trigger "
 "new builds automatically. Push a new commit to the pull request to trigger "
 "its first build."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:24
+#: ../../../guides/pull-requests.rst:23
 msgid ""
 "The previous method of pull request previews using a GitHub workflow that "
 "called `@readthedocs/actions <https://github.com/readthedocs/actions/>`__ is "
 "now deprecated. If you used that method, you should remove its configuration."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:28
+#: ../../../guides/pull-requests.rst:27
 msgid "Build overview"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:30
+#: ../../../guides/pull-requests.rst:29
 msgid ""
 "You can enable a build overview comment to be added to your pull requests "
 "when changes are detected between the pull request and the latest version of "
@@ -81,23 +77,23 @@ msgid ""
 "and links to view the built documentation."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:34
+#: ../../../guides/pull-requests.rst:33
 msgid ":ref:`visual-diff:Show build overview in pull requests`"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:35
+#: ../../../guides/pull-requests.rst:34
 msgid "How to configure your project to enable build overviews"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:38
+#: ../../../guides/pull-requests.rst:37
 msgid "Privacy levels"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:42
+#: ../../../guides/pull-requests.rst:41
 msgid "Privacy levels are only supported on :doc:`/commercial/index`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:44
+#: ../../../guides/pull-requests.rst:43
 msgid ""
 "If you didn’t import your project manually and your repository is public, "
 "the privacy level of pull request previews will be set to *Public*, "
@@ -106,13 +102,13 @@ msgid ""
 "only available to users with access to the Read the Docs project."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:52
+#: ../../../guides/pull-requests.rst:51
 msgid ""
 "If you set the privacy level of pull request previews to *Private*, make "
 "sure that only trusted users can open pull requests in your repository."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:55
+#: ../../../guides/pull-requests.rst:54
 msgid ""
 "Setting pull request previews to private on a public repository can allow a "
 "malicious user to access read-only APIs using the user's session that is "
@@ -121,38 +117,37 @@ msgid ""
 "ffxw-68rh>`__."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:59
+#: ../../../guides/pull-requests.rst:58
 msgid "To change the privacy level:"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:63
-msgid ""
-"Select your option in :guilabel:`Privacy level of builds from pull requests`"
+#: ../../../guides/pull-requests.rst:61
+msgid "Select your option in :guilabel:`Privacy level of Pull Requests`"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:66
+#: ../../../guides/pull-requests.rst:64
 msgid ""
 "Privacy levels work the same way as :ref:`normal versions <versions:Version "
 "states>`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:69
+#: ../../../guides/pull-requests.rst:67
 msgid "Limitations"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:71
+#: ../../../guides/pull-requests.rst:69
 msgid ""
 "Pull requests are only available for **GitHub** and **GitLab** currently. "
 "Bitbucket is not yet supported."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:72
+#: ../../../guides/pull-requests.rst:70
 msgid ""
 "To enable this feature, your Read the Docs project needs to be connected to "
 "a repository from a supported Git provider."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:73
+#: ../../../guides/pull-requests.rst:71
 msgid ""
 "If your project is using our :ref:`reference/git-integration:GitHub App`, "
 "you don't need to configure a webhook. For GitLab, and projects using our "
@@ -160,50 +155,50 @@ msgid ""
 "configured to send pull request events, not just push events."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:75
+#: ../../../guides/pull-requests.rst:73
 msgid ""
 "Builds from pull requests have the same memory and time limitations :doc:`as "
 "regular builds </builds>`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:77
+#: ../../../guides/pull-requests.rst:75
 msgid "Additional formats like PDF aren't built in order to reduce build time."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:78
+#: ../../../guides/pull-requests.rst:76
 msgid ""
 "Read the Docs doesn't index search on pull request builds. This means that "
 "Addons search and the Read the Docs Search API will return no results."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:79
+#: ../../../guides/pull-requests.rst:77
 msgid ""
 "The built documentation is kept for 90 days after the pull request has been "
 "closed or merged."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:80
+#: ../../../guides/pull-requests.rst:78
 msgid ""
 "The build overview comment is only available for projects connected to "
 "a :ref:`reference/git-integration:GitHub App`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:83
+#: ../../../guides/pull-requests.rst:81
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:85
+#: ../../../guides/pull-requests.rst:83
 msgid "No new builds are started when I open a pull request"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:86
+#: ../../../guides/pull-requests.rst:84
 msgid ""
 "The most common cause when using GitHub is that your Read the Docs project "
 "is not :ref:`connected to the corresponding repository on GitHub <reference/"
 "git-integration:Connect a repository to an existing project>`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:89
+#: ../../../guides/pull-requests.rst:87
 msgid ""
 "If you are using our old GitHub integration, make sure that your "
 "repository's webhook is configured to send pull request events. You can re-"
@@ -211,43 +206,43 @@ msgid ""
 "webhook."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:94
+#: ../../../guides/pull-requests.rst:92
 msgid ""
-"To re-sync your project's webhook, go to your project's admin "
-"dashboard, :guilabel:`Integrations`, and then select the webhook integration "
-"for your provider. Follow the directions to re-sync the webhook, or create a "
-"new webhook integration."
+"To re-sync your project's webhook, go to your "
+"project's :menuselection:`Settings --> Integrations`, and then select the "
+"webhook integration for your provider. Follow the directions to re-sync the "
+"webhook, or create a new webhook integration."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:99
+#: ../../../guides/pull-requests.rst:96
 msgid ""
 "You may also notice this behavior if your Read the Docs account is not "
 "connected to your Git provider account, or if it needs to be reconnected. "
-"You can (re)connect your account by going to your :guilabel:`<Username "
-"dropdown>`, :guilabel:`Settings`, then to :guilabel:`Connected Services`."
+"You can (re)connect your account by going to :menuselection:`<Username "
+"dropdown> --> Settings --> Connected services`."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:104
+#: ../../../guides/pull-requests.rst:100
 msgid "Build status is not being reported to your Git provider"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:105
+#: ../../../guides/pull-requests.rst:101
 msgid ""
 "If opening a pull request does start a new build, but the build status is "
 "not being updated with your Git provider, then your connected account may "
 "have out dated or insufficient permissions."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:109
+#: ../../../guides/pull-requests.rst:105
 msgid ""
 "Make sure that you have granted access to the Read the Docs `GitHub OAuth "
 "App`_ for your personal or organization GitHub account."
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:113
+#: ../../../guides/pull-requests.rst:109
 msgid ":ref:`guides/setup/git-repo-manual:Debugging webhooks`"
 msgstr ""
 
-#: ../../../guides/pull-requests.rst:114
+#: ../../../guides/pull-requests.rst:110
 msgid ":ref:`github-permission-troubleshooting`"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,26 +37,24 @@ msgid "To add or update a custom script for your project:"
 msgstr ""
 
 #: ../../../custom-script.rst:12
-msgid "Go to the :guilabel:`Settings` tab of your project."
+msgid ""
+"Go to your project's :menuselection:`Settings --> Addons --> Custom script`."
 msgstr ""
 
 #: ../../../custom-script.rst:13
-msgid "Click :guilabel:`Addons`, then :guilabel:`Custom Script`."
+msgid ""
+"Enter the URL of your JavaScript file in the :guilabel:`Source URL` field."
 msgstr ""
 
 #: ../../../custom-script.rst:14
-msgid "Enter the URL of your JavaScript file."
-msgstr ""
-
-#: ../../../custom-script.rst:15
 msgid "Click :guilabel:`Save`."
 msgstr ""
 
-#: ../../../custom-script.rst:18
+#: ../../../custom-script.rst:17
 msgid "Using custom scripts"
 msgstr ""
 
-#: ../../../custom-script.rst:20
+#: ../../../custom-script.rst:19
 msgid ""
 "This addon allows specifying a URL to a JavaScript file that will be "
 "injected into all pages of your documentation. The script can be hosted on "
@@ -64,28 +62,28 @@ msgid ""
 "absolute URL)."
 msgstr ""
 
-#: ../../../custom-script.rst:23
+#: ../../../custom-script.rst:22
 msgid "Common use cases for custom scripts include:"
 msgstr ""
 
-#: ../../../custom-script.rst:25
+#: ../../../custom-script.rst:24
 msgid "Fixing bugs or adding features to frozen documentation"
 msgstr ""
 
-#: ../../../custom-script.rst:26
+#: ../../../custom-script.rst:25
 msgid "Injecting analytics or tracking code"
 msgstr ""
 
-#: ../../../custom-script.rst:27
+#: ../../../custom-script.rst:26
 msgid ""
 "Customizing the appearance or behavior of specific documentation versions"
 msgstr ""
 
-#: ../../../custom-script.rst:30
+#: ../../../custom-script.rst:29
 msgid "Accessing Addons data from your script"
 msgstr ""
 
-#: ../../../custom-script.rst:32
+#: ../../../custom-script.rst:31
 msgid ""
 "Custom scripts are loaded asynchronously after the initial page load, which "
 "means the ``readthedocs-addons-data-ready`` event has already been fired by "
@@ -95,7 +93,7 @@ msgid ""
 "in a single-page application):"
 msgstr ""
 
-#: ../../../custom-script.rst:38
+#: ../../../custom-script.rst:37
 msgid ""
 "function handleReadTheDocsData(data) {\n"
 "  // Access the Addons data here\n"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,8 +86,8 @@ msgstr ""
 
 #: ../../../flyout-menu.rst:36
 msgid ""
-"In your dashboard, you can configure flyout menu options "
-"in :guilabel:`Settings > Addons > Flyout Menu`."
+"You can configure flyout menu options in your "
+"project's :menuselection:`Settings --> Addons --> Flyout menu`."
 msgstr ""
 
 #: ../../../flyout-menu.rst:39

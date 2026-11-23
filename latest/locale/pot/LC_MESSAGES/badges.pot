@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,15 +63,15 @@ msgstr ""
 msgid "|green| |nbsp| |red| |nbsp| |yellow|"
 msgstr ""
 
-#: ../../../badges.rst:87
+#: ../../../badges.rst:107
 msgid "green"
 msgstr ""
 
-#: ../../../badges.rst:88
+#: ../../../badges.rst:108
 msgid "red"
 msgstr ""
 
-#: ../../../badges.rst:89
+#: ../../../badges.rst:109
 msgid "yellow"
 msgstr ""
 
@@ -81,98 +81,92 @@ msgstr ""
 
 #: ../../../badges.rst:27
 msgid ""
-"On the dashboard of a project, an example badge is displayed together with "
-"code snippets for reStructuredText, Markdown, and HTML."
-msgstr ""
-
-#: ../../../badges.rst:30
-msgid ""
 "Badges are generated on-demand for all Read the Docs projects, using the "
 "following URL syntax:"
 msgstr ""
 
-#: ../../../badges.rst:32
+#: ../../../badges.rst:29
 msgid ""
 "https://app.readthedocs.org/projects/<project-slug>/badge/?"
 "version=<version>&style=<style>"
 msgstr ""
 
-#: ../../../badges.rst:37 ../../../badges.rst:44
+#: ../../../badges.rst:34 ../../../badges.rst:41
 msgid "Style"
 msgstr ""
 
-#: ../../../badges.rst:39
+#: ../../../badges.rst:36
 msgid ""
 "You can pass the ``style`` GET argument to get custom styled badges. This "
 "allows you to match the look and feel of your website. By default, the "
 "``flat`` style is used."
 msgstr ""
 
-#: ../../../badges.rst:44 ../../../badges.rst:59
+#: ../../../badges.rst:41 ../../../badges.rst:56
 msgid "Badge"
 msgstr ""
 
-#: ../../../badges.rst:46
+#: ../../../badges.rst:43
 msgid "flat - default"
 msgstr ""
 
-#: ../../../badges.rst:46
+#: ../../../badges.rst:43
 msgid "|Flat Badge|"
 msgstr ""
 
-#: ../../../badges.rst:57
+#: ../../../badges.rst:54
 msgid "Flat Badge"
 msgstr ""
 
-#: ../../../badges.rst:48
+#: ../../../badges.rst:45
 msgid "flat-square"
 msgstr ""
 
-#: ../../../badges.rst:48
+#: ../../../badges.rst:45
 msgid "|Flat-Square Badge|"
 msgstr ""
 
-#: ../../../badges.rst:58
+#: ../../../badges.rst:55
 msgid "Flat-Square Badge"
 msgstr ""
 
-#: ../../../badges.rst:50
+#: ../../../badges.rst:47
 msgid "for-the-badge"
 msgstr ""
 
-#: ../../../badges.rst:50
+#: ../../../badges.rst:47
 msgid "|Badge|"
 msgstr ""
 
-#: ../../../badges.rst:52
+#: ../../../badges.rst:49
 msgid "plastic"
 msgstr ""
 
-#: ../../../badges.rst:52
+#: ../../../badges.rst:49
 msgid "|Plastic Badge|"
 msgstr ""
 
-#: ../../../badges.rst:60
+#: ../../../badges.rst:57
 msgid "Plastic Badge"
 msgstr ""
 
-#: ../../../badges.rst:54
+#: ../../../badges.rst:51
 msgid "social"
 msgstr ""
 
-#: ../../../badges.rst:54
+#: ../../../badges.rst:51
 msgid "|Social Badge|"
 msgstr ""
 
-#: ../../../badges.rst:61
+#: ../../../badges.rst:58
 msgid "Social Badge"
 msgstr ""
 
-#: ../../../badges.rst:65
+#: ../../../badges.rst:62
 msgid "Version-specific badges"
 msgstr ""
 
-#: ../../../badges.rst:67
+#: ../../../badges.rst:64
 msgid ""
 "You can change the version of the documentation your badge points to. To do "
 "this, you can pass the ``version`` GET argument to the badge URL. By "
@@ -180,28 +174,61 @@ msgid ""
 "project."
 msgstr ""
 
-#: ../../../badges.rst:71
+#: ../../../badges.rst:68
 msgid "The badge URL looks like this:"
 msgstr ""
 
-#: ../../../badges.rst:73
+#: ../../../badges.rst:70
 msgid ""
 "https://app.readthedocs.org/projects/<project-slug>/badge/?version=latest"
 msgstr ""
 
-#: ../../../badges.rst:79
-msgid "Badges on dashboard pages"
+#: ../../../badges.rst:76
+msgid "Embedding a badge"
 msgstr ""
 
-#: ../../../badges.rst:81
+#: ../../../badges.rst:78
 msgid ""
-"On each :term:`project home` page there is a badge that communicates the "
-"status of the default version. If you click on the badge icon, you will be "
-"given snippets for reStructuredText, Markdown, and HTML to make embedding it "
-"easier."
+"Use one of the following snippets to embed a badge in your README or "
+"documentation pages. Replace ``<project-slug>`` with your project's slug, "
+"and ``<project-url>`` with the URL of your documentation."
 msgstr ""
 
-#: ../../../badges.rst:95
+#: ../../../badges.rst:84
+msgid "reStructuredText"
+msgstr ""
+
+#: ../../../badges.rst:86
+msgid ""
+".. image:: https://app.readthedocs.org/projects/<project-slug>/badge/?"
+"version=latest\n"
+"   :target: <project-url>\n"
+"   :alt: Documentation Status"
+msgstr ""
+
+#: ../../../badges.rst:92
+msgid "Markdown"
+msgstr ""
+
+#: ../../../badges.rst:94
+msgid ""
+"[![Documentation Status](https://app.readthedocs.org/projects/<project-slug>/"
+"badge/?version=latest)](<project-url>)"
+msgstr ""
+
+#: ../../../badges.rst:98
+msgid "HTML"
+msgstr ""
+
+#: ../../../badges.rst:100
+msgid ""
+"<a href=\"<project-url>\">\n"
+"  <img src=\"https://app.readthedocs.org/projects/<project-slug>/badge/?"
+"version=latest\" alt=\"Documentation Status\" />\n"
+"</a>"
+msgstr ""
+
+#: ../../../badges.rst:115
 msgid "Badges for private projects"
 msgstr ""
 
@@ -211,9 +238,9 @@ msgid ""
 "app.readthedocs.com/>`_."
 msgstr ""
 
-#: ../../../badges.rst:99
+#: ../../../badges.rst:119
 msgid ""
 "For private projects, a badge URL cannot be guessed. A token is needed to "
-"display it. Private badge URLs are displayed on a private project's "
-"dashboard in place of public URLs."
+"display it. Please :doc:`contact support </support>` to get the badge URL "
+"for your private project."
 msgstr ""

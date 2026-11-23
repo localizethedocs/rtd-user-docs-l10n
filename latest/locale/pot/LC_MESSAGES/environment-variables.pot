@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,10 +43,10 @@ msgstr ""
 
 #: ../../../environment-variables.rst:19
 msgid ""
-"Custom environment variables are defined in the :term:`dashboard` interface "
-"in :menuselection:`Admin --> Environment variables`. Environment variables "
-"are defined for a project's entire build process, :ref:`with 2 important "
-"exceptions <custom_env_var_exceptions>`."
+"Custom environment variables are defined in your "
+"project's :menuselection:`Settings --> Environment variables`. Environment "
+"variables are defined for a project's entire build process, :ref:`with 2 "
+"important exceptions <custom_env_var_exceptions>`."
 msgstr ""
 
 #: ../../../environment-variables.rst:23

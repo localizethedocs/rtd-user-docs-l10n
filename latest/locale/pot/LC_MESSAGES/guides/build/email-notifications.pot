@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:48+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,25 +65,28 @@ msgid ""
 msgstr ""
 
 #: ../../../guides/build/email-notifications.rst:24
-msgid "Go to :menuselection:`Admin --> Notifications` in your project."
+msgid "Go to your project's :menuselection:`Settings --> Email notifications`."
 msgstr ""
 
 #: ../../../guides/build/email-notifications.rst:25
-msgid ""
-"Fill in the **Email** field under the **New Email Notifications** heading"
+msgid "Click on :guilabel:`Add notification`."
 msgstr ""
 
 #: ../../../guides/build/email-notifications.rst:26
-msgid ""
-"Press :guilabel:`Add` and the email is saved and will be displayed in the "
-"list of **Existing notifications**."
+msgid "Fill in the :guilabel:`Email` field."
 msgstr ""
 
-#: ../../../guides/build/email-notifications.rst:28
+#: ../../../guides/build/email-notifications.rst:27
+msgid ""
+"Click on :guilabel:`Save` and the email will be displayed in the list of "
+"notifications."
+msgstr ""
+
+#: ../../../guides/build/email-notifications.rst:29
 msgid "The newly added email address will be notified once a build fails."
 msgstr ""
 
-#: ../../../guides/build/email-notifications.rst:33
+#: ../../../guides/build/email-notifications.rst:34
 msgid ""
 "We don't send email notifications on :doc:`builds from pull requests </pull-"
 "requests>`."
