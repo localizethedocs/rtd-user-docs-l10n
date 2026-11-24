@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Read the Docs user documentation stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 08:24+0000\n"
+"POT-Creation-Date: 2026-11-24 19:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,8 +52,8 @@ msgstr ""
 msgid ""
 "Type the name of the repository you want to add and click on it. If you are "
 "using our :ref:`reference/git-integration:GitHub App`, make sure you have "
-"installed the :ref:`Read the Docs GitHub App <reference/git-integration:"
-"Troubleshooting>` in your repository."
+"installed the :ref:`Read the Docs GitHub App <reference/git-"
+"integration:Troubleshooting>` in your repository."
 msgstr ""
 
 #: ../../../intro/add-project.rst:21 ../../../intro/add-project.rst:39
@@ -117,44 +117,58 @@ msgid ""
 msgstr ""
 
 #: ../../../intro/add-project.rst:53
-msgid "What's next"
+msgid "Build your documentation outside Read the Docs"
 msgstr ""
 
 #: ../../../intro/add-project.rst:55
 msgid ""
-"Once your documentation project is created, a build will be triggered. It "
-"will automatically fetch the code from your repository and build the "
-"documentation. You can see the logs for the build process from your :term:"
-"`dashboard`."
-msgstr ""
-
-#: ../../../intro/add-project.rst:61
-msgid ":doc:`/builds`"
+"If you build your documentation in your own pipeline, for example in GitHub "
+"Actions, choose :guilabel:`Build externally and upload` instead of adding a "
+"configuration file, and click on :guilabel:`I will upload my documentation`. "
+"Read the Docs won't build your project, and your pipeline uploads the "
+"documentation instead. See :doc:`/guides/build/direct-upload` for the "
+"complete setup."
 msgstr ""
 
 #: ../../../intro/add-project.rst:62
-msgid "Explanation about the build process."
+msgid "What's next"
 msgstr ""
 
 #: ../../../intro/add-project.rst:64
+msgid ""
+"Once your documentation project is created, a build will be triggered. It "
+"will automatically fetch the code from your repository and build the "
+"documentation. You can see the logs for the build process from "
+"your :term:`dashboard`."
+msgstr ""
+
+#: ../../../intro/add-project.rst:70
+msgid ":doc:`/builds`"
+msgstr ""
+
+#: ../../../intro/add-project.rst:71
+msgid "Explanation about the build process."
+msgstr ""
+
+#: ../../../intro/add-project.rst:73
 msgid ":doc:`/config-file/index`"
 msgstr ""
 
-#: ../../../intro/add-project.rst:65
+#: ../../../intro/add-project.rst:74
 msgid ""
 "Practical steps to add a configuration file to your documentation project."
 msgstr ""
 
-#: ../../../intro/add-project.rst:67
+#: ../../../intro/add-project.rst:76
 msgid ":doc:`/versions`"
 msgstr ""
 
-#: ../../../intro/add-project.rst:68
+#: ../../../intro/add-project.rst:77
 msgid "Manage multiple versions of your documentation project."
 msgstr ""
 
-#: ../../../intro/add-project.rst:70
+#: ../../../intro/add-project.rst:79
 msgid ""
-"If you have any trouble, don't hesitate to reach out to us. The :doc:"
-"`support </support>` page has more information on getting in touch."
+"If you have any trouble, don't hesitate to reach out to us. "
+"The :doc:`support </support>` page has more information on getting in touch."
 msgstr ""
